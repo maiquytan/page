@@ -27,7 +27,7 @@ const Index = () => {
         <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
       </Head>
       <div className="container">
-        Home page
+        {/* Home page */}
       </div>
       <style jsx>
         {`
