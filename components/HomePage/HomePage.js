@@ -4,7 +4,6 @@ import Header from '../Header/Header'
 const HomePage = () => {
   return (
     <div className="home">
-      <Header />
 
       {/* Header */}
       <div className="home__header">
@@ -33,37 +32,37 @@ const HomePage = () => {
         <div className="services_main">
           <div className="services_column">
             <div className="services_one">
-              <img src="services1.svg" className="img_services" alt="logo" width="116" height="113" />
+              <img src="services1.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
               <div className="services_text">Web application development</div>
             </div>
             <div className="services_one">
-              <img src="services2.svg" className="img_services" alt="logo" width="116" height="113" />
+              <img src="services2.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
               <div className="services_text">Mobile app development</div>
             </div>
             <div className="services_one">
-              <img src="services3.svg" className="img_services" alt="logo" width="116" height="113" />
+              <img src="services3.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
               <div className="services_text">RPA development</div>
             </div>
             <div className="services_one">
-              <img src="services4.svg" className="img_services" alt="logo" width="116" height="113" />
+              <img src="services4.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
               <div className="services_text">Dedicated development teams</div>
             </div>
           </div>
           <div className="services_column">
             <div className="services_one">
-              <img src="services5.svg" className="img_services" alt="logo" width="116" height="113" />
+              <img src="services5.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
               <div className="services_text">Offshore development center</div>
             </div>
             <div className="services_one">
-              <img src="services6.svg" className="img_services" alt="logo" width="116" height="113" />
+              <img src="services6.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
               <div className="services_text">Lifecycle maintenance</div>
             </div>
             <div className="services_one">
-              <img src="services7.svg" className="img_services" alt="logo" width="116" height="113" />
+              <img src="services7.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
               <div className="services_text">DevOps development and operations</div>
             </div>
             <div className="services_one">
-              <img src="services8.svg" className="img_services" alt="logo" width="116" height="113" />
+              <img src="services8.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
               <div className="services_text">UI/UX Design</div>
             </div>
           </div>
@@ -78,7 +77,7 @@ const HomePage = () => {
             <label className="item">Archivement</label>
             <div className="crossbar_left_1"></div>
             <div className="crossbar_left_2"></div>
-            <img src="medal 1.svg" alt="logo" width="47px" height="47" />
+            <img src="medal.svg" alt="logo" title="logo" width="47px" height="47" />
           </div>
           <div className="archivement_column">
             <label className="archivement_number">50+</label>
@@ -110,29 +109,29 @@ const HomePage = () => {
         </div>
         <div className="mission_vision">
           <div className="target_row">
-            <img src="icons8.svg" alt="logo" width="61" height="61" />
+            <img src="icons8.svg" alt="mission" title="mission" width="61" height="61" />
             <div className="mission">
               <label className="mission_header">Misson</label>
               <label className="mission_content">Utilizing cutting-edge technology, we will realize the optimal "Axia (value)" for each individual by the best means.</label>
             </div>
           </div>
           <div className="target_row">
-            <img src="icons8-financial.svg" alt="logo" width="61" height="61" />
+            <img src="icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
             <div className="mission">
               <label className="mission_header">Vision</label>
               <label className="mission_content">We will become a leading company that creates unique value and innovation on the earth while putting the "happiness" of all Axalize members first.</label>
             </div>
           </div>
           <div className="target_row">
-            <img src="icons8-tree.svg" alt="logo" width="61" height="61" />
+            <img src="icons8-tree.svg" alt="core_value" title="core_value" width="61" height="61" />
             <div className="mission">
               <label className="mission_header">Core value</label>
-              <label><img src="Vector.svg" alt="logo" width="16" height="12" /> To pursue the mission thoroughly.</label>
-              <label><img src="Vector.svg" alt="logo" width="16" height="12" /> Have the ability to take action for change.</label>
-              <label><img src="Vector.svg" alt="logo" width="16" height="12" /> Respect each person's individuality.</label>
-              <label><img src="Vector.svg" alt="logo" width="16" height="12" /> The team should share values and aim for the same goals.</label>
-              <label><img src="Vector.svg" alt="logo" width="16" height="12" /> A deep understanding of customer value.</label>
-              <label><img src="Vector.svg" alt="logo" width="16" height="12" /> Never be bound by boundaries.</label>
+              <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> To pursue the mission thoroughly.</label>
+              <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Have the ability to take action for change.</label>
+              <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Respect each person's individuality.</label>
+              <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> The team should share values and aim for the same goals.</label>
+              <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> A deep understanding of customer value.</label>
+              <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Never be bound by boundaries.</label>
             </div>
           </div>
         </div>
@@ -147,7 +146,7 @@ const HomePage = () => {
         </div>
         <div className="expertise_main">
           <div className="one_expertise">
-            <img src="Expertise1.svg" alt="logo" className="img_expertise" width="100" height="100" />
+            <img src="Expertise1.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
             <div className="one_expertise_content">
               <label className="system_header">Enterprise management systems</label>
               <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
@@ -155,7 +154,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="one_expertise">
-            <img src="Expertise2.svg" alt="logo" className="img_expertise" width="100" height="100" />
+            <img src="Expertise2.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
             <div className="one_expertise_content">
               <label className="system_header">Ecommerce & Retail management systems</label>
               <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
@@ -163,7 +162,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="one_expertise">
-            <img src="Expertise3.svg" alt="logo" className="img_expertise" width="100" height="100" />
+            <img src="Expertise3.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
             <div className="one_expertise_content">
               <label className="system_header">Customer-enabling services</label>
               <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
@@ -171,7 +170,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="one_expertise">
-            <img src="Expertise4.svg" alt="logo" className="img_expertise" width="100" height="100" />
+            <img src="Expertise4.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
             <div className="one_expertise_content">
               <label className="system_header1">New business ideas</label>
               <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
@@ -193,26 +192,26 @@ const HomePage = () => {
         </div>
         <div className="techniques_main">
           <div className="techniques_column">
-            <img src="androidStudio 1.svg" alt="android" />
-            <img src="angular 3.svg" alt="angular" />
-            <img src="reactjs 1.svg" alt="reactjs" />
-            <img src="vuejs-ar21 1.svg" alt="vuejs" />
-            <img src="reactive-native.svg" alt="reactive-native" />
+            <img src="androidStudio.svg" alt="android" title="android" width="86" height="55" />
+            <img src="angular.svg" alt="angular" title="angular" width="120" height="55"/>
+            <img src="reactjs.svg" alt="reactjs" title="reactjs" width="124" height="50"/>
+            <img src="vuejs.svg" alt="vuejs" title="vuejs" width="117" height="55"/>
+            <img src="reactive-native.svg" alt="reactive-native" title="reactive-native" width="163" height="55"/>
             <div className="html_css">
-              <img src="js.svg" alt="js" width="39" height="39" />
-              <img src="html.svg" alt="html" width="39" height="39" />
-              <img src="css.svg" alt="css" width="39" height="39" />
+              <img src="js.svg" alt="js" title="js" width="39" height="39" />
+              <img src="html.svg" alt="html" title="html" width="39" height="39" />
+              <img src="css.svg" alt="css" title="css" width="39" height="39" />
             </div>
-            <img src="mongodb.svg" alt="mongodb" />
+            <img src="mongodb.svg" alt="mongodb" title="mongodb"/>
           </div>
           <div className="techniques_column">
-            <img src="php.svg" alt="php" />
-            <img src="django.svg" alt="django" />
-            <img src="nodejs.svg" alt="nodejs" />
-            <img src="mysql.svg" alt="mysql" />
-            <img src="postgres.svg" alt="postgres" />
-            <img src="laravel.svg" alt="laravel" />
-            <img src="magento.svg" alt="magento" />
+            <img src="php.svg" alt="php" title="php" width="89" height="44"/>
+            <img src="django.svg" alt="django" title="django" width="98" height="55"/>
+            <img src="nodejs.svg" alt="nodejs" title="nodejs" width="81" height="49"/>
+            <img src="mysql.svg" alt="mysql" title="mysql" width="99" height="51"/>
+            <img src="postgres.svg" alt="postgres" title="postgres" width="123" height="55"/>
+            <img src="laravel.svg" alt="laravel" title="laravel" width="147" height="54"/>
+            <img src="magento.svg" alt="magento" title="magento" width="122" height="44"/>
           </div>
         </div>
       </div>
@@ -230,11 +229,11 @@ const HomePage = () => {
             <div className="infor_address">Ha Noi City - Development Center</div>
             <label className="address_detail">2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi </label>
             <div className="gmail">
-              <img src="gmail.svg" alt="gmail" />
+              <img src="gmail.svg" alt="gmail" title="gmail" width="74" height="54"/>
               <label>contact@axalize.vn</label>
             </div>
             <div className="phone">
-              <img src="phone.svg" alt="phone" />
+              <img src="phone.svg" alt="phone" title="phone" width="74" height="54"/>
               <label>(+84) 248-585-8389 </label>
             </div>
           </div>
@@ -260,33 +259,33 @@ const HomePage = () => {
                   <div>Service:</div>
                   <div className="service">
                     <input id="check" type="checkbox" className="checkbox" />
-                    <label for="check" className="span"></label>
-                    <label for="check" className="service_content">Mobile App</label>
+                    <label htmlFor="check" className="span"></label>
+                    <label htmlFor="check" className="service_content">Mobile App</label>
                   </div>
                   <div className="service">
                     <input id="check1" type="checkbox" className="checkbox" />
-                    <label for="check1" className="span"></label>
-                    <label for="check1" className="service_content">Web App</label>
+                    <label htmlFor="check1" className="span"></label>
+                    <label htmlFor="check1" className="service_content">Web App</label>
                   </div>
                   <div className="service">
                     <input id="check2" type="checkbox" className="checkbox" />
-                    <label for="check2" className="span"></label>
-                    <label for="check2" className="service_content">UI/UX Design</label>
+                    <label htmlFor="check2" className="span"></label>
+                    <label htmlFor="check2" className="service_content">UI/UX Design</label>
                   </div>
                   <div className="service">
                     <input id="check3" type="checkbox" className="checkbox" />
-                    <label for="check3" className="span"></label>
-                    <label for="check3" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
+                    <label htmlFor="check3" className="span"></label>
+                    <label htmlFor="check3" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
                   </div>
                   <div className="service">
                     <input id="check4" type="checkbox" className="checkbox" />
-                    <label for="check4" className="span"></label>
-                    <label for="check4" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
+                    <label htmlFor="check4" className="span"></label>
+                    <label htmlFor="check4" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
                   </div>
                   <div className="service">
                     <input id="check5" type="checkbox" className="checkbox" />
-                    <label for="check5" className="span"></label>
-                    <label for="check5" className="service_content"><u className="other">Other (please specify)</u></label>
+                    <label htmlFor="check5" className="span"></label>
+                    <label htmlFor="check5" className="service_content"><u className="other">Other (please specify)</u></label>
                   </div>
                 </div>
                 <div className="hr_dahed"></div>
@@ -331,53 +330,13 @@ const HomePage = () => {
                 <textarea className="tell_input" type="text" placeholder="Please write here..." />
               </div>
               <button className="upload">
-                <img src="upload.svg" alt="upload" />
+                <img src="upload.svg" alt="upload" title="upload" width="19" height="19"/>
                 <label>Upload files</label>
               </button>
               <button className="btn_request">Request a Quote</button>
             </div>
           </div>
         </div>
-
-      </div>
-      {/* Footer */}
-      <div className="footer">
-        <div className="footer_main">
-          <div className="contact">
-            <img src="Asset.svg" alt="Axalize" />
-            <div>
-              <img className="footer_img" src="Email_small.svg" alt="email" />
-              <label>Email: contact@axalize.vn</label>
-            </div>
-            <div>
-              <img className="footer_img" src="Phone_small.svg" alt="phone" />
-              <label>Phone: (+84) 248-585-8389 </label>
-            </div>
-            <div className="contact_row">
-              <img className="footer_img" src="Location_small.svg" alt="location" />
-              <label>Location: 2F, 25T2 Building, Nguyen Thi Thap St., Trung Hoa W., Cau Giay Dist., Hanoi </label>
-            </div>
-          </div>
-          <div className="footer_service">
-            <div className="footer_title1">Service</div>
-            <ul className="ul_service">
-              <li>Web application development</li>
-              <li>Mobile app development</li>
-              <li>RPA development</li>
-              <li>Dedicated development teams</li>
-              <li>Offshore development center</li>
-              <li>Lifecycle maintenance</li>
-              <li>DevOps development and operations</li>
-              <li>UI/UX Design</li>
-            </ul>
-          </div>
-          <div>
-            <div className="footer_title2">Map</div>
-            <img src="map.svg" alt="map" />
-          </div>
-        </div>
-        <div className="hr"></div>
-        <div className="copyright">COPYRIGHT © AXALIZE INCORPORATED ALL RIGHTS RESERVED</div>
       </div>
 
       {/* CSS */}
@@ -412,6 +371,7 @@ const HomePage = () => {
                 margin-left:50px;
                 margin-bottom: 50px;
                 width:50%;
+                text-align: justify;
             }
             .header_container{
                 max-width: 1274px;
@@ -510,7 +470,7 @@ const HomePage = () => {
 
             .archivement{
               height: 278px;
-              background: url("../service_bg 1.svg"),#A1ACBB;
+              background: url("../service_bg.svg"),#A1ACBB;
               margin-top: 50px;
             }
             .archivement_container{
@@ -564,10 +524,11 @@ const HomePage = () => {
               justify-content: center;
               height: 690px;
               background: url("../Axalize.svg");
+              background-repeat: no-repeat;
               
             }
             .about_us{
-              background: url("../IMG_0799 1.svg");
+              background: url("../IMG_0799.svg");
               max-width:531px;
               height:673px;
               overflow: hidden;
@@ -634,7 +595,7 @@ const HomePage = () => {
             //----------------------------------
             
             .expertise{
-              background: url("../service_bg 1.svg"),#A1ACBB;
+              background: url("../service_bg.svg"),#A1ACBB;
               height: 850px;
               margin-top: 120px;
             }
@@ -959,67 +920,6 @@ const HomePage = () => {
               border:none;
               cursor:pointer;
             }
-           //footer---------------------------------
-            .footer{
-              background: url("../footer.svg"),#131031;
-              color: #FFFFFF;
-              height: 410px;
-              width:100%;
-              display: flex;
-              flex-direction: column;
-              text-align: center;
-            }
-            .footer_main{
-              display:flex;
-              margin-top:36px;
-              margin-bottom: 61px;
-              text-align: left;
-              justify-content: center;
-            }
-            .footer_service{
-              margin-right:30px;
-            }
-            .footer_title1,.footer_title2{
-              font-size:20px;
-              font-weight: 600;
-              margin-bottom: 21px;
-            }
-            .footer_title2{
-              margin-bottom: 13px;
-            }
-            .ul_service>li{
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 19px;
-              margin-bottom: 8px;
-            }
-            .contact{
-              width: 361px;
-              margin-right: 88px;
-            }
-            .contact>img{
-              margin-bottom: 38px;
-            }
-            .contact>div{
-              margin-bottom :15px;
-            }
-            .contact_row{
-              display:flex;
-              align-items: flex-start; 
-            }
-            .footer_img{
-              margin-right:11px;
-            }
-            .hr{
-              height: 5px;
-              background: #FFF0DE;
-              box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
-            }
-            .copyright{
-              font-size:15px;
-              margin-top: 16px;
-            }
-
             `}
       </style>
     </div>

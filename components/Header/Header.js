@@ -6,19 +6,19 @@ const Header = () => {
     <div className="header">
       <div className="address">
         <div className="address_content">
-        <img src="location_orange.svg" />
+        <img src="location_orange.svg" alt="location" title="location" width="15" height="21"/>
         <label>2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi  </label>
-        <img src="phone_orange.svg" />
+        <img src="phone_orange.svg" alt="phone" title="phone" width="18" height="19"/>
         <label className="phone">1239081239</label>
       </div>
       </div>
       <div className="menu">
         <div className="menu_main">
           <Link href="/"><a className="logo">
-            <img src="logo1.svg" className="img_logo" alt="logo" width={323} height={55} />
+            <img src="logo1.svg" className="img_logo" alt="logo" title="logo" width={323} height={55} />
           </a></Link>
           <div className="menu_content">
-            <Link href="/e"><a>Company <img src="arrow_menu.svg"/></a></Link>
+            <Link href="/e"><a>Company <img src="arrow_menu.svg" alt="arrow" title="arrow" width="11" height="8"/></a></Link>
             <Link href="/service"><a>Service</a></Link>
             <Link href="/b"><a>Expertise</a></Link>
             <Link href="/protfolio"><a>Portfolio</a></Link>
