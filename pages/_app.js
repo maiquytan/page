@@ -26,7 +26,7 @@ function App({
         <link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&display=swap" rel="stylesheet"></link>
+        <link async href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&display=swap" rel="stylesheet"></link>
       </Head>
       <Layout>
         <Component {...pageProps} />
