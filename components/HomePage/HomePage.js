@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import Header from '../Header/Header'
 
@@ -6,6 +5,8 @@ const HomePage = () => {
   return (
     <div className="home">
       <Header />
+
+      {/* Header */}
       <div className="home__header">
         <div className="header_container">
           <div className="title1">Feel your pleasure, find your treasure</div>
@@ -21,6 +22,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      {/* Our Services */}
       <div className="our_services">
         <div className="services_header">
           <label className="item_first">Our services</label>
@@ -29,64 +32,70 @@ const HomePage = () => {
         </div>
         <div className="services_main">
           <div className="services_column">
-            <div>
-              <img src="services1.svg" alt="logo" width="116" height="113" />
+            <div className="services_one">
+              <img src="services1.svg" className="img_services" alt="logo" width="116" height="113" />
               <div className="services_text">Web application development</div>
             </div>
-            <div>
-              <img src="services2.svg" alt="logo" width="116" height="113" />
+            <div className="services_one">
+              <img src="services2.svg" className="img_services" alt="logo" width="116" height="113" />
               <div className="services_text">Mobile app development</div>
             </div>
-            <div>
-              <img src="services3.svg" alt="logo" width="116" height="113" />
+            <div className="services_one">
+              <img src="services3.svg" className="img_services" alt="logo" width="116" height="113" />
               <div className="services_text">RPA development</div>
             </div>
-            <div>
-              <img src="services4.svg" alt="logo" width="116" height="113" />
+            <div className="services_one">
+              <img src="services4.svg" className="img_services" alt="logo" width="116" height="113" />
               <div className="services_text">Dedicated development teams</div>
             </div>
           </div>
           <div className="services_column">
-            <div>
-              <img src="services5.svg" alt="logo" width="116" height="113" />
+            <div className="services_one">
+              <img src="services5.svg" className="img_services" alt="logo" width="116" height="113" />
               <div className="services_text">Offshore development center</div>
             </div>
-            <div>
-              <img src="services6.svg" alt="logo" width="116" height="113" />
+            <div className="services_one">
+              <img src="services6.svg" className="img_services" alt="logo" width="116" height="113" />
               <div className="services_text">Lifecycle maintenance</div>
             </div>
-            <div>
-              <img src="services7.svg" alt="logo" width="116" height="113" />
+            <div className="services_one">
+              <img src="services7.svg" className="img_services" alt="logo" width="116" height="113" />
               <div className="services_text">DevOps development and operations</div>
             </div>
-            <div>
-              <img src="services8.svg" alt="logo" width="116" height="113" />
+            <div className="services_one">
+              <img src="services8.svg" className="img_services" alt="logo" width="116" height="113" />
               <div className="services_text">UI/UX Design</div>
             </div>
           </div>
 
         </div>
       </div>
+
+      {/* Archivement */}
       <div className="archivement">
-        <div className="archivement_content">
-          <label className="item">Archivement</label>
-          <div className="crossbar_left_1"></div>
-          <div className="crossbar_left_2"></div>
-          <img src="medal 1.svg" alt="logo" width="47px" height="47" />
-        </div>
-        <div className="archivement_column">
-          <label className="archivement_number">50+</label>
-          <label>Successful projects</label>
-        </div>
-        <div className="archivement_column">
-          <label className="archivement_number">100+</label>
-          <label>Customers around the world</label>
-        </div>
-        <div className="archivement_column">
-          <label className="archivement_number">99%</label>
-          <label>Repeat rate</label>
+        <div className="archivement_container">
+          <div className="archivement_content">
+            <label className="item">Archivement</label>
+            <div className="crossbar_left_1"></div>
+            <div className="crossbar_left_2"></div>
+            <img src="medal 1.svg" alt="logo" width="47px" height="47" />
+          </div>
+          <div className="archivement_column">
+            <label className="archivement_number">50+</label>
+            <label>Successful projects</label>
+          </div>
+          <div className="archivement_column">
+            <label className="archivement_number">100+</label>
+            <label>Customers around the world</label>
+          </div>
+          <div className="archivement_column">
+            <label className="archivement_number">99%</label>
+            <label>Repeat rate</label>
+          </div>
         </div>
       </div>
+
+      {/* Target */}
       <div className="target">
         <div className="about_us">
           <div className="about_us_bg">
@@ -128,6 +137,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      {/* Expertise */}
       <div className="expertise">
         <div className="expertise_header">
           <label className="item">Expertise</label>
@@ -172,154 +183,164 @@ const HomePage = () => {
 
         </div>
       </div>
+
+      {/* Techniques */}
       <div className="techniques">
         <div className="techniques_header">
           <label className="item">Techniques</label>
           <div className="crossbar1"></div>
           <div className="crossbar2"></div>
         </div>
-        <div className="techniques_column">
-          <img src="androidStudio 1.svg" alt="android" />
-          <img src="angular 3.svg" alt="angular" />
-          <img src="reactjs 1.svg" alt="reactjs" />
-          <img src="vuejs-ar21 1.svg" alt="vuejs" />
-          <img src="reactive-native.svg" alt="reactive-native" />
-          <div className="html_css">
-            <img src="js.svg" alt="js" width="39" height="39" />
-            <img src="html.svg" alt="html" width="39" height="39" />
-            <img src="css.svg" alt="css" width="39" height="39" />
-          </div>
-          <img src="mongodb.svg" alt="mongodb" />
-        </div>
-        <div className="techniques_column">
-          <img src="php.svg" alt="php" />
-          <img src="django.svg" alt="django" />
-          <img src="nodejs.svg" alt="nodejs" />
-          <img src="mysql.svg" alt="mysql" />
-          <img src="postgres.svg" alt="postgres" />
-          <img src="laravel.svg" alt="laravel" />
-          <img src="magento.svg" alt="magento" />
-        </div>
-      </div>
-      <div className="infor_request">
-        <div className="information">
-          <div className="information_header">
-            <label className="item">Information</label>
-            <div className="crossbar_left_1"></div>
-            <div className="crossbar_left_2"></div>
-          </div>
-          <div className="information_content">We welcome friends, partners, and clients to  have conversations with Axalize. Please call us on the phone or drop us an email. We are happy to meet you at our office as well. You are most welcome!</div>
-          <div className="infor_address">Ha Noi City - Development Center</div>
-          <label className="address_detail">2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi </label>
-          <div className="gmail">
-            <img src="gmail.svg" alt="gmail" />
-            <label>contact@axalize.vn</label>
-          </div>
-          <div className="phone">
-            <img src="phone.svg" alt="phone" />
-            <label>(+84) 248-585-8389 </label>
-          </div>
-        </div>
-        <div className="request">
-          <div className="information_header">
-            <label className="item">Quote request</label>
-            <div className="crossbar_left_1"></div>
-            <div className="crossbar_left_2"></div>
-          </div>
-          <div className="request_form">
-            <div className="request_header">Your imformation:</div>
-            <div className="request_input">
-              <input type="text" placeholder="First name" />
-              <input type="text" placeholder="Last name" />
+        <div className="techniques_main">
+          <div className="techniques_column">
+            <img src="androidStudio 1.svg" alt="android" />
+            <img src="angular 3.svg" alt="angular" />
+            <img src="reactjs 1.svg" alt="reactjs" />
+            <img src="vuejs-ar21 1.svg" alt="vuejs" />
+            <img src="reactive-native.svg" alt="reactive-native" />
+            <div className="html_css">
+              <img src="js.svg" alt="js" width="39" height="39" />
+              <img src="html.svg" alt="html" width="39" height="39" />
+              <img src="css.svg" alt="css" width="39" height="39" />
             </div>
-            <div className="request_input">
-              <input type="text" placeholder="Phone number" />
-              <input type="text" placeholder="Your email" />
-            </div>
-            <input className="request_input1" type="text" placeholder="Your company" />
-            <div className="service_budget">
-              <div>
-                <div>Service:</div>
-                <div className="service">
-                  <input id="check" type="checkbox" className="checkbox" />
-                  <label for="check" className="span"></label>
-                  <label for="check" className="service_content">Mobile App</label>
-                </div>
-                <div className="service">
-                  <input id="check1" type="checkbox" className="checkbox" />
-                  <label for="check1" className="span"></label>
-                  <label for="check1" className="service_content">Web App</label>
-                </div>
-                <div className="service">
-                  <input id="check2" type="checkbox" className="checkbox" />
-                  <label for="check2" className="span"></label>
-                  <label for="check2" className="service_content">UI/UX Design</label>
-                </div>
-                <div className="service">
-                  <input id="check3" type="checkbox" className="checkbox" />
-                  <label for="check3" className="span"></label>
-                  <label for="check3" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
-                </div>
-                <div className="service">
-                  <input id="check4" type="checkbox" className="checkbox" />
-                  <label for="check4" className="span"></label>
-                  <label for="check4" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
-                </div>
-                <div className="service">
-                  <input id="check5" type="checkbox" className="checkbox" />
-                  <label for="check5" className="span"></label>
-                  <label for="check5" className="service_content"><u className="other">Other (please specify)</u></label>
-                </div>
-              </div>
-              <div className="hr_dahed"></div>
-              <div>
-                <div>Budget</div>
-                <label className="budget">Below 25k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">25k - 50k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">50k - 100k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">100k - 200k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">200k - 300k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">300k - 400k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">Sky’s the limit
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget"><u className="other">Other (please specify)</u>
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-              </div>
-            </div>
-            <div className="tell_us">
-              <div>Tell us about your project</div>
-              <input className="tell_input" type="text" placeholder="Please write here..."/>
-            </div>
-            <button className="upload">
-              <img src="upload.svg" alt="upload"/>
-              <label>Upload files</label>
-            </button>
-            <button className="btn_request">Request a Quote</button>
+            <img src="mongodb.svg" alt="mongodb" />
+          </div>
+          <div className="techniques_column">
+            <img src="php.svg" alt="php" />
+            <img src="django.svg" alt="django" />
+            <img src="nodejs.svg" alt="nodejs" />
+            <img src="mysql.svg" alt="mysql" />
+            <img src="postgres.svg" alt="postgres" />
+            <img src="laravel.svg" alt="laravel" />
+            <img src="magento.svg" alt="magento" />
           </div>
         </div>
       </div>
+
+      {/* Information - Request */}
+      <div className="infor_request_bg">
+        <div className="infor_request">
+          <div className="information">
+            <div className="information_header">
+              <label className="item">Information</label>
+              <div className="crossbar_left_1"></div>
+              <div className="crossbar_left_2"></div>
+            </div>
+            <div className="information_content">We welcome friends, partners, and clients to  have conversations with Axalize. Please call us on the phone or drop us an email. We are happy to meet you at our office as well. You are most welcome!</div>
+            <div className="infor_address">Ha Noi City - Development Center</div>
+            <label className="address_detail">2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi </label>
+            <div className="gmail">
+              <img src="gmail.svg" alt="gmail" />
+              <label>contact@axalize.vn</label>
+            </div>
+            <div className="phone">
+              <img src="phone.svg" alt="phone" />
+              <label>(+84) 248-585-8389 </label>
+            </div>
+          </div>
+          <div className="request">
+            <div className="information_header">
+              <label className="item">Quote request</label>
+              <div className="crossbar_left_1"></div>
+              <div className="crossbar_left_2"></div>
+            </div>
+            <div className="request_form">
+              <div className="request_header">Your imformation:</div>
+              <div className="request_input">
+                <input type="text" placeholder="First name" />
+                <input type="text" placeholder="Last name" />
+              </div>
+              <div className="request_input">
+                <input type="text" placeholder="Phone number" />
+                <input type="text" placeholder="Your email" />
+              </div>
+              <input className="request_input1" type="text" placeholder="Your company" />
+              <div className="service_budget">
+                <div>
+                  <div>Service:</div>
+                  <div className="service">
+                    <input id="check" type="checkbox" className="checkbox" />
+                    <label for="check" className="span"></label>
+                    <label for="check" className="service_content">Mobile App</label>
+                  </div>
+                  <div className="service">
+                    <input id="check1" type="checkbox" className="checkbox" />
+                    <label for="check1" className="span"></label>
+                    <label for="check1" className="service_content">Web App</label>
+                  </div>
+                  <div className="service">
+                    <input id="check2" type="checkbox" className="checkbox" />
+                    <label for="check2" className="span"></label>
+                    <label for="check2" className="service_content">UI/UX Design</label>
+                  </div>
+                  <div className="service">
+                    <input id="check3" type="checkbox" className="checkbox" />
+                    <label for="check3" className="span"></label>
+                    <label for="check3" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
+                  </div>
+                  <div className="service">
+                    <input id="check4" type="checkbox" className="checkbox" />
+                    <label for="check4" className="span"></label>
+                    <label for="check4" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
+                  </div>
+                  <div className="service">
+                    <input id="check5" type="checkbox" className="checkbox" />
+                    <label for="check5" className="span"></label>
+                    <label for="check5" className="service_content"><u className="other">Other (please specify)</u></label>
+                  </div>
+                </div>
+                <div className="hr_dahed"></div>
+                <div>
+                  <div>Budget</div>
+                  <label className="budget">Below 25k
+                    <input type="radio" name="radio" />
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="budget">25k - 50k
+                    <input type="radio" name="radio" />
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="budget">50k - 100k
+                    <input type="radio" name="radio" />
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="budget">100k - 200k
+                    <input type="radio" name="radio" />
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="budget">200k - 300k
+                    <input type="radio" name="radio" />
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="budget">300k - 400k
+                    <input type="radio" name="radio" />
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="budget">Sky’s the limit
+                    <input type="radio" name="radio" />
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="budget"><u className="other">Other (please specify)</u>
+                    <input type="radio" name="radio" />
+                    <span className="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div className="tell_us">
+                <div>Tell us about your project</div>
+                <textarea className="tell_input" type="text" placeholder="Please write here..." />
+              </div>
+              <button className="upload">
+                <img src="upload.svg" alt="upload" />
+                <label>Upload files</label>
+              </button>
+              <button className="btn_request">Request a Quote</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {/* Footer */}
       <div className="footer">
         <div className="footer_main">
           <div className="contact">
@@ -358,10 +379,13 @@ const HomePage = () => {
         <div className="hr"></div>
         <div className="copyright">COPYRIGHT © AXALIZE INCORPORATED ALL RIGHTS RESERVED</div>
       </div>
+
+      {/* CSS */}
       <style jsx>
         {`
             .home{
               background: #FFFFFF;
+              
             }
             .home__header{
                 height: calc(100vh - 118px);
@@ -369,27 +393,34 @@ const HomePage = () => {
                 display:flex;
                 color: #FFFFFF;
                 background-image: url("../imgheader.png");
+                background-position: center;
             }
             .title1{
                 font-size: 42px;
                 font-weight: 600;
-                margin-top:200px;
+                margin-left:50px;
                 margin-bottom: 35px; 
             }
             .title2{
                 font-size: 28px;
+                font-weight:500;
+                margin-left:50px;
                 margin-bottom: 30px;   
             }
             .title3{
                 font-size:20px;
+                margin-left:50px;
                 margin-bottom: 50px;
                 width:50%;
             }
             .header_container{
-                margin-left: 18.5%;
+                max-width: 1274px;
+                margin:auto;
+                margin-top:205px;
             }
             .header_btn{
                 display:flex;
+                margin-left:50px;
             }
             .header_btn>button{
                 border-radius: 5px;
@@ -412,6 +443,9 @@ const HomePage = () => {
               background: #051024;
               border: 1px solid #051024;
             }
+
+            //our_services----------------------------
+
             .our_services{
               margin-bottom: 45px
             }
@@ -447,7 +481,7 @@ const HomePage = () => {
               margin-bottom: 55px;
             }
             .services_main{
-              width: 66%;
+              max-width: 66%;
               margin : auto;
             }
             .services_column{
@@ -455,32 +489,57 @@ const HomePage = () => {
               justify-content: space-between;
               margin-bottom: 65px;
             }
-            .services_text{
-              width: 200px;   
+            .services_one{
+              width: 25%;
             }
+            .img_services{
+              display: flex;
+              flex-direction: column;
+              margin:auto
+            }
+            .services_text{
+              max-width: 200px;
+              margin:auto;
+              text-align: center;  
+              font-size:18px; 
+              font-weight:600;
+              color: #236B99;
+            }
+
+            //archivement---------------------------
+
             .archivement{
               height: 278px;
-              display: flex;
-              justify-content: center;
               background: url("../service_bg 1.svg"),#A1ACBB;
               margin-top: 50px;
-             
-
+            }
+            .archivement_container{
+              max-width:66%;
+              height:100%;
+              margin: auto;
+              display: flex;
+              justify-content: center;
             }
             .archivement_column,.archivement_content{
               display: flex;
               flex-direction: column;
-              width: 200px;
+              width: 25%;
               text-align: center;
-              margin: 70px 60px;
+              align-items:center;
+              margin-top: 57px;
             }
             .archivement_column{
               font-size:17px;
               font-family: 'Lexend', sans-serif;
+              // margin-bottom: 100px;
             }
-            .archivement_content {
-              text-align:left;
-              margin-top: 80px;
+            .archivement_column>label{
+              max-width:205px;
+            }
+            .archivement_content{
+              align-items:flex-start;
+              margin-top:67px;
+              margin-left:30px;
             }
             .crossbar_left_1{
               margin: 0;
@@ -493,8 +552,9 @@ const HomePage = () => {
             }
             .archivement_number{
               font-size:70px;
-              color: #F2FFFF;
-              text-shadow: 0 0 3px #2F2D77;
+              color: #FFFFFF;
+              text-shadow: 2px 0 #2F2D77, -2px 0 #2F2D77, 0 2px #2F2D77, 0 -2px #2F2D77,
+               1px 1px #2F2D77, -1px -1px #2F2D77, 1px -1px #2F2D77, -1px 1px #2F2D77;
             }
 
             //------------------------------
@@ -502,19 +562,20 @@ const HomePage = () => {
             .target{
               display: flex;
               justify-content: center;
+              height: 690px;
               background: url("../Axalize.svg");
-              background-repeat: no-repeat;
+              
             }
             .about_us{
               background: url("../IMG_0799 1.svg");
-              width:531px;
+              max-width:531px;
               height:673px;
               overflow: hidden;
               margin-top: 70px;
             }
             .about_us_bg{
               background: rgba(0, 0, 0, 0.7);
-              width:532px;
+              max-width:532px;
               height:849px; 
               
             }
@@ -542,6 +603,8 @@ const HomePage = () => {
               margin-left: 42px;
               margin-right: 34px;
               margin-bottom: 18px;
+              font-family: 'Inconsolata', monospace;
+              text-align: justify;
             }
             .target_row{
               display:flex;
@@ -567,30 +630,32 @@ const HomePage = () => {
               width: 566px;
               font-size: 16px;
             }
+            
+            //----------------------------------
+            
             .expertise{
               background: url("../service_bg 1.svg"),#A1ACBB;
               height: 850px;
-              margin-top: 70px;
+              margin-top: 120px;
             }
             .expertise_header{
               text-align: center;
               padding-top: 80px;
             }
 
-            //----------------------------------
             .expertise_main{
               display: flex;
               justify-content: center;
               margin-top: 100px;
+              gap:35px;
             }
             .one_expertise{
               position: relative;
-              margin-right: 35px;
             }
             .one_expertise_content{
               position: relative;
               top:-50px;
-              width:280px;
+              max-width:280px;
               height:400px;
               background: #ffffff;
               box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.17);
@@ -602,7 +667,7 @@ const HomePage = () => {
             .img_expertise{
               z-index: 2;
               position:relative;
-              left: 90px;
+              left: 32%;
             }
             .system_header,.system_header1{
               padding-top: 100px;
@@ -610,7 +675,8 @@ const HomePage = () => {
               font-size: 18px;
               font-weight: 500;
               text-align: center;
-              margin:0 30px; 
+              margin:auto;
+              margin-top:0; 
               margin-bottom: 33px;
             }
             .system_header1{
@@ -630,6 +696,7 @@ const HomePage = () => {
               background: #FFFFFF;
               cursor: pointer;
               font-size: 18px;
+              outline:none;
             }
 
             //----------------------
@@ -640,17 +707,22 @@ const HomePage = () => {
             .techniques_header{
               text-align: center;
             }
+            .techniques_main{
+              max-width: 1280px;
+              margin:auto;
+            }
             .techniques_column{
               display: flex;
               justify-content: center;
               margin-bottom:26px;
+              gap:1.5%;
             }
             .techniques_column>img,.html_css{
-              width:163px;
+              width:13%;
               height: 55px;
               border:1px solid #CCCCCC;
               border-radius: 3px;
-              margin-right:24px;
+              gap:1.5%;
             }
             .html_css{
               display: flex;
@@ -659,14 +731,17 @@ const HomePage = () => {
             }
 
             //--------------------------------------------
-            .infor_request{
-              height:1250px;
+            .infor_request_bg{
               background: url("../ceo_bg.svg");
+              background-position: center;
+              height:1250px;
+            }
+            .infor_request{
               display: flex;
               justify-content: center;
             }
             .information{
-              width: 445px;
+              max-width: 445px;
               margin-right: 72px;
             }
             .information_header{
@@ -702,7 +777,8 @@ const HomePage = () => {
             }
 
             .request_form{
-              width: 670px;
+              max-width: 740px;
+              width:100%;
               height: 1030px;
               background: #FFFFFF;
               border-radius: 10px;
@@ -717,16 +793,19 @@ const HomePage = () => {
             .request_input{
               display:flex;
               justify-content: space-between;
+              gap:2%;
             }
             .request_input>input,.request_input1,.tell_input {
               background: #F3F3F3;
               border-radius: 5px; 
-              width: 300px;
+              width: 48%;
               height: 46px;
               margin-bottom: 21px; 
               border: none;
               outline: none;
-              padding-left: 22px;
+              padding-left: 20px;
+              font-size: 16px;
+              font-family: 'Inter', sans-serif;
             }
             .request_input1{
               width: calc(100% - 22px);
@@ -742,7 +821,7 @@ const HomePage = () => {
             .hr_dahed{
               width:0px;
               height: 320px;
-              margin:35px 15px 0px 60px ;
+              margin:35px 20px 0px 55px ;
               border: 1px dashed #6D6D6D;
             }
             .service{
@@ -750,7 +829,7 @@ const HomePage = () => {
               align-items: left;
               cursor: pointer;
               background-color: #FFFFFF;
-              margin-top: 22px;
+              margin-top: 21px;
               margin-left: 17px;
             }
             .checkbox{
@@ -787,7 +866,7 @@ const HomePage = () => {
             }
             .service_content{
               margin-left: 5px;
-              width:220px;
+              max-width:220px;
             }
 
             //custom radio-----------------------------------
@@ -844,18 +923,18 @@ const HomePage = () => {
            }
            .tell_us{
               margin-top: 37px;
+              font-size: 16px;
            }
            .tell_input{
               margin-top: 16px;
               margin-bottom: 25px;
               width: calc(100% - 22px);
-              height: 117px;
+              height: 100px;
+              padding-top: 17px;
               display: flex;
               align-items: flex-start;
            }
-          //  .tell_input::placeholder{
-
-          //  }
+          
             .upload{
               width:100%;
               height:45px;
@@ -885,6 +964,7 @@ const HomePage = () => {
               background: url("../footer.svg"),#131031;
               color: #FFFFFF;
               height: 410px;
+              width:100%;
               display: flex;
               flex-direction: column;
               text-align: center;
@@ -945,5 +1025,4 @@ const HomePage = () => {
     </div>
   )
 }
-
 export default HomePage

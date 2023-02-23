@@ -2,7 +2,7 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head';
 import Link from 'next/link';
-
+import HomePage from '../components/HomePage/HomePage';
 const Index = () => {
   const router = useRouter()
 
@@ -27,7 +27,7 @@ const Index = () => {
         <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
       </Head>
       <div className="container">
-        {/* Home page */}
+        <HomePage/>
       </div>
       <style jsx>
         {`
