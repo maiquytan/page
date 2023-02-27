@@ -1,19 +1,66 @@
-import React from 'react'
+import React, { useMemo, useState } from 'react'
+import Pagination from '../components/Pagination/Pagination';
+
 
 function Portfolio() {
-  
+  let PageSize = 4;
+  const [currentPage, setCurrentPage] = useState(1);
+  const data = [
+    { title: "MAX", content: "1" },
+    { title: "MAX", content: "2" },
+    { title: "MAX", content: "3" },
+    { title: "MAX", content: "4" },
+    { title: "MAX", content: "5" },
+    { title: "MAX", content: "6" },
+    { title: "MAX", content: "7" },
+    { title: "MAX", content: "8" },
+    { title: "MAX", content: "9" },
+    { title: "MAX", content: "10" },
+    { title: "MAX", content: "11" },
+    { title: "MAX", content: "12" },
+    { title: "MAX", content: "13" },
+    { title: "MAX", content: "14" },
+    { title: "MAX", content: "15" },
+    { title: "MAX", content: "16" },
+    { title: "MAX", content: "17" },
+    { title: "MAX", content: "18" },
+    { title: "MAX", content: "19" },
+    { title: "MAX", content: "20" },
+    { title: "MAX", content: "21" },
+    { title: "MAX", content: "22" },
+    { title: "MAX", content: "23" },
+    { title: "MAX", content: "24" },
+    { title: "MAX", content: "25" },
+    { title: "MAX", content: "26" },
+    { title: "MAX", content: "27" },
+    { title: "MAX", content: "28" },
+    { title: "MAX", content: "29" },
+    { title: "MAX", content: "30" },
+    { title: "MAX", content: "31" },
+    { title: "MAX", content: "32" },
+    { title: "MAX", content: "33" },
+    { title: "MAX", content: "34" },
+    { title: "MAX", content: "35" },
+    { title: "MAX", content: "36" },
+  ]
+  const currentTableData = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    return data.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
+
   return (
     <div className="portfolio">
 
       {/* Header */}
       <div className="bg_header">
-        <img className="img_header" src="img_header.svg" alt="bg_header" title="bg_header" width="1001" height="557"/>
+        <img className="img_header" src="img_header.svg" alt="bg_header" title="bg_header" width="1001" height="557" />
         <div className="portfolio_header">
           <div className="header_title">Our Works</div>
           <div className="header_content">
             <div className="content_left">From Enterprise Management Systems to E-commerce & Retail Management Systems, Customer-enabling Services, and New Business Ideas, our portfolio is a testament to our expertise and the real-world benefits we bring to our clients. Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution.</div>
             <div className="content_right">
-            <img src="Group20.png" alt="img_header" title="img_header" width="761" height="444"/>
+              <img src="Group20.png" alt="img_header" title="img_header" width="761" height="444" />
             </div>
           </div>
         </div>
@@ -62,39 +109,29 @@ function Portfolio() {
           </div>
           <div className="applications_right">
             <div className="applications_row">
-              <div className="illustration">
-                <img src="illustration1.svg" alt="illustration" title="illustration" width="465" height="244" />
-                <div>Marcos- StarcatXR</div>
-                <label>Website</label>
-              </div>
-              <div className="illustration">
-                <img src="illustration2.svg" alt="illustration" title="illustration" width="465" height="244" />
-                <div>Nistone- Loan</div>
-                <label>Phone Application</label>
-              </div>
-            </div>
-            <div className="applications_row">
-              <div className="illustration">
-                <img src="illustration3.svg" alt="illustration" title="illustration" width="465" height="244" />
-                <div>Nistone- Loan</div>
-                <label>Phone Application</label>
-              </div>
-              <div className="illustration">
-                <img src="illustration1.svg" alt="illustration" title="illustration" width="465" height="244" />
-                <div>Marcos- StarcatXR</div>
-                <label>Website</label>
-              </div>
+              {currentTableData.map(item => {
+                return (
+                  <div className="illustration">
+                    <img src="illustration1.svg" alt="illustration" title="illustration" width="465" height="244" />
+                    <div>{item.title}</div>
+                    <label>{item.content}</label>
+                  </div>
+
+                );
+              })}
             </div>
           </div>
+          {/* </div> */}
+          {/* </div> */}
         </div>
         <div className="paging">
-          <button><img src="arrow_left.svg" alt="arrow_left" title="arrow_left" width="9" height="12"/></button>
-          <button>1</button>
-          <button>2</button>
-          <button>...</button>
-          <button>9</button>
-          <button>10</button>
-          <button><img src="arrow_right.svg" alt="arrow_right" title="arrow_right" width="9" height="12"/></button>
+          <Pagination
+            className="pagination-bar"
+            currentPage={currentPage}
+            totalCount={data.length}
+            pageSize={PageSize}
+            onPageChange={page => setCurrentPage(page)}
+          />
         </div>
       </div>
 
@@ -154,25 +191,25 @@ function Portfolio() {
         <div className="techniques_main">
           <div className="techniques_column">
             <img src="androidStudio.svg" alt="android" title="android" width="86" height="55" />
-            <img src="angular.svg" alt="angular" title="angular" width="120" height="55"/>
-            <img src="reactjs.svg" alt="reactjs" title="reactjs" width="124" height="50"/>
-            <img src="vuejs.svg" alt="vuejs" title="vuejs" width="117" height="55"/>
-            <img src="reactive-native.svg" alt="reactive-native" title="reactive-native" width="163" height="55"/>
+            <img src="angular.svg" alt="angular" title="angular" width="120" height="55" />
+            <img src="reactjs.svg" alt="reactjs" title="reactjs" width="124" height="50" />
+            <img src="vuejs.svg" alt="vuejs" title="vuejs" width="117" height="55" />
+            <img src="reactive-native.svg" alt="reactive-native" title="reactive-native" width="163" height="55" />
             <div className="html_css">
               <img src="js.svg" alt="js" title="js" width="39" height="39" />
               <img src="html.svg" alt="html" title="html" width="39" height="39" />
               <img src="css.svg" alt="css" title="css" width="39" height="39" />
             </div>
-            <img src="mongodb.svg" alt="mongodb" title="mongodb"/>
+            <img src="mongodb.svg" alt="mongodb" title="mongodb" />
           </div>
           <div className="techniques_column">
-            <img src="php.svg" alt="php" title="php" width="89" height="44"/>
-            <img src="django.svg" alt="django" title="django" width="98" height="55"/>
-            <img src="nodejs.svg" alt="nodejs" title="nodejs" width="81" height="49"/>
-            <img src="mysql.svg" alt="mysql" title="mysql" width="99" height="51"/>
-            <img src="postgres.svg" alt="postgres" title="postgres" width="123" height="55"/>
-            <img src="laravel.svg" alt="laravel" title="laravel" width="147" height="54"/>
-            <img src="magento.svg" alt="magento" title="magento" width="122" height="44"/>
+            <img src="php.svg" alt="php" title="php" width="89" height="44" />
+            <img src="django.svg" alt="django" title="django" width="98" height="55" />
+            <img src="nodejs.svg" alt="nodejs" title="nodejs" width="81" height="49" />
+            <img src="mysql.svg" alt="mysql" title="mysql" width="99" height="51" />
+            <img src="postgres.svg" alt="postgres" title="postgres" width="123" height="55" />
+            <img src="laravel.svg" alt="laravel" title="laravel" width="147" height="54" />
+            <img src="magento.svg" alt="magento" title="magento" width="122" height="44" />
           </div>
         </div>
       </div>
@@ -190,11 +227,11 @@ function Portfolio() {
             <div className="infor_address">Ha Noi City - Development Center</div>
             <label className="address_detail">2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi </label>
             <div className="gmail">
-              <img src="gmail.svg" alt="gmail" title="gmail" width="74" height="54"/>
+              <img src="gmail.svg" alt="gmail" title="gmail" width="74" height="54" />
               <label>contact@axalize.vn</label>
             </div>
             <div className="phone">
-              <img src="phone.svg" alt="phone" title="phone" width="74" height="54"/>
+              <img src="phone.svg" alt="phone" title="phone" width="74" height="54" />
               <label>(+84) 248-585-8389 </label>
             </div>
           </div>
@@ -291,7 +328,7 @@ function Portfolio() {
                 <textarea className="tell_input" type="text" placeholder="Please write here..." />
               </div>
               <button className="upload">
-                <img src="upload.svg" alt="upload" title="upload" width="19" height="19"/>
+                <img src="upload.svg" alt="upload" title="upload" width="19" height="19" />
                 <label>Upload files</label>
               </button>
               <button className="btn_request">Request a Quote</button>
@@ -470,19 +507,23 @@ function Portfolio() {
             margin-bottom: 13px;
             cursor: pointer;
           }
+          .applications_right{
+            display:flex;
+            max-width:960px;
+          }
           .illustration{
             height: 310px;
-            max-width: 50%;
             background: #F0F0F0;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
             overflow: hidden;
-            
           }
           .applications_row{
             display:flex;
+            flex-wrap:wrap;
             margin-bottom:44px;
             gap: 27px;
+            width:100%;
           }
           .illustration>img{
             max-width: 100%;
