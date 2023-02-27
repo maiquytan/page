@@ -226,7 +226,9 @@ const Index = () => {
                   <img src="html.svg" alt="html" title="html" width="39" height="39" />
                   <img src="css.svg" alt="css" title="css" width="39" height="39" />
                 </div>
-                <img src="mongodb.svg" alt="mongodb" title="mongodb" />
+
+                <img src="mongodb.svg" alt="mongodb" title="mongodb" width="124" height="37" />
+
               </div>
               <div className="techniques_column">
                 <img src="php.svg" alt="php" title="php" width="89" height="44" />
