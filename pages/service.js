@@ -13,7 +13,7 @@ const Service = () => {
           <div className="header_content">
             <div className="header_left">At Axalize Incorporated, we are dedicated to providing top-notch IT outsourcing and offshore services that meet the unique needs of our clients. Our services are designed to support businesses in a wide range of industries, and we work closely with each of our clients to ensure that their IT needs are met.</div>
             <div className="header_right">
-              <img src="Group22.png" alt="img_header" title="img_header" width="761" height="444" />
+              <img src="Group22.webp" alt="img_header" title="img_header" width="761" height="444" />
             </div>
           </div>
         </div>
