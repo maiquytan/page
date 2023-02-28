@@ -1,9 +1,8 @@
 import React, { useMemo, useState } from 'react'
 import Pagination from '../components/Pagination/Pagination';
-
+import { PageSize } from '../components/constants/constants';
 
 function Portfolio() {
-  let PageSize = 4;
   const [currentPage, setCurrentPage] = useState(1);
   const data = [
     { title: "MAX", content: "1" },
