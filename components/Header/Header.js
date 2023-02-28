@@ -21,7 +21,7 @@ const Header = () => {
             <Link href="/e"><a>Company <img src="arrow_menu.svg" alt="arrow" title="arrow" width="11" height="8"/></a></Link>
             <Link href="/service"><a>Service</a></Link>
             <Link href="/b"><a>Expertise</a></Link>
-            <Link href="/protfolio"><a>Portfolio</a></Link>
+            <Link href="/portfolio"><a>Portfolio</a></Link>
             <Link href="/d"><a>Contact</a></Link>
           </div>
         </div>
@@ -93,4 +93,5 @@ const Header = () => {
 
   )
 }
+
 export default Header
