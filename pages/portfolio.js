@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react'
 import Pagination from '../components/Pagination/Pagination';
 import { PageSize } from '../constants';
 
-function Portfolio() {
+const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const data = [
     { title: "MAX", content: "1" },

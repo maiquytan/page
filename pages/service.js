@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Service() {
+const Service = () => {
   return (
     <div className="service">
       <h1 className="h1"> ** Service screen ** </h1>
@@ -56,7 +56,7 @@ function Service() {
         </div>
         <div className="services_row">
           <div className="service_img">
-            <img className="rpa" src="RPA.svg" alt="RPA" title="RPA" width="419" height="301" />
+            <img className="margin_img" src="RPA.svg" alt="RPA" title="RPA" width="419" height="301" />
           </div>
           <div className="content_right">
             <div className="services_title">RPA development</div>
@@ -71,7 +71,7 @@ function Service() {
               Quality and collaboration are at the core of our dedicated development teams. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to provide a flexible and cost-effective solution that meets the specific needs of your business.</div>
           </div>
           <div className="service_img">
-            <img src="dedicated_teams.svg" className="dedicated_teams" alt="dedicated_teams" title="dedicated_teams" width="419" height="301" />
+            <img src="dedicated_teams.svg" className="margin_img" alt="dedicated_teams" title="dedicated_teams" width="419" height="301" />
           </div>
         </div>
         <div className="services_row">
@@ -96,7 +96,7 @@ function Service() {
         </div>
         <div className="services_row">
           <div className="service_img">
-            <img src="devops.svg" alt="devops" className="devops" title="devops" width="419" height="419" />
+            <img src="devops.svg" alt="devops" className="margin_img" title="devops" width="419" height="419" />
           </div>
           <div className="content_right">
             <div className="services_title">DevOps development and operations</div>
@@ -111,7 +111,7 @@ function Service() {
               Quality and collaboration are key to our UI/UX design services. We understand the importance of working closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a digital experience that is not only functional but also engaging, driving business growth and customer satisfaction.</div>
           </div>
           <div className="service_img">
-            <img src="UI_UX.svg" className="ui_ux" alt="UI_UX" title="UI_UX" width="419" height="419" />
+            <img src="UI_UX.svg" className="margin_img" alt="UI_UX" title="UI_UX" width="419" height="419" />
           </div>
         </div>
       </div>
@@ -401,7 +401,7 @@ function Service() {
           margin-left:100px;
           margin-right:66px;
         }
-        .rpa ,.dedicated_teams,.devops,.ui_ux {
+        .margin_img{
           margin-top: 20px;
         }
         .offshore_center{
