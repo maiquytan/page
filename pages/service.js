@@ -313,7 +313,7 @@ const Service = () => {
         //Mobile_web----------------------------
         .bg_mobile_web{
           background: url("../bg_mobile_web.webp");
-          background-repeat: no-repeat;
+          background-size:cover;
           width: 66%;
           margin:auto;
           border-radius: 15px;
@@ -411,7 +411,8 @@ const Service = () => {
 
         //--------------------------------------------
         .infor_request_bg{
-          background: url("../ceo_bg.svg");
+          background: url("../ceo_bg.webp");
+          background-size:cover;
           background-position: center;
           background-repeat: no-repeat;
           height:1250px;

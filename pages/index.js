@@ -502,6 +502,7 @@ const Index = () => {
             .archivement{
               height: 278px;
               background: url("../service_bg.svg"),#A1ACBB;
+              background-size: cover;
               margin-top: 50px;
             }
             .archivement_container{
@@ -553,12 +554,14 @@ const Index = () => {
             .target{
               display: flex;
               justify-content: center;
-              height: 690px;
-              background: url("../Axalize.svg");
+              height: 730px;
+              background: url("../Axalize.webp");
+              background-size: contain;
               background-repeat: no-repeat;
             }
             .about_us{
-              background: url("../IMG_0799.svg");
+              background: url("../IMG_0799.webp");
+              background-size: cover;
               max-width:531px;
               height:673px;
               overflow: hidden;
@@ -722,7 +725,8 @@ const Index = () => {
 
             //--------------------------------------------
             .infor_request_bg{
-              background: url("../ceo_bg.svg");
+              background: url("../ceo_bg.webp");
+              background-size:cover;
               background-position: center;
               height:1250px;
             }

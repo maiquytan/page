@@ -659,7 +659,8 @@ const Portfolio = () => {
 
           //--------------------------------------------
           .infor_request_bg{
-            background: url("../ceo_bg.svg");
+            background: url("../ceo_bg.webp");
+            background-size:cover;
             background-position: center;
             height:1250px;
             width:100%;
