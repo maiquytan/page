@@ -50,7 +50,7 @@ function Portfolio() {
 
   return (
     <div className="portfolio">
-
+      <h1 className="h1"> ** Portfolio screen ** </h1>
       {/* Header */}
       <div className="bg_header">
         <img className="img_header" src="img_header.svg" alt="bg_header" title="bg_header" width="1001" height="557" />
@@ -199,7 +199,7 @@ function Portfolio() {
               <img src="html.svg" alt="html" title="html" width="39" height="39" />
               <img src="css.svg" alt="css" title="css" width="39" height="39" />
             </div>
-            <img src="mongodb.svg" alt="mongodb" title="mongodb" />
+            <img src="mongodb.svg" alt="mongodb" title="mongodb" width="124" height="37"/>
           </div>
           <div className="techniques_column">
             <img src="php.svg" alt="php" title="php" width="89" height="44" />
@@ -341,6 +341,9 @@ function Portfolio() {
           .portfolio{
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
+          }
+          .h1{
+            display:none;
           }
           .bg_header{
             position: relative;

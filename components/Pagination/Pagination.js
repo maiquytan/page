@@ -1,5 +1,4 @@
-import React from 'react';
-import classnames from 'classnames';
+import React, { useState } from 'react';
 import { usePagination, DOTS } from './usePagination';
 
 const Pagination = props => {
@@ -32,54 +31,39 @@ const Pagination = props => {
   };
 
   let lastPage = paginationRange[paginationRange.length - 1];
+
   return (
-    <ul
-      className={classnames('pagination-container', { [className]: className })}
-    >
-       {/* Left navigation arrow */}
-      <li
-        className={classnames('pagination-item', {
-          disabled: currentPage === 1
-        })}
-        onClick={onPrevious}
-      >
-        <div className="arrow left" />
+    <ul className={'pagination-container'}>
+      <li className={currentPage === 1 ? 'disabled' : 'pagination-item'} onClick={onPrevious}>
+        <div className="arrow">
+          <img src="arrow_left.svg" alt="arrow_left" title="arrow_left" width="9" height="12" />
+        </div>
       </li>
       {paginationRange.map(pageNumber => {
-         
-        // If the pageItem is a DOT, render the DOTS unicode character
         if (pageNumber === DOTS) {
           return <li className="pagination-item_dots">&#8230;</li>;
         }
-		
-        // Render our Page Pills
+
         return (
-          <li
-            className={classnames('pagination-item', {
-              selected: pageNumber === currentPage
-            })}
-            onClick={() => onPageChange(pageNumber)}
-          >
+          <li className={pageNumber === currentPage ? 'selected' : 'pagination-item'} onClick={() => onPageChange(pageNumber)}>
             {pageNumber}
           </li>
         );
       })}
-      {/*  Right Navigation arrow */}
-      <li
-        className={classnames('pagination-item', {
-          disabled: currentPage === lastPage
-        })}
-        onClick={onNext}
-      >
-        <div className="arrow right" />
+
+      <li className={currentPage === lastPage ? 'disabled' : 'pagination-item'} onClick={onNext}>
+        <div className="arrow">
+          <img src="arrow_right.svg" alt="arrow_right" title="arrow_right" width="9" height="12" />
+        </div>
       </li>
+
       <style>
         {`
         .pagination-container {
             display: flex;
             list-style-type: none;
         }
-        .pagination-item,.pagination-item_dots {
+        .pagination-item,.pagination-item_dots,.selected,.disabled {
             display:flex;
             justify-content:center;
             align-items: center;
@@ -107,31 +91,18 @@ const Pagination = props => {
             background-color: rgba(0, 0, 0, 0.04);
             cursor: pointer;
         }
-          
         .selected {
             color:#FC721E;
             border: 1px solid #FC721E;
         }
-          
         .arrow::before {
-            position: relative;
-            content: '';  
-            display: inline-block;
-            width: 0.4em;
-            height: 0.4em;
+            position: relative;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-right: 0.12em solid rgba(0, 0, 0, 0.87);
             border-top: 0.12em solid rgba(0, 0, 0, 0.87);
-        }
-          
-        .left {
-            transform: rotate(-135deg) translate(-50%);
-        }
-          
-        .right {
-            transform: rotate(45deg);
-        }
-              
-          
+        }     
         .disabled {
             pointer-events: none;
             background: #919EAB;
@@ -141,13 +112,10 @@ const Pagination = props => {
             border-right: 0.12em solid rgba(0, 0, 0, 0.43);
             border-top: 0.12em solid rgba(0, 0, 0, 0.43);
         }
-          
         .arrow:hover {
             background-color: transparent;
             cursor: default;
-        }
-            
-          
+        }  
         `}
       </style>
     </ul>
