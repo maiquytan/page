@@ -272,7 +272,7 @@ const Service = () => {
           z-index:2;
         }
         .header_title{
-          background-image: url("../Ellipse.svg");
+          background-image: url("../ellipse.svg");
           width: 350px;
           height: 103px;
           font-size: 43px;
@@ -312,7 +312,8 @@ const Service = () => {
 
         //Mobile_web----------------------------
         .bg_mobile_web{
-          background: url("../bg_mobile_web.png");
+          background: url("../bg_mobile_web.webp");
+          background-repeat: no-repeat;
           width: 66%;
           margin:auto;
           border-radius: 15px;
@@ -408,20 +409,11 @@ const Service = () => {
           margin-top: 40px;
         }
 
-        //Procedure----------------------------
-        .procedure{
-          background: url("../service_bg 1.svg"),#A1ACBB;
-          height: 1000px;
-          display: flex;
-          justify-content:center;
-          align-items:center;
-          margin-top:200px;
-        }
-
         //--------------------------------------------
         .infor_request_bg{
           background: url("../ceo_bg.svg");
           background-position: center;
+          background-repeat: no-repeat;
           height:1250px;
         }
         .infor_request{

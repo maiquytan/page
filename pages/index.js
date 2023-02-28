@@ -383,7 +383,7 @@ const Index = () => {
               margin-top: 118px;
               display:flex;
               color: #FFFFFF;
-              background-image: url("../imgheader.png");
+              background-image: url("../imgheader.webp");
               background-position: center;
             }
             .title1{
