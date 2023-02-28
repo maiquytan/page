@@ -407,7 +407,6 @@ function Portfolio() {
             max-width:100%;
           }
 
-
           //archivement---------------------------
 
           .archivement{
@@ -850,15 +849,15 @@ function Portfolio() {
             height: 8px;
             border-radius: 50%;
             background: white;
-         }
-         .other{
+          }
+          .other{
             color: #A6A6A6
-         }
-         .tell_us{
+          }
+          .tell_us{
             margin-top: 37px;
             font-size: 16px;
-         }
-         .tell_input{
+          }
+          .tell_input{
             margin-top: 16px;
             margin-bottom: 25px;
             width: calc(100% - 22px);
@@ -866,7 +865,7 @@ function Portfolio() {
             padding-top: 17px;
             display: flex;
             align-items: flex-start;
-         }
+          }
         
           .upload{
             width:100%;

@@ -370,7 +370,7 @@ const Index = () => {
         <style jsx>
           {`
             .container {
-            width: 100%;
+              width: 100%;
             }
             .home{
               background: #FFFFFF;
@@ -379,57 +379,56 @@ const Index = () => {
               display:none;
             }
             .home__header{
-                height: calc(100vh - 118px);
-                margin-top: 118px;
-                display:flex;
-                color: #FFFFFF;
-                background-image: url("../imgheader.png");
-                background-position: center;
+              height: calc(100vh - 118px);
+              margin-top: 118px;
+              display:flex;
+              color: #FFFFFF;
+              background-image: url("../imgheader.png");
+              background-position: center;
             }
             .title1{
-                font-size: 42px;
-                font-weight: 600;
-                margin-left:50px;
-                margin-bottom: 35px; 
+              font-size: 42px;
+              font-weight: 600;
+              margin-left:50px;
+              margin-bottom: 35px; 
             }
             .title2{
-                font-size: 28px;
-                font-weight:500;
-                margin-left:50px;
-                margin-bottom: 30px;   
+              font-size: 28px;
+              font-weight:500;
+              margin-left:50px;
+              margin-bottom: 30px;   
             }
             .title3{
-                font-size:20px;
-                margin-left:50px;
-                margin-bottom: 50px;
-                width:50%;
-                text-align: justify;
+              font-size:20px;
+              margin-left:50px;
+              margin-bottom: 50px;
+              width:50%;
+              text-align: justify;
             }
             .header_container{
-                max-width: 1274px;
-                margin:auto;
-                margin-top:205px;
+              max-width: 1274px;
+              margin:auto;
+              margin-top:205px;
             }
             .header_btn{
-                display:flex;
-                margin-left:50px;
+              display:flex;
+              margin-left:50px;
             }
             .header_btn>button{
-                border-radius: 5px;
-                height: 46px;
-                width: 188px;
-                display: flex;
-                justify-content:center;
-                align-items: center;
-                outline:none;
-                color: #FFFFFF;
-                font-size: 1.25rem;
+              border-radius: 5px;
+              height: 46px;
+              width: 188px;
+              display: flex;
+              justify-content:center;
+              align-items: center;
+              outline:none;
+              color: #FFFFFF;
+              font-size: 1.25rem;
             }
             .btn_contact{
-                background: #BA4F13;
-                margin-right:18px;
-                border: 1px solid #BA4F13;
-                
+              background: #BA4F13;
+              margin-right:18px;
+              border: 1px solid #BA4F13;        
             }
             .btn_learn{
               background: #051024;
@@ -557,7 +556,6 @@ const Index = () => {
               height: 690px;
               background: url("../Axalize.svg");
               background-repeat: no-repeat;
-              
             }
             .about_us{
               background: url("../IMG_0799.svg");
@@ -570,7 +568,6 @@ const Index = () => {
               background: rgba(0, 0, 0, 0.7);
               max-width:532px;
               height:849px; 
-              
             }
             .about_us_header{
               color: #FFFFFF;
@@ -910,15 +907,15 @@ const Index = () => {
               height: 8px;
               border-radius: 50%;
               background: white;
-          }
-          .other{
+            }
+            .other{
               color: #A6A6A6
-          }
-          .tell_us{
+            }
+            .tell_us{
               margin-top: 37px;
               font-size: 16px;
-          }
-          .tell_input{
+            }
+            .tell_input{
               margin-top: 16px;
               margin-bottom: 25px;
               width: calc(100% - 22px);
@@ -926,8 +923,8 @@ const Index = () => {
               padding-top: 17px;
               display: flex;
               align-items: flex-start;
-          }
-          
+            }
+            
             .upload{
               width:100%;
               height:45px;
@@ -939,7 +936,7 @@ const Index = () => {
               cursor:pointer;
             }
             .upload>img{
-              margin-left:25px;
+              margin-left:25px;              
               margin-right:9px;
             }
             .btn_request{
