@@ -91,7 +91,7 @@ const Service = () => {
               At Axalize Incorporated, we understand that quality and collaboration are key to effective lifecycle maintenance. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you keep your IT systems running smoothly, so you can focus on growing your business</div>
           </div >
           <div className="service_img">
-            <img src="lifecycle.svg" alt="lifecycle" title="lifecycle" width="419" height="419" />
+            <img src="Lifecycle.svg" alt="lifecycle" title="lifecycle" width="419" height="419" />
           </div>
         </div>
         <div className="services_row">
