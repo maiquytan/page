@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import Pagination from '../components/Pagination/Pagination';
-import { PageSize } from '../components/constants/constants';
+import { PageSize } from '../constants';
 
 function Portfolio() {
   const [currentPage, setCurrentPage] = useState(1);
