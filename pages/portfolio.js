@@ -134,51 +134,6 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* Expertise */}
-      <div className="expertise">
-        <div className="expertise_header">
-          <label className="item">Expertise</label>
-          <div className="crossbar1"></div>
-          <div className="crossbar2"></div>
-        </div>
-        <div className="expertise_main">
-          <div className="one_expertise">
-            <img src="Expertise1.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
-            <div className="one_expertise_content">
-              <label className="system_header">Enterprise management systems</label>
-              <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
-              <button className="system_button">See more</button>
-            </div>
-          </div>
-          <div className="one_expertise">
-            <img src="Expertise2.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
-            <div className="one_expertise_content">
-              <label className="system_header">Ecommerce & Retail management systems</label>
-              <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
-              <button className="system_button">See more</button>
-            </div>
-          </div>
-          <div className="one_expertise">
-            <img src="Expertise3.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
-            <div className="one_expertise_content">
-              <label className="system_header">Customer-enabling services</label>
-              <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
-              <button className="system_button">See more</button>
-            </div>
-          </div>
-          <div className="one_expertise">
-            <img src="Expertise4.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
-            <div className="one_expertise_content">
-              <label className="system_header1">New business ideas</label>
-              <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
-              <button className="system_button">See more</button>
-            </div>
-          </div>
-        </div>
-        <div>
-
-        </div>
-      </div>
 
       {/* Techniques */}
       <div className="techniques">
@@ -199,7 +154,7 @@ const Portfolio = () => {
               <img src="html.svg" alt="html" title="html" width="39" height="39" />
               <img src="css.svg" alt="css" title="css" width="39" height="39" />
             </div>
-            <img src="mongodb.svg" alt="mongodb" title="mongodb" width="124" height="37"/>
+            <img src="mongodb.svg" alt="mongodb" title="mongodb" width="124" height="37" />
           </div>
           <div className="techniques_column">
             <img src="php.svg" alt="php" title="php" width="89" height="44" />
@@ -213,7 +168,7 @@ const Portfolio = () => {
         </div>
       </div>
 
-      
+
 
       <style jsx>
         {`
@@ -329,7 +284,6 @@ const Portfolio = () => {
           .archivement_column{
             font-size:17px;
             font-family: 'Lexend', sans-serif;
-            // margin-bottom: 100px;
           }
           .archivement_column>label{
             max-width:205px;
@@ -338,6 +292,8 @@ const Portfolio = () => {
             align-items:flex-start;
             margin-top:67px;
             margin-left:30px;
+            width:20%;
+            padding-left:5%;
           }
           .crossbar_left_1{
             margin: 0;
@@ -368,7 +324,9 @@ const Portfolio = () => {
           }
           .applications_header{
             display:flex;
-            justify-content: center;
+            width: 1260px;
+            margin :auto;
+            margin-bottom:30px;
           }
           .applications_list{
             display: flex;
@@ -386,10 +344,11 @@ const Portfolio = () => {
           }
           .applications_right{
             display:flex;
-            max-width:960px;
+            width:76%;
           }
           .illustration{
             height: 310px;
+            width:49%;
             background: #F0F0F0;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
@@ -398,13 +357,12 @@ const Portfolio = () => {
           .applications_row{
             display:flex;
             flex-wrap:wrap;
-            margin-bottom:44px;
-            gap: 27px;
+            gap: 2%;
             width:100%;
           }
           .illustration>img{
-            max-width: 100%;
-            max-height: 100%;
+            width: 100%;
+            height: auto;
           }
           .illustration>div{
             font-weight: 500;
@@ -433,79 +391,10 @@ const Portfolio = () => {
             cursor: pointer;
           }
 
-          
-          //----------------------------------
-            
-          .expertise{
-            background: url("../service_bg.svg"),#A1ACBB;
-            height: 850px;
-            margin-top: 120px;
-          }
-          .expertise_header{
-            text-align: center;
-            padding-top: 80px;
-          }
-
-          .expertise_main{
-            display: flex;
-            justify-content: center;
-            margin-top: 100px;
-            gap:35px;
-          }
-          .one_expertise{
-            position: relative;
-          }
-          .one_expertise_content{
-            position: relative;
-            top:-50px;
-            max-width:280px;
-            height:400px;
-            background: #ffffff;
-            box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.17);
-            border-radius: 10px;
-            z-index: 1;
-            display:flex;
-            flex-direction: column;
-          }
-          .img_expertise{
-            z-index: 2;
-            position:relative;
-            left: 32%;
-          }
-          .system_header,.system_header1{
-            padding-top: 100px;
-            width: 220px;
-            font-size: 18px;
-            font-weight: 500;
-            text-align: center;
-            margin:auto;
-            margin-top:0; 
-            margin-bottom: 33px;
-          }
-          .system_header1{
-            margin-bottom: 54px;
-          }
-          .system_content{
-            margin:0 30px; 
-            margin-bottom: 46px;
-            color: #808080;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 18px;
-          }
-          .system_button{
-            border: none;
-            color:#1667B2; 
-            background: #FFFFFF;
-            cursor: pointer;
-            font-size: 18px;
-            outline:none;
-          }
-
           //----------------------
           .techniques{
             height: 400px;
-            margin-top:10px;
+            margin-top:150px;
           }
           .techniques_header{
             text-align: center;

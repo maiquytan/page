@@ -126,36 +126,42 @@ const Index = () => {
                 <div className="crossbar1"></div>
                 <div className="crossbar2"></div>
                 <div className="introduce_header">Origin of <label className="text_color">Axalize</label>: A coined word combining <label className="text_color">Axia</label> (value) + <label className="text_color">Actualize</label> (realize)</div>
-                <div className="introduce_content">Axalize is a top-ranked provider of offshore software development services, offering a wide range of solutions to meet the unique needs of businesses worldwide. With a focus on quality, collaboration, and innovation, our team of dedicated professionals leverages deep expertise and technical prowess to deliver results that drive real business value. From enterprise management systems to mobile app development and everything in between, we are committed to helping our clients succeed in the digital age.</div>
-                <div className="introduce_content">We take a customer-centered approach to business, ensuring that our clients' goals and values are always at the forefront of everything we do. With a track record of success on over 50 offshore outsourcing software development projects, our clients trust us to deliver quality outcomes, on-time and on-budget.
+                <div className="introduce_content">Welcome to Axalize Incorporated, a provider of top-notch IT outsourcing and offshore services. Our team of experts is dedicated to delivering high-quality solutions through collaboration and close partnerships with our clients.</div>
+                <div className="introduce_content">We understand that outsourcing IT requires a tailored approach. That's why we listen to your needs and goals, and work with you every step of the way to ensure success. From software development to digital transformation, trust us to support your business.
                 </div>
+                <div className="introduce_content">Our goal is to deliver exceptional value and outstanding services. Let us show you how collaboration and quality can make a difference for your business.
+                </div>
+                <div className="introduce_content">
+                  <Link href="/about"><a className="contact">Contact us </a></Link>
+                  <label>today to learn more!</label>
+                </div>
+                
               </div>
             </div>
             <div className="mission_vision">
               <div className="target_row">
                 <img src="icons8.svg" alt="mission" title="mission" width="61" height="61" />
                 <div className="mission">
-                  <label className="mission_header">Misson</label>
-                  <label className="mission_content">Utilizing cutting-edge technology, we will realize the optimal "Axia (value)" for each individual by the best means.</label>
+                  <div className="mission_header">Mission</div>
+                  <label className="mission_content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
                 </div>
               </div>
               <div className="target_row">
                 <img src="icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
                 <div className="mission">
-                  <label className="mission_header">Vision</label>
-                  <label className="mission_content">We will become a leading company that creates unique value and innovation on the earth while putting the "happiness" of all Axalize members first.</label>
+                  <div className="mission_header">Vision</div>
+                  <label className="mission_content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
                 </div>
               </div>
               <div className="target_row">
                 <img src="icons8-tree.svg" alt="core_value" title="core_value" width="61" height="61" />
                 <div className="mission">
-                  <label className="mission_header">Core value</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> To pursue the mission thoroughly.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Have the ability to take action for change.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Respect each person's individuality.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> The team should share values and aim for the same goals.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> A deep understanding of customer value.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Never be bound by boundaries.</label>
+                  <div className="mission_header">Core value</div>
+                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</label>
+                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
+                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
+                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
+                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
                 </div>
               </div>
             </div>
@@ -262,6 +268,8 @@ const Index = () => {
               color: #FFFFFF;
               background-image: url("../imgheader.webp");
               background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
             }
             .title1{
               font-size: 42px;
@@ -409,6 +417,8 @@ const Index = () => {
               align-items:flex-start;
               margin-top:67px;
               margin-left:30px;
+              width:20%;
+              padding-left:5%;
             }
             .crossbar_left_1{
               margin: 0;
@@ -443,11 +453,13 @@ const Index = () => {
               height:673px;
               overflow: hidden;
               margin-top: 70px;
+              border-radius: 5px;
             }
             .about_us_bg{
               background: rgba(0, 0, 0, 0.7);
               max-width:532px;
               height:849px; 
+              border-radius: 5px;
             }
             .about_us_header{
               color: #FFFFFF;
@@ -456,6 +468,11 @@ const Index = () => {
               text-align: center;
               padding-top: 38px;
               
+            }
+            .contact{
+              color: rgba(66, 172, 232, 1);
+              text-decoration:none;
+              margin :0;
             }
             .text_color{
               color: rgba(252, 114, 30, 1);
@@ -474,7 +491,6 @@ const Index = () => {
               margin-right: 34px;
               margin-bottom: 18px;
               font-family: 'Inconsolata', monospace;
-              text-align: justify;
             }
             .target_row{
               display:flex;
@@ -483,23 +499,26 @@ const Index = () => {
               align-items: flex-start;
             }
             .mission_vision{
-              margin-top: 70px;
+              margin-top: 100px;
             }
             .mission{
               display:flex;
               flex-direction: column;
               margin-left: 29px;
+              max-width: 566px;
+              font-size: 16px;
+              line-height: 19px;
             }
             .mission_header{
               font-size:32px;
               font-weight: 500;
               color: #454545;
-              margin-bottom: 6px;
+              margin-bottom: 16px;
             }
-            .mission_content{
-              width: 566px;
-              font-size: 16px;
+            .mission>label{
+              margin-bottom: 8px;
             }
+            
             
             //----------------------------------
             

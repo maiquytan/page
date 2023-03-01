@@ -95,6 +95,12 @@ const Pagination = props => {
           color:#FC721E;
           border: 1px solid #FC721E;
         }
+        .arrow{
+          margin:0;
+          margin-top: 2px;
+          margin-right:1px;
+          color: #FFFFFF;
+        }
         .arrow::before {
           position: relative;  
           display: flex;
@@ -108,10 +114,7 @@ const Pagination = props => {
           background: #919EAB;
           color: #C4CDD5;
         }
-        .arrow::before {
-          border-right: 0.12em solid rgba(0, 0, 0, 0.43);
-          border-top: 0.12em solid rgba(0, 0, 0, 0.43);
-        }
+        
         .arrow:hover {
           background-color: transparent;
           cursor: default;

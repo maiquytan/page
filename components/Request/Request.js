@@ -1,8 +1,9 @@
 import React from 'react'
 
 const Request = () => {
+
   return (
-    <div className = "infor_request_bg" >
+    <div className="infor_request_bg">
       <div className="infor_request">
         <div className="information">
           <div className="information_header">
