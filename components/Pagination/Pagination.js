@@ -59,66 +59,66 @@ const Pagination = props => {
 
       <style>
         {`
-        .pagination-container {
-          display: flex;
-          list-style-type: none;
-        }
-        .pagination-item,.pagination-item_dots,.selected,.disabled {
-          display:flex;
-          justify-content:center;
-          align-items: center;
-          height: 32px;
-          width:32px;
-          margin: auto 4px;
-          color: rgba(0, 0, 0, 0.87);
-          box-sizing: border-box;
-          letter-spacing: 0.01071em;
-          background: #FFFFFF;
-          border: 1px solid #DFE3E8;
-          border-radius: 4px;
-          font-size: 13px;
-          min-width: 32px;
-          cursor: pointer;
-        }
-        .pagination-item_dots{
-          padding: 0 9px;
-        }
-        .pagination-item_dots:hover {
-          background-color: transparent;
-          cursor: default;
-        }
-        pagination-item:hover {
-          background-color: rgba(0, 0, 0, 0.04);
-          cursor: pointer;
-        }
-        .selected {
-          color:#FC721E;
-          border: 1px solid #FC721E;
-        }
-        .arrow{
-          margin:0;
-          margin-top: 2px;
-          margin-right:1px;
-          color: #FFFFFF;
-        }
-        .arrow::before {
-          position: relative;  
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-right: 0.12em solid rgba(0, 0, 0, 0.87);
-          border-top: 0.12em solid rgba(0, 0, 0, 0.87);
-        }     
-        .disabled {
-          pointer-events: none;
-          background: #919EAB;
-          color: #C4CDD5;
-        }
-        
-        .arrow:hover {
-          background-color: transparent;
-          cursor: default;
-        }  
+          .pagination-container {
+            display: flex;
+            list-style-type: none;
+          }
+          .pagination-item,.pagination-item_dots,.selected,.disabled {
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height: 32px;
+            width:32px;
+            margin: auto 4px;
+            color: rgba(0, 0, 0, 0.87);
+            box-sizing: border-box;
+            letter-spacing: 0.01071em;
+            background: #FFFFFF;
+            border: 1px solid #DFE3E8;
+            border-radius: 4px;
+            font-size: 13px;
+            min-width: 32px;
+            cursor: pointer;
+          }
+          .pagination-item_dots{
+            padding: 0 9px;
+          }
+          .pagination-item_dots:hover {
+            background-color: transparent;
+            cursor: default;
+          }
+          pagination-item:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+            cursor: pointer;
+          }
+          .selected {
+            color:#FC721E;
+            border: 1px solid #FC721E;
+          }
+          .arrow{
+            margin:0;
+            margin-top: 2px;
+            margin-right:1px;
+            color: #FFFFFF;
+          }
+          .arrow::before {
+            position: relative;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+            border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+          }     
+          .disabled {
+            pointer-events: none;
+            background: #919EAB;
+            color: #C4CDD5;
+          }
+          
+          .arrow:hover {
+            background-color: transparent;
+            cursor: default;
+          }  
         `}
       </style>
     </ul>

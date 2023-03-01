@@ -69,157 +69,155 @@ const About = () => {
         </div>
       </div>
 
-      <style>
+      <style jsx>
         {`
-        .about_us{
-          background: #FFFFFF;
-          font-family: 'Inter', sans-serif;
-        }
-        .h1{
-          display:none;
-        }
-        .bg_header{
-          position: relative;
-          width:100%;
-          overflow: hidden;
-        }
-        .img_header{
-          position:absolute;
-          right:0;
-          top:118px;
-          z-index:1;
-        }
-        .about_header{
-          position:relative;
-          height:calc(100vh - 118px);
-          max-width: 1260px;
-          margin:auto;
-          margin-top: 118px;
-          display:flex;
-          flex-direction:column;
-          align-items: flex-start;
-          z-index:2;
-        }
-        .header_title{
-          background-image: url("../Ellipse.svg");
-          background-size:cover;
-          background-repeat: no-repeat;
-          width: 28%;
-          height: 103px;
-          font-size: 43px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position:relative;
-          top:105px;
-          left: 20px;
-          font-family: 'Lexend', sans-serif;
-          color: #DEDEDE;
-          text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
-          1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
-        }
-        .header_content{
-          display: flex;
-          justify-content:space-between;
-          align-items: center;
-          max-width:1260px;
-        }
-        .header_left{
-          width:35%;
-          font-size: 20px;
-          line-height: 33px;
-          color: #FFFFFF;
-          margin-bottom: 100px; 
-        }
-        .header_right{
-          max-width:60%;
-        }
-        .header_right>img{
-          max-width:100%;
-        } 
-       
-        .about_bg{
-          background-image: url("../Session.webp");
-          height:100vh;
-          background-repeat:no-repeat;
-          display:flex;
-          align-items: center;
-        }
-        .about_axa{
-          max-width:1260px;
-          display:flex;
-          gap:7%;
-          margin :auto;
-        }
-        .about_left{
-          max-width : 48%;
-        }
-        .about_left>img{
-          max-width:100%;
-        }
-        .about_right{
-          width:41%;
-        }
-        .about_title{
-          font-weight: 600;
-          font-size: 40px;
-          line-height: 48px;
-          color: #1365B1;
-          margin-top:26px;
-          margin-bottom: 36px;
-        }
-        .about_content{
-          font-size: 19px;
-          line-height: 27px;
-        }
-
-        .target_about{
-          margin-top:68px;
-          padding-bottom:100px;
-        }
-        .our_target{
-          max-width: 1260px;
-          display: flex;
-          justify-content: space-between;
-          margin: auto;
-          margin-bottom: 70px;
-        }
-        .target_left{
-          padding-right:40px;
-          margin-left:20px;
-        }
-        .target_right{
-          max-width:42%;
-          border-radius: 5px;
-        }
-        .target_right>img{
-          border-radius: 5px;
-          max-width:100%;
-        }
-        .target_title{
-          margin-top: 57px;
-          margin-bottom: 54px;
-          font-weight: bold;
-          font-size: 60px;
-          line-height: 78px;
-          display:flex;
-          flex-direction:column;
-          justify-content:center;
-          font-family: 'IBM Plex Sans', sans-serif;
-        }
-        .target_title>p{
-          color:#FFFFFF;
-          text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
-          1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1);
-        }
-        .target_title>label{
-          color: #236B99;
-        }
-        .target_content{
-          max-width: 550px;
-          font-size: 20px;
-          line-height: 26px;
-        }
+          .about_us{
+            background: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+          }
+          .h1{
+            display:none;
+          }
+          .bg_header{
+            position: relative;
+            width:100%;
+            overflow: hidden;
+          }
+          .img_header{
+            position:absolute;
+            right:0;
+            top:118px;
+            z-index:1;
+          }
+          .about_header{
+            position:relative;
+            height:calc(100vh - 118px);
+            max-width: 1260px;
+            margin:auto;
+            margin-top: 118px;
+            display:flex;
+            flex-direction:column;
+            align-items: flex-start;
+            z-index:2;
+          }
+          .header_title{
+            background-image: url("../Ellipse.svg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            width: 28%;
+            height: 103px;
+            font-size: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            top:105px;
+            left: 20px;
+            font-family: 'Lexend', sans-serif;
+            color: #DEDEDE;
+            text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
+            1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
+          }
+          .header_content{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            max-width:1260px;
+          }
+          .header_left{
+            width:35%;
+            font-size: 20px;
+            line-height: 33px;
+            color: #FFFFFF;
+            margin-bottom: 100px; 
+          }
+          .header_right{
+            max-width:60%;
+          }
+          .header_right>img{
+            max-width:100%;
+          } 
+          .about_bg{
+            background-image: url("../Session.webp");
+            height:100vh;
+            background-repeat:no-repeat;
+            display:flex;
+            align-items: center;
+          }
+          .about_axa{
+            max-width:1260px;
+            display:flex;
+            gap:7%;
+            margin :auto;
+          }
+          .about_left{
+            max-width : 48%;
+          }
+          .about_left>img{
+            max-width:100%;
+          }
+          .about_right{
+            width:41%;
+          }
+          .about_title{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+            color: #1365B1;
+            margin-top:26px;
+            margin-bottom: 36px;
+          }
+          .about_content{
+            font-size: 19px;
+            line-height: 27px;
+          }
+          .target_about{
+            margin-top:68px;
+            padding-bottom:100px;
+          }
+          .our_target{
+            max-width: 1260px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 70px;
+          }
+          .target_left{
+            padding-right:40px;
+            margin-left:20px;
+          }
+          .target_right{
+            max-width:42%;
+            border-radius: 5px;
+          }
+          .target_right>img{
+            border-radius: 5px;
+            max-width:100%;
+          }
+          .target_title{
+            margin-top: 57px;
+            margin-bottom: 54px;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 78px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            font-family: 'IBM Plex Sans', sans-serif;
+          }
+          .target_title>p{
+            color:#FFFFFF;
+            text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
+            1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1);
+          }
+          .target_title>label{
+            color: #236B99;
+          }
+          .target_content{
+            max-width: 550px;
+            font-size: 20px;
+            line-height: 26px;
+          }
         `}
       </style>
     </div>
