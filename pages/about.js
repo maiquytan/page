@@ -199,7 +199,7 @@ const About = () => {
         .target_title{
           margin-top: 57px;
           margin-bottom: 54px;
-          font-weight: 500;
+          font-weight: bold;
           font-size: 60px;
           line-height: 78px;
           display:flex;
