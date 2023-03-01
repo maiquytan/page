@@ -591,7 +591,7 @@ const Index = () => {
             //----------------------
             .techniques{
               height: 400px;
-              margin-top:10px;
+              margin-top:40px;
             }
             .techniques_header{
               text-align: center;
