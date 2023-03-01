@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react'
 import Pagination from '../components/Pagination/Pagination';
 import { PageSize } from '../constants';
 
-function Portfolio() {
+const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const data = [
     { title: "MAX", content: "1" },
@@ -59,7 +59,7 @@ function Portfolio() {
           <div className="header_content">
             <div className="content_left">From Enterprise Management Systems to E-commerce & Retail Management Systems, Customer-enabling Services, and New Business Ideas, our portfolio is a testament to our expertise and the real-world benefits we bring to our clients. Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution.</div>
             <div className="content_right">
-              <img src="Group20.png" alt="img_header" title="img_header" width="761" height="444" />
+              <img src="Group20.webp" alt="img_header" title="img_header" width="761" height="444" />
             </div>
           </div>
         </div>
@@ -659,7 +659,8 @@ function Portfolio() {
 
           //--------------------------------------------
           .infor_request_bg{
-            background: url("../ceo_bg.svg");
+            background: url("../ceo_bg.webp");
+            background-size:cover;
             background-position: center;
             height:1250px;
             width:100%;
