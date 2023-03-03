@@ -2,10 +2,10 @@ import React from 'react'
 
 const Team = () => {
   const listBoss = [
-    {name:"Duong Nguyen", image:"../daicaDuong.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
-    {name:"Tuan Nguyen", image:"../daicaTuan.webp", icon:"icon_fontend.svg", job:"Fontend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
-    {name:"Viet Nguyen", image:"../daicaViet.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
-    {name:"Cong Luu", image:"../daicaCong.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    {name:"Duong Nguyen", image:"../NguyenDuong.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    {name:"Tuan Nguyen", image:"../NguyenTuan.webp", icon:"icon_fontend.svg", job:"Fontend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    {name:"Viet Nguyen", image:"../NguyenViet.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    {name:"Cong Luu", image:"../LuuCong.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
   ]
   return (
     <div className="team">
