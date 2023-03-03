@@ -80,6 +80,7 @@ const Header = () => {
             margin: 0 10px;
             cursor: pointer;
             font-size: 20px;
+            outline:none;
           }
           .img_logo{
             margin-left: 50px;
