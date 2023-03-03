@@ -196,6 +196,13 @@ const Team = () => {
             letter-spacing: 0.02em;
             font-weight: 500;
           }
+          .introduce_right{
+            width:49%;
+            max-width:610px;
+          }
+          .introduce_right>img{
+            width: 100%;
+          }
 
           //Meet----------------------------
           .meet{

@@ -133,7 +133,9 @@ const Request = () => {
           }
           .infor_request{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            max-width:1260px;
+            margin:auto;
           }
           .item{
             color: #1E1E1E;
@@ -155,8 +157,8 @@ const Request = () => {
             margin-bottom: 45px;
           }
           .information{
+            width:35%;
             max-width: 445px;
-            margin-right: 72px;
           }
           .information_header{
             padding-top:65px;
@@ -189,10 +191,12 @@ const Request = () => {
           .gmail>img,.phone>img{
             margin-right: 28px;
           }
-
+          .request{
+            width:58%;
+          }
           .request_form{
             max-width: 740px;
-            width:100%;
+            
             height: 1030px;
             background: #FFFFFF;
             border-radius: 10px;
