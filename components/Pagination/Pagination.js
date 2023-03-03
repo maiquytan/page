@@ -113,6 +113,7 @@ const Pagination = props => {
             pointer-events: none;
             background: #919EAB;
             color: #C4CDD5;
+            opacity: 0.5;
           }
           
           .arrow:hover {

@@ -135,7 +135,7 @@ const Index = () => {
                   <Link href="/about"><a className="contact">Contact us </a></Link>
                   <label>today to learn more!</label>
                 </div>
-                
+
               </div>
             </div>
             <div className="mission_vision">
@@ -157,11 +157,26 @@ const Index = () => {
                 <img src="icons8-tree.svg" alt="core_value" title="core_value" width="61" height="61" />
                 <div className="mission">
                   <div className="mission_header">Core value</div>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
-                  <label><img src="Vector.svg" alt="check" title="check" width="16" height="12" /> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
+                  <div className="one_core">
+                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
+                  </div>
+                  <div className="one_core">
+                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <label> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
+                  </div>
+                  <div className="one_core">
+                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <label> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
+                  </div>
+                  <div className="one_core">
+                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <label> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
+                  </div>
+                  <div className="one_core">
+                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <label> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -257,6 +272,7 @@ const Index = () => {
             }
             .home{
               background: #FFFFFF;
+              font-family: 'Inter', sans-serif;
             }
             .h1{
               display:none;
@@ -517,6 +533,17 @@ const Index = () => {
             }
             .mission>label{
               margin-bottom: 8px;
+            }
+            .one_core{
+              display:flex;
+              font-weight:500;
+              font-size: 16px;
+              line-height: 19px;
+              margin-bottom: 5px;
+            }
+            .one_core>img{
+              margin-right: 8px;
+              margin-top: 4px;
             }
             
             
