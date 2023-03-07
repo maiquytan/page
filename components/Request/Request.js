@@ -153,7 +153,6 @@ const Request = () => {
             width: 90px;
             height: 2px;
             background: #FC721E;
-            margin-top:4px;
             margin-bottom: 45px;
           }
           .information{
@@ -171,7 +170,8 @@ const Request = () => {
           }
           .infor_address{
             font-size:24px;
-            margin-bottom :10px
+            margin-bottom :10px;
+            font-weight:500px;
           }
           .address_detail{
             font-weight: 400;
@@ -196,7 +196,6 @@ const Request = () => {
           }
           .request_form{
             max-width: 740px;
-            
             height: 1030px;
             background: #FFFFFF;
             border-radius: 10px;
@@ -376,6 +375,61 @@ const Request = () => {
             border-radius: 5px;
             border:none;
             cursor:pointer;
+          }
+          @media screen and (max-width:600px ){
+            .infor_request_bg{
+              height:auto;
+            }
+            .infor_request{
+              flex-direction: column;
+              height:auto;
+            }
+            .information,.request{
+              width: 94%;
+              max-width:370px;
+              margin-left:3%;
+              height: auto;
+            }
+            .information_header{
+              display:flex;
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 0;              
+            }
+            .information_content{
+              color: #666666;
+            }
+            .infor_address{
+              font-size: 21px;
+              width: 70%;
+            }
+            .request_form{
+              padding: 0 4%;
+              height: auto;
+              margin-bottom: 40px;
+            }
+            .request_input{
+              flex-direction: column;
+            }
+            .request_input>input,.request_input1{
+              width: 92%;
+            }
+            .service_budget{
+              flex-direction:column;
+            }
+            .hr_dahed{
+              transform:rotate(180deg);
+              width: 218px;
+              height: 0;
+              margin :30px 0 30px 20px;
+            }
+            .service,.budget{
+              margin-left: 0;
+            }
+            .btn_request{
+              margin-top: 20px;
+              margin-bottom: 30px;
+            }
           }
         `}
       </style>

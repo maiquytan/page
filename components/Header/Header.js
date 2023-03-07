@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 
 const Header = () => {
+  const [isDropdownAction, SetIsDropdownAction] = useState(false);
+  const [isDropdownAction1, SetIsDropdownAction1] = useState(false);
+  const handleDropDownAction = () => {
+    SetIsDropdownAction(!isDropdownAction)
+  }
+  const handleDropDownAction1 = () => {
+    SetIsDropdownAction1(!isDropdownAction1)
+  }
   return (
     <div className="header">
       <div className="address">
@@ -26,6 +34,39 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div className="menu_mobile">
+        <div className="logo_mobile">
+          <img src="logo1.svg" alt="logo" title="logo" width={176} height={30} />
+        </div>
+        <div className="btn_menu" onClick={handleDropDownAction}>
+          <img src="menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
+        </div>
+        {isDropdownAction &&
+          <ul className="mobile_menu_down">
+            <li>
+              <div>
+                <Link href="/e"><a>Company </a></Link>
+                <img src="arrow_mobile_menu.svg" onClick={handleDropDownAction1} className="arrow_menu" alt="arrow" title="arrow" width="11" height="8" />
+              </div>
+              {isDropdownAction1 &&
+                <ul className="setting_signout">
+                  <li><Link href="/b"><a>X</a></Link></li>
+                  <hr></hr>
+                  <li><Link href="/b"><a>Y</a></Link></li>
+                </ul>
+              }
+            </li>
+            <hr></hr>
+            <li><Link href="/service"><a>Service</a></Link></li>
+            <hr></hr>
+            <li><Link href="/b"><a>Expertise</a></Link></li>
+            <hr></hr>
+            <li><Link href="/portfolio"><a>Portfolio</a></Link></li>
+            <hr></hr>
+            <li><Link href="/d"><a>Contact</a></Link></li>
+          </ul>
+        }
+      </div>
       <style jsx>
         {`
           .header{
@@ -34,7 +75,7 @@ const Header = () => {
             width: 100%;
             z-index:3;
             background: #FFFFFF;
-            }
+          }
           .address{
             width:100%;
             background: #FFFFFF;
@@ -88,10 +129,61 @@ const Header = () => {
           .logo{
             margin-bottom: 10px
           }
-      `}
+          .menu_mobile{
+            background: rgba(23, 23, 31, 0.85);
+            height: 50px;
+            width: 100%;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            position:relative;
+          }
+          .btn_menu{
+            position:absolute;
+            right: 15px;
+          }
+          .mobile_menu_down {
+            position: absolute;
+            flex-direction: column;
+            width: 100%;
+            height: calc(100vh - 50px);
+            float: right;
+            top: 50px;
+            background-color: #FFFFFF;
+            color: red;
+            padding-left: 0px;
+            display: block;
+            list-style: none;
+            z-index: 3;
+          }
+          li{
+            margin :20px;
+          }
+          hr{
+            margin: 0 10px;
+            color: #F4F4F4;
+          }
+        
+          @media screen and (min-width:600px ){
+            .menu_mobile{
+              display: none;
+            }
+          }
+
+          @media screen and (max-width: 600px){
+            .menu,.address{
+              display: none;
+            }
+            .header{
+              width:100%;
+            }
+            a{
+              color: #6E6E73;
+            }
+          }
+        `}
       </style>
     </div>
-
   )
 }
 

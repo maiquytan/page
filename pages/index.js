@@ -55,39 +55,47 @@ const Index = () => {
             </div>
             <div className="services_main">
               <div className="services_column">
-                <div className="services_one">
-                  <img src="services1.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
-                  <div className="services_text">Web application development</div>
+                <div className="services_two">
+                  <div className="services_one">
+                    <img src="services1.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="services_text">Web application development</div>
+                  </div>
+                  <div className="services_one">
+                    <img src="services2.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="services_text">Mobile app development</div>
+                  </div>
                 </div>
-                <div className="services_one">
-                  <img src="services2.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
-                  <div className="services_text">Mobile app development</div>
-                </div>
-                <div className="services_one">
-                  <img src="services3.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
-                  <div className="services_text">RPA development</div>
-                </div>
-                <div className="services_one">
-                  <img src="services4.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
-                  <div className="services_text">Dedicated development teams</div>
+                <div className="services_two">
+                  <div className="services_one">
+                    <img src="services3.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="services_text">RPA development</div>
+                  </div>
+                  <div className="services_one">
+                    <img src="services4.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="services_text">Dedicated development teams</div>
+                  </div>
                 </div>
               </div>
               <div className="services_column">
-                <div className="services_one">
-                  <img src="services5.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
-                  <div className="services_text">Offshore development center</div>
+                <div className="services_two">
+                  <div className="services_one">
+                    <img src="services5.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="services_text">Offshore development center</div>
+                  </div>
+                  <div className="services_one">
+                    <img src="services6.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="services_text">Lifecycle maintenance</div>
+                  </div>
                 </div>
-                <div className="services_one">
-                  <img src="services6.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
-                  <div className="services_text">Lifecycle maintenance</div>
-                </div>
-                <div className="services_one">
-                  <img src="services7.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
-                  <div className="services_text">DevOps development and operations</div>
-                </div>
-                <div className="services_one">
-                  <img src="services8.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
-                  <div className="services_text">UI/UX Design</div>
+                <div className="services_two">
+                  <div className="services_one">
+                    <img src="services7.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="services_text">DevOps development and operations</div>
+                  </div>
+                  <div className="services_one">
+                    <img src="services8.svg" className="img_services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="services_text">UI/UX Design</div>
+                  </div>
                 </div>
               </div>
 
@@ -110,6 +118,32 @@ const Index = () => {
               <div className="archivement_column">
                 <label className="archivement_number">100+</label>
                 <label>Customers around the world</label>
+              </div>
+              <div className="archivement_column">
+                <label className="archivement_number">99%</label>
+                <label>Repeat rate</label>
+              </div>
+            </div>
+          </div>
+
+          {/* Archivement Mobile*/}
+          <div className="archivement_mobile">
+            <div className="archivement_container">
+              <div className="archivement_content_moblie">
+                <label className="item">Archivement</label>
+                <div className="crossbar1"></div>
+                <div className="crossbar2"></div>
+                <img src="medal.svg" alt="logo" title="logo" width="47px" height="47" />
+              </div>
+              <div className="archivement_row">
+                <div className="archivement_column">
+                  <label className="archivement_number">50+</label>
+                  <label>Successful projects</label>
+                </div>
+                <div className="archivement_column">
+                  <label className="archivement_number">100+</label>
+                  <label>Customers around the world</label>
+                </div>
               </div>
               <div className="archivement_column">
                 <label className="archivement_number">99%</label>
@@ -180,6 +214,49 @@ const Index = () => {
                 </div>
               </div>
             </div>
+            <div className="mission_vision_mobile">
+              <div className="target_row">
+                <div className="mission_mobile">
+                  <img src="icons8.svg" alt="mission" title="mission" width="61" height="61" />
+                  <div className="mission_header">Mission</div>
+                </div>
+                <label className="mission_content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
+              </div>
+              <div className="target_row">
+                <div className="mission_mobile">
+                  <img src="icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
+                  <div className="mission_header">Vision</div>
+                </div>
+                <label className="mission_content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
+              </div>
+              <div className="target_row">
+                <div className="mission_mobile">
+                  <img src="icons8-tree.svg" alt="core_value" title="core_value" width="61" height="61" />
+
+                  <div className="mission_header">Core value</div>
+                </div>
+                <div className="one_core">
+                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
+                </div>
+                <div className="one_core">
+                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <label> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
+                </div>
+                <div className="one_core">
+                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <label> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
+                </div>
+                <div className="one_core">
+                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <label> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
+                </div>
+                <div className="one_core">
+                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <label> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Expertise */}
@@ -191,35 +268,39 @@ const Index = () => {
             </div>
             <div className="expertise_main">
               <div className="one_expertise">
-                <img src="Expertise1.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
+                <div className="img_expertise">
+                  <img src="Expertise1.svg" alt="expertise" title="expertise" width="100" height="100" />
+                </div>
                 <div className="one_expertise_content">
                   <label className="system_header">Enterprise management systems</label>
-                  <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
-                  <button className="system_button">See more</button>
+                  <label className="system_content">Our expertise in enterprise management systems allows us to help organizations to optimize their operations and improve their overall efficiency. Our team can provide the solutions and support you need to streamline your processes, automate tasks, and make better use of your data.</label>
                 </div>
               </div>
               <div className="one_expertise">
-                <img src="Expertise2.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
+                <div className="img_expertise">
+                  <img src="Expertise2.svg" alt="expertise" title="expertise" width="100" height="100" />
+                </div>
                 <div className="one_expertise_content">
                   <label className="system_header">Ecommerce & Retail management systems</label>
-                  <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
-                  <button className="system_button">See more</button>
+                  <label className="system_content">Our expertise in e-commerce and retail management systems helps organizations to grow their online businesses and improve the customer experience. Our team can provide the solutions and support you need to manage your inventory, process orders, and handle customer data securely.</label>
                 </div>
               </div>
               <div className="one_expertise">
-                <img src="Expertise3.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
+                <div className="img_expertise">
+                  <img src="Expertise3.svg" alt="expertise" title="expertise" width="100" height="100" />
+                </div>
                 <div className="one_expertise_content">
                   <label className="system_header">Customer-enabling services</label>
-                  <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
-                  <button className="system_button">See more</button>
+                  <label className="system_content">Our customer-enabling services are designed to help organizations to improve the way they interact with their customers. Our team can provide the solutions and support you need to handle customer inquiries, manage customer data, and deliver the best possible customer experience.</label>
                 </div>
               </div>
               <div className="one_expertise">
-                <img src="Expertise4.svg" alt="expertise" title="expertise" className="img_expertise" width="100" height="100" />
+                <div className="img_expertise">
+                  <img src="Expertise4.svg" alt="expertise" title="expertise" width="100" height="100" />
+                </div>
                 <div className="one_expertise_content">
                   <label className="system_header1">New business ideas</label>
-                  <label className="system_content">Lorem Ipsum is simply dummy text of the printing and typesetting indusd Lorem Ipsum is simply dummy text of the printing and typesetting indusd....</label>
-                  <button className="system_button">See more</button>
+                  <label className="system_content">Our expertise in new business ideas allows us to help organizations to create and implement innovative solutions that drive business growth. Our team of experts can work with you to identify new opportunities, develop new products and services, and bring new ideas to market.</label>
                 </div>
               </div>
             </div>
@@ -281,6 +362,7 @@ const Index = () => {
               height: calc(100vh - 118px);
               margin-top: 118px;
               display:flex;
+              justify-content: center;
               color: #FFFFFF;
               background-image: url("../imgheader.webp");
               background-position: center;
@@ -290,30 +372,26 @@ const Index = () => {
             .title1{
               font-size: 42px;
               font-weight: 600;
-              margin-left:50px;
               margin-bottom: 35px; 
             }
             .title2{
               font-size: 28px;
               font-weight:500;
-              margin-left:50px;
               margin-bottom: 30px;   
             }
             .title3{
               font-size:20px;
-              margin-left:50px;
               margin-bottom: 50px;
               width:50%;
               text-align: justify;
             }
             .header_container{
               max-width: 1274px;
-              margin:auto;
+              margin-left:100px;
               margin-top:205px;
             }
             .header_btn{
               display:flex;
-              margin-left:50px;
             }
             .header_btn>button{
               border-radius: 5px;
@@ -352,9 +430,6 @@ const Index = () => {
             .item,.item_first{
               color: #1E1E1E;
               font-size: 32px;
-              font-weight: 500;
-            }
-            .item_first{
               font-weight: 600;
             }
             .crossbar1,.crossbar_left_1{
@@ -373,16 +448,22 @@ const Index = () => {
               margin-bottom: 55px;
             }
             .services_main{
-              max-width: 66%;
+              max-width: 1260px;
+              width:100%;
               margin : auto;
             }
             .services_column{
               display: flex;
-              justify-content: space-between;
               margin-bottom: 65px;
+              width:100%;
+            }
+            .services_two{
+              width:50%;
+              display: flex;
+              font-size:18px;
             }
             .services_one{
-              width: 25%;
+              width: 50%;
             }
             .img_services{
               display: flex;
@@ -392,22 +473,23 @@ const Index = () => {
             .services_text{
               max-width: 200px;
               margin:auto;
-              text-align: center;  
-              font-size:18px; 
+              text-align: center;   
               font-weight:600;
               color: #236B99;
             }
 
-            //archivement---------------------------
+            //Archivement---------------------------
 
-            .archivement{
+            .archivement,.archivement_mobile{
               height: 278px;
               background: url("../service_bg.svg"),#A1ACBB;
               background-size: cover;
+              background-repeat: no-repeat;
               margin-top: 50px;
             }
             .archivement_container{
-              max-width:66%;
+              max-width:1260px;
+              width:100%;
               height:100%;
               margin: auto;
               display: flex;
@@ -464,9 +546,10 @@ const Index = () => {
             }
             .about_us{
               background: url("../IMG_0799.webp");
-              background-size: cover;
-              max-width:531px;
-              height:673px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              max-width:521px;
+              height:auto;
               overflow: hidden;
               margin-top: 70px;
               border-radius: 5px;
@@ -480,7 +563,7 @@ const Index = () => {
             .about_us_header{
               color: #FFFFFF;
               font-size: 32px;
-              font-weight: 500;
+              font-weight: 600;
               text-align: center;
               padding-top: 38px;
               
@@ -583,7 +666,8 @@ const Index = () => {
             .img_expertise{
               z-index: 2;
               position:relative;
-              left: 32%;
+              display: flex;
+              justify-content: center;
             }
             .system_header,.system_header1{
               padding-top: 100px;
@@ -645,8 +729,236 @@ const Index = () => {
               justify-content: space-evenly;
               align-items: center;
             }
-   
-        `}
+            @media screen and (min-width: 600px){
+              .archivement_mobile{
+                display: none;
+              }
+              .mission_vision_mobile{
+                display:none;
+              }
+            }
+            @media screen and (max-width: 600px){
+              .home__header{
+                margin-top: 50px;
+                height: calc(100vh - 50px);
+              }
+              .header_container{
+                margin-top:100px;
+                width: 90%;
+                margin-left: 0;
+                position: relative;
+              }
+              .title1{
+                font-size: 35px;
+                margin-bottom: 60px;
+              }
+              .title2{
+                font-size: 21px;
+                margin-bottom: 60px;
+                width: 80%;
+                line-height: 25px;
+              }
+              .title3{
+                width: 95%;
+                font-size: 17px;
+                line-height: 21px;
+              }
+              .header_btn{
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                bottom: 20px; 
+                width: 100%;
+              }
+              .header_btn>button{
+                width: 94%;
+              }
+              .btn_contact{
+                margin-right: 0;
+                margin-bottom: 10px;
+              }
+              //our_services----------------------------
+              .services_header{
+                margin-top:32px; 
+                margin-bottom: 40px;
+              }
+              .crossbar2{
+                margin-bottom: 8px;
+              }
+              .services_column{
+                flex-direction: column;
+                margin-bottom: 0;
+              }
+              .services_two{
+                width: 90%;
+                font-size:15px;
+                margin: auto;
+                margin-bottom: 20px;
+              }
+              
+              .services_text{
+                max-width: 155px;
+              }
+
+              //Archivement---------------------------
+              .archivement{
+                display: none;
+              }
+              .archivement_mobile{
+                height: 470px;
+              }
+              .archivement_container{
+                flex-direction: column;
+                align-items: center;
+              }
+              .archivement_content_moblie{
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+                padding-top:25px;
+              }
+              .archivement_row{
+                display:flex;
+                justify-content: center;
+              }
+              .archivement_column{
+                width: 50%;
+                margin-top: 30px;
+              }
+              .archivement_number{
+                font-size:53px;
+              }
+
+              //Target------------------------------
+              .target{
+                flex-direction: column;
+                height: auto;
+                background: #FFFFFF;
+              }
+              .about_us_bg{
+                background: linear-gradient(180deg,rgba(43,42,42,0)45%,#236b99 77%);
+                height: 780px;
+              }
+              .about_us{
+                background:linear-gradient(180deg, rgba(5, 63, 117, 0.65) 0%, rgba(47, 47, 47, 0.5005) 50%), url("../IMG_0799.webp");
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-top:0;
+              }
+              .introduce_header{
+                margin-top: 270px;
+                font-size: 16px;
+                margin-bottom: 40px;
+              }
+              .introduce_content{
+                font-size: 14px;
+                margin-left: 25px;
+                margin-right: 14px;
+              }
+              .contact{
+                color: rgba(252, 114, 30, 1);
+              }
+              .target_row{
+                margin-left: 12px;
+                margin-bottom: 0;
+                flex-direction: column;
+              }
+              .mission_mobile{
+                display: flex;
+                max-width: 294px;
+                font-size:15px;
+                align-items: center;
+                margin-bottom: 15px;
+                margin-top: 28px;
+              }
+              .mission_header{
+                margin-bottom: 0;
+              }
+              .mission_vision{
+                display:none;
+              }
+              .mission_content{
+                margin-right: 20px;
+                margin-left:8px;
+                font-size: 15px;
+              }
+              .one_core{
+                font-size: 15px;
+                margin-right: 30px;
+                margin-left: 8px;
+              }
+              .one_core>img{
+                margin-right: 18px;
+              }
+
+              //----------------------------------
+              .expertise{
+                height: 1300px;
+              }
+              .expertise_header{
+                padding-top: 60px;
+              }
+              .expertise_main{
+                display: flex;
+                flex-direction: column;
+                gap:15px;
+                margin-top: 40px;
+              }
+              .one_expertise{
+                max-height:260px ;
+              }
+              .img_expertise{
+                width:54px;
+                height: 54px;
+                left: 32px;
+                top: 20px;
+              }
+              .one_expertise_content{
+                max-width: 370px;
+                width:94%;
+                max-height:260px ;
+                margin:auto;
+                height: auto;
+              }
+              .img_expertise>img{
+                width: 100%;
+                height:100%;
+              }
+              .system_header,.system_header1{
+                padding-top:20px;
+                width: 65%;
+                font-size: 20px;
+                text-align: left;
+                margin-left: 88px;
+                margin-bottom: 20px;
+              }
+              .system_header1{
+                margin-bottom: 45px;
+              }
+
+              //----------------------
+              .techniques{
+                height: auto;
+                padding-bottom: 60px;
+              }
+              .techniques_main{
+                display: flex;
+                justify-content: center;
+                gap:12px;
+              }
+              .techniques_column{
+                flex-direction: column;
+                margin-top: 50px;
+              }
+              .techniques_column>img,.html_css{
+                min-width: 170px;
+                max-width:175px;
+                width:100%;
+                margin: auto;
+                margin-top: 16px;
+              }
+            }
+          `}
         </style>
       </div>
     </>
