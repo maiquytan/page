@@ -2,14 +2,16 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 
 const Header = () => {
-  const [isDropdownAction, SetIsDropdownAction] = useState(false);
-  const [isDropdownAction1, SetIsDropdownAction1] = useState(false);
-  const handleDropDownAction = () => {
-    SetIsDropdownAction(!isDropdownAction)
+  const [isDropdownMenuAction, SetIsDropdownMenuAction] = useState(false);
+  const [isDropdownCompanyAction, SetIsDropdownCompanyAction] = useState(false);
+
+  const handleDropDownMenuAction = () => {
+    SetIsDropdownMenuAction(!isDropdownMenuAction)
   }
-  const handleDropDownAction1 = () => {
-    SetIsDropdownAction1(!isDropdownAction1)
+  const handleDropDownCompanyAction = () => {
+    SetIsDropdownCompanyAction(!isDropdownCompanyAction)
   }
+  
   return (
     <div className="header">
       <div className="address">
@@ -38,17 +40,17 @@ const Header = () => {
         <div className="logo_mobile">
           <img src="logo1.svg" alt="logo" title="logo" width={176} height={30} />
         </div>
-        <div className="btn_menu" onClick={handleDropDownAction}>
+        <div className="btn_menu" onClick={handleDropDownMenuAction}>
           <img src="menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
         </div>
-        {isDropdownAction &&
+        {isDropdownMenuAction &&
           <ul className="mobile_menu_down">
             <li>
               <div>
                 <Link href="/e"><a>Company </a></Link>
-                <img src="arrow_mobile_menu.svg" onClick={handleDropDownAction1} className="arrow_menu" alt="arrow" title="arrow" width="11" height="8" />
+                <img src="arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow_menu" alt="arrow" title="arrow" width="11" height="8" />
               </div>
-              {isDropdownAction1 &&
+              {isDropdownCompanyAction &&
                 <ul className="setting_signout">
                   <li><Link href="/b"><a>X</a></Link></li>
                   <hr></hr>
@@ -127,7 +129,7 @@ const Header = () => {
             margin-left: 50px;
           }
           .logo{
-            margin-bottom: 10px
+            margin-bottom: 10px;
           }
           .menu_mobile{
             background: rgba(23, 23, 31, 0.85);

@@ -387,7 +387,7 @@ const Request = () => {
             .information,.request{
               width: 94%;
               max-width:370px;
-              margin-left:3%;
+              margin: auto;
               height: auto;
             }
             .information_header{
@@ -406,6 +406,7 @@ const Request = () => {
             .request_form{
               padding: 0 4%;
               height: auto;
+              margin:auto;
               margin-bottom: 40px;
             }
             .request_input{
