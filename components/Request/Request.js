@@ -2,17 +2,17 @@ import React from 'react'
 
 const Request = () => {
   return (
-    <div className="infor_request_bg">
-      <div className="infor_request">
+    <div className="infor-request-bg">
+      <div className="infor-request">
         <div className="information">
-          <div className="information_header">
+          <div className="information-header">
             <label className="item">Information</label>
-            <div className="crossbar_left_1"></div>
-            <div className="crossbar_left_2"></div>
+            <div className="crossbar-left-1"></div>
+            <div className="crossbar-left-2"></div>
           </div>
-          <div className="information_content">We welcome friends, partners, and clients to  have conversations with Axalize. Please call us on the phone or drop us an email. We are happy to meet you at our office as well. You are most welcome!</div>
-          <div className="infor_address">Ha Noi City - Development Center</div>
-          <label className="address_detail">2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi </label>
+          <div className="information-content">We welcome friends, partners, and clients to  have conversations with Axalize. Please call us on the phone or drop us an email. We are happy to meet you at our office as well. You are most welcome!</div>
+          <div className="infor-address">Ha Noi City - Development Center</div>
+          <label className="address-detail">2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi </label>
           <div className="gmail">
             <img src="gmail.svg" alt="gmail" title="gmail" width="74" height="54" />
             <label>contact@axalize.vn</label>
@@ -23,57 +23,57 @@ const Request = () => {
           </div>
         </div>
         <div className="request">
-          <div className="information_header">
+          <div className="information-header">
             <label className="item">Quote request</label>
-            <div className="crossbar_left_1"></div>
-            <div className="crossbar_left_2"></div>
+            <div className="crossbar-left-1"></div>
+            <div className="crossbar-left-2"></div>
           </div>
-          <div className="request_form">
-            <div className="request_header">Your imformation:</div>
-            <div className="request_input">
+          <div className="request-form">
+            <div className="request-header">Your imformation:</div>
+            <div className="request-input">
               <input type="text" placeholder="First name" />
               <input type="text" placeholder="Last name" />
             </div>
-            <div className="request_input">
+            <div className="request-input">
               <input type="text" placeholder="Phone number" />
               <input type="text" placeholder="Your email" />
             </div>
-            <input className="request_input1" type="text" placeholder="Your company" />
-            <div className="service_budget">
+            <input className="request-input1" type="text" placeholder="Your company" />
+            <div className="service-budget">
               <div>
                 <div>Service:</div>
                 <div className="service">
                   <input id="check" type="checkbox" className="checkbox" />
                   <label htmlFor="check" className="span"></label>
-                  <label htmlFor="check" className="service_content">Mobile App</label>
+                  <label htmlFor="check" className="service-content">Mobile App</label>
                 </div>
                 <div className="service">
                   <input id="check1" type="checkbox" className="checkbox" />
                   <label htmlFor="check1" className="span"></label>
-                  <label htmlFor="check1" className="service_content">Web App</label>
+                  <label htmlFor="check1" className="service-content">Web App</label>
                 </div>
                 <div className="service">
                   <input id="check2" type="checkbox" className="checkbox" />
                   <label htmlFor="check2" className="span"></label>
-                  <label htmlFor="check2" className="service_content">UI/UX Design</label>
+                  <label htmlFor="check2" className="service-content">UI/UX Design</label>
                 </div>
                 <div className="service">
                   <input id="check3" type="checkbox" className="checkbox" />
                   <label htmlFor="check3" className="span"></label>
-                  <label htmlFor="check3" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
+                  <label htmlFor="check3" className="service-content">VAPT (Vulnerability Assessment and Penetration)</label>
                 </div>
                 <div className="service">
                   <input id="check4" type="checkbox" className="checkbox" />
                   <label htmlFor="check4" className="span"></label>
-                  <label htmlFor="check4" className="service_content">VAPT (Vulnerability Assessment and Penetration)</label>
+                  <label htmlFor="check4" className="service-content">VAPT (Vulnerability Assessment and Penetration)</label>
                 </div>
                 <div className="service">
                   <input id="check5" type="checkbox" className="checkbox" />
                   <label htmlFor="check5" className="span"></label>
-                  <label htmlFor="check5" className="service_content"><u className="other">Other (please specify)</u></label>
+                  <label htmlFor="check5" className="service-content"><u className="other">Other (please specify)</u></label>
                 </div>
               </div>
-              <div className="hr_dahed"></div>
+              <div className="hr-dahed"></div>
               <div>
                 <div>Budget</div>
                 <label className="budget">Below 25k
@@ -110,28 +110,28 @@ const Request = () => {
                 </label>
               </div>
             </div>
-            <div className="tell_us">
+            <div className="tell-us">
               <div>Tell us about your project</div>
-              <textarea className="tell_input" type="text" placeholder="Please write here..." />
+              <textarea className="tell-input" type="text" placeholder="Please write here..." />
             </div>
             <button className="upload">
               <img src="upload.svg" alt="upload" title="upload" width="19" height="19" />
               <label>Upload files</label>
             </button>
-            <button className="btn_request">Request a Quote</button>
+            <button className="btn-request">Request a Quote</button>
           </div>
         </div>
       </div>
 
       <style jsx>
         {` 
-          .infor_request_bg{
+          .infor-request-bg{
             background: url("../ceo_bg.webp");
             background-size:cover;
             background-position: center;
             height:1250px;
           }
-          .infor_request{
+          .infor-request{
             display: flex;
             justify-content: space-between;
             max-width:1260px;
@@ -142,14 +142,14 @@ const Request = () => {
             font-size: 32px;
             font-weight: 500;
           }
-          .crossbar_left_1{
+          .crossbar-left-1{
             width: 90px;
             height: 4px;
             background: #FC721E;
             margin-bottom:3px;
             margin-top: 10px;
           }
-          .crossbar_left_2{
+          .crossbar-left-2{
             width: 90px;
             height: 2px;
             background: #FC721E;
@@ -159,21 +159,21 @@ const Request = () => {
             width:35%;
             max-width: 445px;
           }
-          .information_header{
+          .information-header{
             padding-top:65px;
             margin-bottom: 40px;
           }
 
-          .information_content{
+          .information-content{
             font-size: 17px;           
             margin-bottom: 43px;
           }
-          .infor_address{
+          .infor-address{
             font-size:24px;
             margin-bottom :10px;
             font-weight:500px;
           }
-          .address_detail{
+          .address-detail{
             font-weight: 400;
             font-size: 16px;  
             color: #5F5F5F;  
@@ -194,7 +194,7 @@ const Request = () => {
           .request{
             width:58%;
           }
-          .request_form{
+          .request-form{
             max-width: 740px;
             height: 1030px;
             background: #FFFFFF;
@@ -202,17 +202,17 @@ const Request = () => {
             padding: 0 35px;
             
           }
-          .request_header{
+          .request-header{
             font-size:18px;
             padding-top: 35px;
             margin-bottom: 20px;
           }
-          .request_input{
+          .request-input{
             display:flex;
             justify-content: space-between;
             gap:2%;
           }
-          .request_input>input,.request_input1,.tell_input {
+          .request-input>input,.request-input1,.tell-input {
             background: #F3F3F3;
             border-radius: 5px; 
             width: 48%;
@@ -224,18 +224,18 @@ const Request = () => {
             font-size: 16px;
             font-family: 'Inter', sans-serif;
           }
-          .request_input1{
+          .request-input1{
             width: calc(100% - 22px);
             margin-bottom: 37px;
           }
-          .request_input>input::placeholder, .request_input1::placeholder, .tell_input::placeholder{
+          .request-input>input::placeholder, .request-input1::placeholder, .tell-input::placeholder{
             color:#8E8E8E;
           }
 
-          .service_budget{
+          .service-budget{
             display:flex;
           }
-          .hr_dahed{
+          .hr-dahed{
             width:0px;
             height: 320px;
             margin:35px 20px 0px 55px ;
@@ -281,7 +281,7 @@ const Request = () => {
             border-radius: 2px;
             background-color: #D9D9D9;
           }
-          .service_content{
+          .service-content{
             margin-left: 5px;
             max-width:220px;
           }
@@ -338,11 +338,11 @@ const Request = () => {
           .other{
             color: #A6A6A6
           }
-          .tell_us{
+          .tell-us{
             margin-top: 37px;
             font-size: 16px;
           }
-          .tell_input{
+          .tell-input{
             margin-top: 16px;
             margin-bottom: 25px;
             width: calc(100% - 22px);
@@ -366,7 +366,7 @@ const Request = () => {
             margin-left:25px;              
             margin-right:9px;
           }
-          .btn_request{
+          .btn-request{
             color: #FFFFFF;
             background: #FC721E;
             width: 100%;
@@ -377,10 +377,10 @@ const Request = () => {
             cursor:pointer;
           }
           @media screen and (max-width:600px ){
-            .infor_request_bg{
+            .infor-request-bg{
               height:auto;
             }
-            .infor_request{
+            .infor-request{
               flex-direction: column;
               height:auto;
             }
@@ -390,35 +390,35 @@ const Request = () => {
               margin: auto;
               height: auto;
             }
-            .information_header{
+            .information-header{
               display:flex;
               flex-direction: column;
               align-items: center;
               margin-bottom: 0;              
             }
-            .information_content{
+            .information-content{
               color: #666666;
             }
-            .infor_address{
+            .infor-address{
               font-size: 21px;
               width: 70%;
             }
-            .request_form{
+            .request-form{
               padding: 0 4%;
               height: auto;
               margin:auto;
               margin-bottom: 40px;
             }
-            .request_input{
+            .request-input{
               flex-direction: column;
             }
-            .request_input>input,.request_input1{
+            .request-input>input,.request-input1{
               width: 92%;
             }
-            .service_budget{
+            .service-budget{
               flex-direction:column;
             }
-            .hr_dahed{
+            .hr-dahed{
               transform:rotate(180deg);
               width: 218px;
               height: 0;
@@ -427,7 +427,7 @@ const Request = () => {
             .service,.budget{
               margin-left: 0;
             }
-            .btn_request{
+            .btn-request{
               margin-top: 20px;
               margin-bottom: 30px;
             }

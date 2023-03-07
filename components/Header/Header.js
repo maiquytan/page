@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="address">
-        <div className="address_content">
+        <div className="address-content">
           <img src="location_orange.svg" alt="location" title="location" width="15" height="21" />
           <label>2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi  </label>
           <img src="phone_orange.svg" alt="phone" title="phone" width="18" height="19" />
@@ -23,11 +23,11 @@ const Header = () => {
         </div>
       </div>
       <div className="menu">
-        <div className="menu_main">
+        <div className="menu-main">
           <Link href="/"><a className="logo">
-            <img src="logo1.svg" className="img_logo" alt="logo" title="logo" width={323} height={55} />
+            <img src="logo1.svg" className="img-logo" alt="logo" title="logo" width={323} height={55} />
           </a></Link>
-          <div className="menu_content">
+          <div className="menu-content">
             <Link href="/e"><a>Company <img src="arrow_menu.svg" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
             <Link href="/service"><a>Service</a></Link>
             <Link href="/b"><a>Expertise</a></Link>
@@ -36,22 +36,22 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="menu_mobile">
-        <div className="logo_mobile">
+      <div className="menu-mobile">
+        <div className="logo-mobile">
           <img src="logo1.svg" alt="logo" title="logo" width={176} height={30} />
         </div>
-        <div className="btn_menu" onClick={handleDropDownMenuAction}>
+        <div className="btn-menu" onClick={handleDropDownMenuAction}>
           <img src="menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
         </div>
         {isDropdownMenuAction &&
-          <ul className="mobile_menu_down">
+          <ul className="mobile-menu-down">
             <li>
               <div>
                 <Link href="/e"><a>Company </a></Link>
-                <img src="arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow_menu" alt="arrow" title="arrow" width="11" height="8" />
+                <img src="arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
               </div>
               {isDropdownCompanyAction &&
-                <ul className="setting_signout">
+                <ul className="setting-signout">
                   <li><Link href="/b"><a>X</a></Link></li>
                   <hr></hr>
                   <li><Link href="/b"><a>Y</a></Link></li>
@@ -82,7 +82,7 @@ const Header = () => {
             width:100%;
             background: #FFFFFF;
           }
-          .address_content{
+          .address-content{
             color:#FC721E;
             max-width: 1274px;
             height:40px;
@@ -99,7 +99,7 @@ const Header = () => {
           .phone{
             margin-right: 60px; 
           }
-          .im_location{
+          .im-location{
             width: 13px;
             height: 21px;
           }
@@ -107,14 +107,14 @@ const Header = () => {
             background: rgba(23, 23, 31, 0.95);
             height: 78px;
           }
-          .menu_main{
+          .menu-main{
             display:flex;
             align-items: center;
             justify-content: space-between;
             max-width: 1274px;
             margin:auto;
           }
-          .menu_content{
+          .menu-content{
             margin-right: 50px;
           }
           a{
@@ -125,13 +125,13 @@ const Header = () => {
             font-size: 20px;
             outline:none;
           }
-          .img_logo{
+          .img-logo{
             margin-left: 50px;
           }
           .logo{
             margin-bottom: 10px;
           }
-          .menu_mobile{
+          .menu-mobile{
             background: rgba(23, 23, 31, 0.85);
             height: 50px;
             width: 100%;
@@ -140,11 +140,11 @@ const Header = () => {
             align-items: center;
             position:relative;
           }
-          .btn_menu{
+          .btn-menu{
             position:absolute;
             right: 15px;
           }
-          .mobile_menu_down {
+          .mobile-menu-down {
             position: absolute;
             flex-direction: column;
             width: 100%;
@@ -167,7 +167,7 @@ const Header = () => {
           }
         
           @media screen and (min-width:600px ){
-            .menu_mobile{
+            .menu-mobile{
               display: none;
             }
           }

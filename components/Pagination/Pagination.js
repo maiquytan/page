@@ -36,12 +36,12 @@ const Pagination = props => {
     <ul className={'pagination-container'}>
       <li className={currentPage === 1 ? 'disabled' : 'pagination-item'} onClick={onPrevious}>
         <div className="arrow">
-          <img src="arrow_left.svg" alt="arrow_left" title="arrow_left" width="9" height="12" />
+          <img src="arrow_left.svg" alt="arrow-left" title="arrow-left" width="9" height="12" />
         </div>
       </li>
       {paginationRange.map(pageNumber => {
         if (pageNumber === DOTS) {
-          return <li className="pagination-item_dots">&#8230;</li>;
+          return <li className="pagination-item-dots">&#8230;</li>;
         }
 
         return (
@@ -53,7 +53,7 @@ const Pagination = props => {
 
       <li className={currentPage === lastPage ? 'disabled' : 'pagination-item'} onClick={onNext}>
         <div className="arrow">
-          <img src="arrow_right.svg" alt="arrow_right" title="arrow_right" width="9" height="12" />
+          <img src="arrow_right.svg" alt="arrow-right" title="arrow-right" width="9" height="12" />
         </div>
       </li>
 
@@ -63,7 +63,7 @@ const Pagination = props => {
             display: flex;
             list-style-type: none;
           }
-          .pagination-item,.pagination-item_dots,.selected,.disabled {
+          .pagination-item,.pagination-item-dots,.selected,.disabled {
             display:flex;
             justify-content:center;
             align-items: center;
@@ -80,10 +80,10 @@ const Pagination = props => {
             min-width: 32px;
             cursor: pointer;
           }
-          .pagination-item_dots{
+          .pagination-item-dots{
             padding: 0 9px;
           }
-          .pagination-item_dots:hover {
+          .pagination-item-dots:hover {
             background-color: transparent;
             cursor: default;
           }
