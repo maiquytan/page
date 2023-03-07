@@ -106,9 +106,10 @@ const Footer = () => {
             margin-top: 16px;
             margin-bottom: 15px;
           }
-          @media screen and (max-width: 600px){
+          @media screen and (max-width: 900px){
             .footer{
               height: auto;
+              width:100%;
             }
             .footer-main{
               flex-direction: column;

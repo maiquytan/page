@@ -166,13 +166,13 @@ const Header = () => {
             color: #F4F4F4;
           }
         
-          @media screen and (min-width:600px ){
+          @media screen and (min-width:900px ){
             .menu-mobile{
               display: none;
             }
           }
 
-          @media screen and (max-width: 600px){
+          @media screen and (max-width: 900px){
             .menu,.address{
               display: none;
             }

@@ -376,7 +376,7 @@ const Request = () => {
             border:none;
             cursor:pointer;
           }
-          @media screen and (max-width:600px ){
+          @media screen and (max-width:900px ){
             .infor-request-bg{
               height:auto;
             }
@@ -386,7 +386,7 @@ const Request = () => {
             }
             .information,.request{
               width: 94%;
-              max-width:370px;
+              max-width: 900px;
               margin: auto;
               height: auto;
             }
@@ -413,7 +413,7 @@ const Request = () => {
               flex-direction: column;
             }
             .request-input>input,.request-input1{
-              width: 92%;
+              width: 94%;
             }
             .service-budget{
               flex-direction:column;
