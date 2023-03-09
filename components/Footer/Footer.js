@@ -117,8 +117,8 @@ const Footer = () => {
               margin: auto;
             }
             .map{
-              width:94%;
-              max-width: 348px;
+              width:100%;
+              max-width: 370px;
               margin-bottom: 20px;
             }
             .map>iframe{
@@ -126,6 +126,7 @@ const Footer = () => {
             }
             .logo-footer{
               width:75%;
+              padding-top:20px; 
               margin: auto;
             }
             .logo-footer>img{
