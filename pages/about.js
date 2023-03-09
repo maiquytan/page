@@ -7,13 +7,13 @@ const About = () => {
 
       {/* Header */}
       <div className="bg-header">
-        <img className="img-header" src="bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        <img className="img-header" src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
         <div className="about-header">
           <div className="header-title">About us</div>
           <div className="header-content">
             <div className="header-left">We take pride in our commitment to delivering innovative and tailored software solutions to meet the unique needs of each of our clients. Discover why we are a leading provider of offshore software development services and how we are driving success for businesses around the world.</div>
             <div className="header-right">
-              <img src="Frame132.webp" alt="img-header" title="img-header" width="644" height="644" />
+              <img src="/Frame132.webp" alt="img-header" title="img-header" width="644" height="644" />
             </div>
           </div>
         </div>
@@ -23,7 +23,7 @@ const About = () => {
       <div className="about-bg">
         <div className="about-axa">
           <div className="about-left">
-            <img src="Frame133.webp" alt="img-about" title="img-about" width="612" height="612" />
+            <img src="/Frame133.webp" alt="img-about" title="img-about" width="612" height="612" />
           </div>
           <div className="about-right">
             <div className="about-title">About Axalize</div>
@@ -41,12 +41,12 @@ const About = () => {
             <div className="target-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</div>
           </div>
           <div className="target-right">
-            <img src="about_mission.webp" alt="misson" title="mission" width="530" height="533" />
+            <img src="/about_mission.webp" alt="misson" title="mission" width="530" height="533" />
           </div>
         </div>
         <div className="our-target">
           <div className="target-right">
-            <img src="about_vision.webp" alt="vision" title="vision" width="530" height="533" />
+            <img src="/about_vision.webp" alt="vision" title="vision" width="530" height="533" />
           </div>
           <div className="target-left">
             <div className="target-title"><p>Our</p> <label>Vision</label> </div>
@@ -64,45 +64,45 @@ const About = () => {
               5. Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</div>
           </div>
           <div className="target-right">
-            <img src="about_core.webp" alt="core" title="core" width="530" height="710" />
+            <img src="/about_core.webp" alt="core" title="core" width="530" height="710" />
           </div>
         </div>
       </div>
 
       <style jsx>
         {`
-          .about-us{
+          .about-us {
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
           }
-          .h1{
+          .h1 {
             display:none;
           }
-          .bg-header{
+          .bg-header {
             position: relative;
-            width:100%;
+            width: 100%;
             overflow: hidden;
           }
-          .img-header{
-            position:absolute;
-            right:0;
-            top:118px;
-            z-index:1;
+          .img-header {
+            position: absolute;
+            right: 0;
+            top: 118px;
+            z-index: 1;
           }
-          .about-header{
-            position:relative;
-            height:calc(100vh - 118px);
+          .about-header {
+            position: relative;
+            height: calc(100vh - 118px);
             max-width: 1260px;
-            margin:auto;
+            margin: auto;
             margin-top: 118px;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            z-index:2;
+            z-index: 2;
           }
-          .header-title{
+          .header-title {
             background-image: url("../Ellipse.svg");
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 28%;
             height: 103px;
@@ -110,110 +110,110 @@ const About = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            position:relative;
-            top:105px;
+            position: relative;
+            top: 105px;
             left: 20px;
             font-family: 'Lexend', sans-serif;
             color: #DEDEDE;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
           }
-          .header-content{
+          .header-content {
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
             align-items: center;
-            max-width:1260px;
+            max-width: 1260px;
           }
-          .header-left{
-            width:35%;
+          .header-left {
+            width: 35%;
             font-size: 20px;
             line-height: 33px;
             color: #FFFFFF;
             margin-bottom: 100px; 
           }
-          .header-right{
-            max-width:60%;
+          .header-right {
+            max-width: 60%;
           }
-          .header-right>img{
-            max-width:100%;
+          .header-right>img {
+            max-width: 100%;
           } 
-          .about-bg{
+          .about-bg {
             background-image: url("../Session.webp");
-            height:100vh;
-            background-repeat:no-repeat;
-            display:flex;
+            height: 100vh;
+            background-repeat: no-repeat;
+            display: flex;
             align-items: center;
           }
-          .about-axa{
-            max-width:1260px;
-            display:flex;
-            gap:7%;
-            margin :auto;
+          .about-axa {
+            max-width: 1260px;
+            display: flex;
+            gap: 7%;
+            margin: auto;
           }
-          .about-left{
-            max-width : 48%;
+          .about-left {
+            max-width: 48%;
           }
-          .about-left>img{
-            max-width:100%;
+          .about-left>img {
+            max-width: 100%;
           }
-          .about-right{
-            width:41%;
+          .about-right {
+            width: 41%;
           }
-          .about-title{
+          .about-title {
             font-weight: 600;
             font-size: 40px;
             line-height: 48px;
             color: #1365B1;
-            margin-top:26px;
+            margin-top: 26px;
             margin-bottom: 36px;
           }
-          .about-content{
+          .about-content {
             font-size: 19px;
             line-height: 27px;
           }
-          .target-about{
-            margin-top:68px;
-            padding-bottom:100px;
+          .target-about {
+            margin-top: 68px;
+            padding-bottom: 100px;
           }
-          .our-target{
+          .our-target {
             max-width: 1260px;
             display: flex;
             justify-content: space-between;
             margin: auto;
             margin-bottom: 70px;
           }
-          .target-left{
-            padding-right:40px;
-            margin-left:20px;
+          .target-left {
+            padding-right: 40px;
+            margin-left: 20px;
           }
-          .target-right{
-            max-width:42%;
+          .target-right {
+            max-width: 42%;
             border-radius: 5px;
           }
-          .target-right>img{
+          .target-right>img {
             border-radius: 5px;
-            max-width:100%;
+            max-width: 100%;
           }
-          .target-title{
+          .target-title {
             margin-top: 57px;
             margin-bottom: 54px;
             font-weight: bold;
             font-size: 60px;
             line-height: 78px;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             font-family: 'IBM Plex Sans', sans-serif;
           }
-          .target-title>p{
-            color:#FFFFFF;
+          .target-title>p {
+            color: #FFFFFF;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1);
           }
-          .target-title>label{
+          .target-title>label {
             color: #236B99;
           }
-          .target-content{
+          .target-content {
             max-width: 550px;
             font-size: 20px;
             line-height: 26px;

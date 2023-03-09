@@ -39,13 +39,13 @@ const Pagination = props => {
           <img src="arrow_left.svg" alt="arrow-left" title="arrow-left" width="9" height="12" />
         </div>
       </li>
-      {paginationRange.map(pageNumber => {
+      {paginationRange.map((pageNumber, index) => {
         if (pageNumber === DOTS) {
-          return <li className="pagination-item-dots">&#8230;</li>;
+          return <li className="pagination-item-dots" key={index}>&#8230;</li>;
         }
 
         return (
-          <li className={pageNumber === currentPage ? 'selected' : 'pagination-item'} onClick={() => onPageChange(pageNumber)}>
+          <li key={index} className={pageNumber === currentPage ? 'selected' : 'pagination-item'} onClick={() => onPageChange(pageNumber)}>
             {pageNumber}
           </li>
         );
@@ -64,11 +64,11 @@ const Pagination = props => {
             list-style-type: none;
           }
           .pagination-item,.pagination-item-dots,.selected,.disabled {
-            display:flex;
-            justify-content:center;
+            display: flex;
+            justify-content: center;
             align-items: center;
             height: 32px;
-            width:32px;
+            width: 32px;
             margin: auto 4px;
             color: rgba(0, 0, 0, 0.87);
             box-sizing: border-box;
@@ -80,7 +80,7 @@ const Pagination = props => {
             min-width: 32px;
             cursor: pointer;
           }
-          .pagination-item-dots{
+          .pagination-item-dots {
             padding: 0 9px;
           }
           .pagination-item-dots:hover {
@@ -92,13 +92,13 @@ const Pagination = props => {
             cursor: pointer;
           }
           .selected {
-            color:#FC721E;
+            color: #FC721E;
             border: 1px solid #FC721E;
           }
-          .arrow{
+          .arrow {
             margin:0;
             margin-top: 2px;
-            margin-right:1px;
+            margin-right: 1px;
             color: #FFFFFF;
           }
           .arrow::before {

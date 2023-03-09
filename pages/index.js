@@ -1,7 +1,9 @@
-// import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
 import Head from 'next/head';
 import Link from 'next/link';
+
+import Archivement from '../components/Archivement/Archivement';
+import Techniques from '../components/Techniques/Techniques';
 
 const Index = () => {
   const router = useRouter()
@@ -57,21 +59,21 @@ const Index = () => {
               <div className="services-column">
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="services1.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <img src="/services1.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Web application development</div>
                   </div>
                   <div className="services-one">
-                    <img src="services2.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <img src="/services2.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Mobile app development</div>
                   </div>
                 </div>
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="services3.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <img src="/services3.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">RPA development</div>
                   </div>
                   <div className="services-one">
-                    <img src="services4.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <img src="/services4.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Dedicated development teams</div>
                   </div>
                 </div>
@@ -79,21 +81,21 @@ const Index = () => {
               <div className="services-column">
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="services5.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <img src="/services5.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Offshore development center</div>
                   </div>
                   <div className="services-one">
-                    <img src="services6.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <img src="/services6.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Lifecycle maintenance</div>
                   </div>
                 </div>
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="services7.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <img src="/services7.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">DevOps development and operations</div>
                   </div>
                   <div className="services-one">
-                    <img src="services8.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <img src="/services8.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">UI/UX Design</div>
                   </div>
                 </div>
@@ -102,55 +104,8 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Archivement */}
-          <div className="archivement">
-            <div className="archivement-container">
-              <div className="archivement-content">
-                <label className="item">Archivement</label>
-                <div className="crossbar-left-1"></div>
-                <div className="crossbar-left-2"></div>
-                <img src="medal.svg" alt="logo" title="logo" width="47px" height="47" />
-              </div>
-              <div className="archivement-column">
-                <label className="archivement-number">50+</label>
-                <label>Successful projects</label>
-              </div>
-              <div className="archivement-column">
-                <label className="archivement-number">100+</label>
-                <label>Customers around the world</label>
-              </div>
-              <div className="archivement-column">
-                <label className="archivement-number">99%</label>
-                <label>Repeat rate</label>
-              </div>
-            </div>
-          </div>
-
-          {/* Archivement Mobile*/}
-          <div className="archivement-mobile">
-            <div className="archivement-container">
-              <div className="archivement-content-moblie">
-                <label className="item">Archivement</label>
-                <div className="crossbar1"></div>
-                <div className="crossbar2"></div>
-                <img src="medal.svg" alt="logo" title="logo" width="47px" height="47" />
-              </div>
-              <div className="archivement-row">
-                <div className="archivement-column">
-                  <label className="archivement-number">50+</label>
-                  <label>Successful projects</label>
-                </div>
-                <div className="archivement-column">
-                  <label className="archivement-number">100+</label>
-                  <label>Customers around the world</label>
-                </div>
-              </div>
-              <div className="archivement-column">
-                <label className="archivement-number">99%</label>
-                <label>Repeat rate</label>
-              </div>
-            </div>
-          </div>
+          {/* Archivement*/}
+          <Archivement />
 
           {/* Target */}
           <div className="target">
@@ -176,41 +131,41 @@ const Index = () => {
             </div>
             <div className="mission-vision">
               <div className="target-row">
-                <img src="icons8.svg" alt="mission" title="mission" width="61" height="61" />
+                <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
                 <div className="mission">
                   <div className="mission-header">Mission</div>
                   <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
                 </div>
               </div>
               <div className="target-row">
-                <img src="icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
+                <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
                 <div className="mission">
                   <div className="mission-header">Vision</div>
                   <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
                 </div>
               </div>
               <div className="target-row">
-                <img src="icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
+                <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
                 <div className="mission">
                   <div className="mission-header">Core value</div>
                   <div className="one-core">
-                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
                   </div>
                   <div className="one-core">
-                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <label> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
                   </div>
                   <div className="one-core">
-                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <label> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
                   </div>
                   <div className="one-core">
-                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <label> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
                   </div>
                   <div className="one-core">
-                    <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <label> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
                   </div>
                 </div>
@@ -219,42 +174,42 @@ const Index = () => {
             <div className="mission-vision-mobile">
               <div className="target-row">
                 <div className="mission-mobile">
-                  <img src="icons8.svg" alt="mission" title="mission" width="61" height="61" />
+                  <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
                   <div className="mission-header">Mission</div>
                 </div>
                 <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
               </div>
               <div className="target-row">
                 <div className="mission-mobile">
-                  <img src="icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
+                  <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
                   <div className="mission-header">Vision</div>
                 </div>
                 <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
               </div>
               <div className="target-row">
                 <div className="mission-mobile">
-                  <img src="icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
+                  <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
 
                   <div className="mission-header">Core value</div>
                 </div>
                 <div className="one-core">
-                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
                 </div>
                 <div className="one-core">
-                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <label> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
                 </div>
                 <div className="one-core">
-                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <label> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
                 </div>
                 <div className="one-core">
-                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <label> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
                 </div>
                 <div className="one-core">
-                  <img src="Vector.svg" alt="check" title="check" width="16" height="12" />
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <label> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
                 </div>
               </div>
@@ -271,7 +226,7 @@ const Index = () => {
             <div className="expertise-main">
               <div className="one-expertise">
                 <div className="img-expertise">
-                  <img src="Expertise1.svg" alt="expertise" title="expertise" width="100" height="100" />
+                  <img src="/Expertise1.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
                   <label className="system-header">Enterprise management systems</label>
@@ -280,7 +235,7 @@ const Index = () => {
               </div>
               <div className="one-expertise">
                 <div className="img-expertise">
-                  <img src="Expertise2.svg" alt="expertise" title="expertise" width="100" height="100" />
+                  <img src="/Expertise2.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
                   <label className="system-header">Ecommerce & Retail management systems</label>
@@ -289,7 +244,7 @@ const Index = () => {
               </div>
               <div className="one-expertise">
                 <div className="img-expertise">
-                  <img src="Expertise3.svg" alt="expertise" title="expertise" width="100" height="100" />
+                  <img src="/Expertise3.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
                   <label className="system-header">Customer-enabling services</label>
@@ -298,7 +253,7 @@ const Index = () => {
               </div>
               <div className="one-expertise">
                 <div className="img-expertise">
-                  <img src="Expertise4.svg" alt="expertise" title="expertise" width="100" height="100" />
+                  <img src="/Expertise4.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
                   <label className="system-header1">New business ideas</label>
@@ -310,60 +265,27 @@ const Index = () => {
 
             </div>
           </div>
-
           {/* Techniques */}
-          <div className="techniques">
-            <div className="techniques-header">
-              <label className="item">Techniques</label>
-              <div className="crossbar1"></div>
-              <div className="crossbar2"></div>
-            </div>
-            <div className="techniques-main">
-              <div className="techniques-column">
-                <img src="androidStudio.svg" alt="android" title="android" width="86" height="55" />
-                <img src="angular.svg" alt="angular" title="angular" width="120" height="55" />
-                <img src="reactjs.svg" alt="reactjs" title="reactjs" width="124" height="50" />
-                <img src="vuejs.svg" alt="vuejs" title="vuejs" width="117" height="55" />
-                <img src="reactive-native.svg" alt="reactive-native" title="reactive-native" width="163" height="55" />
-                <div className="html-css">
-                  <img src="js.svg" alt="js" title="js" width="39" height="39" />
-                  <img src="html.svg" alt="html" title="html" width="39" height="39" />
-                  <img src="css.svg" alt="css" title="css" width="39" height="39" />
-                </div>
-
-                <img src="mongodb.svg" alt="mongodb" title="mongodb" width="124" height="37" />
-
-              </div>
-              <div className="techniques-column">
-                <img src="php.svg" alt="php" title="php" width="89" height="44" />
-                <img src="django.svg" alt="django" title="django" width="98" height="55" />
-                <img src="nodejs.svg" alt="nodejs" title="nodejs" width="81" height="49" />
-                <img src="mysql.svg" alt="mysql" title="mysql" width="99" height="51" />
-                <img src="postgres.svg" alt="postgres" title="postgres" width="123" height="55" />
-                <img src="laravel.svg" alt="laravel" title="laravel" width="147" height="54" />
-                <img src="magento.svg" alt="magento" title="magento" width="122" height="44" />
-              </div>
-            </div>
-          </div>
+          <Techniques />
         </div>
 
         {/* CSS */}
         <style jsx>
           {`
-            .container {
+            .container  {
               width: 100%;
             }
-            .home{
+            .home {
               background: #FFFFFF;
               font-family: 'Inter', sans-serif;
             }
-            .h1{
-              display:none;
+            .h1 {
+              display: none;
             }
-            .home--header{
+            .home--header {
               height: calc(100vh - 118px);
               margin-top: 118px;
-              display:flex;
+              display: flex;
               justify-content: center;
               color: #FFFFFF;
               background-image: url("../imgheader.webp");
@@ -371,174 +293,118 @@ const Index = () => {
               background-repeat: no-repeat;
               background-size: cover;
             }
-            .title1{
+            .title1 {
               font-size: 2.625rem;
               font-weight: 600;
               margin-bottom: 35px; 
             }
-            .title2{
+            .title2 {
               font-size: 1.75rem;
-              font-weight:500;
+              font-weight: 500;
               margin-bottom: 30px;   
             }
-            .title3{
-              font-size:1.25rem;
+            .title3 {
+              font-size: 1.25rem;
               margin-bottom: 50px;
               width:50%;
               text-align: justify;
             }
-            .header-container{
+            .header-container {
               max-width: 1274px;
-              margin-left:100px;
-              margin-top:205px;
+              margin-left: 100px;
+              margin-top: 205px;
             }
-            .header-btn{
-              display:flex;
+            .header-btn {
+              display: flex;
             }
-            .header-btn>button{
+            .header-btn>button {
               border-radius: 5px;
               height: 46px;
               width: 188px;
               display: flex;
-              justify-content:center;
+              justify-content: center;
               align-items: center;
-              outline:none;
+              outline: none;
               color: #FFFFFF;
               font-size: 1.25rem;
             }
-            .btn-contact{
+            .btn-contact {
               background: #BA4F13;
-              margin-right:18px;
+              margin-right: 18px;
               border: 1px solid #BA4F13;        
             }
-            .btn-learn{
+            .btn-learn {
               background: #051024;
               border: 1px solid #051024;
             }
 
             //our-services----------------------------
 
-            .our-services{
+            .our-services {
               margin-bottom: 45px
             }
-            .services-header{
-              display:flex;
+            .services-header {
+              display: flex;
               flex-direction: column;
               justify-content: center;
               text-align: center;
-              margin-top:72px;
+              margin-top: 72px;
               margin-bottom: 10px;
             }
-            .item,.item-first{
+            .item,.item-first {
               color: #1E1E1E;
               font-size: 2rem;
               font-weight: 600;
             }
-            .crossbar1,.crossbar-left-1{
+            .crossbar1,.crossbar-left-1 {
               width: 90px;
               height: 4px;
               background: #FC721E;
               margin: auto;
-              margin-bottom:3px;
+              margin-bottom: 3px;
               margin-top: 10px;
             }
-            .crossbar2,.crossbar-left-2{
+            .crossbar2,.crossbar-left-2 {
               width: 90px;
               height: 2px;
               background: #FC721E;
               margin: auto;
               margin-bottom: 55px;
             }
-            .services-main{
+            .services-main {
               max-width: 1260px;
-              width:100%;
+              width: 100%;
               margin : auto;
             }
-            .services-column{
+            .services-column {
               display: flex;
               margin-bottom: 65px;
-              width:100%;
+              width: 100%;
             }
-            .services-two{
-              width:50%;
+            .services-two {
+              width: 50%;
               display: flex;
-              font-size:1.125rem;
+              font-size: 1.125rem;
             }
-            .services-one{
+            .services-one {
               width: 50%;
             }
-            .img-services{
+            .img-services {
               display: flex;
               flex-direction: column;
-              margin:auto
+              margin: auto
             }
-            .services-text{
+            .services-text {
               max-width: 200px;
-              margin:auto;
+              margin: auto;
               text-align: center;   
-              font-weight:600;
+              font-weight: 600;
               color: #236B99;
             }
-
-            //Archivement---------------------------
-
-            .archivement,.archivement-mobile{
-              height: 278px;
-              background: url("../service_bg.svg"),#A1ACBB;
-              background-size: cover;
-              background-repeat: no-repeat;
-              margin-top: 50px;
-            }
-            .archivement-container{
-              max-width:1260px;
-              width:100%;
-              height:100%;
-              margin: auto;
-              display: flex;
-              justify-content: center;
-            }
-            .archivement-column,.archivement-content{
-              display: flex;
-              flex-direction: column;
-              width: 25%;
-              text-align: center;
-              align-items:center;
-              margin-top: 57px;
-            }
-            .archivement-column{
-              font-size:1.063rem;
-              font-family: 'Lexend', sans-serif;
-              // margin-bottom: 100px;
-            }
-            .archivement-column>label{
-              max-width:205px;
-            }
-            .archivement-content{
-              align-items:flex-start;
-              margin-top:67px;
-              margin-left:30px;
-              width:20%;
-              padding-left:5%;
-            }
-            .crossbar-left-1{
-              margin: 0;
-              margin-top:8px;
-            }
-            .crossbar-left-2{
-              margin: 0;
-              margin-top:4px;
-              margin-bottom: 17px;
-            }
-            .archivement-number{
-              font-size:4.375rem;
-              color: #FFFFFF;
-              text-shadow: 2px 0 #2F2D77, -2px 0 #2F2D77, 0 2px #2F2D77, 0 -2px #2F2D77,
-              1px 1px #2F2D77, -1px -1px #2F2D77, 1px -1px #2F2D77, -1px 1px #2F2D77;
-            }
-
+           
             //------------------------------
 
-            .target{
+            .target {
               display: flex;
               justify-content: center;
               height: 730px;
@@ -546,23 +412,23 @@ const Index = () => {
               background-size: contain;
               background-repeat: no-repeat;
             }
-            .about-us{
+            .about-us {
               background: url("../IMG_0799.webp");
               background-size: contain;
               background-repeat: no-repeat;
-              max-width:521px;
-              height:auto;
+              max-width: 521px;
+              height: auto;
               overflow: hidden;
               margin-top: 70px;
               border-radius: 5px;
             }
-            .about-us-bg{
+            .about-us-bg {
               background: rgba(0, 0, 0, 0.7);
-              max-width:532px;
-              height:849px; 
+              max-width: 532px;
+              height: 849px; 
               border-radius: 5px;
             }
-            .about-us-header{
+            .about-us-header {
               color: #FFFFFF;
               font-size: 2rem;
               font-weight: 600;
@@ -570,15 +436,15 @@ const Index = () => {
               padding-top: 38px;
               
             }
-            .contact{
+            .contact {
               color: rgba(66, 172, 232, 1);
-              text-decoration:none;
+              text-decoration: none;
               margin :0;
             }
-            .text-color{
+            .text-color {
               color: rgba(252, 114, 30, 1);
             }
-            .introduce-header{
+            .introduce-header {
               color: #FFFFFF;
               width: 70%;
               margin: auto;
@@ -586,115 +452,116 @@ const Index = () => {
               font-size: 1.375rem;
               text-align: center;
             }
-            .introduce-content{
+            .introduce-content {
               color: #DCDCDC;
               width: 80%;
               margin: auto;
               margin-bottom: 18px;
               font-family: 'Lato', sans-serif;
             }
-            .mission-vision-mobile{
-              width:90%;
-              margin:auto;
+            .mission-vision-mobile {
+              width: 90%;
+              margin: auto;
             }
-            .target-row{
-              display:flex;
-              margin-bottom:38px;
+            .target-row {
+              display: flex;
+              margin-bottom: 38px;
               margin-left: 55px;
               align-items: flex-start;
             }
-            .mission-vision{
+            .mission-vision {
               margin-top: 100px;
             }
-            .mission{
-              display:flex;
+            .mission {
+              display: flex;
               flex-direction: column;
               margin-left: 29px;
               max-width: 566px;
               font-size: 16px;
               line-height: 19px;
             }
-            .mission-header{
-              font-size:2rem;
+            .mission-header {
+              font-size: 2rem;
               font-weight: 500;
               color: #454545;
               margin-bottom: 16px;
             }
-            .mission>label{
+            .mission>label {
               margin-bottom: 8px;
             }
-            .one-core{
-              display:flex;
-              font-weight:500;
+            .one-core {
+              display: flex;
+              font-weight: 500;
               font-size: 1rem;
               line-height: 19px;
               margin-bottom: 5px;
             }
-            .one-core>img{
+            .one-core>img {
               margin-right: 8px;
               margin-top: 4px;
             }
             
             //----------------------------------
             
-            .expertise{
-              background: url("../service_bg.svg"),#A1ACBB;
+            .expertise {
+              background-image: url("../service_bg.svg");
+              background-color: #A1ACBB;
               height: 850px;
               margin-top: 120px;
             }
-            .expertise-header{
+            .expertise-header {
               text-align: center;
               padding-top: 80px;
             }
 
-            .expertise-main{
+            .expertise-main {
               display: flex;
               justify-content: center;
-              margin:auto;
+              margin: auto;
               margin-top: 100px;
-              gap:35px;
+              gap: 35px;
               max-width: 1260px;
             
             }
-            .one-expertise{
+            .one-expertise {
               position: relative;
               width: 25%;
             }
-            .one-expertise-content{
+            .one-expertise-content {
               position: relative;
-              max-width:280px;
-              height:400px;
+              max-width: 280px;
+              height: 400px;
               background: #ffffff;
               box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.17);
               border-radius: 10px;
               z-index: 1;
-              display:flex;
+              display: flex;
               flex-direction: column;
             }
-            .img-expertise{
+            .img-expertise {
               display: flex;
               justify-content: center;
-              width:100%;
+              width: 100%;
               z-index: 2;
-              top:-50px;
-              position:absolute;
+              top: -50px;
+              position: absolute;
             }
-            .system-header,.system-header1{
+            .system-header,.system-header1 {
               padding-top: 100px;
               width: 220px;
               font-size: 1.125rem;
               font-weight: 500;
               text-align: center;
-              margin:auto;
-              margin-top:0; 
+              margin: auto;
+              margin-top: 0; 
               margin-bottom: 33px;
             }
-            .system-header1{
+            .system-header1 {
               margin-bottom: 54px;
             }
-            .system-content{
+            .system-content {
               width: 80%;
-              margin:auto; 
+              margin: auto; 
               margin-top: 0;
               margin-bottom: 46px;
               color: #808080;
@@ -703,90 +570,29 @@ const Index = () => {
               line-height: 18px;
 
             }
-            .system-button{
+            .system-button {
               border: none;
-              color:#1667B2; 
+              color: #1667B2; 
               background: #FFFFFF;
               cursor: pointer;
               font-size: 1.125rem;
-              outline:none;
+              outline: none;
             }
 
-            //----------------------
-            .techniques{
-              height: 400px;
-              margin-top:40px;
-            }
-            .techniques-header{
-              text-align: center;
-            }
-            .techniques-main{
-              max-width: 1280px;
-              margin:auto;
-            }
-            .techniques-column{
-              display: flex;
-              justify-content: center;
-              margin-bottom:26px;
-              gap:1.5%;
-            }
-            .techniques-column>img,.html-css{
-              width:13%;
-              height: 55px;
-              border:1px solid #CCCCCC;
-              border-radius: 3px;
-              gap:1.5%;
-            }
-            .html-css{
-              display: flex;
-              justify-content: space-evenly;
-              align-items: center;
-            }
-            @media screen and (min-width: 900px){
-              .archivement-mobile{
+           
+            @media screen and (min-width: 900px) {
+              .mission-vision-mobile {
                 display: none;
               }
-              .mission-vision-mobile{
-                display:none;
-              }
             }
-            @media screen and (max-width: 900px){
-              .archivement{
-                display: none;
-              }
-              .archivement-mobile{
-                height: 470px;
-              }
-              .archivement-container{
-                flex-direction: column;
-                align-items: center;
-              }
-              .archivement-content-moblie{
-                display:flex;
-                flex-direction:column;
-                align-items: center;
-                padding-top:25px;
-              }
-              .archivement-row{
-                width:90%;
-                display:flex;
-                justify-content: space-between;
-              }
-              .archivement-column{
-                width: 50%;
-                margin-top: 30px;
-              }
-              .archivement-number{
-                font-size:3.25rem;
-              }
-
+            @media screen and (max-width: 900px) {
               //Target------------------------------
-              .target{
+              .target {
                 flex-direction: column;
                 height: auto;
                 background: #FFFFFF;
               }
-              .about-us-bg{
+              .about-us-bg {
                 background: linear-gradient(180deg,rgba(43,42,42,0)45%,#236b99 77%);
                 max-width: 900px;
                 width: 100%;
@@ -794,229 +600,208 @@ const Index = () => {
                 aspect-ratio: 0.6;
                 object-fit: cover;
               }
-              .about-us{
+              .about-us {
                 border-radius: 0px;
-                background:linear-gradient(180deg, rgba(5, 63, 117, 0.65) 0%, rgba(47, 47, 47, 0.5005) 50%), url("../IMG_0799.webp");
+                background: linear-gradient(180deg, rgba(5, 63, 117, 0.65) 0%, rgba(47, 47, 47, 0.5005) 50%), url("../IMG_0799.webp");
                 background-size: contain;
                 background-repeat: no-repeat;
                 max-width: 900px;
-                margin-top:0;
+                margin-top: 0;
                 width: 100%;
                 height: auto;
                 aspect-ratio: 0.7;
                 object-fit: cover;
                 position: relative;
               }
-              .about_content{
+              .about_content {
                 position: absolute;
                 top: 60%;
               }
-              .introduce-header{
+              .introduce-header {
                 font-size: 1.75rem;
                 margin-bottom: 40px;
               }
-              .introduce-content{
+              .introduce-content {
                 font-size: 17px;
               }
-              .contact{
+              .contact {
                 color: rgba(252, 114, 30, 1);
               }
-              .target-row{
+              .target-row {
                 margin-left: 12px;
                 margin-bottom: 0;
                 flex-direction: column;
               }
-              .mission-mobile{
+              .mission-mobile {
                 display: flex;
                 max-width: 294px;
-                font-size:15px;
+                font-size: 15px;
                 align-items: center;
                 margin-bottom: 15px;
                 margin-top: 28px;
               }
-              .mission-header{
+              .mission-header {
                 margin-bottom: 0;
               }
-              .mission-vision{
-                display:none;
+              .mission-vision {
+                display: none;
               }
-              .mission-content{
+              .mission-content {
                 margin-right: 20px;
-                margin-left:8px;
+                margin-left: 8px;
                 font-size: 15px;
               }
-              .one-core{
+              .one-core {
                 font-size: 15px;
                 margin-right: 30px;
                 margin-left: 8px;
               }
-              .one-core>img{
+              .one-core>img {
                 margin-right: 18px;
               }
 
               //----------------------------------
-              .expertise{
+              .expertise {
                 height: auto;
-                padding-bottom:50px;
+                padding-bottom: 50px;
               }
-              .expertise-header{
+              .expertise-header {
                 padding-top: 60px;
               }
-              .expertise-main{
+              .expertise-main {
                 display: flex;
                 flex-direction: column;
-                gap:15px;
+                gap: 15px;
                 margin-top: 40px;
               }
-              .one-expertise{
-                max-height:260px ;
+              .one-expertise {
+                max-height: 260px ;
                 width: 100%;
               }
-              .one-expertise-content{
+              .one-expertise-content {
                 max-width: 900px;
-                width:94%;
-                max-height:260px ;
-                margin:auto;
+                width: 94%;
+                max-height: 260px ;
+                margin: auto;
                 height: auto;
               }
-              .img-expertise{
-                width:54px;
-                height:54px;
-                top:15px;
+              .img-expertise {
+                width: 54px;
+                height: 54px;
+                top: 15px;
                 left: 12%;
               }
-              .img-expertise>img{
+              .img-expertise>img {
                 width: 100%;
-                height:100%;
+                height: 100%;
               }
-              .system-header,.system-header1{
-                padding-top:20px;
+              .system-header,.system-header1 {
+                padding-top: 20px;
                 width: 60%;
                 font-size: 20px;
                 text-align: left;
                 margin-left: 20%;
                 margin-bottom: 5%;
               }
-              .system-header1{
+              .system-header1 {
                 margin-bottom: 45px;
               }
 
-              //----------------------
-              .techniques{
-                height: auto;
-                padding-bottom: 60px;
-              }
-              .techniques-main{
-                display: flex;
-                justify-content: center;
-                
-              }
-              .techniques-column{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-top: 50px;
-                width: 100%;
-              }
-              .techniques-column>img,.html-css{                
-                width:94%;
-                margin-top: 16px;
-              }
             }
-            @media screen and (max-width: 600px){
-              .home--header{
+            @media screen and (max-width: 600px) {
+              .home--header {
                 margin-top: 50px;
                 height: calc(100vh - 50px);
               }
-              .header-container{
-                margin-top:25%;
+              .header-container {
+                margin-top: 25%;
                 width: 90%;
                 margin-left: 0;
                 position: relative;
               }
-              .title1{
+              .title1 {
                 font-size: 2.188rem;
                 margin-bottom: 60px;
               }
-              .title2{
+              .title2 {
                 font-size: 1.313rem;
                 margin-bottom: 60px;
                 width: 80%;
                 line-height: 25px;
               }
-              .title3{
+              .title3 {
                 width: 95%;
                 font-size: 1.053rem;
                 line-height: 21px;
               }
-              .crossbar2{
+              .crossbar2 {
                 margin-bottom: 8px;
               }
-              .services-text{
+              .services-text {
                 max-width: 155px;
               }
-              .header-btn{
+              .header-btn {
                 flex-direction: column;
                 align-items: center;
                 position: absolute;
                 bottom: 20px; 
                 width: 100%;
               }
-              .header-btn>button{
+              .header-btn>button {
                 width: 94%;
               }
-              .btn-contact{
+              .btn-contact {
                 margin-right: 0;
                 margin-bottom: 10px;
               }
               //our-services----------------------------
-              .services-header{
-                margin-top:32px; 
+              .services-header {
+                margin-top: 32px; 
                 margin-bottom: 40px;
               }
               
-              .services-column{
+              .services-column {
                 flex-direction: column;
                 margin-bottom: 0;
               }
-              .services-two{
+              .services-two {
                 width: 90%;
-                font-size:0.938rem;
+                font-size: 0.938rem;
                 margin: auto;
                 margin-bottom: 20px;
               }
               
              //-----------------------------------------
-              .about-us-bg{
+              .about-us-bg {
                 max-width: 600px;
                 width: 100%;
                 height: auto;
                 aspect-ratio: 0.5;
                 object-fit: cover;
               }
-              .about-us{
+              .about-us {
                 max-width: 600px;
-                margin-top:0;
+                margin-top: 0;
                 width: 100%;
                 height: auto;
                 aspect-ratio: 0.5;
               }
-              .mission-vision-mobile{
-                width:100%;
-                margin:auto;
+              .mission-vision-mobile {
+                width: 100%;
+                margin: auto;
               }
-              .introduce-header{
+              .introduce-header {
                 font-size: 1rem;
                 width: 80%;
               }
-              .about_content{
+              .about_content {
                 top: 50%;
               }
-              .introduce-content{
-                width:90%;
+              .introduce-content {
+                width: 90%;
                 font-size: 14px;
               }
-              .system-header,.system-header1{
+              .system-header,.system-header1 {
                 margin-left: 30%;
               }
             }

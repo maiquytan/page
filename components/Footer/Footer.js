@@ -6,18 +6,18 @@ const Footer = () => {
       <div className="footer-main">
         <div className="contact">
           <div className="logo-footer">
-            <img src="Asset.svg" alt="Axalize" title="Axalize" width="361" height="62" />
+            <img src="/Asset.svg" alt="Axalize" title="Axalize" width="361" height="62" />
           </div>
           <div>
-            <img className="footer-img" src="Email_small.svg" alt="email" title="email" width="18" height="15" />
+            <img className="footer-img" src="/Email_small.svg" alt="email" title="email" width="18" height="15" />
             <label>Email: contact@axalize.vn</label>
           </div>
           <div>
-            <img className="footer-img" src="Phone_small.svg" alt="phone" title="phone" width="17" height="17" />
+            <img className="footer-img" src="/Phone_small.svg" alt="phone" title="phone" width="17" height="17" />
             <label>Phone: (+84) 248-585-8389 </label>
           </div>
           <div className="contact-row">
-            <img className="footer-img" src="Location_small.svg" alt="location" title="location" width="12" height="18" />
+            <img className="footer-img" src="/Location_small.svg" alt="location" title="location" width="12" height="18" />
             <label>Location: 2F, 25T2 Building, Nguyen Thi Thap St., Trung Hoa W., Cau Giay Dist., Hanoi </label>
           </div>
         </div>
@@ -46,100 +46,100 @@ const Footer = () => {
       <div className="copyright">COPYRIGHT © AXALIZE INCORPORATED ALL RIGHTS RESERVED</div>
       <style jsx>
         {`
-          .footer{
+          .footer { 
             background: url("../footer.svg"),#131031;
             color: #FFFFFF;
             height: 410px;
-            width:100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             text-align: center;
           }
-          .footer-main{
-            display:flex;
-            margin-top:36px;
+          .footer-main { 
+            display: flex;
+            margin-top: 36px;
             margin-bottom: 61px;
             text-align: left;
             justify-content: center;
           }
-          .footer-service{
-            margin-right:30px;
+          .footer-service { 
+            margin-right: 30px;
           }
-          .footer-title1,.footer-title2{
-            font-size:20px;
+          .footer-title1,.footer-title2 { 
+            font-size: 20px;
             font-weight: 600;
             margin-bottom: 21px;
           }
-          .footer-title2{
+          .footer-title2 { 
             margin-bottom: 13px;
           }
-          .ul-service>li{
+          .ul-service>li { 
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
             margin-bottom: 8px;
           }
-          .contact{
+          .contact { 
             width: 361px;
             margin-right: 88px;
           }
-          .contact>img{
+          .contact>img { 
             margin-bottom: 38px;
           }
-          .contact>div{
-            margin-bottom :15px;
+          .contact>div { 
+            margin-bottom: 15px;
           }
-          .contact-row{
-            display:flex;
+          .contact-row { 
+            display: flex;
             align-items: flex-start; 
           }
-          .footer-img{
-            margin-right:11px;
+          .footer-img { 
+            margin-right: 11px;
           }
-          .hr{
+          .hr { 
             height: 5px;
             background: #FFF0DE;
             box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
           }
-          .copyright{
-            font-size:15px;
+          .copyright { 
+            font-size: 15px;
             margin-top: 16px;
             margin-bottom: 15px;
           }
-          @media screen and (max-width: 900px){
-            .footer{
+          @media screen and (max-width: 900px) { 
+            .footer { 
               height: auto;
-              width:100%;
+              width: 100%;
             }
-            .footer-main{
+            .footer-main { 
               flex-direction: column;
               width: 90%;
               margin: auto;
             }
-            .map{
-              width:94%;
-              max-width: 348px;
-              margin: auto;
+            .map { 
+              width: 100%;
+              max-width: 370px;
               margin-bottom: 20px;
             }
-            .map>iframe{
+            .map>iframe { 
               width: 100%;
             }
-            .logo-footer{
-              width:75%;
+            .logo-footer { 
+              width: 75%;
+              padding-top: 20px; 
               margin: auto;
             }
-            .logo-footer>img{
+            .logo-footer>img { 
               width: 100%;
             }
-            .footer-service{
-              margin-top:35px;
-              margin-bottom:25px;
+            .footer-service { 
+              margin-top: 35px;
+              margin-bottom: 25px;
             }
-            .ul-service{
+            .ul-service { 
               margin-left: 17px;
             }
-            .copyright{
+            .copyright { 
               font-size: 11px;
             }
           }
