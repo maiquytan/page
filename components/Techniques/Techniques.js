@@ -34,73 +34,73 @@ const Techniques = () => {
       </div>
       <style jsx>
         {` 
-          .techniques{
+          .techniques {
             height: 400px;
-            margin-top:40px;
+            margin-top: 40px;
           }
-          .techniques-header{
+          .techniques-header {
             text-align: center;
           }
-          .techniques-main{
+          .techniques-main {
             max-width: 1280px;
-            margin:auto;
+            margin: auto;
           }
-          .item{
+          .item {
             color: #1E1E1E;
             font-size: 32px;
             font-weight: 600;
           }
-          .crossbar1{
+          .crossbar1 {
             width: 90px;
             height: 4px;
             background: #FC721E;
             margin: auto;
-            margin-bottom:3px;
+            margin-bottom: 3px;
             margin-top: 10px;
           }
-          .crossbar2{
+          .crossbar2 {
             width: 90px;
             height: 2px;
             background: #FC721E;
             margin: auto;
             margin-bottom: 45px;
           }
-          .techniques-column{
+          .techniques-column {
             display: flex;
             justify-content: center;
-            margin-bottom:26px;
-            gap:1.5%;
+            margin-bottom: 26px;
+            gap: 1.5%;
           }
-          .techniques-column>img,.html-css{
-            width:13%;
+          .techniques-column>img,.html-css {
+            width: 13%;
             
             height: 55px;
-            border:1px solid #CCCCCC;
+            border: 1px solid #CCCCCC;
             border-radius: 3px;
-            gap:1.5%;
+            gap: 1.5%;
           }
-          .html-css{
+          .html-css {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
           }
-          @media screen and (max-width: 900px){
-            .techniques{
+          @media screen and (max-width: 900px) {
+            .techniques {
               height: auto;
               padding-bottom: 60px;
             }
-            .techniques-main{
+            .techniques-main {
               display: flex;
               justify-content: center;  
             }
-            .techniques-column{
+            .techniques-column {
               flex-direction: column;
               justify-content: center;
               align-items: center;
               width: 100%;
             }
-            .techniques-column>img,.html-css{                
-              width:94%;
+            .techniques-column>img,.html-css {                
+              width: 94%;
               margin-top: 16px;
             }
           }

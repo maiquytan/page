@@ -11,7 +11,7 @@ const Header = () => {
   const handleDropDownCompanyAction = () => {
     SetIsDropdownCompanyAction(!isDropdownCompanyAction)
   }
-  
+
   return (
     <div className="header">
       <div className="address">
@@ -71,18 +71,18 @@ const Header = () => {
       </div>
       <style jsx>
         {`
-          .header{
+          .header { 
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 3;
             background: #FFFFFF;
           }
-          .address{
+          .address { 
             width: 100%;
             background: #FFFFFF;
           }
-          .address-content{
+          .address-content { 
             color: #FC721E;
             max-width:  1274px;
             height: 40px;
@@ -91,33 +91,33 @@ const Header = () => {
             justify-content: flex-end;
             margin: auto;
           }
-          label{
+          label { 
             font-size: 14px;
             margin-left: 7px;
             margin-right: 22px;
           }
-          .phone{
+          .phone { 
             margin-right: 60px; 
           }
-          .im-location{
+          .im-location { 
             width: 13px;
             height: 21px;
           }
-          .menu{
+          .menu { 
             background: rgba(23, 23, 31, 0.95);
             height: 78px;
           }
-          .menu-main{
+          .menu-main { 
             display: flex;
             align-items: center;
             justify-content: space-between;
             max-width: 1274px;
             margin: auto;
           }
-          .menu-content{
+          .menu-content { 
             margin-right: 50px;
           }
-          a{
+          a { 
             color: #FFFFFF;
             text-decoration: none;
             margin: 0 10px;
@@ -125,13 +125,13 @@ const Header = () => {
             font-size: 20px;
             outline: none;
           }
-          .img-logo{
+          .img-logo { 
             margin-left: 50px;
           }
-          .logo{
+          .logo { 
             margin-bottom: 10px;
           }
-          .menu-mobile{
+          .menu-mobile { 
             background: rgba(23, 23, 31, 0.85);
             height: 50px;
             width: 100%;
@@ -140,11 +140,11 @@ const Header = () => {
             align-items: center;
             position: relative;
           }
-          .btn-menu{
+          .btn-menu { 
             position: absolute;
             right: 15px;
           }
-          .mobile-menu-down {
+          .mobile-menu-down { 
             position: absolute;
             flex-direction: column;
             width: 100%;
@@ -158,28 +158,28 @@ const Header = () => {
             list-style: none;
             z-index: 3;
           }
-          li{
+          li { 
             margin: 20px;
           }
-          hr{
+          hr { 
             margin: 0 10px;
             color: #F4F4F4;
           }
         
-          @media screen and (min-width:900px ){
-            .menu-mobile{
+          @media screen and (min-width:900px ) { 
+            .menu-mobile { 
               display: none;
             }
           }
 
-          @media screen and (max-width: 900px){
-            .menu,.address{
+          @media screen and (max-width: 900px) { 
+            .menu,.address { 
               display: none;
             }
-            .header{
+            .header { 
               width: 100%;
             }
-            a{
+            a { 
               color: #6E6E73;
             }
           }

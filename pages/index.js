@@ -272,17 +272,17 @@ const Index = () => {
         {/* CSS */}
         <style jsx>
           {`
-            .container {
+            .container  {
               width: 100%;
             }
-            .home{
+            .home {
               background: #FFFFFF;
               font-family: 'Inter', sans-serif;
             }
-            .h1{
+            .h1 {
               display: none;
             }
-            .home--header{
+            .home--header {
               height: calc(100vh - 118px);
               margin-top: 118px;
               display: flex;
@@ -293,31 +293,31 @@ const Index = () => {
               background-repeat: no-repeat;
               background-size: cover;
             }
-            .title1{
+            .title1 {
               font-size: 2.625rem;
               font-weight: 600;
               margin-bottom: 35px; 
             }
-            .title2{
+            .title2 {
               font-size: 1.75rem;
               font-weight: 500;
               margin-bottom: 30px;   
             }
-            .title3{
+            .title3 {
               font-size: 1.25rem;
               margin-bottom: 50px;
               width:50%;
               text-align: justify;
             }
-            .header-container{
+            .header-container {
               max-width: 1274px;
               margin-left: 100px;
               margin-top: 205px;
             }
-            .header-btn{
+            .header-btn {
               display: flex;
             }
-            .header-btn>button{
+            .header-btn>button {
               border-radius: 5px;
               height: 46px;
               width: 188px;
@@ -328,22 +328,22 @@ const Index = () => {
               color: #FFFFFF;
               font-size: 1.25rem;
             }
-            .btn-contact{
+            .btn-contact {
               background: #BA4F13;
               margin-right: 18px;
               border: 1px solid #BA4F13;        
             }
-            .btn-learn{
+            .btn-learn {
               background: #051024;
               border: 1px solid #051024;
             }
 
             //our-services----------------------------
 
-            .our-services{
+            .our-services {
               margin-bottom: 45px
             }
-            .services-header{
+            .services-header {
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -351,12 +351,12 @@ const Index = () => {
               margin-top: 72px;
               margin-bottom: 10px;
             }
-            .item,.item-first{
+            .item,.item-first {
               color: #1E1E1E;
               font-size: 2rem;
               font-weight: 600;
             }
-            .crossbar1,.crossbar-left-1{
+            .crossbar1,.crossbar-left-1 {
               width: 90px;
               height: 4px;
               background: #FC721E;
@@ -364,37 +364,37 @@ const Index = () => {
               margin-bottom: 3px;
               margin-top: 10px;
             }
-            .crossbar2,.crossbar-left-2{
+            .crossbar2,.crossbar-left-2 {
               width: 90px;
               height: 2px;
               background: #FC721E;
               margin: auto;
               margin-bottom: 55px;
             }
-            .services-main{
+            .services-main {
               max-width: 1260px;
               width: 100%;
               margin : auto;
             }
-            .services-column{
+            .services-column {
               display: flex;
               margin-bottom: 65px;
               width: 100%;
             }
-            .services-two{
+            .services-two {
               width: 50%;
               display: flex;
               font-size: 1.125rem;
             }
-            .services-one{
+            .services-one {
               width: 50%;
             }
-            .img-services{
+            .img-services {
               display: flex;
               flex-direction: column;
               margin: auto
             }
-            .services-text{
+            .services-text {
               max-width: 200px;
               margin: auto;
               text-align: center;   
@@ -404,7 +404,7 @@ const Index = () => {
            
             //------------------------------
 
-            .target{
+            .target {
               display: flex;
               justify-content: center;
               height: 730px;
@@ -412,7 +412,7 @@ const Index = () => {
               background-size: contain;
               background-repeat: no-repeat;
             }
-            .about-us{
+            .about-us {
               background: url("../IMG_0799.webp");
               background-size: contain;
               background-repeat: no-repeat;
@@ -422,13 +422,13 @@ const Index = () => {
               margin-top: 70px;
               border-radius: 5px;
             }
-            .about-us-bg{
+            .about-us-bg {
               background: rgba(0, 0, 0, 0.7);
               max-width: 532px;
               height: 849px; 
               border-radius: 5px;
             }
-            .about-us-header{
+            .about-us-header {
               color: #FFFFFF;
               font-size: 2rem;
               font-weight: 600;
@@ -436,15 +436,15 @@ const Index = () => {
               padding-top: 38px;
               
             }
-            .contact{
+            .contact {
               color: rgba(66, 172, 232, 1);
               text-decoration: none;
               margin :0;
             }
-            .text-color{
+            .text-color {
               color: rgba(252, 114, 30, 1);
             }
-            .introduce-header{
+            .introduce-header {
               color: #FFFFFF;
               width: 70%;
               margin: auto;
@@ -452,27 +452,27 @@ const Index = () => {
               font-size: 1.375rem;
               text-align: center;
             }
-            .introduce-content{
+            .introduce-content {
               color: #DCDCDC;
               width: 80%;
               margin: auto;
               margin-bottom: 18px;
               font-family: 'Lato', sans-serif;
             }
-            .mission-vision-mobile{
+            .mission-vision-mobile {
               width: 90%;
               margin: auto;
             }
-            .target-row{
+            .target-row {
               display: flex;
               margin-bottom: 38px;
               margin-left: 55px;
               align-items: flex-start;
             }
-            .mission-vision{
+            .mission-vision {
               margin-top: 100px;
             }
-            .mission{
+            .mission {
               display: flex;
               flex-direction: column;
               margin-left: 29px;
@@ -480,41 +480,41 @@ const Index = () => {
               font-size: 16px;
               line-height: 19px;
             }
-            .mission-header{
+            .mission-header {
               font-size: 2rem;
               font-weight: 500;
               color: #454545;
               margin-bottom: 16px;
             }
-            .mission>label{
+            .mission>label {
               margin-bottom: 8px;
             }
-            .one-core{
+            .one-core {
               display: flex;
               font-weight: 500;
               font-size: 1rem;
               line-height: 19px;
               margin-bottom: 5px;
             }
-            .one-core>img{
+            .one-core>img {
               margin-right: 8px;
               margin-top: 4px;
             }
             
             //----------------------------------
             
-            .expertise{
+            .expertise {
               background-image: url("../service_bg.svg");
               background-color: #A1ACBB;
               height: 850px;
               margin-top: 120px;
             }
-            .expertise-header{
+            .expertise-header {
               text-align: center;
               padding-top: 80px;
             }
 
-            .expertise-main{
+            .expertise-main {
               display: flex;
               justify-content: center;
               margin: auto;
@@ -523,11 +523,11 @@ const Index = () => {
               max-width: 1260px;
             
             }
-            .one-expertise{
+            .one-expertise {
               position: relative;
               width: 25%;
             }
-            .one-expertise-content{
+            .one-expertise-content {
               position: relative;
               max-width: 280px;
               height: 400px;
@@ -538,7 +538,7 @@ const Index = () => {
               display: flex;
               flex-direction: column;
             }
-            .img-expertise{
+            .img-expertise {
               display: flex;
               justify-content: center;
               width: 100%;
@@ -546,7 +546,7 @@ const Index = () => {
               top: -50px;
               position: absolute;
             }
-            .system-header,.system-header1{
+            .system-header,.system-header1 {
               padding-top: 100px;
               width: 220px;
               font-size: 1.125rem;
@@ -556,10 +556,10 @@ const Index = () => {
               margin-top: 0; 
               margin-bottom: 33px;
             }
-            .system-header1{
+            .system-header1 {
               margin-bottom: 54px;
             }
-            .system-content{
+            .system-content {
               width: 80%;
               margin: auto; 
               margin-top: 0;
@@ -570,7 +570,7 @@ const Index = () => {
               line-height: 18px;
 
             }
-            .system-button{
+            .system-button {
               border: none;
               color: #1667B2; 
               background: #FFFFFF;
@@ -580,19 +580,19 @@ const Index = () => {
             }
 
            
-            @media screen and (min-width: 900px){
-              .mission-vision-mobile{
+            @media screen and (min-width: 900px) {
+              .mission-vision-mobile {
                 display: none;
               }
             }
-            @media screen and (max-width: 900px){
+            @media screen and (max-width: 900px) {
               //Target------------------------------
-              .target{
+              .target {
                 flex-direction: column;
                 height: auto;
                 background: #FFFFFF;
               }
-              .about-us-bg{
+              .about-us-bg {
                 background: linear-gradient(180deg,rgba(43,42,42,0)45%,#236b99 77%);
                 max-width: 900px;
                 width: 100%;
@@ -600,7 +600,7 @@ const Index = () => {
                 aspect-ratio: 0.6;
                 object-fit: cover;
               }
-              .about-us{
+              .about-us {
                 border-radius: 0px;
                 background: linear-gradient(180deg, rgba(5, 63, 117, 0.65) 0%, rgba(47, 47, 47, 0.5005) 50%), url("../IMG_0799.webp");
                 background-size: contain;
@@ -613,26 +613,26 @@ const Index = () => {
                 object-fit: cover;
                 position: relative;
               }
-              .about_content{
+              .about_content {
                 position: absolute;
                 top: 60%;
               }
-              .introduce-header{
+              .introduce-header {
                 font-size: 1.75rem;
                 margin-bottom: 40px;
               }
-              .introduce-content{
+              .introduce-content {
                 font-size: 17px;
               }
-              .contact{
+              .contact {
                 color: rgba(252, 114, 30, 1);
               }
-              .target-row{
+              .target-row {
                 margin-left: 12px;
                 margin-bottom: 0;
                 flex-direction: column;
               }
-              .mission-mobile{
+              .mission-mobile {
                 display: flex;
                 max-width: 294px;
                 font-size: 15px;
@@ -640,62 +640,62 @@ const Index = () => {
                 margin-bottom: 15px;
                 margin-top: 28px;
               }
-              .mission-header{
+              .mission-header {
                 margin-bottom: 0;
               }
-              .mission-vision{
+              .mission-vision {
                 display: none;
               }
-              .mission-content{
+              .mission-content {
                 margin-right: 20px;
                 margin-left: 8px;
                 font-size: 15px;
               }
-              .one-core{
+              .one-core {
                 font-size: 15px;
                 margin-right: 30px;
                 margin-left: 8px;
               }
-              .one-core>img{
+              .one-core>img {
                 margin-right: 18px;
               }
 
               //----------------------------------
-              .expertise{
+              .expertise {
                 height: auto;
                 padding-bottom: 50px;
               }
-              .expertise-header{
+              .expertise-header {
                 padding-top: 60px;
               }
-              .expertise-main{
+              .expertise-main {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
                 margin-top: 40px;
               }
-              .one-expertise{
+              .one-expertise {
                 max-height: 260px ;
                 width: 100%;
               }
-              .one-expertise-content{
+              .one-expertise-content {
                 max-width: 900px;
                 width: 94%;
                 max-height: 260px ;
                 margin: auto;
                 height: auto;
               }
-              .img-expertise{
+              .img-expertise {
                 width: 54px;
                 height: 54px;
                 top: 15px;
                 left: 12%;
               }
-              .img-expertise>img{
+              .img-expertise>img {
                 width: 100%;
                 height: 100%;
               }
-              .system-header,.system-header1{
+              .system-header,.system-header1 {
                 padding-top: 20px;
                 width: 60%;
                 font-size: 20px;
@@ -703,68 +703,68 @@ const Index = () => {
                 margin-left: 20%;
                 margin-bottom: 5%;
               }
-              .system-header1{
+              .system-header1 {
                 margin-bottom: 45px;
               }
 
             }
-            @media screen and (max-width: 600px){
-              .home--header{
+            @media screen and (max-width: 600px) {
+              .home--header {
                 margin-top: 50px;
                 height: calc(100vh - 50px);
               }
-              .header-container{
+              .header-container {
                 margin-top: 25%;
                 width: 90%;
                 margin-left: 0;
                 position: relative;
               }
-              .title1{
+              .title1 {
                 font-size: 2.188rem;
                 margin-bottom: 60px;
               }
-              .title2{
+              .title2 {
                 font-size: 1.313rem;
                 margin-bottom: 60px;
                 width: 80%;
                 line-height: 25px;
               }
-              .title3{
+              .title3 {
                 width: 95%;
                 font-size: 1.053rem;
                 line-height: 21px;
               }
-              .crossbar2{
+              .crossbar2 {
                 margin-bottom: 8px;
               }
-              .services-text{
+              .services-text {
                 max-width: 155px;
               }
-              .header-btn{
+              .header-btn {
                 flex-direction: column;
                 align-items: center;
                 position: absolute;
                 bottom: 20px; 
                 width: 100%;
               }
-              .header-btn>button{
+              .header-btn>button {
                 width: 94%;
               }
-              .btn-contact{
+              .btn-contact {
                 margin-right: 0;
                 margin-bottom: 10px;
               }
               //our-services----------------------------
-              .services-header{
+              .services-header {
                 margin-top: 32px; 
                 margin-bottom: 40px;
               }
               
-              .services-column{
+              .services-column {
                 flex-direction: column;
                 margin-bottom: 0;
               }
-              .services-two{
+              .services-two {
                 width: 90%;
                 font-size: 0.938rem;
                 margin: auto;
@@ -772,36 +772,36 @@ const Index = () => {
               }
               
              //-----------------------------------------
-              .about-us-bg{
+              .about-us-bg {
                 max-width: 600px;
                 width: 100%;
                 height: auto;
                 aspect-ratio: 0.5;
                 object-fit: cover;
               }
-              .about-us{
+              .about-us {
                 max-width: 600px;
                 margin-top: 0;
                 width: 100%;
                 height: auto;
                 aspect-ratio: 0.5;
               }
-              .mission-vision-mobile{
+              .mission-vision-mobile {
                 width: 100%;
                 margin: auto;
               }
-              .introduce-header{
+              .introduce-header {
                 font-size: 1rem;
                 width: 80%;
               }
-              .about_content{
+              .about_content {
                 top: 50%;
               }
-              .introduce-content{
+              .introduce-content {
                 width: 90%;
                 font-size: 14px;
               }
-              .system-header,.system-header1{
+              .system-header,.system-header1 {
                 margin-left: 30%;
               }
             }

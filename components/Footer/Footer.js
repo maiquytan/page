@@ -46,7 +46,7 @@ const Footer = () => {
       <div className="copyright">COPYRIGHT © AXALIZE INCORPORATED ALL RIGHTS RESERVED</div>
       <style jsx>
         {`
-          .footer{
+          .footer { 
             background: url("../footer.svg"),#131031;
             color: #FFFFFF;
             height: 410px;
@@ -55,91 +55,91 @@ const Footer = () => {
             flex-direction: column;
             text-align: center;
           }
-          .footer-main{
+          .footer-main { 
             display: flex;
             margin-top: 36px;
             margin-bottom: 61px;
             text-align: left;
             justify-content: center;
           }
-          .footer-service{
+          .footer-service { 
             margin-right: 30px;
           }
-          .footer-title1,.footer-title2{
+          .footer-title1,.footer-title2 { 
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 21px;
           }
-          .footer-title2{
+          .footer-title2 { 
             margin-bottom: 13px;
           }
-          .ul-service>li{
+          .ul-service>li { 
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
             margin-bottom: 8px;
           }
-          .contact{
+          .contact { 
             width: 361px;
             margin-right: 88px;
           }
-          .contact>img{
+          .contact>img { 
             margin-bottom: 38px;
           }
-          .contact>div{
+          .contact>div { 
             margin-bottom: 15px;
           }
-          .contact-row{
+          .contact-row { 
             display: flex;
             align-items: flex-start; 
           }
-          .footer-img{
+          .footer-img { 
             margin-right: 11px;
           }
-          .hr{
+          .hr { 
             height: 5px;
             background: #FFF0DE;
             box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
           }
-          .copyright{
+          .copyright { 
             font-size: 15px;
             margin-top: 16px;
             margin-bottom: 15px;
           }
-          @media screen and (max-width: 900px){
-            .footer{
+          @media screen and (max-width: 900px) { 
+            .footer { 
               height: auto;
               width: 100%;
             }
-            .footer-main{
+            .footer-main { 
               flex-direction: column;
               width: 90%;
               margin: auto;
             }
-            .map{
+            .map { 
               width: 100%;
               max-width: 370px;
               margin-bottom: 20px;
             }
-            .map>iframe{
+            .map>iframe { 
               width: 100%;
             }
-            .logo-footer{
+            .logo-footer { 
               width: 75%;
               padding-top: 20px; 
               margin: auto;
             }
-            .logo-footer>img{
+            .logo-footer>img { 
               width: 100%;
             }
-            .footer-service{
+            .footer-service { 
               margin-top: 35px;
               margin-bottom: 25px;
             }
-            .ul-service{
+            .ul-service { 
               margin-left: 17px;
             }
-            .copyright{
+            .copyright { 
               font-size: 11px;
             }
           }

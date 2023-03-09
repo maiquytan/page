@@ -39,7 +39,7 @@ const Pagination = props => {
           <img src="arrow_left.svg" alt="arrow-left" title="arrow-left" width="9" height="12" />
         </div>
       </li>
-      {paginationRange.map((pageNumber,index) => {
+      {paginationRange.map((pageNumber, index) => {
         if (pageNumber === DOTS) {
           return <li className="pagination-item-dots" key={index}>&#8230;</li>;
         }
@@ -80,7 +80,7 @@ const Pagination = props => {
             min-width: 32px;
             cursor: pointer;
           }
-          .pagination-item-dots{
+          .pagination-item-dots {
             padding: 0 9px;
           }
           .pagination-item-dots:hover {
@@ -95,7 +95,7 @@ const Pagination = props => {
             color: #FC721E;
             border: 1px solid #FC721E;
           }
-          .arrow{
+          .arrow {
             margin:0;
             margin-top: 2px;
             margin-right: 1px;

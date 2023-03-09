@@ -99,25 +99,25 @@ const Client = () => {
 
       <style jsx>
         {`
-          .client{
+          .client {
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
           }
-          .h1{
+          .h1 {
             display: none;
           }
-          .bg-header{
+          .bg-header {
             position: relative;
             width: 100%;
             overflow: hidden;
           }
-          .img-header{
+          .img-header {
             position: absolute;
             right: 0;
             top: 118px;
             z-index: 1;
           }
-          .about-header{
+          .about-header {
             position: relative;
             height: calc(100vh - 118px);
             max-width: 1260px;
@@ -128,7 +128,7 @@ const Client = () => {
             align-items: flex-start;
             z-index: 2;
           }
-          .header-title{
+          .header-title {
             background-image: url("../Ellipse.svg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -145,29 +145,29 @@ const Client = () => {
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
           }
-          .header-content{
+          .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 40px;
             max-width: 1260px;
           }
-          .header-left{
+          .header-left {
             width: 29%;
             font-size: 23px;
             line-height: 33px;
             color: #FFFFFF;
             margin-bottom: 100px; 
           }
-          .header-right{
+          .header-right {
             max-width: 60%;
           }
-          .header-right>img{
+          .header-right>img {
             max-width: 100%;
           } 
 
           //---------------------------------
-          .bg-mobile-web{
+          .bg-mobile-web {
             background: url("../61769.webp");
             background-size: cover;
             background-repeat: no-repeat;
@@ -177,10 +177,10 @@ const Client = () => {
             border-radius: 15px;
             margin-bottom: 90px;
           }
-          .mobile-web{
+          .mobile-web {
             height: 513px;
           }
-          .mobile-web-header{
+          .mobile-web-header {
             margin-left: 11%;
             padding-top: 60px;
             margin-bottom: 40px;
@@ -188,7 +188,7 @@ const Client = () => {
             font-weight: 600;
             color: #1365B1;
           }
-          .mobile-web-content{
+          .mobile-web-content {
             margin-left: 11%;
             width: 40%;
             font-size: 16px;
@@ -196,13 +196,13 @@ const Client = () => {
           }
           
           //Reason------------------------
-          .bg-reason{
+          .bg-reason {
             background-image: url("../bg_reason.webp");
             background-size: cover;
             background-repeat: no-repeat;
             height: 1024px;
           }
-          .reason{
+          .reason {
             display:flex;
             flex-direction: column;
             justify-content: center;
@@ -210,7 +210,7 @@ const Client = () => {
             max-width: 1260px;
             margin: auto;
           }
-          .reason-header{
+          .reason-header {
             font-size: 36px;
             color: #E2ECF5;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
@@ -218,11 +218,11 @@ const Client = () => {
             margin-top: 300px;
             margin-bottom: 100px;
           }
-          .reason-content{
+          .reason-content {
             display: flex;
             gap: 1%;
           }
-          .one-reason{
+          .one-reason {
             diplay:flex;
             flex-direction: column;
             justify-content: center;
@@ -233,11 +233,11 @@ const Client = () => {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
           }
-          .one-reason>img{
+          .one-reason>img {
             margin-top: 58px;
             margin-bottom: 35px;
           }
-          .one-reason>p{
+          .one-reason>p {
             width: 74.5%;
             margin: auto;
             font-size: 17px;
@@ -245,7 +245,7 @@ const Client = () => {
           }
 
           //Expert-------------------------
-          .expert{
+          .expert {
             display: flex;
             justify-content: space-between;
             max-width: 1260px;
@@ -253,23 +253,23 @@ const Client = () => {
             margin-top: 100px;
             margin-bottom: 100px;
           }
-          .expert-left{
+          .expert-left {
             margin-left: 25px;
           }
-          .expert-header{
+          .expert-header {
             width: 30%;
             font-weight: 500;
             font-size: 42px;
             line-height: 57px;
             letter-spacing: 0.08em;
           }
-          .bar1,.bar2{
+          .bar1,.bar2 {
             width: 15px;
             height: 80px;
             background: #1466B1;
             margin-bottom: 15px;
           }
-          .expert-content{
+          .expert-content {
             width: 75%;
             font-weight: 300;
             font-size: 18px;
@@ -277,47 +277,47 @@ const Client = () => {
             letter-spacing: 0.03em;
             color: #525252;
           }
-          .expert-right{
+          .expert-right {
             margin-right: 25px;
           }
           
           //Feedback---------------------
-          .bg-feedback{
+          .bg-feedback {
             height: 1100px;
             background: #FFFFFF;
           }
-          .bg-feedback2{
+          .bg-feedback2 {
             background: #1466B1;
             height: 650px;
           }
-          .feedback{
+          .feedback {
             max-width: 1260px;
             margin: auto;
             color: #FFFFFF;
           }
-          .feedback-header{
+          .feedback-header {
             padding-top: 60px;
             max-width: 1260px;
             display: flex;
             justify-content: space-between;
           }
-          .feedback-header>div{
+          .feedback-header>div {
             width: 42%;
             font-weight: 600;
             font-size: 42px;
             line-height: 51px;
           }
-          .feedback-header>p{
+          .feedback-header>p {
             width: 47%;
             margin-top: 8px;
             font-size: 18px;
             line-height: 27px;
             letter-spacing: 0.04em;
           }
-          .bar2{
+          .bar2 {
             background-color: #FFFFFF;
           }
-          .what-say{
+          .what-say {
             font-weight: 600;
             font-size: 42px;
             line-height: 51px;
@@ -325,14 +325,14 @@ const Client = () => {
             color: #E2ECF5;
             text-shadow: 1px 4px 4px rgba(26, 75, 120, 0.62);
           }
-          .feedback-content{
+          .feedback-content {
             display: flex;
             gap: 15px;
             max-width: 1260px;
             height: 600px;
             margin: auto;
           }
-          .one-feedback{
+          .one-feedback {
             width: 33%;
             display: flex;
             flex-direction: column;
@@ -341,7 +341,7 @@ const Client = () => {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 15px;
           }
-          .img-feedback{
+          .img-feedback {
             border-radius: 50%;
             margin-top: 40px;
             margin-bottom: 32px;
@@ -361,7 +361,7 @@ const Client = () => {
             line-height: 22px;
             font-weight: 500;
           }
-          .one-feedback>label{
+          .one-feedback>label {
             font-size: 14px;
             font-weight: 500;
             line-height: 22px;

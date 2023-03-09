@@ -109,7 +109,7 @@ const Portfolio = () => {
           </div>
           <div className="applications-select">
             <div className="select" onClick={handleDropdownOnclick}>
-              <div>{isSelect.title}</div>
+              <div> {isSelect.title}</div>
               <div>
                 <img src="/arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9" />
               </div>
@@ -117,7 +117,7 @@ const Portfolio = () => {
             {isDropdownApp &&
               <div className="dropdown">
                 {listselect.map((list, index) => (
-                  <div className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}>{list.title}</div>
+                  <div className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</div>
                 ))}
               </div>
             }
@@ -129,8 +129,8 @@ const Portfolio = () => {
                 return (
                   <div className="illustration" key={index}>
                     <img src={item.img} alt="illustration" title="illustration" width="465" height="244" />
-                    <div>{item.title}</div>
-                    <label>{item.content}</label>
+                    <div> {item.title}</div>
+                    <label> {item.content}</label>
                   </div>
                 );
               })}
@@ -153,31 +153,31 @@ const Portfolio = () => {
 
       <style jsx>
         {`
-          .portfolio{
+          .portfolio {
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
           }
-          .h1{
+          .h1 {
             display: none;
           }
-          .bg-header{
+          .bg-header {
             position: relative;
             width: 100%;
             overflow: hidden;
           }
-          .img-header-pc,.img-header-mobile{
+          .img-header-pc,.img-header-mobile {
             position: absolute;
             right: 0;
             top: 118px;
             z-index: 1;
           }
-          .img-header-mobile{
+          .img-header-mobile {
             display: none;
           }
-          .applications-select{
+          .applications-select {
             display: none;
           }
-          .portfolio-header{
+          .portfolio-header {
             position: relative;
             height: calc(100vh - 118px);
             max-width: 1260px;
@@ -189,7 +189,7 @@ const Portfolio = () => {
             justify-content: center;
             z-index: 2;
           }
-          .header-title{
+          .header-title {
             background-image: url("../Ellipse.svg");
             width: 350px;
             height: 103px;
@@ -204,13 +204,13 @@ const Portfolio = () => {
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
             
           }
-          .header-content{
+          .header-content {
             display: flex;
             align-items: center;
             margin-top: 35px;
             max-width: 1260px;
           }
-          .content-left{
+          .content-left {
             width: 36%;
             margin-right: 65px;
             margin-bottom: 60px;
@@ -218,18 +218,18 @@ const Portfolio = () => {
             text-align: justify;
             line-height: 26px;
           }
-          .content-right{
+          .content-right {
             width: 60%;
           }
-          .content-right>img{
+          .content-right>img {
             max-width: 100%;
           }
-          .item{
+          .item {
             color: #1E1E1E;
             font-size: 32px;
             font-weight: 600;
           }
-          .crossbar-left-1{
+          .crossbar-left-1 {
             width: 90px;
             height: 4px;
             background: #FC721E;
@@ -237,7 +237,7 @@ const Portfolio = () => {
             margin-top: 8px;
             margin-bottom: 3px;
           }
-          .crossbar-left-2{
+          .crossbar-left-2 {
             width: 90px;
             height: 2px;
             background: #FC721E;
@@ -246,25 +246,25 @@ const Portfolio = () => {
           }
 
           //applications-------------------------
-          .applications{
+          .applications {
             height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
           }
-          .applications-left{
+          .applications-left {
             display: flex;
             flex-direction: column;
             margin-right: 50px;
           }
-          .applications-header{
+          .applications-header {
             display: flex;
             max-width: 1260px;
             margin: auto;
             margin-top: 100px;
             margin-bottom: 30px;
           }
-          .applications-list{
+          .applications-list {
             display: flex;
             flex-direction: column;
             max-width: 215px;
@@ -273,16 +273,16 @@ const Portfolio = () => {
             border-left: 1px solid #525252;
             padding-left: 15px;
           }
-          .applications-list >span{
+          .applications-list >span {
             margin-top: 10px;
             margin-bottom: 13px;
             cursor: pointer;
           }
-          .applications-right{
+          .applications-right {
             display: flex;
             width: 76%;
           }
-          .illustration{
+          .illustration {
             height: auto;
             width: 49%;
             background: #F0F0F0;
@@ -290,35 +290,35 @@ const Portfolio = () => {
             border-radius: 10px;
             overflow: hidden;
           }
-          .applications-row{
+          .applications-row {
             display: flex;
             flex-wrap: wrap;
             gap: 2%;
             width: 100%;
           }
-          .illustration>img{
+          .illustration>img {
             width: 100%;
             height: auto;
           }
-          .illustration>div{
+          .illustration>div {
             font-weight: 500;
             font-size: 20px;
             color: #1667B2;
             margin-left: 11px;
             margin-top: 10px;
           }
-          .illustration>label{
+          .illustration>label {
             font-size: 14px;
             color: #636363;
             margin-left: 11px;
           }
-          .paging{
+          .paging {
             display: flex;
             justify-content: center;
             margin-top: 50px;
             margin-bottom: 50px;
           }
-          .paging>button{ 
+          .paging>button { 
             width: 32px;
             height: 32px;
             margin-right: 8px;
@@ -328,18 +328,18 @@ const Portfolio = () => {
             cursor: pointer;
           }
 
-          @media screen and (max-width: 900px){
-            .img-header-pc{
+          @media screen and (max-width: 900px) {
+            .img-header-pc {
               display: none;
             }
-            .img-header-mobile{
+            .img-header-mobile {
               display: block;
             }
-            .portfolio-header{
+            .portfolio-header {
               height: calc(100vh - 50px);
               margin-top: 50px;
             }
-            .img-header-mobile{
+            .img-header-mobile {
               top: 0px;
               left: -70%;
               width: 200%;
@@ -347,31 +347,31 @@ const Portfolio = () => {
               aspect-ratio: 3;
               object-fit: cover;
             }
-            .img-header-mobile>img{
+            .img-header-mobile>img {
               width: 100%;
               height: 100%;
             }
-            .portfolio-header{
+            .portfolio-header {
               justify-content: normal;
             }
-            .header-title{
+            .header-title {
               margin-top: 10%;
               background: none;
               width: 100%;
               text-align: center;
             }
-            .header-content{
+            .header-content {
               flex-direction: column-reverse;
               width: 100%;
               margin-top: 25px;
             }
-            .content-left{
+            .content-left {
               width: 80%;
               margin: auto;
               font-size: 20px;
               line-height: 30px;
             }
-            .content-right{
+            .content-right {
               width: 86%;
               height: auto;
               aspect-ratio: 2.3;
@@ -379,29 +379,29 @@ const Portfolio = () => {
               margin-top: 5%;
               margin-bottom: 15%;
             }
-            .content-right>img{
+            .content-right>img {
               width: 100%; 
               height: 100%;
             }
             
-            .applications-header{
+            .applications-header {
               flex-direction: column;
             }
-            .applications-left{
+            .applications-left {
               margin: 0;
               justify-content: center;
               align-items: center;
               margin-bottom: 35px;
             }
-            .applications-list{
+            .applications-list {
               display: none;
             }
-            .applications-select{
+            .applications-select {
               position: relative;
               font-size: 18px;
               display: block;
             }
-            .select{
+            .select {
               display: flex;
               justify-content: space-between;
               align-items: center;
@@ -414,10 +414,10 @@ const Portfolio = () => {
               box-shadow: 1px 1px 5px #D9D9D9;
               border-radius: 5px;
             }
-            .select>div{
+            .select>div {
               margin: 10px;
             }
-            .dropdown{
+            .dropdown {
               position: absolute;
               top: 45px;
               width: 96%;
@@ -428,46 +428,46 @@ const Portfolio = () => {
               border-radius: 5px;
               color: #525252;
             }
-            .one_application{
+            .one_application {
               padding: 12px;
             }
-            .application_selected{
+            .application_selected {
               padding: 12px;
               color: #B7B7B7;
             }
            
-            .applications-right{
+            .applications-right {
               width: 96%; 
               margin: auto;
             }
-            .illustration{
+            .illustration {
               margin-bottom: 10px;
             }
-            .illustration>div{
+            .illustration>div {
               margin-top: 0;
               font-size: 13px;
             }
-            .illustration>label{
+            .illustration>label {
               font-size: 12px;
             }
           }
-          @media screen and (max-width: 600px){
-            .img-header-mobile{           
+          @media screen and (max-width: 600px) {
+            .img-header-mobile {           
               width: 200%;
               height: auto;
               aspect-ratio: 1.7;
               object-fit: cover;
             }
-            .content-left{
+            .content-left {
               width: 90%;
               margin: auto;
               font-size: 14px;
               line-height: 20px;
             }
-            .select{
+            .select {
               height: 36px;
             }
-            .applications-select{
+            .applications-select {
               font-size: 14px;
             }
           }

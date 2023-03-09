@@ -71,25 +71,25 @@ const About = () => {
 
       <style jsx>
         {`
-          .about-us{
+          .about-us {
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
           }
-          .h1{
+          .h1 {
             display:none;
           }
-          .bg-header{
+          .bg-header {
             position: relative;
             width: 100%;
             overflow: hidden;
           }
-          .img-header{
+          .img-header {
             position: absolute;
             right: 0;
             top: 118px;
             z-index: 1;
           }
-          .about-header{
+          .about-header {
             position: relative;
             height: calc(100vh - 118px);
             max-width: 1260px;
@@ -100,7 +100,7 @@ const About = () => {
             align-items: flex-start;
             z-index: 2;
           }
-          .header-title{
+          .header-title {
             background-image: url("../Ellipse.svg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -118,48 +118,48 @@ const About = () => {
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
           }
-          .header-content{
+          .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
             max-width: 1260px;
           }
-          .header-left{
+          .header-left {
             width: 35%;
             font-size: 20px;
             line-height: 33px;
             color: #FFFFFF;
             margin-bottom: 100px; 
           }
-          .header-right{
+          .header-right {
             max-width: 60%;
           }
-          .header-right>img{
+          .header-right>img {
             max-width: 100%;
           } 
-          .about-bg{
+          .about-bg {
             background-image: url("../Session.webp");
             height: 100vh;
             background-repeat: no-repeat;
             display: flex;
             align-items: center;
           }
-          .about-axa{
+          .about-axa {
             max-width: 1260px;
             display: flex;
             gap: 7%;
             margin: auto;
           }
-          .about-left{
+          .about-left {
             max-width: 48%;
           }
-          .about-left>img{
+          .about-left>img {
             max-width: 100%;
           }
-          .about-right{
+          .about-right {
             width: 41%;
           }
-          .about-title{
+          .about-title {
             font-weight: 600;
             font-size: 40px;
             line-height: 48px;
@@ -167,34 +167,34 @@ const About = () => {
             margin-top: 26px;
             margin-bottom: 36px;
           }
-          .about-content{
+          .about-content {
             font-size: 19px;
             line-height: 27px;
           }
-          .target-about{
+          .target-about {
             margin-top: 68px;
             padding-bottom: 100px;
           }
-          .our-target{
+          .our-target {
             max-width: 1260px;
             display: flex;
             justify-content: space-between;
             margin: auto;
             margin-bottom: 70px;
           }
-          .target-left{
+          .target-left {
             padding-right: 40px;
             margin-left: 20px;
           }
-          .target-right{
+          .target-right {
             max-width: 42%;
             border-radius: 5px;
           }
-          .target-right>img{
+          .target-right>img {
             border-radius: 5px;
             max-width: 100%;
           }
-          .target-title{
+          .target-title {
             margin-top: 57px;
             margin-bottom: 54px;
             font-weight: bold;
@@ -205,15 +205,15 @@ const About = () => {
             justify-content: center;
             font-family: 'IBM Plex Sans', sans-serif;
           }
-          .target-title>p{
+          .target-title>p {
             color: #FFFFFF;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1);
           }
-          .target-title>label{
+          .target-title>label {
             color: #236B99;
           }
-          .target-content{
+          .target-content {
             max-width: 550px;
             font-size: 20px;
             line-height: 26px;
