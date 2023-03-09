@@ -39,13 +39,13 @@ const Pagination = props => {
           <img src="arrow_left.svg" alt="arrow-left" title="arrow-left" width="9" height="12" />
         </div>
       </li>
-      {paginationRange.map(pageNumber => {
+      {paginationRange.map((pageNumber,index) => {
         if (pageNumber === DOTS) {
-          return <li className="pagination-item-dots">&#8230;</li>;
+          return <li className="pagination-item-dots" key={index}>&#8230;</li>;
         }
 
         return (
-          <li className={pageNumber === currentPage ? 'selected' : 'pagination-item'} onClick={() => onPageChange(pageNumber)}>
+          <li key={index} className={pageNumber === currentPage ? 'selected' : 'pagination-item'} onClick={() => onPageChange(pageNumber)}>
             {pageNumber}
           </li>
         );

@@ -2,6 +2,8 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head';
 import Link from 'next/link';
+import Archivement from '../components/Archivement/Archivement';
+import Techniques from '../components/Techniques/Techniques';
 
 const Index = () => {
   const router = useRouter()
@@ -102,55 +104,8 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Archivement */}
-          <div className="archivement">
-            <div className="archivement-container">
-              <div className="archivement-content">
-                <label className="item">Archivement</label>
-                <div className="crossbar-left-1"></div>
-                <div className="crossbar-left-2"></div>
-                <img src="medal.svg" alt="logo" title="logo" width="47px" height="47" />
-              </div>
-              <div className="archivement-column">
-                <label className="archivement-number">50+</label>
-                <label>Successful projects</label>
-              </div>
-              <div className="archivement-column">
-                <label className="archivement-number">100+</label>
-                <label>Customers around the world</label>
-              </div>
-              <div className="archivement-column">
-                <label className="archivement-number">99%</label>
-                <label>Repeat rate</label>
-              </div>
-            </div>
-          </div>
-
-          {/* Archivement Mobile*/}
-          <div className="archivement-mobile">
-            <div className="archivement-container">
-              <div className="archivement-content-moblie">
-                <label className="item">Archivement</label>
-                <div className="crossbar1"></div>
-                <div className="crossbar2"></div>
-                <img src="medal.svg" alt="logo" title="logo" width="47px" height="47" />
-              </div>
-              <div className="archivement-row">
-                <div className="archivement-column">
-                  <label className="archivement-number">50+</label>
-                  <label>Successful projects</label>
-                </div>
-                <div className="archivement-column">
-                  <label className="archivement-number">100+</label>
-                  <label>Customers around the world</label>
-                </div>
-              </div>
-              <div className="archivement-column">
-                <label className="archivement-number">99%</label>
-                <label>Repeat rate</label>
-              </div>
-            </div>
-          </div>
+          {/* Archivement*/}
+          <Archivement />
 
           {/* Target */}
           <div className="target">
@@ -310,41 +265,8 @@ const Index = () => {
 
             </div>
           </div>
-
           {/* Techniques */}
-          <div className="techniques">
-            <div className="techniques-header">
-              <label className="item">Techniques</label>
-              <div className="crossbar1"></div>
-              <div className="crossbar2"></div>
-            </div>
-            <div className="techniques-main">
-              <div className="techniques-column">
-                <img src="androidStudio.svg" alt="android" title="android" width="86" height="55" />
-                <img src="angular.svg" alt="angular" title="angular" width="120" height="55" />
-                <img src="reactjs.svg" alt="reactjs" title="reactjs" width="124" height="50" />
-                <img src="vuejs.svg" alt="vuejs" title="vuejs" width="117" height="55" />
-                <img src="reactive-native.svg" alt="reactive-native" title="reactive-native" width="163" height="55" />
-                <div className="html-css">
-                  <img src="js.svg" alt="js" title="js" width="39" height="39" />
-                  <img src="html.svg" alt="html" title="html" width="39" height="39" />
-                  <img src="css.svg" alt="css" title="css" width="39" height="39" />
-                </div>
-
-                <img src="mongodb.svg" alt="mongodb" title="mongodb" width="124" height="37" />
-
-              </div>
-              <div className="techniques-column">
-                <img src="php.svg" alt="php" title="php" width="89" height="44" />
-                <img src="django.svg" alt="django" title="django" width="98" height="55" />
-                <img src="nodejs.svg" alt="nodejs" title="nodejs" width="81" height="49" />
-                <img src="mysql.svg" alt="mysql" title="mysql" width="99" height="51" />
-                <img src="postgres.svg" alt="postgres" title="postgres" width="123" height="55" />
-                <img src="laravel.svg" alt="laravel" title="laravel" width="147" height="54" />
-                <img src="magento.svg" alt="magento" title="magento" width="122" height="44" />
-              </div>
-            </div>
-          </div>
+          <Techniques />
         </div>
 
         {/* CSS */}
@@ -479,63 +401,7 @@ const Index = () => {
               font-weight:600;
               color: #236B99;
             }
-
-            //Archivement---------------------------
-
-            .archivement,.archivement-mobile{
-              height: 278px;
-              background: url("../service_bg.svg"),#A1ACBB;
-              background-size: cover;
-              background-repeat: no-repeat;
-              margin-top: 50px;
-            }
-            .archivement-container{
-              max-width:1260px;
-              width:100%;
-              height:100%;
-              margin: auto;
-              display: flex;
-              justify-content: center;
-            }
-            .archivement-column,.archivement-content{
-              display: flex;
-              flex-direction: column;
-              width: 25%;
-              text-align: center;
-              align-items:center;
-              margin-top: 57px;
-            }
-            .archivement-column{
-              font-size:1.063rem;
-              font-family: 'Lexend', sans-serif;
-              // margin-bottom: 100px;
-            }
-            .archivement-column>label{
-              max-width:205px;
-            }
-            .archivement-content{
-              align-items:flex-start;
-              margin-top:67px;
-              margin-left:30px;
-              width:20%;
-              padding-left:5%;
-            }
-            .crossbar-left-1{
-              margin: 0;
-              margin-top:8px;
-            }
-            .crossbar-left-2{
-              margin: 0;
-              margin-top:4px;
-              margin-bottom: 17px;
-            }
-            .archivement-number{
-              font-size:4.375rem;
-              color: #FFFFFF;
-              text-shadow: 2px 0 #2F2D77, -2px 0 #2F2D77, 0 2px #2F2D77, 0 -2px #2F2D77,
-              1px 1px #2F2D77, -1px -1px #2F2D77, 1px -1px #2F2D77, -1px 1px #2F2D77;
-            }
-
+           
             //------------------------------
 
             .target{
@@ -712,74 +578,13 @@ const Index = () => {
               outline:none;
             }
 
-            //----------------------
-            .techniques{
-              height: 400px;
-              margin-top:40px;
-            }
-            .techniques-header{
-              text-align: center;
-            }
-            .techniques-main{
-              max-width: 1280px;
-              margin:auto;
-            }
-            .techniques-column{
-              display: flex;
-              justify-content: center;
-              margin-bottom:26px;
-              gap:1.5%;
-            }
-            .techniques-column>img,.html-css{
-              width:13%;
-              height: 55px;
-              border:1px solid #CCCCCC;
-              border-radius: 3px;
-              gap:1.5%;
-            }
-            .html-css{
-              display: flex;
-              justify-content: space-evenly;
-              align-items: center;
-            }
+           
             @media screen and (min-width: 900px){
-              .archivement-mobile{
-                display: none;
-              }
               .mission-vision-mobile{
                 display:none;
               }
             }
             @media screen and (max-width: 900px){
-              .archivement{
-                display: none;
-              }
-              .archivement-mobile{
-                height: 470px;
-              }
-              .archivement-container{
-                flex-direction: column;
-                align-items: center;
-              }
-              .archivement-content-moblie{
-                display:flex;
-                flex-direction:column;
-                align-items: center;
-                padding-top:25px;
-              }
-              .archivement-row{
-                width:90%;
-                display:flex;
-                justify-content: space-between;
-              }
-              .archivement-column{
-                width: 50%;
-                margin-top: 30px;
-              }
-              .archivement-number{
-                font-size:3.25rem;
-              }
-
               //Target------------------------------
               .target{
                 flex-direction: column;
@@ -901,27 +706,6 @@ const Index = () => {
                 margin-bottom: 45px;
               }
 
-              //----------------------
-              .techniques{
-                height: auto;
-                padding-bottom: 60px;
-              }
-              .techniques-main{
-                display: flex;
-                justify-content: center;
-                
-              }
-              .techniques-column{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-top: 50px;
-                width: 100%;
-              }
-              .techniques-column>img,.html-css{                
-                width:94%;
-                margin-top: 16px;
-              }
             }
             @media screen and (max-width: 600px){
               .home--header{

@@ -119,7 +119,6 @@ const Footer = () => {
             .map{
               width:94%;
               max-width: 348px;
-              margin: auto;
               margin-bottom: 20px;
             }
             .map>iframe{
