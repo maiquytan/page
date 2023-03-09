@@ -64,11 +64,11 @@ const Pagination = props => {
             list-style-type: none;
           }
           .pagination-item,.pagination-item-dots,.selected,.disabled {
-            display:flex;
-            justify-content:center;
+            display: flex;
+            justify-content: center;
             align-items: center;
             height: 32px;
-            width:32px;
+            width: 32px;
             margin: auto 4px;
             color: rgba(0, 0, 0, 0.87);
             box-sizing: border-box;
@@ -92,13 +92,13 @@ const Pagination = props => {
             cursor: pointer;
           }
           .selected {
-            color:#FC721E;
+            color: #FC721E;
             border: 1px solid #FC721E;
           }
           .arrow{
             margin:0;
             margin-top: 2px;
-            margin-right:1px;
+            margin-right: 1px;
             color: #FFFFFF;
           }
           .arrow::before {

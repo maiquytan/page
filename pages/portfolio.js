@@ -158,18 +158,18 @@ const Portfolio = () => {
             font-family: 'Inter', sans-serif;
           }
           .h1{
-            display:none;
+            display: none;
           }
           .bg-header{
             position: relative;
-            width:100%;
+            width: 100%;
             overflow: hidden;
           }
           .img-header-pc,.img-header-mobile{
-            position:absolute;
-            right:0;
-            top:118px;
-            z-index:1;
+            position: absolute;
+            right: 0;
+            top: 118px;
+            z-index: 1;
           }
           .img-header-mobile{
             display: none;
@@ -178,16 +178,16 @@ const Portfolio = () => {
             display: none;
           }
           .portfolio-header{
-            position:relative;
-            height:calc(100vh - 118px);
+            position: relative;
+            height: calc(100vh - 118px);
             max-width: 1260px;
-            margin:auto;
+            margin: auto;
             margin-top: 118px;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            z-index:2;
+            z-index: 2;
           }
           .header-title{
             background-image: url("../Ellipse.svg");
@@ -197,7 +197,7 @@ const Portfolio = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            position:relative;
+            position: relative;
             font-family: 'Lexend', sans-serif;
             color: #DEDEDE;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
@@ -207,22 +207,22 @@ const Portfolio = () => {
           .header-content{
             display: flex;
             align-items: center;
-            margin-top:35px;
-            max-width:1260px;
+            margin-top: 35px;
+            max-width: 1260px;
           }
           .content-left{
-            width:36%;
-            margin-right:65px;
-            margin-bottom:60px;
+            width: 36%;
+            margin-right: 65px;
+            margin-bottom: 60px;
             font-size: 18px;
             text-align: justify;
             line-height: 26px;
           }
           .content-right{
-            width:60%;
+            width: 60%;
           }
           .content-right>img{
-            max-width:100%;
+            max-width: 100%;
           }
           .item{
             color: #1E1E1E;
@@ -234,8 +234,8 @@ const Portfolio = () => {
             height: 4px;
             background: #FC721E;
             margin: 0;
-            margin-top:8px;
-            margin-bottom:3px;
+            margin-top: 8px;
+            margin-bottom: 3px;
           }
           .crossbar-left-2{
             width: 90px;
@@ -258,11 +258,11 @@ const Portfolio = () => {
             margin-right: 50px;
           }
           .applications-header{
-            display:flex;
+            display: flex;
             max-width: 1260px;
-            margin :auto;
+            margin: auto;
             margin-top: 100px;
-            margin-bottom:30px;
+            margin-bottom: 30px;
           }
           .applications-list{
             display: flex;
@@ -279,22 +279,22 @@ const Portfolio = () => {
             cursor: pointer;
           }
           .applications-right{
-            display:flex;
-            width:76%;
+            display: flex;
+            width: 76%;
           }
           .illustration{
             height: auto;
-            width:49%;
+            width: 49%;
             background: #F0F0F0;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
             overflow: hidden;
           }
           .applications-row{
-            display:flex;
-            flex-wrap:wrap;
+            display: flex;
+            flex-wrap: wrap;
             gap: 2%;
-            width:100%;
+            width: 100%;
           }
           .illustration>img{
             width: 100%;
@@ -304,8 +304,8 @@ const Portfolio = () => {
             font-weight: 500;
             font-size: 20px;
             color: #1667B2;
-            margin-left:11px;
-            margin-top:10px;
+            margin-left: 11px;
+            margin-top: 10px;
           }
           .illustration>label{
             font-size: 14px;
@@ -313,10 +313,10 @@ const Portfolio = () => {
             margin-left: 11px;
           }
           .paging{
-            display:flex;
+            display: flex;
             justify-content: center;
-            margin-top:50px;
-            margin-bottom:50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
           }
           .paging>button{ 
             width: 32px;
@@ -336,29 +336,29 @@ const Portfolio = () => {
               display: block;
             }
             .portfolio-header{
-              height:calc(100vh - 50px);
+              height: calc(100vh - 50px);
               margin-top: 50px;
             }
             .img-header-mobile{
-              top:0px;
+              top: 0px;
               left: -70%;
-              width:200%;
+              width: 200%;
               height: auto;
-              aspect-ratio:3;
+              aspect-ratio: 3;
               object-fit: cover;
             }
             .img-header-mobile>img{
               width: 100%;
-              height:100%;
+              height: 100%;
             }
             .portfolio-header{
               justify-content: normal;
             }
             .header-title{
-              margin-top:10%;
+              margin-top: 10%;
               background: none;
               width: 100%;
-              text-align:center;
+              text-align: center;
             }
             .header-content{
               flex-direction: column-reverse;
@@ -367,12 +367,12 @@ const Portfolio = () => {
             }
             .content-left{
               width: 80%;
-              margin:auto;
-              font-size:20px;
+              margin: auto;
+              font-size: 20px;
               line-height: 30px;
             }
             .content-right{
-              width:86%;
+              width: 86%;
               height: auto;
               aspect-ratio: 2.3;
               object-fit: cover;
@@ -381,7 +381,7 @@ const Portfolio = () => {
             }
             .content-right>img{
               width: 100%; 
-              height:100%;
+              height: 100%;
             }
             
             .applications-header{
@@ -394,7 +394,7 @@ const Portfolio = () => {
               margin-bottom: 35px;
             }
             .applications-list{
-              display:none;
+              display: none;
             }
             .applications-select{
               position: relative;
@@ -405,7 +405,7 @@ const Portfolio = () => {
               display: flex;
               justify-content: space-between;
               align-items: center;
-              width:96%;
+              width: 96%;
               height: 50px;
               margin: auto;
               margin-bottom: 20px; 
@@ -419,7 +419,7 @@ const Portfolio = () => {
             }
             .dropdown{
               position: absolute;
-              top:45px;
+              top: 45px;
               width: 96%;
               left: 2%;
               background: #F8F8F8;
@@ -437,7 +437,7 @@ const Portfolio = () => {
             }
            
             .applications-right{
-              width:96%; 
+              width: 96%; 
               margin: auto;
             }
             .illustration{
@@ -453,19 +453,19 @@ const Portfolio = () => {
           }
           @media screen and (max-width: 600px){
             .img-header-mobile{           
-              width:200%;
+              width: 200%;
               height: auto;
-              aspect-ratio:1.7;
+              aspect-ratio: 1.7;
               object-fit: cover;
             }
             .content-left{
               width: 90%;
-              margin:auto;
-              font-size:14px;
+              margin: auto;
+              font-size: 14px;
               line-height: 20px;
             }
             .select{
-              height:36px;
+              height: 36px;
             }
             .applications-select{
               font-size: 14px;

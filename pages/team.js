@@ -2,10 +2,10 @@ import React from 'react'
 
 const Team = () => {
   const listBoss = [
-    {name:'Duong Nguyen', image:'../NguyenDuong.webp', icon:'/icon_backend.svg', job:'Backend',describe:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    {name:'Tuan Nguyen', image:'../NguyenTuan.webp', icon:'/icon_fontend.svg', job:'Fontend',describe:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    {name:'Viet Nguyen', image:'../NguyenViet.webp', icon:'/icon_backend.svg', job:'Backend',describe:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    {name:'Cong Luu', image:'../LuuCong.webp', icon:'/icon_backend.svg', job:'Backend',describe:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    {name: 'Duong Nguyen', image: '../NguyenDuong.webp', icon: '/icon_backend.svg', job: 'Backend',describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    {name: 'Tuan Nguyen', image: '../NguyenTuan.webp', icon: '/icon_fontend.svg', job: 'Fontend',describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    {name: 'Viet Nguyen', image: '../NguyenViet.webp', icon: '/icon_backend.svg', job: 'Backend',describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    {name: 'Cong Luu', image: '../LuuCong.webp', icon: '/icon_backend.svg', job: 'Backend',describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
   ]
   return (
     <div className="team">
@@ -93,33 +93,33 @@ const Team = () => {
             font-family: 'Inter', sans-serif;
           }
           .h1{
-            display:none;
+            display: none;
           }
           .bg-header{
             position: relative;
-            width:100%;
+            width: 100%;
             overflow: hidden;
           }
           .img-header{
-            position:absolute;
-            right:0;
-            top:118px;
-            z-index:1;
+            position: absolute;
+            right: 0;
+            top: 118px;
+            z-index: 1;
           }
           .about-header{
-            position:relative;
-            height:calc(100vh - 118px);
+            position: relative;
+            height: calc(100vh - 118px);
             max-width: 1260px;
-            margin:auto;
+            margin: auto;
             margin-top: 118px;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            z-index:2;
+            z-index: 2;
           }
           .header-title{
             background-image: url("../Ellipse.svg");
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 28%;
             height: 103px;
@@ -127,8 +127,8 @@ const Team = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            position:relative;
-            top:165px;
+            position: relative;
+            top: 165px;
             font-family: 'Lexend', sans-serif;
             color: #DEDEDE;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
@@ -136,36 +136,36 @@ const Team = () => {
           }
           .header-content{
             display: flex;
-            justify-content:space-between;
-            max-width:1260px;
+            justify-content: space-between;
+            max-width: 1260px;
           }
           .header-left{
-            width:40%;
+            width: 40%;
             font-size: 23px;
             line-height: 33px;
             color: #FFFFFF;
-            margin-top:200px;
+            margin-top: 200px;
           }
           .header-right{
-            max-width:60%;
+            max-width: 60%;
           }
           .header-right>img{
-            max-width:100%;
+            max-width: 100%;
           } 
 
           //Introduce--------------------
           .introduce{
-            max-width:1260px;
-            margin:auto;
-            display:flex;
+            max-width: 1260px;
+            margin: auto;
+            display: flex;
             gap: 2%;
             margin-bottom: 145px;
           }
           .introduce-left{
             width: 49%;
-            display:flex;
-            flex-direction:column;
-            gap:10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
           }
           .one-introduce{
             display: flex;
@@ -176,12 +176,12 @@ const Team = () => {
             border-radius: 5px;
           }
           .one-introduce>img{
-            margin-left:35px;
+            margin-left: 35px;
             margin-right: 22px;
             margin-bottom: 10px;
           }
           .introduce-content{
-            width:70%;
+            width: 70%;
           }
           .introduce-content>h2{
             font-weight: 600;
@@ -197,8 +197,8 @@ const Team = () => {
             font-weight: 500;
           }
           .introduce-right{
-            width:49%;
-            max-width:610px;
+            width: 49%;
+            max-width: 610px;
           }
           .introduce-right>img{
             width: 100%;
@@ -208,10 +208,10 @@ const Team = () => {
           .meet{
             max-width: 1260px;
             margin: auto;
-            padding-bottom:95px;
+            padding-bottom: 95px;
           }
           .bar{
-            width:120px;
+            width: 120px;
             height: 10px;
             background: #1667B2;
             margin-bottom: 15px;
@@ -221,24 +221,24 @@ const Team = () => {
             font-size: 34px;
             line-height: 41px;
             color: #000;
-            margin-bottom:34px;
+            margin-bottom: 34px;
           }
           .meet-title>label{
             color: #1667B2;
           }
           .meet-main{
-            display:flex;
-            gap:1%;
+            display: flex;
+            gap: 1%;
           }
           .boss{
-            width:24%;
-            height:480px;
+            width: 24%;
+            height: 480px;
             background: #F3F3F3;
             border-radius: 5px;
             overflow: hidden;
           }
           .img-meet{
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             height: 372px;
             color: #FFFFFF;
@@ -255,26 +255,26 @@ const Team = () => {
           }
           .bg-meet > p{
             padding-left: 36px;
-            margin-bottom:30px;
-            width:40%;
+            margin-bottom: 30px;
+            width: 40%;
           }
           .icon-meet{
             position: relative;
           }
           .icon-meet>img{
             position: absolute;
-            top:-35px;
-            right:36px;
+            top: -35px;
+            right: 36px;
           }
           .meet-content{
             width: 90%;
-            margin:auto;
+            margin: auto;
           }
           .meet-content>h3{
             font-weight: 600;
             font-size: 16px;
             line-height: 19px;
-            margin-top:16px;
+            margin-top: 16px;
             margin-bottom: 7px;
           }
           .meet-content>label{

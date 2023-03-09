@@ -123,30 +123,30 @@ const Service = () => {
             font-family: 'Inter', sans-serif;
           }
           .h1{
-            display:none;
+            display: none;
           }
           .bg-header{
             position: relative;
-            width:100%;
+            width: 100%;
             overflow: hidden;
           }
           .img-header{
-            position:absolute;
-            right:0;
-            top:118px;
-            z-index:1;
+            position: absolute;
+            right: 0;
+            top: 118px;
+            z-index: 1;
           }
           .service-header{
-            position:relative;
-            height:calc(100vh - 118px);
+            position: relative;
+            height: calc(100vh - 118px);
             max-width: 1260px;
-            margin:auto;
+            margin: auto;
             margin-top: 118px;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            z-index:2;
+            z-index: 2;
           }
           .header-title{
             background-image: url("../ellipse.svg");
@@ -163,42 +163,42 @@ const Service = () => {
           }
           .header-content{
             display: flex;
-            margin-top:35px;
-            max-width:1260px;
+            margin-top: 35px;
+            max-width: 1260px;
           }
           .header-left{
-            width:34%;
+            width: 34%;
             margin-top: 30px;
-            margin-right:65px;
-            margin-bottom:60px;
+            margin-right: 65px;
+            margin-bottom: 60px;
             font-size: 18px;
             text-align: justify;
             line-height: 26px;
             color: #494949;
           }
           .header-right{
-            max-width:60%;
+            max-width: 60%;
           }
           .header-right>img{
-            max-width:100%;
+            max-width: 100%;
           } 
 
           //Mobile-web----------------------------
           .bg-mobile-web{
             background: url("../bg_mobile_web.webp");
-            background-size:cover;
+            background-size: cover;
             width: 66%;
-            margin:auto;
+            margin: auto;
             border-radius: 15px;
           }
           .mobile-web{
-            height:513px;
+            height: 513px;
           }
           .mobile-web-header{
             margin-left: 11%;
             padding-top: 90px;
-            margin-bottom:45px;
-            font-size:32px;
+            margin-bottom: 45px;
+            font-size: 32px;
             font-weight: 600;
             color: #1365B1;
           }
@@ -213,14 +213,14 @@ const Service = () => {
 
           .our-services{
             padding-bottom: 250px;
-            background:#FFFFFF;
+            background: #FFFFFF;
           }
           .services-header{
-            display:flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            margin-top:72px;
+            margin-top: 72px;
             margin-bottom: 10px;
           }
           .item{
@@ -234,7 +234,7 @@ const Service = () => {
             height: 4px;
             background: #FC721E;
             margin: auto;
-            margin-bottom:3px;
+            margin-bottom: 3px;
             margin-top: 10px;
           }
           .crossbar2{
@@ -245,11 +245,11 @@ const Service = () => {
             margin-bottom: 55px;
           }
           .services-row{
-            display:flex;
-            justify-content:center;
+            display: flex;
+            justify-content: center;
             margin-bottom: 40px;
             max-width: 1260px;
-            margin:auto;
+            margin: auto;
           }
           .services-title{
             font-weight: 600;
@@ -259,22 +259,22 @@ const Service = () => {
           }
           .services-content{
             max-width: 570px;
-            font-size:17px;
-            line-height:26px;
+            font-size: 17px;
+            line-height: 26px;
             text-align: justify;
           }
           .service-img{
-            width:35%;
+            width: 35%;
           }
           .service-img>img{
-            width:100%;
+            width: 100%;
           }
           .content-right{
             margin-left: 32px;
           }
           .content-left{
-            margin-left:100px;
-            margin-right:66px;
+            margin-left: 100px;
+            margin-right: 66px;
           }
           .margin-img{
             margin-top: 20px;

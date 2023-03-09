@@ -72,27 +72,27 @@ const Header = () => {
       <style jsx>
         {`
           .header{
-            position:fixed;
+            position: fixed;
             top: 0;
             width: 100%;
-            z-index:3;
+            z-index: 3;
             background: #FFFFFF;
           }
           .address{
-            width:100%;
+            width: 100%;
             background: #FFFFFF;
           }
           .address-content{
-            color:#FC721E;
-            max-width: 1274px;
-            height:40px;
+            color: #FC721E;
+            max-width:  1274px;
+            height: 40px;
             display: flex;
             align-items: center;
-            justify-content:flex-end;
-            margin:auto;
+            justify-content: flex-end;
+            margin: auto;
           }
           label{
-            font-size:14px;
+            font-size: 14px;
             margin-left: 7px;
             margin-right: 22px;
           }
@@ -108,22 +108,22 @@ const Header = () => {
             height: 78px;
           }
           .menu-main{
-            display:flex;
+            display: flex;
             align-items: center;
             justify-content: space-between;
             max-width: 1274px;
-            margin:auto;
+            margin: auto;
           }
           .menu-content{
             margin-right: 50px;
           }
           a{
-            color:#FFFFFF;
-            text-decoration:none;
+            color: #FFFFFF;
+            text-decoration: none;
             margin: 0 10px;
             cursor: pointer;
             font-size: 20px;
-            outline:none;
+            outline: none;
           }
           .img-logo{
             margin-left: 50px;
@@ -135,13 +135,13 @@ const Header = () => {
             background: rgba(23, 23, 31, 0.85);
             height: 50px;
             width: 100%;
-            display:flex;
-            justify-content:center;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            position:relative;
+            position: relative;
           }
           .btn-menu{
-            position:absolute;
+            position: absolute;
             right: 15px;
           }
           .mobile-menu-down {
@@ -159,7 +159,7 @@ const Header = () => {
             z-index: 3;
           }
           li{
-            margin :20px;
+            margin: 20px;
           }
           hr{
             margin: 0 10px;
@@ -177,7 +177,7 @@ const Header = () => {
               display: none;
             }
             .header{
-              width:100%;
+              width: 100%;
             }
             a{
               color: #6E6E73;

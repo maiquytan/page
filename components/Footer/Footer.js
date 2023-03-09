@@ -50,23 +50,23 @@ const Footer = () => {
             background: url("../footer.svg"),#131031;
             color: #FFFFFF;
             height: 410px;
-            width:100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             text-align: center;
           }
           .footer-main{
-            display:flex;
-            margin-top:36px;
+            display: flex;
+            margin-top: 36px;
             margin-bottom: 61px;
             text-align: left;
             justify-content: center;
           }
           .footer-service{
-            margin-right:30px;
+            margin-right: 30px;
           }
           .footer-title1,.footer-title2{
-            font-size:20px;
+            font-size: 20px;
             font-weight: 600;
             margin-bottom: 21px;
           }
@@ -87,14 +87,14 @@ const Footer = () => {
             margin-bottom: 38px;
           }
           .contact>div{
-            margin-bottom :15px;
+            margin-bottom: 15px;
           }
           .contact-row{
-            display:flex;
+            display: flex;
             align-items: flex-start; 
           }
           .footer-img{
-            margin-right:11px;
+            margin-right: 11px;
           }
           .hr{
             height: 5px;
@@ -102,14 +102,14 @@ const Footer = () => {
             box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
           }
           .copyright{
-            font-size:15px;
+            font-size: 15px;
             margin-top: 16px;
             margin-bottom: 15px;
           }
           @media screen and (max-width: 900px){
             .footer{
               height: auto;
-              width:100%;
+              width: 100%;
             }
             .footer-main{
               flex-direction: column;
@@ -117,7 +117,7 @@ const Footer = () => {
               margin: auto;
             }
             .map{
-              width:100%;
+              width: 100%;
               max-width: 370px;
               margin-bottom: 20px;
             }
@@ -125,16 +125,16 @@ const Footer = () => {
               width: 100%;
             }
             .logo-footer{
-              width:75%;
-              padding-top:20px; 
+              width: 75%;
+              padding-top: 20px; 
               margin: auto;
             }
             .logo-footer>img{
               width: 100%;
             }
             .footer-service{
-              margin-top:35px;
-              margin-bottom:25px;
+              margin-top: 35px;
+              margin-bottom: 25px;
             }
             .ul-service{
               margin-left: 17px;

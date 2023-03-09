@@ -104,33 +104,33 @@ const Client = () => {
             font-family: 'Inter', sans-serif;
           }
           .h1{
-            display:none;
+            display: none;
           }
           .bg-header{
             position: relative;
-            width:100%;
+            width: 100%;
             overflow: hidden;
           }
           .img-header{
-            position:absolute;
-            right:0;
-            top:118px;
-            z-index:1;
+            position: absolute;
+            right: 0;
+            top: 118px;
+            z-index: 1;
           }
           .about-header{
-            position:relative;
-            height:calc(100vh - 118px);
+            position: relative;
+            height: calc(100vh - 118px);
             max-width: 1260px;
-            margin:auto;
+            margin: auto;
             margin-top: 118px;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            z-index:2;
+            z-index: 2;
           }
           .header-title{
             background-image: url("../Ellipse.svg");
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 28%;
             height: 103px;
@@ -138,8 +138,8 @@ const Client = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            position:relative;
-            top:165px;
+            position: relative;
+            top: 165px;
             font-family: 'Lexend', sans-serif;
             color: #DEDEDE;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
@@ -147,44 +147,44 @@ const Client = () => {
           }
           .header-content{
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
             align-items: center;
             margin-bottom: 40px;
-            max-width:1260px;
+            max-width: 1260px;
           }
           .header-left{
-            width:29%;
+            width: 29%;
             font-size: 23px;
             line-height: 33px;
             color: #FFFFFF;
             margin-bottom: 100px; 
           }
           .header-right{
-            max-width:60%;
+            max-width: 60%;
           }
           .header-right>img{
-            max-width:100%;
+            max-width: 100%;
           } 
 
           //---------------------------------
           .bg-mobile-web{
             background: url("../61769.webp");
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 66%;
-            height:490px;
-            margin:auto;
+            height: 490px;
+            margin: auto;
             border-radius: 15px;
             margin-bottom: 90px;
           }
           .mobile-web{
-            height:513px;
+            height: 513px;
           }
           .mobile-web-header{
             margin-left: 11%;
             padding-top: 60px;
-            margin-bottom:40px;
-            font-size:32px;
+            margin-bottom: 40px;
+            font-size: 32px;
             font-weight: 600;
             color: #1365B1;
           }
@@ -198,17 +198,17 @@ const Client = () => {
           //Reason------------------------
           .bg-reason{
             background-image: url("../bg_reason.webp");
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             height: 1024px;
           }
           .reason{
             display:flex;
             flex-direction: column;
-            justify-content:center;
+            justify-content: center;
             text-align: center;
-            max-width:1260px;
-            margin:auto;
+            max-width: 1260px;
+            margin: auto;
           }
           .reason-header{
             font-size: 36px;
@@ -220,15 +220,15 @@ const Client = () => {
           }
           .reason-content{
             display: flex;
-            gap:1%;
+            gap: 1%;
           }
           .one-reason{
             diplay:flex;
             flex-direction: column;
             justify-content: center;
-            text-align:center;
+            text-align: center;
             width: 24%;
-            height:410px;
+            height: 410px;
             background: #FFFFFF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
@@ -239,22 +239,22 @@ const Client = () => {
           }
           .one-reason>p{
             width: 74.5%;
-            margin:auto;
+            margin: auto;
             font-size: 17px;
             line-height: 21px;
           }
 
           //Expert-------------------------
           .expert{
-            display:flex;
+            display: flex;
             justify-content: space-between;
-            max-width:1260px;
-            margin:auto;
+            max-width: 1260px;
+            margin: auto;
             margin-top: 100px;
-            margin-bottom:100px;
+            margin-bottom: 100px;
           }
           .expert-left{
-            margin-left:25px;
+            margin-left: 25px;
           }
           .expert-header{
             width: 30%;
@@ -264,13 +264,13 @@ const Client = () => {
             letter-spacing: 0.08em;
           }
           .bar1,.bar2{
-            width:15px;
-            height:80px;
+            width: 15px;
+            height: 80px;
             background: #1466B1;
-            margin-bottom:15px;
+            margin-bottom: 15px;
           }
           .expert-content{
-            width:75%;
+            width: 75%;
             font-weight: 300;
             font-size: 18px;
             line-height: 23px;
@@ -278,7 +278,7 @@ const Client = () => {
             color: #525252;
           }
           .expert-right{
-            margin-right:25px;
+            margin-right: 25px;
           }
           
           //Feedback---------------------
@@ -287,29 +287,29 @@ const Client = () => {
             background: #FFFFFF;
           }
           .bg-feedback2{
-            background:#1466B1;
-            height:650px;
+            background: #1466B1;
+            height: 650px;
           }
           .feedback{
-            max-width:1260px;
-            margin:auto;
+            max-width: 1260px;
+            margin: auto;
             color: #FFFFFF;
           }
           .feedback-header{
-            padding-top:60px;
+            padding-top: 60px;
             max-width: 1260px;
-            display:flex;
-            justify-content:space-between;
+            display: flex;
+            justify-content: space-between;
           }
           .feedback-header>div{
-            width:42%;
+            width: 42%;
             font-weight: 600;
             font-size: 42px;
             line-height: 51px;
           }
           .feedback-header>p{
-            width:47%;
-            margin-top:8px;
+            width: 47%;
+            margin-top: 8px;
             font-size: 18px;
             line-height: 27px;
             letter-spacing: 0.04em;
@@ -327,29 +327,29 @@ const Client = () => {
           }
           .feedback-content{
             display: flex;
-            gap:15px;
+            gap: 15px;
             max-width: 1260px;
-            height:600px;
-            margin:auto;
+            height: 600px;
+            margin: auto;
           }
           .one-feedback{
-            width:33%;
-            display:flex;
+            width: 33%;
+            display: flex;
             flex-direction: column;
-            align-items:center;
+            align-items: center;
             background: #F8F8F8;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 15px;
           }
           .img-feedback{
-            border-radius:50%;
+            border-radius: 50%;
             margin-top: 40px;
             margin-bottom: 32px;
           }
           .one-feedback>p {
-            width:68%;
-            margin:auto;
-            margin-top:0;
+            width: 68%;
+            margin: auto;
+            margin-top: 0;
             margin-bottom: 35px;
             color: #424040;
             font-size: 16px;
@@ -365,7 +365,7 @@ const Client = () => {
             font-size: 14px;
             font-weight: 500;
             line-height: 22px;
-            color:#1466B1;
+            color: #1466B1;
           }
         `}
       </style>

@@ -80,29 +80,29 @@ const About = () => {
           }
           .bg-header{
             position: relative;
-            width:100%;
+            width: 100%;
             overflow: hidden;
           }
           .img-header{
-            position:absolute;
-            right:0;
-            top:118px;
-            z-index:1;
+            position: absolute;
+            right: 0;
+            top: 118px;
+            z-index: 1;
           }
           .about-header{
-            position:relative;
-            height:calc(100vh - 118px);
+            position: relative;
+            height: calc(100vh - 118px);
             max-width: 1260px;
-            margin:auto;
+            margin: auto;
             margin-top: 118px;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            z-index:2;
+            z-index: 2;
           }
           .header-title{
             background-image: url("../Ellipse.svg");
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 28%;
             height: 103px;
@@ -110,8 +110,8 @@ const About = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            position:relative;
-            top:105px;
+            position: relative;
+            top: 105px;
             left: 20px;
             font-family: 'Lexend', sans-serif;
             color: #DEDEDE;
@@ -120,51 +120,51 @@ const About = () => {
           }
           .header-content{
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
             align-items: center;
-            max-width:1260px;
+            max-width: 1260px;
           }
           .header-left{
-            width:35%;
+            width: 35%;
             font-size: 20px;
             line-height: 33px;
             color: #FFFFFF;
             margin-bottom: 100px; 
           }
           .header-right{
-            max-width:60%;
+            max-width: 60%;
           }
           .header-right>img{
-            max-width:100%;
+            max-width: 100%;
           } 
           .about-bg{
             background-image: url("../Session.webp");
-            height:100vh;
-            background-repeat:no-repeat;
-            display:flex;
+            height: 100vh;
+            background-repeat: no-repeat;
+            display: flex;
             align-items: center;
           }
           .about-axa{
-            max-width:1260px;
-            display:flex;
-            gap:7%;
-            margin :auto;
+            max-width: 1260px;
+            display: flex;
+            gap: 7%;
+            margin: auto;
           }
           .about-left{
-            max-width : 48%;
+            max-width: 48%;
           }
           .about-left>img{
-            max-width:100%;
+            max-width: 100%;
           }
           .about-right{
-            width:41%;
+            width: 41%;
           }
           .about-title{
             font-weight: 600;
             font-size: 40px;
             line-height: 48px;
             color: #1365B1;
-            margin-top:26px;
+            margin-top: 26px;
             margin-bottom: 36px;
           }
           .about-content{
@@ -172,8 +172,8 @@ const About = () => {
             line-height: 27px;
           }
           .target-about{
-            margin-top:68px;
-            padding-bottom:100px;
+            margin-top: 68px;
+            padding-bottom: 100px;
           }
           .our-target{
             max-width: 1260px;
@@ -183,16 +183,16 @@ const About = () => {
             margin-bottom: 70px;
           }
           .target-left{
-            padding-right:40px;
-            margin-left:20px;
+            padding-right: 40px;
+            margin-left: 20px;
           }
           .target-right{
-            max-width:42%;
+            max-width: 42%;
             border-radius: 5px;
           }
           .target-right>img{
             border-radius: 5px;
-            max-width:100%;
+            max-width: 100%;
           }
           .target-title{
             margin-top: 57px;
@@ -200,13 +200,13 @@ const About = () => {
             font-weight: bold;
             font-size: 60px;
             line-height: 78px;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             font-family: 'IBM Plex Sans', sans-serif;
           }
           .target-title>p{
-            color:#FFFFFF;
+            color: #FFFFFF;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1);
           }
