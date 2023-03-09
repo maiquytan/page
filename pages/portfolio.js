@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+
 import Archivement from '../components/Archivement/Archivement';
 import Pagination from '../components/Pagination/Pagination';
 import Techniques from '../components/Techniques/Techniques';
@@ -476,8 +477,10 @@ const Portfolio = () => {
               line-height: 20px;
             }
             .select{
-              font-size: 14px;
               height:36px;
+            }
+            .applications-select{
+              font-size: 14px;
             }
           }
 

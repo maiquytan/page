@@ -1,7 +1,7 @@
-// import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
 import Head from 'next/head';
 import Link from 'next/link';
+
 import Archivement from '../components/Archivement/Archivement';
 import Techniques from '../components/Techniques/Techniques';
 
