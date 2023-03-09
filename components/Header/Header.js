@@ -37,9 +37,9 @@ const Header = () => {
         </div>
       </div>
       <div className="menu-mobile">
-        <div className="logo-mobile">
+        <Link href="/"><a className="logo-mobile">
           <img src="/logo1.svg" alt="logo" title="logo" width={176} height={30} />
-        </div>
+        </a></Link>
         <div className="btn-menu" onClick={handleDropDownMenuAction}>
           <img src="/menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
         </div>
@@ -47,7 +47,7 @@ const Header = () => {
           <ul className="mobile-menu-down">
             <li>
               <div>
-                <Link href="/e"><a>Company </a></Link>
+                <Link href="/e"><a onClick={handleDropDownMenuAction}>Company </a></Link>
                 <img src="/arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
               </div>
               {isDropdownCompanyAction &&
@@ -59,13 +59,13 @@ const Header = () => {
               }
             </li>
             <hr></hr>
-            <li><Link href="/service"><a>Service</a></Link></li>
+            <li><Link href="/service" ><a onClick={handleDropDownMenuAction}>Service</a></Link></li>
             <hr></hr>
-            <li><Link href="/b"><a>Expertise</a></Link></li>
+            <li><Link href="/b" ><a onClick={handleDropDownMenuAction}>Expertise</a></Link></li>
             <hr></hr>
-            <li><Link href="/portfolio"><a>Portfolio</a></Link></li>
+            <li><Link href="/portfolio" ><a onClick={handleDropDownMenuAction}>Portfolio</a></Link></li>
             <hr></hr>
-            <li><Link href="/d"><a>Contact</a></Link></li>
+            <li><Link href="/d" ><a onClick={handleDropDownMenuAction}>Contact</a></Link></li>
           </ul>
         }
       </div>
