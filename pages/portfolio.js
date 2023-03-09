@@ -6,9 +6,17 @@ import Techniques from '../components/Techniques/Techniques';
 import { PageSize } from '../constants';
 
 const Portfolio = () => {
+  const listselect = [
+    { id: 1, title: "Enterprise management systems" },
+    { id: 2, title: " ECommerce & Retail Software development " },
+    { id: 3, title: "Customer-enabling services" },
+    { id: 4, title: "New business ideas" },
+    { id: 5, title: "Others" },
+  ]
   const [currentPage, setCurrentPage] = useState(1);
   const [isDropdownApp, setIsDropdownApp] = useState(false);
-  const [isSelect, setIsSelect] = useState(1);
+  const [isSelect, setIsSelect] = useState(listselect[0]);
+
   const data = [
     { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
     { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
@@ -47,14 +55,7 @@ const Portfolio = () => {
     { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
     { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
   ]
-  const listselect = [
-    { id: 1, title: "Enterprise management systems" },
-    { id: 2, title: " ECommerce & Retail Software development " },
-    { id: 3, title: "Customer-enabling services" },
-    { id: 4, title: "New business ideas" },
-    { id: 5, title: "Others" },
-  ]
-
+ 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize;
     const lastPageIndex = firstPageIndex + PageSize;
@@ -64,21 +65,6 @@ const Portfolio = () => {
   const handleDropdownOnclick = () => {
     setIsDropdownApp(!isDropdownApp);
   }
-
-  const valueSelect = () => {
-    switch(isSelect){
-      case 1:
-        return (<div>Enterprise management systems</div>); 
-      case 2:
-        return (<div> ECommerce & Retail Software development </div>); 
-      case 3:
-        return (<div>Customer-enabling services</div>); 
-      case 4:
-        return (<div>New business ideas</div>); 
-      case 5:
-        return (<div>Others</div>); 
-    }
-  } 
 
   return (
     <div className="portfolio">
@@ -122,19 +108,19 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="applications-select">
-          <div className="select">
-            <div>{valueSelect()}</div>
-            <div>
-              <img src="arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9" onClick={handleDropdownOnclick}/>
+            <div className="select" onClick={handleDropdownOnclick}>
+              <div>{isSelect.title}</div>
+              <div>
+                <img src="arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9"  />
+              </div>
             </div>
-            </div>
-          {isDropdownApp &&
-            <div className="dropdown">
-              {listselect.map((list, index) => (
-                <div  className={isSelect===list.id ? "application_selected": "one_application"} onClick={()=>setIsSelect(list.id)}  key={index}>{list.title}</div>
+            {isDropdownApp &&
+              <div className="dropdown">
+                {listselect.map((list, index) => (
+                  <div className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}>{list.title}</div>
                 ))}
-            </div>
-          }
+              </div>
+            }
           </div>
 
           <div className="applications-right">
@@ -150,8 +136,6 @@ const Portfolio = () => {
               })}
             </div>
           </div>
-          {/* </div> */}
-          {/* </div> */}
         </div>
         <div className="paging">
           <Pagination
@@ -483,7 +467,6 @@ const Portfolio = () => {
               font-size: 14px;
             }
           }
-
         `}
       </style>
     </div>
