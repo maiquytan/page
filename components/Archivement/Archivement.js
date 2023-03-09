@@ -9,7 +9,7 @@ const Archivement = () => {
             <label className="item">Archivement</label>
             <div className="crossbar-left-1"></div>
             <div className="crossbar-left-2"></div>
-            <img src="medal.svg" alt="logo" title="logo" width="47px" height="47" />
+            <img src="/medal.svg" alt="logo" title="logo" width="47px" height="47" />
           </div>
           <div className="archivement-column">
             <label className="archivement-number">50+</label>
@@ -32,7 +32,7 @@ const Archivement = () => {
             <label className="item">Archivement</label>
             <div className="crossbar1"></div>
             <div className="crossbar2"></div>
-            <img src="medal.svg" alt="logo" title="logo" width="47px" height="47" />
+            <img src="/medal.svg" alt="logo" title="logo" width="47px" height="47" />
           </div>
           <div className="archivement-row">
             <div className="archivement-column">

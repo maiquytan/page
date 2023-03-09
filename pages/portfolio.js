@@ -7,55 +7,55 @@ import { PageSize } from '../constants';
 
 const Portfolio = () => {
   const listselect = [
-    { id: 1, title: "Enterprise management systems" },
-    { id: 2, title: " ECommerce & Retail Software development " },
-    { id: 3, title: "Customer-enabling services" },
-    { id: 4, title: "New business ideas" },
-    { id: 5, title: "Others" },
+    { id: 1, title: 'Enterprise management systems' },
+    { id: 2, title: 'ECommerce & Retail Software development' },
+    { id: 3, title: 'Customer-enabling services' },
+    { id: 4, title: 'New business ideas' },
+    { id: 5, title: 'Others' },
   ]
   const [currentPage, setCurrentPage] = useState(1);
   const [isDropdownApp, setIsDropdownApp] = useState(false);
   const [isSelect, setIsSelect] = useState(listselect[0]);
 
   const data = [
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration3.svg" },
-    { title: "Marcos-StarcatXR", content: "Website", img: "illustration1.webp" },
-    { title: "Nistone-Loan", content: "Phone Application", img: "illustration2.svg" },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
+    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
+    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
   ]
- 
+
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize;
     const lastPageIndex = firstPageIndex + PageSize;
@@ -72,17 +72,17 @@ const Portfolio = () => {
       {/* Header */}
       <div className="bg-header">
         <div className="img-header-pc">
-          <img src="img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
+          <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
         <div className="img-header-mobile">
-          <img src="bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557" />
+          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
         <div className="portfolio-header">
           <div className="header-title">Our Works</div>
           <div className="header-content">
             <div className="content-left">From Enterprise Management Systems to E-commerce & Retail Management Systems, Customer-enabling Services, and New Business Ideas, our portfolio is a testament to our expertise and the real-world benefits we bring to our clients. Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution.</div>
             <div className="content-right">
-              <img src="Group20.webp" alt="img-header" title="img-header" width="737" height="317" />
+              <img src="/Group20.webp" alt="img-header" title="img-header" width="737" height="317" />
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ const Portfolio = () => {
             <div className="select" onClick={handleDropdownOnclick}>
               <div>{isSelect.title}</div>
               <div>
-                <img src="arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9"  />
+                <img src="/arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9" />
               </div>
             </div>
             {isDropdownApp &&
@@ -172,6 +172,9 @@ const Portfolio = () => {
             z-index:1;
           }
           .img-header-mobile{
+            display: none;
+          }
+          .applications-select{
             display: none;
           }
           .portfolio-header{
@@ -396,6 +399,7 @@ const Portfolio = () => {
             .applications-select{
               position: relative;
               font-size: 18px;
+              display: block;
             }
             .select{
               display: flex;

@@ -2,10 +2,10 @@ import React from 'react'
 
 const Team = () => {
   const listBoss = [
-    {name:"Duong Nguyen", image:"../NguyenDuong.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
-    {name:"Tuan Nguyen", image:"../NguyenTuan.webp", icon:"icon_fontend.svg", job:"Fontend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
-    {name:"Viet Nguyen", image:"../NguyenViet.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
-    {name:"Cong Luu", image:"../LuuCong.webp", icon:"icon_backend.svg", job:"Backend",describe:"Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    {name:'Duong Nguyen', image:'../NguyenDuong.webp', icon:'/icon_backend.svg', job:'Backend',describe:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    {name:'Tuan Nguyen', image:'../NguyenTuan.webp', icon:'/icon_fontend.svg', job:'Fontend',describe:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    {name:'Viet Nguyen', image:'../NguyenViet.webp', icon:'/icon_backend.svg', job:'Backend',describe:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    {name:'Cong Luu', image:'../LuuCong.webp', icon:'/icon_backend.svg', job:'Backend',describe:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
   ]
   return (
     <div className="team">
@@ -13,13 +13,13 @@ const Team = () => {
 
       {/* Header */}
       <div className="bg-header">
-        <img className="img-header" src="bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        <img className="img-header" src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
         <div className="about-header">
           <div className="header-title">Our Team</div>
           <div className="header-content">
             <div className="header-left">Meet the talented and dedicated individuals behind Axalize's success.</div>
             <div className="header-right">
-              <img src="Frame132.webp" alt="img-header" title="img-header" width="644" height="644" />
+              <img src="/Frame132.webp" alt="img-header" title="img-header" width="644" height="644" />
             </div>
           </div>
         </div>
@@ -29,28 +29,28 @@ const Team = () => {
       <div className="introduce">
         <div className="introduce-left">
           <div className="one-introduce">
-            <img src="icon-introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
+            <img src="/icon-introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
             <div className="introduce-content">
               <h2>Our People</h2>
               <p>At Axalize, we believe in hiring top-notch talent and fostering a supportive, collaborative work environment.</p>
             </div>
           </div>
           <div className="one-introduce">
-            <img src="icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
+            <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
             <div className="introduce-content">
               <h2>Our Culture</h2>
               <p>From our values to our approach to work, here's what makes Axalize a unique and dynamic place to work.</p>
             </div>
           </div>
           <div className="one-introduce">
-            <img src="icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
+            <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
             <div className="introduce-content">
               <h2>Our Leadership</h2>
               <p>Leading Axalize forward with vision and expertise, our executive team brings years of experience and a passion for innovation.</p>
             </div>
           </div>
           <div className="one-introduce">
-            <img src="icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
+            <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
             <div className="introduce-content">
               <h2>Our Careers</h2>
               <p>Join our team and be part of a company that values hard work, creativity, and a commitment to excellence.</p>
@@ -58,7 +58,7 @@ const Team = () => {
           </div>
         </div>
         <div className="introduce-right">
-          <img src="img_introduce.webp" alt="img-introduce" title="img-introduce" width="610" height="628" />
+          <img src="/img_introduce.webp" alt="img-introduce" title="img-introduce" width="610" height="628" />
         </div>
       </div>
 

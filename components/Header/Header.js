@@ -16,19 +16,19 @@ const Header = () => {
     <div className="header">
       <div className="address">
         <div className="address-content">
-          <img src="location_orange.svg" alt="location" title="location" width="15" height="21" />
+          <img src="/location_orange.svg" alt="location" title="location" width="15" height="21" />
           <label>2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi  </label>
-          <img src="phone_orange.svg" alt="phone" title="phone" width="18" height="19" />
+          <img src="/phone_orange.svg" alt="phone" title="phone" width="18" height="19" />
           <label className="phone">1239081239</label>
         </div>
       </div>
       <div className="menu">
         <div className="menu-main">
           <Link href="/"><a className="logo">
-            <img src="logo1.svg" className="img-logo" alt="logo" title="logo" width={323} height={55} />
+            <img src="/logo1.svg" className="img-logo" alt="logo" title="logo" width={323} height={55} />
           </a></Link>
           <div className="menu-content">
-            <Link href="/e"><a>Company <img src="arrow_menu.svg" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
+            <Link href="/e"><a>Company <img src="/arrow_menu.svg" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
             <Link href="/service"><a>Service</a></Link>
             <Link href="/b"><a>Expertise</a></Link>
             <Link href="/portfolio"><a>Portfolio</a></Link>
@@ -38,17 +38,17 @@ const Header = () => {
       </div>
       <div className="menu-mobile">
         <div className="logo-mobile">
-          <img src="logo1.svg" alt="logo" title="logo" width={176} height={30} />
+          <img src="/logo1.svg" alt="logo" title="logo" width={176} height={30} />
         </div>
         <div className="btn-menu" onClick={handleDropDownMenuAction}>
-          <img src="menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
+          <img src="/menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
         </div>
         {isDropdownMenuAction &&
           <ul className="mobile-menu-down">
             <li>
               <div>
                 <Link href="/e"><a>Company </a></Link>
-                <img src="arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
+                <img src="/arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
               </div>
               {isDropdownCompanyAction &&
                 <ul className="setting-signout">

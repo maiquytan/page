@@ -7,13 +7,13 @@ const Service = () => {
 
       {/* Header */}
       <div className="bg-header">
-        <img className="img-header" src="img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
+        <img className="img-header" src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
         <div className="service-header">
           <div className="header-title">Our Service</div>
           <div className="header-content">
             <div className="header-left">At Axalize Incorporated, we are dedicated to providing top-notch IT outsourcing and offshore services that meet the unique needs of our clients. Our services are designed to support businesses in a wide range of industries, and we work closely with each of our clients to ensure that their IT needs are met.</div>
             <div className="header-right">
-              <img src="Group22.webp" alt="img-header" title="img-header" width="737" height="317" />
+              <img src="/Group22.webp" alt="img-header" title="img-header" width="737" height="317" />
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ const Service = () => {
         </div>
         <div className="services-row">
           <div className="service-img">
-            <img src="web.svg" alt="web" title="web" width="419" height="419" />
+            <img src="/web.svg" alt="web" title="web" width="419" height="419" />
           </div>
           <div className="content-right">
             <div className="services-title">Web application development</div>
@@ -51,12 +51,12 @@ const Service = () => {
               Quality and collaboration are at the heart of everything we do. We work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a mobile app that is not only functional but also user-friendly and engaging, driving business growth and customer satisfaction.</div>
           </div>
           <div className="service-img"  >
-            <img src="mobile_app.svg" alt="mobile-app" title="mobile-app" width="419" height="419" />
+            <img src="/mobile_app.svg" alt="mobile-app" title="mobile-app" width="419" height="419" />
           </div>
         </div>
         <div className="services-row">
           <div className="service-img">
-            <img className="margin-img" src="RPA.svg" alt="RPA" title="RPA" width="419" height="301" />
+            <img className="margin-img" src="/RPA.svg" alt="RPA" title="RPA" width="419" height="301" />
           </div>
           <div className="content-right">
             <div className="services-title">RPA development</div>
@@ -71,12 +71,12 @@ const Service = () => {
               Quality and collaboration are at the core of our dedicated development teams. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to provide a flexible and cost-effective solution that meets the specific needs of your business.</div>
           </div>
           <div className="service-img">
-            <img src="dedicated_teams.svg" className="margin-img" alt="dedicated-teams" title="dedicated-teams" width="419" height="301" />
+            <img src="/dedicated_teams.svg" className="margin-img" alt="dedicated-teams" title="dedicated-teams" width="419" height="301" />
           </div>
         </div>
         <div className="services-row">
           <div className="service-img">
-            <img src="Offshore_center.svg" className="offshore-center" alt="offshore-center" title="offshore-center" width="419" height="300" />
+            <img src="/Offshore_center.svg" className="offshore-center" alt="offshore-center" title="offshore-center" width="419" height="300" />
           </div>
           <div className="content-right">
             <div className="services-title">Offshore development center</div>
@@ -91,12 +91,12 @@ const Service = () => {
               At Axalize Incorporated, we understand that quality and collaboration are key to effective lifecycle maintenance. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you keep your IT systems running smoothly, so you can focus on growing your business</div>
           </div >
           <div className="service-img">
-            <img src="Lifecycle.svg" alt="lifecycle" title="lifecycle" width="419" height="419" />
+            <img src="/Lifecycle.svg" alt="lifecycle" title="lifecycle" width="419" height="419" />
           </div>
         </div>
         <div className="services-row">
           <div className="service-img">
-            <img src="devops.svg" alt="devops" className="margin-img" title="devops" width="419" height="419" />
+            <img src="/devops.svg" alt="devops" className="margin-img" title="devops" width="419" height="419" />
           </div>
           <div className="content-right">
             <div className="services-title">DevOps development and operations</div>
@@ -111,7 +111,7 @@ const Service = () => {
               Quality and collaboration are key to our UI/UX design services. We understand the importance of working closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a digital experience that is not only functional but also engaging, driving business growth and customer satisfaction.</div>
           </div>
           <div className="service-img">
-            <img src="UI_UX.svg" className="margin-img" alt="UI-UX" title="UI-UX" width="419" height="419" />
+            <img src="/UI_UX.svg" className="margin-img" alt="UI-UX" title="UI-UX" width="419" height="419" />
           </div>
         </div>
       </div>

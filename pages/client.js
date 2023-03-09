@@ -7,13 +7,13 @@ const Client = () => {
 
       {/* Header */}
       <div className="bg-header">
-        <img className="img-header" src="bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        <img className="img-header" src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
         <div className="about-header">
           <div className="header-title">Our Clients</div>
           <div className="header-content">
             <div className="header-left">Unlocking your growth potential with dedication and responsiveness</div>
             <div className="header-right">
-              <img src="img_client.webp" alt="img-header" title="img-header" width="644" height="644" />
+              <img src="/img_client.webp" alt="img-header" title="img-header" width="644" height="644" />
             </div>
           </div>
         </div>
@@ -33,19 +33,19 @@ const Client = () => {
           <div className="reason-header">What sets Axalize apart in the eyes of our clients</div>
           <div className="reason-content">
             <div className="one-reason">
-              <img src="img_reason1.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+              <img src="/img_reason1.svg" alt="img-reason" title="img-reason" width="110" height="110" />
               <p>We prioritize a customer-centric approach, always working closely with our clients to understand their unique needs and deliver tailored solutions</p>
             </div>
             <div className="one-reason">
-              <img src="img_reason2.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+              <img src="/img_reason2.svg" alt="img-reason" title="img-reason" width="110" height="110" />
               <p>Our deep expertise in offshore software development allows us to deliver cutting-edge results that drive real business value.</p>
             </div>
             <div className="one-reason">
-              <img src="img_reason3.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+              <img src="/img_reason3.svg" alt="img-reason" title="img-reason" width="110" height="110" />
               <p>Our focus on quality and attention to detail sets us apart, ensuring that every project is delivered on time and within budget.</p>
             </div>
             <div className="one-reason">
-              <img src="img_reason4.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+              <img src="/img_reason4.svg" alt="img-reason" title="img-reason" width="110" height="110" />
               <p>Our team is comprised of highly skilled and knowledgeable professionals who are passionate about delivering innovative solutions that drive success for our clients.</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Client = () => {
           <p className="expert-content">With deep expertise in over 50 projects, Axalize operates under a quality-driven model. We leverage innovative technical knowledge to deliver cutting-edge, timely, and valuable solutions. At Axalize, we prioritize a customer-centric approach, ensuring that our core values align with those of our clients to deliver results that truly drive business success.</p>
         </div>
         <div className="expert-right">
-          <img src="Group23.webp" alt="img-expert" title="img-expert" width="605" height="663" />
+          <img src="/Group23.webp" alt="img-expert" title="img-expert" width="605" height="663" />
         </div>
       </div>
 
@@ -76,19 +76,19 @@ const Client = () => {
           </div>
           <div className="feedback-content">
             <div className="one-feedback">
-              <img src="img_feedback1.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
+              <img src="/img_feedback1.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
               <p>U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               <div>~ Client Name ~</div>
               <label>Conpany Name</label>
             </div>
             <div className="one-feedback">
-              <img src="img_feedback2.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
+              <img src="/img_feedback2.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
               <p>U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               <div>~ Client Name ~</div>
               <label>Conpany Name</label>
             </div>
             <div className="one-feedback">
-              <img src="img_feedback3.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
+              <img src="/img_feedback3.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
               <p>U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               <div>~ Client Name ~</div>
               <label>Conpany Name</label>

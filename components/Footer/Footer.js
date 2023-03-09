@@ -6,18 +6,18 @@ const Footer = () => {
       <div className="footer-main">
         <div className="contact">
           <div className="logo-footer">
-            <img src="Asset.svg" alt="Axalize" title="Axalize" width="361" height="62" />
+            <img src="/Asset.svg" alt="Axalize" title="Axalize" width="361" height="62" />
           </div>
           <div>
-            <img className="footer-img" src="Email_small.svg" alt="email" title="email" width="18" height="15" />
+            <img className="footer-img" src="/Email_small.svg" alt="email" title="email" width="18" height="15" />
             <label>Email: contact@axalize.vn</label>
           </div>
           <div>
-            <img className="footer-img" src="Phone_small.svg" alt="phone" title="phone" width="17" height="17" />
+            <img className="footer-img" src="/Phone_small.svg" alt="phone" title="phone" width="17" height="17" />
             <label>Phone: (+84) 248-585-8389 </label>
           </div>
           <div className="contact-row">
-            <img className="footer-img" src="Location_small.svg" alt="location" title="location" width="12" height="18" />
+            <img className="footer-img" src="/Location_small.svg" alt="location" title="location" width="12" height="18" />
             <label>Location: 2F, 25T2 Building, Nguyen Thi Thap St., Trung Hoa W., Cau Giay Dist., Hanoi </label>
           </div>
         </div>
