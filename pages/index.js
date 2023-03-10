@@ -775,16 +775,13 @@ const Index = () => {
               .about-us-bg {
                 max-width: 600px;
                 width: 100%;
-                height: auto;
-                aspect-ratio: 0.5;
-                object-fit: cover;
+                height: 810px;
               }
               .about-us {
                 max-width: 600px;
                 margin-top: 0;
                 width: 100%;
-                height: auto;
-                aspect-ratio: 0.5;
+                height: 810px;
               }
               .mission-vision-mobile {
                 width: 100%;

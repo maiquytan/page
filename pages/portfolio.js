@@ -336,8 +336,9 @@ const Portfolio = () => {
               display: block;
             }
             .portfolio-header {
-              height: calc(100vh - 50px);
+              height: auto;
               margin-top: 50px;
+              margin-bottom: 50px;
             }
             .img-header-mobile {
               top: 0px;

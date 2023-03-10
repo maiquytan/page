@@ -54,7 +54,7 @@ const Archivement = () => {
         {`
         .archivement,.archivement-mobile {
           height: 278px;
-          background-image: url("../service_bg.svg")
+          background-image: url("../service_bg.svg");
           background-color: #A1ACBB;
           background-size: cover;
           background-repeat: no-repeat;

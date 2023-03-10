@@ -7,7 +7,9 @@ const About = () => {
 
       {/* Header */}
       <div className="bg-header">
-        <img className="img-header" src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        <div className="img-header">
+          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        </div>
         <div className="about-header">
           <div className="header-title">About us</div>
           <div className="header-content">
@@ -54,19 +56,20 @@ const About = () => {
           </div>
 
         </div>
-        <div className="our-target">
-          <div className="target-left">
-            <div className="target-title"><p>Our</p> <label>Core Values</label> </div>
+        <div className="our-target core">
+          <div className="target-left core-mobile">
+            <div className="target-title core-title"><p>Our</p> <label>Core Values</label> </div>
             <div className="target-content">1. Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.<br></br>
               2. Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.<br></br>
               3. Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.<br></br>
               4. Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.<br></br>
               5. Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</div>
           </div>
-          <div className="target-right">
+          <div className="target-right core-mobile">
             <img src="/about_core.webp" alt="core" title="core" width="530" height="710" />
           </div>
         </div>
+
       </div>
 
       <style jsx>
@@ -91,10 +94,11 @@ const About = () => {
           }
           .about-header {
             position: relative;
-            height: calc(100vh - 118px);
+            height: auto;
             max-width: 1260px;
             margin: auto;
             margin-top: 118px;
+            margin-bottom: 110px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -139,10 +143,11 @@ const About = () => {
           }
           .about-bg {
             background-image: url("../Session.webp");
-            height: 100vh;
+            height: auto;
             background-repeat: no-repeat;
             display: flex;
             align-items: center;
+            padding:150px 0;
           }
           .about-axa {
             max-width: 1260px;
@@ -151,10 +156,14 @@ const About = () => {
             margin: auto;
           }
           .about-left {
-            max-width: 48%;
+            width: 48%;
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: cover;
           }
           .about-left>img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
           }
           .about-right {
             width: 41%;
@@ -171,6 +180,8 @@ const About = () => {
             font-size: 19px;
             line-height: 27px;
           }
+
+          //----------------------------------
           .target-about {
             margin-top: 68px;
             padding-bottom: 100px;
@@ -185,14 +196,19 @@ const About = () => {
           .target-left {
             padding-right: 40px;
             margin-left: 20px;
+            width: 46%;
           }
           .target-right {
-            max-width: 42%;
+            width: 43%;
             border-radius: 5px;
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: cover;
           }
           .target-right>img {
             border-radius: 5px;
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
           }
           .target-title {
             margin-top: 57px;
@@ -217,6 +233,163 @@ const About = () => {
             max-width: 550px;
             font-size: 20px;
             line-height: 26px;
+          }
+          @media screen and (max-width: 900px) {
+            .about-header {
+              height: auto;
+              margin-top: 50px;
+              margin-bottom: 50px;
+              justify-content: normal;
+            }
+            .img-header {
+              top: 0px;
+              left: -70%;
+              width: 200%;
+              height: auto;
+              aspect-ratio: 3;
+              object-fit: cover;
+            }
+            .img-header>img {
+              width: 100%;
+              height: 100%;
+            }
+            .header-title {
+              margin-top: 10%;
+              background: none;
+              width: 100%;
+              height: auto;
+              text-align: center;
+              top: 0;
+              left: 0;
+            }
+            .header-content {
+              flex-direction: column-reverse;
+              width: 100%;
+            }
+            .header-left {
+              width: 90%;
+              margin: auto;
+              font-size: 18px;
+              line-height: 30px;
+              color: #494949;
+              text-align: justify;
+            }
+            .header-right {
+              width: 100%;
+              height: auto;
+              aspect-ratio: 1;
+              object-fit: cover;
+              margin: auto;
+              margin-top: 5%;
+              margin-bottom: 10%;
+            }
+            .header-right>img {
+              width: 100%;
+              height: 100%;
+            }
+            .about-bg {
+              padding: 50px;
+              background-position-x: right;
+            }
+            .about-axa {
+              flex-direction: column;
+            }
+            .about-left {
+              width: 92%;
+              margin: auto;
+              margin-top: 25px;
+            }
+            .about-right {
+              width: 92%;
+              margin: auto;
+              padding-bottom: 30px;
+            }
+            .our-target {
+              width: 92%;
+              margin-bottom: 50px;
+            }
+            //-----------------------
+            .target-about {
+              padding-bottom: 10px;
+            }
+            .target-title {
+              margin-top: 15px;
+              margin-bottom: 15px;
+              font-size: 50px;
+              line-height: 50px;
+            }
+            .target-left {
+              width: 48%;
+              padding-right: 0;
+              margin-left: 0;
+            }
+            .target-content {
+              font-size: 16px;
+              line-height: 21px;
+            }
+          }
+          @media screen and (max-width: 600px) {
+            .img-header {
+              width: 200%;
+              height: auto;
+              aspect-ratio: 2.1;
+              object-fit: cover;
+            }
+            .header-left {
+              font-size: 14px;
+              line-height: 20px;
+            }
+            .about-bg {
+              padding: 0;
+            }
+            .about-title {
+              font-size: 30px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+            .about-content {
+              font-size: 14px;
+              line-height: 20px;
+              text-align: justify;
+              color: #494949;
+            }
+            .target-about {
+              margin-top: 40px;
+            }
+            .target-left {
+              padding-right: 0;
+              margin-left: 0;
+              width: 42%;
+            }
+            .target-right {
+              width: 48%;
+              height: 90%;
+            }
+            .target-title {
+              font-size: 30px;
+              line-height: 39px;
+              margin-top: 0;
+            }
+            .target-content {
+              font-size: 12px;
+              width: 95%;
+            }
+            .core {
+              display: flex;
+              flex-direction: column-reverse;
+            }
+            .core-mobile {
+              width: 100%;
+              margin: auto;
+            }
+            .core-title {
+              margin-top: 10px;
+              flex-direction: row;
+              justify-content: flex-start;
+            }
+            .core-title>p {
+              margin-right: 8px;
+            }
           }
         `}
       </style>
