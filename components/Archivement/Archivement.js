@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Archivement = () => {
   return (
@@ -9,7 +9,13 @@ const Archivement = () => {
             <label className="item">Archivement</label>
             <div className="crossbar-left-1"></div>
             <div className="crossbar-left-2"></div>
-            <img src="/medal.svg" alt="logo" title="logo" width="47" height="47" />
+            <img
+              src="/medal.svg"
+              alt="logo"
+              title="logo"
+              width="47"
+              height="47"
+            />
           </div>
           <div className="archivement-column">
             <label className="archivement-number">50+</label>
@@ -32,7 +38,13 @@ const Archivement = () => {
             <label className="item">Archivement</label>
             <div className="crossbar1"></div>
             <div className="crossbar2"></div>
-            <img src="/medal.svg" alt="logo" title="logo" width="47" height="47" />
+            <img
+              src="/medal.svg"
+              alt="logo"
+              title="logo"
+              width="47"
+              height="47"
+            />
           </div>
           <div className="archivement-row">
             <div className="archivement-column">
@@ -162,7 +174,7 @@ const Archivement = () => {
         `}
       </style>
     </div>
-  )
-}
+  );
+};
 
-export default Archivement
+export default Archivement;
