@@ -102,24 +102,24 @@ const Pagination = props => {
             color: #FFFFFF;
           }
           .arrow::before {
-            position: relative;  
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             border-right: 0.12em solid rgba(0, 0, 0, 0.87);
             border-top: 0.12em solid rgba(0, 0, 0, 0.87);
-          }     
+          }
           .disabled {
             pointer-events: none;
             background: #919EAB;
             color: #C4CDD5;
             opacity: 0.5;
           }
-          
+
           .arrow:hover {
             background-color: transparent;
             cursor: default;
-          }  
+          }
         `}
       </style>
     </ul>

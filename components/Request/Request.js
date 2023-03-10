@@ -124,124 +124,124 @@ const Request = () => {
       </div>
 
       <style jsx>
-        {` 
-          .infor-request-bg { 
+        {`
+          .infor-request-bg {
             background: url("../ceo_bg.webp");
             background-size: cover;
             background-position: center;
             height: 1250px;
           }
-          .infor-request { 
+          .infor-request {
             display: flex;
             justify-content: space-between;
             max-width: 1260px;
             margin: auto;
           }
-          .item { 
+          .item {
             color: #1E1E1E;
             font-size: 32px;
             font-weight: 500;
           }
-          .crossbar-left-1 { 
+          .crossbar-left-1 {
             width: 90px;
             height: 4px;
             background: #FC721E;
             margin-bottom: 3px;
             margin-top: 10px;
           }
-          .crossbar-left-2 { 
+          .crossbar-left-2 {
             width: 90px;
             height: 2px;
             background: #FC721E;
             margin-bottom: 45px;
           }
-          .information { 
+          .information {
             width: 35%;
             max-width: 445px;
           }
-          .information-header { 
+          .information-header {
             padding-top: 65px;
             margin-bottom: 40px;
           }
 
-          .information-content { 
-            font-size: 17px;           
+          .information-content {
+            font-size: 17px;
             margin-bottom: 43px;
           }
-          .infor-address { 
+          .infor-address {
             font-size: 24px;
             margin-bottom : 10px;
             font-weight: 500px;
           }
-          .address-detail { 
+          .address-detail {
             font-weight: 400;
-            font-size: 16px;  
-            color: #5F5F5F;  
+            font-size: 16px;
+            color: #5F5F5F;
           }
-          .gmail,.phone { 
+          .gmail,.phone {
             display: flex;
             align-items: center;
             color: #FC721E;
             font-size: 19px;
           }
-          .gmail { 
+          .gmail {
             margin-top: 34px;
             margin-bottom: 14px;
           }
-          .gmail>img,.phone>img { 
+          .gmail>img,.phone>img {
             margin-right: 28px;
           }
-          .request { 
+          .request {
             width: 58%;
           }
-          .request-form { 
+          .request-form {
             max-width: 740px;
             height: 1030px;
             background: #FFFFFF;
             border-radius: 10px;
             padding: 0 35px;
-            
+
           }
-          .request-header { 
+          .request-header {
             font-size: 18px;
             padding-top: 35px;
             margin-bottom: 20px;
           }
-          .request-input { 
+          .request-input {
             display: flex;
             justify-content: space-between;
             gap: 2%;
           }
-          .request-input>input,.request-input1,.tell-input  { 
+          .request-input>input,.request-input1,.tell-input  {
             background: #F3F3F3;
-            border-radius: 5px; 
+            border-radius: 5px;
             width: 48%;
             height: 46px;
-            margin-bottom: 21px; 
+            margin-bottom: 21px;
             border: none;
             outline: none;
             padding-left: 20px;
             font-size: 16px;
             font-family: 'Inter', sans-serif;
           }
-          .request-input1 { 
+          .request-input1 {
             width: calc(100% - 22px);
             margin-bottom: 37px;
           }
-          .request-input>input: : placeholder, .request-input1: : placeholder, .tell-input: : placeholder { 
+          .request-input>input: : placeholder, .request-input1: : placeholder, .tell-input: : placeholder {
             color: #8E8E8E;
           }
 
-          .service-budget { 
+          .service-budget {
             display: flex;
           }
-          .hr-dahed { 
+          .hr-dahed {
             width: 0px;
             height: 320px;
             margin: 35px 20px 0px 55px ;
             border: 1px dashed #6D6D6D;
           }
-          .service { 
+          .service {
             display: flex;
             align-items: left;
             cursor: pointer;
@@ -249,7 +249,7 @@ const Request = () => {
             margin-top: 21px;
             margin-left: 17px;
           }
-          .checkbox { 
+          .checkbox {
             display: none;
             width: 20px;
             height: 20px;
@@ -260,13 +260,13 @@ const Request = () => {
             background: #FFFFFF;
             margin-right: 10px;
           }
-          .checkbox: checked~ .span  { 
+          .checkbox: checked~ .span  {
             background-repeat: no-repeat, repeat;
             background-image: url("../Checkbox.svg");
             background-position: center;
           }
 
-          .span  { 
+          .span  {
             margin-bottom: 0px;
             margin-right: 10px;
             cursor: pointer;
@@ -281,13 +281,13 @@ const Request = () => {
             border-radius: 2px;
             background-color: #D9D9D9;
           }
-          .service-content { 
+          .service-content {
             margin-left: 5px;
             max-width: 220px;
           }
 
           //custom radio-----------------------------------
-          .budget  { 
+          .budget  {
             display: block;
             position: relative;
             padding-left: 35px;
@@ -300,12 +300,12 @@ const Request = () => {
             -ms-user-select: none;
             user-select: none;
           }
-          .budget>input  { 
+          .budget>input  {
             position: absolute;
             opacity: 0;
             cursor: pointer;
           }
-          .checkmark  { 
+          .checkmark  {
             position: absolute;
             top: 0;
             left: 0;
@@ -314,20 +314,20 @@ const Request = () => {
             background-color: #eee;
             border-radius: 50%;
           }
-          .budget>input: checked ~ .checkmark  { 
+          .budget>input: checked ~ .checkmark  {
             background-color: #FC721E;
           }
-          .checkmark: after  { 
+          .checkmark: after  {
             content: "";
             position: absolute;
             display: none;
           }
-          .budget>input: checked ~ .checkmark: after  { 
-            display: block;	
+          .budget>input: checked ~ .checkmark: after  {
+            display: block;
             height: 11px;
             width: 11px;
           }
-          .budget .checkmark: after  { 
+          .budget .checkmark: after  {
             top: 3px;
             left: 3px;
             width: 8px;
@@ -335,14 +335,14 @@ const Request = () => {
             border-radius: 50%;
             background: white;
           }
-          .other { 
+          .other {
             color: #A6A6A6
           }
-          .tell-us { 
+          .tell-us {
             margin-top: 37px;
             font-size: 16px;
           }
-          .tell-input { 
+          .tell-input {
             margin-top: 16px;
             margin-bottom: 25px;
             width: calc(100% - 22px);
@@ -351,8 +351,8 @@ const Request = () => {
             display: flex;
             align-items: flex-start;
           }
-          
-          .upload { 
+
+          .upload {
             width: 100%;
             height: 45px;
             display: flex;
@@ -362,72 +362,72 @@ const Request = () => {
             border: none;
             cursor: pointer;
           }
-          .upload>img { 
-            margin-left: 25px;              
+          .upload>img {
+            margin-left: 25px;
             margin-right: 9px;
           }
-          .btn-request { 
+          .btn-request {
             color: #FFFFFF;
             background: #FC721E;
             width: 100%;
-            height: 45px; 
+            height: 45px;
             margin-top: 30px;
             border-radius: 5px;
             border: none;
             cursor: pointer;
           }
-          @media screen and (max-width: 900px ) { 
-            .infor-request-bg { 
+          @media screen and (max-width: 900px ) {
+            .infor-request-bg {
               height: auto;
             }
-            .infor-request { 
+            .infor-request {
               flex-direction: column;
               height: auto;
             }
-            .information,.request { 
+            .information,.request {
               width: 94%;
               max-width: 900px;
               margin: auto;
               height: auto;
             }
-            .information-header { 
+            .information-header {
               display: flex;
               flex-direction: column;
               align-items: center;
-              margin-bottom: 0;              
+              margin-bottom: 0;
             }
-            .information-content { 
+            .information-content {
               color: #666666;
             }
-            .infor-address { 
+            .infor-address {
               font-size: 21px;
               width: 70%;
             }
-            .request-form { 
+            .request-form {
               padding: 0 4%;
               height: auto;
               margin: auto;
               margin-bottom: 40px;
             }
-            .request-input { 
+            .request-input {
               flex-direction: column;
             }
-            .request-input>input,.request-input1 { 
+            .request-input>input,.request-input1 {
               width: 94%;
             }
-            .service-budget { 
+            .service-budget {
               flex-direction: column;
             }
-            .hr-dahed { 
+            .hr-dahed {
               transform: rotate(180deg);
               width: 218px;
               height: 0;
               margin : 30px 0 30px 20px;
             }
-            .service,.budget { 
+            .service,.budget {
               margin-left: 0;
             }
-            .btn-request { 
+            .btn-request {
               margin-top: 20px;
               margin-bottom: 30px;
             }

@@ -296,12 +296,12 @@ const Index = () => {
             .title1 {
               font-size: 2.625rem;
               font-weight: 600;
-              margin-bottom: 35px; 
+              margin-bottom: 35px;
             }
             .title2 {
               font-size: 1.75rem;
               font-weight: 500;
-              margin-bottom: 30px;   
+              margin-bottom: 30px;
             }
             .title3 {
               font-size: 1.25rem;
@@ -331,7 +331,7 @@ const Index = () => {
             .btn-contact {
               background: #BA4F13;
               margin-right: 18px;
-              border: 1px solid #BA4F13;        
+              border: 1px solid #BA4F13;
             }
             .btn-learn {
               background: #051024;
@@ -397,11 +397,11 @@ const Index = () => {
             .services-text {
               max-width: 200px;
               margin: auto;
-              text-align: center;   
+              text-align: center;
               font-weight: 600;
               color: #236B99;
             }
-           
+
             //------------------------------
 
             .target {
@@ -425,7 +425,7 @@ const Index = () => {
             .about-us-bg {
               background: rgba(0, 0, 0, 0.7);
               max-width: 532px;
-              height: 849px; 
+              height: 849px;
               border-radius: 5px;
             }
             .about-us-header {
@@ -434,7 +434,7 @@ const Index = () => {
               font-weight: 600;
               text-align: center;
               padding-top: 38px;
-              
+
             }
             .contact {
               color: rgba(66, 172, 232, 1);
@@ -500,9 +500,9 @@ const Index = () => {
               margin-right: 8px;
               margin-top: 4px;
             }
-            
+
             //----------------------------------
-            
+
             .expertise {
               background-image: url("../service_bg.svg");
               background-color: #A1ACBB;
@@ -521,7 +521,7 @@ const Index = () => {
               margin-top: 100px;
               gap: 35px;
               max-width: 1260px;
-            
+
             }
             .one-expertise {
               position: relative;
@@ -553,7 +553,7 @@ const Index = () => {
               font-weight: 500;
               text-align: center;
               margin: auto;
-              margin-top: 0; 
+              margin-top: 0;
               margin-bottom: 33px;
             }
             .system-header1 {
@@ -561,7 +561,7 @@ const Index = () => {
             }
             .system-content {
               width: 80%;
-              margin: auto; 
+              margin: auto;
               margin-top: 0;
               margin-bottom: 46px;
               color: #808080;
@@ -572,14 +572,14 @@ const Index = () => {
             }
             .system-button {
               border: none;
-              color: #1667B2; 
+              color: #1667B2;
               background: #FFFFFF;
               cursor: pointer;
               font-size: 1.125rem;
               outline: none;
             }
 
-           
+
             @media screen and (min-width: 900px) {
               .mission-vision-mobile {
                 display: none;
@@ -744,7 +744,7 @@ const Index = () => {
                 flex-direction: column;
                 align-items: center;
                 position: absolute;
-                bottom: 20px; 
+                bottom: 20px;
                 width: 100%;
               }
               .header-btn>button {
@@ -756,10 +756,10 @@ const Index = () => {
               }
               //our-services----------------------------
               .services-header {
-                margin-top: 32px; 
+                margin-top: 32px;
                 margin-bottom: 40px;
               }
-              
+
               .services-column {
                 flex-direction: column;
                 margin-bottom: 0;
@@ -770,7 +770,7 @@ const Index = () => {
                 margin: auto;
                 margin-bottom: 20px;
               }
-              
+
              //-----------------------------------------
               .about-us-bg {
                 max-width: 600px;

@@ -151,7 +151,7 @@ const Team = () => {
           }
           .header-right>img {
             max-width: 100%;
-          } 
+          }
 
           //Introduce--------------------
           .introduce {
@@ -169,7 +169,7 @@ const Team = () => {
           }
           .one-introduce {
             display: flex;
-            align-items: center; 
+            align-items: center;
             height: 149px;
             background: #F8F8F8;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);

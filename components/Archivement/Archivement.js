@@ -52,7 +52,7 @@ const Archivement = () => {
       </div>
       <style jsx>
         {`
-        .archivement,.archivement-mobile { 
+        .archivement,.archivement-mobile {
           height: 278px;
           background-image: url("../service_bg.svg")
           background-color: #A1ACBB;
@@ -60,7 +60,7 @@ const Archivement = () => {
           background-repeat: no-repeat;
           margin-top: 50px;
         }
-        .archivement-container { 
+        .archivement-container {
           max-width: 1260px;
           width: 100%;
           height: 100%;
@@ -68,7 +68,7 @@ const Archivement = () => {
           display: flex;
           justify-content: center;
         }
-        .archivement-column,.archivement-content { 
+        .archivement-column,.archivement-content {
           display: flex;
           flex-direction: column;
           width: 25%;
@@ -76,26 +76,26 @@ const Archivement = () => {
           align-items: center;
           margin-top: 57px;
         }
-        .archivement-column { 
+        .archivement-column {
           font-size: 1.063rem;
           font-family: 'Lexend', sans-serif;
         }
-        .archivement-column>label { 
+        .archivement-column>label {
           max-width: 205px;
         }
-        .archivement-content { 
+        .archivement-content {
           align-items: flex-start;
           margin-top: 67px;
           margin-left: 30px;
           width: 20%;
           padding-left: 5%;
         }
-        .item { 
+        .item {
           color: #1E1E1E;
           font-size: 32px;
           font-weight: 600;
         }
-        .crossbar1,.crossbar-left-1 { 
+        .crossbar1,.crossbar-left-1 {
           width: 90px;
           height: 4px;
           background: #FC721E;
@@ -103,60 +103,60 @@ const Archivement = () => {
           margin-bottom: 3px;
           margin-top: 10px;
         }
-        .crossbar2,.crossbar-left-2 { 
+        .crossbar2,.crossbar-left-2 {
           width: 90px;
           height: 2px;
           background: #FC721E;
           margin: auto;
           margin-bottom: 15px;
         }
-        .crossbar-left-1 { 
+        .crossbar-left-1 {
           margin: 0;
           margin-top: 8px;
         }
-        .crossbar-left-2 { 
+        .crossbar-left-2 {
           margin: 0;
           margin-top: 4px;
           margin-bottom: 17px;
         }
-        .archivement-number { 
+        .archivement-number {
           font-size: 4.375rem;
           color: #FFFFFF;
           text-shadow: 2px 0 #2F2D77, -2px 0 #2F2D77, 0 2px #2F2D77, 0 -2px #2F2D77,
           1px 1px #2F2D77, -1px -1px #2F2D77, 1px -1px #2F2D77, -1px 1px #2F2D77;
         }
-        @media screen and (min-width: 900px) { 
-          .archivement-mobile { 
+        @media screen and (min-width: 900px) {
+          .archivement-mobile {
             display: none;
           }
         }
-        @media screen and (max-width: 900px) { 
-          .archivement { 
+        @media screen and (max-width: 900px) {
+          .archivement {
             display: none;
           }
-          .archivement-mobile { 
+          .archivement-mobile {
             height: 470px;
           }
-          .archivement-container { 
+          .archivement-container {
             flex-direction: column;
             align-items: center;
           }
-          .archivement-content-moblie { 
+          .archivement-content-moblie {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding-top: 25px;
           }
-          .archivement-row { 
+          .archivement-row {
             width: 90%;
             display: flex;
             justify-content: space-between;
           }
-          .archivement-column { 
+          .archivement-column {
             width: 50%;
             margin-top: 30px;
           }
-          .archivement-number { 
+          .archivement-number {
             font-size: 3.25rem;
           }
         `}

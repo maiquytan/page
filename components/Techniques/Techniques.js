@@ -33,7 +33,7 @@ const Techniques = () => {
         </div>
       </div>
       <style jsx>
-        {` 
+        {`
           .techniques {
             height: 400px;
             margin-top: 40px;
@@ -73,7 +73,7 @@ const Techniques = () => {
           }
           .techniques-column>img,.html-css {
             width: 13%;
-            
+
             height: 55px;
             border: 1px solid #CCCCCC;
             border-radius: 3px;
@@ -91,7 +91,7 @@ const Techniques = () => {
             }
             .techniques-main {
               display: flex;
-              justify-content: center;  
+              justify-content: center;
             }
             .techniques-column {
               flex-direction: column;
@@ -99,7 +99,7 @@ const Techniques = () => {
               align-items: center;
               width: 100%;
             }
-            .techniques-column>img,.html-css {                
+            .techniques-column>img,.html-css {
               width: 94%;
               margin-top: 16px;
             }

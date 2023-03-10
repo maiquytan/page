@@ -202,7 +202,7 @@ const Portfolio = () => {
             color: #DEDEDE;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
-            
+
           }
           .header-content {
             display: flex;
@@ -318,7 +318,7 @@ const Portfolio = () => {
             margin-top: 50px;
             margin-bottom: 50px;
           }
-          .paging>button { 
+          .paging>button {
             width: 32px;
             height: 32px;
             margin-right: 8px;
@@ -380,10 +380,10 @@ const Portfolio = () => {
               margin-bottom: 15%;
             }
             .content-right>img {
-              width: 100%; 
+              width: 100%;
               height: 100%;
             }
-            
+
             .applications-header {
               flex-direction: column;
             }
@@ -408,7 +408,7 @@ const Portfolio = () => {
               width: 96%;
               height: 50px;
               margin: auto;
-              margin-bottom: 20px; 
+              margin-bottom: 20px;
               background: #F8F8F8;
               border: 1px solid #236B99;
               box-shadow: 1px 1px 5px #D9D9D9;
@@ -435,9 +435,9 @@ const Portfolio = () => {
               padding: 12px;
               color: #B7B7B7;
             }
-           
+
             .applications-right {
-              width: 96%; 
+              width: 96%;
               margin: auto;
             }
             .illustration {
@@ -452,7 +452,7 @@ const Portfolio = () => {
             }
           }
           @media screen and (max-width: 600px) {
-            .img-header-mobile {           
+            .img-header-mobile {
               width: 200%;
               height: auto;
               aspect-ratio: 1.7;

@@ -1,16 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 const Header = () => {
-  const [isDropdownMenuAction, SetIsDropdownMenuAction] = useState(false);
-  const [isDropdownCompanyAction, SetIsDropdownCompanyAction] = useState(false);
+  const [isDropdownMenuAction, setIsDropdownMenuAction] = useState(false);
+  const [isDropdownCompanyAction, setIsDropdownCompanyAction] = useState(false);
+  const router = useRouter()
 
   const handleDropDownMenuAction = () => {
-    SetIsDropdownMenuAction(!isDropdownMenuAction)
+    setIsDropdownMenuAction(!isDropdownMenuAction)
   }
+
   const handleDropDownCompanyAction = () => {
-    SetIsDropdownCompanyAction(!isDropdownCompanyAction)
+    setIsDropdownCompanyAction(!isDropdownCompanyAction)
   }
+
+  useEffect(() => {
+    setIsDropdownMenuAction(false);
+  }, [router])
 
   return (
     <div className="header">
@@ -37,9 +44,9 @@ const Header = () => {
         </div>
       </div>
       <div className="menu-mobile">
-        <div className="logo-mobile">
+        <Link href="/"><a className="logo-mobile">
           <img src="/logo1.svg" alt="logo" title="logo" width={176} height={30} />
-        </div>
+        </a></Link>
         <div className="btn-menu" onClick={handleDropDownMenuAction}>
           <img src="/menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
         </div>
@@ -47,7 +54,7 @@ const Header = () => {
           <ul className="mobile-menu-down">
             <li>
               <div>
-                <Link href="/e"><a>Company </a></Link>
+                <Link href="/e"><a>Company</a></Link>
                 <img src="/arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
               </div>
               {isDropdownCompanyAction &&
@@ -71,18 +78,18 @@ const Header = () => {
       </div>
       <style jsx>
         {`
-          .header { 
+          .header {
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 3;
             background: #FFFFFF;
           }
-          .address { 
+          .address {
             width: 100%;
             background: #FFFFFF;
           }
-          .address-content { 
+          .address-content {
             color: #FC721E;
             max-width:  1274px;
             height: 40px;
@@ -91,33 +98,33 @@ const Header = () => {
             justify-content: flex-end;
             margin: auto;
           }
-          label { 
+          label {
             font-size: 14px;
             margin-left: 7px;
             margin-right: 22px;
           }
-          .phone { 
-            margin-right: 60px; 
+          .phone {
+            margin-right: 60px;
           }
-          .im-location { 
+          .im-location {
             width: 13px;
             height: 21px;
           }
-          .menu { 
+          .menu {
             background: rgba(23, 23, 31, 0.95);
             height: 78px;
           }
-          .menu-main { 
+          .menu-main {
             display: flex;
             align-items: center;
             justify-content: space-between;
             max-width: 1274px;
             margin: auto;
           }
-          .menu-content { 
+          .menu-content {
             margin-right: 50px;
           }
-          a { 
+          a {
             color: #FFFFFF;
             text-decoration: none;
             margin: 0 10px;
@@ -125,13 +132,13 @@ const Header = () => {
             font-size: 20px;
             outline: none;
           }
-          .img-logo { 
+          .img-logo {
             margin-left: 50px;
           }
-          .logo { 
+          .logo {
             margin-bottom: 10px;
           }
-          .menu-mobile { 
+          .menu-mobile {
             background: rgba(23, 23, 31, 0.85);
             height: 50px;
             width: 100%;
@@ -140,11 +147,11 @@ const Header = () => {
             align-items: center;
             position: relative;
           }
-          .btn-menu { 
+          .btn-menu {
             position: absolute;
             right: 15px;
           }
-          .mobile-menu-down { 
+          .mobile-menu-down {
             position: absolute;
             flex-direction: column;
             width: 100%;
@@ -158,28 +165,28 @@ const Header = () => {
             list-style: none;
             z-index: 3;
           }
-          li { 
+          li {
             margin: 20px;
           }
-          hr { 
+          hr {
             margin: 0 10px;
             color: #F4F4F4;
           }
-        
-          @media screen and (min-width:900px ) { 
-            .menu-mobile { 
+
+          @media screen and (min-width:900px ) {
+            .menu-mobile {
               display: none;
             }
           }
 
-          @media screen and (max-width: 900px) { 
-            .menu,.address { 
+          @media screen and (max-width: 900px) {
+            .menu,.address {
               display: none;
             }
-            .header { 
+            .header {
               width: 100%;
             }
-            a { 
+            a {
               color: #6E6E73;
             }
           }

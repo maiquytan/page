@@ -157,14 +157,14 @@ const Client = () => {
             font-size: 23px;
             line-height: 33px;
             color: #FFFFFF;
-            margin-bottom: 100px; 
+            margin-bottom: 100px;
           }
           .header-right {
             max-width: 60%;
           }
           .header-right>img {
             max-width: 100%;
-          } 
+          }
 
           //---------------------------------
           .bg-mobile-web {
@@ -194,7 +194,7 @@ const Client = () => {
             font-size: 16px;
             line-height: 23px;
           }
-          
+
           //Reason------------------------
           .bg-reason {
             background-image: url("../bg_reason.webp");
@@ -280,7 +280,7 @@ const Client = () => {
           .expert-right {
             margin-right: 25px;
           }
-          
+
           //Feedback---------------------
           .bg-feedback {
             height: 1100px;

@@ -129,14 +129,14 @@ const About = () => {
             font-size: 20px;
             line-height: 33px;
             color: #FFFFFF;
-            margin-bottom: 100px; 
+            margin-bottom: 100px;
           }
           .header-right {
             max-width: 60%;
           }
           .header-right>img {
             max-width: 100%;
-          } 
+          }
           .about-bg {
             background-image: url("../Session.webp");
             height: 100vh;
