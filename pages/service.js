@@ -8,17 +8,17 @@ const Service = () => {
       { /* Header */}
       <div className="bg-header">
         <div className="img-header-pc">
-          <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557"/>
+          <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
         <div className="img-header-mobile">
-          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557"/>
+          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
         <div className="service-header">
           <div className="header-title">Our Service</div>
           <div className="header-content">
             <div className="header-left">At Axalize Incorporated, we are dedicated to providing top-notch IT outsourcing and offshore services that meet the unique needs of our clients. Our services are designed to support businesses in a wide range of industries, and we work closely with each of our clients to ensure that their IT needs are met.</div>
             <div className="header-right">
-              <img src="/Group22.webp" alt="img-header" title="img-header" width="737" height="317"/>
+              <img src="/Group22.webp" alt="img-header" title="img-header" width="737" height="317" />
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Service = () => {
         </div>
         <div className="services-row-1">
           <div className="service-img">
-            <img src="/web.svg" alt="web" title="web" width="419" height="419"/>
+            <img src="/web.svg" alt="web" title="web" width="419" height="419" />
           </div>
           <div className="content-right">
             <div className="services-title">Web application development</div>
@@ -61,12 +61,12 @@ const Service = () => {
               Quality and collaboration are at the heart of everything we do. We work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a mobile app that is not only functional but also user-friendly and engaging, driving business growth and customer satisfaction.</div>
           </div>
           <div className="service-img"  >
-            <img src="/mobile_app.svg" alt="mobile-app" title="mobile-app" width="419" height="419"/>
+            <img src="/mobile_app.svg" alt="mobile-app" title="mobile-app" width="419" height="419" />
           </div>
         </div>
         <div className="services-row-1">
           <div className="service-img">
-            <img className="margin-img" src="/RPA.svg" alt="RPA" title="RPA" width="419" height="301"/>
+            <img className="margin-img" src="/RPA.svg" alt="RPA" title="RPA" width="419" height="301" />
           </div>
           <div className="content-right">
             <div className="services-title">RPA development</div>
@@ -81,12 +81,12 @@ const Service = () => {
               Quality and collaboration are at the core of our dedicated development teams. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to provide a flexible and cost-effective solution that meets the specific needs of your business.</div>
           </div>
           <div className="service-img">
-            <img src="/dedicated_teams.svg" className="margin-img" alt="dedicated-teams" title="dedicated-teams" width="419" height="301"/>
+            <img src="/dedicated_teams.svg" className="margin-img" alt="dedicated-teams" title="dedicated-teams" width="419" height="301" />
           </div>
         </div>
         <div className="services-row-1">
           <div className="service-img">
-            <img src="/Offshore_center.svg" className="offshore-center" alt="offshore-center" title="offshore-center" width="419" height="300"/>
+            <img src="/Offshore_center.svg" className="offshore-center" alt="offshore-center" title="offshore-center" width="419" height="300" />
           </div>
           <div className="content-right">
             <div className="services-title">Offshore development center</div>
@@ -101,12 +101,12 @@ const Service = () => {
               At Axalize Incorporated, we understand that quality and collaboration are key to effective lifecycle maintenance. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you keep your IT systems running smoothly, so you can focus on growing your business</div>
           </div >
           <div className="service-img">
-            <img src="/Lifecycle.svg" alt="lifecycle" title="lifecycle" width="419" height="419"/>
+            <img src="/Lifecycle.svg" alt="lifecycle" title="lifecycle" width="419" height="419" />
           </div>
         </div>
         <div className="services-row-1">
           <div className="service-img">
-            <img src="/devops.svg" alt="devops" className="margin-img" title="devops" width="419" height="419"/>
+            <img src="/devops.svg" alt="devops" className="margin-img" title="devops" width="419" height="419" />
           </div>
           <div className="content-right">
             <div className="services-title">DevOps development and operations</div>
@@ -121,35 +121,35 @@ const Service = () => {
               Quality and collaboration are key to our UI/UX design services. We understand the importance of working closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a digital experience that is not only functional but also engaging, driving business growth and customer satisfaction.</div>
           </div>
           <div className="service-img">
-            <img src="/UI_UX.svg" className="margin-img" alt="UI-UX" title="UI-UX" width="419" height="419"/>
+            <img src="/UI_UX.svg" className="margin-img" alt="UI-UX" title="UI-UX" width="419" height="419" />
           </div>
         </div>
       </div>
 
       <style jsx>
         {`
-          .service { 
+          .service {
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
           }
-          .h1 { 
+          .h1 {
             display: none;
           }
-          .bg-header { 
+          .bg-header {
             position: relative;
             width: 100%;
             overflow: hidden;
           }
-          .img-header-pc,.img-header-mobile { 
+          .img-header-pc,.img-header-mobile {
             position: absolute;
             right: 0;
             top: 118px;
             z-index: 1;
           }
-          .img-header-mobile { 
+          .img-header-mobile {
             display: none;
           }
-          .service-header { 
+          .service-header {
             position: relative;
             height: calc(100vh - 118px);
             max-width: 1260px;
@@ -161,7 +161,7 @@ const Service = () => {
             justify-content: center;
             z-index: 2;
           }
-          .header-title { 
+          .header-title {
             background-image: url("../ellipse.svg");
             width: 350px;
             height: 103px;
@@ -174,12 +174,12 @@ const Service = () => {
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
           }
-          .header-content { 
+          .header-content {
             display: flex;
             margin-top: 35px;
             max-width: 1260px;
           }
-          .header-left { 
+          .header-left {
             width: 34%;
             margin-top: 30px;
             margin-right: 65px;
@@ -189,25 +189,25 @@ const Service = () => {
             line-height: 26px;
             color: #494949;
           }
-          .header-right { 
+          .header-right {
             width: 60%;
           }
-          .header-right>img { 
+          .header-right>img {
             max-width: 100%;
-          } 
+          }
 
           //Mobile-web----------------------------
-          .bg-mobile-web { 
+          .bg-mobile-web {
             background: url("../bg_mobile_web.webp");
             background-size: cover;
             width: 66%;
             margin: auto;
             border-radius: 15px;
           }
-          .mobile-web { 
+          .mobile-web {
             height: auto;
           }
-          .mobile-web-header { 
+          .mobile-web-header {
             width: 77%;
             margin: auto;
             padding-top: 90px;
@@ -216,24 +216,24 @@ const Service = () => {
             font-weight: 600;
             color: #1365B1;
           }
-          .mobile-web-content { 
+          .mobile-web-content {
             width: 77%;
             margin: auto;
             font-size: 16px;
             line-height: 23px;
             padding-bottom: 80px;
           }
-          p { 
+          p {
             margin-bottom: 10px;
           }
 
           //our-services----------------------------
 
-          .our-services { 
+          .our-services {
             padding-bottom: 250px;
             background: #FFFFFF;
           }
-          .services-header { 
+          .services-header {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -241,13 +241,13 @@ const Service = () => {
             margin-top: 72px;
             margin-bottom: 10px;
           }
-          .item { 
+          .item {
             color: #1E1E1E;
             font-size: 32px;
             font-weight: 500;
             font-weight: 600;
           }
-          .crossbar1 { 
+          .crossbar1 {
             width: 90px;
             height: 4px;
             background: #FC721E;
@@ -255,63 +255,63 @@ const Service = () => {
             margin-bottom: 3px;
             margin-top: 10px;
           }
-          .crossbar2 { 
+          .crossbar2 {
             width: 90px;
             height: 2px;
             background: #FC721E;
             margin: auto;
             margin-bottom: 55px;
           }
-          .services-row-1, .services-row-2 { 
+          .services-row-1, .services-row-2 {
             display: flex;
             justify-content: center;
             max-width: 1260px;
             margin: auto;
             margin-bottom: 40px;
           }
-          .services-title { 
+          .services-title {
             font-weight: 600;
             font-size: 30px;
             margin: 60px 0 ;
             color: #236B99;
           }
-          .services-content { 
+          .services-content {
             max-width: 570px;
             font-size: 17px;
             line-height: 26px;
             text-align: justify;
           }
-          .service-img { 
+          .service-img {
             width: 35%;
           }
-          .service-img>img { 
+          .service-img>img {
             width: 100%;
           }
-          .content-right { 
+          .content-right {
             margin-left: 32px;
           }
-          .content-left { 
+          .content-left {
             margin-left: 100px;
             margin-right: 66px;
           }
-          .margin-img { 
+          .margin-img {
             margin-top: 20px;
           }
-          .offshore-center { 
+          .offshore-center {
             margin-top: 40px;
           }
-          @media screen and (max-width: 900px) { 
-            .img-header-pc { 
+          @media screen and (max-width: 900px) {
+            .img-header-pc {
               display: none;
             }
-            .img-header-mobile { 
+            .img-header-mobile {
               display: block;
             }
-            .service-header { 
+            .service-header {
               height: calc(100vh - 50px);
               margin-top: 50px;
             }
-            .img-header-mobile { 
+            .img-header-mobile {
               top: 0px;
               left: -70%;
               width: 200%;
@@ -319,31 +319,31 @@ const Service = () => {
               aspect-ratio: 3;
               object-fit: cover;
             }
-            .img-header-mobile>img { 
+            .img-header-mobile>img {
               width: 100%;
               height: 100%;
             }
-            .service-header { 
+            .service-header {
               justify-content: normal;
             }
-            .header-title { 
+            .header-title {
               margin-top: 10%;
               background: none;
               width: 100%;
               text-align: center;
             }
-            .header-content { 
+            .header-content {
               flex-direction: column-reverse;
               width: 100%;
               margin-top: 25px;
             }
-            .header-left { 
+            .header-left {
               width: 80%;
               margin: auto;
               font-size: 18px;
               line-height: 30px;
             }
-            .header-right { 
+            .header-right {
               width: 86%;
               height: auto;
               aspect-ratio: 2.3;
@@ -352,16 +352,16 @@ const Service = () => {
               margin-top: 5%;
               margin-bottom: 15%;
             }
-            .header-right>img { 
-              width: 100%; 
+            .header-right>img {
+              width: 100%;
               height: 100%;
             }
             //------------------------------
-            .bg-mobile-web { 
+            .bg-mobile-web {
               width: 100%;
               background-position-x: 31%;
             }
-            .service-img { 
+            .service-img {
               width: 48%;
             }
             .services-title {
@@ -378,43 +378,43 @@ const Service = () => {
               margin-right: 2%;
             }
           }
-          @media screen and (max-width: 600px) { 
-            .img-header-mobile {            
+          @media screen and (max-width: 600px) {
+            .img-header-mobile {
               width: 200%;
               height: auto;
               aspect-ratio: 1.7;
               object-fit: cover;
             }
-            .mobile-web-header { 
+            .mobile-web-header {
               font-size: 20px;
               padding-top: 40px;
               width: 90%;
               text-align: justify;
             }
-            .mobile-web-content { 
+            .mobile-web-content {
               width: 90%;
               font-size: 14px;
               padding-bottom: 40px;
               text-align: justify;
             }
-            .services-row-1 { 
+            .services-row-1 {
               flex-direction: column;
             }
-            .services-row-2 { 
+            .services-row-2 {
               flex-direction: column-reverse;
             }
-            .service-img { 
+            .service-img {
               width: 94%;
               margin: auto;
             }
-            .services-title { 
+            .services-title {
               font-size: 18px;
               margin: 10px 0;
             }
-            .services-content { 
+            .services-content {
               font-size: 14px;
             }
-            .content-right,.content-left { 
+            .content-right,.content-left {
               margin: 0;
               width: 90%;
               margin: auto;

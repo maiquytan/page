@@ -13,19 +13,19 @@ const Index = () => {
       <Head>
         <title></title>
         <meta data-n-head="ssr" data-hid="title" name="title"
-          content=""/>
+          content="" />
         <meta data-n-head="ssr" data-hid="og:title" name="og:title"
-          content=""/>
-        <meta data-n-head="ssr" data-hid="description" name="description" content=""/>
-        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content=""/>
+          content="" />
+        <meta data-n-head="ssr" data-hid="description" name="description" content="" />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content=""/>
+          content="" />
         <meta data-n-head="ssr" name="keywords"
-          content=""/>
+          content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
-          content=""/>
-        <meta data-n-head="ssr" data-hid="robots" name="robots" content=""/>
-        <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content=""/>
+          content="" />
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
+        <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
         <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
       </Head>
       <div className="container">
@@ -59,21 +59,21 @@ const Index = () => {
               <div className="services-column">
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="/services1.svg" className="img-services" alt="logo" title="logo" width="116" height="113"/>
+                    <img src="/services1.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Web application development</div>
                   </div>
                   <div className="services-one">
-                    <img src="/services2.svg" className="img-services" alt="logo" title="logo" width="116" height="113"/>
+                    <img src="/services2.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Mobile app development</div>
                   </div>
                 </div>
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="/services3.svg" className="img-services" alt="logo" title="logo" width="116" height="113"/>
+                    <img src="/services3.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">RPA development</div>
                   </div>
                   <div className="services-one">
-                    <img src="/services4.svg" className="img-services" alt="logo" title="logo" width="116" height="113"/>
+                    <img src="/services4.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Dedicated development teams</div>
                   </div>
                 </div>
@@ -81,21 +81,21 @@ const Index = () => {
               <div className="services-column">
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="/services5.svg" className="img-services" alt="logo" title="logo" width="116" height="113"/>
+                    <img src="/services5.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Offshore development center</div>
                   </div>
                   <div className="services-one">
-                    <img src="/services6.svg" className="img-services" alt="logo" title="logo" width="116" height="113"/>
+                    <img src="/services6.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">Lifecycle maintenance</div>
                   </div>
                 </div>
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="/services7.svg" className="img-services" alt="logo" title="logo" width="116" height="113"/>
+                    <img src="/services7.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">DevOps development and operations</div>
                   </div>
                   <div className="services-one">
-                    <img src="/services8.svg" className="img-services" alt="logo" title="logo" width="116" height="113"/>
+                    <img src="/services8.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
                     <div className="services-text">UI/UX Design</div>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Index = () => {
           </div>
 
           {/* Archivement*/}
-          <Archivement/>
+          <Archivement />
 
           {/* Target */}
           <div className="target">
@@ -131,41 +131,41 @@ const Index = () => {
             </div>
             <div className="mission-vision">
               <div className="target-row">
-                <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61"/>
+                <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
                 <div className="mission">
                   <div className="mission-header">Mission</div>
                   <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
                 </div>
               </div>
               <div className="target-row">
-                <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61"/>
+                <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
                 <div className="mission">
                   <div className="mission-header">Vision</div>
                   <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
                 </div>
               </div>
               <div className="target-row">
-                <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61"/>
+                <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
                 <div className="mission">
                   <div className="mission-header">Core value</div>
                   <div className="one-core">
-                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
                   </div>
                   <div className="one-core">
-                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <label> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
                   </div>
                   <div className="one-core">
-                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <label> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
                   </div>
                   <div className="one-core">
-                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <label> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
                   </div>
                   <div className="one-core">
-                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                    <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <label> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
                   </div>
                 </div>
@@ -174,42 +174,42 @@ const Index = () => {
             <div className="mission-vision-mobile">
               <div className="target-row">
                 <div className="mission-mobile">
-                  <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61"/>
+                  <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
                   <div className="mission-header">Mission</div>
                 </div>
                 <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
               </div>
               <div className="target-row">
                 <div className="mission-mobile">
-                  <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61"/>
+                  <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
                   <div className="mission-header">Vision</div>
                 </div>
                 <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
               </div>
               <div className="target-row">
                 <div className="mission-mobile">
-                  <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61"/>
+                  <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
 
                   <div className="mission-header">Core value</div>
                 </div>
                 <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
                 </div>
                 <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <label> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
                 </div>
                 <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <label> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
                 </div>
                 <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <label> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
                 </div>
                 <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12"/>
+                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                   <label> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
                 </div>
               </div>
@@ -226,7 +226,7 @@ const Index = () => {
             <div className="expertise-main">
               <div className="one-expertise">
                 <div className="img-expertise">
-                  <img src="/Expertise1.svg" alt="expertise" title="expertise" width="100" height="100"/>
+                  <img src="/Expertise1.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
                   <label className="system-header">Enterprise management systems</label>
@@ -235,7 +235,7 @@ const Index = () => {
               </div>
               <div className="one-expertise">
                 <div className="img-expertise">
-                  <img src="/Expertise2.svg" alt="expertise" title="expertise" width="100" height="100"/>
+                  <img src="/Expertise2.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
                   <label className="system-header">Ecommerce & Retail management systems</label>
@@ -244,7 +244,7 @@ const Index = () => {
               </div>
               <div className="one-expertise">
                 <div className="img-expertise">
-                  <img src="/Expertise3.svg" alt="expertise" title="expertise" width="100" height="100"/>
+                  <img src="/Expertise3.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
                   <label className="system-header">Customer-enabling services</label>
@@ -253,7 +253,7 @@ const Index = () => {
               </div>
               <div className="one-expertise">
                 <div className="img-expertise">
-                  <img src="/Expertise4.svg" alt="expertise" title="expertise" width="100" height="100"/>
+                  <img src="/Expertise4.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
                   <label className="system-header1">New business ideas</label>
@@ -266,7 +266,7 @@ const Index = () => {
             </div>
           </div>
           {/* Techniques */}
-          <Techniques/>
+          <Techniques />
         </div>
 
         {/* CSS */}
@@ -296,12 +296,12 @@ const Index = () => {
             .title1 {
               font-size: 2.625rem;
               font-weight: 600;
-              margin-bottom: 35px; 
+              margin-bottom: 35px;
             }
             .title2 {
               font-size: 1.75rem;
               font-weight: 500;
-              margin-bottom: 30px;   
+              margin-bottom: 30px;
             }
             .title3 {
               font-size: 1.25rem;
@@ -331,7 +331,7 @@ const Index = () => {
             .btn-contact {
               background: #BA4F13;
               margin-right: 18px;
-              border: 1px solid #BA4F13;        
+              border: 1px solid #BA4F13;
             }
             .btn-learn {
               background: #051024;
@@ -397,11 +397,11 @@ const Index = () => {
             .services-text {
               max-width: 200px;
               margin: auto;
-              text-align: center;   
+              text-align: center;
               font-weight: 600;
               color: #236B99;
             }
-           
+
             //------------------------------
 
             .target {
@@ -425,7 +425,7 @@ const Index = () => {
             .about-us-bg {
               background: rgba(0, 0, 0, 0.7);
               max-width: 532px;
-              height: 849px; 
+              height: 849px;
               border-radius: 5px;
             }
             .about-us-header {
@@ -434,7 +434,7 @@ const Index = () => {
               font-weight: 600;
               text-align: center;
               padding-top: 38px;
-              
+
             }
             .contact {
               color: rgba(66, 172, 232, 1);
@@ -500,9 +500,9 @@ const Index = () => {
               margin-right: 8px;
               margin-top: 4px;
             }
-            
+
             //----------------------------------
-            
+
             .expertise {
               background-image: url("../service_bg.svg");
               background-color: #A1ACBB;
@@ -521,7 +521,7 @@ const Index = () => {
               margin-top: 100px;
               gap: 35px;
               max-width: 1260px;
-            
+
             }
             .one-expertise {
               position: relative;
@@ -553,7 +553,7 @@ const Index = () => {
               font-weight: 500;
               text-align: center;
               margin: auto;
-              margin-top: 0; 
+              margin-top: 0;
               margin-bottom: 33px;
             }
             .system-header1 {
@@ -561,7 +561,7 @@ const Index = () => {
             }
             .system-content {
               width: 80%;
-              margin: auto; 
+              margin: auto;
               margin-top: 0;
               margin-bottom: 46px;
               color: #808080;
@@ -572,14 +572,14 @@ const Index = () => {
             }
             .system-button {
               border: none;
-              color: #1667B2; 
+              color: #1667B2;
               background: #FFFFFF;
               cursor: pointer;
               font-size: 1.125rem;
               outline: none;
             }
 
-           
+
             @media screen and (min-width: 900px) {
               .mission-vision-mobile {
                 display: none;
@@ -744,7 +744,7 @@ const Index = () => {
                 flex-direction: column;
                 align-items: center;
                 position: absolute;
-                bottom: 20px; 
+                bottom: 20px;
                 width: 100%;
               }
               .header-btn>button {
@@ -756,10 +756,10 @@ const Index = () => {
               }
               //our-services----------------------------
               .services-header {
-                margin-top: 32px; 
+                margin-top: 32px;
                 margin-bottom: 40px;
               }
-              
+
               .services-column {
                 flex-direction: column;
                 margin-bottom: 0;
@@ -770,7 +770,7 @@ const Index = () => {
                 margin: auto;
                 margin-bottom: 20px;
               }
-              
+
              //-----------------------------------------
               .about-us-bg {
                 max-width: 600px;

@@ -72,23 +72,23 @@ const Portfolio = () => {
       {/* Header */}
       <div className="bg-header">
         <div className="img-header-pc">
-          <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557"/>
+          <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
         <div className="img-header-mobile">
-          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557"/>
+          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
         <div className="portfolio-header">
           <div className="header-title">Our Works</div>
           <div className="header-content">
             <div className="content-left">From Enterprise Management Systems to E-commerce & Retail Management Systems, Customer-enabling Services, and New Business Ideas, our portfolio is a testament to our expertise and the real-world benefits we bring to our clients. Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution.</div>
             <div className="content-right">
-              <img src="/Group20.webp" alt="img-header" title="img-header" width="737" height="317"/>
+              <img src="/Group20.webp" alt="img-header" title="img-header" width="737" height="317" />
             </div>
           </div>
         </div>
       </div>
 
-      <Archivement/>
+      <Archivement />
 
       {/* Aplications */}
       <div className="applications">
@@ -111,7 +111,7 @@ const Portfolio = () => {
             <div className="select" onClick={handleDropdownOnclick}>
               <div> {isSelect.title}</div>
               <div>
-                <img src="/arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9"/>
+                <img src="/arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9" />
               </div>
             </div>
             {isDropdownApp &&
@@ -128,7 +128,7 @@ const Portfolio = () => {
               {currentTableData.map((item, index) => {
                 return (
                   <div className="illustration" key={index}>
-                    <img src={item.img} alt="illustration" title="illustration" width="465" height="244"/>
+                    <img src={item.img} alt="illustration" title="illustration" width="465" height="244" />
                     <div> {item.title}</div>
                     <label> {item.content}</label>
                   </div>
@@ -144,12 +144,12 @@ const Portfolio = () => {
             totalCount={data.length}
             pageSize={PageSize}
             onPageChange={page => setCurrentPage(page)}
-         />
+          />
         </div>
       </div>
 
       {/* Techniques */}
-      <Techniques/>
+      <Techniques />
 
       <style jsx>
         {`
@@ -202,7 +202,7 @@ const Portfolio = () => {
             color: #DEDEDE;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
-            
+
           }
           .header-content {
             display: flex;
@@ -318,7 +318,7 @@ const Portfolio = () => {
             margin-top: 50px;
             margin-bottom: 50px;
           }
-          .paging>button { 
+          .paging>button {
             width: 32px;
             height: 32px;
             margin-right: 8px;
@@ -380,10 +380,10 @@ const Portfolio = () => {
               margin-bottom: 15%;
             }
             .content-right>img {
-              width: 100%; 
+              width: 100%;
               height: 100%;
             }
-            
+
             .applications-header {
               flex-direction: column;
             }
@@ -408,7 +408,7 @@ const Portfolio = () => {
               width: 96%;
               height: 50px;
               margin: auto;
-              margin-bottom: 20px; 
+              margin-bottom: 20px;
               background: #F8F8F8;
               border: 1px solid #236B99;
               box-shadow: 1px 1px 5px #D9D9D9;
@@ -435,9 +435,9 @@ const Portfolio = () => {
               padding: 12px;
               color: #B7B7B7;
             }
-           
+
             .applications-right {
-              width: 96%; 
+              width: 96%;
               margin: auto;
             }
             .illustration {
@@ -452,7 +452,7 @@ const Portfolio = () => {
             }
           }
           @media screen and (max-width: 600px) {
-            .img-header-mobile {           
+            .img-header-mobile {
               width: 200%;
               height: auto;
               aspect-ratio: 1.7;

@@ -7,13 +7,13 @@ const About = () => {
 
       {/* Header */}
       <div className="bg-header">
-        <img className="img-header" src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637"/>
+        <img className="img-header" src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
         <div className="about-header">
           <div className="header-title">About us</div>
           <div className="header-content">
             <div className="header-left">We take pride in our commitment to delivering innovative and tailored software solutions to meet the unique needs of each of our clients. Discover why we are a leading provider of offshore software development services and how we are driving success for businesses around the world.</div>
             <div className="header-right">
-              <img src="/Frame132.webp" alt="img-header" title="img-header" width="644" height="644"/>
+              <img src="/Frame132.webp" alt="img-header" title="img-header" width="644" height="644" />
             </div>
           </div>
         </div>
@@ -23,7 +23,7 @@ const About = () => {
       <div className="about-bg">
         <div className="about-axa">
           <div className="about-left">
-            <img src="/Frame133.webp" alt="img-about" title="img-about" width="612" height="612"/>
+            <img src="/Frame133.webp" alt="img-about" title="img-about" width="612" height="612" />
           </div>
           <div className="about-right">
             <div className="about-title">About Axalize</div>
@@ -41,12 +41,12 @@ const About = () => {
             <div className="target-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</div>
           </div>
           <div className="target-right">
-            <img src="/about_mission.webp" alt="misson" title="mission" width="530" height="533"/>
+            <img src="/about_mission.webp" alt="misson" title="mission" width="530" height="533" />
           </div>
         </div>
         <div className="our-target">
           <div className="target-right">
-            <img src="/about_vision.webp" alt="vision" title="vision" width="530" height="533"/>
+            <img src="/about_vision.webp" alt="vision" title="vision" width="530" height="533" />
           </div>
           <div className="target-left">
             <div className="target-title"><p>Our</p> <label>Vision</label> </div>
@@ -64,7 +64,7 @@ const About = () => {
               5. Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</div>
           </div>
           <div className="target-right">
-            <img src="/about_core.webp" alt="core" title="core" width="530" height="710"/>
+            <img src="/about_core.webp" alt="core" title="core" width="530" height="710" />
           </div>
         </div>
       </div>
@@ -129,14 +129,14 @@ const About = () => {
             font-size: 20px;
             line-height: 33px;
             color: #FFFFFF;
-            margin-bottom: 100px; 
+            margin-bottom: 100px;
           }
           .header-right {
             max-width: 60%;
           }
           .header-right>img {
             max-width: 100%;
-          } 
+          }
           .about-bg {
             background-image: url("../Session.webp");
             height: 100vh;

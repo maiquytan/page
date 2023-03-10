@@ -36,7 +36,7 @@ const Pagination = props => {
     <ul className={'pagination-container'}>
       <li className={currentPage === 1 ? 'disabled' : 'pagination-item'} onClick={onPrevious}>
         <div className="arrow">
-          <img src="arrow_left.svg" alt="arrow-left" title="arrow-left" width="9" height="12"/>
+          <img src="arrow_left.svg" alt="arrow-left" title="arrow-left" width="9" height="12" />
         </div>
       </li>
       {paginationRange.map((pageNumber, index) => {
@@ -53,7 +53,7 @@ const Pagination = props => {
 
       <li className={currentPage === lastPage ? 'disabled' : 'pagination-item'} onClick={onNext}>
         <div className="arrow">
-          <img src="arrow_right.svg" alt="arrow-right" title="arrow-right" width="9" height="12"/>
+          <img src="arrow_right.svg" alt="arrow-right" title="arrow-right" width="9" height="12" />
         </div>
       </li>
 
@@ -102,24 +102,24 @@ const Pagination = props => {
             color: #FFFFFF;
           }
           .arrow::before {
-            position: relative;  
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             border-right: 0.12em solid rgba(0, 0, 0, 0.87);
             border-top: 0.12em solid rgba(0, 0, 0, 0.87);
-          }     
+          }
           .disabled {
             pointer-events: none;
             background: #919EAB;
             color: #C4CDD5;
             opacity: 0.5;
           }
-          
+
           .arrow:hover {
             background-color: transparent;
             cursor: default;
-          }  
+          }
         `}
       </style>
     </ul>
