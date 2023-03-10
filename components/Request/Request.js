@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Request = () => {
   return (
@@ -10,34 +10,15 @@ const Request = () => {
             <div className="crossbar-left-1"></div>
             <div className="crossbar-left-2"></div>
           </div>
-          <div className="information-content">
-            We welcome friends, partners, and clients to have conversations with
-            Axalize. Please call us on the phone or drop us an email. We are
-            happy to meet you at our office as well. You are most welcome!
-          </div>
+          <div className="information-content">We welcome friends, partners, and clients to  have conversations with Axalize. Please call us on the phone or drop us an email. We are happy to meet you at our office as well. You are most welcome!</div>
           <div className="infor-address">Ha Noi City - Development Center</div>
-          <label className="address-detail">
-            2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa,
-            Cau Giay, Ha Noi{" "}
-          </label>
+          <label className="address-detail">2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi </label>
           <div className="gmail">
-            <img
-              src="gmail.svg"
-              alt="gmail"
-              title="gmail"
-              width="74"
-              height="54"
-            />
+            <img src="gmail.svg" alt="gmail" title="gmail" width="74" height="54"/>
             <label>contact@axalize.vn</label>
           </div>
           <div className="phone">
-            <img
-              src="phone.svg"
-              alt="phone"
-              title="phone"
-              width="74"
-              height="54"
-            />
+            <img src="phone.svg" alt="phone" title="phone" width="74" height="54"/>
             <label>(+84) 248-585-8389 </label>
           </div>
         </div>
@@ -50,125 +31,91 @@ const Request = () => {
           <div className="request-form">
             <div className="request-header">Your imformation: </div>
             <div className="request-input">
-              <input type="text" placeholder="First name" />
-              <input type="text" placeholder="Last name" />
+              <input type="text" placeholder="First name"/>
+              <input type="text" placeholder="Last name"/>
             </div>
             <div className="request-input">
-              <input type="text" placeholder="Phone number" />
-              <input type="text" placeholder="Your email" />
+              <input type="text" placeholder="Phone number"/>
+              <input type="text" placeholder="Your email"/>
             </div>
-            <input
-              className="request-input1"
-              type="text"
-              placeholder="Your company"
-            />
+            <input className="request-input1" type="text" placeholder="Your company"/>
             <div className="service-budget">
               <div>
                 <div>Service: </div>
                 <div className="service">
-                  <input id="check" type="checkbox" className="checkbox" />
+                  <input id="check" type="checkbox" className="checkbox"/>
                   <label htmlFor="check" className="span"></label>
-                  <label htmlFor="check" className="service-content">
-                    Mobile App
-                  </label>
+                  <label htmlFor="check" className="service-content">Mobile App</label>
                 </div>
                 <div className="service">
-                  <input id="check1" type="checkbox" className="checkbox" />
+                  <input id="check1" type="checkbox" className="checkbox"/>
                   <label htmlFor="check1" className="span"></label>
-                  <label htmlFor="check1" className="service-content">
-                    Web App
-                  </label>
+                  <label htmlFor="check1" className="service-content">Web App</label>
                 </div>
                 <div className="service">
-                  <input id="check2" type="checkbox" className="checkbox" />
+                  <input id="check2" type="checkbox" className="checkbox"/>
                   <label htmlFor="check2" className="span"></label>
-                  <label htmlFor="check2" className="service-content">
-                    UI/UX Design
-                  </label>
+                  <label htmlFor="check2" className="service-content">UI/UX Design</label>
                 </div>
                 <div className="service">
-                  <input id="check3" type="checkbox" className="checkbox" />
+                  <input id="check3" type="checkbox" className="checkbox"/>
                   <label htmlFor="check3" className="span"></label>
-                  <label htmlFor="check3" className="service-content">
-                    VAPT (Vulnerability Assessment and Penetration)
-                  </label>
+                  <label htmlFor="check3" className="service-content">VAPT (Vulnerability Assessment and Penetration)</label>
                 </div>
                 <div className="service">
-                  <input id="check4" type="checkbox" className="checkbox" />
+                  <input id="check4" type="checkbox" className="checkbox"/>
                   <label htmlFor="check4" className="span"></label>
-                  <label htmlFor="check4" className="service-content">
-                    VAPT (Vulnerability Assessment and Penetration)
-                  </label>
+                  <label htmlFor="check4" className="service-content">VAPT (Vulnerability Assessment and Penetration)</label>
                 </div>
                 <div className="service">
-                  <input id="check5" type="checkbox" className="checkbox" />
+                  <input id="check5" type="checkbox" className="checkbox"/>
                   <label htmlFor="check5" className="span"></label>
-                  <label htmlFor="check5" className="service-content">
-                    <u className="other">Other (please specify)</u>
-                  </label>
+                  <label htmlFor="check5" className="service-content"><u className="other">Other (please specify)</u></label>
                 </div>
               </div>
               <div className="hr-dahed"></div>
               <div>
                 <div>Budget</div>
-                <label className="budget">
-                  Below 25k
-                  <input type="radio" name="radio" />
+                <label className="budget">Below 25k
+                  <input type="radio" name="radio"/>
                   <span className="checkmark"></span>
                 </label>
-                <label className="budget">
-                  25k - 50k
-                  <input type="radio" name="radio" />
+                <label className="budget">25k - 50k
+                  <input type="radio" name="radio"/>
                   <span className="checkmark"></span>
                 </label>
-                <label className="budget">
-                  50k - 100k
-                  <input type="radio" name="radio" />
+                <label className="budget">50k - 100k
+                  <input type="radio" name="radio"/>
                   <span className="checkmark"></span>
                 </label>
-                <label className="budget">
-                  100k - 200k
-                  <input type="radio" name="radio" />
+                <label className="budget">100k - 200k
+                  <input type="radio" name="radio"/>
                   <span className="checkmark"></span>
                 </label>
-                <label className="budget">
-                  200k - 300k
-                  <input type="radio" name="radio" />
+                <label className="budget">200k - 300k
+                  <input type="radio" name="radio"/>
                   <span className="checkmark"></span>
                 </label>
-                <label className="budget">
-                  300k - 400k
-                  <input type="radio" name="radio" />
+                <label className="budget">300k - 400k
+                  <input type="radio" name="radio"/>
                   <span className="checkmark"></span>
                 </label>
-                <label className="budget">
-                  Sky’s the limit
-                  <input type="radio" name="radio" />
+                <label className="budget">Sky’s the limit
+                  <input type="radio" name="radio"/>
                   <span className="checkmark"></span>
                 </label>
-                <label className="budget">
-                  <u className="other">Other (please specify)</u>
-                  <input type="radio" name="radio" />
+                <label className="budget"><u className="other">Other (please specify)</u>
+                  <input type="radio" name="radio"/>
                   <span className="checkmark"></span>
                 </label>
               </div>
             </div>
             <div className="tell-us">
               <div>Tell us about your project</div>
-              <textarea
-                className="tell-input"
-                type="text"
-                placeholder="Please write here..."
-              />
+              <textarea className="tell-input" type="text" placeholder="Please write here..."/>
             </div>
             <button className="upload">
-              <img
-                src="upload.svg"
-                alt="upload"
-                title="upload"
-                width="19"
-                height="19"
-              />
+              <img src="upload.svg" alt="upload" title="upload" width="19" height="19"/>
               <label>Upload files</label>
             </button>
             <button className="btn-request">Request a Quote</button>
@@ -488,7 +435,7 @@ const Request = () => {
         `}
       </style>
     </div>
-  );
-};
+  )
+}
 
-export default Request;
+export default Request

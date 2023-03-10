@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import { usePagination, DOTS } from "./usePagination";
+import React, { useState } from 'react';
+import { usePagination, DOTS } from './usePagination';
 
-const Pagination = (props) => {
+const Pagination = props => {
   const {
     onPageChange,
     totalCount,
     siblingCount = 1,
     currentPage,
     pageSize,
-    className,
+    className
   } = props;
 
   const paginationRange = usePagination({
     currentPage,
     totalCount,
     siblingCount,
-    pageSize,
+    pageSize
   });
 
   if (currentPage === 0 || paginationRange.length < 2) {
@@ -33,55 +33,27 @@ const Pagination = (props) => {
   let lastPage = paginationRange[paginationRange.length - 1];
 
   return (
-    <ul className={"pagination-container"}>
-      <li
-        className={currentPage === 1 ? "disabled" : "pagination-item"}
-        onClick={onPrevious}
-      >
+    <ul className={'pagination-container'}>
+      <li className={currentPage === 1 ? 'disabled' : 'pagination-item'} onClick={onPrevious}>
         <div className="arrow">
-          <img
-            src="arrow_left.svg"
-            alt="arrow-left"
-            title="arrow-left"
-            width="9"
-            height="12"
-          />
+          <img src="arrow_left.svg" alt="arrow-left" title="arrow-left" width="9" height="12"/>
         </div>
       </li>
       {paginationRange.map((pageNumber, index) => {
         if (pageNumber === DOTS) {
-          return (
-            <li className="pagination-item-dots" key={index}>
-              &#8230;
-            </li>
-          );
+          return <li className="pagination-item-dots" key={index}>&#8230;</li>;
         }
 
         return (
-          <li
-            key={index}
-            className={
-              pageNumber === currentPage ? "selected" : "pagination-item"
-            }
-            onClick={() => onPageChange(pageNumber)}
-          >
+          <li key={index} className={pageNumber === currentPage ? 'selected' : 'pagination-item'} onClick={() => onPageChange(pageNumber)}>
             {pageNumber}
           </li>
         );
       })}
 
-      <li
-        className={currentPage === lastPage ? "disabled" : "pagination-item"}
-        onClick={onNext}
-      >
+      <li className={currentPage === lastPage ? 'disabled' : 'pagination-item'} onClick={onNext}>
         <div className="arrow">
-          <img
-            src="arrow_right.svg"
-            alt="arrow-right"
-            title="arrow-right"
-            width="9"
-            height="12"
-          />
+          <img src="arrow_right.svg" alt="arrow-right" title="arrow-right" width="9" height="12"/>
         </div>
       </li>
 
