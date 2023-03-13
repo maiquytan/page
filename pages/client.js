@@ -38,9 +38,6 @@ const Client = () => {
 
       {/* Reason */}
       <div className="bg-reason">
-        <div className="img-reason">
-          <img src="/bg_reason2.webp" alt="img-reason" title="img-reason" width="1920" height="429" />
-        </div>
         <div className="reason">
           <div className="reason-header">What sets Axalize apart in the eyes of our clients</div>
           <div className="reason-content">
@@ -65,7 +62,7 @@ const Client = () => {
               </div>
             </div>
           </div>
-          <div className="img-reason-mobile">
+          <div className="img-reason">
             <img src="/Asset.svg" alt="img-reason" title="img-reason" width="200" height="35" />
           </div>
         </div>
@@ -275,17 +272,13 @@ const Client = () => {
             position: relative;
           }
           .img-reason {
-            position: absolute;
-            bottom: 0;
-            vertical-align: top;
-            z-index: 1;
-            width: 100%;
+            display: block;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
           }
           .img-reason>img {
             width: 100%;
-          }
-          .img-reason-mobile {
-            display: none;
           }
           .reason {
             display:flex;
@@ -294,11 +287,13 @@ const Client = () => {
             text-align: center;
             position: relative;
             z-index: 2;
-            max-width: 1260px;
             margin: auto;
+            background: linear-gradient(180deg, rgba(72, 71, 71, 0.05) 60%, #1466B1 91%);
           }
           .reason-header {
             font-size: 36px;
+            max-width: 1260px;
+            margin: auto;
             color: #E2ECF5;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
@@ -308,7 +303,9 @@ const Client = () => {
           .reason-content {
             display: flex;
             gap: 1%;
-            margin-bottom: 170px;
+            max-width: 1260px;
+            margin: auto;
+            margin-bottom: 50px;
           }
           .two-reason {
             display: flex;
@@ -548,18 +545,6 @@ const Client = () => {
               margin: auto;
               gap: 2%;
               margin-bottom: 30px;
-            }
-            .img-reason {
-              display: none;
-            }
-            .img-reason-mobile {
-              display: block;
-              display: flex;
-              justify-content: center;
-              margin-bottom: 50px;
-            }
-            .img-reason-mobile>img {
-              width: 100%;
             }
             .one-reason>img {
               max-width: 33%;
