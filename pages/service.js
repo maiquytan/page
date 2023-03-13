@@ -308,8 +308,10 @@ const Service = () => {
               display: block;
             }
             .service-header {
-              height: calc(100vh - 50px);
+              height: auto;
               margin-top: 50px;
+              margin-bottom: 50px;
+              justify-content: normal;
             }
             .img-header-mobile {
               top: 0px;
@@ -323,9 +325,7 @@ const Service = () => {
               width: 100%;
               height: 100%;
             }
-            .service-header {
-              justify-content: normal;
-            }
+
             .header-title {
               margin-top: 10%;
               background: none;
@@ -335,7 +335,7 @@ const Service = () => {
             .header-content {
               flex-direction: column-reverse;
               width: 100%;
-              margin-top: 25px;
+              margin-top: 0;
             }
             .header-left {
               width: 80%;
@@ -350,7 +350,7 @@ const Service = () => {
               object-fit: cover;
               margin: auto;
               margin-top: 5%;
-              margin-bottom: 15%;
+              margin-bottom: 10%;
             }
             .header-right>img {
               width: 100%;
@@ -382,8 +382,14 @@ const Service = () => {
             .img-header-mobile {
               width: 200%;
               height: auto;
-              aspect-ratio: 1.7;
+              aspect-ratio: 2.1;
               object-fit: cover;
+            }
+            .header-left {
+              width: 84%;
+              margin: auto;
+              font-size: 14px;
+              line-height: 20px;
             }
             .mobile-web-header {
               font-size: 20px;
