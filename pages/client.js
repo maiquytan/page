@@ -7,7 +7,9 @@ const Client = () => {
 
       {/* Header */}
       <div className="bg-header">
-        <img className="img-header" src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        <div className="img-header">
+          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        </div>
         <div className="about-header">
           <div className="header-title">Our Clients</div>
           <div className="header-content">
@@ -23,31 +25,48 @@ const Client = () => {
       <div className="bg-mobile-web">
         <div className="mobile-web">
           <div className="mobile-web-header">Customized Software Solutions for Web and Mobile: Axalize's Commitment to Innovation and Versatility</div>
-          <div className="mobile-web-content">At Axalize, we are dedicated to providing customized software solutions that meet the unique needs of each client. With a focus on web and mobile application development, we leverage our extensive experience to deliver high-quality results. Our portfolio showcases the diverse range of industries and businesses we have served, demonstrating our versatility and commitment to delivering innovative solutions. By working with Axalize, clients can trust that their project is in capable hands and that they will receive a tailored solution designed to drive business success.</div>
+          <div className="mobile-web-content">At Axalize, we are dedicated to providing customized
+            software solutions that meet the unique needs of each client. With a focus on web and
+            mobile application development, we leverage our extensive experience to deliver high
+            -quality results. Our portfolio showcases the diverse range of industries and businesses
+            we have served, demonstrating our versatility and commitment to delivering innovative
+            solutions. By working with Axalize, clients can trust that their project is in capable
+            hands and that they will receive a tailored solution designed to drive business success.
+          </div>
         </div>
       </div>
 
       {/* Reason */}
       <div className="bg-reason">
+        <div className="img-reason">
+          <img src="/bg_reason2.webp" alt="img-reason" title="img-reason" width="1920" height="429" />
+        </div>
         <div className="reason">
           <div className="reason-header">What sets Axalize apart in the eyes of our clients</div>
           <div className="reason-content">
-            <div className="one-reason">
-              <img src="/img_reason1.svg" alt="img-reason" title="img-reason" width="110" height="110" />
-              <p>We prioritize a customer-centric approach, always working closely with our clients to understand their unique needs and deliver tailored solutions</p>
+            <div className="two-reason">
+              <div className="one-reason">
+                <img src="/img_reason1.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                <p>We prioritize a customer-centric approach, always working closely with our clients to understand their unique needs and deliver tailored solutions</p>
+              </div>
+              <div className="one-reason">
+                <img src="/img_reason2.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                <p>Our deep expertise in offshore software development allows us to deliver cutting-edge results that drive real business value.</p>
+              </div>
             </div>
-            <div className="one-reason">
-              <img src="/img_reason2.svg" alt="img-reason" title="img-reason" width="110" height="110" />
-              <p>Our deep expertise in offshore software development allows us to deliver cutting-edge results that drive real business value.</p>
+            <div className="two-reason">
+              <div className="one-reason">
+                <img src="/img_reason3.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                <p>Our focus on quality and attention to detail sets us apart, ensuring that every project is delivered on time and within budget.</p>
+              </div>
+              <div className="one-reason">
+                <img src="/img_reason4.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                <p>Our team is comprised of highly skilled and knowledgeable professionals who are passionate about delivering innovative solutions that drive success for our clients.</p>
+              </div>
             </div>
-            <div className="one-reason">
-              <img src="/img_reason3.svg" alt="img-reason" title="img-reason" width="110" height="110" />
-              <p>Our focus on quality and attention to detail sets us apart, ensuring that every project is delivered on time and within budget.</p>
-            </div>
-            <div className="one-reason">
-              <img src="/img_reason4.svg" alt="img-reason" title="img-reason" width="110" height="110" />
-              <p>Our team is comprised of highly skilled and knowledgeable professionals who are passionate about delivering innovative solutions that drive success for our clients.</p>
-            </div>
+          </div>
+          <div className="img-reason-mobile">
+            <img src="/Asset.svg" alt="img-reason" title="img-reason" width="200" height="35" />
           </div>
         </div>
       </div>
@@ -56,42 +75,95 @@ const Client = () => {
       <div className="expert">
         <div className="expert-left">
           <div className="expert-header">Expert software solutions driving business success.</div>
-          <div className="bar1"></div>
-          <p className="expert-content">With deep expertise in over 50 projects, Axalize operates under a quality-driven model. We leverage innovative technical knowledge to deliver cutting-edge, timely, and valuable solutions. At Axalize, we prioritize a customer-centric approach, ensuring that our core values align with those of our clients to deliver results that truly drive business success.</p>
+          <div className="bar blue"></div>
+          <p className="expert-content">With deep expertise in over 50 projects, Axalize operates
+            under a quality-driven model. We leverage innovative technical knowledge to deliver
+            cutting-edge, timely, and valuable solutions. At Axalize, we prioritize a customer-centric
+            approach, ensuring that our core values align with those of our clients to deliver results
+            that truly drive business success.</p>
         </div>
         <div className="expert-right">
           <img src="/Group23.webp" alt="img-expert" title="img-expert" width="605" height="663" />
         </div>
       </div>
 
+      {/* Feedback */}
       <div className="bg-feedback">
         <div className="bg-feedback2">
           <div className="feedback">
             <div className="feedback-header">
-              <div>Success and Satisfaction with Axalize</div>
-              <p>At Axalize, client satisfaction is at the heart of everything we do. Our commitment to delivering exceptional software development solutions has earned us a reputation as a trusted partner for businesses looking to drive success and growth.</p>
+              <div>
+                <p>Success and Satisfaction with Axalize</p>
+                <div className="bar white"></div>
+              </div>
+              <p>At Axalize, client satisfaction is at the heart of everything we do. Our commitment
+                to delivering exceptional software development solutions has earned us a reputation
+                as a trusted partner for businesses looking to drive success and growth.</p>
             </div>
-            <div className="bar2"></div>
             <div className="what-say">What do our customers say?</div>
           </div>
           <div className="feedback-content">
             <div className="one-feedback">
               <img src="/img_feedback1.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
-              <p>U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <div>~ Client Name ~</div>
-              <label>Conpany Name</label>
+              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</div>
+              <div className="client-name">~ Client Name ~</div>
+              <p className="company-name">Conpany Name</p>
             </div>
             <div className="one-feedback">
               <img src="/img_feedback2.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
-              <p>U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <div>~ Client Name ~</div>
-              <label>Conpany Name</label>
+              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</div>
+              <div className="client-name">~ Client Name ~</div>
+              <p className="company-name">Conpany Name</p>
             </div>
             <div className="one-feedback">
               <img src="/img_feedback3.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
-              <p>U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <div>~ Client Name ~</div>
-              <label>Conpany Name</label>
+              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</div>
+              <div className="client-name">~ Client Name ~</div>
+              <p className="company-name">Conpany Name</p>
+            </div>
+          </div>
+          <div className="feedback-content-mobile">
+            <div className="one-feedback">
+              <div className="feedback-left">
+                <img src="/img_feedback1.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
+                <div className="client-name">~ Client Name ~</div>
+                <p className="company-name">Conpany Name</p>
+              </div>
+              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</div>
+            </div>
+            <div className="one-feedback">
+              <div className="feedback-left">
+                <img src="/img_feedback2.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
+                <div className="client-name">~ Client Name ~</div>
+                <p className="company-name">Conpany Name</p>
+              </div>
+              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</div>
+            </div>
+            <div className="one-feedback">
+              <div className="feedback-left">
+                <img src="/img_feedback3.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
+                <div className="client-name">~ Client Name ~</div>
+                <p className="company-name">Conpany Name</p>
+              </div>
+              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</div>
             </div>
           </div>
         </div>
@@ -149,7 +221,7 @@ const Client = () => {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             max-width: 1260px;
           }
           .header-left {
@@ -172,16 +244,14 @@ const Client = () => {
             background-size: cover;
             background-repeat: no-repeat;
             width: 66%;
-            height: 490px;
             margin: auto;
             border-radius: 15px;
             margin-bottom: 90px;
           }
-          .mobile-web {
-            height: 513px;
-          }
+
           .mobile-web-header {
-            margin-left: 11%;
+            width: 80%;
+            margin: auto;
             padding-top: 60px;
             margin-bottom: 40px;
             font-size: 32px;
@@ -189,10 +259,11 @@ const Client = () => {
             color: #1365B1;
           }
           .mobile-web-content {
-            margin-left: 11%;
+            margin-left: 10%;
             width: 40%;
             font-size: 16px;
-            line-height: 23px;
+            line-height: 24px;
+            padding-bottom: 100px;
           }
 
           //Reason------------------------
@@ -200,13 +271,29 @@ const Client = () => {
             background-image: url("../bg_reason.webp");
             background-size: cover;
             background-repeat: no-repeat;
-            height: 1024px;
+            background-position-x: center;
+            position: relative;
+          }
+          .img-reason {
+            position: absolute;
+            bottom: 0;
+            vertical-align: top;
+            z-index: 1;
+            width: 100%;
+          }
+          .img-reason>img {
+            width: 100%;
+          }
+          .img-reason-mobile {
+            display: none;
           }
           .reason {
             display:flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            position: relative;
+            z-index: 2;
             max-width: 1260px;
             margin: auto;
           }
@@ -221,14 +308,18 @@ const Client = () => {
           .reason-content {
             display: flex;
             gap: 1%;
+            margin-bottom: 170px;
+          }
+          .two-reason {
+            display: flex;
+            gap: 2%;
           }
           .one-reason {
-            diplay:flex;
+            diplay: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            width: 24%;
-            height: 410px;
+            width: 49%;
             background: #FFFFFF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
@@ -236,12 +327,16 @@ const Client = () => {
           .one-reason>img {
             margin-top: 58px;
             margin-bottom: 35px;
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: cover;
           }
           .one-reason>p {
             width: 74.5%;
             margin: auto;
             font-size: 17px;
             line-height: 21px;
+            margin-bottom: 50px;
           }
 
           //Expert-------------------------
@@ -263,11 +358,16 @@ const Client = () => {
             line-height: 57px;
             letter-spacing: 0.08em;
           }
-          .bar1,.bar2 {
+          .bar {
             width: 15px;
             height: 80px;
-            background: #1466B1;
             margin-bottom: 15px;
+          }
+          .blue {
+            background: #1466B1;
+          }
+          .white {
+            background: #FFFFFF;
           }
           .expert-content {
             width: 75%;
@@ -283,8 +383,9 @@ const Client = () => {
 
           //Feedback---------------------
           .bg-feedback {
-            height: 1100px;
+            height: auto;
             background: #FFFFFF;
+            padding-bottom: 550px;
           }
           .bg-feedback2 {
             background: #1466B1;
@@ -314,9 +415,6 @@ const Client = () => {
             line-height: 27px;
             letter-spacing: 0.04em;
           }
-          .bar2 {
-            background-color: #FFFFFF;
-          }
           .what-say {
             font-weight: 600;
             font-size: 42px;
@@ -325,12 +423,15 @@ const Client = () => {
             color: #E2ECF5;
             text-shadow: 1px 4px 4px rgba(26, 75, 120, 0.62);
           }
-          .feedback-content {
+          .feedback-content,.feedback-content-mobile {
             display: flex;
             gap: 15px;
             max-width: 1260px;
-            height: 600px;
+            height: auto;
             margin: auto;
+          }
+          .feedback-content-mobile {
+            display: none;
           }
           .one-feedback {
             width: 33%;
@@ -346,7 +447,12 @@ const Client = () => {
             margin-top: 40px;
             margin-bottom: 32px;
           }
-          .one-feedback>p {
+          .client-name {
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 500;
+          }
+          .evaluate {
             width: 68%;
             margin: auto;
             margin-top: 0;
@@ -356,16 +462,274 @@ const Client = () => {
             line-height: 22px;
             font-style: italic;
           }
-          .one-feedback>div {
-            font-size: 20px;
-            line-height: 22px;
-            font-weight: 500;
-          }
-          .one-feedback>label {
+          .company-name {
             font-size: 14px;
             font-weight: 500;
             line-height: 22px;
             color: #1466B1;
+            margin-bottom: 75px;
+          }
+          @media screen and (max-width: 900px) {
+            .about-header {
+              height: auto;
+              margin-top: 50px;
+              justify-content: normal;
+            }
+            .img-header {
+              top: 0px;
+              left: -70%;
+              width: 200%;
+              height: auto;
+              aspect-ratio: 3;
+              object-fit: cover;
+            }
+            .img-header>img {
+              width: 100%;
+              height: 100%;
+            }
+            .header-title {
+              margin-top: 10%;
+              background: none;
+              width: 100%;
+              height: auto;
+              text-align: center;
+              top: 0;
+              left: 0;
+            }
+            .header-content {
+              flex-direction: column-reverse;
+              width: 100%;
+            }
+            .header-left {
+              width: 90%;
+              margin: auto;
+              font-size: 18px;
+              line-height: 30px;
+              color: #494949;
+              text-align: center;
+            }
+            .header-right {
+              width: 100%;
+              height: auto;
+              aspect-ratio: 1;
+              object-fit: cover;
+              margin: auto;
+              margin-top: 5%;
+              margin-bottom: 10%;
+            }
+            .header-right>img {
+              width: 100%;
+              height: 100%;
+            }
+            .bg-mobile-web {
+              width: 100%;
+              margin: 0;
+              background-position-x: 40%;
+            }
+            .mobile-web-content {
+              width: 78%;
+              text-align: justify;
+              padding-bottom: 40px;
+            }
+            .bg-reason {
+              background-size: contain;
+            }
+            .reason {
+              background: linear-gradient(180deg, rgba(20, 102, 177, 0) 0%, #1466B1 69.44%);
+            }
+            .reason-header {
+              font-size: 28px;
+              margin-top : 250px;
+              margin-bottom: 80px;
+            }
+            .reason-content {
+              flex-direction: column;
+              width: 95%;
+              margin: auto;
+              gap: 2%;
+              margin-bottom: 30px;
+            }
+            .img-reason {
+              display: none;
+            }
+            .img-reason-mobile {
+              display: block;
+              display: flex;
+              justify-content: center;
+              margin-bottom: 50px;
+            }
+            .img-reason-mobile>img {
+              width: 100%;
+            }
+            .one-reason>img {
+              max-width: 33%;
+              margin-top: 25px;
+              margin-bottom: 15px;
+            }
+            .two-reason {
+              gap: 3%;
+              margin-bottom: 20px;
+            }
+            .expert {
+              flex-direction: column;
+            }
+            .expert-left {
+              margin: 0;
+              margin-bottom: 20px;
+            }
+            .expert-header,.expert-content,.expert-right {
+              width: 90%;
+              margin: auto;
+            }
+            .blue {
+              margin-left: 5%;
+            }
+            .expert-right {
+              display: flex;
+              justify-content: center;
+            }
+            //----------------------------
+            .bg-feedback {
+              background: #1667B2;
+            }
+            .feedback-header {
+              flex-direction: column;
+              margin: auto;
+            }
+            .feedback-header>div {
+              width: 90%;
+              font-size: 40px;
+              margin: auto;
+            }
+            .feedback-header>p {
+              width: 90%;
+              margin: auto;
+              margin-bottom: 20px;
+            }
+            .bar {
+              width: 10px;
+              height: 60px;
+            }
+            .what-say {
+              width: 90%;
+              margin: auto;
+              margin-bottom: 30px;
+            }
+            .feedback-content {
+              display: none;
+              flex-direction: column;
+            }
+            .feedback-content-mobile {
+              display: block;
+              background-color: #1466b1;
+            }
+            .one-feedback {
+              width: 90%;
+              margin: auto;
+              margin-bottom: 12px;
+              padding: 24px 0;
+              flex-direction: row;
+              justify-content: center;
+              gap: 3%;
+            }
+            .feedback-left {
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .img-feedback {
+              margin: 0;
+              margin-bottom: 20px;
+            }
+            .evaluate {
+              width: 53%;
+              margin: 0;
+            }
+            .company-name {
+              margin: 0;
+            }
+          }
+          @media screen and (max-width: 600px) {
+            .img-header {
+              width: 200%;
+              height: auto;
+              aspect-ratio: 2.1;
+              object-fit: cover;
+            }
+            .header-left {
+              width: 75%;
+              font-size: 14px;
+              text-align: justify;
+            }
+            .mobile-web-header {
+              width: 80%;
+              font-size: 18px;
+              margin-bottom: 20px;
+              padding-top: 40px;
+            }
+            .mobile-web-content {
+              font-size: 14px;
+            }
+            .reason-header {
+              font-size: 15px;
+              margin-top : 130px;
+              margin-bottom: 30px;
+            }
+            .two-reason {
+              margin-bottom: 12px;
+            }
+            .one-reason>p {
+              font-size: 13px;
+              line-height: 16px;
+              width: 89%;
+              margin-bottom: 25px;
+            }
+            //------------------------
+            .expert {
+              margin-top: 30px;
+            }
+            .expert-header {
+              font-size: 20px;
+              line-height: 24px;
+              color: #1365B1;
+              font-weight: 600;
+              letter-spacing: normal;
+            }
+            .bar {
+              width: 3px;
+              height: 35px;
+              margin-bottom: 10px;
+            }
+            .expert-content {
+              font-size: 14px;
+              color: #383838;
+            }
+            .expert-right>img {
+              width: 100%;
+              height: 100%;
+            }
+            //-----------------------
+            .feedback-header {
+              padding-top: 35px;
+            }
+            .feedback-header>div {
+              font-size: 18px;
+            }
+            .feedback-header>p {
+              font-size: 14px;
+              margin-bottom: 10px;
+            }
+            .what-say {
+              font-size: 18px;
+              margin-bottom: 10px;
+            }
+            .client-name {
+              font-size: 15px;
+            }
+            .evaluate,.company-name {
+              font-size: 12px;
+            }
           }
         `}
       </style>
