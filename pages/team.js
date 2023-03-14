@@ -154,10 +154,14 @@ const Team = () => {
             margin-top: 200px;
           }
           .header-right {
-            max-width: 60%;
+            width: 50%;
+            height: auto;
+            aspect-ratio: 1;
+    	      object-fit: cover;
           }
           .header-right>img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
           }
 
           //Introduce--------------------
@@ -336,10 +340,6 @@ const Team = () => {
               text-align: center;
             }
             .header-right {
-              width: 100%;
-              height: auto;
-              aspect-ratio: 1;
-              object-fit: cover;
               margin: auto;
               margin-top: 5%;
               margin-bottom: 10%;

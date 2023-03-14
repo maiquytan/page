@@ -190,6 +190,7 @@ const Client = () => {
             position: relative;
             height: calc(100vh - 118px);
             max-width: 1260px;
+            width: 66%;
             margin: auto;
             margin-top: 118px;
             display: flex;
@@ -200,7 +201,7 @@ const Client = () => {
           .header-title {
             background-image: url("../Ellipse.svg");
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: round;
             width: 28%;
             height: 103px;
             font-size: 43px;
@@ -216,23 +217,28 @@ const Client = () => {
           }
           .header-content {
             display: flex;
+            width: 100%;
             justify-content: space-between;
-            align-items: center;
             margin-bottom: 50px;
-            max-width: 1260px;
           }
           .header-left {
-            width: 29%;
+            width: 40%;
+            max-width: 400px;
             font-size: 23px;
             line-height: 33px;
             color: #FFFFFF;
+            margin-top: 20%;
             margin-bottom: 100px;
           }
           .header-right {
-            max-width: 60%;
+            width: 50%;
+            height: auto;
+            aspect-ratio: 1;
+    	      object-fit: cover;
           }
           .header-right>img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
           }
 
           //---------------------------------
@@ -468,6 +474,7 @@ const Client = () => {
           }
           @media screen and (max-width: 900px) {
             .about-header {
+              width: 100%;
               height: auto;
               margin-top: 50px;
               justify-content: normal;
@@ -499,6 +506,7 @@ const Client = () => {
             }
             .header-left {
               width: auto;
+              max-width: 900px;
               padding: 0 24px;
               margin: 0;
               font-size: 18px;
@@ -507,17 +515,10 @@ const Client = () => {
               text-align: center;
             }
             .header-right {
-              width: 100%;
-              height: auto;
-              aspect-ratio: 1;
-              object-fit: cover;
+              width: 48%;
               margin: auto;
-              margin-top: 5%;
+              margin-top: 7%;
               margin-bottom: 10%;
-            }
-            .header-right>img {
-              width: 100%;
-              height: 100%;
             }
             .bg-mobile-web {
               width: 100%;
