@@ -190,6 +190,7 @@ const Client = () => {
             position: relative;
             height: calc(100vh - 118px);
             max-width: 1260px;
+            width: 66%;
             margin: auto;
             margin-top: 118px;
             display: flex;
@@ -200,7 +201,7 @@ const Client = () => {
           .header-title {
             background-image: url("../Ellipse.svg");
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: round;
             width: 28%;
             height: 103px;
             font-size: 43px;
@@ -216,23 +217,28 @@ const Client = () => {
           }
           .header-content {
             display: flex;
+            width: 100%;
             justify-content: space-between;
-            align-items: center;
             margin-bottom: 50px;
-            max-width: 1260px;
           }
           .header-left {
-            width: 29%;
+            width: 40%;
+            max-width: 400px;
             font-size: 23px;
             line-height: 33px;
             color: #FFFFFF;
+            margin-top: 20%;
             margin-bottom: 100px;
           }
           .header-right {
-            max-width: 60%;
+            width: 50%;
+            height: auto;
+            aspect-ratio: 1;
+    	      object-fit: cover;
           }
           .header-right>img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
           }
 
           //---------------------------------
@@ -468,6 +474,7 @@ const Client = () => {
           }
           @media screen and (max-width: 900px) {
             .about-header {
+              width: 100%;
               height: auto;
               margin-top: 50px;
               justify-content: normal;
@@ -498,33 +505,35 @@ const Client = () => {
               width: 100%;
             }
             .header-left {
-              width: 90%;
-              margin: auto;
+              width: auto;
+              max-width: 900px;
+              padding: 0 24px;
+              margin: 0;
               font-size: 18px;
               line-height: 30px;
               color: #494949;
               text-align: center;
             }
             .header-right {
-              width: 100%;
-              height: auto;
-              aspect-ratio: 1;
-              object-fit: cover;
+              width: 48%;
               margin: auto;
-              margin-top: 5%;
+              margin-top: 7%;
               margin-bottom: 10%;
-            }
-            .header-right>img {
-              width: 100%;
-              height: 100%;
             }
             .bg-mobile-web {
               width: 100%;
               margin: 0;
               background-position-x: 40%;
             }
+            .mobile-web-header {
+              width: auto;
+              margin: 0;
+              padding: 40px;
+            }
             .mobile-web-content {
-              width: 78%;
+              width: auto;
+              margin: 0;
+              padding: 0 40px;
               text-align: justify;
               padding-bottom: 40px;
             }
@@ -541,8 +550,7 @@ const Client = () => {
             }
             .reason-content {
               flex-direction: column;
-              width: 95%;
-              margin: auto;
+              padding: 0 20px;
               gap: 2%;
               margin-bottom: 30px;
             }
@@ -563,11 +571,12 @@ const Client = () => {
               margin-bottom: 20px;
             }
             .expert-header,.expert-content,.expert-right {
-              width: 90%;
-              margin: auto;
+              width: auto;
+              padding: 0 12px;
+              margin: 0;
             }
             .blue {
-              margin-left: 5%;
+              margin: 12px;
             }
             .expert-right {
               display: flex;
@@ -577,18 +586,19 @@ const Client = () => {
             .bg-feedback {
               background: #1667B2;
             }
+            .feedback {
+              padding: 0 12px;
+            }
             .feedback-header {
               flex-direction: column;
-              margin: auto;
             }
             .feedback-header>div {
-              width: 90%;
+              width: auto;
               font-size: 40px;
-              margin: auto;
+
             }
             .feedback-header>p {
-              width: 90%;
-              margin: auto;
+              width: auto;
               margin-bottom: 20px;
             }
             .bar {
@@ -596,8 +606,7 @@ const Client = () => {
               height: 60px;
             }
             .what-say {
-              width: 90%;
-              margin: auto;
+              width: auto;
               margin-bottom: 30px;
             }
             .feedback-content {
@@ -607,10 +616,10 @@ const Client = () => {
             .feedback-content-mobile {
               display: block;
               background-color: #1466b1;
+              padding: 0 12px;
             }
             .one-feedback {
-              width: 90%;
-              margin: auto;
+              width: auto;
               margin-bottom: 12px;
               padding: 24px 0;
               flex-direction: row;
@@ -643,18 +652,21 @@ const Client = () => {
               object-fit: cover;
             }
             .header-left {
-              width: 75%;
               font-size: 14px;
-              text-align: justify;
+              text-align: left;
             }
             .mobile-web-header {
-              width: 80%;
               font-size: 18px;
-              margin-bottom: 20px;
+              padding: 24px;
               padding-top: 40px;
             }
             .mobile-web-content {
               font-size: 14px;
+              padding: 0 24px;
+              padding-bottom: 40px;
+            }
+            .reason-content {
+              padding: 0 12px;
             }
             .reason-header {
               font-size: 15px;
@@ -699,7 +711,7 @@ const Client = () => {
               padding-top: 35px;
             }
             .feedback-header>div {
-              font-size: 18px;
+              font-size: 19px;
             }
             .feedback-header>p {
               font-size: 14px;

@@ -32,7 +32,7 @@ const Index = () => {
         <div className="home">
           <h1 className="h1"> ** HomePage screen ** </h1>
           {/* Header */}
-          <div className="home--header">
+          <div className="home-header">
             <div className="header-container">
               <div className="title1">Feel your pleasure, find your treasure</div>
               <div className="title2">Realize system development with "value".</div>
@@ -282,7 +282,7 @@ const Index = () => {
             .h1 {
               display: none;
             }
-            .home--header {
+            .home-header {
               height: calc(100vh - 118px);
               margin-top: 118px;
               display: flex;
@@ -586,6 +586,9 @@ const Index = () => {
               }
             }
             @media screen and (max-width: 900px) {
+              .home-header {
+                margin-top: 50px;
+              }
               //Target------------------------------
               .target {
                 flex-direction: column;
@@ -706,10 +709,9 @@ const Index = () => {
               .system-header1 {
                 margin-bottom: 45px;
               }
-
             }
             @media screen and (max-width: 600px) {
-              .home--header {
+              .home-header {
                 margin-top: 50px;
                 height: calc(100vh - 50px);
               }

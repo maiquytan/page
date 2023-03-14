@@ -146,6 +146,7 @@ const Header = () => {
             justify-content: center;
             align-items: center;
             position: relative;
+            display: none;
           }
           .btn-menu {
             position: absolute;
@@ -173,15 +174,12 @@ const Header = () => {
             color: #F4F4F4;
           }
 
-          @media screen and (min-width:900px ) {
-            .menu-mobile {
-              display: none;
-            }
-          }
-
           @media screen and (max-width: 900px) {
             .menu,.address {
               display: none;
+            }
+            .menu-mobile {
+              display: flex;
             }
             .header {
               width: 100%;

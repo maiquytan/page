@@ -325,7 +325,6 @@ const Service = () => {
               width: 100%;
               height: 100%;
             }
-
             .header-title {
               margin-top: 10%;
               background: none;
@@ -338,7 +337,8 @@ const Service = () => {
               margin-top: 0;
             }
             .header-left {
-              width: 80%;
+              width: auto;
+              padding: 0 40px;
               margin: auto;
               font-size: 18px;
               line-height: 30px;
@@ -361,6 +361,21 @@ const Service = () => {
               width: 100%;
               background-position-x: 31%;
             }
+            .mobile-web-header {
+              width: auto;
+              margin: 0;
+              padding: 40px;
+            }
+            .mobile-web-content {
+              width: auto;
+              margin: 0;
+              padding: 0 40px;
+              text-align: justify;
+              padding-bottom: 40px;
+            }
+            .our-services {
+              padding-bottom: 50px;
+            }
             .service-img {
               width: 48%;
             }
@@ -377,6 +392,7 @@ const Service = () => {
               margin-left: 2%;
               margin-right: 2%;
             }
+
           }
           @media screen and (max-width: 600px) {
             .img-header-mobile {
@@ -386,20 +402,19 @@ const Service = () => {
               object-fit: cover;
             }
             .header-left {
-              width: 84%;
-              margin: auto;
+              padding: 0 24px;
               font-size: 14px;
               line-height: 20px;
             }
             .mobile-web-header {
               font-size: 20px;
-              padding-top: 40px;
-              width: 90%;
-              text-align: justify;
+              padding: 0 24px;
+              padding-top: 38px;
+              padding-bottom: 20px;
             }
             .mobile-web-content {
-              width: 90%;
               font-size: 14px;
+              padding: 0 24px;
               padding-bottom: 40px;
               text-align: justify;
             }
@@ -410,8 +425,8 @@ const Service = () => {
               flex-direction: column-reverse;
             }
             .service-img {
-              width: 94%;
-              margin: auto;
+              width: auto;
+              padding: 0 12px;
             }
             .services-title {
               font-size: 18px;
@@ -422,9 +437,8 @@ const Service = () => {
             }
             .content-right,.content-left {
               margin: 0;
-              width: 90%;
-              margin: auto;
-              margin-bottom: 20px;
+              width: auto;
+              padding: 0 12px;
             }
           }
         `}
