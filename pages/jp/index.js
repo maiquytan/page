@@ -218,8 +218,7 @@ const Index = () => {
               background: #FFFFFF;
             }
             .home {
-              /* margin-top: 93px; */
-              padding-top: 41px;
+              margin-top: 93px;
               width: 100%;
               overflow: hidden;
               font-family: 'Inter', sans-serif;

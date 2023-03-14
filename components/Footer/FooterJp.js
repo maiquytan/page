@@ -6,7 +6,9 @@ const Footer = () => {
       <div className="footer-introduce">
         <div className="introduce-inner">
           <div className="introduce-detail">
-            <img src="/introduce_img.png" className="introduce-img"/>
+            <div className="introduce-img">
+              <img src="/introduce_img.webp" />
+            </div>
             <div className="introduce-content">
               <div className="introduce-title">
                 <h1>お見積依頼お待ちしています</h1>
@@ -87,7 +89,7 @@ const Footer = () => {
             gap: 57px;
             flex-wrap: wrap;
           }
-          .introduce-img {
+          .introduce-img img {
             width: 445px;
           }
           .introduce-title h1 {

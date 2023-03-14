@@ -6,7 +6,9 @@ const AchievementJp = () => {
       <div className="achievement-title">開発実績</div>
       <div className="achievement-subTitle">Our Achievements</div>
       <div className="achievement-container">
-        <img src="/achievementJp.png" className="achievement-img"/>
+        <div className="achievement-img">
+          <img src="/achievementJp.webp" alt="achievement" title="achievement" width="445" height="304"/>
+        </div>
         <div className="achievement-right">
           <p className="achievement-text">様々なエンジニアを擁するAxalizeではWebアプリ・モバイルアプリをメインに、Webサイトや多くの開発案件を手がけています。 最近ではRPA(Robotic Process Automation)の開発にも力を入れております。</p>
           <div className="achievement-bottom">
@@ -61,7 +63,12 @@ const AchievementJp = () => {
             font-size: 16px;
           }
           .achievement-img {
+            width: 100%;
+          }
+          .achievement-img img {
             width: 445px;
+            height: 100%;
+            margin: auto;
             object-fit: cover;
           }
           .achievement-right {
@@ -109,7 +116,7 @@ const AchievementJp = () => {
             .achievement-container {
               flex-wrap: wrap;
             }
-            .achievement-img {
+            .achievement-img img {
               width: 100%;
             }
             .achievement-title {
