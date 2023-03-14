@@ -60,14 +60,16 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* <div className="menu-mobile">
-        <Link href="/"><a className="logo-mobile">
-          <img src="/logo1.svg" alt="logo" title="logo" width={176} height={30} />
-        </a></Link>
+      <div className="menu-mobile">
+        <Link href="/">
+          <a className="logo">
+              <img src="/logoJp.png" className="img-logo" alt="logo" title="logo" width={271} />
+          </a>
+        </Link>
         <div className="btn-menu" onClick={handleDropDownMenuAction}>
-          <img src="/menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
+          <img src="/" alt="menu" title="menu" width={24} height={24} />
         </div>
-        {isDropdownMenuAction &&
+        {/* {isDropdownMenuAction &&
           <ul className="mobile-menu-down">
             <li>
               <div>
@@ -91,8 +93,8 @@ const Header = () => {
             <hr></hr>
             <li><Link href="/d"><a>Contact</a></Link></li>
           </ul>
-        }
-      </div> */}
+        } */}
+      </div>
       <style jsx>
         {`
           .header {
@@ -150,17 +152,19 @@ const Header = () => {
             padding: 0;
           }
           .menu-mobile {
-            background: rgba(23, 23, 31, 0.85);
-            height: 50px;
+            background: #FFFFFF;
+            height: 80px;
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            position: relative;
           }
           .btn-menu {
-            position: absolute;
-            right: 15px;
+            width: 61px;
+            height: 51px;
+            margin-right: 14px;
+            border-radius: 5px;
+            background-color: #0FA5EF;
           }
           .mobile-menu-down {
             position: absolute;
@@ -184,7 +188,7 @@ const Header = () => {
             color: #F4F4F4;
           }
 
-          @media screen and (min-width:900px ) {
+          @media screen and (min-width:901px ) {
             .menu-mobile {
               display: none;
             }

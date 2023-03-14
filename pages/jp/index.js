@@ -143,7 +143,7 @@ const Index = () => {
           <div className="news center-block">
             <h1 className="default-title">新着情報</h1>
             <p className="default-subTitle">Latest News</p>
-            <div className="news-container">
+            <div className="news-container" >
               <div className="news-item">
                 <img/>
                 <div className="article-info">
@@ -158,10 +158,10 @@ const Index = () => {
               <div className="news-item">
                 <img/>
                 <div className="article-info">
-                  <p className="article-date">2023.01.26</p>
+                  <p className="article-date">2023.01.20</p>
                   <p className="article-tag">お知らせ</p>
                 </div>
-                <p className="article-name">独自のブリッジエンジニア育成プログラムを○○社と共同構築</p>
+                <p className="article-name">サイトリニューアルのお知らせ</p>
                 <Link href="/">
                   <a className="readMore-btn active">Read more</a>
                 </Link>
@@ -169,17 +169,17 @@ const Index = () => {
               <div className="news-item">
                 <img/>
                 <div className="article-info">
-                  <p className="article-date">2023.01.26</p>
+                  <p className="article-date">2023.01.20</p>
                   <p className="article-tag">お知らせ</p>
                 </div>
-                <p className="article-name">独自のブリッジエンジニア育成プログラムを○○社と共同構築</p>
+                <p className="article-name">当サイトのサイトURL（ドメイン）変更のお知らせ</p>
                 <Link href="/">
                   <a className="readMore-btn active">Read more</a>
                 </Link>
               </div>
             </div> 
             <div className="more-btn">
-                <button className="primary-btn">more</button>
+                <button className="primary-btn">More</button>
               </div>        
           </div>
         </div>
@@ -190,10 +190,12 @@ const Index = () => {
             }
             .container  {
               width: 100%;
+              background: #FFFFFF;
             }
             .home {
-              background: #FFFFFF;
               margin-top: 93px;
+              width: 100%;
+              overflow: hidden;
               font-family: 'Inter', sans-serif;
             }
             .default-text {
@@ -397,10 +399,9 @@ const Index = () => {
               color: #000;
             }
             .review-col {
+              flex: 1;
               padding: 63px 42px 70px 61px;
               position: relative;
-              max-width: 540px;
-              width: 540px;
               border: 1px solid #CCCCCC;
               border-radius: 5px;
             }
@@ -411,10 +412,13 @@ const Index = () => {
               color: #0FA5EF;
             }
             .review-wrapper {
+              margin-top: 52px;
               display: flex;
               gap: 30px;
+              width: 100%;
             }
             .review-header {
+              width: 100%;
               display: flex;
               gap: 20px;
             }
@@ -460,15 +464,16 @@ const Index = () => {
               display: flex;
               flex-direction: row;
               gap: 30px;
+              width: 100%;
             }
             .news-item {
+              flex: 1;
               display: flex;
               flex-direction: column;
-              width: 350px;
-              max-width: 350px;
+              width: 100%;
             }
             .news-item img {
-              width: 350px;
+              width: 100%;
               height: 250px;
             }
             .article-info {
@@ -484,6 +489,7 @@ const Index = () => {
             }
             .article-name {
               margin-top: 29px;
+              height: 67px;
               font-size: 20px;
               font-weight: bold;
             }
@@ -500,6 +506,85 @@ const Index = () => {
             }
             .article-tag {
               margin-left: 17px;
+            }
+            @media screen and (min-width:901px ) {
+              .menu-mobile {
+                display: none;
+              }
+            }
+  
+            @media screen and (max-width: 900px) {
+              .home-header,
+              .about,
+              .feature,
+              .review,
+              .news  {
+                padding: 0 13px;
+              }
+              .default-title {
+                margin-top: 94px;
+              }
+              .default-subTitle {
+                margin-top: 13px;
+              }
+              .header-title {
+                width: unset;
+              }
+              .banner-wrapper {
+                width: 100%;
+              }
+              .header-slogan {
+                font-size: 14px;
+              }
+              .about-title {
+                font-size: 25px;
+              }
+              .about-subTitle {
+                font-size: 16px;
+              }
+              .ability-wrapper {
+                flex-direction: column;
+                margin-bottom: 112px;
+                margin-top: 56px;
+              }
+              .feature-wrapper {
+                gap: 57px;
+                flex-direction: column;
+              }
+              .feature-item {
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 0;
+              }
+              .center-block {
+                align-items: flex-start;
+              }
+              .review-wrapper{
+                overflow-x: scroll;
+                overflow-y: hidden;
+                display: -webkit-box;
+              }
+              .review-wrapper::-webkit-scrollbar {
+                display: none;
+              }
+              .review-col {
+                flex: unset;
+                width: 100%;
+                padding: 67px 17px 46px 17px;
+              }
+              .review h1 {
+                margin-top: 89px;
+              }
+              .news-container {
+                flex-direction: column;
+                margin-top: 39px;
+              }
+              .news-item {
+                padding-bottom: 60px;
+              }
+              .article-info {
+                margin-top: 24px;
+              }
             }
           `}
         </style>

@@ -13,10 +13,10 @@ const Footer = () => {
                 <p className="footer-text">次のようなお客様のお見積りも大歓迎です。お気軽にお問い合わせください。</p>
               </div>
               <ul className="services">
-                <li className="footer-text">既存のサービスと類似のサービスを作りたい</li>
-                <li className="footer-text">具体案はないが、開発コストの超概算を知りたい</li>
-                <li className="footer-text">日本国内開発との相見積もりを行いたい</li>
-                <li className="footer-text">他社に依頼が決まっているが、参考程度に知りた</li>
+                <li className="footer-text">・既存のサービスと類似のサービスを作りたい</li>
+                <li className="footer-text">・具体案はないが、開発コストの超概算を知りたい</li>
+                <li className="footer-text">・日本国内開発との相見積もりを行いたい</li>
+                <li className="footer-text">・他社に依頼が決まっているが、参考程度に知りた</li>
               </ul>
               <button className="contact-btn">
                 Contact
@@ -34,15 +34,15 @@ const Footer = () => {
             <li className="socialMedia-icon"><img src="/facebook.svg"/></li>
             <li className="socialMedia-icon"><img src="/twitter.svg"/></li>
           </ul>
-          <div className="content-group">
+          <div className="content-group phone-group">
             <label>Tel.</label>
             <p className="footer-text">(+84) 248-585-8389</p>
           </div>
-          <div className="content-group">
+          <div className="content-group address-group">
             <label>Address</label>
             <p className="footer-text">2F, 25T2 BUILDING, NGUYEN THI THAP ST., TRUNG HOA W., CAU GIAY DIST., HANOI</p>
           </div>
-            <div className="content-group">
+            <div className="content-group email-group">
             <label>Email</label>
             <p className="footer-text">contact@axalize.vn</p>
           </div>
@@ -68,6 +68,10 @@ const Footer = () => {
             z-index: 3;
             transform: translateY(126px);
           }
+          .introduce-content {
+            display: flex;
+            flex-direction: column;
+          }
           .introduce-inner {
             margin: 0 80px;
             background-color: #0FA5EF;
@@ -76,10 +80,12 @@ const Footer = () => {
           }
           .introduce-detail {
             display: flex;
+            justify-content: flex-start;
             align-items: flex-start;
             max-width: 1274px;
             margin: auto;
             gap: 57px;
+            flex-wrap: wrap;
           }
           .introduce-img {
             width: 445px;
@@ -94,6 +100,7 @@ const Footer = () => {
           }
           .services {
             margin-top: 28px;
+            list-style  : none
           }
           .contact-btn {
             margin-top: 37px;
@@ -164,6 +171,48 @@ const Footer = () => {
             padding: 40px 0;
             display: flex;
             justify-content: center;
+          }
+          @media screen and (max-width: 900px) {
+            .introduce-inner {
+              margin: 0 15px;
+            }
+            .introduce-title h1 {
+              font-size: 25px;
+            }
+            .contact-btn {
+              align-self: center;
+              margin-left: -15px;
+            }
+            .introduce-detail {
+              justify-content: center;
+            }
+            .introduce-content {
+              padding-left: 15px;
+            }
+            .footer-content {
+              padding: 0 23px 0 33px;
+            }
+            .footer-logo {
+              width: 227px;
+            }
+            .socialMedia-wrapper {
+              margin-top: 62px;
+            }
+            .phone-group {
+              margin-top: 26px;
+            }
+            .address-group {
+              margin-top: 23px;
+            }
+            .email-group {
+              margin-top: 30px;
+            }
+            .license {
+              width: calc(100% - 26px);
+              margin-top: 54px;
+              padding-top: 30px;
+              padding-bottom: 43px;
+            }
           }
         `}
       </style>

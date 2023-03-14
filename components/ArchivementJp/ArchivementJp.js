@@ -100,6 +100,28 @@ const ArchivementJp = () => {
           .achivemnet-column:Last-child {
             margin-left: 50px;
           }
+          @media screen and (max-width: 900px) {
+            .achivement  {
+              padding: 0 13px 82px 13px;
+              align-items: flex-start;
+              background-color: #FAFDF9;
+            }
+            .achivemnet-container {
+              flex-wrap: wrap;
+            }
+            .achivemnet-img {
+              width: 100%;
+            }
+            .achivement-title {
+                margin-top: 92px;
+            } 
+            .achivemnet-container {
+              gap: 32px;
+            }
+            .achivemnet-wrapper {
+              margin-top: 3px;
+            }
+          }
         `}
       </style>
     </div>
