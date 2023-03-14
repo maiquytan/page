@@ -54,8 +54,9 @@ const Footer = () => {
       <style jsx>
         {`
           .footer {
-            margin-top: 250px;
+            padding-top: 190px;
             color: #FFFFFF;
+            background-color: #fff;
             width: 100%;
             display: flex;
             flex-direction: column;

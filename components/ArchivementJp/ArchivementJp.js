@@ -80,6 +80,7 @@ const ArchivementJp = () => {
             border: none;
             font-size: 15px;
             font-weight: bold;
+            cursor: pointer;  
           }
           .achivement-bottom {
             display: flex;

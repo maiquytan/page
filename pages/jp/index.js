@@ -107,7 +107,7 @@ const Index = () => {
           {/* Archivement */}
           <ArchivementJp/>
           {/* out clients said */}
-          <div className="review default-block">
+          <div className="review center-block">
             <h1 className="default-title">お客様の声</h1>
             <p className="default-subTitle">What Our Clients Say</p>
             <p className='review-title default-text'>弊社をご利用いただいたお客様からいただいたお声を一部紹介させていただきます。</p>
@@ -140,9 +140,54 @@ const Index = () => {
               <span></span>
             </div>
           </div>
+          <div className="news center-block">
+            <h1 className="default-title">新着情報</h1>
+            <p className="default-subTitle">Latest News</p>
+            <div className="news-container">
+              <div className="news-item">
+                <img/>
+                <div className="article-info">
+                  <p className="article-date">2023.01.26</p>
+                  <p className="article-tag">お知らせ</p>
+                </div>
+                <p className="article-name">独自のブリッジエンジニア育成プログラムを○○社と共同構築</p>
+                <Link href="/">
+                  <a className="readMore-btn active">Read more</a>
+                </Link>
+              </div>
+              <div className="news-item">
+                <img/>
+                <div className="article-info">
+                  <p className="article-date">2023.01.26</p>
+                  <p className="article-tag">お知らせ</p>
+                </div>
+                <p className="article-name">独自のブリッジエンジニア育成プログラムを○○社と共同構築</p>
+                <Link href="/">
+                  <a className="readMore-btn active">Read more</a>
+                </Link>
+              </div>
+              <div className="news-item">
+                <img/>
+                <div className="article-info">
+                  <p className="article-date">2023.01.26</p>
+                  <p className="article-tag">お知らせ</p>
+                </div>
+                <p className="article-name">独自のブリッジエンジニア育成プログラムを○○社と共同構築</p>
+                <Link href="/">
+                  <a className="readMore-btn active">Read more</a>
+                </Link>
+              </div>
+            </div> 
+            <div className="more-btn">
+                <button className="primary-btn">more</button>
+              </div>        
+          </div>
         </div>
         <style jsx>
           {`
+            button, a {
+              cursor: pointer;
+            }
             .container  {
               width: 100%;
             }
@@ -229,6 +274,13 @@ const Index = () => {
             .default-block {
               max-width: 1274px;
               margin: auto;
+            }
+            .center-block {
+              max-width: 1274px;
+              margin: auto;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
             }
             .about {
               width: 100%;
@@ -340,11 +392,6 @@ const Index = () => {
               margin-top: 13px;
               font-size: 16px;
             }
-            .review {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            }
             .review-title {
               margin-top: 24px;
               color: #000;
@@ -407,6 +454,52 @@ const Index = () => {
             }
             .small-navigate span.active {
               background-color: #0FA5EF;
+            }
+            .news-container {
+              margin-top: 51px;
+              display: flex;
+              flex-direction: row;
+              gap: 30px;
+            }
+            .news-item {
+              display: flex;
+              flex-direction: column;
+              width: 350px;
+              max-width: 350px;
+            }
+            .news-item img {
+              width: 350px;
+              height: 250px;
+            }
+            .article-info {
+              margin-top: 20px;
+              display: flex;
+              font-size: 16px;
+              color: #000;
+              display: flex;
+              align-items: center;
+            }
+            .news-item a {
+              margin-top: 8px;
+            }
+            .article-name {
+              margin-top: 29px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+            .article-date {
+              text-align: center;
+            }
+            .more-btn {
+              margin-top: 70px;
+            }
+            .article-date {;
+              height: fit-content;
+              border-right: 2px solid #D6D6D6;
+              padding-right: 8px;
+            }
+            .article-tag {
+              margin-left: 17px;
             }
           `}
         </style>

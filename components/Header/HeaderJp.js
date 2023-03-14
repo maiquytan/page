@@ -99,7 +99,7 @@ const Header = () => {
             position: fixed;
             top: 0;
             width: 100%;
-            z-index: 3;
+            z-index: 10;
             background: #FFFFFF;
             font-family: Meiryo;
           }
