@@ -29,10 +29,10 @@ const Footer = () => {
         <div className="footer-content">
           <img src="/logo1.svg" className="footer-logo"/>
           <p className="footer-text">システム開発を通じて人それぞれにとっての新しい「価値」を実現します</p>
-          <ul className="socialMedia-wrapper">
-            <li className="socialMedia-icon"><img src="/line.svg"/></li>
-            <li className="socialMedia-icon"><img src="/facebook.svg"/></li>
-            <li className="socialMedia-icon"><img src="/twitter.svg"/></li>
+          <ul className="social-media-wrapper">
+            <li className="social-media-icon"><img src="/line.svg" alt="icon" title="icon" width="46" height="46"/></li>
+            <li className="social-media-icon"><img src="/facebook.svg" alt="icon" title="icon" width="46" height="46"/></li>
+            <li className="social-media-icon"><img src="/twitter.svg" alt="icon" title="icon" width="46" height="46"/></li>
           </ul>
           <div className="content-group phone-group">
             <label>Tel.</label>
@@ -137,13 +137,13 @@ const Footer = () => {
           .footer-logo {
             width: 226px;
           }
-          .socialMedia-wrapper {
+          .social-media-wrapper {
             display: flex;
             gap: 14px;
             margin-top: 18px;
             list-style: none;
           }
-          .socialMedia-icon {
+          .social-media-icon {
             width: 46px;
           }
           .content-group {
@@ -195,7 +195,7 @@ const Footer = () => {
             .footer-logo {
               width: 227px;
             }
-            .socialMedia-wrapper {
+            .social-media-wrapper {
               margin-top: 62px;
             }
             .phone-group {

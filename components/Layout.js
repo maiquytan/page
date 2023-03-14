@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+
 import Footer from "./Footer/Footer";
 import FooterJp from "./Footer/FooterJp";
 import Header from "./Header/Header";

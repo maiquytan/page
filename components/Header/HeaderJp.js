@@ -23,9 +23,11 @@ const Header = () => {
     <div className="header">
       <div className="menu">
         <div className="menu-main">
-          <Link href="/"><a className="logo">
-            <img src="/logoJp.png" className="img-logo" alt="logo" title="logo" width={282} />
-          </a></Link>
+          <Link href="/">
+            <a className="logo">
+              <img src="/logoJp.webp" className="img-logo" alt="logo" title="logo" width="282" height="64" />
+            </a>
+          </Link>
           <div className="menu-content">
             <Link href="/e">
               <a className="default">
@@ -61,13 +63,13 @@ const Header = () => {
         </div>
       </div>
       <div className="menu-mobile">
-        <Link href="/">
-          <a className="logo">
-              <img src="/logoJp.png" className="img-logo" alt="logo" title="logo" width={271} />
-          </a>
-        </Link>
+      <Link href="/">
+            <a className="logo">
+              <img src="/logoJp.webp" className="img-logo" alt="logo" title="logo" width="271" height="64" />
+            </a>
+          </Link>
         <div className="btn-menu" onClick={handleDropDownMenuAction}>
-          <img src="/" alt="menu" title="menu" width={24} height={24} />
+          <img src="/" alt="menu" title="menu" width="61" height="51" />
         </div>
         {/* {isDropdownMenuAction &&
           <ul className="mobile-menu-down">

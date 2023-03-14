@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import ArchivementJp from '../../components/ArchivementJp/ArchivementJp';
+
+import AchievementJp from '../../components/ArchievementJp/ArchievementJp';
 
 const Index = () => {
   return (
@@ -34,7 +35,9 @@ const Index = () => {
               <button>Axalizeのサービス</button>
             </div>
             <div className="banner-wrapper">
-              <img src="/banner.png" className="banner-img"/>
+              <div className="banner-img">
+                <img src="/banner.webp" alt="banner" width="957" height="497" title=""banner/>
+              </div>
             </div>
           </div>
           {/* about us */}
@@ -50,7 +53,9 @@ const Index = () => {
               <div className="ability-wrapper">
                 <div className="ability">
                   <div className="ability-number">01</div>
-                  <img src="/ability1.svg" className="ability-img" />
+                  <div className="ability-img">
+                    <img src="/ability1.svg"  alt="ability" width="41" height="42" title="ability"/>
+                  </div>
                   <h1 className="ability-title">ラボ型開発</h1>
                   <p className="ability-content">成果物ではなく、エンジニアの人数と期間をベースにした開発を提供します。要件を固めずに契約が行えるため、柔軟に対応可能な形態で、明確なゴールのない業務（継続的な保守やメンテナンス等）向けの契約形態となります。</p>
                   <Link href="/">
@@ -59,7 +64,9 @@ const Index = () => {
                 </div>
                 <div className="ability">
                   <div className="ability-number">02</div>
-                  <img src="/ability2.svg" className="ability-img" />
+                  <div className="ability-img">
+                    <img src="/ability2.svg"  alt="ability" width="41" height="42" title="ability"/>
+                  </div>
                   <h1 className="ability-title">請負・受託型開発</h1>
                   <p className="ability-content">定義した要件に基づき、期日までに成果物の完成を請け負います。 請負開発は契約の通りに開発が進むため、要件が決まっており途中での要件追加や仕様変更が発生しない案件向きの形態です。</p>
                   <Link href="/">
@@ -75,28 +82,36 @@ const Index = () => {
             <p className="default-subTitle">Our Feature.</p>
             <div className="feature-wrapper">
               <div className="feature-item">
-                <img className="feature-img" src="/feature1.svg"/>
+                <div className="feature-img">
+                 <img src="/feature1.svg" alt="feature" title ="feature" width="141" height="141"/>
+                </div>
                 <div className="feature-content">
                   <h1 className="feature-header">日本人CEOと少数精鋭の高品質</h1>
                   <p className="feature-text">日本人CEOや、日本語や日本のマナーの教育に加えて実際に日本で職務経験を積んだメンバーが在籍しており、意思疎通の失敗を防ぐことが可能です。</p>
                 </div>
               </div>
               <div className="feature-item">
-                <img className="feature-img" src="/feature2.svg"/>
+                <div className="feature-img">
+                 <img src="/feature2.svg" alt="feature" title ="feature" width="141" height="141"/>
+                </div>
                 <div className="feature-content">
                   <h1 className="feature-header">短期間での開発</h1>
                   <p className="feature-text">若くて能力の高いIT技術者で溢れているベトナムでオフショア開発を行うで「高品質」に加え、日本では実現しずらい「低コスト」と「スピード」の全てを満たす開発が実現可能となっております。</p>
                 </div>
               </div>
               <div className="feature-item">
-                <img className="feature-img" src="/feature3.svg"/>
+                <div className="feature-img">
+                 <img src="/feature3.svg" alt="feature" title ="feature" width="141" height="141"/>
+                </div>
                 <div className="feature-content">
                   <h1 className="feature-header">柔軟な対応・契約形態</h1>
                   <p className="feature-text">ベトナムではアジャイルでの開発が主流となっており、仕様の見直し・変更等が発生した際でも、スピーディーかつ柔軟に対応できます。 また契約面でも1ヶ月1名からといった細かい単位でのご契約が可能です。</p>
                 </div>
               </div>
               <div className="feature-item">
-                <img className="feature-img" src="/feature4.svg"/>
+                <div className="feature-img">
+                 <img src="/feature4.svg" alt="feature" title ="feature" width="141" height="141"/>
+                </div>
                 <div className="feature-content">
                   <h1 className="feature-header">日本提携会社との連携</h1>
                   <p className="feature-text">弊社では日本のシステム開発会社と業務提携を結んでおり、案件の管理等を委託することも可能ですので、初めてのオフショア開発に不安を感じるお客様でもご安心してご利用いただけます。</p>
@@ -104,8 +119,8 @@ const Index = () => {
               </div>
             </div>
           </div>
-          {/* Archivement */}
-          <ArchivementJp/>
+          {/* Achievement */}
+          <AchievementJp/>
           {/* out clients said */}
           <div className="review center-block">
             <h1 className="default-title">お客様の声</h1>
@@ -115,7 +130,9 @@ const Index = () => {
               <div className="review-col">
                 <span>,,</span>
                 <div className="review-header">
-                  <img className="avatar"/>
+                  <div className="avatar">
+                    <img src="/" atl="avatar" title="avatar" width="60" height="60"/>
+                  </div>
                   <div className="client-info">
                     <h1 className="client-name">優秀な開発チームとフレキシブ ルなリソース調整</h1>
                     <p className="client-company">株式会社シー・コネクト / 嶽本 泰伸 様</p>
@@ -126,7 +143,9 @@ const Index = () => {
               <div className="review-col">
                 <span>,,</span>
                 <div className="review-header">
-                  <img className="avatar"/>
+                  <div className="avatar">
+                    <img src="/" atl="avatar" title="avatar" width="60" height="60"/>
+                  </div>
                   <div className="client-info">
                     <h1 className="client-name">クオリティが高い！</h1>
                     <p className="client-company">エンザントレイズ株式会社 / 鍋嶋 正孝 様</p>
@@ -145,7 +164,9 @@ const Index = () => {
             <p className="default-subTitle">Latest News</p>
             <div className="news-container" >
               <div className="news-item">
-                <img/>
+                <div className="news-img">
+                  <img src="/" alt="news" title="news" width="350" height="250"/>
+                </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.26</p>
                   <p className="article-tag">お知らせ</p>
@@ -156,7 +177,9 @@ const Index = () => {
                 </Link>
               </div>
               <div className="news-item">
-                <img/>
+                <div className="news-img">
+                  <img src="/" alt="news" title="news" width="350" height="250"/>
+                </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.20</p>
                   <p className="article-tag">お知らせ</p>
@@ -167,7 +190,9 @@ const Index = () => {
                 </Link>
               </div>
               <div className="news-item">
-                <img/>
+                <div className="news-img">
+                  <img src="/" alt="news" title="news" width="350" height="250"/>
+                </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.20</p>
                   <p className="article-tag">お知らせ</p>
@@ -257,8 +282,9 @@ const Index = () => {
               width: 957px;
               height: fit-content;
             }
-            .banner-img {
+            .banner-img img {
               width: 100%;
+              height: 100%;
               object-fit: cover;
             }
             .default-subTitle {
@@ -344,8 +370,10 @@ const Index = () => {
               font-weight: bold;
               position: absolute
             }
-            .ability-img {
+            .ability-img img {
               width: 41px;
+              height: 100%;
+              object-fit: cover;
             }
             .ability-title {
               margin-top: 25px;
@@ -383,8 +411,9 @@ const Index = () => {
               align-items: center;
               color: #000;
             }
-            .feature-img {
+            .feature-img img {
               width: 141px;
+              height: 100%;
               object-fit: cover;
             }
             .feature-header {
@@ -423,7 +452,7 @@ const Index = () => {
               display: flex;
               gap: 20px;
             }
-            .avatar {
+            .avatar img {
               width: 70px;
               min-width: 70px;
               height: 70px;
@@ -473,8 +502,9 @@ const Index = () => {
               flex-direction: column;
               width: 100%;
             }
-            .news-item img {
+            .news-img img{
               width: 100%;
+              min-height: 250px;
               height: 250px;
             }
             .article-info {
