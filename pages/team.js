@@ -2,10 +2,14 @@ import React from 'react'
 
 const Team = () => {
   const listBoss = [
-    { name: 'Duong Nguyen', image: '../NguyenDuong.webp', icon: '/icon_backend.svg', job: 'Backend', describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    { name: 'Tuan Nguyen', image: '../NguyenTuan.webp', icon: '/icon_fontend.svg', job: 'Fontend', describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    { name: 'Viet Nguyen', image: '../NguyenViet.webp', icon: '/icon_backend.svg', job: 'Backend', describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    { name: 'Cong Luu', image: '../LuuCong.webp', icon: '/icon_backend.svg', job: 'Backend', describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+    { name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.' },
+    { name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
+    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.' },
+    { name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Building innovative backend solutions to power your business and drive success.' },
+    { name: 'Cong Luu', image: '/LuuCong.webp', icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Creating robust and scalable backend systems to meet your business needs and exceed your expectations.' },
   ]
   return (
     <div className="team">
@@ -13,7 +17,9 @@ const Team = () => {
 
       {/* Header */}
       <div className="bg-header">
-        <img className="img-header" src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        <div className="img-header">
+        <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+        </div>
         <div className="about-header">
           <div className="header-title">Our Team</div>
           <div className="header-content">
@@ -29,7 +35,7 @@ const Team = () => {
       <div className="introduce">
         <div className="introduce-left">
           <div className="one-introduce">
-            <img src="/icon-introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
+            <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
             <div className="introduce-content">
               <h2>Our People</h2>
               <p>At Axalize, we believe in hiring top-notch talent and fostering a supportive, collaborative work environment.</p>
@@ -69,7 +75,7 @@ const Team = () => {
         <div className="meet-main">
           {listBoss.map((list, index) => (
             <div className="boss" key={index}>
-              <div className="img-meet" style={{ backgroundImage: `url('$ {list.image}');` }} >
+              <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
                 <div className="bg-meet">
                   <p> {list.name}</p>
                 </div>
@@ -138,6 +144,7 @@ const Team = () => {
             display: flex;
             justify-content: space-between;
             max-width: 1260px;
+            margin-bottom: 50px;
           }
           .header-left {
             width: 40%;
@@ -170,7 +177,6 @@ const Team = () => {
           .one-introduce {
             display: flex;
             align-items: center;
-            height: 149px;
             background: #F8F8F8;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
@@ -181,27 +187,32 @@ const Team = () => {
             margin-bottom: 10px;
           }
           .introduce-content {
-            width: 70%;
+            width: 71%;
           }
           .introduce-content>h2 {
             font-weight: 600;
             font-size: 28px;
             line-height: 34px;
             letter-spacing: 0.02em;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            margin-top: 22px;
           }
           .introduce-content>p {
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.02em;
             font-weight: 500;
+            margin-bottom: 28px;
           }
           .introduce-right {
-            width: 49%;
-            max-width: 610px;
+            width: 48%;
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: cover;
           }
           .introduce-right>img {
             width: 100%;
+            height: 100%;
           }
 
           //Meet----------------------------
@@ -228,7 +239,7 @@ const Team = () => {
           }
           .meet-main {
             display: flex;
-            gap: 1%;
+            gap: 2%;
           }
           .boss {
             width: 24%;
@@ -267,7 +278,9 @@ const Team = () => {
             right: 36px;
           }
           .meet-content {
-            width: 90%;
+            width: auto;
+            padding-left: 25px;
+            padding-right: 20px;
             margin: auto;
           }
           .meet-content>h3 {
@@ -282,7 +295,129 @@ const Team = () => {
             line-height: 18px;
             color: #525252;
           }
+          @media screen and (max-width: 900px) {
+            .about-header {
+              height: auto;
+              margin-top: 50px;
+              justify-content: normal;
+            }
+            .img-header {
+              top: 0px;
+              left: -70%;
+              width: 200%;
+              height: auto;
+              aspect-ratio: 3;
+              object-fit: cover;
+            }
+            .img-header>img {
+              width: 100%;
+              height: 100%;
+            }
+            .header-title {
+              margin-top: 10%;
+              background: none;
+              width: 100%;
+              height: auto;
+              text-align: center;
+              top: 0;
+              left: 0;
+            }
+            .header-content {
+              flex-direction: column-reverse;
+              width: 100%;
+            }
+            .header-left {
+              margin: 0;
+              width: auto;
+              padding: 0 24px;
+              font-size: 18px;
+              line-height: 30px;
+              color: #494949;
+              text-align: center;
+            }
+            .header-right {
+              width: 100%;
+              height: auto;
+              aspect-ratio: 1;
+              object-fit: cover;
+              margin: auto;
+              margin-top: 5%;
+              margin-bottom: 10%;
+            }
+            .header-right>img {
+              width: 100%;
+              height: 100%;
+            }
+            //-------------------
+            .introduce {
+              flex-direction: column;
+              margin-bottom: 35px;
+            }
+            .introduce-left,.introduce-right {
+              width: auto;
+              padding: 5px 12px;
+            }
+            .meet {
+              padding: 0 12px;
+            }
+            .meet-main {
+              flex-wrap: wrap;
+            }
+            .boss {
+              width: 49%;
+              margin-bottom: 12px;
+            }
+          }
+          @media screen and (max-width: 600px) {
+            .img-header {
+              width: 200%;
+              height: auto;
+              aspect-ratio: 2.1;
+              object-fit: cover;
+            }
+            .header-left {
+              font-size: 14px;
+              text-align: justify;
+            }
+            .one-introduce {
+              align-items: flex-start;
+            }
+            .one-introduce>img {
+              margin-top: 25px;
+              margin-left: 30px;
+              margin-right: 18px;
+            }
+            .introduce-content>h2 {
+              font-size: 22px;
+              margin-bottom: 6px;
+            }
+            .introduce-content>p {
+              font-size: 13px;
+              line-height: 20px;
+              margin-bottom: 20px;
+              letter-spacing: 0;
+            }
+            .meet-main {
+              flex-direction: column;
+            }
+            .bar {
+              margin-bottom: 8px;
+            }
+            .meet {
+              padding: 0 12px;
+            }
+            .meet-title {
+              font-size: 30px;
+            }
+            .meet-title {
+              margin-bottom: 8px;
+            }
+            .boss {
+              width: auto;
+              margin-bottom: 10px;
+            }
 
+          }
         `}
       </style>
     </div>

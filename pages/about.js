@@ -267,8 +267,9 @@ const About = () => {
               width: 100%;
             }
             .header-left {
-              width: 90%;
-              margin: auto;
+              width: auto;
+              margin: 0;
+              padding: 0 40px;
               font-size: 18px;
               line-height: 30px;
               color: #494949;
@@ -288,28 +289,28 @@ const About = () => {
               height: 100%;
             }
             .about-bg {
-              padding: 50px;
+              padding: 0 40px;
               background-position-x: right;
             }
             .about-axa {
               flex-direction: column;
             }
             .about-left {
-              width: 92%;
-              margin: auto;
+              width: auto;
+              margin: 0;
               margin-top: 25px;
             }
             .about-right {
-              width: 92%;
-              margin: auto;
+              width: auto;
               padding-bottom: 30px;
             }
             .our-target {
-              width: 92%;
+              width: auto;
               margin-bottom: 50px;
             }
             //-----------------------
             .target-about {
+              padding: 0 40px;
               padding-bottom: 10px;
             }
             .target-title {
@@ -338,9 +339,10 @@ const About = () => {
             .header-left {
               font-size: 14px;
               line-height: 20px;
+              padding: 0 24px;
             }
             .about-bg {
-              padding: 0;
+              padding: 0 24px;
             }
             .about-title {
               font-size: 30px;
@@ -355,6 +357,8 @@ const About = () => {
             }
             .target-about {
               margin-top: 40px;
+              padding: 0 24px;
+              padding-bottom: 20px;
             }
             .target-left {
               padding-right: 0;
@@ -364,6 +368,7 @@ const About = () => {
             .target-right {
               width: 48%;
               height: 90%;
+              margin-top: 10px;
             }
             .target-title {
               font-size: 30px;
@@ -372,7 +377,7 @@ const About = () => {
             }
             .target-content {
               font-size: 12px;
-              width: 95%;
+
             }
             .core {
               display: flex;

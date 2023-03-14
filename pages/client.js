@@ -498,8 +498,9 @@ const Client = () => {
               width: 100%;
             }
             .header-left {
-              width: 90%;
-              margin: auto;
+              width: auto;
+              padding: 0 24px;
+              margin: 0;
               font-size: 18px;
               line-height: 30px;
               color: #494949;
@@ -523,8 +524,15 @@ const Client = () => {
               margin: 0;
               background-position-x: 40%;
             }
+            .mobile-web-header {
+              width: auto;
+              margin: 0;
+              padding: 40px;
+            }
             .mobile-web-content {
-              width: 78%;
+              width: auto;
+              margin: 0;
+              padding: 0 40px;
               text-align: justify;
               padding-bottom: 40px;
             }
@@ -541,8 +549,7 @@ const Client = () => {
             }
             .reason-content {
               flex-direction: column;
-              width: 95%;
-              margin: auto;
+              padding: 0 20px;
               gap: 2%;
               margin-bottom: 30px;
             }
@@ -563,11 +570,12 @@ const Client = () => {
               margin-bottom: 20px;
             }
             .expert-header,.expert-content,.expert-right {
-              width: 90%;
-              margin: auto;
+              width: auto;
+              padding: 0 12px;
+              margin: 0;
             }
             .blue {
-              margin-left: 5%;
+              margin: 12px;
             }
             .expert-right {
               display: flex;
@@ -577,18 +585,19 @@ const Client = () => {
             .bg-feedback {
               background: #1667B2;
             }
+            .feedback {
+              padding: 0 12px;
+            }
             .feedback-header {
               flex-direction: column;
-              margin: auto;
             }
             .feedback-header>div {
-              width: 90%;
+              width: auto;
               font-size: 40px;
-              margin: auto;
+
             }
             .feedback-header>p {
-              width: 90%;
-              margin: auto;
+              width: auto;
               margin-bottom: 20px;
             }
             .bar {
@@ -596,8 +605,7 @@ const Client = () => {
               height: 60px;
             }
             .what-say {
-              width: 90%;
-              margin: auto;
+              width: auto;
               margin-bottom: 30px;
             }
             .feedback-content {
@@ -607,10 +615,10 @@ const Client = () => {
             .feedback-content-mobile {
               display: block;
               background-color: #1466b1;
+              padding: 0 12px;
             }
             .one-feedback {
-              width: 90%;
-              margin: auto;
+              width: auto;
               margin-bottom: 12px;
               padding: 24px 0;
               flex-direction: row;
@@ -643,18 +651,21 @@ const Client = () => {
               object-fit: cover;
             }
             .header-left {
-              width: 75%;
               font-size: 14px;
-              text-align: justify;
+              text-align: left;
             }
             .mobile-web-header {
-              width: 80%;
               font-size: 18px;
-              margin-bottom: 20px;
+              padding: 24px;
               padding-top: 40px;
             }
             .mobile-web-content {
               font-size: 14px;
+              padding: 0 24px;
+              padding-bottom: 40px;
+            }
+            .reason-content {
+              padding: 0 12px;
             }
             .reason-header {
               font-size: 15px;
@@ -699,7 +710,7 @@ const Client = () => {
               padding-top: 35px;
             }
             .feedback-header>div {
-              font-size: 18px;
+              font-size: 19px;
             }
             .feedback-header>p {
               font-size: 14px;
