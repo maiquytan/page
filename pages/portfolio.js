@@ -179,7 +179,7 @@ const Portfolio = () => {
           }
           .portfolio-header {
             position: relative;
-            height: calc(100vh - 118px);
+            height: 860px;
             max-width: 1260px;
             margin: auto;
             margin-top: 118px;
