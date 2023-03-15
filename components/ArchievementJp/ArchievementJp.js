@@ -3,7 +3,7 @@ import React from 'react'
 const AchievementJp = () => {
   return (
     <div className="achievement">
-      <div className="achievement-title">開発実績</div>
+      <p className="achievement-title">開発実績</p>
       <div className="achievement-subTitle">Our Achievements</div>
       <div className="achievement-container">
         <div className="achievement-img">
@@ -15,15 +15,15 @@ const AchievementJp = () => {
             <button className="primary-btn">Read More</button>
             <div className="achievement-wrapper">
               <div className="achievement-column">
-                <h1 className="achievement-number">47+</h1>
+                <p className="achievement-number">47+</p>
                 <p className="achievement-text ">完了したプロジェクト</p>
               </div>
               <div className="achievement-column">
-                <h1 className="achievement-number">14+</h1>
+                <p className="achievement-number">14+</p>
                 <p className="achievement-text ">世界中のお客様</p>
               </div>
               <div className="achievement-column">
-                <h1 className="achievement-number">100</h1>
+                <p className="achievement-number">100</p>
                 <p className="achievement-text ">リピート率</p>
               </div>
           </div>

@@ -43,7 +43,7 @@ const Index = () => {
           {/* about us */}
           <div className="about">
             <div className="about-inner">
-              <h1 className="about-title">Axalizeについて</h1>
+              <p className="about-title">Axalizeについて</p>
               <p className="about-subTitle">Our Feature.</p>
               <ul className="about-detail">
                 <li className="default-text">AxaLize = Axia(価値) + Actualize(実現する)は、日本人CEOを中心に設立されたベトナム拠点のICT企業です。</li>
@@ -56,7 +56,7 @@ const Index = () => {
                   <div className="ability-img">
                     <img src="/jp/ability1.svg"  alt="ability" width="41" height="42" title="ability"/>
                   </div>
-                  <h1 className="ability-title">ラボ型開発</h1>
+                  <p className="ability-title">ラボ型開発</p>
                   <p className="ability-content">成果物ではなく、エンジニアの人数と期間をベースにした開発を提供します。要件を固めずに契約が行えるため、柔軟に対応可能な形態で、明確なゴールのない業務（継続的な保守やメンテナンス等）向けの契約形態となります。</p>
                   <Link href="/">
                     <a className="readMore-btn active">Read more</a>
@@ -67,7 +67,7 @@ const Index = () => {
                   <div className="ability-img">
                     <img src="/jp/ability2.svg"  alt="ability" width="41" height="42" title="ability"/>
                   </div>
-                  <h1 className="ability-title">請負・受託型開発</h1>
+                  <p className="ability-title">請負・受託型開発</p>
                   <p className="ability-content">定義した要件に基づき、期日までに成果物の完成を請け負います。 請負開発は契約の通りに開発が進むため、要件が決まっており途中での要件追加や仕様変更が発生しない案件向きの形態です。</p>
                   <Link href="/">
                     <a className="readMore-btn">Read more</a>
@@ -78,7 +78,7 @@ const Index = () => {
           </div>
           {/* FEATURE */}
           <div className="feature default-block">
-            <h1 className="default-title">Axalizeについて</h1>
+            <p className="default-title">Axalizeについて</p>
             <p className="default-subTitle">Our Feature.</p>
             <div className="feature-wrapper">
               <div className="feature-item">
@@ -86,7 +86,7 @@ const Index = () => {
                  <img src="/jp/feature1.svg" alt="feature" title ="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
-                  <h1 className="feature-header">日本人CEOと少数精鋭の高品質</h1>
+                  <p className="feature-header">日本人CEOと少数精鋭の高品質</p>
                   <p className="feature-text">日本人CEOや、日本語や日本のマナーの教育に加えて実際に日本で職務経験を積んだメンバーが在籍しており、意思疎通の失敗を防ぐことが可能です。</p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const Index = () => {
                  <img src="/jp/feature2.svg" alt="feature" title ="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
-                  <h1 className="feature-header">短期間での開発</h1>
+                  <p className="feature-header">短期間での開発</p>
                   <p className="feature-text">若くて能力の高いIT技術者で溢れているベトナムでオフショア開発を行うで「高品質」に加え、日本では実現しずらい「低コスト」と「スピード」の全てを満たす開発が実現可能となっております。</p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const Index = () => {
                  <img src="/jp/feature3.svg" alt="feature" title ="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
-                  <h1 className="feature-header">柔軟な対応・契約形態</h1>
+                  <p className="feature-header">柔軟な対応・契約形態</p>
                   <p className="feature-text">ベトナムではアジャイルでの開発が主流となっており、仕様の見直し・変更等が発生した際でも、スピーディーかつ柔軟に対応できます。 また契約面でも1ヶ月1名からといった細かい単位でのご契約が可能です。</p>
                 </div>
               </div>
@@ -113,7 +113,7 @@ const Index = () => {
                  <img src="/jp/feature4.svg" alt="feature" title ="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
-                  <h1 className="feature-header">日本提携会社との連携</h1>
+                  <p className="feature-header">日本提携会社との連携</p>
                   <p className="feature-text">弊社では日本のシステム開発会社と業務提携を結んでおり、案件の管理等を委託することも可能ですので、初めてのオフショア開発に不安を感じるお客様でもご安心してご利用いただけます。</p>
                 </div>
               </div>
@@ -123,9 +123,9 @@ const Index = () => {
           <AchievementJp/>
           {/* out clients said */}
           <div className="review center-block">
-            <h1 className="default-title">お客様の声</h1>
+            <p className="default-title review-title">お客様の声</p>
             <p className="default-subTitle">What Our Clients Say</p>
-            <p className='review-title default-text'>弊社をご利用いただいたお客様からいただいたお声を一部紹介させていただきます。</p>
+            <p className="review-rex default-text">弊社をご利用いただいたお客様からいただいたお声を一部紹介させていただきます。</p>
             <div className="review-wrapper">
               <div className="review-col">
                 <span>,,</span>
@@ -134,7 +134,7 @@ const Index = () => {
                     <img src="/jp/" alt="avatar" title="avatar" width="60" height="60"/>
                   </div>
                   <div className="client-info">
-                    <h1 className="client-name">優秀な開発チームとフレキシブ ルなリソース調整</h1>
+                    <p className="client-name">優秀な開発チームとフレキシブ ルなリソース調整</p>
                     <p className="client-company">株式会社シー・コネクト / 嶽本 泰伸 様</p>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Index = () => {
                     <img src="/jp/" alt="avatar" title="avatar" width="60" height="60"/>
                   </div>
                   <div className="client-info">
-                    <h1 className="client-name">クオリティが高い！</h1>
+                    <p className="client-name">クオリティが高い！</p>
                     <p className="client-company">エンザントレイズ株式会社 / 鍋嶋 正孝 様</p>
                   </div>
                 </div>
@@ -160,7 +160,7 @@ const Index = () => {
             </div>
           </div>
           <div className="news center-block">
-            <h1 className="default-title">新着情報</h1>
+            <p className="default-title">新着情報</p>
             <p className="default-subTitle">Latest News</p>
             <div className="news-container" >
               <div className="news-item">
@@ -424,6 +424,9 @@ const Index = () => {
               font-size: 16px;
             }
             .review-title {
+              margin-top: 89px;
+            }
+            .review-text {
               margin-top: 24px;
               color: #000;
             }
@@ -601,9 +604,6 @@ const Index = () => {
                 flex: unset;
                 width: 100%;
                 padding: 67px 17px 46px 17px;
-              }
-              .review h1 {
-                margin-top: 89px;
               }
               .news-container {
                 flex-direction: column;

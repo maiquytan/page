@@ -10,8 +10,8 @@ const Footer = () => {
               <img src="/introduce_img.webp" alt="introduce" title="introduce" width="445" height="278"/>
             </div>
             <div className="introduce-content">
-              <div className="introduce-title">
-                <h1>お見積依頼お待ちしています</h1>
+              <div className="introduce-header">
+                <p className="introduce-title">お見積依頼お待ちしています</p>
                 <p className="footer-text">次のようなお客様のお見積りも大歓迎です。お気軽にお問い合わせください。</p>
               </div>
               <ul className="services">
@@ -92,7 +92,7 @@ const Footer = () => {
           .introduce-img img {
             width: 445px;
           }
-          .introduce-title h1 {
+          .introduce-title {
             color: #fff;
             font-size: 30px;
           }
@@ -178,7 +178,7 @@ const Footer = () => {
             .introduce-inner {
               margin: 0 15px;
             }
-            .introduce-title h1 {
+            .introduce-title {
               font-size: 25px;
             }
             .contact-btn {
