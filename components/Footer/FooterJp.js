@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="introduce-inner">
           <div className="introduce-detail">
             <div className="introduce-img">
-              <img src="/introduce_img.webp" alt="introduce" title="introduce" width="445" height="278"/>
+              <img src="jp//introduce_img.webp" alt="introduce" title="introduce" width="445" height="278"/>
             </div>
             <div className="introduce-content">
               <div className="introduce-header">
@@ -32,9 +32,9 @@ const Footer = () => {
           <img src="/logo1.svg" className="footer-logo" alt="logo" title="logo" width="226" height="38"/>
           <p className="footer-text">システム開発を通じて人それぞれにとっての新しい「価値」を実現します</p>
           <ul className="social-media-wrapper">
-            <li className="social-media-icon"><img src="/line.svg" alt="icon" title="icon" width="46" height="46"/></li>
-            <li className="social-media-icon"><img src="/facebook.svg" alt="icon" title="icon" width="46" height="46"/></li>
-            <li className="social-media-icon"><img src="/twitter.svg" alt="icon" title="icon" width="46" height="46"/></li>
+            <li className="social-media-icon"><img src="/jp/line.svg" alt="icon" title="icon" width="46" height="46"/></li>
+            <li className="social-media-icon"><img src="/jp/facebook.svg" alt="icon" title="icon" width="46" height="46"/></li>
+            <li className="social-media-icon"><img src="/jp/twitter.svg" alt="icon" title="icon" width="46" height="46"/></li>
           </ul>
           <div className="content-group phone-group">
             <label>Tel.</label>

@@ -25,7 +25,7 @@ const Header = () => {
         <div className="menu-main">
           <Link href="/">
             <a className="logo">
-              <img src="/logoJp.webp" className="img-logo" alt="logo" title="logo" width="282" height="64" />
+              <img src="/jp/logoJp.webp" className="img-logo" alt="logo" title="logo" width="282" height="64" />
             </a>
           </Link>
           <div className="menu-content">
@@ -71,31 +71,6 @@ const Header = () => {
         <div className="btn-menu" onClick={handleDropDownMenuAction}>
           <img src="/" alt="menu" title="menu" width="61" height="51" />
         </div>
-        {/* {isDropdownMenuAction &&
-          <ul className="mobile-menu-down">
-            <li>
-              <div>
-                <Link href="/e"><a>Company</a></Link>
-                <img src="/arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
-              </div>
-              {isDropdownCompanyAction &&
-                <ul className="setting-signout">
-                  <li><Link href="/b"><a>X</a></Link></li>
-                  <hr></hr>
-                  <li><Link href="/b"><a>Y</a></Link></li>
-                </ul>
-              }
-            </li>
-            <hr></hr>
-            <li><Link href="/service"><a>Service</a></Link></li>
-            <hr></hr>
-            <li><Link href="/b"><a>Expertise</a></Link></li>
-            <hr></hr>
-            <li><Link href="/portfolio"><a>Portfolio</a></Link></li>
-            <hr></hr>
-            <li><Link href="/d"><a>Contact</a></Link></li>
-          </ul>
-        } */}
       </div>
       <style jsx>
         {`
@@ -168,28 +143,6 @@ const Header = () => {
             border-radius: 5px;
             background-color: #0FA5EF;
           }
-          .mobile-menu-down {
-            position: absolute;
-            flex-direction: column;
-            width: 100%;
-            height: calc(100vh - 50px);
-            float: right;
-            top: 50px;
-            background-color: #FFFFFF;
-            color: red;
-            padding-left: 0px;
-            display: block;
-            list-style: none;
-            z-index: 3;
-          }
-          li {
-            margin: 20px;
-          }
-          hr {
-            margin: 0 10px;
-            color: #F4F4F4;
-          }
-
           @media screen and (min-width:901px ) {
             .menu-mobile {
               display: none;
