@@ -11,12 +11,12 @@ const Layout = ({ children }) => {
 
   return (
     <div className="content">
-      {router.pathname.includes('/jp') ? (
+      {router.pathname.includes("/jp") ? (
         <>
-        <HeaderJp />
-        {children}
-        <FooterJp />
-      </>
+          <HeaderJp />
+          {children}
+          <FooterJp />
+        </>
       ) : (
         <>
           <Header />

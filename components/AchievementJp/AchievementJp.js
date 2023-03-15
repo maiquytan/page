@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const AchievementJp = () => {
   return (
@@ -7,10 +7,20 @@ const AchievementJp = () => {
       <div className="achievement-subTitle">Our Achievements</div>
       <div className="achievement-container">
         <div className="achievement-img">
-          <img src="/jp/achievementJp.webp" alt="achievement" title="achievement" width="445" height="304"/>
+          <img
+            src="/jp/achievementJp.webp"
+            alt="achievement"
+            title="achievement"
+            width="445"
+            height="304"
+          />
         </div>
         <div className="achievement-right">
-          <p className="achievement-text">様々なエンジニアを擁するAxalizeではWebアプリ・モバイルアプリをメインに、Webサイトや多くの開発案件を手がけています。 最近ではRPA(Robotic Process Automation)の開発にも力を入れております。</p>
+          <p className="achievement-text">
+            様々なエンジニアを擁するAxalizeではWebアプリ・モバイルアプリをメインに、Webサイトや多くの開発案件を手がけています。
+            最近ではRPA(Robotic Process
+            Automation)の開発にも力を入れております。
+          </p>
           <div className="achievement-bottom">
             <button className="primary-btn">Read More</button>
             <div className="achievement-wrapper">
@@ -26,7 +36,7 @@ const AchievementJp = () => {
                 <p className="achievement-number">100</p>
                 <p className="achievement-text ">リピート率</p>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -35,7 +45,7 @@ const AchievementJp = () => {
         {`
           .achievement {
             max-width: 1260px;
-            margin : auto;
+            margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,14 +55,14 @@ const AchievementJp = () => {
             font-size: 18px;
             margin-top: 9px;
             font-weight: bold;
-            color: #CCCCCC;
-          }        
+            color: #cccccc;
+          }
           .achievement-title {
             margin-top: 87px;
             font-size: 30px;
             font-weight: bold;
             width: fit-content;
-            border-bottom: 3px solid #0FA5EF;
+            border-bottom: 3px solid #0fa5ef;
           }
           .achievement-container {
             margin-top: 24px;
@@ -76,8 +86,8 @@ const AchievementJp = () => {
             flex-direction: column;
             justify-content: space-between;
           }
-          .primary-btn{
-            background-color:  #0FA5EF;
+          .primary-btn {
+            background-color: #0fa5ef;
             color: #fff;
             width: 270px;
             height: 40px;
@@ -87,7 +97,7 @@ const AchievementJp = () => {
             border: none;
             font-size: 15px;
             font-weight: bold;
-            cursor: pointer;  
+            cursor: pointer;
           }
           .achievement-bottom {
             display: flex;
@@ -102,16 +112,16 @@ const AchievementJp = () => {
             display: flex;
             flex-direction: column;
             gap: 3px;
-            color: #2D2D2D;
+            color: #2d2d2d;
           }
-          .achievement-column:Last-child {
+          .achievement-column:last-child {
             margin-left: 50px;
           }
           @media screen and (max-width: 900px) {
-            .achievement  {
+            .achievement {
               padding: 0 13px 82px 13px;
               align-items: flex-start;
-              background-color: #FAFDF9;
+              background-color: #fafdf9;
             }
             .achievement-container {
               flex-wrap: wrap;
@@ -120,8 +130,8 @@ const AchievementJp = () => {
               width: 100%;
             }
             .achievement-title {
-                margin-top: 92px;
-            } 
+              margin-top: 92px;
+            }
             .achievement-container {
               gap: 32px;
             }
@@ -132,7 +142,7 @@ const AchievementJp = () => {
         `}
       </style>
     </div>
-  )
-}
+  );
+};
 
-export default AchievementJp
+export default AchievementJp;

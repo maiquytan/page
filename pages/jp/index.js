@@ -1,8 +1,8 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
 
-import AchievementJp from '../../components/ArchievementJp/ArchievementJp';
+import AchievementJp from "../../components/AchievementJp/AchievementJp";
 
 const Index = () => {
   return (
@@ -23,20 +23,30 @@ const Index = () => {
           content="" />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
         <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
-        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" />
       </Head>
       <div className="container">
         <div className="home">
           {/* Header */}
           <div className="home-header">
-            <h1 className="header-title">FEEL YOUR PLEASURE, FIND YOUR TREASURE</h1>
-            <p className="header-slogan">システム開発を通じ、それぞれにとっての「価値」を実現する</p>
+            <h1 className="header-title">
+              FEEL YOUR PLEASURE, FIND YOUR TREASURE
+            </h1>
+            <p className="header-slogan">
+              システム開発を通じ、それぞれにとっての「価値」を実現する
+            </p>
             <div className="service-btn">
               <button>Axalizeのサービス</button>
             </div>
             <div className="banner-wrapper">
               <div className="banner-img">
-                <img src="/jp/banner.webp" alt="banner" width="957" height="497" title="banner"/>
+                <img
+                  src="/jp/banner.webp"
+                  alt="banner"
+                  width="957"
+                  height="497"
+                  title="banner"
+                />
               </div>
             </div>
           </div>
@@ -46,18 +56,33 @@ const Index = () => {
               <p className="about-title">Axalizeについて</p>
               <p className="about-subTitle">Our Feature.</p>
               <ul className="about-detail">
-                <li className="default-text">AxaLize = Axia(価値) + Actualize(実現する)は、日本人CEOを中心に設立されたベトナム拠点のICT企業です。</li>
-                <li className="default-text">人それぞれにとっての「価値」を実現するシステム開発を「高品質」「ハイスピード」且つ、日本国内では実現が難しい「低コスト」で提供します。</li>
-                <li className="default-text">お客様の専属の開発チームをベトナム弊社内に作り、ブリッジSEや日本人営業を通したやり取りを行いながら開発を行います。</li>
+                <li className="default-text">
+                  AxaLize = Axia(価値) +
+                  Actualize(実現する)は、日本人CEOを中心に設立されたベトナム拠点のICT企業です。
+                </li>
+                <li className="default-text">
+                  人それぞれにとっての「価値」を実現するシステム開発を「高品質」「ハイスピード」且つ、日本国内では実現が難しい「低コスト」で提供します。
+                </li>
+                <li className="default-text">
+                  お客様の専属の開発チームをベトナム弊社内に作り、ブリッジSEや日本人営業を通したやり取りを行いながら開発を行います。
+                </li>
               </ul>
               <div className="ability-wrapper">
                 <div className="ability">
                   <div className="ability-number">01</div>
                   <div className="ability-img">
-                    <img src="/jp/ability1.svg"  alt="ability" width="41" height="42" title="ability"/>
+                    <img
+                      src="/jp/ability1.svg"
+                      alt="ability"
+                      width="41"
+                      height="42"
+                      title="ability"
+                    />
                   </div>
                   <p className="ability-title">ラボ型開発</p>
-                  <p className="ability-content">成果物ではなく、エンジニアの人数と期間をベースにした開発を提供します。要件を固めずに契約が行えるため、柔軟に対応可能な形態で、明確なゴールのない業務（継続的な保守やメンテナンス等）向けの契約形態となります。</p>
+                  <p className="ability-content">
+                    成果物ではなく、エンジニアの人数と期間をベースにした開発を提供します。要件を固めずに契約が行えるため、柔軟に対応可能な形態で、明確なゴールのない業務（継続的な保守やメンテナンス等）向けの契約形態となります。
+                  </p>
                   <Link href="/">
                     <a className="readMore-btn active">Read more</a>
                   </Link>
@@ -65,10 +90,19 @@ const Index = () => {
                 <div className="ability">
                   <div className="ability-number">02</div>
                   <div className="ability-img">
-                    <img src="/jp/ability2.svg"  alt="ability" width="41" height="42" title="ability"/>
+                    <img
+                      src="/jp/ability2.svg"
+                      alt="ability"
+                      width="41"
+                      height="42"
+                      title="ability"
+                    />
                   </div>
                   <p className="ability-title">請負・受託型開発</p>
-                  <p className="ability-content">定義した要件に基づき、期日までに成果物の完成を請け負います。 請負開発は契約の通りに開発が進むため、要件が決まっており途中での要件追加や仕様変更が発生しない案件向きの形態です。</p>
+                  <p className="ability-content">
+                    定義した要件に基づき、期日までに成果物の完成を請け負います。
+                    請負開発は契約の通りに開発が進むため、要件が決まっており途中での要件追加や仕様変更が発生しない案件向きの形態です。
+                  </p>
                   <Link href="/">
                     <a className="readMore-btn">Read more</a>
                   </Link>
@@ -83,75 +117,132 @@ const Index = () => {
             <div className="feature-wrapper">
               <div className="feature-item">
                 <div className="feature-img">
-                 <img src="/jp/feature1.svg" alt="feature" title ="feature" width="141" height="141"/>
+                  <img
+                    src="/jp/feature1.svg"
+                    alt="feature"
+                    title="feature"
+                    width="141"
+                    height="141"
+                  />
                 </div>
                 <div className="feature-content">
                   <p className="feature-header">日本人CEOと少数精鋭の高品質</p>
-                  <p className="feature-text">日本人CEOや、日本語や日本のマナーの教育に加えて実際に日本で職務経験を積んだメンバーが在籍しており、意思疎通の失敗を防ぐことが可能です。</p>
+                  <p className="feature-text">
+                    日本人CEOや、日本語や日本のマナーの教育に加えて実際に日本で職務経験を積んだメンバーが在籍しており、意思疎通の失敗を防ぐことが可能です。
+                  </p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-img">
-                 <img src="/jp/feature2.svg" alt="feature" title ="feature" width="141" height="141"/>
+                  <img
+                    src="/jp/feature2.svg"
+                    alt="feature"
+                    title="feature"
+                    width="141"
+                    height="141"
+                  />
                 </div>
                 <div className="feature-content">
                   <p className="feature-header">短期間での開発</p>
-                  <p className="feature-text">若くて能力の高いIT技術者で溢れているベトナムでオフショア開発を行うで「高品質」に加え、日本では実現しずらい「低コスト」と「スピード」の全てを満たす開発が実現可能となっております。</p>
+                  <p className="feature-text">
+                    若くて能力の高いIT技術者で溢れているベトナムでオフショア開発を行うで「高品質」に加え、日本では実現しずらい「低コスト」と「スピード」の全てを満たす開発が実現可能となっております。
+                  </p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-img">
-                 <img src="/jp/feature3.svg" alt="feature" title ="feature" width="141" height="141"/>
+                  <img
+                    src="/jp/feature3.svg"
+                    alt="feature"
+                    title="feature"
+                    width="141"
+                    height="141"
+                  />
                 </div>
                 <div className="feature-content">
                   <p className="feature-header">柔軟な対応・契約形態</p>
-                  <p className="feature-text">ベトナムではアジャイルでの開発が主流となっており、仕様の見直し・変更等が発生した際でも、スピーディーかつ柔軟に対応できます。 また契約面でも1ヶ月1名からといった細かい単位でのご契約が可能です。</p>
+                  <p className="feature-text">
+                    ベトナムではアジャイルでの開発が主流となっており、仕様の見直し・変更等が発生した際でも、スピーディーかつ柔軟に対応できます。
+                    また契約面でも1ヶ月1名からといった細かい単位でのご契約が可能です。
+                  </p>
                 </div>
               </div>
               <div className="feature-item">
                 <div className="feature-img">
-                 <img src="/jp/feature4.svg" alt="feature" title ="feature" width="141" height="141"/>
+                  <img
+                    src="/jp/feature4.svg"
+                    alt="feature"
+                    title="feature"
+                    width="141"
+                    height="141"
+                  />
                 </div>
                 <div className="feature-content">
                   <p className="feature-header">日本提携会社との連携</p>
-                  <p className="feature-text">弊社では日本のシステム開発会社と業務提携を結んでおり、案件の管理等を委託することも可能ですので、初めてのオフショア開発に不安を感じるお客様でもご安心してご利用いただけます。</p>
+                  <p className="feature-text">
+                    弊社では日本のシステム開発会社と業務提携を結んでおり、案件の管理等を委託することも可能ですので、初めてのオフショア開発に不安を感じるお客様でもご安心してご利用いただけます。
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           {/* Achievement */}
-          <AchievementJp/>
+          <AchievementJp />
           {/* out clients said */}
           <div className="review center-block">
             <p className="default-title review-title">お客様の声</p>
             <p className="default-subTitle">What Our Clients Say</p>
-            <p className="review-rex default-text">弊社をご利用いただいたお客様からいただいたお声を一部紹介させていただきます。</p>
+            <p className="review-rex default-text">
+              弊社をご利用いただいたお客様からいただいたお声を一部紹介させていただきます。
+            </p>
             <div className="review-wrapper">
               <div className="review-col">
                 <span>,,</span>
                 <div className="review-header">
                   <div className="avatar">
-                    <img src="/jp/" alt="avatar" title="avatar" width="60" height="60"/>
+                    <img
+                      src="/jp/feature4.svg"
+                      alt="avatar"
+                      title="avatar"
+                      width="60"
+                      height="60"
+                    />
                   </div>
                   <div className="client-info">
-                    <p className="client-name">優秀な開発チームとフレキシブ ルなリソース調整</p>
-                    <p className="client-company">株式会社シー・コネクト / 嶽本 泰伸 様</p>
+                    <p className="client-name">
+                      優秀な開発チームとフレキシブ ルなリソース調整
+                    </p>
+                    <p className="client-company">
+                      株式会社シー・コネクト / 嶽本 泰伸 様
+                    </p>
                   </div>
                 </div>
-                <p className="review-content">非常に不具合の少ない開発をしていただけているので、バグ修正なども従来のシステム開発より少なくなりました。また忙しい時期にアサインメンバーを増やして頂いたり、とても柔軟にリソース調整にご対応頂けるので大変助かっております。</p>
+                <p className="review-content">
+                  非常に不具合の少ない開発をしていただけているので、バグ修正なども従来のシステム開発より少なくなりました。また忙しい時期にアサインメンバーを増やして頂いたり、とても柔軟にリソース調整にご対応頂けるので大変助かっております。
+                </p>
               </div>
               <div className="review-col">
                 <span>,,</span>
                 <div className="review-header">
                   <div className="avatar">
-                    <img src="/jp/" alt="avatar" title="avatar" width="60" height="60"/>
+                    <img
+                      src="/jp/feature4.svg"
+                      alt="avatar"
+                      title="avatar"
+                      width="60"
+                      height="60"
+                    />
                   </div>
                   <div className="client-info">
                     <p className="client-name">クオリティが高い！</p>
-                    <p className="client-company">エンザントレイズ株式会社 / 鍋嶋 正孝 様</p>
+                    <p className="client-company">
+                      エンザントレイズ株式会社 / 鍋嶋 正孝 様
+                    </p>
                   </div>
                 </div>
-                <p className="review-content">バグも少ないし仕様通りに開発してくれる正確さが素晴らしいです。ベトナム人エンジニアも日本語担当で安心感がありますが、さらに困った時は現地にいる日本人社長兼エンジニアがサポートしてくれるため、仕様のズレもないし品質が高いです。本当に助かっています！</p>
+                <p className="review-content">
+                  バグも少ないし仕様通りに開発してくれる正確さが素晴らしいです。ベトナム人エンジニアも日本語担当で安心感がありますが、さらに困った時は現地にいる日本人社長兼エンジニアがサポートしてくれるため、仕様のズレもないし品質が高いです。本当に助かっています！
+                </p>
               </div>
             </div>
             <div className="small-navigate">
@@ -162,23 +253,37 @@ const Index = () => {
           <div className="news center-block">
             <p className="default-title">新着情報</p>
             <p className="default-subTitle">Latest News</p>
-            <div className="news-container" >
+            <div className="news-container">
               <div className="news-item">
                 <div className="news-img">
-                  <img src="/jp/" alt="news" title="news" width="350" height="250"/>
+                  <img
+                    src="/jp/achievementJp.webp"
+                    alt="news"
+                    title="news"
+                    width="350"
+                    height="250"
+                  />
                 </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.26</p>
                   <p className="article-tag">お知らせ</p>
                 </div>
-                <p className="article-name">独自のブリッジエンジニア育成プログラムを○○社と共同構築</p>
+                <p className="article-name">
+                  独自のブリッジエンジニア育成プログラムを○○社と共同構築
+                </p>
                 <Link href="/">
                   <a className="readMore-btn active">Read more</a>
                 </Link>
               </div>
               <div className="news-item">
                 <div className="news-img">
-                  <img src="/jp/" alt="news" title="news" width="350" height="250"/>
+                  <img
+                    src="/jp/achievementJp.webp"
+                    alt="news"
+                    title="news"
+                    width="350"
+                    height="250"
+                  />
                 </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.20</p>
@@ -191,52 +296,61 @@ const Index = () => {
               </div>
               <div className="news-item">
                 <div className="news-img">
-                  <img src="/jp/" alt="news" title="news" width="350" height="250"/>
+                  <img
+                    src="/jp/achievementJp.webp"
+                    alt="news"
+                    title="news"
+                    width="350"
+                    height="250"
+                  />
                 </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.20</p>
                   <p className="article-tag">お知らせ</p>
                 </div>
-                <p className="article-name">当サイトのサイトURL（ドメイン）変更のお知らせ</p>
+                <p className="article-name">
+                  当サイトのサイトURL（ドメイン）変更のお知らせ
+                </p>
                 <Link href="/">
                   <a className="readMore-btn active">Read more</a>
                 </Link>
               </div>
-            </div> 
+            </div>
             <div className="more-btn">
-                <button className="primary-btn">More</button>
-              </div>        
+              <button className="primary-btn">More</button>
+            </div>
           </div>
         </div>
         <style jsx>
           {`
-            button, a {
+            button,
+            a {
               cursor: pointer;
             }
-            .container  {
+            .container {
               width: 100%;
-              background: #FFFFFF;
+              background: #ffffff;
             }
             .home {
               margin-top: 93px;
               width: 100%;
               overflow: hidden;
-              font-family: 'Inter', sans-serif;
+              font-family: "Inter", sans-serif;
             }
             .default-text {
               font-size: 16px;
               color: #fff;
             }
             .home-header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #000000;
-            max-width: 1431px;
-            margin: auto;
-            background-image: url("jp//bgJp.webp");
-            background-position: top;
-            background-size: contain;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              color: #000000;
+              max-width: 1431px;
+              margin: auto;
+              background-image: url("jp//bgJp.webp");
+              background-position: top;
+              background-size: contain;
             }
             .header-title {
               margin-top: 22px;
@@ -250,8 +364,8 @@ const Index = () => {
               margin-top: 30px;
               font-size: 20px;
             }
-            .primary-btn{
-              background-color:  #0FA5EF;
+            .primary-btn {
+              background-color: #0fa5ef;
               color: #fff;
               width: 270px;
               height: 40px;
@@ -268,7 +382,7 @@ const Index = () => {
             .service-btn button {
               width: 217px;
               height: 57px;
-              background-color:  #0FA5EF;
+              background-color: #0fa5ef;
               color: #fff;
               display: flex;
               justify-content: center;
@@ -290,14 +404,14 @@ const Index = () => {
               font-size: 18px;
               margin-top: 9px;
               font-weight: bold;
-              color: #CCCCCC;
-            }        
+              color: #cccccc;
+            }
             .default-title {
               margin-top: 180px;
               font-size: 30px;
               font-weight: bold;
               width: fit-content;
-              border-bottom: 3px solid #0FA5EF;
+              border-bottom: 3px solid #0fa5ef;
             }
             .default-block {
               max-width: 1274px;
@@ -312,7 +426,7 @@ const Index = () => {
             }
             .about {
               width: 100%;
-              background-color: #0FA5EF;
+              background-color: #0fa5ef;
               position: relative;
               overflow: hidden;
               padding-bottom: 78px;
@@ -323,19 +437,19 @@ const Index = () => {
               right: 0;
               content: "";
               border-left: calc(50vw - 10px) solid transparent;
-              border-right: calc(50vw - 10px) solid transparent;            
-              border-top: 70px solid #fff;            
+              border-right: calc(50vw - 10px) solid transparent;
+              border-top: 70px solid #fff;
             }
             .about-inner {
               max-width: 1274px;
               margin: auto;
-              color: #fff;      
+              color: #fff;
             }
             .about-subTitle {
               font-size: 18px;
               margin-top: 9px;
               font-weight: bold;
-            }        
+            }
             .about-title {
               margin-top: 180px;
               font-size: 30px;
@@ -351,7 +465,7 @@ const Index = () => {
             .ability-wrapper {
               margin-top: 35px;
               display: flex;
-              gap: 20px
+              gap: 20px;
             }
             .ability {
               flex: 1;
@@ -364,10 +478,10 @@ const Index = () => {
             .ability-number {
               top: 33px;
               right: 39px;
-              color: #E2F5FF;
+              color: #e2f5ff;
               font-size: 30px;
               font-weight: bold;
-              position: absolute
+              position: absolute;
             }
             .ability-img img {
               width: 41px;
@@ -391,8 +505,8 @@ const Index = () => {
               text-decoration: none;
               color: #000;
             }
-            .readMore-btn.active{
-              color: #0FA5EF;
+            .readMore-btn.active {
+              color: #0fa5ef;
             }
             .feature-wrapper {
               display: flex;
@@ -434,14 +548,14 @@ const Index = () => {
               flex: 1;
               padding: 63px 42px 70px 61px;
               position: relative;
-              border: 1px solid #CCCCCC;
+              border: 1px solid #cccccc;
               border-radius: 5px;
             }
             .review-col span {
               top: 0;
               position: absolute;
               font-size: 25px;
-              color: #0FA5EF;
+              color: #0fa5ef;
             }
             .review-wrapper {
               margin-top: 52px;
@@ -459,7 +573,7 @@ const Index = () => {
               min-width: 70px;
               height: 70px;
               border-radius: 50%;
-              background-color: #0FA5EF;
+              background-color: #0fa5ef;
             }
             .client-info {
               display: flex;
@@ -485,11 +599,11 @@ const Index = () => {
             }
             .small-navigate span {
               width: 30px;
-              background-color: #2D2D2D;
+              background-color: #2d2d2d;
               height: 3px;
             }
             .small-navigate span.active {
-              background-color: #0FA5EF;
+              background-color: #0fa5ef;
             }
             .news-container {
               margin-top: 51px;
@@ -504,7 +618,7 @@ const Index = () => {
               flex-direction: column;
               width: 100%;
             }
-            .news-img img{
+            .news-img img {
               width: 100%;
               min-height: 250px;
               height: 250px;
@@ -532,26 +646,26 @@ const Index = () => {
             .more-btn {
               margin-top: 70px;
             }
-            .article-date {;
+            .article-date {
               height: fit-content;
-              border-right: 2px solid #D6D6D6;
+              border-right: 2px solid #d6d6d6;
               padding-right: 8px;
             }
             .article-tag {
               margin-left: 17px;
             }
-            @media screen and (min-width:901px ) {
+            @media screen and (min-width: 901px) {
               .menu-mobile {
                 display: none;
               }
             }
-  
+
             @media screen and (max-width: 900px) {
               .home-header,
               .about,
               .feature,
               .review,
-              .news  {
+              .news {
                 padding: 0 13px;
               }
               .default-title {
@@ -592,7 +706,7 @@ const Index = () => {
               .center-block {
                 align-items: flex-start;
               }
-              .review-wrapper{
+              .review-wrapper {
                 overflow-x: scroll;
                 overflow-y: hidden;
                 display: -webkit-box;
@@ -619,8 +733,8 @@ const Index = () => {
           `}
         </style>
       </div>
-    </>  
-  )
-}
+    </>
+  );
+};
 
-export default Index
+export default Index;
