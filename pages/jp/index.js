@@ -1,8 +1,8 @@
-import React from "react";
-import Head from "next/head";
-import Link from "next/link";
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
 
-import AchievementJp from "../../components/AchievementJp/AchievementJp";
+import AchievementJp from '../../components/AchievementJp/AchievementJp';
 
 const Index = () => {
   return (
