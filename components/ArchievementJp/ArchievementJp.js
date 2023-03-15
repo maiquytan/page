@@ -7,7 +7,7 @@ const AchievementJp = () => {
       <div className="achievement-subTitle">Our Achievements</div>
       <div className="achievement-container">
         <div className="achievement-img">
-          <img src="/achievementJp.webp" alt="achievement" title="achievement" width="445" height="304"/>
+          <img src="/jp/achievementJp.webp" alt="achievement" title="achievement" width="445" height="304"/>
         </div>
         <div className="achievement-right">
           <p className="achievement-text">様々なエンジニアを擁するAxalizeではWebアプリ・モバイルアプリをメインに、Webサイトや多くの開発案件を手がけています。 最近ではRPA(Robotic Process Automation)の開発にも力を入れております。</p>

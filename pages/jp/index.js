@@ -36,7 +36,7 @@ const Index = () => {
             </div>
             <div className="banner-wrapper">
               <div className="banner-img">
-                <img src="/banner.webp" alt="banner" width="957" height="497" title=""banner/>
+                <img src="/jp/banner.webp" alt="banner" width="957" height="497" title="banner"/>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Index = () => {
                 <div className="ability">
                   <div className="ability-number">01</div>
                   <div className="ability-img">
-                    <img src="/ability1.svg"  alt="ability" width="41" height="42" title="ability"/>
+                    <img src="/jp/ability1.svg"  alt="ability" width="41" height="42" title="ability"/>
                   </div>
                   <h1 className="ability-title">ラボ型開発</h1>
                   <p className="ability-content">成果物ではなく、エンジニアの人数と期間をベースにした開発を提供します。要件を固めずに契約が行えるため、柔軟に対応可能な形態で、明確なゴールのない業務（継続的な保守やメンテナンス等）向けの契約形態となります。</p>
@@ -65,7 +65,7 @@ const Index = () => {
                 <div className="ability">
                   <div className="ability-number">02</div>
                   <div className="ability-img">
-                    <img src="/ability2.svg"  alt="ability" width="41" height="42" title="ability"/>
+                    <img src="/jp/ability2.svg"  alt="ability" width="41" height="42" title="ability"/>
                   </div>
                   <h1 className="ability-title">請負・受託型開発</h1>
                   <p className="ability-content">定義した要件に基づき、期日までに成果物の完成を請け負います。 請負開発は契約の通りに開発が進むため、要件が決まっており途中での要件追加や仕様変更が発生しない案件向きの形態です。</p>
@@ -83,7 +83,7 @@ const Index = () => {
             <div className="feature-wrapper">
               <div className="feature-item">
                 <div className="feature-img">
-                 <img src="/feature1.svg" alt="feature" title ="feature" width="141" height="141"/>
+                 <img src="/jp/feature1.svg" alt="feature" title ="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
                   <h1 className="feature-header">日本人CEOと少数精鋭の高品質</h1>
@@ -92,7 +92,7 @@ const Index = () => {
               </div>
               <div className="feature-item">
                 <div className="feature-img">
-                 <img src="/feature2.svg" alt="feature" title ="feature" width="141" height="141"/>
+                 <img src="/jp/feature2.svg" alt="feature" title ="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
                   <h1 className="feature-header">短期間での開発</h1>
@@ -101,7 +101,7 @@ const Index = () => {
               </div>
               <div className="feature-item">
                 <div className="feature-img">
-                 <img src="/feature3.svg" alt="feature" title ="feature" width="141" height="141"/>
+                 <img src="/jp/feature3.svg" alt="feature" title ="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
                   <h1 className="feature-header">柔軟な対応・契約形態</h1>
@@ -110,7 +110,7 @@ const Index = () => {
               </div>
               <div className="feature-item">
                 <div className="feature-img">
-                 <img src="/feature4.svg" alt="feature" title ="feature" width="141" height="141"/>
+                 <img src="/jp/feature4.svg" alt="feature" title ="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
                   <h1 className="feature-header">日本提携会社との連携</h1>
@@ -131,7 +131,7 @@ const Index = () => {
                 <span>,,</span>
                 <div className="review-header">
                   <div className="avatar">
-                    <img src="/" atl="avatar" title="avatar" width="60" height="60"/>
+                    <img src="/jp/" atl="avatar" title="avatar" width="60" height="60"/>
                   </div>
                   <div className="client-info">
                     <h1 className="client-name">優秀な開発チームとフレキシブ ルなリソース調整</h1>
@@ -144,7 +144,7 @@ const Index = () => {
                 <span>,,</span>
                 <div className="review-header">
                   <div className="avatar">
-                    <img src="/" atl="avatar" title="avatar" width="60" height="60"/>
+                    <img src="/jp/" atl="avatar" title="avatar" width="60" height="60"/>
                   </div>
                   <div className="client-info">
                     <h1 className="client-name">クオリティが高い！</h1>
@@ -165,7 +165,7 @@ const Index = () => {
             <div className="news-container" >
               <div className="news-item">
                 <div className="news-img">
-                  <img src="/" alt="news" title="news" width="350" height="250"/>
+                  <img src="/jp/" alt="news" title="news" width="350" height="250"/>
                 </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.26</p>
@@ -178,7 +178,7 @@ const Index = () => {
               </div>
               <div className="news-item">
                 <div className="news-img">
-                  <img src="/" alt="news" title="news" width="350" height="250"/>
+                  <img src="/jp/" alt="news" title="news" width="350" height="250"/>
                 </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.20</p>
@@ -191,7 +191,7 @@ const Index = () => {
               </div>
               <div className="news-item">
                 <div className="news-img">
-                  <img src="/" alt="news" title="news" width="350" height="250"/>
+                  <img src="/jp/" alt="news" title="news" width="350" height="250"/>
                 </div>
                 <div className="article-info">
                   <p className="article-date">2023.01.20</p>
@@ -234,7 +234,7 @@ const Index = () => {
             color: #000000;
             max-width: 1431px;
             margin: auto;
-            background-image: url("/bgJp.svg");
+            background-image: url("jp//bgJp.webp");
             background-position: top;
             background-size: contain;
             }
