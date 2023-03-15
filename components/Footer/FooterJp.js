@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="introduce-inner">
           <div className="introduce-detail">
             <div className="introduce-img">
-              <img src="/introduce_img.webp" />
+              <img src="/introduce_img.webp" alt="introduce" title="introduce" width="445" height="278"/>
             </div>
             <div className="introduce-content">
               <div className="introduce-title">
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className="footer-main">
         <div className="footer-content">
-          <img src="/logo1.svg" className="footer-logo"/>
+          <img src="/logo1.svg" className="footer-logo" alt="logo" title="logo" width="226" height="38"/>
           <p className="footer-text">システム開発を通じて人それぞれにとっての新しい「価値」を実現します</p>
           <ul className="social-media-wrapper">
             <li className="social-media-icon"><img src="/line.svg" alt="icon" title="icon" width="46" height="46"/></li>

@@ -131,7 +131,7 @@ const Index = () => {
                 <span>,,</span>
                 <div className="review-header">
                   <div className="avatar">
-                    <img src="/jp/" atl="avatar" title="avatar" width="60" height="60"/>
+                    <img src="/jp/" alt="avatar" title="avatar" width="60" height="60"/>
                   </div>
                   <div className="client-info">
                     <h1 className="client-name">優秀な開発チームとフレキシブ ルなリソース調整</h1>
@@ -144,7 +144,7 @@ const Index = () => {
                 <span>,,</span>
                 <div className="review-header">
                   <div className="avatar">
-                    <img src="/jp/" atl="avatar" title="avatar" width="60" height="60"/>
+                    <img src="/jp/" alt="avatar" title="avatar" width="60" height="60"/>
                   </div>
                   <div className="client-info">
                     <h1 className="client-name">クオリティが高い！</h1>
