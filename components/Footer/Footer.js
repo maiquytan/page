@@ -8,11 +8,11 @@ const Footer = () => {
           <div className="logo-footer">
             <img src="/Asset.svg" alt="Axalize" title="Axalize" width="361" height="62" />
           </div>
-          <div>
+          <div className="contact-row">
             <img className="footer-img" src="/Email_small.svg" alt="email" title="email" width="18" height="15" />
             <label>Email: contact@axalize.vn</label>
           </div>
-          <div>
+          <div className="contact-row">
             <img className="footer-img" src="/Phone_small.svg" alt="phone" title="phone" width="17" height="17" />
             <label>Phone: (+84) 248-585-8389 </label>
           </div>
@@ -34,7 +34,7 @@ const Footer = () => {
             <li>UI/UX Design</li>
           </ul>
         </div>
-        <div>
+        <div className="footer-map">
           <div className="footer-title2">Map</div>
           <div className="map">
             <iframe id="iframe" title="Map" width="392" height="215" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6412536479356!2d105.79909331440697!3d21.00701289389737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca166c91fa7%3A0x216144e51f80907e!2zVG-DoCBuaMOgIDI1VDIsIE5ndXnhu4VuIFRo4buLIFRo4bqtcCwgVHJ1bmcgSG-DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWkgMTAwMDAwLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1581490205830!5m2!1sen!2s" ></iframe>
@@ -49,7 +49,7 @@ const Footer = () => {
           .footer {
             background: url("../footer.svg"),#131031;
             color: #FFFFFF;
-            height: 410px;
+            height: auto;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -57,6 +57,9 @@ const Footer = () => {
           }
           .footer-main {
             display: flex;
+            margin: auto;
+            max-width: 1260px;
+            height: auto;
             margin-top: 36px;
             margin-bottom: 61px;
             text-align: left;
@@ -64,6 +67,7 @@ const Footer = () => {
           }
           .footer-service {
             margin-right: 30px;
+            width: 40%;
           }
           .footer-title1,.footer-title2 {
             font-size: 20px;
@@ -80,18 +84,19 @@ const Footer = () => {
             margin-bottom: 8px;
           }
           .contact {
-            width: 361px;
-            margin-right: 88px;
+            width: 50%;
+          }
+          .logo-footer {
+            margin-bottom: 38px;
           }
           .contact>img {
             margin-bottom: 38px;
           }
-          .contact>div {
-            margin-bottom: 15px;
-          }
           .contact-row {
             display: flex;
             align-items: flex-start;
+            width: 60%;
+            margin-bottom: 15px;
           }
           .footer-img {
             margin-right: 11px;
@@ -106,7 +111,32 @@ const Footer = () => {
             margin-top: 16px;
             margin-bottom: 15px;
           }
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 1024px) {
+            .footer-main {
+              flex-wrap: wrap;
+              margin-bottom: 20px;
+            }
+            .footer-service {
+              margin: 0;
+              margin-left: 20px;
+            }
+            .footer-map {
+              width: 90%;
+              margin-right: 20px;
+            }
+            .map {
+              width: 100%;
+              height: auto;
+              aspect-ratio: 2;
+    	        object-fit: cover;
+              margin-bottom: 20px;
+            }
+            .map>iframe {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          @media screen and (max-width: 768px) {
             .footer {
               height: auto;
               width: 100%;
@@ -116,13 +146,30 @@ const Footer = () => {
               width: 90%;
               margin: auto;
             }
+            .logo-footer {
+              padding-bottom: 32px;
+            }
+            .contact {
+              width: auto;
+            }
+            .contact-row {
+              width: 100%;
+            }
+            .footer-map {
+              width: auto;
+              margin: 0;
+              margin-bottom: 30px;
+            }
             .map {
               width: 100%;
-              max-width: 370px;
+              height: auto;
+              aspect-ratio: 2;
+    	        object-fit: cover;
               margin-bottom: 20px;
             }
             .map>iframe {
               width: 100%;
+              height: 100%;
             }
             .logo-footer {
               width: 75%;
@@ -133,6 +180,8 @@ const Footer = () => {
               width: 100%;
             }
             .footer-service {
+              width: auto;
+              margin: 0;
               margin-top: 35px;
               margin-bottom: 25px;
             }

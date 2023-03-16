@@ -2,14 +2,22 @@ import React from 'react'
 
 const Team = () => {
   const listBoss = [
-    { name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
-    job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.' },
-    { name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
-    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.' },
-    { name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
-    job: 'Backend developer', describe: 'Building innovative backend solutions to power your business and drive success.' },
-    { name: 'Cong Luu', image: '/LuuCong.webp', icon: '/icon_backend.svg',
-    job: 'Backend developer', describe: 'Creating robust and scalable backend systems to meet your business needs and exceed your expectations.' },
+    {
+      name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
+      job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.'
+    },
+    {
+      name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
+      job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+    },
+    {
+      name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
+      job: 'Backend developer', describe: 'Building innovative backend solutions to power your business and drive success.'
+    },
+    {
+      name: 'Cong Luu', image: '/LuuCong.webp', icon: '/icon_backend.svg',
+      job: 'Backend developer', describe: 'Creating robust and scalable backend systems to meet your business needs and exceed your expectations.'
+    },
   ]
   return (
     <div className="team">
@@ -18,9 +26,9 @@ const Team = () => {
       {/* Header */}
       <div className="bg-header">
         <div className="img-header">
-        <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
         </div>
-        <div className="about-header">
+        <div className="about-header container">
           <div className="header-title">Our Team</div>
           <div className="header-content">
             <div className="header-left">Meet the talented and dedicated individuals behind Axalize's success.</div>
@@ -32,7 +40,7 @@ const Team = () => {
       </div>
 
       {/* Introduce */}
-      <div className="introduce">
+      <div className="introduce container">
         <div className="introduce-left">
           <div className="one-introduce">
             <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
@@ -69,9 +77,11 @@ const Team = () => {
       </div>
 
       {/* Meet */}
-      <div className="meet">
-        <div className="bar"></div>
-        <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
+      <div className="meet container">
+        <div>
+          <div className="bar"></div>
+          <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
+        </div>
         <div className="meet-main">
           {listBoss.map((list, index) => (
             <div className="boss" key={index}>
@@ -101,6 +111,11 @@ const Team = () => {
           .h1 {
             display: none;
           }
+          .container {
+            max-width: 1260px;
+            display: flex;
+            padding: 0 30px;
+          }
           .bg-header {
             position: relative;
             width: 100%;
@@ -109,8 +124,15 @@ const Team = () => {
           .img-header {
             position: absolute;
             right: 0;
-            top: 118px;
+            top: 78px;
             z-index: 1;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3;
+    	      object-fit: cover;
+          }
+          .img-header>img {
+            width: 100%;
           }
           .about-header {
             position: relative;
@@ -127,8 +149,7 @@ const Team = () => {
             background-image: url("../Ellipse.svg");
             background-size: cover;
             background-repeat: no-repeat;
-            width: 28%;
-            height: 103px;
+            padding: 25px 75px;
             font-size: 43px;
             display: flex;
             justify-content: center;
@@ -143,7 +164,6 @@ const Team = () => {
           .header-content {
             display: flex;
             justify-content: space-between;
-            max-width: 1260px;
             margin-bottom: 50px;
           }
           .header-left {
@@ -169,7 +189,7 @@ const Team = () => {
             max-width: 1260px;
             margin: auto;
             display: flex;
-            gap: 2%;
+            justify-content: space-between;
             margin-bottom: 145px;
           }
           .introduce-left {
@@ -184,14 +204,11 @@ const Team = () => {
             background: #F8F8F8;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
+            padding: 0 35px;
           }
           .one-introduce>img {
-            margin-left: 35px;
             margin-right: 22px;
             margin-bottom: 10px;
-          }
-          .introduce-content {
-            width: 71%;
           }
           .introduce-content>h2 {
             font-weight: 600;
@@ -221,8 +238,10 @@ const Team = () => {
 
           //Meet----------------------------
           .meet {
+            flex-direction: column;
             max-width: 1260px;
             margin: auto;
+            padding: 0 30px;
             padding-bottom: 95px;
           }
           .bar {
@@ -271,7 +290,7 @@ const Team = () => {
           .bg-meet > p {
             padding-left: 36px;
             margin-bottom: 30px;
-            width: 40%;
+            width: 20%;
           }
           .icon-meet {
             position: relative;
@@ -299,9 +318,23 @@ const Team = () => {
             line-height: 18px;
             color: #525252;
           }
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 1260px) {
+            .meet-main {
+              flex-wrap: wrap;
+            }
+            .boss {
+              width: 30%;
+              margin-bottom: 12px;
+            }
+          }
+          @media screen and (max-width: 1024px) {
+            .container {
+              padding: 0 30px;
+            }
             .about-header {
+              width: 100%;
               height: auto;
+              padding: 0;
               margin-top: 50px;
               justify-content: normal;
             }
@@ -320,6 +353,7 @@ const Team = () => {
             .header-title {
               margin-top: 10%;
               background: none;
+              padding: 0;
               width: 100%;
               height: auto;
               text-align: center;
@@ -355,10 +389,7 @@ const Team = () => {
             }
             .introduce-left,.introduce-right {
               width: auto;
-              padding: 5px 12px;
-            }
-            .meet {
-              padding: 0 12px;
+              padding: 5px 0;
             }
             .meet-main {
               flex-wrap: wrap;
@@ -368,7 +399,21 @@ const Team = () => {
               margin-bottom: 12px;
             }
           }
-          @media screen and (max-width: 600px) {
+          @media screen and (max-width: 768px) {
+            .container {
+              padding: 0 20px;
+            }
+            .about-header {
+              padding: 0;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .container {
+              padding: 0 12px;
+            }
+            .about-header {
+              padding: 0;
+            }
             .img-header {
               width: 200%;
               height: auto;

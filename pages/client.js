@@ -6,11 +6,11 @@ const Client = () => {
       <h1 className="h1">** Our Clients screen **</h1>
 
       {/* Header */}
-      <div className="bg-header">
+      <div className="bg-header session">
         <div className="img-header">
           <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
         </div>
-        <div className="about-header">
+        <div className="about-header container">
           <div className="header-title">Our Clients</div>
           <div className="header-content">
             <div className="header-left">Unlocking your growth potential with dedication and responsiveness</div>
@@ -22,8 +22,8 @@ const Client = () => {
       </div>
 
       {/* Mobile, Web */}
-      <div className="bg-mobile-web">
-        <div className="mobile-web">
+      <div className="bg-mobile-web session">
+        <div className="mobile-web container">
           <div className="mobile-web-header">Customized Software Solutions for Web and Mobile: Axalize's Commitment to Innovation and Versatility</div>
           <div className="mobile-web-content">At Axalize, we are dedicated to providing customized
             software solutions that meet the unique needs of each client. With a focus on web and
@@ -43,21 +43,29 @@ const Client = () => {
           <div className="reason-content">
             <div className="two-reason">
               <div className="one-reason">
-                <img src="/img_reason1.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                <div className="img-one-reason">
+                  <img src="/img_reason1.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                </div>
                 <p>We prioritize a customer-centric approach, always working closely with our clients to understand their unique needs and deliver tailored solutions</p>
               </div>
               <div className="one-reason">
-                <img src="/img_reason2.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                <div className="img-one-reason">
+                  <img src="/img_reason2.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                </div>
                 <p>Our deep expertise in offshore software development allows us to deliver cutting-edge results that drive real business value.</p>
               </div>
             </div>
             <div className="two-reason">
               <div className="one-reason">
-                <img src="/img_reason3.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                <div className="img-one-reason">
+                  <img src="/img_reason3.svg" alt="img-reason" title="img-reason" width="115" height="115" />
+                </div>
                 <p>Our focus on quality and attention to detail sets us apart, ensuring that every project is delivered on time and within budget.</p>
               </div>
               <div className="one-reason">
+              <div className="img-one-reason">
                 <img src="/img_reason4.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                </div>
                 <p>Our team is comprised of highly skilled and knowledgeable professionals who are passionate about delivering innovative solutions that drive success for our clients.</p>
               </div>
             </div>
@@ -69,21 +77,22 @@ const Client = () => {
       </div>
 
       {/* Expert */}
-      <div className="expert">
-        <div className="expert-left">
-          <div className="expert-header">Expert software solutions driving business success.</div>
-          <div className="bar blue"></div>
-          <p className="expert-content">With deep expertise in over 50 projects, Axalize operates
-            under a quality-driven model. We leverage innovative technical knowledge to deliver
-            cutting-edge, timely, and valuable solutions. At Axalize, we prioritize a customer-centric
-            approach, ensuring that our core values align with those of our clients to deliver results
-            that truly drive business success.</p>
-        </div>
-        <div className="expert-right">
-          <img src="/Group23.webp" alt="img-expert" title="img-expert" width="605" height="663" />
+      <div className="session">
+        <div className="expert container">
+          <div className="expert-left">
+            <div className="expert-header">Expert software solutions driving business success.</div>
+            <div className="bar blue"></div>
+            <p className="expert-content">With deep expertise in over 50 projects, Axalize operates
+              under a quality-driven model. We leverage innovative technical knowledge to deliver
+              cutting-edge, timely, and valuable solutions. At Axalize, we prioritize a customer-centric
+              approach, ensuring that our core values align with those of our clients to deliver results
+              that truly drive business success.</p>
+          </div>
+          <div className="expert-right">
+            <img src="/Group23.webp" alt="img-expert" title="img-expert" width="605" height="663" />
+          </div>
         </div>
       </div>
-
       {/* Feedback */}
       <div className="bg-feedback">
         <div className="bg-feedback2">
@@ -180,20 +189,26 @@ const Client = () => {
             width: 100%;
             overflow: hidden;
           }
+          .session {
+            padding: 0 30px;
+            box-sizing: border-box;
+          }
+          .container {
+            max-width: 1260px;
+            width: 100%;
+            display: flex;
+            margin: auto;
+          }
           .img-header {
             position: absolute;
             right: 0;
-            top: 118px;
+            top: 78px;
             z-index: 1;
           }
           .about-header {
             position: relative;
             height: calc(100vh - 118px);
-            max-width: 1260px;
-            width: 66%;
-            margin: auto;
-            margin-top: 118px;
-            display: flex;
+            margin-top: 78px;
             flex-direction: column;
             align-items: flex-start;
             z-index: 2;
@@ -202,8 +217,7 @@ const Client = () => {
             background-image: url("../Ellipse.svg");
             background-size: cover;
             background-repeat: round;
-            width: 28%;
-            height: 103px;
+            padding: 25px 75px;
             font-size: 43px;
             display: flex;
             justify-content: center;
@@ -246,14 +260,17 @@ const Client = () => {
             background: url("../61769.webp");
             background-size: cover;
             background-repeat: no-repeat;
-            width: 66%;
-            margin: auto;
             border-radius: 15px;
+            max-width: 1260px;
+            margin: auto;
             margin-bottom: 90px;
-          }
 
+          }
+          .mobile-web {
+            flex-direction: column;
+          }
           .mobile-web-header {
-            width: 80%;
+            width: 90%;
             margin: auto;
             padding-top: 60px;
             margin-bottom: 40px;
@@ -262,7 +279,7 @@ const Client = () => {
             color: #1365B1;
           }
           .mobile-web-content {
-            margin-left: 10%;
+            margin-left: 5%;
             width: 40%;
             font-size: 16px;
             line-height: 24px;
@@ -291,6 +308,7 @@ const Client = () => {
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            padding: 0 30px;
             position: relative;
             z-index: 2;
             margin: auto;
@@ -327,12 +345,18 @@ const Client = () => {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
           }
-          .one-reason>img {
+          .img-one-reason {
+            margin: auto;
             margin-top: 58px;
             margin-bottom: 35px;
+            width: 35%;
             height: auto;
             aspect-ratio: 1;
-            object-fit: cover;
+    	      object-fit: cover;
+          }
+          .img-one-reason>img {
+            width: 100%;
+            height: 100%;
           }
           .one-reason>p {
             width: 74.5%;
@@ -352,6 +376,7 @@ const Client = () => {
             margin-bottom: 100px;
           }
           .expert-left {
+            width: 50%;
             margin-left: 25px;
           }
           .expert-header {
@@ -381,18 +406,26 @@ const Client = () => {
             color: #525252;
           }
           .expert-right {
-            margin-right: 25px;
+            width: 48%;
+            height: auto;
+            aspect-ratio: 0.9;
+    	      object-fit: cover;
+          }
+          .expert-right>img {
+            width: 100%;
+            height: 100%;
           }
 
           //Feedback---------------------
           .bg-feedback {
             height: auto;
             background: #FFFFFF;
-            padding-bottom: 550px;
+            padding-bottom: 450px;
           }
           .bg-feedback2 {
             background: #1466B1;
             height: 650px;
+            padding: 0 30px;
           }
           .feedback {
             max-width: 1260px;
@@ -472,7 +505,7 @@ const Client = () => {
             color: #1466B1;
             margin-bottom: 75px;
           }
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 1024px) {
             .about-header {
               width: 100%;
               height: auto;
@@ -495,7 +528,7 @@ const Client = () => {
               margin-top: 10%;
               background: none;
               width: 100%;
-              height: auto;
+              padding: 0;
               text-align: center;
               top: 0;
               left: 0;
@@ -550,12 +583,10 @@ const Client = () => {
             }
             .reason-content {
               flex-direction: column;
-              padding: 0 20px;
               gap: 2%;
               margin-bottom: 30px;
             }
-            .one-reason>img {
-              max-width: 33%;
+            .img-one-reason {
               margin-top: 25px;
               margin-bottom: 15px;
             }
@@ -567,16 +598,13 @@ const Client = () => {
               flex-direction: column;
             }
             .expert-left {
+              width: auto;
               margin: 0;
               margin-bottom: 20px;
             }
             .expert-header,.expert-content,.expert-right {
               width: auto;
-              padding: 0 12px;
               margin: 0;
-            }
-            .blue {
-              margin: 12px;
             }
             .expert-right {
               display: flex;
@@ -585,6 +613,7 @@ const Client = () => {
             //----------------------------
             .bg-feedback {
               background: #1667B2;
+              padding-bottom: 550px;
             }
             .feedback {
               padding: 0 12px;
@@ -644,7 +673,10 @@ const Client = () => {
               margin: 0;
             }
           }
-          @media screen and (max-width: 600px) {
+          @media screen and (max-width: 480px) {
+            .session {
+              padding: 0 12px;
+            }
             .img-header {
               width: 200%;
               height: auto;
@@ -665,7 +697,7 @@ const Client = () => {
               padding: 0 24px;
               padding-bottom: 40px;
             }
-            .reason-content {
+            .reason {
               padding: 0 12px;
             }
             .reason-header {
@@ -707,6 +739,12 @@ const Client = () => {
               height: 100%;
             }
             //-----------------------
+            .bg-feedback {
+              padding-bottom: 500px;
+            }
+            .bg-feedback2 {
+              padding: 0;
+            }
             .feedback-header {
               padding-top: 35px;
             }

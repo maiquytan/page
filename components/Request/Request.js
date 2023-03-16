@@ -33,14 +33,12 @@ const Request = () => {
             <div className="request-input">
               <input type="text" placeholder="First name" />
               <input type="text" placeholder="Last name" />
-            </div>
-            <div className="request-input">
               <input type="text" placeholder="Phone number" />
               <input type="text" placeholder="Your email" />
             </div>
-            <input className="request-input1" type="text" placeholder="Your company" />
+              <input className="input-company" type="text" placeholder="Your company" />
             <div className="service-budget">
-              <div>
+              <div className="service-budget-container">
                 <div>Service: </div>
                 <div className="service">
                   <input id="check" type="checkbox" className="checkbox" />
@@ -74,7 +72,7 @@ const Request = () => {
                 </div>
               </div>
               <div className="hr-dahed"></div>
-              <div>
+              <div className="service-budget-container">
                 <div>Budget</div>
                 <label className="budget">Below 25k
                   <input type="radio" name="radio" />
@@ -114,10 +112,10 @@ const Request = () => {
               <div>Tell us about your project</div>
               <textarea className="tell-input" type="text" placeholder="Please write here..." />
             </div>
-            <button className="upload">
+            <div className="upload">
               <img src="upload.svg" alt="upload" title="upload" width="19" height="19" />
-              <label>Upload files</label>
-            </button>
+              <input className="custom-file-input" type="file"/>
+            </div>
             <button className="btn-request">Request a Quote</button>
           </div>
         </div>
@@ -129,13 +127,16 @@ const Request = () => {
             background: url("../ceo_bg.webp");
             background-size: cover;
             background-position: center;
-            height: 1250px;
+            height: auto;
           }
           .infor-request {
             display: flex;
             justify-content: space-between;
             max-width: 1260px;
             margin: auto;
+            height: auto;
+            padding: 0 30px;
+            padding-bottom: 70px;
           }
           .item {
             color: #1E1E1E;
@@ -157,7 +158,6 @@ const Request = () => {
           }
           .information {
             width: 35%;
-            max-width: 445px;
           }
           .information-header {
             padding-top: 65px;
@@ -195,12 +195,10 @@ const Request = () => {
             width: 58%;
           }
           .request-form {
-            max-width: 740px;
             height: 1030px;
             background: #FFFFFF;
             border-radius: 10px;
             padding: 0 35px;
-
           }
           .request-header {
             font-size: 18px;
@@ -209,36 +207,39 @@ const Request = () => {
           }
           .request-input {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            gap: 2%;
+
           }
-          .request-input>input,.request-input1,.tell-input  {
+          .request-input>input,.input-company,.tell-input {
             background: #F3F3F3;
             border-radius: 5px;
-            width: 48%;
+            width: 42%;
             height: 46px;
-            margin-bottom: 21px;
             border: none;
             outline: none;
-            padding-left: 20px;
+            padding: 0 20px;
             font-size: 16px;
             font-family: 'Inter', sans-serif;
+            margin-bottom: 20px;
           }
-          .request-input1 {
-            width: calc(100% - 22px);
+          .input-company {
+            width: -webkit-fill-available;
             margin-bottom: 37px;
           }
           .request-input>input: : placeholder, .request-input1: : placeholder, .tell-input: : placeholder {
             color: #8E8E8E;
           }
-
+          .service-budget-container {
+            width: 50%;
+          }
           .service-budget {
             display: flex;
           }
           .hr-dahed {
             width: 0px;
             height: 320px;
-            margin: 35px 20px 0px 55px ;
+            margin: 35px 20px 0px 35px ;
             border: 1px dashed #6D6D6D;
           }
           .service {
@@ -260,13 +261,12 @@ const Request = () => {
             background: #FFFFFF;
             margin-right: 10px;
           }
-          .checkbox: checked~ .span  {
+          .checkbox:checked~ .span  {
             background-repeat: no-repeat, repeat;
             background-image: url("../Checkbox.svg");
             background-position: center;
           }
-
-          .span  {
+          .span {
             margin-bottom: 0px;
             margin-right: 10px;
             cursor: pointer;
@@ -283,11 +283,12 @@ const Request = () => {
           }
           .service-content {
             margin-left: 5px;
+            width: 90%;
             max-width: 220px;
           }
 
           //custom radio-----------------------------------
-          .budget  {
+          .budget {
             display: block;
             position: relative;
             padding-left: 35px;
@@ -300,12 +301,12 @@ const Request = () => {
             -ms-user-select: none;
             user-select: none;
           }
-          .budget>input  {
+          .budget>input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
           }
-          .checkmark  {
+          .checkmark {
             position: absolute;
             top: 0;
             left: 0;
@@ -314,20 +315,20 @@ const Request = () => {
             background-color: #eee;
             border-radius: 50%;
           }
-          .budget>input: checked ~ .checkmark  {
+          .budget>input:checked ~ .checkmark {
             background-color: #FC721E;
           }
-          .checkmark: after  {
+          .checkmark:after {
             content: "";
             position: absolute;
             display: none;
           }
-          .budget>input: checked ~ .checkmark: after  {
+          .budget>input:checked ~ .checkmark:after {
             display: block;
             height: 11px;
             width: 11px;
           }
-          .budget .checkmark: after  {
+          .budget .checkmark:after  {
             top: 3px;
             left: 3px;
             width: 8px;
@@ -351,7 +352,6 @@ const Request = () => {
             display: flex;
             align-items: flex-start;
           }
-
           .upload {
             width: 100%;
             height: 45px;
@@ -359,24 +359,47 @@ const Request = () => {
             align-items: center;
             text-align: left;
             border-radius: 5px;
-            border: none;
+            border: 1px solid #000;
             cursor: pointer;
           }
           .upload>img {
             margin-left: 25px;
             margin-right: 9px;
           }
+          .custom-file-input {
+            color: transparent;
+            width: 90%;
+          }
+          .custom-file-input::-webkit-file-upload-button {
+            visibility: hidden;
+          }
+          .custom-file-input::before {
+            content: 'Upload files';
+            width: 100%;
+            color: black;
+            display: inline-block;
+            border-radius: 3px;
+            padding: 5px 8px;
+            outline: none;
+            white-space: nowrap;
+            -webkit-user-select: none;
+            cursor: pointer;
+            text-shadow: 1px 1px #fff;
+            font-size: 17px;
+          }
           .btn-request {
             color: #FFFFFF;
             background: #FC721E;
             width: 100%;
             height: 45px;
+            font-size: 18px;
+            font-weight: 500px;
             margin-top: 30px;
             border-radius: 5px;
             border: none;
             cursor: pointer;
           }
-          @media screen and (max-width: 900px ) {
+          @media screen and (max-width: 1024px ) {
             .infor-request-bg {
               height: auto;
             }
@@ -385,11 +408,11 @@ const Request = () => {
               height: auto;
             }
             .information,.request {
-              width: 94%;
-              max-width: 900px;
-              margin: auto;
+              margin: 0;
+              width: auto;
               height: auto;
             }
+
             .information-header {
               display: flex;
               flex-direction: column;
@@ -398,6 +421,9 @@ const Request = () => {
             }
             .information-content {
               color: #666666;
+            }
+            .service-budget-container {
+              width: 80%;
             }
             .infor-address {
               font-size: 21px;
@@ -412,8 +438,9 @@ const Request = () => {
             .request-input {
               flex-direction: column;
             }
-            .request-input>input,.request-input1 {
-              width: 94%;
+            .request-input>input,.input-company,.tell-input {
+              width: -webkit-fill-available;
+              margin-bottom: 20px;
             }
             .service-budget {
               flex-direction: column;
@@ -430,6 +457,11 @@ const Request = () => {
             .btn-request {
               margin-top: 20px;
               margin-bottom: 30px;
+            }
+          }
+          @media screen and (max-width: 480px ) {
+            .infor-request {
+              padding: 0 12px;
             }
           }
         `}

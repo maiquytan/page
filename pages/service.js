@@ -13,7 +13,7 @@ const Service = () => {
         <div className="img-header-mobile">
           <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
-        <div className="service-header">
+        <div className="service-header container">
           <div className="header-title">Our Service</div>
           <div className="header-content">
             <div className="header-left">At Axalize Incorporated, we are dedicated to providing top-notch IT outsourcing and offshore services that meet the unique needs of our clients. Our services are designed to support businesses in a wide range of industries, and we work closely with each of our clients to ensure that their IT needs are met.</div>
@@ -25,8 +25,8 @@ const Service = () => {
       </div>
 
       { /* Mobile, Web */}
-      <div className="bg-mobile-web">
-        <div className="mobile-web">
+      <div className="bg-mobile-web ">
+        <div className="mobile-web container">
           <div className="mobile-web-header">Transform your business with Axalize incorporated's tailored IT outsourcing services</div>
           <div className="mobile-web-content">
             <p>Whether you are looking to outsource IT for the first time or you are an established business seeking to improve your existing services, our team of experts is here to help. We are committed to delivering high-quality solutions through collaboration and close partnerships, and we are dedicated to helping our clients achieve their goals.</p>
@@ -44,84 +44,86 @@ const Service = () => {
           <div className="crossbar1"></div>
           <div className="crossbar2"></div>
         </div>
-        <div className="services-row-1">
-          <div className="service-img">
-            <img src="/web.svg" alt="web" title="web" width="419" height="419" />
+        <div className="services-container container">
+          <div className="services-row-1">
+            <div className="service-img">
+              <img src="/web.svg" alt="web" title="web" width="419" height="419" />
+            </div>
+            <div className="content-right">
+              <div className="services-title">Web application development</div>
+              <div className="services-content">Our web application development services are designed to meet the unique needs of your business. We focus on delivering high-quality solutions that are robust, scalable, and secure. Our team of experts has extensive experience in a wide range of technologies, allowing us to deliver customized solutions that meet your specific requirements.<br></br>
+                At Axalize Incorporated, we understand that quality and collaboration are key to success. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Whether you need a simple website or a complex web application, our team is here to help.</div>
+            </div>
           </div>
-          <div className="content-right">
-            <div className="services-title">Web application development</div>
-            <div className="services-content">Our web application development services are designed to meet the unique needs of your business. We focus on delivering high-quality solutions that are robust, scalable, and secure. Our team of experts has extensive experience in a wide range of technologies, allowing us to deliver customized solutions that meet your specific requirements.<br></br>
-              At Axalize Incorporated, we understand that quality and collaboration are key to success. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Whether you need a simple website or a complex web application, our team is here to help.</div>
+          <div className="services-row-2">
+            <div className="content-left">
+              <div className="services-title">Mobile app development</div>
+              <div className="services-content">Our mobile app development services are designed to help organizations create engaging and user-friendly mobile experiences for their customers. Whether you need a native app for Android or iOS, or a cross-platform solution, our team of experts has the skills and experience to deliver the right solution for your business.<br></br>
+                Quality and collaboration are at the heart of everything we do. We work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a mobile app that is not only functional but also user-friendly and engaging, driving business growth and customer satisfaction.</div>
+            </div>
+            <div className="service-img"  >
+              <img src="/mobile_app.svg" alt="mobile-app" title="mobile-app" width="419" height="419" />
+            </div>
           </div>
-        </div>
-        <div className="services-row-2">
-          <div className="content-left">
-            <div className="services-title">Mobile app development</div>
-            <div className="services-content">Our mobile app development services are designed to help organizations create engaging and user-friendly mobile experiences for their customers. Whether you need a native app for Android or iOS, or a cross-platform solution, our team of experts has the skills and experience to deliver the right solution for your business.<br></br>
-              Quality and collaboration are at the heart of everything we do. We work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a mobile app that is not only functional but also user-friendly and engaging, driving business growth and customer satisfaction.</div>
+          <div className="services-row-1">
+            <div className="service-img">
+              <img className="margin-img" src="/RPA.svg" alt="RPA" title="RPA" width="419" height="301" />
+            </div>
+            <div className="content-right">
+              <div className="services-title">RPA development</div>
+              <div className="services-content">Our RPA development services help organizations automate repetitive and time-consuming tasks, increasing efficiency and freeing up resources. Whether you need to automate manual processes, streamline workflows, or improve data management, our team of experts can help.<br></br>
+                At Axalize Incorporated, we understand the importance of quality and collaboration in RPA development. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver tailored solutions that meet their specific needs. Our goal is to help you achieve your business objectives through efficient and effective RPA implementation.</div>
+            </div>
           </div>
-          <div className="service-img"  >
-            <img src="/mobile_app.svg" alt="mobile-app" title="mobile-app" width="419" height="419" />
+          <div className="services-row-2">
+            <div className="content-left">
+              <div className="services-title">Dedicated development teams</div>
+              <div className="services-content">Our dedicated development teams offer a flexible and cost-effective solution for organizations that require a high level of technical expertise. Whether you need a team of developers to work on a specific project, or you are looking to establish a long-term partnership, our dedicated development teams can help.<br></br>
+                Quality and collaboration are at the core of our dedicated development teams. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to provide a flexible and cost-effective solution that meets the specific needs of your business.</div>
+            </div>
+            <div className="service-img">
+              <img src="/dedicated_teams.svg" className="margin-img" alt="dedicated-teams" title="dedicated-teams" width="419" height="301" />
+            </div>
           </div>
-        </div>
-        <div className="services-row-1">
-          <div className="service-img">
-            <img className="margin-img" src="/RPA.svg" alt="RPA" title="RPA" width="419" height="301" />
+          <div className="services-row-1">
+            <div className="service-img">
+              <img src="/Offshore_center.svg" className="offshore-center" alt="offshore-center" title="offshore-center" width="419" height="300" />
+            </div>
+            <div className="content-right">
+              <div className="services-title">Offshore development center</div>
+              <div className="services-content">Our offshore development center provides a secure and reliable outsourcing solution for businesses looking to reduce costs and improve efficiency. Whether you need software development, digital transformation, or IT support, our offshore development center can help.<br></br>
+                Quality and collaboration are key to the success of our offshore development center. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to provide a secure and reliable outsourcing solution that meets the specific needs of your business.</div>
+            </div>
           </div>
-          <div className="content-right">
-            <div className="services-title">RPA development</div>
-            <div className="services-content">Our RPA development services help organizations automate repetitive and time-consuming tasks, increasing efficiency and freeing up resources. Whether you need to automate manual processes, streamline workflows, or improve data management, our team of experts can help.<br></br>
-              At Axalize Incorporated, we understand the importance of quality and collaboration in RPA development. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver tailored solutions that meet their specific needs. Our goal is to help you achieve your business objectives through efficient and effective RPA implementation.</div>
+          <div className="services-row-2">
+            <div className="content-left">
+              <div className="services-title">Lifecycle maintenance</div>
+              <div className="services-content">Our lifecycle maintenance services ensure that your IT systems remain secure, stable, and up-to-date over time. Whether you need ongoing support, bug fixes, or software upgrades, our team of experts can help.<br></br>
+                At Axalize Incorporated, we understand that quality and collaboration are key to effective lifecycle maintenance. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you keep your IT systems running smoothly, so you can focus on growing your business</div>
+            </div >
+            <div className="service-img">
+              <img src="/Lifecycle.svg" alt="lifecycle" title="lifecycle" width="419" height="419" />
+            </div>
           </div>
-        </div>
-        <div className="services-row-2">
-          <div className="content-left">
-            <div className="services-title">Dedicated development teams</div>
-            <div className="services-content">Our dedicated development teams offer a flexible and cost-effective solution for organizations that require a high level of technical expertise. Whether you need a team of developers to work on a specific project, or you are looking to establish a long-term partnership, our dedicated development teams can help.<br></br>
-              Quality and collaboration are at the core of our dedicated development teams. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to provide a flexible and cost-effective solution that meets the specific needs of your business.</div>
+          <div className="services-row-1">
+            <div className="service-img">
+              <img src="/devops.svg" alt="devops" className="margin-img" title="devops" width="419" height="419" />
+            </div>
+            <div className="content-right">
+              <div className="services-title">DevOps development and operations</div>
+              <div className="services-content">Our DevOps services help organizations to improve the speed and reliability of their software delivery process. By combining development and operations, Axalize Incorporated can help you to automate your software delivery pipeline, increase collaboration between teams, and reduce the time it takes to get new features and fixes to your customers.<br></br>
+                Quality and collaboration are at the heart of our DevOps services at Axalize Incorporated. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to help you achieve your business objectives by delivering high-quality software solutions quickly and efficiently.</div>
+            </div>
           </div>
-          <div className="service-img">
-            <img src="/dedicated_teams.svg" className="margin-img" alt="dedicated-teams" title="dedicated-teams" width="419" height="301" />
-          </div>
-        </div>
-        <div className="services-row-1">
-          <div className="service-img">
-            <img src="/Offshore_center.svg" className="offshore-center" alt="offshore-center" title="offshore-center" width="419" height="300" />
-          </div>
-          <div className="content-right">
-            <div className="services-title">Offshore development center</div>
-            <div className="services-content">Our offshore development center provides a secure and reliable outsourcing solution for businesses looking to reduce costs and improve efficiency. Whether you need software development, digital transformation, or IT support, our offshore development center can help.<br></br>
-              Quality and collaboration are key to the success of our offshore development center. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to provide a secure and reliable outsourcing solution that meets the specific needs of your business.</div>
-          </div>
-        </div>
-        <div className="services-row-2">
-          <div className="content-left">
-            <div className="services-title">Lifecycle maintenance</div>
-            <div className="services-content">Our lifecycle maintenance services ensure that your IT systems remain secure, stable, and up-to-date over time. Whether you need ongoing support, bug fixes, or software upgrades, our team of experts can help.<br></br>
-              At Axalize Incorporated, we understand that quality and collaboration are key to effective lifecycle maintenance. That's why we work closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you keep your IT systems running smoothly, so you can focus on growing your business</div>
-          </div >
-          <div className="service-img">
-            <img src="/Lifecycle.svg" alt="lifecycle" title="lifecycle" width="419" height="419" />
-          </div>
-        </div>
-        <div className="services-row-1">
-          <div className="service-img">
-            <img src="/devops.svg" alt="devops" className="margin-img" title="devops" width="419" height="419" />
-          </div>
-          <div className="content-right">
-            <div className="services-title">DevOps development and operations</div>
-            <div className="services-content">Our DevOps services help organizations to improve the speed and reliability of their software delivery process. By combining development and operations, Axalize Incorporated can help you to automate your software delivery pipeline, increase collaboration between teams, and reduce the time it takes to get new features and fixes to your customers.<br></br>
-              Quality and collaboration are at the heart of our DevOps services at Axalize Incorporated. We understand the importance of building strong relationships with our clients, and we work closely with them to understand their needs and goals. Our goal is to help you achieve your business objectives by delivering high-quality software solutions quickly and efficiently.</div>
-          </div>
-        </div>
-        <div className="services-row-2">
-          <div className="content-left">
-            <div className="services-title">UI/UX Design</div>
-            <div className="services-content">Our UI/UX design services are designed to help organizations create engaging and user-friendly digital experiences for their customers. Whether you need to design a website, mobile app, or software application, our team of experts has the skills and experience to deliver the right solution for your business.<br></br>
-              Quality and collaboration are key to our UI/UX design services. We understand the importance of working closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a digital experience that is not only functional but also engaging, driving business growth and customer satisfaction.</div>
-          </div>
-          <div className="service-img">
-            <img src="/UI_UX.svg" className="margin-img" alt="UI-UX" title="UI-UX" width="419" height="419" />
+          <div className="services-row-2">
+            <div className="content-left">
+              <div className="services-title">UI/UX Design</div>
+              <div className="services-content">Our UI/UX design services are designed to help organizations create engaging and user-friendly digital experiences for their customers. Whether you need to design a website, mobile app, or software application, our team of experts has the skills and experience to deliver the right solution for your business.<br></br>
+                Quality and collaboration are key to our UI/UX design services. We understand the importance of working closely with our clients to understand their needs and goals, and we use our expertise to deliver solutions that meet their specific needs. Our goal is to help you create a digital experience that is not only functional but also engaging, driving business growth and customer satisfaction.</div>
+            </div>
+            <div className="service-img">
+              <img src="/UI_UX.svg" className="margin-img" alt="UI-UX" title="UI-UX" width="419" height="419" />
+            </div>
           </div>
         </div>
       </div>
@@ -135,6 +137,13 @@ const Service = () => {
           .h1 {
             display: none;
           }
+          .container {
+            max-width: 1260px;
+            margin: auto;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 0 20px;
+          }
           .bg-header {
             position: relative;
             width: 100%;
@@ -143,8 +152,16 @@ const Service = () => {
           .img-header-pc,.img-header-mobile {
             position: absolute;
             right: 0;
-            top: 118px;
+            top: 78px;
             z-index: 1;
+            width: 70%;
+            height: auto;
+            aspect-ratio: 2.5;
+    	      object-fit: cover;
+          }
+          .img-header-pc>img {
+            width: 100%;
+            height: 100%;
           }
           .img-header-mobile {
             display: none;
@@ -154,7 +171,7 @@ const Service = () => {
             height: calc(100vh - 118px);
             max-width: 1260px;
             margin: auto;
-            margin-top: 118px;
+            margin-top: 78px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -176,6 +193,7 @@ const Service = () => {
           }
           .header-content {
             display: flex;
+            justify-content: space-between;
             margin-top: 35px;
             max-width: 1260px;
           }
@@ -190,17 +208,21 @@ const Service = () => {
             color: #494949;
           }
           .header-right {
-            width: 60%;
+            width: 58%;
+            height: auto;
+            aspect-ratio: 2.3;
+    	      object-fit: cover;
           }
           .header-right>img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
           }
 
           //Mobile-web----------------------------
           .bg-mobile-web {
             background: url("../bg_mobile_web.webp");
             background-size: cover;
-            width: 66%;
+            max-width: 1260px;
             margin: auto;
             border-radius: 15px;
           }
@@ -232,6 +254,9 @@ const Service = () => {
           .our-services {
             padding-bottom: 250px;
             background: #FFFFFF;
+          }
+          .services-container {
+            gap: 30px;
           }
           .services-header {
             display: flex;
@@ -265,9 +290,7 @@ const Service = () => {
           .services-row-1, .services-row-2 {
             display: flex;
             justify-content: center;
-            max-width: 1260px;
-            margin: auto;
-            margin-bottom: 40px;
+
           }
           .services-title {
             font-weight: 600;
@@ -283,16 +306,20 @@ const Service = () => {
           }
           .service-img {
             width: 35%;
+            height: auto;
+            aspect-ratio: 1;
+    	      object-fit: cover;
           }
           .service-img>img {
             width: 100%;
+            height: 100%;
           }
           .content-right {
             margin-left: 32px;
           }
           .content-left {
-            margin-left: 100px;
-            margin-right: 66px;
+            margin-left: 80px;
+            margin-right: 50px;
           }
           .margin-img {
             margin-top: 20px;
@@ -300,7 +327,32 @@ const Service = () => {
           .offshore-center {
             margin-top: 40px;
           }
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 1260px) {
+            .content-left {
+              margin-left: 0;
+            }
+          }
+          @media screen and (max-width: 1024px) {
+            .service-img {
+              width: 45%;
+            }
+            .services-title {
+              margin:0;
+              margin-bottom: 20px;
+              font-size: 25px;
+            }
+            .services-row-1,.services-row-2 {
+              justify-content: space-between;
+            }
+            .services-content {
+              font-size: 16px;
+            }
+            .content-right,.content-left {
+              width: 52%;
+              margin: 0;
+            }
+          }
+          @media screen and (max-width: 768px) {
             .img-header-pc {
               display: none;
             }
@@ -376,25 +428,13 @@ const Service = () => {
             .our-services {
               padding-bottom: 50px;
             }
-            .service-img {
-              width: 48%;
-            }
-            .services-title {
-              margin:0;
-              margin-bottom: 20px;
-              font-size: 25px;
-            }
-            .services-content {
-              font-size: 16px;
-            }
-            .content-right,.content-left {
-              width: 48%;
-              margin-left: 2%;
-              margin-right: 2%;
-            }
+
 
           }
-          @media screen and (max-width: 600px) {
+          @media screen and (max-width: 480px) {
+            .container {
+              padding: 0 12px;
+            }
             .img-header-mobile {
               width: 200%;
               height: auto;
@@ -426,7 +466,6 @@ const Service = () => {
             }
             .service-img {
               width: auto;
-              padding: 0 12px;
             }
             .services-title {
               font-size: 18px;
@@ -438,7 +477,6 @@ const Service = () => {
             .content-right,.content-left {
               margin: 0;
               width: auto;
-              padding: 0 12px;
             }
           }
         `}

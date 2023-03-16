@@ -6,11 +6,11 @@ const About = () => {
       <h1 className="h1">** About Us screen **</h1>
 
       {/* Header */}
-      <div className="bg-header">
+      <div className="bg-header session">
         <div className="img-header">
           <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
         </div>
-        <div className="about-header">
+        <div className="about-header container">
           <div className="header-title">About us</div>
           <div className="header-content">
             <div className="header-left">We take pride in our commitment to delivering innovative and tailored software solutions to meet the unique needs of each of our clients. Discover why we are a leading provider of offshore software development services and how we are driving success for businesses around the world.</div>
@@ -89,8 +89,18 @@ const About = () => {
           .img-header {
             position: absolute;
             right: 0;
-            top: 118px;
+            top: 78px;
             z-index: 1;
+          }
+          .session {
+            padding: 0 30px;
+            box-sizing: border-box;
+          }
+          .container {
+            max-width: 1260px;
+            width: 100%;
+            display: flex;
+            margin: auto;
           }
           .about-header {
             position: relative;
@@ -108,8 +118,7 @@ const About = () => {
             background-image: url("../Ellipse.svg");
             background-size: cover;
             background-repeat: no-repeat;
-            width: 28%;
-            height: 103px;
+            padding: 25px 85px;
             font-size: 43px;
             display: flex;
             justify-content: center;
@@ -136,11 +145,17 @@ const About = () => {
             margin-bottom: 100px;
           }
           .header-right {
-            max-width: 60%;
+            width: 50%;
+            height: auto;
+            aspect-ratio: 1;
+    	      object-fit: cover;
           }
           .header-right>img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
           }
+
+          //------------------------------
           .about-bg {
             background-image: url("../Session.webp");
             height: auto;
@@ -184,6 +199,7 @@ const About = () => {
           //----------------------------------
           .target-about {
             margin-top: 68px;
+            padding: 0 20px;
             padding-bottom: 100px;
           }
           .our-target {
@@ -202,7 +218,7 @@ const About = () => {
             width: 43%;
             border-radius: 5px;
             height: auto;
-            aspect-ratio: 1;
+
             object-fit: cover;
           }
           .target-right>img {
@@ -234,7 +250,7 @@ const About = () => {
             font-size: 20px;
             line-height: 26px;
           }
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 768px) {
             .about-header {
               height: auto;
               margin-top: 50px;
@@ -258,6 +274,7 @@ const About = () => {
               background: none;
               width: 100%;
               height: auto;
+              padding: 0;
               text-align: center;
               top: 0;
               left: 0;
@@ -329,7 +346,7 @@ const About = () => {
               line-height: 21px;
             }
           }
-          @media screen and (max-width: 600px) {
+          @media screen and (max-width: 480px) {
             .img-header {
               width: 200%;
               height: auto;
@@ -357,7 +374,7 @@ const About = () => {
             }
             .target-about {
               margin-top: 40px;
-              padding: 0 24px;
+              padding: 0 12px;
               padding-bottom: 20px;
             }
             .target-left {
