@@ -3,63 +3,18 @@ import React, { useMemo, useState } from 'react'
 import Archivement from '../components/Archivement/Archivement';
 import Pagination from '../components/Pagination/Pagination';
 import Techniques from '../components/Techniques/Techniques';
-import { PageSize } from '../constants';
+import { pageSize, dataApplication, listSelectApplication } from '../constants';
 
 const Portfolio = () => {
-  const listselect = [
-    { id: 1, title: 'Enterprise management systems' },
-    { id: 2, title: 'ECommerce & Retail Software development' },
-    { id: 3, title: 'Customer-enabling services' },
-    { id: 4, title: 'New business ideas' },
-    { id: 5, title: 'Others' },
-  ]
   const [currentPage, setCurrentPage] = useState(1);
   const [isDropdownApp, setIsDropdownApp] = useState(false);
-  const [isSelect, setIsSelect] = useState(listselect[0]);
+  const [isSelect, setIsSelect] = useState(listSelectApplication[0]);
 
-  const data = [
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg' },
-  ]
-
+  const filterData = dataApplication.filter(x => x.category === isSelect.title);
   const currentTableData = useMemo(() => {
-    const firstPageIndex = (currentPage - 1) * PageSize;
-    const lastPageIndex = firstPageIndex + PageSize;
-    return data.slice(firstPageIndex, lastPageIndex);
+    const firstPageIndex = (currentPage - 1) * pageSize;
+    const lastPageIndex = firstPageIndex + pageSize;
+    return filterData.slice(firstPageIndex, lastPageIndex);
   }, [currentPage]);
 
   const handleDropdownOnclick = () => {
@@ -70,7 +25,7 @@ const Portfolio = () => {
     <div className="portfolio">
       <h1 className="h1"> ** Portfolio screen ** </h1>
       {/* Header */}
-      <div className="bg-header">
+      <div className="bg-header session">
         <div className="img-header-pc">
           <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
@@ -91,20 +46,16 @@ const Portfolio = () => {
       <Archivement />
 
       {/* Aplications */}
-      <div className="applications">
+      <div className="applications session">
         <div className="applications-header">
           <div className="applications-left">
             <label className="item">Aplications</label>
             <div className="crossbar-left-1"></div>
             <div className="crossbar-left-2"></div>
             <div className="applications-list">
-              <span>Travel & Hospitality Software Development</span>
-              <span>Food and Beverage Software Development</span>
-              <span>Health Care Software Development</span>
-              <span>Education Software Development</span>
-              <span>Social Networking App and Website Development</span>
-              <span>eCommerce & Retail Software development</span>
-              <span>Others</span>
+              {listSelectApplication.map((list, index) => (
+                <span className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</span>
+              ))}
             </div>
           </div>
           <div className="applications-select">
@@ -115,8 +66,8 @@ const Portfolio = () => {
               </div>
             </div>
             {isDropdownApp &&
-              <div className="dropdown">
-                {listselect.map((list, index) => (
+              <div className="dropdown" onClick={handleDropdownOnclick}>
+                {listSelectApplication.map((list, index) => (
                   <div className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</div>
                 ))}
               </div>
@@ -130,7 +81,7 @@ const Portfolio = () => {
                   <div className="illustration" key={index}>
                     <img src={item.img} alt="illustration" title="illustration" width="465" height="244" />
                     <div> {item.title}</div>
-                    <label> {item.content}</label>
+                    <p> {item.content}</p>
                   </div>
                 );
               })}
@@ -141,8 +92,8 @@ const Portfolio = () => {
           <Pagination
             className="pagination-bar"
             currentPage={currentPage}
-            totalCount={data.length}
-            pageSize={PageSize}
+            totalCount={filterData.length}
+            pageSize={pageSize}
             onPageChange={page => setCurrentPage(page)}
           />
         </div>
@@ -160,6 +111,10 @@ const Portfolio = () => {
           .h1 {
             display: none;
           }
+          .session {
+            padding: 0 30px;
+            box-sizing: border-box;
+          }
           .bg-header {
             position: relative;
             width: 100%;
@@ -168,7 +123,7 @@ const Portfolio = () => {
           .img-header-pc,.img-header-mobile {
             position: absolute;
             right: 0;
-            top: 118px;
+            top: 78px;
             z-index: 1;
           }
           .img-header-mobile {
@@ -182,7 +137,7 @@ const Portfolio = () => {
             height: calc(100vh - 118px);
             max-width: 1260px;
             margin: auto;
-            margin-top: 118px;
+            margin-top: 78px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -202,7 +157,6 @@ const Portfolio = () => {
             color: #DEDEDE;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
-
           }
           .header-content {
             display: flex;
@@ -279,16 +233,16 @@ const Portfolio = () => {
             cursor: pointer;
           }
           .applications-right {
-            display: flex;
             width: 76%;
           }
           .illustration {
-            height: auto;
             width: 49%;
+            height: auto;
             background: #F0F0F0;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
             overflow: hidden;
+            margin-bottom: 30px;
           }
           .applications-row {
             display: flex;
@@ -299,6 +253,7 @@ const Portfolio = () => {
           .illustration>img {
             width: 100%;
             height: auto;
+            vertical-align: top;
           }
           .illustration>div {
             font-weight: 500;
@@ -307,10 +262,12 @@ const Portfolio = () => {
             margin-left: 11px;
             margin-top: 10px;
           }
-          .illustration>label {
+          .illustration>p {
             font-size: 14px;
             color: #636363;
-            margin-left: 11px;
+            padding-top: 3px;
+            padding-left: 11px;
+            margin-bottom: 15px;
           }
           .paging {
             display: flex;
@@ -328,7 +285,10 @@ const Portfolio = () => {
             cursor: pointer;
           }
 
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 768px) {
+            .session {
+              padding: 0 20px;
+            }
             .img-header-pc {
               display: none;
             }
@@ -403,7 +363,7 @@ const Portfolio = () => {
               font-size: 18px;
               display: block;
               width: auto;
-              padding: 0 12px;
+              box-sizing: border-box;
             }
             .select {
               display: flex;
@@ -421,14 +381,14 @@ const Portfolio = () => {
             }
             .dropdown {
               position: absolute;
-              top: 45px;
-              width: 96%;
-              left: 2%;
+              top: 60px;
+              width: 100%;
               background: #F8F8F8;
               border: 1px solid #236B99;
               box-shadow: 1px 1px 5px #D9D9D9;
               border-radius: 5px;
               color: #525252;
+              box-sizing: border-box;
             }
             .one_application {
               padding: 12px;
@@ -439,8 +399,6 @@ const Portfolio = () => {
             }
             .applications-right {
               width: auto;
-              padding: 0 12px;
-              margin: auto;
             }
             .illustration {
               margin-bottom: 10px;
@@ -453,7 +411,10 @@ const Portfolio = () => {
               font-size: 12px;
             }
           }
-          @media screen and (max-width: 600px) {
+          @media screen and (max-width: 480px) {
+            .session {
+              padding: 0 12px;
+            }
             .img-header-mobile {
               width: 200%;
               height: auto;
@@ -462,7 +423,7 @@ const Portfolio = () => {
             }
             .content-left {
               width: auto;
-              padding: 0 24px;
+              padding: 0 12px;
               font-size: 14px;
               line-height: 20px;
             }
@@ -471,6 +432,9 @@ const Portfolio = () => {
             }
             .applications-select {
               font-size: 14px;
+            }
+            .dropdown {
+              top: 45px;
             }
           }
         `}

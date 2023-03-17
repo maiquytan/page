@@ -21,21 +21,13 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="address">
-        <div className="address-content">
-          <img src="/location_orange.svg" alt="location" title="location" width="15" height="21" />
-          <label>2nd Floor, 25T2 Budding, Hoang Dao Thuy, Nguyen Thi Thap, Trung Hoa, Cau Giay, Ha Noi  </label>
-          <img src="/phone_orange.svg" alt="phone" title="phone" width="18" height="19" />
-          <label className="phone">1239081239</label>
-        </div>
-      </div>
       <div className="menu">
-        <div className="menu-main">
+        <div className="menu-main container">
           <Link href="/"><a className="logo">
-            <img src="/logo1.svg" className="img-logo" alt="logo" title="logo" width={323} height={55} />
+            <img src="/logo1.svg" className="img-logo" alt="logo" title="logo" width="323" height="55" />
           </a></Link>
           <div className="menu-content">
-            <Link href="/e"><a>Company <img src="/arrow_menu.svg" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
+            <Link href="/e"><a>Company <img src="/arrow_menu.svg" className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
             <Link href="/service"><a>Service</a></Link>
             <Link href="/b"><a>Expertise</a></Link>
             <Link href="/portfolio"><a>Portfolio</a></Link>
@@ -45,17 +37,16 @@ const Header = () => {
       </div>
       <div className="menu-mobile">
         <Link href="/"><a className="logo-mobile">
-          <img src="/logo1.svg" alt="logo" title="logo" width={176} height={30} />
+          <img src="/logo1.svg" alt="logo" title="logo" width="176" height="30" />
         </a></Link>
         <div className="btn-menu" onClick={handleDropDownMenuAction}>
-          <img src="/menu_mobile.svg" alt="menu" title="menu" width={24} height={24} />
+          <img src="/menu_mobile.svg" alt="menu" title="menu" width="24" height="24" />
         </div>
         {isDropdownMenuAction &&
           <ul className="mobile-menu-down">
             <li>
               <div>
-                <Link href="/e"><a>Company</a></Link>
-                <img src="/arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
+                <Link href="/e"><a>Company <img src="/arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
               </div>
               {isDropdownCompanyAction &&
                 <ul className="setting-signout">
@@ -85,58 +76,35 @@ const Header = () => {
             z-index: 3;
             background: #FFFFFF;
           }
-          .address {
-            width: 100%;
-            background: #FFFFFF;
-          }
-          .address-content {
-            color: #FC721E;
-            max-width:  1274px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            margin: auto;
-          }
-          label {
-            font-size: 14px;
-            margin-left: 7px;
-            margin-right: 22px;
-          }
-          .phone {
-            margin-right: 60px;
-          }
-          .im-location {
-            width: 13px;
-            height: 21px;
-          }
           .menu {
             background: rgba(23, 23, 31, 0.95);
             height: 78px;
           }
           .menu-main {
-            display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 1274px;
-            margin: auto;
+            height: 100%;
+            padding: 0 12px;
           }
           .menu-content {
-            margin-right: 50px;
+            display: flex;
+          }
+          .container {
+            display: flex;
+            max-width: 1260px;
+            margin: auto;
+          }
+          .arrow-menu {
+            display: none;
           }
           a {
+            display: flex;
             color: #FFFFFF;
             text-decoration: none;
-            margin: 0 10px;
+            padding: 0 10px;
             cursor: pointer;
             font-size: 20px;
             outline: none;
-          }
-          .img-logo {
-            margin-left: 50px;
-          }
-          .logo {
-            margin-bottom: 10px;
           }
           .menu-mobile {
             background: rgba(23, 23, 31, 0.85);
@@ -152,6 +120,7 @@ const Header = () => {
             position: absolute;
             right: 15px;
           }
+
           .mobile-menu-down {
             position: absolute;
             flex-direction: column;
@@ -174,7 +143,7 @@ const Header = () => {
             color: #F4F4F4;
           }
 
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 1024px) {
             .menu,.address {
               display: none;
             }
@@ -186,7 +155,15 @@ const Header = () => {
             }
             a {
               color: #6E6E73;
+              width: 90%;
             }
+            a>img {
+              margin: auto;
+            }
+            .btn-menu>img {
+              display: flex;
+            }
+
           }
         `}
       </style>

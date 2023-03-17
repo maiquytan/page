@@ -9,7 +9,6 @@ const Techniques = () => {
         <div className="crossbar2"></div>
       </div>
       <div className="techniques-main">
-        <div className="techniques-column">
           <img src="/androidStudio.svg" alt="android" title="android" width="86" height="55" />
           <img src="/angular.svg" alt="angular" title="angular" width="120" height="55" />
           <img src="/reactjs.svg" alt="reactjs" title="reactjs" width="124" height="50" />
@@ -21,8 +20,6 @@ const Techniques = () => {
             <img src="/css.svg" alt="css" title="css" width="39" height="39" />
           </div>
           <img src="/mongodb.svg" alt="mongodb" title="mongodb" width="124" height="37" />
-        </div>
-        <div className="techniques-column">
           <img src="/php.svg" alt="php" title="php" width="89" height="44" />
           <img src="/django.svg" alt="django" title="django" width="98" height="55" />
           <img src="/nodejs.svg" alt="nodejs" title="nodejs" width="81" height="49" />
@@ -30,7 +27,6 @@ const Techniques = () => {
           <img src="/postgres.svg" alt="postgres" title="postgres" width="123" height="55" />
           <img src="/laravel.svg" alt="laravel" title="laravel" width="147" height="54" />
           <img src="/magento.svg" alt="magento" title="magento" width="122" height="44" />
-        </div>
       </div>
       <style jsx>
         {`
@@ -42,8 +38,13 @@ const Techniques = () => {
             text-align: center;
           }
           .techniques-main {
-            max-width: 1280px;
+            max-width: 1260px;
+            padding: 0 12px;
             margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
           }
           .item {
             color: #1E1E1E;
@@ -65,15 +66,8 @@ const Techniques = () => {
             margin: auto;
             margin-bottom: 45px;
           }
-          .techniques-column {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 26px;
-            gap: 1.5%;
-          }
-          .techniques-column>img,.html-css {
+          .techniques-main>img,.html-css {
             width: 13%;
-
             height: 55px;
             border: 1px solid #CCCCCC;
             border-radius: 3px;
@@ -88,20 +82,14 @@ const Techniques = () => {
             .techniques {
               height: auto;
               padding-bottom: 60px;
+              gap: 12px;
             }
             .techniques-main {
               display: flex;
               justify-content: center;
             }
-            .techniques-column {
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              width: 100%;
-            }
-            .techniques-column>img,.html-css {
-              width: 94%;
-              margin-top: 16px;
+            .techniques-main>img,.html-css {
+              width: 47%;
             }
           }
        `}
