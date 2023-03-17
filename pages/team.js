@@ -1,24 +1,7 @@
 import React from 'react'
+import { ListBoss } from '../constants'
 
 const Team = () => {
-  const listBoss = [
-    {
-      name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
-      job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.'
-    },
-    {
-      name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
-      job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
-    },
-    {
-      name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
-      job: 'Backend developer', describe: 'Building innovative backend solutions to power your business and drive success.'
-    },
-    {
-      name: 'Cong Luu', image: '/LuuCong.webp', icon: '/icon_backend.svg',
-      job: 'Backend developer', describe: 'Creating robust and scalable backend systems to meet your business needs and exceed your expectations.'
-    },
-  ]
   return (
     <div className="team">
       <h1 className="h1">** Our Team screen **</h1>
@@ -83,7 +66,7 @@ const Team = () => {
           <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
         </div>
         <div className="meet-main">
-          {listBoss.map((list, index) => (
+          {ListBoss.map((list, index) => (
             <div className="boss" key={index}>
               <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
                 <div className="bg-meet">

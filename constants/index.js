@@ -1,6 +1,6 @@
 export const PageSize = 4;
 
-export const Data = [
+export const DataApplication = [
   { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Enterprise management systems' },
   { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Enterprise management systems' },
   { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
@@ -76,10 +76,29 @@ export const Data = [
   { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Others' },
 ]
 
-export const ListSelect = [
+export const ListSelectApplication = [
   { id: 1, title: 'Enterprise management systems' },
   { id: 2, title: 'ECommerce & Retail Software development' },
   { id: 3, title: 'Customer-enabling services' },
   { id: 4, title: 'New business ideas' },
   { id: 5, title: 'Others' },
+]
+
+export const ListBoss = [
+  {
+    name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.'
+  },
+  {
+    name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
+    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+  },
+  {
+    name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Building innovative backend solutions to power your business and drive success.'
+  },
+  {
+    name: 'Cong Luu', image: '/LuuCong.webp', icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Creating robust and scalable backend systems to meet your business needs and exceed your expectations.'
+  },
 ]

@@ -3,14 +3,14 @@ import React, { useMemo, useState } from 'react'
 import Archivement from '../components/Archivement/Archivement';
 import Pagination from '../components/Pagination/Pagination';
 import Techniques from '../components/Techniques/Techniques';
-import { PageSize,Data,ListSelect } from '../constants';
+import { PageSize,DataApplication,ListSelectApplication } from '../constants';
 
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isDropdownApp, setIsDropdownApp] = useState(false);
-  const [isSelect, setIsSelect] = useState(ListSelect[0]);
+  const [isSelect, setIsSelect] = useState(ListSelectApplication[0]);
 
-  const filterData = Data.filter(x => x.category === isSelect.title);
+  const filterData = DataApplication.filter(x => x.category === isSelect.title);
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize;
     const lastPageIndex = firstPageIndex + PageSize;
@@ -53,7 +53,7 @@ const Portfolio = () => {
             <div className="crossbar-left-1"></div>
             <div className="crossbar-left-2"></div>
             <div className="applications-list">
-              {ListSelect.map((list, index) => (
+              {ListSelectApplication.map((list, index) => (
                 <span className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</span>
               ))}
             </div>
@@ -67,7 +67,7 @@ const Portfolio = () => {
             </div>
             {isDropdownApp &&
               <div className="dropdown" onClick={handleDropdownOnclick}>
-                {ListSelect.map((list, index) => (
+                {ListSelectApplication.map((list, index) => (
                   <div className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</div>
                 ))}
               </div>
