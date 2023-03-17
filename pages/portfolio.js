@@ -3,104 +3,19 @@ import React, { useMemo, useState } from 'react'
 import Archivement from '../components/Archivement/Archivement';
 import Pagination from '../components/Pagination/Pagination';
 import Techniques from '../components/Techniques/Techniques';
-import { PageSize } from '../constants';
+import { PageSize,Data,ListSelect } from '../constants';
 
 const Portfolio = () => {
-  const listselect = [
-    { id: 1, title: 'Enterprise management systems' },
-    { id: 2, title: 'ECommerce & Retail Software development' },
-    { id: 3, title: 'Customer-enabling services' },
-    { id: 4, title: 'New business ideas' },
-    { id: 5, title: 'Others' },
-  ]
   const [currentPage, setCurrentPage] = useState(1);
   const [isDropdownApp, setIsDropdownApp] = useState(false);
-  const [isSelect, setIsSelect] = useState(listselect[0]);
+  const [isSelect, setIsSelect] = useState(ListSelect[0]);
 
-  const data = [
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Enterprise management systems' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Enterprise management systems' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Customer-enabling services' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Enterprise management systems' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Customer-enabling services' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Enterprise management systems' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Enterprise management systems' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Enterprise management systems' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Enterprise management systems' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Customer-enabling services' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'New business ideas' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Enterprise management systems' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Enterprise management systems' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Customer-enabling services' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Enterprise management systems' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Customer-enabling services' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Enterprise management systems' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Enterprise management systems' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Enterprise management systems' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Enterprise management systems' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'New business ideas' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'Customer-enabling services' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'New business ideas' },
-    { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Customer-enabling services' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'ECommerce & Retail Software development' },
-    { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Others' },
-  ]
-  const filterData = data.filter(x => x.category === isSelect.title);
+  const filterData = Data.filter(x => x.category === isSelect.title);
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize;
     const lastPageIndex = firstPageIndex + PageSize;
     return filterData.slice(firstPageIndex, lastPageIndex);
   }, [currentPage]);
-
-  console.log("aaaa", filterData);
-  console.log("bbbbb", PageSize);
 
   const handleDropdownOnclick = () => {
     setIsDropdownApp(!isDropdownApp);
@@ -138,7 +53,7 @@ const Portfolio = () => {
             <div className="crossbar-left-1"></div>
             <div className="crossbar-left-2"></div>
             <div className="applications-list">
-              {listselect.map((list, index) => (
+              {ListSelect.map((list, index) => (
                 <span className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</span>
               ))}
             </div>
@@ -152,7 +67,7 @@ const Portfolio = () => {
             </div>
             {isDropdownApp &&
               <div className="dropdown" onClick={handleDropdownOnclick}>
-                {listselect.map((list, index) => (
+                {ListSelect.map((list, index) => (
                   <div className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</div>
                 ))}
               </div>
@@ -242,7 +157,6 @@ const Portfolio = () => {
             color: #DEDEDE;
             text-shadow: 2px 0 rgba(39, 129, 212, 1), -2px 0 rgba(39, 129, 212, 1), 0 2px rgba(39, 129, 212, 1), 0 -2px rgba(39, 129, 212, 1),
             1px 1px rgba(39, 129, 212, 1), -1px -1px rgba(39, 129, 212, 1), 1px -1px rgba(39, 129, 212, 1), -1px 1px rgba(39, 129, 212, 1), 2px 4px 3px rgba(0, 0, 0, 0.32);
-
           }
           .header-content {
             display: flex;

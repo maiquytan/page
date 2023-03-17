@@ -214,7 +214,7 @@ const Request = () => {
           .request-input>input,.input-company,.tell-input {
             background: #F3F3F3;
             border-radius: 5px;
-            width: 42%;
+            width: 49%;
             height: 46px;
             border: none;
             outline: none;
