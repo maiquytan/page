@@ -1,5 +1,5 @@
 import React from 'react'
-import { ListBoss } from '../constants'
+import { listBoss } from '../constants'
 
 const Team = () => {
   return (
@@ -66,7 +66,7 @@ const Team = () => {
           <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
         </div>
         <div className="meet-main">
-          {ListBoss.map((list, index) => (
+          {listBoss.map((list, index) => (
             <div className="boss" key={index}>
               <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
                 <div className="bg-meet">
@@ -98,6 +98,7 @@ const Team = () => {
             max-width: 1260px;
             display: flex;
             padding: 0 30px;
+            box-sizing: content-box;
           }
           .bg-header {
             position: relative;

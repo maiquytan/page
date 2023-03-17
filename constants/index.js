@@ -1,6 +1,6 @@
-export const PageSize = 4;
+export const pageSize = 4;
 
-export const DataApplication = [
+export const dataApplication = [
   { title: 'Marcos-StarcatXR', content: 'Website', img: '/illustration1.webp', category: 'Enterprise management systems' },
   { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Enterprise management systems' },
   { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration3.svg', category: 'ECommerce & Retail Software development' },
@@ -76,7 +76,7 @@ export const DataApplication = [
   { title: 'Nistone-Loan', content: 'Phone Application', img: '/illustration2.svg', category: 'Others' },
 ]
 
-export const ListSelectApplication = [
+export const listSelectApplication = [
   { id: 1, title: 'Enterprise management systems' },
   { id: 2, title: 'ECommerce & Retail Software development' },
   { id: 3, title: 'Customer-enabling services' },
@@ -84,7 +84,7 @@ export const ListSelectApplication = [
   { id: 5, title: 'Others' },
 ]
 
-export const ListBoss = [
+export const listBoss = [
   {
     name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
     job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.'
