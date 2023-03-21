@@ -160,7 +160,6 @@ const Portfolio = () => {
           }
           .header-content {
             display: flex;
-
             margin-top: 35px;
             max-width: 1260px;
           }

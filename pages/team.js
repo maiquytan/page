@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
-import React, { useEffect, useRef, useState } from 'react'
-import { listBoss } from '../constants'
+import React, { useRef, useState } from 'react'
+
+import { listBoss,settings } from '../constants'
 
 const Team = () => {
   const router = useRouter();
@@ -32,10 +33,6 @@ const Team = () => {
     setScrollPosition(listRef.current.scrollLeft);
     listRef.current.style.cursor = 'grab';
   };
-
-  useEffect(() => {
-    console.log('width', ref.current ? ref.current.offsetWidth : 0);
-  }, [ref.current]);
 
   return (
     <div className="team">

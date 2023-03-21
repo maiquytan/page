@@ -72,8 +72,8 @@ const Request = () => {
                 <div className="service">
                   <input id="check5" type="checkbox" className="checkbox" onClick={handleCheckService} />
                   <label htmlFor="check5" className="span"></label>
-                  <label htmlFor="check5" className={isCheckService ? "service-content" : "unselected"}><u className="other">Other (please specify)</u></label>
-                  <input className={isCheckService ? "unselected" : "input-other"} type="text" placeholder="Other (please specify)" onClick={e => e.target.focus()} />
+                  <label htmlFor="check5" className={isCheckService ? 'service-content' : 'unselected'}><u className="other">Other (please specify)</u></label>
+                  <input className={isCheckService ? 'unselected' : 'input-other'} type="text" placeholder="Other (please specify)" />
                 </div>
               </div>
               <div className="hr-dahed"></div>
@@ -85,13 +85,12 @@ const Request = () => {
                     <span className="checkmark"></span>
                   </label>
                 ))}
-
                 <label className="budget" >
-                  <u className={isCheckBudget ? "other" : "unselected"} >Other (please specify)</u>
+                  <u className={isCheckBudget ? 'other' : 'unselected'} >Other (please specify)</u>
                   <input type="radio" name="radio" onClick={() => setIsCheckBudget(false)} />
                   <span className="checkmark"></span>
                 </label>
-                <input className={isCheckBudget ? "unselected" : "input-budget"} type="text" placeholder="Other (please specify)" autoFocus />
+                <input className={isCheckBudget ? 'unselected' : 'input-budget'} type="text" placeholder="Other (please specify)" autoFocus />
               </div>
             </div>
             <div className="tell-us">
@@ -150,7 +149,6 @@ const Request = () => {
             padding-top: 65px;
             margin-bottom: 40px;
           }
-
           .information-content {
             font-size: 17px;
             margin-bottom: 43px;
@@ -196,7 +194,6 @@ const Request = () => {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-
           }
           .request-input>input,.input-company,.tell-input {
             background: #F3F3F3;
