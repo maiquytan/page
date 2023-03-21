@@ -134,7 +134,7 @@ const Portfolio = () => {
           }
           .portfolio-header {
             position: relative;
-            height: calc(100vh - 118px);
+            height: calc(100vh - 78px);
             max-width: 1260px;
             margin: auto;
             margin-top: 78px;
@@ -160,14 +160,13 @@ const Portfolio = () => {
           }
           .header-content {
             display: flex;
-            align-items: center;
+
             margin-top: 35px;
             max-width: 1260px;
           }
           .content-left {
             width: 36%;
             margin-right: 65px;
-            margin-bottom: 60px;
             font-size: 18px;
             text-align: justify;
             line-height: 26px;
@@ -284,8 +283,7 @@ const Portfolio = () => {
             border-radius: 4px;
             cursor: pointer;
           }
-
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 1024px) {
             .session {
               padding: 0 20px;
             }
@@ -336,6 +334,7 @@ const Portfolio = () => {
             .content-right {
               width: 86%;
               height: auto;
+              margin: auto;
               aspect-ratio: 2.3;
               object-fit: cover;
               margin-top: 5%;
@@ -404,10 +403,9 @@ const Portfolio = () => {
               margin-bottom: 10px;
             }
             .illustration>div {
-              margin-top: 0;
               font-size: 13px;
             }
-            .illustration>label {
+            .illustration>p {
               font-size: 12px;
             }
           }

@@ -6,14 +6,14 @@ const Service = () => {
       <h1 className="h1"> ** Service screen ** </h1>
 
       { /* Header */}
-      <div className="bg-header">
+      <div className="bg-header session">
         <div className="img-header-pc">
           <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
         <div className="img-header-mobile">
           <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557" />
         </div>
-        <div className="service-header container">
+        <div className="service-header">
           <div className="header-title">Our Service</div>
           <div className="header-content">
             <div className="header-left">At Axalize Incorporated, we are dedicated to providing top-notch IT outsourcing and offshore services that meet the unique needs of our clients. Our services are designed to support businesses in a wide range of industries, and we work closely with each of our clients to ensure that their IT needs are met.</div>
@@ -25,7 +25,7 @@ const Service = () => {
       </div>
 
       { /* Mobile, Web */}
-      <div className="bg-mobile-web ">
+      <div className="bg-mobile-web session">
         <div className="mobile-web container">
           <div className="mobile-web-header">Transform your business with Axalize incorporated's tailored IT outsourcing services</div>
           <div className="mobile-web-content">
@@ -38,7 +38,7 @@ const Service = () => {
       </div>
 
       { /* Our Services */}
-      <div className="our-services">
+      <div className="our-services session">
         <div className="services-header">
           <label className="item">Our services</label>
           <div className="crossbar1"></div>
@@ -137,12 +137,13 @@ const Service = () => {
           .h1 {
             display: none;
           }
+          .session {
+            padding: 0 30px;
+            box-sizing: border-box;
+          }
           .container {
             max-width: 1260px;
             margin: auto;
-            display: flex;
-            flex-flow: column wrap;
-            padding: 0 20px;
           }
           .bg-header {
             position: relative;
@@ -333,26 +334,6 @@ const Service = () => {
             }
           }
           @media screen and (max-width: 1024px) {
-            .service-img {
-              width: 45%;
-            }
-            .services-title {
-              margin:0;
-              margin-bottom: 20px;
-              font-size: 25px;
-            }
-            .services-row-1,.services-row-2 {
-              justify-content: space-between;
-            }
-            .services-content {
-              font-size: 16px;
-            }
-            .content-right,.content-left {
-              width: 52%;
-              margin: 0;
-            }
-          }
-          @media screen and (max-width: 768px) {
             .img-header-pc {
               display: none;
             }
@@ -397,17 +378,46 @@ const Service = () => {
             }
             .header-right {
               width: 86%;
-              height: auto;
-              aspect-ratio: 2.3;
-              object-fit: cover;
               margin: auto;
               margin-top: 5%;
               margin-bottom: 10%;
             }
-            .header-right>img {
-              width: 100%;
-              height: 100%;
+            .service-header {
+              margin-top: 50px;
             }
+            .session {
+              padding: 0 20px;
+            }
+            .img-header-pc {
+              top: 50px;
+            }
+            .service-img {
+              width: 45%;
+            }
+            .services-title {
+              margin:0;
+              margin-bottom: 20px;
+              font-size: 25px;
+            }
+            .services-row-1,.services-row-2 {
+              justify-content: space-between;
+            }
+            .services-content {
+              font-size: 16px;
+              max-width: 900px;
+            }
+            .content-right,.content-left {
+              width: 52%;
+              margin: 0;
+            }
+            .mobile-web-header,.mobile-web-content {
+              width: auto;
+              margin: 0;
+              padding: 40px;
+            }
+          }
+          @media screen and (max-width: 768px) {
+
             //------------------------------
             .bg-mobile-web {
               width: 100%;
@@ -429,6 +439,27 @@ const Service = () => {
               padding-bottom: 50px;
             }
 
+            .services-row-1 {
+              flex-direction: column;
+            }
+            .services-row-2 {
+              flex-direction: column-reverse;
+            }
+            .service-img {
+              width: auto;
+            }
+            .services-title {
+              font-size: 18px;
+              margin: 10px 0;
+            }
+            .services-content {
+              font-size: 14px;
+              margin: 0;
+            }
+            .content-right,.content-left {
+              margin: 0;
+              width: auto;
+            }
 
           }
           @media screen and (max-width: 480px) {

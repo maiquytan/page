@@ -1,7 +1,42 @@
-import React from 'react'
+import { useRouter } from 'next/router';
+import React, { useEffect, useRef, useState } from 'react'
 import { listBoss } from '../constants'
 
 const Team = () => {
+  const router = useRouter();
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [isMoving, setIsMoving] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const listRef = useRef(null);
+  const ref = useRef(null);
+
+  const handleMouseDown = (event) => {
+    setIsDragging(true);
+    setStartX(event.pageX);
+    listRef.current.style.cursor = 'grabbing';
+  };
+
+  const handleMouseMove = (event) => {
+    if (isDragging) {
+      const deltaX = event.pageX - startX;
+      listRef.current.scrollLeft = scrollPosition - deltaX;
+      setIsMoving(true);
+    }
+  };
+  const handleMouseUp = () => {
+    setTimeout(() => {
+      setIsMoving(false);
+    }, 10);
+    setIsDragging(false);
+    setScrollPosition(listRef.current.scrollLeft);
+    listRef.current.style.cursor = 'grab';
+  };
+
+  useEffect(() => {
+    console.log('width', ref.current ? ref.current.offsetWidth : 0);
+  }, [ref.current]);
+
   return (
     <div className="team">
       <h1 className="h1">** Our Team screen **</h1>
@@ -60,12 +95,18 @@ const Team = () => {
       </div>
 
       {/* Meet */}
-      <div className="meet container">
+      <div className="meet container" ref={ref}>
         <div>
           <div className="bar"></div>
           <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
         </div>
-        <div className="meet-main">
+        <div className="meet-main"
+          ref={listRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+        >
           {listBoss.map((list, index) => (
             <div className="boss" key={index}>
               <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
@@ -224,9 +265,12 @@ const Team = () => {
           .meet {
             flex-direction: column;
             max-width: 1260px;
+            width: auto;
             margin: auto;
             padding: 0 30px;
             padding-bottom: 95px;
+            width: 100%;
+            user-select: none;
           }
           .bar {
             width: 120px;
@@ -245,8 +289,18 @@ const Team = () => {
             color: #1667B2;
           }
           .meet-main {
+            max-width: 1260px;
+            width: 100%;
+            overflow: auto;
+            margin: auto;
             display: flex;
-            gap: 2%;
+            gap: .9rem;
+          }
+          .meet-main::-webkit-scrollbar-track {
+            display: none;
+          }
+          .meet-main::-webkit-scrollbar {
+            display: none;
           }
           .boss {
             width: 24%;
@@ -254,7 +308,22 @@ const Team = () => {
             background: #F3F3F3;
             border-radius: 5px;
             overflow: hidden;
+            position: relative;
+            min-width: 304px;
+            max-width: 304px;
+            text-decoration: none;
+            -webkit-user-drag: none;
           }
+          .boss.active:before {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
           .img-meet {
             background-size: cover;
             background-repeat: no-repeat;
@@ -302,18 +371,14 @@ const Team = () => {
             line-height: 18px;
             color: #525252;
           }
-          @media screen and (max-width: 1260px) {
-            .meet-main {
-              flex-wrap: wrap;
-            }
-            .boss {
-              width: 30%;
-              margin-bottom: 12px;
-            }
+          @media screen and (max-width: 1320px) {
+          .meet{
+            width: auto;
           }
           @media screen and (max-width: 1024px) {
             .container {
               padding: 0 30px;
+              padding-bottom: 95px;
             }
             .about-header {
               width: 100%;
@@ -375,17 +440,18 @@ const Team = () => {
               width: auto;
               padding: 5px 0;
             }
-            .meet-main {
-              flex-wrap: wrap;
-            }
-            .boss {
-              width: 49%;
-              margin-bottom: 12px;
-            }
+            // .meet-main {
+            //   flex-wrap: wrap;
+            // }
+            // .boss {
+            //   width: 49%;
+            //   margin-bottom: 12px;
+            // }
           }
           @media screen and (max-width: 768px) {
             .container {
               padding: 0 20px;
+              padding-bottom: 80px;
             }
             .about-header {
               padding: 0;
@@ -394,6 +460,7 @@ const Team = () => {
           @media screen and (max-width: 480px) {
             .container {
               padding: 0 12px;
+              padding-bottom: 70px;
             }
             .about-header {
               padding: 0;
@@ -426,9 +493,9 @@ const Team = () => {
               margin-bottom: 20px;
               letter-spacing: 0;
             }
-            .meet-main {
-              flex-direction: column;
-            }
+            // .meet-main {
+            //   flex-direction: column;
+            // }
             .bar {
               margin-bottom: 8px;
             }

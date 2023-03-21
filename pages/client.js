@@ -613,7 +613,10 @@ const Client = () => {
             //----------------------------
             .bg-feedback {
               background: #1667B2;
-              padding-bottom: 550px;
+              padding-bottom: 50px;
+            }
+            .bg-feedback2 {
+              height: auto;
             }
             .feedback {
               padding: 0 12px;
@@ -739,9 +742,6 @@ const Client = () => {
               height: 100%;
             }
             //-----------------------
-            .bg-feedback {
-              padding-bottom: 500px;
-            }
             .bg-feedback2 {
               padding: 0;
             }

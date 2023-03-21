@@ -33,13 +33,14 @@ const Techniques = () => {
           .techniques {
             height: 400px;
             margin-top: 40px;
+            padding: 0 30px;
+            box-sizing: border-box;
           }
           .techniques-header {
             text-align: center;
           }
           .techniques-main {
             max-width: 1260px;
-            padding: 0 12px;
             margin: auto;
             display: flex;
             justify-content: center;
@@ -78,9 +79,10 @@ const Techniques = () => {
             justify-content: space-evenly;
             align-items: center;
           }
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 768px) {
             .techniques {
               height: auto;
+              padding: 0 12px;
               padding-bottom: 60px;
               gap: 12px;
             }

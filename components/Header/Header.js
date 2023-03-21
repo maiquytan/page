@@ -79,12 +79,12 @@ const Header = () => {
           .menu {
             background: rgba(23, 23, 31, 0.95);
             height: 78px;
+            padding: 0 30px;
           }
           .menu-main {
             align-items: center;
             justify-content: space-between;
             height: 100%;
-            padding: 0 12px;
           }
           .menu-content {
             display: flex;
@@ -144,7 +144,7 @@ const Header = () => {
           }
 
           @media screen and (max-width: 1024px) {
-            .menu,.address {
+            .menu {
               display: none;
             }
             .menu-mobile {

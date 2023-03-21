@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import { listBudget } from '../../constants';
 
 const Request = () => {
+  const [isCheckService, setIsCheckService] = useState(true);
+  const [isCheckBudget, setIsCheckBudget] = useState(true);
+
+  const handleCheckService = () => {
+    setIsCheckService(!isCheckService)
+  }
+
   return (
     <div className="infor-request-bg">
       <div className="infor-request">
@@ -36,15 +45,10 @@ const Request = () => {
               <input type="text" placeholder="Phone number" />
               <input type="text" placeholder="Your email" />
             </div>
-              <input className="input-company" type="text" placeholder="Your company" />
+            <input className="input-company" type="text" placeholder="Your company" />
             <div className="service-budget">
               <div className="service-budget-container">
                 <div>Service: </div>
-                <div className="service">
-                  <input id="check" type="checkbox" className="checkbox" />
-                  <label htmlFor="check" className="span"></label>
-                  <label htmlFor="check" className="service-content">Mobile App</label>
-                </div>
                 <div className="service">
                   <input id="check1" type="checkbox" className="checkbox" />
                   <label htmlFor="check1" className="span"></label>
@@ -66,46 +70,28 @@ const Request = () => {
                   <label htmlFor="check4" className="service-content">VAPT (Vulnerability Assessment and Penetration)</label>
                 </div>
                 <div className="service">
-                  <input id="check5" type="checkbox" className="checkbox" />
+                  <input id="check5" type="checkbox" className="checkbox" onClick={handleCheckService} />
                   <label htmlFor="check5" className="span"></label>
-                  <label htmlFor="check5" className="service-content"><u className="other">Other (please specify)</u></label>
+                  <label htmlFor="check5" className={isCheckService ? "service-content" : "unselected"}><u className="other">Other (please specify)</u></label>
+                  <input className={isCheckService ? "unselected" : "input-other"} type="text" placeholder="Other (please specify)" onClick={e => e.target.focus()} />
                 </div>
               </div>
               <div className="hr-dahed"></div>
               <div className="service-budget-container">
                 <div>Budget</div>
-                <label className="budget">Below 25k
-                  <input type="radio" name="radio" />
+                {listBudget.map((budget, index) => (
+                  <label className="budget" key={index}>{budget.title}
+                    <input type="radio" name="radio" onClick={() => setIsCheckBudget(true)} />
+                    <span className="checkmark"></span>
+                  </label>
+                ))}
+
+                <label className="budget" >
+                  <u className={isCheckBudget ? "other" : "unselected"} >Other (please specify)</u>
+                  <input type="radio" name="radio" onClick={() => setIsCheckBudget(false)} />
                   <span className="checkmark"></span>
                 </label>
-                <label className="budget">25k - 50k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">50k - 100k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">100k - 200k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">200k - 300k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">300k - 400k
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget">Sky’s the limit
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
-                <label className="budget"><u className="other">Other (please specify)</u>
-                  <input type="radio" name="radio" />
-                  <span className="checkmark"></span>
-                </label>
+                <input className={isCheckBudget ? "unselected" : "input-budget"} type="text" placeholder="Other (please specify)" autoFocus />
               </div>
             </div>
             <div className="tell-us">
@@ -114,7 +100,7 @@ const Request = () => {
             </div>
             <div className="upload">
               <img src="upload.svg" alt="upload" title="upload" width="19" height="19" />
-              <input className="custom-file-input" type="file"/>
+              <input className="custom-file-input" type="file" />
             </div>
             <button className="btn-request">Request a Quote</button>
           </div>
@@ -133,6 +119,7 @@ const Request = () => {
             display: flex;
             justify-content: space-between;
             max-width: 1260px;
+            box-sizing: content-box;
             margin: auto;
             height: auto;
             padding: 0 30px;
@@ -286,6 +273,14 @@ const Request = () => {
             width: 90%;
             max-width: 220px;
           }
+          .input-other {
+            border: none;
+            outline: none;
+            font-size: 16px;
+          }
+          .unselected {
+            display: none;
+          }
 
           //custom radio-----------------------------------
           .budget {
@@ -346,11 +341,17 @@ const Request = () => {
           .tell-input {
             margin-top: 16px;
             margin-bottom: 25px;
-            width: calc(100% - 22px);
+            width: 100%;
             height: 100px;
             padding-top: 17px;
             display: flex;
             align-items: flex-start;
+          }
+          .input-budget {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding-left: 42px;
           }
           .upload {
             width: 100%;
@@ -457,6 +458,11 @@ const Request = () => {
             .btn-request {
               margin-top: 20px;
               margin-bottom: 30px;
+            }
+          }
+          @media screen and (max-width: 768px ) {
+            .infor-request {
+              padding: 0 20px;
             }
           }
           @media screen and (max-width: 480px ) {
