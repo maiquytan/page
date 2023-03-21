@@ -140,11 +140,11 @@ export const listBoss = [
 ]
 
 export const listBudget = [
-  {id: 1, title: "Below 25k"},
-  {id: 2, title: "25k - 50k"},
-  {id: 3, title: "50k - 100k"},
-  {id: 4, title: "100k - 200k"},
-  {id: 5, title: "200k - 300k"},
-  {id: 6, title: "300k - 400k"},
+  { id: 1, title: 'Below 25k' },
+  { id: 2, title: '25k - 50k' },
+  { id: 3, title: '50k - 100k' },
+  { id: 4, title: '100k - 200k' },
+  { id: 5, title: '200k - 300k' },
+  { id: 6, title: '300k - 400k' },
 
 ]

@@ -320,7 +320,6 @@ const Team = () => {
             bottom: 0;
             left: 0;
           }
-
           .img-meet {
             background-size: cover;
             background-repeat: no-repeat;
@@ -437,13 +436,6 @@ const Team = () => {
               width: auto;
               padding: 5px 0;
             }
-            // .meet-main {
-            //   flex-wrap: wrap;
-            // }
-            // .boss {
-            //   width: 49%;
-            //   margin-bottom: 12px;
-            // }
           }
           @media screen and (max-width: 768px) {
             .container {
@@ -490,9 +482,6 @@ const Team = () => {
               margin-bottom: 20px;
               letter-spacing: 0;
             }
-            // .meet-main {
-            //   flex-direction: column;
-            // }
             .bar {
               margin-bottom: 8px;
             }
