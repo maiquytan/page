@@ -54,6 +54,8 @@ const Footer = () => {
             display: flex;
             flex-direction: column;
             text-align: center;
+            padding: 0 30px;
+            box-sizing: border-box;
           }
           .footer-main {
             display: flex;
@@ -155,15 +157,17 @@ const Footer = () => {
             .contact-row {
               width: 100%;
             }
+
             .footer-map {
-              width: auto;
+              width: 100%;
               margin: 0;
               margin-bottom: 30px;
+
             }
             .map {
               width: 100%;
               height: auto;
-              aspect-ratio: 2;
+              aspect-ratio: 1.75;
     	        object-fit: cover;
               margin-bottom: 20px;
             }

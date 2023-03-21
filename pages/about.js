@@ -107,7 +107,7 @@ const About = () => {
             height: auto;
             max-width: 1260px;
             margin: auto;
-            margin-top: 118px;
+            margin-top: 78px;
             margin-bottom: 110px;
             display: flex;
             flex-direction: column;
@@ -134,15 +134,14 @@ const About = () => {
           .header-content {
             display: flex;
             justify-content: space-between;
-            align-items: center;
             max-width: 1260px;
           }
           .header-left {
-            width: 35%;
+            width: 40%;
             font-size: 20px;
             line-height: 33px;
             color: #FFFFFF;
-            margin-bottom: 100px;
+            margin-top: 150px;
           }
           .header-right {
             width: 50%;
@@ -250,7 +249,7 @@ const About = () => {
             font-size: 20px;
             line-height: 26px;
           }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 1024px) {
             .about-header {
               height: auto;
               margin-top: 50px;
@@ -293,7 +292,7 @@ const About = () => {
               text-align: justify;
             }
             .header-right {
-              width: 100%;
+              width: 60%;
               height: auto;
               aspect-ratio: 1;
               object-fit: cover;
@@ -305,6 +304,22 @@ const About = () => {
               width: 100%;
               height: 100%;
             }
+            .target-title {
+              margin-top: 0;
+              font-size: 50px;
+            }
+            .target-content {
+              font-size: 16px;
+              line-height: 21px;
+            }
+            .target-left {
+              padding: 0;
+            }
+            .target-right {
+              width: 47%;
+            }
+          }
+          @media screen and (max-width: 768px) {
             .about-bg {
               padding: 0 40px;
               background-position-x: right;
@@ -342,7 +357,7 @@ const About = () => {
               margin-left: 0;
             }
             .target-content {
-              font-size: 16px;
+              font-size: 15px;
               line-height: 21px;
             }
           }

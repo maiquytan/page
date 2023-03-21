@@ -32,7 +32,7 @@ const Index = () => {
         <div className="home">
           <h1 className="h1"> ** HomePage screen ** </h1>
           {/* Header */}
-          <div className="home-header">
+          <div className="home-header session">
             <div className="header-container container">
               <div className="title1">Feel your pleasure, find your treasure</div>
               <div className="title2">Realize system development with "value".</div>
@@ -49,7 +49,7 @@ const Index = () => {
           </div>
 
           {/* Our Services */}
-          <div className="our-services">
+          <div className="our-services session">
             <div className="services-header">
               <label className="item-first">Our services</label>
               <div className="crossbar1"></div>
@@ -108,7 +108,7 @@ const Index = () => {
           <Archivement />
 
           {/* Target */}
-          <div className="target">
+          <div className="target session">
             <div className="container target-container">
             <div className="about-us">
               <div className="about-us-bg">
@@ -218,7 +218,7 @@ const Index = () => {
           </div>
 
           {/* Expertise */}
-          <div className="expertise">
+          <div className="expertise session">
             <div className="expertise-header">
               <label className="item">Expertise</label>
               <div className="crossbar1"></div>
@@ -230,7 +230,7 @@ const Index = () => {
                   <img src="/Expertise1.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
-                  <label className="system-header">Enterprise management systems</label>
+                  <label className="system-header">Enterprise Management Systems</label>
                   <label className="system-content">Our expertise in enterprise management systems allows us to help organizations to optimize their operations and improve their overall efficiency. Our team can provide the solutions and support you need to streamline your processes, automate tasks, and make better use of your data.</label>
                 </div>
               </div>
@@ -239,7 +239,7 @@ const Index = () => {
                   <img src="/Expertise2.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
-                  <label className="system-header">Ecommerce & Retail management systems</label>
+                  <label className="system-header">Ecommerce & Retail Management Systems</label>
                   <label className="system-content">Our expertise in e-commerce and retail management systems helps organizations to grow their online businesses and improve the customer experience. Our team can provide the solutions and support you need to manage your inventory, process orders, and handle customer data securely.</label>
                 </div>
               </div>
@@ -280,11 +280,13 @@ const Index = () => {
             .h1 {
               display: none;
             }
+            .session {
+              padding: 0 30px;
+              box-sizing: border-box;
+            }
             .container {
               max-width: 1260px;
               display: flex;
-              flex-flow: column wrap;
-              padding: 0 20px;
               box-sizing: border-box;
             }
             .home-header {
@@ -311,12 +313,13 @@ const Index = () => {
             .title3 {
               font-size: 1.25rem;
               margin-bottom: 50px;
-              width:50%;
+              max-width: 660px;
               text-align: justify;
             }
             .header-container {
               flex-direction: column;
               justify-content: center;
+              width: 100%;
             }
             .header-btn {
               display: flex;
@@ -378,6 +381,7 @@ const Index = () => {
             }
             .services-main {
               margin: auto;
+              flex-direction: column;
             }
             .services-column {
               display: flex;
@@ -407,22 +411,25 @@ const Index = () => {
 
             //------------------------------
             .target {
-              display: flex;
-              justify-content: center;
-              height: 730px;
+              height: auto;
               background: url("../Axalize.webp");
               background-size: contain;
               background-repeat: no-repeat;
             }
             .target-container {
               width: 100%;
+              margin: auto;
+              justify-content: space-between;
+              gap: 50px;
             }
             .about-us {
               background: url("../IMG_0799.webp");
               background-size: cover;
+              background-position: center;
               background-repeat: no-repeat;
+              width: 50%;
               max-width: 521px;
-              width: 43%;
+              min-width: 450px;
               height: auto;
               overflow: hidden;
               margin-top: 70px;
@@ -462,8 +469,8 @@ const Index = () => {
             }
             .introduce-content {
               color: #DCDCDC;
-              width: 80%;
-              margin: auto;
+              width: auto;
+              padding: 0 38px;
               margin-bottom: 18px;
               font-family: 'Lato', sans-serif;
             }
@@ -475,7 +482,6 @@ const Index = () => {
             }
             .mission-vision {
               margin-top: 100px;
-              width: 50%;
             }
             .mission {
               display: flex;
@@ -513,8 +519,6 @@ const Index = () => {
               background-color: #A1ACBB;
               height: 850px;
               margin-top: 120px;
-              padding: 0 30px;
-              box-sizing: border-box;
             }
             .expertise-header {
               text-align: center;
@@ -559,6 +563,7 @@ const Index = () => {
               font-weight: 500;
               text-align: center;
               margin-bottom: 33px;
+              max-width: 220px;
             }
             .system-header1 {
               margin-bottom: 54px;
@@ -581,30 +586,164 @@ const Index = () => {
             .mission-vision-mobile {
               display: none;
             }
+            @media screen and (max-width: 1260px) {
+              .one-expertise-content {
+                padding: 0 10px;
+                padding-bottom: 38px;
+              }
+            }
             @media screen and (max-width: 1024px) {
+              .home-header {
+                margin-top: 50px;
+                height: calc(100vh - 50px);
+              }
+              .session {
+                padding: 0 20px;
+              }
               .expertise-main {
                 gap: 20px;
               }
-            }
-            @media screen and (max-width: 768px) {
-              .home-header {
-                margin-top: 50px;
-              }
-              //Target------------------------------
               .target {
                 flex-direction: column;
                 height: auto;
                 background: #FFFFFF;
+                padding: 0;
               }
               .target-container {
                 padding: 0;
+                flex-direction: column;
+              }
+              .about-us-bg {
+                background: linear-gradient(180deg,rgba(43,42,42,0)45%,#236b99 77%);
+                max-width: 1024px;
+                margin: auto;
+                width: auto;
+                height: auto;
+
+                object-fit: cover;
+              }
+              .about-us {
+                border-radius: 0px;
+                background: linear-gradient(180deg, rgba(5, 63, 117, 0.65) 0%, rgba(47, 47, 47, 0.5005) 50%), url("../IMG_0799.webp");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                max-width: 1024px;
+                margin: auto;
+                margin-top: 0;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                position: relative;
+              }
+              .about-content {
+                margin-top: 75%;
+                margin-bottom: 0;
+                padding-bottom: 30px;
+              }
+              .introduce-header {
+                margin-bottom: 40px;
+                width: auto;
+                padding: 0 50px;
+              }
+              .introduce-content {
+                font-size: 17px;
+              }
+              .contact {
+                color: rgba(252, 114, 30, 1);
+              }
+              .mission-vision-mobile {
+                display: block;
+                padding: 0 12px;
+              }
+              .target-row {
+                margin: 0;
+                flex-direction: column;
+              }
+              .mission-mobile {
+                display: flex;
+                max-width: 294px;
+                font-size: 15px;
+                align-items: center;
+                margin-bottom: 15px;
+                margin-top: 28px;
+              }
+              .mission-header {
+                margin-bottom: 0;
+              }
+              .mission-vision {
+                display: none;
+              }
+              .mission-content {
+                font-size: 15px;
+              }
+              .one-core {
+                font-size: 15px;
+                margin-right: 30px;
+                margin-left: 8px;
+              }
+              .one-core>img {
+                margin-right: 18px;
+              }
+              .expertise {
+                height: auto;
+                padding-bottom: 50px;
+              }
+              .expertise-header {
+                padding-top: 60px;
+              }
+              .expertise-main {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 40px;
+              }
+              .one-expertise-content {
+                max-width: 900px;
+                margin: auto;
+                height: 100%;
+                box-sizing: border-box;
+              }
+              .img-expertise {
+                width: 54px;
+                height: 54px;
+                top: 15px;
+                left: 10%;
+              }
+              .img-expertise>img {
+                width: 100%;
+                height: 100%;
+              }
+              .system-header,.system-header1 {
+                padding-top: 20px;
+                width: 70%;
+                font-size: 20px;
+                text-align: left;
+                margin-left: 20%;
+                margin-bottom: 5%;
+                max-width: 1024px;
+              }
+              .system-header1 {
+                margin-bottom: 45px;
+              }
+
+            }
+            @media screen and (max-width: 768px) {
+              .target {
+                flex-direction: column;
+                height: auto;
+                background: #FFFFFF;
+                padding: 0;
+              }
+              .target-container {
+                padding: 0;
+                flex-direction: column;
               }
               .about-us-bg {
                 background: linear-gradient(180deg,rgba(43,42,42,0)45%,#236b99 77%);
                 max-width: 900px;
                 width: auto;
                 height: auto;
-                aspect-ratio: 0.6;
                 object-fit: cover;
               }
               .about-us {
@@ -613,6 +752,7 @@ const Index = () => {
                 background-size: contain;
                 background-repeat: no-repeat;
                 max-width: 900px;
+                min-width: 0;
                 margin-top: 0;
                 width: 100%;
                 height: auto;
@@ -620,14 +760,14 @@ const Index = () => {
                 position: relative;
               }
               .about-content {
-                position: absolute;
-                top: 50%;
+                margin-top: 75%;
+                margin-bottom: 0;
+                padding-bottom: 30px;
               }
               .introduce-header {
-                font-size: 1.75rem;
                 margin-bottom: 40px;
                 width: auto;
-                padding: 0 100px;
+                padding: 0 50px;
               }
               .introduce-content {
                 font-size: 17px;
@@ -712,12 +852,12 @@ const Index = () => {
               }
             }
             @media screen and (max-width: 480px) {
-              .home-header {
-                margin-top: 50px;
-                height: calc(100vh - 50px);
+              .session {
+                padding: 0 12px;
               }
               .header-container {
                 position: relative;
+                padding: 0 10px;
               }
               .title1 {
                 font-size: 2.188rem;
@@ -755,7 +895,6 @@ const Index = () => {
                 margin-bottom: 10px;
               }
               .container {
-                padding: 0 12px;
                 padding-bottom: 20px;
               }
               //our-services----------------------------
@@ -774,9 +913,12 @@ const Index = () => {
               }
 
              //-----------------------------------------
+             .target {
+              padding: 0;
+             }
              .target-container {
               padding: 0;
-            }
+              }
               .about-us-bg {
                 max-width: 600px;
                 width: 100%;
@@ -784,6 +926,7 @@ const Index = () => {
               }
               .about-us {
                 max-width: 600px;
+                min-width: 0;
                 margin-top: 0;
                 height: 810px;
               }
@@ -792,19 +935,17 @@ const Index = () => {
                 font-size: 1rem;
                 padding: 0 40px;
               }
-              .about_content {
-                top: 50%;
-              }
               .introduce-content {
-                width: 90%;
+                padding: 0 24px;
                 font-size: 14px;
               }
               .system-header,.system-header1 {
                 margin-left: 25%;
               }
               .expertise {
-                padding: 0;
+                margin-top: 80px;
               }
+
             }
           `}
         </style>

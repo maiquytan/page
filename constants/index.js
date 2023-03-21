@@ -101,4 +101,50 @@ export const listBoss = [
     name: 'Cong Luu', image: '/LuuCong.webp', icon: '/icon_backend.svg',
     job: 'Backend developer', describe: 'Creating robust and scalable backend systems to meet your business needs and exceed your expectations.'
   },
+  {
+    name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.'
+  },
+  {
+    name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
+    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+  },
+  {
+    name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Building innovative backend solutions to power your business and drive success.'
+  },
+  {
+    name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.'
+  },
+  {
+    name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
+    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+  },
+  {
+    name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Building innovative backend solutions to power your business and drive success.'
+  },
+  {
+    name: 'Duong Nguyen', image: "/NguyenDuong.webp", icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Expertly crafting powerful backend solutions to drive your business forward.'
+  },
+  {
+    name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
+    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+  },
+  {
+    name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
+    job: 'Backend developer', describe: 'Building innovative backend solutions to power your business and drive success.'
+  },
+]
+
+export const listBudget = [
+  { id: 1, title: 'Below 25k' },
+  { id: 2, title: '25k - 50k' },
+  { id: 3, title: '50k - 100k' },
+  { id: 4, title: '100k - 200k' },
+  { id: 5, title: '200k - 300k' },
+  { id: 6, title: '300k - 400k' },
+
 ]
