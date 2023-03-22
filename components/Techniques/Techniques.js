@@ -1,6 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import { listTechniques, settingTechniques } from '../../constants';
 
 const Techniques = () => {
+  const [startX, setStartX] = useState(0);
+  const columnQuantity = Math.ceil(settingTechniques.itemListQuantity / settingTechniques.itemRow)
+  const listWidth = (columnQuantity / settingTechniques.itemPerView) * 100
+  const itemWidth = (1 / columnQuantity) * 100
+  const marginX = startX * itemWidth
+
+  const handleRightClick = () => {
+    if (startX >= 0 && startX < (columnQuantity - (settingTechniques.itemPerView))) {
+      setStartX(startX + 1)
+    }
+  }
+
+  const handleLeftClick = () => {
+    if (startX > 0) {
+      setStartX(startX - 1)
+    }
+  }
+
+  const itemWidthString = `calc(${itemWidth}% - 11px)`
+
   return (
     <div className="techniques">
       <div className="techniques-header">
@@ -9,43 +31,99 @@ const Techniques = () => {
         <div className="crossbar2"></div>
       </div>
       <div className="techniques-main">
-          <img src="/androidStudio.svg" alt="android" title="android" width="86" height="55" />
-          <img src="/angular.svg" alt="angular" title="angular" width="120" height="55" />
-          <img src="/reactjs.svg" alt="reactjs" title="reactjs" width="124" height="50" />
-          <img src="/vuejs.svg" alt="vuejs" title="vuejs" width="117" height="55" />
-          <img src="/reactive-native.svg" alt="reactive-native" title="reactive-native" width="163" height="55" />
-          <div className="html-css">
-            <img src="/js.svg" alt="js" title="js" width="39" height="39" />
-            <img src="/html.svg" alt="html" title="html" width="39" height="39" />
-            <img src="/css.svg" alt="css" title="css" width="39" height="39" />
+        <div onClick={handleLeftClick} className={startX === 0 ? 'undisable left' : 'button'}>
+          <svg viewBox="0 0 20 20" color="green" width="50" height="50">
+            <path d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"></path>
+          </svg>
+        </div>
+        <div className="techniques-list">
+          <div className="techniques-img">
+            {listTechniques.map((list, index) => (
+              <div className="language" key={index}>
+                <img src={list.title} alt="techniques" title="techniques" width={list.width} height={list.height} />
+              </div>
+            ))}
           </div>
-          <img src="/mongodb.svg" alt="mongodb" title="mongodb" width="124" height="37" />
-          <img src="/php.svg" alt="php" title="php" width="89" height="44" />
-          <img src="/django.svg" alt="django" title="django" width="98" height="55" />
-          <img src="/nodejs.svg" alt="nodejs" title="nodejs" width="81" height="49" />
-          <img src="/mysql.svg" alt="mysql" title="mysql" width="99" height="51" />
-          <img src="/postgres.svg" alt="postgres" title="postgres" width="123" height="55" />
-          <img src="/laravel.svg" alt="laravel" title="laravel" width="147" height="54" />
-          <img src="/magento.svg" alt="magento" title="magento" width="122" height="44" />
+        </div>
+        <div onClick={handleRightClick} className={startX === (columnQuantity - (settingTechniques.itemPerView)) ? 'undisable right' : 'button'}>
+          <svg viewBox="0 0 20 20" color="green" width="50" height="50">
+            <path d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
+          </svg>
+        </div>
       </div>
+      <div className="techniques-main-mobile">
+        {listTechniques.map((list, index) => (
+          <div className="language-mobile">
+            <img key={index} src={list.title} alt="techniques" title="techniques" width={list.width} height={list.height} />
+          </div>
+        ))}
+      </div>
+
       <style jsx>
         {`
           .techniques {
             height: 400px;
+            max-width: 1360px;
+            margin: auto;
             margin-top: 40px;
-            padding: 0 30px;
             box-sizing: border-box;
           }
           .techniques-header {
             text-align: center;
           }
           .techniques-main {
+            display: flex;
+            align-items: center;
+            max-width: 1360px;
+            height: auto;
+            margin: auto;
+            padding-bottom: 95px;
+          }
+          .techniques-list {
             max-width: 1260px;
             margin: auto;
+            overflow: hidden;
+          }
+          .techniques-img {
+            transform: translateX(-${marginX}%);
+            width: ${listWidth}%;
+            flex-wrap: wrap;
+            display: flex;
+            gap: 12px;
+            transition: .4s;
+          }
+          .left {
+            margin-left: 50px;
+          }
+          .right {
+            margin-right: 50px;
+          }
+          .undisable>svg {
+            display: none;
+          }
+          .language {
+            width: ${itemWidthString};
+            height: 55px;
+            background: #FFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 3px;
+            overflow: hidden;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
+            align-items: center;
+          }
+          .techniques-main-mobile {
+            display: none;
+          }
+          .language-mobile {
+            width: 45%;
+            background: #FFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 3px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
           .item {
             color: #1E1E1E;
@@ -67,18 +145,7 @@ const Techniques = () => {
             margin: auto;
             margin-bottom: 45px;
           }
-          .techniques-main>img,.html-css {
-            width: 13%;
-            height: 55px;
-            border: 1px solid #CCCCCC;
-            border-radius: 3px;
-            gap: 1.5%;
-          }
-          .html-css {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-          }
+
           @media screen and (max-width: 768px) {
             .techniques {
               height: auto;
@@ -87,10 +154,17 @@ const Techniques = () => {
               gap: 12px;
             }
             .techniques-main {
+              display: none;
+            }
+            .techniques-main-mobile {
+              margin: auto;
               display: flex;
               justify-content: center;
+              flex-wrap: wrap;
+              gap: 15px;
+              justify-content: center;
             }
-            .techniques-main>img,.html-css {
+            .techniques-main-mobile>img{
               width: 47%;
             }
           }

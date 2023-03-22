@@ -65,7 +65,7 @@ const Footer = () => {
             margin-top: 36px;
             margin-bottom: 61px;
             text-align: left;
-            justify-content: center;
+            justify-content: space-between;
           }
           .footer-service {
             margin-right: 30px;
@@ -86,7 +86,7 @@ const Footer = () => {
             margin-bottom: 8px;
           }
           .contact {
-            width: 50%;
+            width: 56%;
           }
           .logo-footer {
             margin-bottom: 38px;
@@ -123,7 +123,7 @@ const Footer = () => {
               margin-left: 20px;
             }
             .footer-map {
-              width: 90%;
+              width: 100%;
               margin-right: 20px;
             }
             .map {
