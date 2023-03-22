@@ -220,7 +220,7 @@ const Portfolio = () => {
             display: flex;
             flex-direction: column;
             max-width: 215px;
-            height: 555px;
+            height: auto;
             margin-top: 25px;
             border-left: 1px solid #525252;
             padding-left: 15px;

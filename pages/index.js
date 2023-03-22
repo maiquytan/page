@@ -257,7 +257,7 @@ const Index = () => {
                   <img src="/Expertise4.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
-                  <label className="system-header1">New business ideas</label>
+                  <label className="system-header one">New business ideas</label>
                   <label className="system-content">Our expertise in new business ideas allows us to help organizations to create and implement innovative solutions that drive business growth. Our team of experts can work with you to identify new opportunities, develop new products and services, and bring new ideas to market.</label>
                 </div>
               </div>
@@ -557,7 +557,7 @@ const Index = () => {
               top: -50px;
               position: absolute;
             }
-            .system-header,.system-header1 {
+            .system-header {
               padding-top: 100px;
               font-size: 1.125rem;
               font-weight: 500;
@@ -565,7 +565,7 @@ const Index = () => {
               margin-bottom: 33px;
               max-width: 220px;
             }
-            .system-header1 {
+            .one {
               margin-bottom: 54px;
             }
             .system-content {
@@ -714,7 +714,7 @@ const Index = () => {
                 width: 100%;
                 height: 100%;
               }
-              .system-header,.system-header1 {
+              .system-header {
                 padding-top: 20px;
                 width: 70%;
                 font-size: 20px;
@@ -723,10 +723,9 @@ const Index = () => {
                 margin-bottom: 5%;
                 max-width: 1024px;
               }
-              .system-header1 {
+              .one {
                 margin-bottom: 45px;
               }
-
             }
             @media screen and (max-width: 768px) {
               .target {
@@ -833,21 +832,17 @@ const Index = () => {
                 width: 54px;
                 height: 54px;
                 top: 15px;
-                left: 10%;
+                left: 6%;
               }
-              .img-expertise>img {
-                width: 100%;
-                height: 100%;
-              }
-              .system-header,.system-header1 {
+              .system-header {
                 padding-top: 20px;
                 width: 70%;
                 font-size: 20px;
                 text-align: left;
-                margin-left: 20%;
+                margin-left: 18%;
                 margin-bottom: 5%;
               }
-              .system-header1 {
+              .one {
                 margin-bottom: 45px;
               }
             }
@@ -939,13 +934,16 @@ const Index = () => {
                 padding: 0 24px;
                 font-size: 14px;
               }
-              .system-header,.system-header1 {
+              .img-expertise {
+                left: 8%;
+              }
+              .system-header {
                 margin-left: 25%;
+                max-width: 230px;
               }
               .expertise {
                 margin-top: 80px;
               }
-
             }
           `}
         </style>

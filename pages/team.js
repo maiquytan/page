@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react'
 
-import { listBoss,settings } from '../constants'
+import { listBoss, settings } from '../constants'
 
 const Team = () => {
   const router = useRouter();
@@ -11,6 +11,22 @@ const Team = () => {
   const [startX, setStartX] = useState(0);
   const listRef = useRef(null);
   const ref = useRef(null);
+  const [start, setStart] = useState(0);
+  const listWidth = (settings.itemListQuantity / settings.itemPerView) * 100
+  const itemWidth = (1 / settings.itemListQuantity) * 100
+  const marginX = start * itemWidth
+
+  const handleRightClick = () => {
+    if (start >= 0 && start < (settings.itemListQuantity - (settings.itemPerView))) {
+      setStart(start + 1)
+    }
+  }
+
+  const handleLeftClick = () => {
+    if (start > 0) {
+      setStart(start - 1)
+    }
+  }
 
   const handleMouseDown = (event) => {
     setIsDragging(true);
@@ -92,12 +108,50 @@ const Team = () => {
       </div>
 
       {/* Meet */}
-      <div className="meet container" ref={ref}>
+      <div className="meet">
+        <div className="meet-header">
+          <div className="bar"></div>
+          <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
+        </div>
+        <div className="meet-main">
+        <div onClick={handleLeftClick} className={start===0 ? 'undisable left' : 'button'}>
+          <svg viewBox="0 0 20 20" color="green" width="50" height="50">
+            <path d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"></path>
+          </svg>
+        </div>
+        <div className="meet-list">
+          <div className="meet-img">
+            {listBoss.map((list, index) => (
+              <div className="boss" key={index}>
+                <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
+                  <div className="bg-meet">
+                    <p> {list.name}</p>
+                  </div>
+                </div>
+                <div className="icon-meet" >
+                  <img src={list.icon} alt="icon-meet" title="icon-meet" width="70" height="70" />
+                </div>
+                <div className="meet-content">
+                  <h3> {list.job}</h3>
+                  <label> {list.describe}</label>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div onClick={handleRightClick} className={start===(settings.itemListQuantity - (settings.itemPerView)) ? 'undisable right': 'button'}>
+          <svg viewBox="0 0 20 20" color="green" width="50" height="50">
+            <path d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
+          </svg>
+        </div>
+        </div>
+      </div>
+      <div className="meet-mobile container" ref={ref}>
         <div>
           <div className="bar"></div>
           <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
         </div>
-        <div className="meet-main"
+        <div className="meet-main-mobile"
           ref={listRef}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
@@ -105,7 +159,7 @@ const Team = () => {
           onMouseLeave={handleMouseUp}
         >
           {listBoss.map((list, index) => (
-            <div className="boss" key={index}>
+            <div className="boss-mobile" key={index}>
               <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
                 <div className="bg-meet">
                   <p> {list.name}</p>
@@ -260,6 +314,36 @@ const Team = () => {
 
           //Meet----------------------------
           .meet {
+            max-width: 1360px;
+            margin: auto;
+            position: relative;
+          }
+          .meet-header {
+            margin-left: 50px;
+          }
+          .meet-main {
+            display: flex;
+            align-items: center;
+            max-width: 1360px;
+            height: auto;
+            padding-bottom: 95px;
+          }
+          .meet-list {
+            max-width: 1260px;
+            margin: auto;
+            overflow: hidden;
+          }
+          .left {
+            margin-left: 50px;
+          }
+          .right {
+            margin-right: 50px;
+          }
+          .undisable>svg {
+            display: none;
+          }
+          .meet-mobile {
+            display: none;
             flex-direction: column;
             max-width: 1260px;
             width: auto;
@@ -285,7 +369,23 @@ const Team = () => {
           .meet-title>label {
             color: #1667B2;
           }
-          .meet-main {
+          .meet-img {
+            transform: translateX(-${marginX}%);
+            width: ${listWidth}%;
+            height: auto;
+            display: flex;
+            gap: 12px;
+            transition: .4s;
+          }
+          .boss {
+            width: ${itemWidth}%;
+            height: auto;
+            min-height: 200px;
+            background: #F3F3F3;
+            border-radius: 5px;
+            overflow: hidden;
+          }
+          .meet-main-mobile {
             max-width: 1260px;
             width: 100%;
             overflow: auto;
@@ -293,13 +393,13 @@ const Team = () => {
             display: flex;
             gap: .9rem;
           }
-          .meet-main::-webkit-scrollbar-track {
+          .meet-main-mobile::-webkit-scrollbar-track {
             display: none;
           }
-          .meet-main::-webkit-scrollbar {
+          .meet-main-mobile::-webkit-scrollbar {
             display: none;
           }
-          .boss {
+          .boss-mobile {
             width: 24%;
             height: 480px;
             background: #F3F3F3;
@@ -311,7 +411,7 @@ const Team = () => {
             text-decoration: none;
             -webkit-user-drag: none;
           }
-          .boss.active:before {
+          .boss-mobile.active:before {
             content: "";
             height: 2px;
             width: 100%;
@@ -323,7 +423,8 @@ const Team = () => {
           .img-meet {
             background-size: cover;
             background-repeat: no-repeat;
-            height: 372px;
+            width: 100%;
+            aspect-ratio: 0.82;
             color: #FFFFFF;
             font-weight: 600;
             font-size: 31px;
@@ -336,7 +437,7 @@ const Team = () => {
             flex-direction: column;
             justify-content: flex-end;
           }
-          .bg-meet > p {
+          .bg-meet>p {
             padding-left: 36px;
             margin-bottom: 30px;
             width: 20%;
@@ -345,14 +446,19 @@ const Team = () => {
             position: relative;
           }
           .icon-meet>img {
+            width: 23%;
+            height: auto;
+            aspect-ratio: 1;
+    	      object-fit: cover;
             position: absolute;
             top: -35px;
-            right: 36px;
+            right: 11%;
           }
           .meet-content {
             width: auto;
             padding-left: 25px;
             padding-right: 20px;
+            padding-bottom: 10px;
             margin: auto;
           }
           .meet-content>h3 {
@@ -367,10 +473,7 @@ const Team = () => {
             line-height: 18px;
             color: #525252;
           }
-          @media screen and (max-width: 1320px) {
-          .meet{
-            width: auto;
-          }
+
           @media screen and (max-width: 1024px) {
             .container {
               padding: 0 30px;
@@ -436,6 +539,14 @@ const Team = () => {
               width: auto;
               padding: 5px 0;
             }
+            //-------------------
+            .meet {
+              display: none;
+            }
+            .meet-mobile {
+              display: flex;
+              width: auto;
+            }
           }
           @media screen and (max-width: 768px) {
             .container {
@@ -485,7 +596,7 @@ const Team = () => {
             .bar {
               margin-bottom: 8px;
             }
-            .meet {
+            .meet-mobile {
               padding: 0 12px;
             }
             .meet-title {
@@ -494,11 +605,10 @@ const Team = () => {
             .meet-title {
               margin-bottom: 8px;
             }
-            .boss {
+            .boss-mobile {
               width: auto;
               margin-bottom: 10px;
             }
-
           }
         `}
       </style>

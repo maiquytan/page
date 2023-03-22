@@ -125,16 +125,16 @@ const Archivement = () => {
           text-shadow: 2px 0 #2F2D77, -2px 0 #2F2D77, 0 2px #2F2D77, 0 -2px #2F2D77,
           1px 1px #2F2D77, -1px -1px #2F2D77, 1px -1px #2F2D77, -1px 1px #2F2D77;
         }
-        @media screen and (min-width: 900px) {
-          .archivement-mobile {
-            display: none;
-          }
+        .archivement-mobile {
+          display: none;
         }
-        @media screen and (max-width: 900px) {
+        
+        @media screen and (max-width: 1024px) {
           .archivement {
             display: none;
           }
           .archivement-mobile {
+            display: block;
             height: 470px;
           }
           .archivement-container {
