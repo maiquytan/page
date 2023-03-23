@@ -99,9 +99,10 @@ export const listTechniques = [
   { id: 14, title: '/magento.svg', width: '122', height:'44' },
 ]
 
-export const settings = {
+export const settingTeam = {
   itemPerView: 4,
-  itemListQuantity: listBoss.length || 4,
+  itemPerViewTablet: 3,
+  itemListQuantity: listBoss.length ,
 }
 
 export const settingTechniques = {
@@ -111,4 +112,5 @@ export const settingTechniques = {
   itemRow: 2,
 }
 
+export const defaultContent = 'Upload files';
 

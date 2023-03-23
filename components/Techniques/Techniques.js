@@ -5,21 +5,21 @@ import useViewport from '../../hook/useViewPort';
 
 const Techniques = () => {
   const [startX, setStartX] = useState(0);
-  const [itemView,setItemView] = useState(settingTechniques.itemPerView)
+  const [itemView, setItemView] = useState(settingTechniques.itemPerView)
   const columnQuantity = Math.ceil(settingTechniques.itemListQuantity / settingTechniques.itemRow)
   const listWidth = (columnQuantity / itemView) * 100
   const itemWidth = (1 / columnQuantity) * 100
   const marginX = startX * itemWidth
   const [width] = useViewport();
 
-  useEffect (() => {
-    if( width<1024){
+  useEffect(() => {
+    if (width < 1024) {
       setItemView(settingTechniques.itemPerViewTablet);
     }
     else {
       setItemView(settingTechniques.itemPerView);
     }
-  },[width])
+  }, [width])
 
   const handleRightClick = () => {
     if (startX >= 0 && startX < (columnQuantity - (itemView))) {

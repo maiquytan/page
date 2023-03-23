@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
-import { listBoss, settings } from '../constants'
+import { listBoss, settingTeam } from '../constants'
 import useViewport from '../hook/useViewPort';
 
 const Team = () => {
@@ -13,19 +13,23 @@ const Team = () => {
   const listRef = useRef(null);
   const ref = useRef(null);
   const [start, setStart] = useState(0);
-
-  var itemPerView = 4;
-  const listWidth = (settings.itemListQuantity / settings.itemPerView) * 100
-  const itemWidth = (1 / settings.itemListQuantity) * 100
+  const [itemView, setItemView] = useState(settingTeam.itemPerView)
+  const listWidth = (settingTeam.itemListQuantity / itemView) * 100
+  const itemWidth = (1 / settingTeam.itemListQuantity) * 100
   const marginX = start * itemWidth
-
   const [width] = useViewport();
-  if(width<1260){
-    itemPerView = 3;
-  }
+
+  useEffect(() => {
+    if (width < 1260) {
+      setItemView(settingTeam.itemPerViewTablet);
+    }
+    else {
+      setItemView(settingTeam.itemPerView);
+    }
+  }, [width])
 
   const handleRightClick = () => {
-    if (start >= 0 && start < (settings.itemListQuantity - (settings.itemPerView))) {
+    if (start >= 0 && start < (settingTeam.itemListQuantity - (itemView))) {
       setStart(start + 1)
     }
   }
@@ -122,36 +126,36 @@ const Team = () => {
           <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
         </div>
         <div className="meet-main">
-        <div onClick={handleLeftClick} className={start===0 ? 'undisable left' : 'button'}>
-          <svg viewBox="0 0 20 20" color="green" width="50" height="50">
-            <path d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"></path>
-          </svg>
-        </div>
-        <div className="meet-list">
-          <div className="meet-img">
-            {listBoss.map((list, index) => (
-              <div className="boss" key={index}>
-                <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
-                  <div className="bg-meet">
-                    <p> {list.name}</p>
+          <div onClick={handleLeftClick} className={start === 0 ? 'undisable left' : 'button'}>
+            <svg viewBox="0 0 20 20" color="green" width="50" height="50">
+              <path d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"></path>
+            </svg>
+          </div>
+          <div className="meet-list">
+            <div className="meet-img">
+              {listBoss.map((list, index) => (
+                <div className="boss" key={index}>
+                  <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
+                    <div className="bg-meet">
+                      <p> {list.name}</p>
+                    </div>
+                  </div>
+                  <div className="icon-meet" >
+                    <img src={list.icon} alt="icon-meet" title="icon-meet" width="70" height="70" />
+                  </div>
+                  <div className="meet-content">
+                    <h3> {list.job}</h3>
+                    <label> {list.describe}</label>
                   </div>
                 </div>
-                <div className="icon-meet" >
-                  <img src={list.icon} alt="icon-meet" title="icon-meet" width="70" height="70" />
-                </div>
-                <div className="meet-content">
-                  <h3> {list.job}</h3>
-                  <label> {list.describe}</label>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-        <div onClick={handleRightClick} className={start===(settings.itemListQuantity - (settings.itemPerView)) ? 'undisable right': 'button'}>
-          <svg viewBox="0 0 20 20" color="green" width="50" height="50">
-            <path d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
-          </svg>
-        </div>
+          <div onClick={handleRightClick} className={start === (settingTeam.itemListQuantity - (itemView)) ? 'undisable right' : 'button'}>
+            <svg viewBox="0 0 20 20" color="green" width="50" height="50">
+              <path d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
+            </svg>
+          </div>
         </div>
       </div>
       <div className="meet-mobile container" ref={ref}>

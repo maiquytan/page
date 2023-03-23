@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 
-import { listBudget } from '../../constants';
+import { defaultContent, listBudget } from '../../constants';
 
 const Request = () => {
   const [isCheckService, setIsCheckService] = useState(true);
   const [isCheckBudget, setIsCheckBudget] = useState(true);
-  const [content, setContent] = useState('Upload files');
+  const [content, setContent] = useState(defaultContent);
 
   const handleCheckService = () => {
     setIsCheckService(!isCheckService)
+  }
+
+  const handleOnChange = (e) => {
+      setContent(e.target.files[0]?.name || 'Nothing was choosen!')
   }
 
   return (
@@ -100,7 +104,7 @@ const Request = () => {
             </div>
             <div className="upload">
               <img src="upload.svg" alt="upload" title="upload" width="19" height="19" />
-              <input className="custom-file-input" type="file" onChange={(e) => setContent(e.target.files[0].name || 'Nothing was choosen!')} />
+              <input className="custom-file-input" type="file" onChange={e => handleOnChange(e)} />
             </div>
             <button className="btn-request">Request a Quote</button>
           </div>

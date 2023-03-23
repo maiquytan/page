@@ -59,7 +59,7 @@ const Footer = () => {
           .footer-main {
             display: flex;
             margin: auto;
-            max-width: 1260px;
+            max-width: 1320px;
             height: auto;
             padding: 0 30px;
             margin-top: 36px;
