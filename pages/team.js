@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react'
 
 import { listBoss, settings } from '../constants'
+import useViewport from '../hook/useViewPort';
 
 const Team = () => {
   const router = useRouter();
@@ -12,9 +13,16 @@ const Team = () => {
   const listRef = useRef(null);
   const ref = useRef(null);
   const [start, setStart] = useState(0);
+
+  var itemPerView = 4;
   const listWidth = (settings.itemListQuantity / settings.itemPerView) * 100
   const itemWidth = (1 / settings.itemListQuantity) * 100
   const marginX = start * itemWidth
+
+  const [width] = useViewport();
+  if(width<1260){
+    itemPerView = 3;
+  }
 
   const handleRightClick = () => {
     if (start >= 0 && start < (settings.itemListQuantity - (settings.itemPerView))) {
@@ -577,10 +585,11 @@ const Team = () => {
             }
             .one-introduce {
               align-items: flex-start;
+              padding-left: 30px;
+              padding-right: 12px;
             }
             .one-introduce>img {
-              margin-top: 25px;
-              margin-left: 30px;
+              margin-top: 26px;
               margin-right: 18px;
             }
             .introduce-content>h2 {
@@ -591,7 +600,6 @@ const Team = () => {
               font-size: 13px;
               line-height: 20px;
               margin-bottom: 20px;
-              letter-spacing: 0;
             }
             .bar {
               margin-bottom: 8px;

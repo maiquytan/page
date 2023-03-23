@@ -359,11 +359,11 @@ const Client = () => {
             height: 100%;
           }
           .one-reason>p {
-            width: 74.5%;
+            padding: 0 20px;
             margin: auto;
             font-size: 17px;
             line-height: 21px;
-            margin-bottom: 50px;
+            padding-bottom: 50px;
           }
 
           //Expert-------------------------
@@ -548,7 +548,7 @@ const Client = () => {
               text-align: center;
             }
             .header-right {
-              width: 48%;
+              width: 60%;
               margin: auto;
               margin-top: 7%;
               margin-bottom: 10%;
@@ -618,9 +618,6 @@ const Client = () => {
             .bg-feedback2 {
               height: auto;
             }
-            .feedback {
-              padding: 0 12px;
-            }
             .feedback-header {
               flex-direction: column;
             }
@@ -648,11 +645,10 @@ const Client = () => {
             .feedback-content-mobile {
               display: block;
               background-color: #1466b1;
-              padding: 0 12px;
             }
             .one-feedback {
               width: auto;
-              margin-bottom: 12px;
+              margin-bottom: 16px;
               padding: 24px 0;
               flex-direction: row;
               justify-content: center;
@@ -674,6 +670,18 @@ const Client = () => {
             }
             .company-name {
               margin: 0;
+            }
+          }
+          @media screen and (max-width: 768px) {
+            .reason {
+              padding: 0 12px;
+            }
+            .bg-feedback2 {
+              padding: 0 20px;
+            }
+            .one-reason>p {
+              font-size: 15px;
+              padding-bottom: 40px;
             }
           }
           @media screen and (max-width: 480px) {
@@ -714,8 +722,8 @@ const Client = () => {
             .one-reason>p {
               font-size: 13px;
               line-height: 16px;
-              width: 89%;
-              margin-bottom: 25px;
+              padding: 0 10px;
+              padding-bottom: 25px;
             }
             //------------------------
             .expert {
@@ -743,7 +751,7 @@ const Client = () => {
             }
             //-----------------------
             .bg-feedback2 {
-              padding: 0;
+              padding: 0 12px;
             }
             .feedback-header {
               padding-top: 35px;

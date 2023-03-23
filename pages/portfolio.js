@@ -9,13 +9,10 @@ const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isDropdownApp, setIsDropdownApp] = useState(false);
   const [isSelect, setIsSelect] = useState(listSelectApplication[0]);
+  const firstPageIndex = (currentPage - 1) * pageSize;
+  const lastPageIndex = firstPageIndex + pageSize;
 
   const filterData = dataApplication.filter(x => x.category === isSelect.title);
-  const currentTableData = useMemo(() => {
-    const firstPageIndex = (currentPage - 1) * pageSize;
-    const lastPageIndex = firstPageIndex + pageSize;
-    return filterData.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage]);
 
   const handleDropdownOnclick = () => {
     setIsDropdownApp(!isDropdownApp);
@@ -76,7 +73,7 @@ const Portfolio = () => {
 
           <div className="applications-right">
             <div className="applications-row">
-              {currentTableData.map((item, index) => {
+              {filterData.slice(firstPageIndex, lastPageIndex).map((item, index) => {
                 return (
                   <div className="illustration" key={index}>
                     <img src={item.img} alt="illustration" title="illustration" width="465" height="244" />
@@ -401,11 +398,13 @@ const Portfolio = () => {
             .illustration {
               margin-bottom: 10px;
             }
+          }
+          @media screen and (max-width: 768px) {
             .illustration>div {
-              font-size: 13px;
+              font-size: 16px;
             }
             .illustration>p {
-              font-size: 12px;
+              font-size: 15px;
             }
           }
           @media screen and (max-width: 480px) {
@@ -423,6 +422,12 @@ const Portfolio = () => {
               padding: 0 12px;
               font-size: 14px;
               line-height: 20px;
+            }
+            .illustration>div {
+              font-size: 13px;
+            }
+            .illustration>p {
+              font-size: 12px;
             }
             .select {
               height: 36px;

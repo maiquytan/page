@@ -106,7 +106,8 @@ export const settings = {
 
 export const settingTechniques = {
   itemPerView: 6,
-  itemListQuantity: listBoss.length || 6,
+  itemPerViewTablet: 5,
+  itemListQuantity: listBoss.length ,
   itemRow: 2,
 }
 

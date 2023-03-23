@@ -586,12 +586,6 @@ const Index = () => {
             .mission-vision-mobile {
               display: none;
             }
-            @media screen and (max-width: 1260px) {
-              .one-expertise-content {
-                padding: 0 10px;
-                padding-bottom: 38px;
-              }
-            }
             @media screen and (max-width: 1024px) {
               .home-header {
                 margin-top: 50px;
@@ -702,29 +696,32 @@ const Index = () => {
                 max-width: 900px;
                 margin: auto;
                 height: 100%;
+                padding: 0 26px;
                 box-sizing: border-box;
               }
               .img-expertise {
                 width: 54px;
                 height: 54px;
                 top: 15px;
-                left: 10%;
+                left: 30px;
               }
               .img-expertise>img {
                 width: 100%;
                 height: 100%;
               }
               .system-header {
-                padding-top: 20px;
+                padding-top: 30px;
                 width: 70%;
                 font-size: 20px;
                 text-align: left;
-                margin-left: 20%;
-                margin-bottom: 5%;
+                margin-left: 75px;
                 max-width: 1024px;
               }
               .one {
-                margin-bottom: 45px;
+                margin-bottom: 33px;
+              }
+              .system-content {
+                padding-bottom: 20px;
               }
             }
             @media screen and (max-width: 768px) {
@@ -832,18 +829,7 @@ const Index = () => {
                 width: 54px;
                 height: 54px;
                 top: 15px;
-                left: 6%;
-              }
-              .system-header {
-                padding-top: 20px;
-                width: 70%;
-                font-size: 20px;
-                text-align: left;
-                margin-left: 18%;
-                margin-bottom: 5%;
-              }
-              .one {
-                margin-bottom: 45px;
+                left: 26px;
               }
             }
             @media screen and (max-width: 480px) {
@@ -934,12 +920,18 @@ const Index = () => {
                 padding: 0 24px;
                 font-size: 14px;
               }
-              .img-expertise {
-                left: 8%;
-              }
               .system-header {
-                margin-left: 25%;
+                padding-top: 20px;
+                width: 70%;
+                font-size: 20px;
+                text-align: left;
+                margin-left: 75px;
+                margin-bottom: 15px;
                 max-width: 230px;
+              }
+              .one {
+                padding-top: 30px;
+                margin-bottom: 25px;
               }
               .expertise {
                 margin-top: 80px;

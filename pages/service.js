@@ -155,14 +155,6 @@ const Service = () => {
             right: 0;
             top: 78px;
             z-index: 1;
-            width: 70%;
-            height: auto;
-            aspect-ratio: 2.5;
-    	      object-fit: cover;
-          }
-          .img-header-pc>img {
-            width: 100%;
-            height: 100%;
           }
           .img-header-mobile {
             display: none;

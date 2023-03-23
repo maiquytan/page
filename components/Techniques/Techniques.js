@@ -1,16 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { listTechniques, settingTechniques } from '../../constants';
+import useViewport from '../../hook/useViewPort';
 
 const Techniques = () => {
   const [startX, setStartX] = useState(0);
+  const [itemView,setItemView] = useState(settingTechniques.itemPerView)
   const columnQuantity = Math.ceil(settingTechniques.itemListQuantity / settingTechniques.itemRow)
-  const listWidth = (columnQuantity / settingTechniques.itemPerView) * 100
+  const listWidth = (columnQuantity / itemView) * 100
   const itemWidth = (1 / columnQuantity) * 100
   const marginX = startX * itemWidth
+  const [width] = useViewport();
+
+  useEffect (() => {
+    if( width<1024){
+      setItemView(settingTechniques.itemPerViewTablet);
+    }
+    else {
+      setItemView(settingTechniques.itemPerView);
+    }
+  },[width])
 
   const handleRightClick = () => {
-    if (startX >= 0 && startX < (columnQuantity - (settingTechniques.itemPerView))) {
+    if (startX >= 0 && startX < (columnQuantity - (itemView))) {
       setStartX(startX + 1)
     }
   }
@@ -20,7 +32,6 @@ const Techniques = () => {
       setStartX(startX - 1)
     }
   }
-
   const itemWidthString = `calc(${itemWidth}% - 11px)`
 
   return (
@@ -45,7 +56,7 @@ const Techniques = () => {
             ))}
           </div>
         </div>
-        <div onClick={handleRightClick} className={startX === (columnQuantity - (settingTechniques.itemPerView)) ? 'undisable right' : 'button'}>
+        <div onClick={handleRightClick} className={startX === (columnQuantity - (itemView)) ? 'undisable right' : 'button'}>
           <svg viewBox="0 0 20 20" color="green" width="50" height="50">
             <path d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
           </svg>
@@ -53,8 +64,8 @@ const Techniques = () => {
       </div>
       <div className="techniques-main-mobile">
         {listTechniques.map((list, index) => (
-          <div className="language-mobile">
-            <img key={index} src={list.title} alt="techniques" title="techniques" width={list.width} height={list.height} />
+          <div className="language-mobile" key={index} >
+            <img src={list.title} alt="techniques" title="techniques" width={list.width} height={list.height} />
           </div>
         ))}
       </div>
@@ -91,6 +102,9 @@ const Techniques = () => {
             display: flex;
             gap: 12px;
             transition: .4s;
+          }
+          .button {
+            cursor: pointer;
           }
           .left {
             margin-left: 50px;
@@ -145,7 +159,6 @@ const Techniques = () => {
             margin: auto;
             margin-bottom: 45px;
           }
-
           @media screen and (max-width: 768px) {
             .techniques {
               height: auto;

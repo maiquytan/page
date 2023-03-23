@@ -29,9 +29,10 @@ const Header = () => {
           <div className="menu-content">
             <Link href="/e"><a>Company <img src="/arrow_menu.svg" className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
             <Link href="/service"><a>Service</a></Link>
-            <Link href="/b"><a>Expertise</a></Link>
+            <Link href="/about"><a>About</a></Link>
             <Link href="/portfolio"><a>Portfolio</a></Link>
-            <Link href="/d"><a>Contact</a></Link>
+            <Link href="/client"><a>Client</a></Link>
+            <Link href="/team"><a>Team</a></Link>
           </div>
         </div>
       </div>
@@ -59,11 +60,13 @@ const Header = () => {
             <hr></hr>
             <li><Link href="/service"><a>Service</a></Link></li>
             <hr></hr>
-            <li><Link href="/b"><a>Expertise</a></Link></li>
+            <li><Link href="/about"><a>About</a></Link></li>
             <hr></hr>
             <li><Link href="/portfolio"><a>Portfolio</a></Link></li>
             <hr></hr>
-            <li><Link href="/d"><a>Contact</a></Link></li>
+            <li><Link href="/client"><a>Client</a></Link></li>
+            <hr></hr>
+            <li><Link href="/team"><a>Team</a></Link></li>
           </ul>
         }
       </div>
