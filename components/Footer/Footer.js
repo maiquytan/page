@@ -54,14 +54,14 @@ const Footer = () => {
             display: flex;
             flex-direction: column;
             text-align: center;
-            padding: 0 30px;
             box-sizing: border-box;
           }
           .footer-main {
             display: flex;
             margin: auto;
-            max-width: 1260px;
+            max-width: 1320px;
             height: auto;
+            padding: 0 30px;
             margin-top: 36px;
             margin-bottom: 61px;
             text-align: left;
@@ -124,7 +124,6 @@ const Footer = () => {
             }
             .footer-map {
               width: 100%;
-              margin-right: 20px;
             }
             .map {
               width: 100%;
@@ -145,7 +144,6 @@ const Footer = () => {
             }
             .footer-main {
               flex-direction: column;
-              width: 90%;
               margin: auto;
             }
             .logo-footer {

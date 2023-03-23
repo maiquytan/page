@@ -1,13 +1,18 @@
 import React, { useState } from 'react'
 
-import { listBudget } from '../../constants';
+import { listBudget, uploadFileStatus } from '../../constants';
 
 const Request = () => {
   const [isCheckService, setIsCheckService] = useState(true);
   const [isCheckBudget, setIsCheckBudget] = useState(true);
+  const [content, setContent] = useState(uploadFileStatus.default.title);
 
   const handleCheckService = () => {
     setIsCheckService(!isCheckService)
+  }
+
+  const handleOnChange = (e) => {
+    setContent(e.target.files[0]?.name || uploadFileStatus.nothing.title)
   }
 
   return (
@@ -99,7 +104,7 @@ const Request = () => {
             </div>
             <div className="upload">
               <img src="upload.svg" alt="upload" title="upload" width="19" height="19" />
-              <input className="custom-file-input" type="file" />
+              <input className="custom-file-input" type="file" onChange={e => handleOnChange(e)} />
             </div>
             <button className="btn-request">Request a Quote</button>
           </div>
@@ -365,18 +370,17 @@ const Request = () => {
             margin-right: 9px;
           }
           .custom-file-input {
-            color: transparent;
+            color: #000;
             width: 90%;
           }
           .custom-file-input::-webkit-file-upload-button {
             visibility: hidden;
           }
           .custom-file-input::before {
-            content: 'Upload files';
+            content: '${content}';
             width: 100%;
             color: black;
             display: inline-block;
-            border-radius: 3px;
             padding: 5px 8px;
             outline: none;
             white-space: nowrap;
@@ -385,6 +389,10 @@ const Request = () => {
             text-shadow: 1px 1px #fff;
             font-size: 17px;
           }
+          // .custom-file-input::after {
+          //   content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+
+          // }
           .btn-request {
             color: #FFFFFF;
             background: #FC721E;

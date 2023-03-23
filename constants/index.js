@@ -99,15 +99,24 @@ export const listTechniques = [
   { id: 14, title: '/magento.svg', width: '122', height:'44' },
 ]
 
-export const settings = {
+export const settingTeam = {
   itemPerView: 4,
-  itemListQuantity: listBoss.length || 4,
+  itemPerViewTablet: 3,
+  itemListQuantity: listBoss.length ,
 }
 
 export const settingTechniques = {
   itemPerView: 6,
-  itemListQuantity: listBoss.length || 6,
+  itemPerViewTablet: 5,
+  itemListQuantity: listBoss.length ,
   itemRow: 2,
 }
 
-
+export const uploadFileStatus = {
+  default  : {
+  title: 'Upload files'
+  },
+  nothing: {
+  title: 'Nothing is choosen!'
+  },
+  }

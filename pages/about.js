@@ -152,6 +152,7 @@ const About = () => {
           .header-right>img {
             width: 100%;
             height: 100%;
+            vertical-align: top;
           }
 
           //------------------------------
@@ -173,11 +174,12 @@ const About = () => {
             width: 48%;
             height: auto;
             aspect-ratio: 1;
-            object-fit: cover;
           }
           .about-left>img {
             width: 100%;
             height: 100%;
+            vertical-align: top;
+            object-fit: contain;
           }
           .about-right {
             width: 41%;
@@ -224,6 +226,7 @@ const About = () => {
             border-radius: 5px;
             width: 100%;
             height: 100%;
+            object-fit: cover;
           }
           .target-title {
             margin-top: 57px;
@@ -256,6 +259,23 @@ const About = () => {
               margin-bottom: 50px;
               justify-content: normal;
             }
+            .about-axa {
+              gap: 2%;
+            }
+            .about-left {
+              width: 60%;
+            }
+            .about-right {
+              width: 50%;
+            }
+            .about-title {
+              margin-top: 0;
+              margin-bottom: 25px;
+            }
+            .about-content {
+              font-size: 16px;
+              line-height: 20px;
+            }
             .img-header {
               top: 0px;
               left: -70%;
@@ -285,7 +305,7 @@ const About = () => {
             .header-left {
               width: auto;
               margin: 0;
-              padding: 0 40px;
+              padding: 0 20px;
               font-size: 18px;
               line-height: 30px;
               color: #494949;
@@ -321,7 +341,7 @@ const About = () => {
           }
           @media screen and (max-width: 768px) {
             .about-bg {
-              padding: 0 40px;
+              padding: 0 20px;
               background-position-x: right;
             }
             .about-axa {
@@ -333,8 +353,8 @@ const About = () => {
               margin-top: 25px;
             }
             .about-right {
-              width: auto;
               padding-bottom: 30px;
+              width: 100%;
             }
             .our-target {
               width: auto;
@@ -342,7 +362,7 @@ const About = () => {
             }
             //-----------------------
             .target-about {
-              padding: 0 40px;
+              padding: 0 20px;
               padding-bottom: 10px;
             }
             .target-title {
@@ -360,6 +380,22 @@ const About = () => {
               font-size: 15px;
               line-height: 21px;
             }
+            .core {
+              display: flex;
+              flex-direction: column-reverse;
+            }
+            .core-mobile {
+              width: 100%;
+              margin: auto;
+            }
+            .core-title {
+              margin-top: 10px;
+              flex-direction: row;
+              justify-content: flex-start;
+            }
+            .core-title>p {
+              margin-right: 8px;
+            }
           }
           @media screen and (max-width: 480px) {
             .img-header {
@@ -371,7 +407,7 @@ const About = () => {
             .header-left {
               font-size: 14px;
               line-height: 20px;
-              padding: 0 24px;
+              padding: 0 10px;
             }
             .about-bg {
               padding: 0 24px;
@@ -392,41 +428,15 @@ const About = () => {
               padding: 0 12px;
               padding-bottom: 20px;
             }
-            .target-left {
-              padding-right: 0;
-              margin-left: 0;
-              width: 42%;
-            }
-            .target-right {
-              width: 48%;
-              height: 90%;
-              margin-top: 10px;
-            }
             .target-title {
               font-size: 30px;
-              line-height: 39px;
               margin-top: 0;
             }
             .target-content {
               font-size: 12px;
+            }
 
-            }
-            .core {
-              display: flex;
-              flex-direction: column-reverse;
-            }
-            .core-mobile {
-              width: 100%;
-              margin: auto;
-            }
-            .core-title {
-              margin-top: 10px;
-              flex-direction: row;
-              justify-content: flex-start;
-            }
-            .core-title>p {
-              margin-right: 8px;
-            }
+
           }
         `}
       </style>
