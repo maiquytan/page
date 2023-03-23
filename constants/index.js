@@ -112,5 +112,11 @@ export const settingTechniques = {
   itemRow: 2,
 }
 
-export const defaultContent = 'Upload files';
-
+export const uploadFileStatus = {
+  default  : {
+  title: 'Upload files'
+  },
+  nothing: {
+  title: 'Nothing is choosen!'
+  },
+  }

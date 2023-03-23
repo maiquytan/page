@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 
-import { defaultContent, listBudget } from '../../constants';
+import { listBudget, uploadFileStatus } from '../../constants';
 
 const Request = () => {
   const [isCheckService, setIsCheckService] = useState(true);
   const [isCheckBudget, setIsCheckBudget] = useState(true);
-  const [content, setContent] = useState(defaultContent);
+  const [content, setContent] = useState(uploadFileStatus.default.title);
 
   const handleCheckService = () => {
     setIsCheckService(!isCheckService)
   }
 
   const handleOnChange = (e) => {
-      setContent(e.target.files[0]?.name || 'Nothing was choosen!')
+    setContent(e.target.files[0]?.name || uploadFileStatus.nothing.title)
   }
 
   return (
