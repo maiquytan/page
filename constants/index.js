@@ -84,40 +84,78 @@ export const listBudget = [
 ]
 
 export const listTechniques = [
-  { id: 1, title: '/androidStudio.svg', width: '86', height:'55' },
-  { id: 2, title: '/angular.svg', width: '120', height:'55' },
-  { id: 3, title: '/reactjs.svg', width: '124', height:'50' },
-  { id: 4, title: '/vuejs.svg', width: '117', height:'55' },
-  { id: 5, title: '/reactive-native.svg', width: '163', height:'55' },
-  { id: 6, title: '/html-css-js.webp', width: '163', height:'55' },
-  { id: 7, title: '/mongodb.svg', width: '124', height:'37' },
-  { id: 8, title: '/php.webp', width: '89', height:'44' },
-  { id: 9, title: '/django.svg', width: '98', height:'55' },
-  { id: 10, title: '/nodejs.svg', width: '81', height:'49' },
-  { id: 11, title: '/mysql.svg', width: '99', height:'51' },
-  { id: 12, title: '/postgres.svg', width: '123', height:'55' },
-  { id: 13, title: '/laravel.svg', width: '147', height:'54' },
-  { id: 14, title: '/magento.svg', width: '122', height:'44' },
+  { id: 1, title: '/androidStudio.svg', width: '86', height: '55' },
+  { id: 2, title: '/angular.svg', width: '120', height: '55' },
+  { id: 3, title: '/reactjs.svg', width: '124', height: '50' },
+  { id: 4, title: '/vuejs.svg', width: '117', height: '55' },
+  { id: 5, title: '/reactive-native.svg', width: '163', height: '55' },
+  { id: 6, title: '/html-css-js.webp', width: '163', height: '55' },
+  { id: 7, title: '/mongodb.svg', width: '124', height: '37' },
+  { id: 8, title: '/php.webp', width: '89', height: '44' },
+  { id: 9, title: '/django.svg', width: '98', height: '55' },
+  { id: 10, title: '/nodejs.svg', width: '81', height: '49' },
+  { id: 11, title: '/mysql.svg', width: '99', height: '51' },
+  { id: 12, title: '/postgres.svg', width: '123', height: '55' },
+  { id: 13, title: '/laravel.svg', width: '147', height: '54' },
+  { id: 14, title: '/magento.svg', width: '122', height: '44' },
 ]
 
 export const settingTeam = {
   itemPerView: 4,
   itemPerViewTablet: 3,
-  itemListQuantity: listBoss.length ,
+  itemListQuantity: listBoss.length,
 }
 
 export const settingTechniques = {
   itemPerView: 6,
   itemPerViewTablet: 5,
-  itemListQuantity: listBoss.length ,
+  itemListQuantity: listBoss.length,
   itemRow: 2,
 }
 
 export const uploadFileStatus = {
-  default  : {
-  title: 'Upload files'
+  default: {
+    title: 'Upload files'
   },
   nothing: {
-  title: 'Nothing is choosen!'
+    title: 'Nothing is choosen!'
   },
-  }
+}
+
+export const listServices = [
+  { img: '/services1.svg', title: 'Web application development' },
+  { img: '/services2.svg', title: 'Mobile app development' },
+  { img: '/services3.svg', title: 'RPA development' },
+  { img: '/services4.svg', title: 'Dedicated development teams' },
+  { img: '/services5.svg', title: 'Offshore development center' },
+  { img: '/services6.svg', title: 'Lifecycle maintenance' },
+  { img: '/services7.svg', title: 'DevOps development and operations' },
+  { img: '/services8.svg', title: 'UI/UX Design' },
+]
+
+export const listExpertise = [
+  { img: '/Expertise1.svg', title: 'Enterprise Management Systems', content: 'Our expertise in enterprise management systems allows us to help organizations to optimize their operations and improve their overall efficiency. Our team can provide the solutions and support you need to streamline your processes, automate tasks, and make better use of your data.' },
+  { img: '/Expertise2.svg', title: 'Ecommerce & Retail Management Systems', content: 'Our expertise in e-commerce and retail management systems helps organizations to grow their online businesses and improve the customer experience. Our team can provide the solutions and support you need to manage your inventory, process orders, and handle customer data securely.' },
+  { img: '/Expertise3.svg', title: ' Customer-enabling services', content: 'Our customer-enabling services are designed to help organizations to improve the way they interact with their customers. Our team can provide the solutions and support you need to handle customer inquiries, manage customer data, and deliver the best possible customer experience.' },
+  { img: '/Expertise4.svg', title: ' New business ideas', content: 'Our expertise in new business ideas allows us to help organizations to create and implement innovative solutions that drive business growth. Our team of experts can work with you to identify new opportunities, develop new products and services, and bring new ideas to market.' },
+]
+
+export const listReason = [
+  { img: '/img_reason1.svg', title: 'We prioritize a customer-centric approach, always working closely with our clients to understand their unique needs and deliver tailored solutions' },
+  { img: '/img_reason2.svg', title: 'Our deep expertise in offshore software development allows us to deliver cutting-edge results that drive real business value.' },
+  { img: '/img_reason3.svg', title: 'Our focus on quality and attention to detail sets us apart, ensuring that every project is delivered on time and within budget.' },
+  { img: '/img_reason4.svg', title: 'Our team is comprised of highly skilled and knowledgeable professionals who are passionate about delivering innovative solutions that drive success for our clients.' },
+]
+
+export const listFeedback = [
+  { img: '/img_feedback1.webp', clientName: '~ Client Name ~', companyName: 'Conpany Name', title: 'U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.' },
+  { img: '/img_feedback2.webp', clientName: '~ Client Name ~', companyName: 'Conpany Name', title: 'U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.' },
+  { img: '/img_feedback3.webp', clientName: '~ Client Name ~', companyName: 'Conpany Name', title: 'U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.' },
+]
+
+export const listIntroduce = [
+  { img: '/icon_introduce.svg', title: 'Our People', content: 'At Axalize, we believe in hiring top-notch talent and fostering a supportive, collaborative work environment.' },
+  { img: '/icon_introduce.svg', title: 'Our Culture', content: 'From our values to our approach to work, here"s what makes Axalize a unique and dynamic place to work.' },
+  { img: '/icon_introduce.svg', title: 'Our Leadership', content: 'Leading Axalize forward with vision and expertise, our executive team brings years of experience and a passion for innovation.' },
+  { img: '/icon_introduce.svg', title: 'Our Careers', content: 'Join our team and be part of a company that values hard work, creativity, and a commitment to excellence.' },
+]

@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react'
 
-import { listBoss, settingTeam } from '../constants'
+import { listBoss, listIntroduce, settingTeam } from '../constants'
 import useViewport from '../hook/useViewPort';
 
 const Team = () => {
@@ -85,34 +85,15 @@ const Team = () => {
       {/* Introduce */}
       <div className="introduce container">
         <div className="introduce-left">
-          <div className="one-introduce">
-            <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
-            <div className="introduce-content">
-              <h2>Our People</h2>
-              <p>At Axalize, we believe in hiring top-notch talent and fostering a supportive, collaborative work environment.</p>
+          {listIntroduce.map((intro, index) => (
+            <div className="one-introduce" key={index}>
+              <img src={intro.img} alt="icon-introduce" title="icon-introduce" width="50" height="50" />
+              <div className="introduce-content">
+                <h2>{intro.title}</h2>
+                <p>{intro.content}</p>
+              </div>
             </div>
-          </div>
-          <div className="one-introduce">
-            <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
-            <div className="introduce-content">
-              <h2>Our Culture</h2>
-              <p>From our values to our approach to work, here's what makes Axalize a unique and dynamic place to work.</p>
-            </div>
-          </div>
-          <div className="one-introduce">
-            <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
-            <div className="introduce-content">
-              <h2>Our Leadership</h2>
-              <p>Leading Axalize forward with vision and expertise, our executive team brings years of experience and a passion for innovation.</p>
-            </div>
-          </div>
-          <div className="one-introduce">
-            <img src="/icon_introduce.svg" alt="icon-introduce" title="icon-introduce" width="50" height="50" />
-            <div className="introduce-content">
-              <h2>Our Careers</h2>
-              <p>Join our team and be part of a company that values hard work, creativity, and a commitment to excellence.</p>
-            </div>
-          </div>
+          ))}
         </div>
         <div className="introduce-right">
           <img src="/img_introduce.webp" alt="img-introduce" title="img-introduce" width="610" height="628" />
@@ -551,7 +532,7 @@ const Team = () => {
             //-------------------
             .introduce {
               flex-direction: column;
-              margin-bottom: 35px;
+              margin-bottom: 0;
             }
             .introduce-left,.introduce-right {
               width: auto;
@@ -578,6 +559,7 @@ const Team = () => {
           @media screen and (max-width: 480px) {
             .container {
               padding: 0 12px;
+              padding-bottom: 30px;
             }
             .header-title {
               font-size: 30px;
@@ -617,14 +599,8 @@ const Team = () => {
             .bar {
               margin-bottom: 8px;
             }
-            .meet-mobile {
-              padding: 0 12px;
-              padding-bottom: 10px;
-            }
             .meet-title {
               font-size: 30px;
-            }
-            .meet-title {
               margin-bottom: 8px;
             }
             .img-meet {

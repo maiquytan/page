@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { listFeedback, listReason } from '../constants';
+
 const Client = () => {
   return (
     <div className="client">
@@ -41,34 +43,14 @@ const Client = () => {
         <div className="reason">
           <div className="reason-header">What sets Axalize apart in the eyes of our clients</div>
           <div className="reason-content">
-            <div className="two-reason">
-              <div className="one-reason">
+            {listReason.map((reason, index) => (
+              <div className="one-reason" key={index}>
                 <div className="img-one-reason">
-                  <img src="/img_reason1.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                  <img src={reason.img} alt="img-reason" title="img-reason" width="110" height="115" />
                 </div>
-                <p>We prioritize a customer-centric approach, always working closely with our clients to understand their unique needs and deliver tailored solutions</p>
+                <p>{reason.title}</p>
               </div>
-              <div className="one-reason">
-                <div className="img-one-reason">
-                  <img src="/img_reason2.svg" alt="img-reason" title="img-reason" width="110" height="110" />
-                </div>
-                <p>Our deep expertise in offshore software development allows us to deliver cutting-edge results that drive real business value.</p>
-              </div>
-            </div>
-            <div className="two-reason">
-              <div className="one-reason">
-                <div className="img-one-reason">
-                  <img src="/img_reason3.svg" alt="img-reason" title="img-reason" width="115" height="115" />
-                </div>
-                <p>Our focus on quality and attention to detail sets us apart, ensuring that every project is delivered on time and within budget.</p>
-              </div>
-              <div className="one-reason">
-                <div className="img-one-reason">
-                  <img src="/img_reason4.svg" alt="img-reason" title="img-reason" width="110" height="110" />
-                </div>
-                <p>Our team is comprised of highly skilled and knowledgeable professionals who are passionate about delivering innovative solutions that drive success for our clients.</p>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="img-reason">
             <img src="/Asset.svg" alt="img-reason" title="img-reason" width="200" height="35" />
@@ -109,68 +91,26 @@ const Client = () => {
             <div className="what-say">What do our customers say?</div>
           </div>
           <div className="feedback-content">
-            <div className="one-feedback">
-              <img src="/img_feedback1.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
-              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.</div>
-              <div className="client-name">~ Client Name ~</div>
-              <p className="company-name">Conpany Name</p>
-            </div>
-            <div className="one-feedback">
-              <img src="/img_feedback2.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
-              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.</div>
-              <div className="client-name">~ Client Name ~</div>
-              <p className="company-name">Conpany Name</p>
-            </div>
-            <div className="one-feedback">
-              <img src="/img_feedback3.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
-              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.</div>
-              <div className="client-name">~ Client Name ~</div>
-              <p className="company-name">Conpany Name</p>
-            </div>
+            {listFeedback.map((feed, index) => (
+              <div className="one-feedback" key={index}>
+                <img src={feed.img} className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
+                <div className="evaluate">{feed.title}</div>
+                <div className="client-name">{feed.clientName}</div>
+                <p className="company-name">{feed.companyName}</p>
+              </div>
+            ))}
           </div>
           <div className="feedback-content-mobile">
-            <div className="one-feedback">
-              <div className="feedback-left">
-                <img src="/img_feedback1.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
-                <div className="client-name">~ Client Name ~</div>
-                <p className="company-name">Conpany Name</p>
+            {listFeedback.map((feed, index) => (
+              <div className="one-feedback" key={index}>
+                <div className="feedback-left">
+                  <img src={feed.img} className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
+                  <div className="client-name">{feed.clientName}</div>
+                  <p className="company-name">{feed.companyName}</p>
+                </div>
+                <div className="evaluate">{feed.title}</div>
               </div>
-              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.</div>
-            </div>
-            <div className="one-feedback">
-              <div className="feedback-left">
-                <img src="/img_feedback2.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
-                <div className="client-name">~ Client Name ~</div>
-                <p className="company-name">Conpany Name</p>
-              </div>
-              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.</div>
-            </div>
-            <div className="one-feedback">
-              <div className="feedback-left">
-                <img src="/img_feedback3.webp" className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
-                <div className="client-name">~ Client Name ~</div>
-                <p className="company-name">Conpany Name</p>
-              </div>
-              <div className="evaluate">U là trời, quá tuyệt vời! Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.</div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -330,17 +270,14 @@ const Client = () => {
             max-width: 1260px;
             margin: auto;
             margin-bottom: 50px;
-          }
-          .two-reason {
-            display: flex;
-            gap: 2%;
+            flex-wrap: wrap;
           }
           .one-reason {
             diplay: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            width: 49%;
+            width: 24%;
             background: #FFFFFF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
@@ -582,17 +519,16 @@ const Client = () => {
               margin-bottom: 80px;
             }
             .reason-content {
-              flex-direction: column;
               gap: 2%;
               margin-bottom: 30px;
+            }
+            .one-reason {
+              width: 49%;
+              margin-bottom: 15px;
             }
             .img-one-reason {
               margin-top: 25px;
               margin-bottom: 15px;
-            }
-            .two-reason {
-              gap: 3%;
-              margin-bottom: 20px;
             }
             .expert {
               flex-direction: column;
@@ -715,6 +651,9 @@ const Client = () => {
             }
             .reason {
               padding: 0 12px;
+            }
+            .one-reason {
+              margin-bottom: 10px;
             }
             .reason-header {
               font-size: 15px;

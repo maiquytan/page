@@ -51,7 +51,7 @@ const Portfolio = () => {
             <div className="crossbar-left-2"></div>
             <div className="applications-list">
               {listSelectApplication.map((list, index) => (
-                <p className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</p>
+                <p className={isSelect.id === list.id ? 'application_selected' : 'one_application'} onClick={() => setIsSelect(list)} key={index}> {list.title}</p>
               ))}
             </div>
           </div>
@@ -65,7 +65,7 @@ const Portfolio = () => {
             {isDropdownApp &&
               <div className="dropdown" onClick={handleDropdownOnclick}>
                 {listSelectApplication.map((list, index) => (
-                  <div className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</div>
+                  <div className={isSelect.id === list.id ? 'application_selected' : 'one_application'} onClick={() => setIsSelect(list)} key={index}> {list.title}</div>
                 ))}
               </div>
             }
@@ -169,9 +169,13 @@ const Portfolio = () => {
           }
           .content-right {
             width: 60%;
+            height: auto;
+            aspect-ratio: 2.4;
+            object-fit: cover;
           }
           .content-right>img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
           }
           .item {
             color: #1E1E1E;
@@ -334,18 +338,10 @@ const Portfolio = () => {
             }
             .content-right {
               width: 86%;
-              height: auto;
               margin: auto;
-              aspect-ratio: 2.3;
-              object-fit: cover;
               margin-top: 5%;
               margin-bottom: 15%;
             }
-            .content-right>img {
-              width: 100%;
-              height: 100%;
-            }
-
             .applications-header {
               flex-direction: column;
             }

@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import Archivement from '../components/Archivement/Archivement';
 import Techniques from '../components/Techniques/Techniques';
+import { listExpertise, listServices } from '../constants';
 
 const Index = () => {
   const router = useRouter()
@@ -56,67 +57,14 @@ const Index = () => {
               <div className="crossbar2"></div>
             </div>
             <div className="services-main container">
-              <div className="services-column">
-                <div className="services-two">
-                  <div className="services-one">
-                    <div className="img-services">
-                    <img src="/services1.svg" alt="logo" title="logo" width="116" height="113" />
-                    </div>
-                    <div className="services-text">Web application development</div>
-                  </div>
-                  <div className="services-one">
+              {listServices.map((ser, index) => (
+                <div className="services-one" key={index}>
                   <div className="img-services">
-                    <img src="/services2.svg" alt="logo" title="logo" width="116" height="113" />
-                    </div>
-                    <div className="services-text">Mobile app development</div>
+                    <img src={ser.img} alt="logo" title="logo" width="116" height="113" />
                   </div>
+                  <div className="services-text">{ser.title}</div>
                 </div>
-                <div className="services-two">
-                  <div className="services-one">
-                  <div className="img-services">
-                    <img src="/services3.svg" alt="logo" title="logo" width="116" height="113" />
-                    </div>
-                    <div className="services-text">RPA development</div>
-                  </div>
-                  <div className="services-one">
-                  <div className="img-services">
-                    <img src="/services4.svg" alt="logo" title="logo" width="116" height="113" />
-                    </div>
-                    <div className="services-text">Dedicated development teams</div>
-                  </div>
-                </div>
-              </div>
-              <div className="services-column">
-                <div className="services-two">
-                  <div className="services-one">
-                  <div className="img-services">
-                    <img src="/services5.svg" alt="logo" title="logo" width="116" height="113" />
-                    </div>
-                    <div className="services-text">Offshore development center</div>
-                  </div>
-                  <div className="services-one">
-                  <div className="img-services">
-                    <img src="/services6.svg" alt="logo" title="logo" width="116" height="113" />
-                    </div>
-                    <div className="services-text">Lifecycle maintenance</div>
-                  </div>
-                </div>
-                <div className="services-two">
-                  <div className="services-one">
-                  <div className="img-services">
-                    <img src="/services7.svg" alt="logo" title="logo" width="116" height="113" />
-                    </div>
-                    <div className="services-text">DevOps development and operations</div>
-                  </div>
-                  <div className="services-one">
-                  <div className="img-services">
-                    <img src="/services8.svg" alt="logo" title="logo" width="116" height="113" />
-                    </div>
-                    <div className="services-text">UI/UX Design</div>
-                  </div>
-                </div>
-              </div>
-
+              ))}
             </div>
           </div>
 
@@ -126,44 +74,88 @@ const Index = () => {
           {/* Target */}
           <div className="target session">
             <div className="container target-container">
-            <div className="about-us">
-              <div className="about-us-bg">
-                <div className="about-us-header">About us</div>
-                <div className="crossbar1"></div>
-                <div className="crossbar2"></div>
-                <div className="about-content">
-                  <div className="introduce-header">Origin of <label className="text-color">Axalize</label>: A coined word combining <label className="text-color">Axia</label> (value) + <label className="text-color">Actualize</label> (realize)</div>
-                  <div className="introduce-content">Welcome to Axalize Incorporated, a provider of top-notch IT outsourcing and offshore services. Our team of experts is dedicated to delivering high-quality solutions through collaboration and close partnerships with our clients.</div>
-                  <div className="introduce-content">We understand that outsourcing IT requires a tailored approach. That's why we listen to your needs and goals, and work with you every step of the way to ensure success. From software development to digital transformation, trust us to support your business.
-                  </div>
-                  <div className="introduce-content">Our goal is to deliver exceptional value and outstanding services. Let us show you how collaboration and quality can make a difference for your business.
-                  </div>
-                  <div className="introduce-content">
-                    <Link href="/about"><a className="contact">Contact us </a></Link>
-                    <label>today to learn more!</label>
+              <div className="about-us">
+                <div className="about-us-bg">
+                  <div className="about-us-header">About us</div>
+                  <div className="crossbar1"></div>
+                  <div className="crossbar2"></div>
+                  <div className="about-content">
+                    <div className="introduce-header">Origin of <label className="text-color">Axalize</label>: A coined word combining <label className="text-color">Axia</label> (value) + <label className="text-color">Actualize</label> (realize)</div>
+                    <div className="introduce-content">Welcome to Axalize Incorporated, a provider of top-notch IT outsourcing and offshore services. Our team of experts is dedicated to delivering high-quality solutions through collaboration and close partnerships with our clients.</div>
+                    <div className="introduce-content">We understand that outsourcing IT requires a tailored approach. That's why we listen to your needs and goals, and work with you every step of the way to ensure success. From software development to digital transformation, trust us to support your business.
+                    </div>
+                    <div className="introduce-content">Our goal is to deliver exceptional value and outstanding services. Let us show you how collaboration and quality can make a difference for your business.
+                    </div>
+                    <div className="introduce-content">
+                      <Link href="/about"><a className="contact">Contact us </a></Link>
+                      <label>today to learn more!</label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="mission-vision">
-              <div className="target-row">
-                <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
-                <div className="mission">
-                  <div className="mission-header">Mission</div>
+              <div className="mission-vision">
+                <div className="target-row">
+                  <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
+                  <div className="mission">
+                    <div className="mission-header">Mission</div>
+                    <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
+                  </div>
+                </div>
+                <div className="target-row">
+                  <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
+                  <div className="mission">
+                    <div className="mission-header">Vision</div>
+                    <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
+                  </div>
+                </div>
+                <div className="target-row">
+                  <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
+                  <div className="mission">
+                    <div className="mission-header">Core value</div>
+                    <div className="one-core">
+                      <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
+                      <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
+                    </div>
+                    <div className="one-core">
+                      <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
+                      <label> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
+                    </div>
+                    <div className="one-core">
+                      <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
+                      <label> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
+                    </div>
+                    <div className="one-core">
+                      <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
+                      <label> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
+                    </div>
+                    <div className="one-core">
+                      <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
+                      <label> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mission-vision-mobile">
+                <div className="target-row">
+                  <div className="mission-mobile">
+                    <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
+                    <div className="mission-header">Mission</div>
+                  </div>
                   <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
                 </div>
-              </div>
-              <div className="target-row">
-                <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
-                <div className="mission">
-                  <div className="mission-header">Vision</div>
+                <div className="target-row">
+                  <div className="mission-mobile">
+                    <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
+                    <div className="mission-header">Vision</div>
+                  </div>
                   <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
                 </div>
-              </div>
-              <div className="target-row">
-                <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
-                <div className="mission">
-                  <div className="mission-header">Core value</div>
+                <div className="target-row">
+                  <div className="mission-mobile">
+                    <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
+
+                    <div className="mission-header">Core value</div>
+                  </div>
                   <div className="one-core">
                     <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
                     <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
@@ -187,50 +179,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="mission-vision-mobile">
-              <div className="target-row">
-                <div className="mission-mobile">
-                  <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
-                  <div className="mission-header">Mission</div>
-                </div>
-                <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
-              </div>
-              <div className="target-row">
-                <div className="mission-mobile">
-                  <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
-                  <div className="mission-header">Vision</div>
-                </div>
-                <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
-              </div>
-              <div className="target-row">
-                <div className="mission-mobile">
-                  <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
-
-                  <div className="mission-header">Core value</div>
-                </div>
-                <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
-                  <p> Quality: We are committed to delivering high-quality solutions that meet the needs of our clients.</p>
-                </div>
-                <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
-                  <label> Collaboration: We work closely with our clients to understand their unique needs and develop solutions that meet their goals.</label>
-                </div>
-                <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
-                  <label> Innovation: We are dedicated to staying at the forefront of technology and continuously finding new ways to deliver value to our clients.</label>
-                </div>
-                <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
-                  <label> Integrity: We conduct all of our business with honesty and transparency, always acting in the best interest of our clients.</label>
-                </div>
-                <div className="one-core">
-                  <img src="/Vector.svg" alt="check" title="check" width="16" height="12" />
-                  <label> Respect: We value and respect our clients, employees, and partners, and foster an inclusive and supportive workplace culture.</label>
-                </div>
-              </div>
-            </div>
-            </div>
           </div>
 
           {/* Expertise */}
@@ -241,42 +189,18 @@ const Index = () => {
               <div className="crossbar2"></div>
             </div>
             <div className="expertise-main container">
-              <div className="one-expertise">
-                <div className="img-expertise">
-                  <img src="/Expertise1.svg" alt="expertise" title="expertise" width="100" height="100" />
+              {listExpertise.map((exp, index) => (
+                <div className="one-expertise" key={index}>
+                  <div className="img-expertise">
+                    <img src={exp.img} alt="expertise" title="expertise" width="100" height="100" />
+                  </div>
+                  <div className="one-expertise-content">
+                    <label className="system-header">{exp.title}</label>
+                    <label className="system-content">{exp.content}</label>
+                  </div>
                 </div>
-                <div className="one-expertise-content">
-                  <label className="system-header">Enterprise Management Systems</label>
-                  <label className="system-content">Our expertise in enterprise management systems allows us to help organizations to optimize their operations and improve their overall efficiency. Our team can provide the solutions and support you need to streamline your processes, automate tasks, and make better use of your data.</label>
-                </div>
-              </div>
-              <div className="one-expertise">
-                <div className="img-expertise">
-                  <img src="/Expertise2.svg" alt="expertise" title="expertise" width="100" height="100" />
-                </div>
-                <div className="one-expertise-content">
-                  <label className="system-header">Ecommerce & Retail Management Systems</label>
-                  <label className="system-content">Our expertise in e-commerce and retail management systems helps organizations to grow their online businesses and improve the customer experience. Our team can provide the solutions and support you need to manage your inventory, process orders, and handle customer data securely.</label>
-                </div>
-              </div>
-              <div className="one-expertise">
-                <div className="img-expertise">
-                  <img src="/Expertise3.svg" alt="expertise" title="expertise" width="100" height="100" />
-                </div>
-                <div className="one-expertise-content">
-                  <label className="system-header">Customer-enabling services</label>
-                  <label className="system-content">Our customer-enabling services are designed to help organizations to improve the way they interact with their customers. Our team can provide the solutions and support you need to handle customer inquiries, manage customer data, and deliver the best possible customer experience.</label>
-                </div>
-              </div>
-              <div className="one-expertise">
-                <div className="img-expertise">
-                  <img src="/Expertise4.svg" alt="expertise" title="expertise" width="100" height="100" />
-                </div>
-                <div className="one-expertise-content">
-                  <label className="system-header">New business ideas</label>
-                  <label className="system-content">Our expertise in new business ideas allows us to help organizations to create and implement innovative solutions that drive business growth. Our team of experts can work with you to identify new opportunities, develop new products and services, and bring new ideas to market.</label>
-                </div>
-              </div>
+              ))}
+
             </div>
             <div>
 
@@ -397,20 +321,12 @@ const Index = () => {
             }
             .services-main {
               margin: auto;
-              flex-direction: column;
-            }
-            .services-column {
-              display: flex;
-              margin-bottom: 65px;
-              width: 100%;
-            }
-            .services-two {
-              width: 50%;
-              display: flex;
-              font-size: 1.125rem;
+              flex-wrap: wrap;
+              gap: 1%;
             }
             .services-one {
-              width: 50%;
+              width: 24%;
+              margin-bottom: 40px;
             }
             .img-services {
               display: flex;
@@ -438,6 +354,7 @@ const Index = () => {
               margin: auto;
               justify-content: space-between;
               gap: 50px;
+              margin-top: 120px;
             }
             .about-us {
               background: url("../IMG_0799.webp");
@@ -449,7 +366,6 @@ const Index = () => {
               min-width: 450px;
               height: auto;
               overflow: hidden;
-              margin-top: 70px;
               border-radius: 5px;
             }
             .about-us-bg {
@@ -498,7 +414,7 @@ const Index = () => {
               align-items: flex-start;
             }
             .mission-vision {
-              margin-top: 100px;
+              margin-top: 30px;
             }
             .mission {
               display: flex;
@@ -609,9 +525,6 @@ const Index = () => {
               .session {
                 padding: 0 20px;
               }
-              .our-services {
-                margin-bottom: 0;
-              }
               .target {
                 flex-direction: column;
                 height: auto;
@@ -620,6 +533,7 @@ const Index = () => {
               }
               .target-container {
                 padding: 0;
+                margin: 0;
                 flex-direction: column;
                 gap: 0;
               }
@@ -700,6 +614,7 @@ const Index = () => {
               .expertise {
                 height: auto;
                 padding-bottom: 50px;
+                margin-top: 50px;
               }
               .expertise-header {
                 padding-top: 60px;
@@ -805,8 +720,17 @@ const Index = () => {
               .crossbar2 {
                 margin-bottom: 8px;
               }
+              .our-services {
+                margin-bottom: 0;
+              }
+              .services-one {
+                width: 49%;
+                padding: 10px 5px;
+                margin: 0;
+              }
               .services-text {
                 max-width: 155px;
+                font-size: 15px;
               }
               .header-btn {
                 flex-direction: column;
@@ -830,15 +754,6 @@ const Index = () => {
               .services-header {
                 margin-top: 32px;
                 margin-bottom: 40px;
-              }
-              .services-column {
-                flex-direction: column;
-                margin-bottom: 0;
-              }
-              .services-two {
-                width: 100%;
-                font-size: 0.938rem;
-                margin-bottom: 20px;
               }
               .item {
                 font-size: 26px;
