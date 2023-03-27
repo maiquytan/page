@@ -310,18 +310,18 @@ const Team = () => {
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.02em;
-            font-weight: 500;
             margin-bottom: 28px;
           }
           .introduce-right {
             width: 48%;
             height: auto;
-            aspect-ratio: 1;
-            object-fit: cover;
           }
           .introduce-right>img {
             width: 100%;
             height: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 5px;
           }
 
           //Meet----------------------------
@@ -344,6 +344,12 @@ const Team = () => {
             max-width: 1260px;
             margin: auto;
             overflow: hidden;
+          }
+          .button {
+            cursor: pointer;
+          }
+          .button>svg {
+            fill: #96bbdc;
           }
           .left {
             margin-left: 50px;
@@ -572,7 +578,9 @@ const Team = () => {
           @media screen and (max-width: 480px) {
             .container {
               padding: 0 12px;
-              padding-bottom: 70px;
+            }
+            .header-title {
+              font-size: 30px;
             }
             .about-header {
               padding: 0;
@@ -589,7 +597,7 @@ const Team = () => {
             }
             .one-introduce {
               align-items: flex-start;
-              padding-left: 30px;
+              padding-left: 28px;
               padding-right: 12px;
             }
             .one-introduce>img {
@@ -598,18 +606,20 @@ const Team = () => {
             }
             .introduce-content>h2 {
               font-size: 22px;
-              margin-bottom: 6px;
+              margin-bottom: 0;
             }
             .introduce-content>p {
               font-size: 13px;
               line-height: 20px;
               margin-bottom: 20px;
+              letter-spacing: 0;
             }
             .bar {
               margin-bottom: 8px;
             }
             .meet-mobile {
               padding: 0 12px;
+              padding-bottom: 10px;
             }
             .meet-title {
               font-size: 30px;
@@ -617,8 +627,12 @@ const Team = () => {
             .meet-title {
               margin-bottom: 8px;
             }
+            .img-meet {
+              aspect-ratio: 1;
+            }
             .boss-mobile {
               width: auto;
+              height: auto;
               margin-bottom: 10px;
             }
           }

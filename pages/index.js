@@ -51,7 +51,7 @@ const Index = () => {
           {/* Our Services */}
           <div className="our-services session">
             <div className="services-header">
-              <label className="item-first">Our services</label>
+              <label className="item">Our services</label>
               <div className="crossbar1"></div>
               <div className="crossbar2"></div>
             </div>
@@ -59,21 +59,29 @@ const Index = () => {
               <div className="services-column">
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="/services1.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                    <div className="img-services">
+                    <img src="/services1.svg" alt="logo" title="logo" width="116" height="113" />
+                    </div>
                     <div className="services-text">Web application development</div>
                   </div>
                   <div className="services-one">
-                    <img src="/services2.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                  <div className="img-services">
+                    <img src="/services2.svg" alt="logo" title="logo" width="116" height="113" />
+                    </div>
                     <div className="services-text">Mobile app development</div>
                   </div>
                 </div>
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="/services3.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                  <div className="img-services">
+                    <img src="/services3.svg" alt="logo" title="logo" width="116" height="113" />
+                    </div>
                     <div className="services-text">RPA development</div>
                   </div>
                   <div className="services-one">
-                    <img src="/services4.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                  <div className="img-services">
+                    <img src="/services4.svg" alt="logo" title="logo" width="116" height="113" />
+                    </div>
                     <div className="services-text">Dedicated development teams</div>
                   </div>
                 </div>
@@ -81,21 +89,29 @@ const Index = () => {
               <div className="services-column">
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="/services5.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                  <div className="img-services">
+                    <img src="/services5.svg" alt="logo" title="logo" width="116" height="113" />
+                    </div>
                     <div className="services-text">Offshore development center</div>
                   </div>
                   <div className="services-one">
-                    <img src="/services6.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                  <div className="img-services">
+                    <img src="/services6.svg" alt="logo" title="logo" width="116" height="113" />
+                    </div>
                     <div className="services-text">Lifecycle maintenance</div>
                   </div>
                 </div>
                 <div className="services-two">
                   <div className="services-one">
-                    <img src="/services7.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                  <div className="img-services">
+                    <img src="/services7.svg" alt="logo" title="logo" width="116" height="113" />
+                    </div>
                     <div className="services-text">DevOps development and operations</div>
                   </div>
                   <div className="services-one">
-                    <img src="/services8.svg" className="img-services" alt="logo" title="logo" width="116" height="113" />
+                  <div className="img-services">
+                    <img src="/services8.svg" alt="logo" title="logo" width="116" height="113" />
+                    </div>
                     <div className="services-text">UI/UX Design</div>
                   </div>
                 </div>
@@ -257,7 +273,7 @@ const Index = () => {
                   <img src="/Expertise4.svg" alt="expertise" title="expertise" width="100" height="100" />
                 </div>
                 <div className="one-expertise-content">
-                  <label className="system-header one">New business ideas</label>
+                  <label className="system-header">New business ideas</label>
                   <label className="system-content">Our expertise in new business ideas allows us to help organizations to create and implement innovative solutions that drive business growth. Our team of experts can work with you to identify new opportunities, develop new products and services, and bring new ideas to market.</label>
                 </div>
               </div>
@@ -359,7 +375,7 @@ const Index = () => {
               margin-top: 72px;
               margin-bottom: 10px;
             }
-            .item,.item-first {
+            .item {
               color: #1E1E1E;
               font-size: 2rem;
               font-weight: 600;
@@ -398,8 +414,9 @@ const Index = () => {
             }
             .img-services {
               display: flex;
-              flex-direction: column;
-              margin: auto
+              margin: auto;
+              justify-content: center;
+              margin-bottom: 13px;
             }
             .services-text {
               max-width: 200px;
@@ -558,16 +575,14 @@ const Index = () => {
               position: absolute;
             }
             .system-header {
-              padding-top: 100px;
+              margin-top: 95px;
+              height: 77px;
               font-size: 1.125rem;
               font-weight: 500;
               text-align: center;
-              margin-bottom: 33px;
               max-width: 220px;
             }
-            .one {
-              margin-bottom: 54px;
-            }
+
             .system-content {
               margin-top: 0;
               color: #808080;
@@ -594,8 +609,8 @@ const Index = () => {
               .session {
                 padding: 0 20px;
               }
-              .expertise-main {
-                gap: 20px;
+              .our-services {
+                margin-bottom: 0;
               }
               .target {
                 flex-direction: column;
@@ -606,6 +621,7 @@ const Index = () => {
               .target-container {
                 padding: 0;
                 flex-direction: column;
+                gap: 0;
               }
               .about-us-bg {
                 background: linear-gradient(180deg,rgba(43,42,42,0)45%,#236b99 77%);
@@ -613,14 +629,12 @@ const Index = () => {
                 margin: auto;
                 width: auto;
                 height: auto;
-
                 object-fit: cover;
               }
               .about-us {
                 border-radius: 0px;
                 background: linear-gradient(180deg, rgba(5, 63, 117, 0.65) 0%, rgba(47, 47, 47, 0.5005) 50%), url("../IMG_0799.webp");
-                background-size: contain;
-                background-position: center;
+                background-size: cover;
                 background-repeat: no-repeat;
                 max-width: 1024px;
                 margin: auto;
@@ -648,7 +662,7 @@ const Index = () => {
               }
               .mission-vision-mobile {
                 display: block;
-                padding: 0 12px;
+                padding: 0 20px;
               }
               .target-row {
                 margin: 0;
@@ -659,21 +673,25 @@ const Index = () => {
                 max-width: 294px;
                 font-size: 15px;
                 align-items: center;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 margin-top: 28px;
               }
               .mission-header {
                 margin-bottom: 0;
+                font-size: 27px;
               }
               .mission-vision {
                 display: none;
               }
               .mission-content {
                 font-size: 15px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 500;
+                color: #515151;
               }
               .one-core {
                 font-size: 15px;
-                margin-right: 30px;
+                margin-right: 20px;
                 margin-left: 8px;
               }
               .one-core>img {
@@ -688,9 +706,13 @@ const Index = () => {
               }
               .expertise-main {
                 display: flex;
-                flex-direction: column;
-                gap: 15px;
+                flex-wrap: wrap;
+                gap: 2%;
                 margin-top: 40px;
+              }
+              .one-expertise {
+                width: 49%;
+                margin-bottom: 15px;
               }
               .one-expertise-content {
                 max-width: 900px;
@@ -710,21 +732,26 @@ const Index = () => {
                 height: 100%;
               }
               .system-header {
-                padding-top: 30px;
-                width: 70%;
+                margin-top: 20px;
+                height: 60px;
                 font-size: 20px;
                 text-align: left;
                 margin-left: 75px;
                 max-width: 1024px;
               }
-              .one {
-                margin-bottom: 33px;
-              }
               .system-content {
+                text-align: justify;
                 padding-bottom: 20px;
               }
             }
             @media screen and (max-width: 768px) {
+              .img-services {
+                width: 50%;
+              }
+              .img-services>img {
+                width: 100%;
+                height: 100%;
+              }
               .target {
                 flex-direction: column;
                 height: auto;
@@ -735,100 +762,20 @@ const Index = () => {
                 padding: 0;
                 flex-direction: column;
               }
-              .about-us-bg {
-                background: linear-gradient(180deg,rgba(43,42,42,0)45%,#236b99 77%);
-                max-width: 900px;
-                width: auto;
-                height: auto;
-                object-fit: cover;
-              }
               .about-us {
-                border-radius: 0px;
-                background: linear-gradient(180deg, rgba(5, 63, 117, 0.65) 0%, rgba(47, 47, 47, 0.5005) 50%), url("../IMG_0799.webp");
                 background-size: contain;
-                background-repeat: no-repeat;
-                max-width: 900px;
-                min-width: 0;
-                margin-top: 0;
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                position: relative;
-              }
-              .about-content {
-                margin-top: 75%;
-                margin-bottom: 0;
-                padding-bottom: 30px;
-              }
-              .introduce-header {
-                margin-bottom: 40px;
-                width: auto;
-                padding: 0 50px;
               }
               .introduce-content {
-                font-size: 17px;
+                text-align: justify;
               }
-              .contact {
-                color: rgba(252, 114, 30, 1);
-              }
-              .mission-vision-mobile {
-                display: block;
-                padding: 0 12px;
-              }
-              .target-row {
-                margin: 0;
-                flex-direction: column;
-              }
-              .mission-mobile {
-                display: flex;
-                max-width: 294px;
-                font-size: 15px;
-                align-items: center;
-                margin-bottom: 15px;
-                margin-top: 28px;
-              }
-              .mission-header {
-                margin-bottom: 0;
-              }
-              .mission-vision {
-                display: none;
-              }
-              .mission-content {
-                font-size: 15px;
-              }
-              .one-core {
-                font-size: 15px;
-                margin-right: 30px;
-                margin-left: 8px;
-              }
-              .one-core>img {
-                margin-right: 18px;
-              }
-
               //----------------------------------
-              .expertise {
-                height: auto;
-                padding-bottom: 50px;
-              }
-              .expertise-header {
-                padding-top: 60px;
-              }
               .expertise-main {
-                display: flex;
                 flex-direction: column;
-                gap: 15px;
-                margin-top: 40px;
               }
-              .one-expertise-content {
-                max-width: 900px;
-                margin: auto;
-                height: 100%;
-                box-sizing: border-box;
+              .one-expertise {
+                width: 100%;
               }
               .img-expertise {
-                width: 54px;
-                height: 54px;
-                top: 15px;
                 left: 26px;
               }
             }
@@ -847,7 +794,7 @@ const Index = () => {
               .title2 {
                 font-size: 1.313rem;
                 margin-bottom: 25px;
-                width: 80%;
+                width: 84%;
                 line-height: 25px;
               }
               .title3 {
@@ -870,6 +817,7 @@ const Index = () => {
               }
               .header-btn>button {
                 width: 100%;
+                height: 38px;
               }
               .btn-contact {
                 margin-right: 0;
@@ -892,49 +840,36 @@ const Index = () => {
                 font-size: 0.938rem;
                 margin-bottom: 20px;
               }
+              .item {
+                font-size: 26px;
+              }
 
              //-----------------------------------------
-             .target {
-              padding: 0;
-             }
-             .target-container {
-              padding: 0;
+              .target {
+                padding: 0;
               }
-              .about-us-bg {
-                max-width: 600px;
-                width: 100%;
-                height: 810px;
+              .target-container {
+                padding: 0;
               }
               .about-us {
-                max-width: 600px;
                 min-width: 0;
-                margin-top: 0;
-                height: 810px;
               }
-
+              .about-us-bg {
+                width: 100%;
+              }
               .introduce-header {
                 font-size: 1rem;
-                padding: 0 40px;
+                padding: 0 30px;
               }
               .introduce-content {
                 padding: 0 24px;
-                font-size: 14px;
+                font-size: 13px;
               }
-              .system-header {
-                padding-top: 20px;
-                width: 70%;
-                font-size: 20px;
-                text-align: left;
-                margin-left: 75px;
-                margin-bottom: 15px;
-                max-width: 230px;
-              }
-              .one {
-                padding-top: 30px;
-                margin-bottom: 25px;
+              .mission-vision-mobile {
+                padding: 0 12px;
               }
               .expertise {
-                margin-top: 80px;
+                margin-top: 60px;
               }
             }
           `}

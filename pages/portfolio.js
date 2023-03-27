@@ -51,7 +51,7 @@ const Portfolio = () => {
             <div className="crossbar-left-2"></div>
             <div className="applications-list">
               {listSelectApplication.map((list, index) => (
-                <span className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</span>
+                <p className={isSelect.id === list.id ? "application_selected" : "one_application"} onClick={() => setIsSelect(list)} key={index}> {list.title}</p>
               ))}
             </div>
           </div>
@@ -222,10 +222,15 @@ const Portfolio = () => {
             border-left: 1px solid #525252;
             padding-left: 15px;
           }
-          .applications-list >span {
+          .applications-list >p {
             margin-top: 10px;
             margin-bottom: 13px;
             cursor: pointer;
+            font-size: 18px;
+          }
+          .application_selected {
+            color: #323232;
+            font-weight: 600;
           }
           .applications-right {
             width: 76%;
@@ -323,7 +328,7 @@ const Portfolio = () => {
             .content-left {
               width: auto;
               margin: 0;
-              padding: 0 40px;
+              padding: 0 20px;
               font-size: 20px;
               line-height: 30px;
             }
@@ -388,10 +393,6 @@ const Portfolio = () => {
             .one_application {
               padding: 12px;
             }
-            .application_selected {
-              padding: 12px;
-              color: #B7B7B7;
-            }
             .applications-right {
               width: auto;
             }
@@ -411,23 +412,37 @@ const Portfolio = () => {
             .session {
               padding: 0 12px;
             }
+            .header-title {
+              font-size: 30px;
+            }
+            .header-content {
+              margin-top: 0;
+            }
             .img-header-mobile {
               width: 200%;
               height: auto;
-              aspect-ratio: 1.7;
+              aspect-ratio: 2.1;
               object-fit: cover;
             }
             .content-left {
               width: auto;
-              padding: 0 12px;
+              padding: 0 8px;
               font-size: 14px;
               line-height: 20px;
             }
+            .applications-header {
+              margin-top: 37px;
+            }
+            .illustration {
+              border-radius: 3px;
+            }
             .illustration>div {
               font-size: 13px;
+              margin-top: 5px;
             }
             .illustration>p {
               font-size: 12px;
+              margin-bottom: 8px;
             }
             .select {
               height: 36px;

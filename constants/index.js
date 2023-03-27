@@ -25,7 +25,7 @@ export const listBoss = [
   },
   {
     name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
-    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+    job: 'Frontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
   },
   {
     name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
@@ -41,7 +41,7 @@ export const listBoss = [
   },
   {
     name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
-    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+    job: 'Frontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
   },
   {
     name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
@@ -53,7 +53,7 @@ export const listBoss = [
   },
   {
     name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
-    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+    job: 'Frontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
   },
   {
     name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
@@ -65,7 +65,7 @@ export const listBoss = [
   },
   {
     name: 'Tuan Nguyen', image: '/NguyenTuan.webp', icon: '/icon_fontend.svg',
-    job: 'Fontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
+    job: 'Frontend developer', describe: 'Innovative and visually stunning interfaces designed to meet your unique business needs.'
   },
   {
     name: 'Viet Nguyen', image: '/NguyenViet.webp', icon: '/icon_backend.svg',
@@ -80,6 +80,7 @@ export const listBudget = [
   { id: 4, title: '100k - 200k' },
   { id: 5, title: '200k - 300k' },
   { id: 6, title: '300k - 400k' },
+  { id: 7, title: 'Sky’s the limit' },
 ]
 
 export const listTechniques = [

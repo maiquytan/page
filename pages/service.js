@@ -262,7 +262,6 @@ const Service = () => {
           .item {
             color: #1E1E1E;
             font-size: 32px;
-            font-weight: 500;
             font-weight: 600;
           }
           .crossbar1 {
@@ -283,7 +282,6 @@ const Service = () => {
           .services-row-1, .services-row-2 {
             display: flex;
             justify-content: center;
-
           }
           .services-title {
             font-weight: 600;
@@ -363,13 +361,13 @@ const Service = () => {
             }
             .header-left {
               width: auto;
-              padding: 0 40px;
+              padding: 0 10px;
               margin: auto;
               font-size: 18px;
               line-height: 30px;
             }
             .header-right {
-              width: 86%;
+              width: 91%;
               margin: auto;
               margin-top: 5%;
               margin-bottom: 10%;
@@ -405,7 +403,10 @@ const Service = () => {
             .mobile-web-header,.mobile-web-content {
               width: auto;
               margin: 0;
-              padding: 40px;
+              padding: 20px 10px;
+            }
+            .mobile-web-header {
+              padding-top: 40px;
             }
           }
           @media screen and (max-width: 768px) {
@@ -415,22 +416,13 @@ const Service = () => {
               width: 100%;
               background-position-x: 31%;
             }
-            .mobile-web-header {
-              width: auto;
-              margin: 0;
-              padding: 40px;
-            }
             .mobile-web-content {
-              width: auto;
-              margin: 0;
-              padding: 0 40px;
               text-align: justify;
               padding-bottom: 40px;
             }
             .our-services {
               padding-bottom: 50px;
             }
-
             .services-row-1 {
               flex-direction: column;
             }
@@ -452,34 +444,39 @@ const Service = () => {
               margin: 0;
               width: auto;
             }
-
           }
           @media screen and (max-width: 480px) {
-            .container {
-              padding: 0 12px;
-            }
             .img-header-mobile {
               width: 200%;
               height: auto;
               aspect-ratio: 2.1;
               object-fit: cover;
             }
+            .header-title {
+              font-size: 30px;
+            }
             .header-left {
-              padding: 0 24px;
+              padding: 0 4px;
               font-size: 14px;
               line-height: 20px;
             }
             .mobile-web-header {
               font-size: 20px;
-              padding: 0 24px;
+              padding: 0 4px;
               padding-top: 38px;
               padding-bottom: 20px;
             }
             .mobile-web-content {
               font-size: 14px;
-              padding: 0 24px;
+              padding: 0 4px;
               padding-bottom: 40px;
               text-align: justify;
+            }
+            .item {
+              font-size: 26px;
+            }
+            .services-header {
+              margin-top: 45px;
             }
             .services-row-1 {
               flex-direction: column;
@@ -496,6 +493,7 @@ const Service = () => {
             }
             .services-content {
               font-size: 14px;
+              line-height: 22px;
             }
             .content-right,.content-left {
               margin: 0;

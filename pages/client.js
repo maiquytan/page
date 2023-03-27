@@ -63,8 +63,8 @@ const Client = () => {
                 <p>Our focus on quality and attention to detail sets us apart, ensuring that every project is delivered on time and within budget.</p>
               </div>
               <div className="one-reason">
-              <div className="img-one-reason">
-                <img src="/img_reason4.svg" alt="img-reason" title="img-reason" width="110" height="110" />
+                <div className="img-one-reason">
+                  <img src="/img_reason4.svg" alt="img-reason" title="img-reason" width="110" height="110" />
                 </div>
                 <p>Our team is comprised of highly skilled and knowledgeable professionals who are passionate about delivering innovative solutions that drive success for our clients.</p>
               </div>
@@ -409,11 +409,11 @@ const Client = () => {
             width: 48%;
             height: auto;
             aspect-ratio: 0.9;
-    	      object-fit: cover;
           }
           .expert-right>img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
           }
 
           //Feedback---------------------
@@ -694,18 +694,23 @@ const Client = () => {
               aspect-ratio: 2.1;
               object-fit: cover;
             }
+            .header-title {
+              font-size: 30px;
+            }
             .header-left {
               font-size: 14px;
               text-align: left;
+              padding: 0 12px;
             }
             .mobile-web-header {
               font-size: 18px;
-              padding: 24px;
+              padding: 0 12px;
+              padding-bottom: 20px;
               padding-top: 40px;
             }
             .mobile-web-content {
               font-size: 14px;
-              padding: 0 24px;
+              padding: 0 12px;
               padding-bottom: 40px;
             }
             .reason {
@@ -741,13 +746,14 @@ const Client = () => {
               height: 35px;
               margin-bottom: 10px;
             }
+            .expert {
+              margin-bottom: 40px;
+            }
             .expert-content {
               font-size: 14px;
               color: #383838;
-            }
-            .expert-right>img {
-              width: 100%;
-              height: 100%;
+              letter-spacing: 0;
+              font-weight: 500;
             }
             //-----------------------
             .bg-feedback2 {
@@ -761,7 +767,9 @@ const Client = () => {
             }
             .feedback-header>p {
               font-size: 14px;
-              margin-bottom: 10px;
+              margin: 0;
+              letter-spacing: 0;
+              line-height: 23px;
             }
             .what-say {
               font-size: 18px;
@@ -772,6 +780,8 @@ const Client = () => {
             }
             .evaluate,.company-name {
               font-size: 12px;
+              line-height: 20px;
+              margin-right: 10px;
             }
           }
         `}

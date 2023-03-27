@@ -158,7 +158,6 @@ const Header = () => {
             }
             a {
               color: #6E6E73;
-              width: 90%;
             }
             a>img {
               margin: auto;
@@ -166,7 +165,6 @@ const Header = () => {
             .btn-menu>img {
               display: flex;
             }
-
           }
         `}
       </style>
