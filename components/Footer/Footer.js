@@ -60,16 +60,29 @@ const Footer = () => {
             display: flex;
             margin: auto;
             max-width: 1320px;
+            width: 100%;
             height: auto;
             padding: 0 30px;
             margin-top: 36px;
             margin-bottom: 61px;
             text-align: left;
             justify-content: space-between;
+            gap: 1%;
+          }
+          .contact {
+            width: 36%;
+          }
+          .logo-footer {
+            margin-bottom: 38px;
+            width: 90%;
+          }
+          .logo-footer>img {
+            width: 100%;
+            max-width: 361px;
           }
           .footer-service {
-            margin-right: 30px;
-            width: 40%;
+            width: 28%;
+            min-width: 300px;
           }
           .footer-title1,.footer-title2 {
             font-size: 20px;
@@ -80,28 +93,30 @@ const Footer = () => {
             margin-bottom: 13px;
           }
           .ul-service>li {
+            margin-left: 20px;
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
             margin-bottom: 8px;
           }
-          .contact {
-            width: 56%;
+          .footer-map {
+            width: 31%;
           }
-          .logo-footer {
-            margin-bottom: 38px;
+          .map {
+            width: 100%;
           }
-          .contact>img {
-            margin-bottom: 38px;
+          .map>iframe {
+            width: 100%;
           }
           .contact-row {
             display: flex;
             align-items: flex-start;
-            width: 60%;
+            width: 90%;
             margin-bottom: 15px;
           }
           .footer-img {
             margin-right: 11px;
+            width: auto;
           }
           .hr {
             height: 5px;
@@ -110,6 +125,7 @@ const Footer = () => {
           }
           .copyright {
             font-size: 15px;
+            font-weight: 600;
             margin-top: 16px;
             margin-bottom: 15px;
           }
@@ -118,9 +134,12 @@ const Footer = () => {
               flex-wrap: wrap;
               margin-bottom: 20px;
             }
+            .contact {
+              width: 56%;
+            }
             .footer-service {
-              margin: 0;
-              margin-left: 20px;
+              width: 40%;
+              min-width: 0;
             }
             .footer-map {
               width: 100%;
@@ -145,6 +164,7 @@ const Footer = () => {
             .footer-main {
               flex-direction: column;
               margin: auto;
+              padding: 0 20px;
             }
             .logo-footer {
               padding-bottom: 32px;
@@ -155,17 +175,15 @@ const Footer = () => {
             .contact-row {
               width: 100%;
             }
-
             .footer-map {
               width: 100%;
               margin: 0;
               margin-bottom: 30px;
-
             }
             .map {
               width: 100%;
               height: auto;
-              aspect-ratio: 1.75;
+              aspect-ratio: 1.6;
     	        object-fit: cover;
               margin-bottom: 20px;
             }
@@ -186,9 +204,6 @@ const Footer = () => {
               margin: 0;
               margin-top: 35px;
               margin-bottom: 25px;
-            }
-            .ul-service {
-              margin-left: 17px;
             }
             .copyright {
               font-size: 11px;

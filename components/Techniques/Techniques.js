@@ -73,10 +73,9 @@ const Techniques = () => {
       <style jsx>
         {`
           .techniques {
-            height: 400px;
             max-width: 1360px;
             margin: auto;
-            margin-top: 40px;
+            margin-top: 52px;
             box-sizing: border-box;
           }
           .techniques-header {
@@ -88,7 +87,7 @@ const Techniques = () => {
             max-width: 1360px;
             height: auto;
             margin: auto;
-            padding-bottom: 95px;
+            padding-bottom: 130px;
           }
           .techniques-list {
             max-width: 1260px;
@@ -105,6 +104,9 @@ const Techniques = () => {
           }
           .button {
             cursor: pointer;
+          }
+          .button>svg {
+            fill: #96bbdc;
           }
           .left {
             margin-left: 50px;

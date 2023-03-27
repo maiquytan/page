@@ -57,6 +57,11 @@ const Request = () => {
                 <div className="service">
                   <input id="check1" type="checkbox" className="checkbox" />
                   <label htmlFor="check1" className="span"></label>
+                  <label htmlFor="check1" className="service-content">Mobile App</label>
+                </div>
+                <div className="service">
+                  <input id="check1" type="checkbox" className="checkbox" />
+                  <label htmlFor="check1" className="span"></label>
                   <label htmlFor="check1" className="service-content">Web App</label>
                 </div>
                 <div className="service">
@@ -128,6 +133,7 @@ const Request = () => {
             height: auto;
             padding: 0 30px;
             padding-bottom: 70px;
+            font-family: 'Inter', sans-serif;
           }
           .item {
             color: #1E1E1E;
@@ -157,16 +163,18 @@ const Request = () => {
           .information-content {
             font-size: 17px;
             margin-bottom: 43px;
+            line-height: 25px;
           }
           .infor-address {
             font-size: 24px;
             margin-bottom : 10px;
-            font-weight: 500px;
+            font-weight: 600;
+            min-width: 310px;
           }
           .address-detail {
-            font-weight: 400;
             font-size: 16px;
             color: #5F5F5F;
+            line-height: 22px;
           }
           .gmail,.phone {
             display: flex;
@@ -216,7 +224,7 @@ const Request = () => {
             width: -webkit-fill-available;
             margin-bottom: 37px;
           }
-          .request-input>input: : placeholder, .request-input1: : placeholder, .tell-input: : placeholder {
+          .request-input>input::placeholder, .request-input1::placeholder, .tell-input::placeholder {
             color: #8E8E8E;
           }
           .service-budget-container {
@@ -389,10 +397,6 @@ const Request = () => {
             text-shadow: 1px 1px #fff;
             font-size: 17px;
           }
-          // .custom-file-input::after {
-          //   content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
-
-          // }
           .btn-request {
             color: #FFFFFF;
             background: #FC721E;
@@ -473,6 +477,19 @@ const Request = () => {
           @media screen and (max-width: 480px ) {
             .infor-request {
               padding: 0 12px;
+            }
+            .information-header {
+              padding-top: 43px;
+            }
+            .information-content {
+              font-size: 15px;
+              margin-bottom: 32px;
+            }
+            .infor-address {
+              font-size: 19px;
+            }
+            .item {
+              font-size: 26px;
             }
           }
         `}

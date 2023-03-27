@@ -54,8 +54,8 @@ const About = () => {
             <div className="target-title"><p>Our</p> <label>Vision</label> </div>
             <div className="target-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</div>
           </div>
-
         </div>
+        <div className="target-title core-title-mobile"><p>Our</p> <label>Core Values</label> </div>
         <div className="our-target core">
           <div className="target-left core-mobile">
             <div className="target-title core-title"><p>Our</p> <label>Core Values</label> </div>
@@ -159,19 +159,21 @@ const About = () => {
           .about-bg {
             background-image: url("../Session.webp");
             height: auto;
+            background-position-x: right;
             background-repeat: no-repeat;
             display: flex;
             align-items: center;
-            padding:150px 0;
+            padding: 150px 20px;
           }
           .about-axa {
             max-width: 1260px;
             display: flex;
+            justify-content: space-between;
             gap: 7%;
             margin: auto;
           }
           .about-left {
-            width: 48%;
+            width: 49%;
             height: auto;
             aspect-ratio: 1;
           }
@@ -182,7 +184,7 @@ const About = () => {
             object-fit: contain;
           }
           .about-right {
-            width: 41%;
+            width: 43%;
           }
           .about-title {
             font-weight: 600;
@@ -213,14 +215,12 @@ const About = () => {
           .target-left {
             padding-right: 40px;
             margin-left: 20px;
-            width: 46%;
+            width: 47%;
           }
           .target-right {
             width: 43%;
             border-radius: 5px;
             height: auto;
-
-            object-fit: cover;
           }
           .target-right>img {
             border-radius: 5px;
@@ -252,6 +252,10 @@ const About = () => {
             font-size: 20px;
             line-height: 26px;
           }
+          .core-title-mobile {
+            display: none;
+          }
+
           @media screen and (max-width: 1024px) {
             .about-header {
               height: auto;
@@ -259,22 +263,29 @@ const About = () => {
               margin-bottom: 50px;
               justify-content: normal;
             }
+            .about-bg {
+              padding: 0 30px;
+            }
             .about-axa {
-              gap: 2%;
+              flex-direction: column;
             }
             .about-left {
-              width: 60%;
+              width: auto;
+              margin: 0;
+              padding: 0 100px;
+              max-height: 800px;
             }
             .about-right {
-              width: 50%;
+              padding-bottom: 30px;
+              width: 100%;
+            }
+            .our-target {
+              width: auto;
+              margin-bottom: 50px;
             }
             .about-title {
               margin-top: 0;
               margin-bottom: 25px;
-            }
-            .about-content {
-              font-size: 16px;
-              line-height: 20px;
             }
             .img-header {
               top: 0px;
@@ -326,7 +337,9 @@ const About = () => {
             }
             .target-title {
               margin-top: 0;
+              margin-bottom: 30px;
               font-size: 50px;
+              line-height: 60px;
             }
             .target-content {
               font-size: 16px;
@@ -334,9 +347,11 @@ const About = () => {
             }
             .target-left {
               padding: 0;
+              width: 42%;
             }
             .target-right {
-              width: 47%;
+              width: 49%;
+              height: fit-content;
             }
           }
           @media screen and (max-width: 768px) {
@@ -349,12 +364,16 @@ const About = () => {
             }
             .about-left {
               width: auto;
+              padding: 0;
               margin: 0;
               margin-top: 25px;
             }
             .about-right {
               padding-bottom: 30px;
               width: 100%;
+            }
+            .about-content {
+              font-size: 16px;
             }
             .our-target {
               width: auto;
@@ -366,19 +385,21 @@ const About = () => {
               padding-bottom: 10px;
             }
             .target-title {
-              margin-top: 15px;
-              margin-bottom: 15px;
+              margin: 0;
+              margin-bottom: 18px;
               font-size: 50px;
-              line-height: 50px;
+              line-height: 55px;
             }
             .target-left {
-              width: 48%;
+              width: 43%;
               padding-right: 0;
               margin-left: 0;
             }
             .target-content {
               font-size: 15px;
               line-height: 21px;
+              max-width: 768px;
+              margin-top: 20px;
             }
             .core {
               display: flex;
@@ -389,25 +410,35 @@ const About = () => {
               margin: auto;
             }
             .core-title {
+              display: none;
+            }
+            .core-title-mobile {
+              display: flex;
               margin-top: 10px;
               flex-direction: row;
               justify-content: flex-start;
             }
-            .core-title>p {
+            .core-title-mobile>p {
               margin-right: 8px;
             }
           }
           @media screen and (max-width: 480px) {
+            .session {
+              padding: 0 12px;
+            }
             .img-header {
               width: 200%;
               height: auto;
               aspect-ratio: 2.1;
               object-fit: cover;
             }
+            .header-title {
+              font-size: 30px;
+            }
             .header-left {
               font-size: 14px;
               line-height: 20px;
-              padding: 0 10px;
+              padding: 0 12px;
             }
             .about-bg {
               padding: 0 24px;
@@ -425,18 +456,21 @@ const About = () => {
             }
             .target-about {
               margin-top: 40px;
-              padding: 0 12px;
+              padding: 0 24px;
               padding-bottom: 20px;
+            }
+            .our-target {
+              margin-bottom: 25px;
             }
             .target-title {
               font-size: 30px;
               margin-top: 0;
+              margin-bottom: 15px;
+              line-height: 35px;
             }
             .target-content {
               font-size: 12px;
             }
-
-
           }
         `}
       </style>
