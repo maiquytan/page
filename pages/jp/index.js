@@ -332,7 +332,6 @@ const Index = () => {
               background: #ffffff;
             }
             .home {
-              margin-top: 93px;
               width: 100%;
               overflow: hidden;
               font-family: "Inter", sans-serif;
