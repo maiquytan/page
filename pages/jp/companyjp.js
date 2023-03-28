@@ -99,7 +99,7 @@ const companyjp = () => {
         <div className="member-main">
           {listMember.map((mem, index) => (
             <div className="img-member" key={index}>
-              <img src={mem.img} title="img_member" alt="img_member" width={440} height={367} />
+              <img src={mem.img} title="img_member" alt="img_member" width="440" height="367" />
             </div>
           ))}
         </div>
