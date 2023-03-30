@@ -192,3 +192,23 @@ export const listMember = [
   { img: '/NguyenDuong.webp' },
   { img: '/NguyenTuan.webp' },
 ]
+
+export const listTechnologyJP = [
+  { img: '/jp/img_service6.svg', title: 'WEBシステム開発', content: 'AxalizeのメンバーはPHP, NodeJS, Java等, 各種での開発経験が豊富にあり, 特にAWS, Googleのクラウド環境を使用したシステム構築を得意としております。' },
+  { img: '/jp/img_service7.svg', title: 'モバイルアプリ開発', content: 'IOS,Androidアプリの開発経験が豊富にあります。アプリのコンテンツについて明確なアイディアがない場合も類似アプリ等の例を参考に提案いたします。Nativeアプリ、ハイブリットアプリなど対応可能です。' },
+  { img: '/jp/img_service8.svg', title: 'サーバー構築', content: 'クラウド(Amazon Web Services, Microsoft Azure等)またはオンプレミスのサーバー構築、サーバーのバージョンアップ対応、新サーバーへの移行作業などサーバー側で発生する作業もお手伝いいたします' },
+  { img: '/jp/img_service9.svg', title: 'RPA開発', content: '定期的な事務処理などをロボットに任せ、業務の自動化・効率化を図る取り組みであり、ロボットに業務のシナリオを覚えさせることで、迅速且つ確実な処理を実現いたします。' },
+]
+
+export const listLanguage = [
+  { img: '/jp/HTML.webp' },
+  { img: '/jp/css.webp' },
+  { img: '/jp/JS.webp' },
+  { img: '/jp/React.webp' },
+  { img: '/jp/node.webp' },
+  { img: '/jp/Laravel.webp' },
+  { img: '/jp/ORACLE.webp' },
+  { img: '/jp/swift.webp' },
+  { img: '/jp/php.webp' },
+  { img: '/jp/Java.webp' },
+]
