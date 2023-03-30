@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="introduce-detail">
             <div className="introduce-img">
               <img
-                src="jp//introduce_img.webp"
+                src="/jp/introduce_img.webp"
                 alt="introduce"
                 title="introduce"
                 width="445"
@@ -106,7 +106,7 @@ const Footer = () => {
       <style jsx>
         {`
           .footer {
-            padding-top: 190px;
+            padding-top: 60px;
             color: #ffffff;
             background-color: #fff;
             width: 100%;
@@ -134,13 +134,19 @@ const Footer = () => {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            max-width: 1274px;
+            max-width: 1110px;
             margin: auto;
             gap: 57px;
-            flex-wrap: wrap;
+            padding: 0 20px;
           }
           .introduce-img img {
             width: 445px;
+          }
+          .introduce-img>img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1.6;
+            object-fit: cover;
           }
           .introduce-title {
             color: #fff;
@@ -178,9 +184,8 @@ const Footer = () => {
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
-            max-width: 1274px;
+            max-width: 1110px;
             margin: auto;
-            padding-left: 87px;
             padding-bottom: 42px;
           }
           .footer-content p {
@@ -224,9 +229,11 @@ const Footer = () => {
             display: flex;
             justify-content: center;
           }
-          @media screen and (max-width: 900px) {
+          @media screen and (max-width: 1024px) {
             .introduce-inner {
               margin: 0 15px;
+              padding-top: 24px;
+              padding-bottom: 88px;
             }
             .introduce-title {
               font-size: 25px;
@@ -236,10 +243,10 @@ const Footer = () => {
               margin-left: -15px;
             }
             .introduce-detail {
+              flex-direction: column;
+              align-items: center;
               justify-content: center;
-            }
-            .introduce-content {
-              padding-left: 15px;
+              gap: 26px;
             }
             .footer-content {
               padding: 0 23px 0 33px;
@@ -264,6 +271,19 @@ const Footer = () => {
               margin-top: 54px;
               padding-top: 30px;
               padding-bottom: 43px;
+            }
+            .introduce-img {
+              width: 100%;
+              max-width: 600px;
+              margin: auto;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .introduce-detail {
+              padding: 0 16px;
+            }
+            .footer {
+              padding: 0;
             }
           }
         `}
