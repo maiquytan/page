@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState } from 'react';
 
 import { listLanguage, listTechnologyJP } from '../../constants';
 
@@ -24,6 +24,7 @@ const servicejp = () => {
       setIsMoving(true);
     }
   };
+
   const handleMouseUp = () => {
     setTimeout(() => {
       setIsMoving(false);
@@ -83,28 +84,27 @@ const servicejp = () => {
             </div>
           </div>
         </div>
-        <div className="illustration-develop">
+        <div className="illustration">
           <h2>ラボ型開発のイメージ</h2>
-          <div className="illustration-de">
+          <div className="illustration-develop">
             <img src="/jp/img_service2.svg" title="img_service" alt="img_service" width="1110" height="388" />
           </div>
-          <div className="illustration-de-mobile">
+          <div className="illustration-develop-mobile">
             <img className="img-country" src="/jp/illustration_develop1.svg" title="img_service" alt="img_service" width="107" height="78" />
             <img className="img-logo" src="/jp/illustration_develop2.svg" title="img_service" alt="img_service" width="51" height="67" />
-            <div className="img-customer">お客様</div>
+            <div className="customer">お客様</div>
             <div className="img-arrow">
               <img src="/jp/illustration_develop3.svg" title="img_service" alt="img_service" width="53" height="133" />
               <img src="/jp/illustration_develop4.svg" title="img_service" alt="img_service" width="144" height="55" />
               <img src="/jp/illustration_develop5.svg" title="img_service" alt="img_service" width="53" height="133" />
             </div>
-            <div className="illustration-VN">
-              <img className="img-country VN" src="/jp/illustration_develop6.svg" title="img_service" alt="img_service" width="107" height="78" />
+            <div className="illustration-service">
+              <img className="img-country" src="/jp/illustration_develop6.svg" title="img_service" alt="img_service" width="107" height="78" />
               <img className="img-logo" src="/jp/illustration_develop7.svg" title="img_service" alt="img_service" width="177" height="177" />
               <img src="/jp/illustration_develop8.svg" title="img_service" alt="img_service" width="53" height="105" />
               <img src="/jp/illustration_develop9.svg" title="img_service" alt="img_service" width="233" height="208" />
             </div>
           </div>
-
         </div>
       </div>
 
@@ -142,21 +142,21 @@ const servicejp = () => {
             <img src="/jp/img_contract.webp" title="img_service" alt="img_service" width="942" height="425" />
           </div>
         </div>
-        <div className="illustration-develop">
+        <div className="illustration">
           <h2>請負・受託型開発の流れ</h2>
-          <div className="illustration-con">
-            <div className="img-SE">
+          <div className="illustration-contract">
+            <div className="img-se">
               <img src="/jp/img_service4.svg" title="img_service" alt="img_service" width="542" height="322" />
             </div>
-            <div className="img-SE">
+            <div className="img-se">
               <img src="/jp/illustration_contract6.svg" title="img_service" alt="img_service" width="542" height="322" />
-              <div className="img-SE-content">
+              <div className="img-se-content">
                 <img className="step02-title" src="/jp/illustration_contract4.svg" title="img_service" alt="img_service" width="57" height="46" />
                 <img className="step02-text" src="/jp/illustration_contract5.svg" title="img_service" alt="img_service" width="192" height="72" />
               </div>
             </div>
           </div>
-          <div className="illustration-con-mobile">
+          <div className="illustration-contract-mobile">
             <div className="one-illustration">
               <div className="step">
                 <img className="step-title" src="/jp/illustration_contract1.svg" title="img_service" alt="img_service" width="67" height="45" />
@@ -340,33 +340,32 @@ const servicejp = () => {
             border-left: 3px solid #D2D2D2;
             border-right: 3px solid #D2D2D2;
           }
-          .illustration-develop {
+          .illustration {
             max-width: 1110px;
             margin: auto;
             margin-top: 275px;
             padding: 0 20px;
           }
-          .illustration-de {
+          .illustration-develop {
             width: 100%;
+            margin-top: 89px;
           }
-          .illustration-de>img {
+          .illustration-develop>img {
             width: 100%;
             height: auto;
           }
-          .illustration-develop>h2 {
-            margin-bottom: 89px;
-          }
-          .illustration-de-mobile {
+          .illustration-develop-mobile {
             display: none;
           }
           .img-country {
             position: absolute;
             left: 16%;
+            top: 26px;
           }
           .img-logo {
-            margin-top: 123px;
+            margin-top: 150px;
           }
-          .illustration-VN {
+          .illustration-service {
             background: #C3E7F9;
             display: flex;
             flex-direction: column;
@@ -377,15 +376,12 @@ const servicejp = () => {
             padding-bottom: 73px;
             position: relative;
           }
-          .VN {
-            top: 26px;
-          }
           .img-arrow {
             display: flex;
             gap: 7px;
             align-items: center;
           }
-          .img-customer {
+          .customer {
             padding: 13px 61px 6px 61px;
             background: #4ABBF3;
             border-radius: 20px;
@@ -399,21 +395,21 @@ const servicejp = () => {
             width: 100%;
             height: auto;
           }
-          .illustration-con {
+          .illustration-contract {
             display: flex;
             justify-content: space-between;
             gap: 2%;
           }
-          .img-SE {
+          .img-se {
             position: relative;
             z-index: 1;
             width: 49%;
           }
-          .img-SE>img {
+          .img-se>img {
             width: 100%;
             height: auto;
           }
-          .img-SE-content {
+          .img-se-content {
             width: 33%;
             display: flex;
             flex-direction: column;
@@ -431,7 +427,7 @@ const servicejp = () => {
             width: 100%;
             height: auto;
           }
-          .illustration-con-mobile {
+          .illustration-contract-mobile {
             display: none;
           }
           .contract {
@@ -540,6 +536,9 @@ const servicejp = () => {
               max-width: 1024px;
               min-width: 0;
             }
+            .title-list {
+              min-width: 0;
+            }
             .development-list,.contract-list {
               position: static;
               overflow: auto;
@@ -563,18 +562,19 @@ const servicejp = () => {
             .contract-list::-webkit-scrollbar {
               display: none;
             }
-            .illustration-develop {
+            .illustration {
               margin-top: 63px;
               padding: 0;
             }
-            .illustration-de {
+            .illustration-develop {
               display: none;
             }
-            .illustration-de-mobile {
+            .illustration-develop-mobile {
               display: flex;
               flex-direction: column;
               align-items: center;
               position: relative;
+              margin-top: 25px;
             }
             .contract-bg {
               padding: 0 30px;
@@ -585,14 +585,12 @@ const servicejp = () => {
             .content-img>h2 {
               font-size: 20px;
             }
-            .illustration-develop>h2 {
-              margin-bottom: 51px;
-            }
-            .illustration-con {
+            .illustration-contract {
               display: none;
               flex-direction: column;
+              margin-top: 87px;
             }
-            .illustration-con>img {
+            .illustration-contract>img {
               width: 100%;
             }
             .one-illustration {
@@ -601,9 +599,10 @@ const servicejp = () => {
             .one-illustration>div {
               width: 100%;
             }
-            .illustration-con-mobile {
+            .illustration-contract-mobile {
               display: flex;
               flex-direction: column;
+              margin-top: 51px;
             }
             .step {
               witdh: 100%;
@@ -616,6 +615,7 @@ const servicejp = () => {
             }
             .step-text {
               width: 52%;
+              max-width: 208px;
             }
             .step-content>img {
               width: 100%;
@@ -648,6 +648,9 @@ const servicejp = () => {
               padding: 30px;
               border-bottom: 1px solid gray;
               border-top: 1px solid gray;
+            }
+            .title-list {
+              min-width: 282px;
             }
             .bg-development2 {
               background-repeat: repeat-y;
