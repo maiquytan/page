@@ -232,6 +232,7 @@ const companyjp = () => {
             margin-top: 60px;
             margin-bottom: 50px;
             justify-content: space-between;
+            gap: 50px;
           }
           .CEO-img>img {
             width: 100%;
@@ -243,7 +244,7 @@ const companyjp = () => {
             padding-top: 20px;
           }
           .CEO-text {
-            max-width: 525px;
+            max-width: 567px;
             font-size: 25px;
             line-height: 38px;
             font-weight: bold;
@@ -338,6 +339,7 @@ const companyjp = () => {
               align-items: flex-start;
               margin-top: 24px;
               margin-bottom: 34px;
+              gap: 0;
             }
             .CEO-text {
               padding: 0;

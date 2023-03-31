@@ -212,3 +212,11 @@ export const listLanguage = [
   { img: '/jp/php.webp' },
   { img: '/jp/Java.webp' },
 ]
+
+export const listWork = [
+  { img: '/illustration1.webp', category: 'Webシステム', title: 'Lineステップ配信サービス', language: 'PHP, React', content: 'SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText' },
+  { img: '/illustration2.webp', category: 'Webシステム', title: 'オンラインジョブフェアサ イト', language: 'PHP, Vue.js', content: 'SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText' },
+  { img: '/illustration3.webp', category: 'Webシステム', title: 'シフト自動作成ツール', language: 'Python, Node.js, Vue.js', content: 'SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText' },
+  { img: '/illustration4.webp', category: 'モバイルアプリ', title: '学割検索アプリ', language: 'ReactNative, PHP', content: 'SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText' },
+  { img: '/illustration5.webp', category: 'ホームページ', title: 'Sample', language: 'HTML, CSS, Javascript, WordPress', content: 'SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText' },
+]

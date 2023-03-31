@@ -133,7 +133,7 @@ const Header = () => {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 1274px;
+            max-width: 1150px;
             margin: auto;
           }
           .menu-content {

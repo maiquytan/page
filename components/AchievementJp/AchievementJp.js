@@ -16,40 +16,38 @@ const AchievementJp = () => {
           />
         </div>
         <div className="achievement-right">
-          <p className="achievement-text">
-            様々なエンジニアを擁するAxalizeではWebアプリ・モバイルアプリをメインに、Webサイトや多くの開発案件を手がけています。
-            最近ではRPA(Robotic Process
-            Automation)の開発にも力を入れております。
-          </p>
-          <div className="achievement-bottom">
+          <div className="achievement-text">
+            <p>様々なエンジニアを擁するAxalizeではWebアプリ・モバイルアプリをメインに、Webサイトや多くの開発案件を手がけています。</p>
+            <p>最近ではRPA(Robotic Process Automation)の開発にも力を入れております。</p>
+          </div>
             <button className="primary-btn">Read More</button>
             <div className="achievement-wrapper">
               <div className="achievement-column">
                 <p className="achievement-number">47+</p>
-                <p className="achievement-text ">完了したプロジェクト</p>
+                <label>完了したプロジェクト</label>
               </div>
               <div className="achievement-column">
                 <p className="achievement-number">14+</p>
-                <p className="achievement-text ">世界中のお客様</p>
+                <label>世界中のお客様</label>
               </div>
               <div className="achievement-column">
                 <p className="achievement-number">100</p>
-                <p className="achievement-text ">リピート率</p>
+                <label>リピート率</label>
               </div>
             </div>
-          </div>
         </div>
       </div>
 
       <style jsx>
         {`
           .achievement {
-            max-width: 1260px;
+            max-width: 1170px;
             margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            padding: 0 30px;
           }
           .achievement-subTitle {
             font-size: 18px;
@@ -66,22 +64,30 @@ const AchievementJp = () => {
           }
           .achievement-container {
             margin-top: 24px;
+            width: 100%;
             gap: 38px;
+            box-sizing: border-box;
             display: flex;
           }
           .achievement-text {
             font-size: 16px;
           }
           .achievement-img {
-            width: 100%;
+            width: 40%;
+            height: auto;
+          }
+          .achievement-number {
+            font-size: 30px;
+            font-weight: bold;
           }
           .achievement-img img {
-            width: 445px;
+            width: 100%;
             height: 100%;
             margin: auto;
             object-fit: cover;
           }
           .achievement-right {
+            width: 56%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -91,6 +97,8 @@ const AchievementJp = () => {
             color: #fff;
             width: 270px;
             height: 40px;
+            margin-top: 89px;
+            margin-bottom: 33px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -99,11 +107,6 @@ const AchievementJp = () => {
             font-weight: bold;
             cursor: pointer;
           }
-          .achievement-bottom {
-            display: flex;
-            flex-direction: column;
-            gap: 33px;
-          }
           .achievement-wrapper {
             display: flex;
             gap: 30px;
@@ -111,20 +114,20 @@ const AchievementJp = () => {
           .achievement-column {
             display: flex;
             flex-direction: column;
+            min-width: 160px;
             gap: 3px;
             color: #2d2d2d;
           }
           .achievement-column:last-child {
-            margin-left: 50px;
+            width: auto;
+            min-width: 0;
           }
-          @media screen and (max-width: 900px) {
+
+          @media screen and (max-width: 1024px) {
             .achievement {
-              padding: 0 13px 82px 13px;
+              padding: 0 30px 82px 30px;
               align-items: flex-start;
               background-color: #fafdf9;
-            }
-            .achievement-container {
-              flex-wrap: wrap;
             }
             .achievement-img img {
               width: 100%;
@@ -132,11 +135,50 @@ const AchievementJp = () => {
             .achievement-title {
               margin-top: 92px;
             }
+            .primary-btn {
+              margin: 32px 0;
+            }
             .achievement-container {
               gap: 32px;
             }
             .achievement-wrapper {
               margin-top: 3px;
+              gap: 20px;
+            }
+            .achievement-column {
+              min-width: 140px;
+            }
+            .achievement-column>label {
+              font-size: 14px;
+            }
+          }
+          @media screen and (max-width: 768px) {
+            .achievement {
+              padding: 0 20px;
+            }
+            .achievement-container {
+              flex-direction: column;
+            }
+            .achievement-img {
+              width: 100%;
+            }
+            .achievement-right {
+              width: 100%;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .achievement {
+              padding: 0 15px;
+            }
+            .achievement-wrapper {
+              justify-content: space-between;
+            }
+            .achievement-column {
+              width: auto;
+              min-width: 0;
+            }
+            .achievement-column>label {
+              font-size: 13px;
             }
           }
         `}

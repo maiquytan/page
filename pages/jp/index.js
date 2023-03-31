@@ -100,7 +100,7 @@ const Index = () => {
                   </div>
                   <p className="ability-title">請負・受託型開発</p>
                   <p className="ability-content">
-                    定義した要件に基づき、期日までに成果物の完成を請け負います。
+                    <p>定義した要件に基づき、期日までに成果物の完成を請け負います。</p>
                     請負開発は契約の通りに開発が進むため、要件が決まっており途中での要件追加や仕様変更が発生しない案件向きの形態です。
                   </p>
                   <Link href="/">
@@ -334,11 +334,11 @@ const Index = () => {
             .home {
               width: 100%;
               overflow: hidden;
-              font-family: "Inter", sans-serif;
+              font-family: Meiryo;
             }
             .default-text {
               font-size: 16px;
-              color: #fff;
+              padding-top: 25px;
             }
             .home-header {
               display: flex;
@@ -413,11 +413,13 @@ const Index = () => {
               border-bottom: 3px solid #0fa5ef;
             }
             .default-block {
-              max-width: 1274px;
+              max-width: 1170px;
               margin: auto;
+              padding: 0 30px;
             }
             .center-block {
-              max-width: 1274px;
+              max-width: 1170px;
+              padding: 0 30px;
               margin: auto;
               display: flex;
               flex-direction: column;
@@ -428,6 +430,7 @@ const Index = () => {
               background-color: #0fa5ef;
               position: relative;
               overflow: hidden;
+              padding: 0 30px;
               padding-bottom: 78px;
             }
             .about::before {
@@ -440,7 +443,7 @@ const Index = () => {
               border-top: 70px solid #fff;
             }
             .about-inner {
-              max-width: 1274px;
+              max-width: 1110px;
               margin: auto;
               color: #fff;
             }
@@ -469,7 +472,7 @@ const Index = () => {
             .ability {
               flex: 1;
               background-color: #fff;
-              padding: 45px 30px;
+              padding: 45px 40px;
               color: #000;
               border-radius: 5px;
               position: relative;
@@ -482,14 +485,19 @@ const Index = () => {
               font-weight: bold;
               position: absolute;
             }
+            .ability-img {
+              width: 42px;
+              height: 43px;
+            }
             .ability-img img {
-              width: 41px;
+              width: 100%;
               height: 100%;
               object-fit: cover;
             }
             .ability-title {
               margin-top: 25px;
               font-size: 20px;
+              line-height: 30px;
               font-weight: bold;
             }
             .ability-content {
@@ -511,13 +519,13 @@ const Index = () => {
               display: flex;
               width: 100%;
               flex-wrap: wrap;
-              gap: 20px;
+              gap: 2%;
               margin-top: 17px;
               margin-bottom: 49px;
             }
             .feature-item {
               margin-top: 30px;
-              flex-basis: 45%;
+              width: 49%;
               display: flex;
               gap: 30px;
               align-items: center;
@@ -535,6 +543,9 @@ const Index = () => {
             .feature-text {
               margin-top: 13px;
               font-size: 16px;
+            }
+            .review {
+              padding: 0 30px;
             }
             .review-title {
               margin-top: 89px;
@@ -580,6 +591,7 @@ const Index = () => {
             }
             .client-name {
               font-size: 24px;
+              line-height: 30px;
               font-weight: bold;
               height: 72px;
             }
@@ -621,6 +633,8 @@ const Index = () => {
               width: 100%;
               min-height: 250px;
               height: 250px;
+              vertical-align: top;
+              object-fit: cover;
             }
             .article-info {
               margin-top: 20px;
@@ -644,6 +658,9 @@ const Index = () => {
             }
             .more-btn {
               margin-top: 70px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
             }
             .article-date {
               height: fit-content;
@@ -653,19 +670,14 @@ const Index = () => {
             .article-tag {
               margin-left: 17px;
             }
-            @media screen and (min-width: 901px) {
-              .menu-mobile {
-                display: none;
-              }
-            }
 
-            @media screen and (max-width: 900px) {
+            @media screen and (max-width: 1024px) {
               .home-header,
               .about,
               .feature,
               .review,
               .news {
-                padding: 0 13px;
+                padding: 0 30px;
               }
               .default-title {
                 margin-top: 94px;
@@ -694,13 +706,18 @@ const Index = () => {
                 margin-top: 56px;
               }
               .feature-wrapper {
+                margin-top: 47px;
                 gap: 57px;
                 flex-direction: column;
               }
               .feature-item {
+                width: 100%;
                 flex-direction: column;
                 gap: 15px;
                 margin-top: 0;
+              }
+              .feature-header {
+                text-align: center;
               }
               .center-block {
                 align-items: flex-start;
@@ -709,6 +726,9 @@ const Index = () => {
                 overflow-x: scroll;
                 overflow-y: hidden;
                 display: -webkit-box;
+              }
+              .news-img img{
+                height: auto;
               }
               .review-wrapper::-webkit-scrollbar {
                 display: none;
@@ -722,11 +742,36 @@ const Index = () => {
                 flex-direction: column;
                 margin-top: 39px;
               }
-              .news-item {
-                padding-bottom: 60px;
-              }
               .article-info {
                 margin-top: 24px;
+              }
+            }
+            @media screen and (max-width: 768px) {
+              .home-header,
+              .about,
+              .feature,
+              .review,
+              .news {
+                padding: 0 20px;
+              }
+              .feature-header {
+                text-align: left;
+                font-size: 20px;
+              }
+              .achievement-container {
+                flex-direction: column;
+              }
+              .feature-item {
+                padding-left: 30px;
+              }
+            }
+            @media screen and (max-width: 480px) {
+              .home-header,
+              .about,
+              .feature,
+              .review,
+              .news {
+                padding: 0 15px;
               }
             }
           `}

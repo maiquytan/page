@@ -37,9 +37,9 @@ const servicejp = () => {
   return (
     <div className="service">
       <div className="caption">
-        <h1 className="title-main">サービス概要</h1>
+        <h1 className="caption-main">サービス概要</h1>
         <span></span>
-        <p className="default-subtitle">Service</p>
+        <p className="caption-title">Service</p>
         <div>
           <p>Axalizeでは「ラボ型開発」と「請負・受託開発」の契約形態をご提供しております。</p>
           お客様のプロジェクトに合わせてご利用ください。
@@ -236,13 +236,13 @@ const servicejp = () => {
           .caption>div {
             line-height: 24px;
           }
-          .title-main {
+          .caption-main {
             font-size: 30px;
             line-height: 45px;
             font-weight: bold;
             width: fit-content;
           }
-          .default-subtitle {
+          .caption-title {
             color: #CECECE;
             font-size: 18px;
             font-weight: bold;
@@ -648,6 +648,14 @@ const servicejp = () => {
               padding: 30px;
               border-bottom: 1px solid gray;
               border-top: 1px solid gray;
+            }
+            .caption-main {
+              font-size: 25px;
+            }
+            .caption-title {
+              font-size: 16px;
+              margin-top: 11px;
+              margin-bottom: 19px;
             }
             .title-list {
               min-width: 282px;
