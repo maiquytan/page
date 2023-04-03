@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -7,7 +7,7 @@ import Techniques from '../components/Techniques/Techniques';
 import { listExpertise, listServices } from '../constants';
 
 const Index = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <>

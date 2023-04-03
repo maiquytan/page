@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 
 import { listLanguage, listTechnologyJP } from '../../constants';
 
-const servicejp = () => {
+const Servicejp = () => {
   const router = useRouter();
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -37,9 +37,9 @@ const servicejp = () => {
   return (
     <div className="service">
       <div className="caption">
-        <h1 className="title-main">サービス概要</h1>
+        <h1 className="caption-main">サービス概要</h1>
         <span></span>
-        <p className="default-subtitle">Service</p>
+        <p className="caption-title">Service</p>
         <div>
           <p>Axalizeでは「ラボ型開発」と「請負・受託開発」の契約形態をご提供しております。</p>
           お客様のプロジェクトに合わせてご利用ください。
@@ -236,13 +236,13 @@ const servicejp = () => {
           .caption>div {
             line-height: 24px;
           }
-          .title-main {
+          .caption-main {
             font-size: 30px;
             line-height: 45px;
             font-weight: bold;
             width: fit-content;
           }
-          .default-subtitle {
+          .caption-title {
             color: #CECECE;
             font-size: 18px;
             font-weight: bold;
@@ -341,7 +341,7 @@ const servicejp = () => {
             border-right: 3px solid #D2D2D2;
           }
           .illustration {
-            max-width: 1110px;
+            max-width: 1150px;
             margin: auto;
             margin-top: 275px;
             padding: 0 20px;
@@ -399,6 +399,7 @@ const servicejp = () => {
             display: flex;
             justify-content: space-between;
             gap: 2%;
+            margin-top: 87px;
           }
           .img-se {
             position: relative;
@@ -434,6 +435,7 @@ const servicejp = () => {
             display: flex;
             gap: 42px;
             justify-content: flex-end;
+            padding-left: 20px;
           }
           .contract-left>p {
             margin: 0;
@@ -581,6 +583,7 @@ const servicejp = () => {
             }
             .contract {
               flex-direction: column-reverse;
+              padding-left: 0;
             }
             .content-img>h2 {
               font-size: 20px;
@@ -649,6 +652,14 @@ const servicejp = () => {
               border-bottom: 1px solid gray;
               border-top: 1px solid gray;
             }
+            .caption-main {
+              font-size: 25px;
+            }
+            .caption-title {
+              font-size: 16px;
+              margin-top: 11px;
+              margin-bottom: 19px;
+            }
             .title-list {
               min-width: 282px;
             }
@@ -684,4 +695,4 @@ const servicejp = () => {
     </div>
   )
 }
-export default servicejp;
+export default Servicejp;

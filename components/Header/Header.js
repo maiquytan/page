@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const Header = () => {
   const [isDropdownMenuAction, setIsDropdownMenuAction] = useState(false);
   const [isDropdownCompanyAction, setIsDropdownCompanyAction] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
 
   const handleDropDownMenuAction = () => {
-    setIsDropdownMenuAction(!isDropdownMenuAction)
+    setIsDropdownMenuAction(!isDropdownMenuAction);
   }
 
   const handleDropDownCompanyAction = () => {
-    setIsDropdownCompanyAction(!isDropdownCompanyAction)
+    setIsDropdownCompanyAction(!isDropdownCompanyAction);
   }
 
   useEffect(() => {
     setIsDropdownMenuAction(false);
-  }, [router])
+  }, [router]);
 
   return (
     <div className="header">

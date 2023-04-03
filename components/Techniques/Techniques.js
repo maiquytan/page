@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 import { listTechniques, settingTechniques } from '../../constants';
 import useViewport from '../../hook/useViewPort';
 
 const Techniques = () => {
   const [startX, setStartX] = useState(0);
-  const [itemView, setItemView] = useState(settingTechniques.itemPerView)
-  const columnQuantity = Math.ceil(settingTechniques.itemListQuantity / settingTechniques.itemRow)
-  const listWidth = (columnQuantity / itemView) * 100
-  const itemWidth = (1 / columnQuantity) * 100
-  const marginX = startX * itemWidth
+  const [itemView, setItemView] = useState(settingTechniques.itemPerView);
+  const columnQuantity = Math.ceil(settingTechniques.itemListQuantity / settingTechniques.itemRow);
+  const listWidth = (columnQuantity / itemView) * 100;
+  const itemWidth = (1 / columnQuantity) * 100;
+  const marginX = startX * itemWidth;
   const [width] = useViewport();
 
   useEffect(() => {
@@ -19,20 +19,20 @@ const Techniques = () => {
     else {
       setItemView(settingTechniques.itemPerView);
     }
-  }, [width])
+  }, [width]);
 
   const handleRightClick = () => {
     if (startX >= 0 && startX < (columnQuantity - (itemView))) {
-      setStartX(startX + 1)
+      setStartX(startX + 1);
     }
   }
 
   const handleLeftClick = () => {
     if (startX > 0) {
-      setStartX(startX - 1)
+      setStartX(startX - 1);
     }
   }
-  const itemWidthString = `calc(${itemWidth}% - 11px)`
+  const itemWidthString = `calc(${itemWidth}% - 11px)`;
 
   return (
     <div className="techniques">

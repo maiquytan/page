@@ -113,7 +113,7 @@ const Footer = () => {
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: fit-conte;
+            height: fit-content;
           }
           .footer-introduce {
             width: 100%;
@@ -186,6 +186,7 @@ const Footer = () => {
             flex-direction: column;
             max-width: 1110px;
             margin: auto;
+            padding-left: 86px;
             padding-bottom: 42px;
           }
           .footer-content p {
@@ -220,7 +221,7 @@ const Footer = () => {
           }
           .license {
             width: 100%;
-            max-width: 1274px;
+            max-width: 1110px;
             margin: auto;
             border-top: 1px solid #fff;
             font-size: 12px;
@@ -284,6 +285,9 @@ const Footer = () => {
             }
             .footer {
               padding: 0;
+            }
+            .license {
+              font-size: 10px;
             }
           }
         `}

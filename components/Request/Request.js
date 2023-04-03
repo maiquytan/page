@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 import { listBudget, uploadFileStatus } from '../../constants';
 
@@ -8,11 +8,11 @@ const Request = () => {
   const [content, setContent] = useState(uploadFileStatus.default.title);
 
   const handleCheckService = () => {
-    setIsCheckService(!isCheckService)
+    setIsCheckService(!isCheckService);
   }
 
   const handleOnChange = (e) => {
-    setContent(e.target.files[0]?.name || uploadFileStatus.nothing.title)
+    setContent(e.target.files[0]?.name || uploadFileStatus.nothing.title);
   }
 
   return (
