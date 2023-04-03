@@ -341,7 +341,7 @@ const Servicejp = () => {
             border-right: 3px solid #D2D2D2;
           }
           .illustration {
-            max-width: 1110px;
+            max-width: 1150px;
             margin: auto;
             margin-top: 275px;
             padding: 0 20px;

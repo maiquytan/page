@@ -79,13 +79,11 @@ const Header = () => {
           height="64"
         />
         <div className="btn-menu" onClick={handleDropDownMenuAction}>
-          <img src="/" alt="menu" title="menu" width="61" height="51" />
+          <img src="/jp/img_menu.svg" alt="menu" title="menu" width="61" height="51" />
         </div>
         {isDropdownMenuAction &&
           <div className="mobile-menu-down">
-            <div className="btn_cancle">
-              <img src="/" title="btn_cancle" alt="btn_cancle" width="61" height="51" />
-            </div>
+            <div className="btn_cancle" onClick={handleDropDownMenuAction}>×</div>
             <div>
               <ul>
                 <li><Link href="/jp"><a>トップ</a></Link></li>
@@ -143,6 +141,7 @@ const Header = () => {
           .menu-content span {
             font-size: 10px;
             padding: 4px 0;
+            text-align: center;
           }
           a {
             color: #000000;
@@ -194,6 +193,9 @@ const Header = () => {
             list-style: none;
             z-index: 3;
           }
+          ul {
+            margin-top: 112px;
+          }
           li {
             margin: 20px;
           }
@@ -207,8 +209,16 @@ const Header = () => {
           .btn_cancle {
             display: flex;
             justify-content: flex-end;
-            padding-top: 17px;
-            padding-right: 14px;
+            width: fit-content;
+            padding: 1px 18px;
+            color: #FFFFFF;
+            font-size: 40px;
+            font-weight: bold;
+            border: 1px solid #FFFFFF;
+            border-radius: 10px;
+            float: right;
+            margin-top: 17px;
+            margin-right: 14px;
           }
           .menu-footer{
             position: absolute;
@@ -230,7 +240,7 @@ const Header = () => {
             width: 100%;
             margin: auto;
             border-top: 1px solid #fff;
-            font-size: 12px;
+            font-size: 10px;
             color: #fff;
             padding-top: 30px;
             padding-bottom: 26px;
