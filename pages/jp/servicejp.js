@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 
 import { listLanguage, listTechnologyJP } from '../../constants';
 
-const servicejp = () => {
+const Servicejp = () => {
   const router = useRouter();
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -399,6 +399,7 @@ const servicejp = () => {
             display: flex;
             justify-content: space-between;
             gap: 2%;
+            margin-top: 87px;
           }
           .img-se {
             position: relative;
@@ -434,6 +435,7 @@ const servicejp = () => {
             display: flex;
             gap: 42px;
             justify-content: flex-end;
+            padding-left: 20px;
           }
           .contract-left>p {
             margin: 0;
@@ -581,6 +583,7 @@ const servicejp = () => {
             }
             .contract {
               flex-direction: column-reverse;
+              padding-left: 0;
             }
             .content-img>h2 {
               font-size: 20px;
@@ -692,4 +695,4 @@ const servicejp = () => {
     </div>
   )
 }
-export default servicejp;
+export default Servicejp;

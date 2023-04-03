@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import { listInforCompanyJP, listMember } from '../../constants'
+import { listInforCompanyJP, listMember } from '../../constants';
 
-const companyjp = () => {
+const Companyjp = () => {
   return (
     <div className="company">
       <div className="info">
@@ -217,7 +217,7 @@ const companyjp = () => {
             padding: 30px 0;
             font-size: 20px;
             color: #CECECE;
-            font-weight: 500;
+            font-weight: bold;
           }
           .value-title {
             padding: 61px 0 22px 0;
@@ -419,4 +419,4 @@ const companyjp = () => {
   )
 }
 
-export default companyjp
+export default Companyjp;

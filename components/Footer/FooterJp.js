@@ -286,6 +286,9 @@ const Footer = () => {
             .footer {
               padding: 0;
             }
+            .license {
+              font-size: 10px;
+            }
           }
         `}
       </style>

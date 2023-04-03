@@ -1,7 +1,8 @@
 import React from 'react';
+
 import { listWork } from '../../constants';
 
-const workjp = () => {
+const Workjp = () => {
   return (
     <div className="work">
       <div className="caption">
@@ -175,4 +176,4 @@ const workjp = () => {
   )
 }
 
-export default workjp;
+export default Workjp;

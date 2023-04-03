@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import AchievementJp from '../../components/AchievementJp/AchievementJp';
+import { listClientJP, listFeature } from '../../constants';
 
 const Index = () => {
   return (
@@ -56,14 +57,14 @@ const Index = () => {
               <p className="about-title">Axalizeについて</p>
               <p className="about-subTitle">Our Feature.</p>
               <ul className="about-detail">
-                <li className="default-text">
+                <li>
                   AxaLize = Axia(価値) +
                   Actualize(実現する)は、日本人CEOを中心に設立されたベトナム拠点のICT企業です。
                 </li>
-                <li className="default-text">
+                <li>
                   人それぞれにとっての「価値」を実現するシステム開発を「高品質」「ハイスピード」且つ、日本国内では実現が難しい「低コスト」で提供します。
                 </li>
-                <li className="default-text">
+                <li>
                   お客様の専属の開発チームをベトナム弊社内に作り、ブリッジSEや日本人営業を通したやり取りを行いながら開発を行います。
                 </li>
               </ul>
@@ -115,75 +116,17 @@ const Index = () => {
             <p className="default-title">Axalizeについて</p>
             <p className="default-subTitle">Our Feature.</p>
             <div className="feature-wrapper">
-              <div className="feature-item">
+              {listFeature.map((feature,index)=>(
+              <div className="feature-item" key={index}>
                 <div className="feature-img">
-                  <img
-                    src="/jp/feature1.svg"
-                    alt="feature"
-                    title="feature"
-                    width="141"
-                    height="141"
-                  />
+                  <img src={feature.img} alt="feature" title="feature" width="141" height="141"/>
                 </div>
                 <div className="feature-content">
-                  <p className="feature-header">日本人CEOと少数精鋭の高品質</p>
-                  <p className="feature-text">
-                    日本人CEOや、日本語や日本のマナーの教育に加えて実際に日本で職務経験を積んだメンバーが在籍しており、意思疎通の失敗を防ぐことが可能です。
-                  </p>
+                  <p className="feature-header">{feature.title}</p>
+                  <p className="feature-text">{feature.content}</p>
                 </div>
               </div>
-              <div className="feature-item">
-                <div className="feature-img">
-                  <img
-                    src="/jp/feature2.svg"
-                    alt="feature"
-                    title="feature"
-                    width="141"
-                    height="141"
-                  />
-                </div>
-                <div className="feature-content">
-                  <p className="feature-header">短期間での開発</p>
-                  <p className="feature-text">
-                    若くて能力の高いIT技術者で溢れているベトナムでオフショア開発を行うで「高品質」に加え、日本では実現しずらい「低コスト」と「スピード」の全てを満たす開発が実現可能となっております。
-                  </p>
-                </div>
-              </div>
-              <div className="feature-item">
-                <div className="feature-img">
-                  <img
-                    src="/jp/feature3.svg"
-                    alt="feature"
-                    title="feature"
-                    width="141"
-                    height="141"
-                  />
-                </div>
-                <div className="feature-content">
-                  <p className="feature-header">柔軟な対応・契約形態</p>
-                  <p className="feature-text">
-                    ベトナムではアジャイルでの開発が主流となっており、仕様の見直し・変更等が発生した際でも、スピーディーかつ柔軟に対応できます。
-                    また契約面でも1ヶ月1名からといった細かい単位でのご契約が可能です。
-                  </p>
-                </div>
-              </div>
-              <div className="feature-item">
-                <div className="feature-img">
-                  <img
-                    src="/jp/feature4.svg"
-                    alt="feature"
-                    title="feature"
-                    width="141"
-                    height="141"
-                  />
-                </div>
-                <div className="feature-content">
-                  <p className="feature-header">日本提携会社との連携</p>
-                  <p className="feature-text">
-                    弊社では日本のシステム開発会社と業務提携を結んでおり、案件の管理等を委託することも可能ですので、初めてのオフショア開発に不安を感じるお客様でもご安心してご利用いただけます。
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           {/* Achievement */}
@@ -192,58 +135,33 @@ const Index = () => {
           <div className="review center-block">
             <p className="default-title review-title">お客様の声</p>
             <p className="default-subTitle">What Our Clients Say</p>
-            <p className="review-rex default-text">
+            <p className="review-rex">
               弊社をご利用いただいたお客様からいただいたお声を一部紹介させていただきます。
             </p>
             <div className="review-wrapper">
-              <div className="review-col">
-                <span>,,</span>
-                <div className="review-header">
-                  <div className="avatar">
-                    <img
-                      src="/jp/feature4.svg"
-                      alt="avatar"
-                      title="avatar"
-                      width="60"
-                      height="60"
-                    />
+              {listClientJP.map((client, index) => (
+                <div className="review-col" key={index}>
+                  <div className="img-client">
+                  <img src="/jp/img-client.svg" alt="avatar" title="avatar" width="43" height="30"/>
                   </div>
-                  <div className="client-info">
-                    <p className="client-name">
-                      優秀な開発チームとフレキシブ ルなリソース調整
-                    </p>
-                    <p className="client-company">
-                      株式会社シー・コネクト / 嶽本 泰伸 様
-                    </p>
+                  <div className="review-header">
+                    <div className="avatar">
+                      <img
+                        src="/jp/feature4.svg"
+                        alt="avatar"
+                        title="avatar"
+                        width="60"
+                        height="60"
+                      />
+                    </div>
+                    <div className="client-info">
+                      <p className="client-name">{client.title}</p>
+                      <p className="client-company">{client.content}</p>
+                    </div>
                   </div>
+                  <p className="review-content">{client.text}</p>
                 </div>
-                <p className="review-content">
-                  非常に不具合の少ない開発をしていただけているので、バグ修正なども従来のシステム開発より少なくなりました。また忙しい時期にアサインメンバーを増やして頂いたり、とても柔軟にリソース調整にご対応頂けるので大変助かっております。
-                </p>
-              </div>
-              <div className="review-col">
-                <span>,,</span>
-                <div className="review-header">
-                  <div className="avatar">
-                    <img
-                      src="/jp/feature4.svg"
-                      alt="avatar"
-                      title="avatar"
-                      width="60"
-                      height="60"
-                    />
-                  </div>
-                  <div className="client-info">
-                    <p className="client-name">クオリティが高い！</p>
-                    <p className="client-company">
-                      エンザントレイズ株式会社 / 鍋嶋 正孝 様
-                    </p>
-                  </div>
-                </div>
-                <p className="review-content">
-                  バグも少ないし仕様通りに開発してくれる正確さが素晴らしいです。ベトナム人エンジニアも日本語担当で安心感がありますが、さらに困った時は現地にいる日本人社長兼エンジニアがサポートしてくれるため、仕様のズレもないし品質が高いです。本当に助かっています！
-                </p>
-              </div>
+              ))}
             </div>
             <div className="small-navigate">
               <span className="active"></span>
@@ -335,10 +253,6 @@ const Index = () => {
               width: 100%;
               overflow: hidden;
               font-family: Meiryo;
-            }
-            .default-text {
-              font-size: 16px;
-              padding-top: 25px;
             }
             .home-header {
               display: flex;
@@ -550,6 +464,9 @@ const Index = () => {
             .review-title {
               margin-top: 89px;
             }
+            .review-rex {
+              padding-top: 24px;
+            }
             .review-text {
               margin-top: 24px;
               color: #000;
@@ -588,6 +505,11 @@ const Index = () => {
             .client-info {
               display: flex;
               flex-direction: column;
+            }
+            .img-client {
+              position: absolute;
+              top: 20px;
+              right: 20px;
             }
             .client-name {
               font-size: 24px;

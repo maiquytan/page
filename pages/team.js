@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 
-import { listBoss, listIntroduce, settingTeam } from '../constants'
+import { listBoss, listIntroduce, settingTeam } from '../constants';
 import useViewport from '../hook/useViewPort';
 
 const Team = () => {
@@ -13,10 +13,10 @@ const Team = () => {
   const listRef = useRef(null);
   const ref = useRef(null);
   const [start, setStart] = useState(0);
-  const [itemView, setItemView] = useState(settingTeam.itemPerView)
-  const listWidth = (settingTeam.itemListQuantity / itemView) * 100
-  const itemWidth = (1 / settingTeam.itemListQuantity) * 100
-  const marginX = start * itemWidth
+  const [itemView, setItemView] = useState(settingTeam.itemPerView);
+  const listWidth = (settingTeam.itemListQuantity / itemView) * 100;
+  const itemWidth = (1 / settingTeam.itemListQuantity) * 100;
+  const marginX = start * itemWidth;
   const [width] = useViewport();
 
   useEffect(() => {

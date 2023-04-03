@@ -1,6 +1,6 @@
 import React from 'react';
 
-const topics = () => {
+const Topics = () => {
   return (
     <div className="topics">
       <p>トップ &gt; お知らせ</p>
@@ -137,4 +137,4 @@ const topics = () => {
     </div>
   )
 }
-export default topics
+export default Topics;

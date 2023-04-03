@@ -220,3 +220,15 @@ export const listWork = [
   { img: '/illustration4.webp', category: 'モバイルアプリ', title: '学割検索アプリ', language: 'ReactNative, PHP', content: 'SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText' },
   { img: '/illustration5.webp', category: 'ホームページ', title: 'Sample', language: 'HTML, CSS, Javascript, WordPress', content: 'SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText,SampleText' },
 ]
+
+export const listClientJP = [
+  { title: '優秀な開発チームとフレキシブ ルなリソース調整', content: '株式会社シー・コネクト / 嶽本 泰伸 様', text: '非常に不具合の少ない開発をしていただけているので、バグ修正なども従来のシステム開発より少なくなりました。また忙しい時期にアサインメンバーを増やして頂いたり、とても柔軟にリソース調整にご対応頂けるので大変助かっております。' },
+  { title: 'クオリティが高い！', content: 'エンザントレイズ株式会社 / 鍋嶋 正孝 様', text: 'バグも少ないし仕様通りに開発してくれる正確さが素晴らしいです。ベトナム人エンジニアも日本語担当で安心感がありますが、さらに困った時は現地にいる日本人社長兼エンジニアがサポートしてくれるため、仕様のズレもないし品質が高いです。本当に助かっています！' },
+]
+
+export const listFeature = [
+  {img:'/jp/feature1.svg',title: '日本人CEOと少数精鋭の高品質',content:'日本人CEOや、日本語や日本のマナーの教育に加えて実際に日本で職務経験を積んだメンバーが在籍しており、意思疎通の失敗を防ぐことが可能です。'},
+  {img:'/jp/feature2.svg',title: '短期間での開発',content:'若くて能力の高いIT技術者で溢れているベトナムでオフショア開発を行うで「高品質」に加え、日本では実現しずらい「低コスト」と「スピード」の全てを満たす開発が実現可能となっております。'},
+  {img:'/jp/feature3.svg',title: '柔軟な対応・契約形態',content:'ベトナムではアジャイルでの開発が主流となっており、仕様の見直し・変更等が発生した際でも、スピーディーかつ柔軟に対応できます。また契約面でも1ヶ月1名からといった細かい単位でのご契約が可能です。'},
+  {img:'/jp/feature4.svg',title: '日本提携会社との連携',content:'弊社では日本のシステム開発会社と業務提携を結んでおり、案件の管理等を委託することも可能ですので、初めてのオフショア開発に不安を感じるお客様でもご安心してご利用いただけます。'},
+]

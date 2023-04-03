@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState } from 'react';
 
 import Archivement from '../components/Archivement/Archivement';
 import Pagination from '../components/Pagination/Pagination';

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const contactjp = () => {
+const Contactjp = () => {
   return (
     <div className="contact">
       <div className="caption">
@@ -293,4 +293,4 @@ const contactjp = () => {
   )
 }
 
-export default contactjp
+export default Contactjp;
