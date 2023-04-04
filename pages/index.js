@@ -354,7 +354,7 @@ const Index = () => {
               margin: auto;
               justify-content: space-between;
               gap: 50px;
-              margin-top: 120px;
+              padding-top: 120px;
             }
             .about-us {
               background: url("../IMG_0799.webp");
@@ -692,6 +692,12 @@ const Index = () => {
               }
               .img-expertise {
                 left: 26px;
+              }
+              .services-main {
+                justify-content: center;
+              }
+              .services-one {
+                width: 32%;
               }
             }
             @media screen and (max-width: 480px) {

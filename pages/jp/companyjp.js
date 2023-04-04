@@ -42,16 +42,16 @@ const Companyjp = () => {
       </div>
       <div className="about session">
         <div className="container">
-          <p className="about-title flex-center">VISION</p>
-          <p className="about-text">
-            <p>Axalizeの仲間全ての「幸せ」を第一とすると共に</p> 地球上に独自の価値と革新を生み出すリーディング企業となる。</p>
+          <h1 className="about-title flex-center">VISION</h1>
+          <div className="about-text">
+            <p>Axalizeの仲間全ての「幸せ」を第一とすると共に</p> 地球上に独自の価値と革新を生み出すリーディング企業となる。</div>
         </div>
         <div className="container">
-          <p className="about-title flex-center">MISSION</p>
-          <p className="about-text"><p>最先端のテクノロジーを活用し、</p> 一人一人にとって最適な「Axia(価値)」を最善の手段にて実現する。</p>
+          <h1 className="about-title flex-center">MISSION</h1>
+          <div className="about-text"><p>最先端のテクノロジーを活用し、</p> 一人一人にとって最適な「Axia(価値)」を最善の手段にて実現する。</div>
         </div>
         <div className="container">
-          <p className="about-title flex-center value-title">VALUE</p>
+          <h1 className="about-title flex-center value-title">VALUE</h1>
           <ul className="about-text value-list">
             <li className="flex-center value-item">ミッションを徹底的に追及すること。</li>
             <li className="flex-center value-item">変化に対する行動力を持つこと。</li>
@@ -111,7 +111,7 @@ const Companyjp = () => {
             <p className="default-subtitle">Office Location</p>
           </div>
           <div className="map">
-            <iframe id="iframe" title="Map" width="1110" height="513" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6412536479356!2d105.79909331440697!3d21.00701289389737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca166c91fa7%3A0x216144e51f80907e!2zVG-DoCBuaMOgIDI1VDIsIE5ndXnhu4VuIFRo4buLIFRo4bqtcCwgVHJ1bmcgSG-DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWkgMTAwMDAwLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1581490205830!5m2!1sen!2s" ></iframe>
+            <iframe id="iframe" title="Map" width="1110" height="513" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.312801441602!2d105.8000912912014!3d21.007639841538793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad96649ce017%3A0xef6e87a5d984287c!2zQ2h1bmcgQ8awIDI5VDEgSG_DoG5nIMSQ4bqhbyBUaMO6eQ!5e0!3m2!1sja!2s!4v1680589543434!5m2!1sja!2s"></iframe>
           </div>
         </div>
       </div>
@@ -172,11 +172,12 @@ const Companyjp = () => {
           }
           .info-container {
             width: 55%;
+            aspect-ratio: 1.55;
+            height: auto;
             max-width: 1040px;
-            min-width: 900px;
+            min-width: 700px;
             position: absolute;
             background-color: #fff;
-            height: 672px;
             left: 0;
             bottom:-60px;
             display: flex;
@@ -187,7 +188,7 @@ const Companyjp = () => {
           .info-inner {
             width: 100%;
             display: flex;
-            padding-right: 96px;
+            padding-right: 9.3%;
             flex-direction: column;
             font-size: 15px;
             margin-left: 39%;

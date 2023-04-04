@@ -90,7 +90,7 @@ const Footer = () => {
           <div className="content-group address-group">
             <label>Address</label>
             <p className="footer-text">
-              2F, 25T2 BUILDING, NGUYEN THI THAP ST., TRUNG HOA W., CAU GIAY
+              2F, 29T1 BUILDING, NGUYEN THI THAP ST., TRUNG HOA W., CAU GIAY
               DIST., HANOI
             </p>
           </div>
@@ -194,6 +194,7 @@ const Footer = () => {
           }
           .footer-logo {
             width: 226px;
+            object-fit: cover;
           }
           .social-media-wrapper {
             display: flex;

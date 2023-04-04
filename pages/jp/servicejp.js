@@ -253,17 +253,17 @@ const Servicejp = () => {
             position: relative;
             z-index: 2;
             width: 100%;
-            height: 1350px;
+            height: 1450px;
             overflow: hidden;
           }
           .bg-development2 {
             position: absolute;
-            width: calc( 100% - 154px);
-            height: calc( 100% - 54px);
+            width: 100%;
+            height: calc( 100% - 154px);
             z-index: -1;
             margin: 77px;
             background-image: url("/jp/bg_develop.webp");
-            background-repeat: round;
+            background-size:50%;
           }
           .development {
             display: flex;

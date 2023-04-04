@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { listMenuJP } from '../../constants';
+
 const Header = () => {
   const [isDropdownMenuAction, setIsDropdownMenuAction] = useState(false);
   const [isDropdownCompanyAction, setIsDropdownCompanyAction] = useState(false);
@@ -36,30 +38,14 @@ const Header = () => {
             </a>
           </Link>
           <div className="menu-content">
-            <Link href="/jp">
-              <a className="default">
-                <p>Top</p>
-                <span>会社情報</span>
-              </a>
-            </Link>
-            <Link href="/jp/companyjp">
-              <a>
-                <p>Company</p>
-                <span>会社情報</span>
-              </a>
-            </Link>
-            <Link href="/jp/servicejp">
-              <a>
-                <p>Service</p>
-                <span>サービス概要</span>
-              </a>
-            </Link>
-            <Link href="/jp/workjp">
-              <a>
-                <p>Work</p>
-                <span>開発実績</span>
-              </a>
-            </Link>
+            {listMenuJP.map((jp, index) => (
+              <Link href={jp.href} key={index}>
+                <a className={router.pathname === jp.href ? 'selected' : ''} >
+                  <p>{jp.title}</p>
+                  <span>{jp.content}</span>
+                </a>
+              </Link>
+            ))}
             <Link href="/jp/contactjp">
               <a className="active">
                 <p>Contact</p>
@@ -109,9 +95,9 @@ const Header = () => {
                   />
                 </div>
               </div>
-            <div className="license">
-              <p>COPYRIGHT © AXALIZE INCORPORATED ALL RIGHTS RESERVED</p>
-            </div>
+              <div className="license">
+                <p>COPYRIGHT © AXALIZE INCORPORATED ALL RIGHTS RESERVED</p>
+              </div>
             </div>
           </div>
         }
@@ -162,10 +148,10 @@ const Header = () => {
           a p {
             padding: 4px;
           }
-          a.default p {
+          a.selected p {
             border-bottom: 1px solid #0fa5ef;
           }
-          a.default {
+          a.selected {
             color: #0fa5ef;
           }
           .logo {
