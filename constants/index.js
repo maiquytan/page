@@ -1,3 +1,18 @@
+export const listMenuJP = [
+  { href: '/jp', title: 'Top', content: 'トップ' },
+  { href: '/jp/companyjp', title: 'Company', content: '会社情報' },
+  { href: '/jp/servicejp', title: 'Service', content: 'サービス' },
+  { href: '/jp/workjp', title: 'Work', content: '開発実績' },
+]
+
+export const listMenuVN = [
+  { href: '/service', title: 'Service' },
+  { href: '/about', title: 'About' },
+  { href: '/portfolio', title: 'Portfolio' },
+  { href: '/client', title: 'Client' },
+  { href: '/team', title: 'Team' },
+]
+
 export const pageSize = 4;
 
 export const dataApplication = [
@@ -84,20 +99,41 @@ export const listBudget = [
 ]
 
 export const listTechniques = [
-  { id: 1, title: '/androidStudio.svg', width: '86', height: '55' },
-  { id: 2, title: '/angular.svg', width: '120', height: '55' },
+  { id: 1, title: '/androidStudio.svg', width: '86', height: '64' },
+  { id: 2, title: '/angular.svg', width: '120', height: '72' },
   { id: 3, title: '/reactjs.svg', width: '124', height: '50' },
   { id: 4, title: '/vuejs.svg', width: '117', height: '55' },
-  { id: 5, title: '/reactive-native.svg', width: '163', height: '55' },
+  { id: 5, title: '/react_native.webp', width: '222', height: '100' },
   { id: 6, title: '/html-css-js.webp', width: '163', height: '55' },
   { id: 7, title: '/mongodb.svg', width: '124', height: '37' },
   { id: 8, title: '/php.webp', width: '89', height: '44' },
-  { id: 9, title: '/django.svg', width: '98', height: '55' },
+  { id: 9, title: '/django.webp', width: '187', height: '100' },
   { id: 10, title: '/nodejs.svg', width: '81', height: '49' },
   { id: 11, title: '/mysql.svg', width: '99', height: '51' },
   { id: 12, title: '/postgres.svg', width: '123', height: '55' },
   { id: 13, title: '/laravel.svg', width: '147', height: '54' },
-  { id: 14, title: '/magento.svg', width: '122', height: '44' },
+  { id: 14, title: '/asana.webp', width: '191', height: '127' },
+  { id: 15, title: '/magento.webp', width: '187', height: '127' },
+  { id: 16, title: '/golang.webp', width: '183', height: '80' },
+  { id: 17, title: '/axure.webp', width: '187', height: '98' },
+  { id: 18, title: '/cloud.webp', width: '200', height: '127' },
+  { id: 19, title: '/electron.webp', width: '244', height: '127' },
+  { id: 20, title: '/flutter.webp', width: '244', height: '127' },
+  { id: 21, title: '/jenkins.webp', width: '185', height: '92' },
+  { id: 22, title: '/jira.webp', width: '244', height: '127' },
+  { id: 23, title: '/kibana.webp', width: '124', height: '78' },
+  { id: 24, title: '/objective.webp', width: '244', height: '127' },
+  { id: 25, title: '/office.webp', width: '244', height: '127' },
+  { id: 26, title: '/python.webp', width: '244', height: '127' },
+  { id: 27, title: '/slack.webp', width: '244', height: '127' },
+  { id: 28, title: '/skype.webp', width: '244', height: '127' },
+  { id: 29, title: '/symfony.webp', width: '244', height: '127' },
+  { id: 30, title: '/tenso_flow.webp', width: '244', height: '127' },
+  { id: 31, title: '/travis_cl.webp', width: '244', height: '127' },
+  { id: 32, title: '/zend.webp', width: '244', height: '127' },
+  { id: 33, title: '/wordpress.webp', width: '244', height: '127' },
+  { id: 34, title: '/zeplin.webp', width: '244', height: '127' },
+  { id: 35, title: '/zoom.webp', width: '244', height: '127' },
 ]
 
 export const settingTeam = {
@@ -109,7 +145,7 @@ export const settingTeam = {
 export const settingTechniques = {
   itemPerView: 6,
   itemPerViewTablet: 5,
-  itemListQuantity: listBoss.length,
+  itemListQuantity: listTechniques.length,
   itemRow: 2,
 }
 
@@ -227,8 +263,8 @@ export const listClientJP = [
 ]
 
 export const listFeature = [
-  {img:'/jp/feature1.svg',title: '日本人CEOと少数精鋭の高品質',content:'日本人CEOや、日本語や日本のマナーの教育に加えて実際に日本で職務経験を積んだメンバーが在籍しており、意思疎通の失敗を防ぐことが可能です。'},
-  {img:'/jp/feature2.svg',title: '短期間での開発',content:'若くて能力の高いIT技術者で溢れているベトナムでオフショア開発を行うで「高品質」に加え、日本では実現しずらい「低コスト」と「スピード」の全てを満たす開発が実現可能となっております。'},
-  {img:'/jp/feature3.svg',title: '柔軟な対応・契約形態',content:'ベトナムではアジャイルでの開発が主流となっており、仕様の見直し・変更等が発生した際でも、スピーディーかつ柔軟に対応できます。また契約面でも1ヶ月1名からといった細かい単位でのご契約が可能です。'},
-  {img:'/jp/feature4.svg',title: '日本提携会社との連携',content:'弊社では日本のシステム開発会社と業務提携を結んでおり、案件の管理等を委託することも可能ですので、初めてのオフショア開発に不安を感じるお客様でもご安心してご利用いただけます。'},
+  { img: '/jp/feature1.svg', title: '日本人CEOと少数精鋭の高品質', content: '日本人CEOや、日本語や日本のマナーの教育に加えて実際に日本で職務経験を積んだメンバーが在籍しており、意思疎通の失敗を防ぐことが可能です。' },
+  { img: '/jp/feature2.svg', title: '短期間での開発', content: '若くて能力の高いIT技術者で溢れているベトナムでオフショア開発を行うで「高品質」に加え、日本では実現しずらい「低コスト」と「スピード」の全てを満たす開発が実現可能となっております。' },
+  { img: '/jp/feature3.svg', title: '柔軟な対応・契約形態', content: 'ベトナムではアジャイルでの開発が主流となっており、仕様の見直し・変更等が発生した際でも、スピーディーかつ柔軟に対応できます。また契約面でも1ヶ月1名からといった細かい単位でのご契約が可能です。' },
+  { img: '/jp/feature4.svg', title: '日本提携会社との連携', content: '弊社では日本のシステム開発会社と業務提携を結んでおり、案件の管理等を委託することも可能ですので、初めてのオフショア開発に不安を感じるお客様でもご安心してご利用いただけます。' },
 ]

@@ -32,7 +32,7 @@ const Techniques = () => {
       setStartX(startX - 1);
     }
   }
-  const itemWidthString = `calc(${itemWidth}% - 11px)`;
+  const itemWidthString = `calc(${itemWidth}% - 11.5px)`;
 
   return (
     <div className="techniques">
@@ -128,11 +128,15 @@ const Techniques = () => {
             justify-content: center;
             align-items: center;
           }
+          .language>img,.language-mobile>img {
+            object-fit: contain;
+          }
           .techniques-main-mobile {
             display: none;
           }
           .language-mobile {
             width: 45%;
+            height: 55px;
             background: #FFF;
             border: 1px solid #CCCCCC;
             border-radius: 3px;

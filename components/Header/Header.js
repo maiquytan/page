@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { listMenuVN } from '../../constants';
+
 const Header = () => {
   const [isDropdownMenuAction, setIsDropdownMenuAction] = useState(false);
   const [isDropdownCompanyAction, setIsDropdownCompanyAction] = useState(false);
+
   const router = useRouter();
 
   const handleDropDownMenuAction = () => {
@@ -28,11 +31,11 @@ const Header = () => {
           </a></Link>
           <div className="menu-content">
             <Link href="/e"><a>Company <img src="/arrow_menu.svg" className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
-            <Link href="/service"><a>Service</a></Link>
-            <Link href="/about"><a>About</a></Link>
-            <Link href="/portfolio"><a>Portfolio</a></Link>
-            <Link href="/client"><a>Client</a></Link>
-            <Link href="/team"><a>Team</a></Link>
+            {listMenuVN.map((vn, index) => (
+              <Link href={vn.href} key={index}>
+                <a className={router.pathname === vn.href ? 'selected' : ''} >{vn.title}</a>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -144,6 +147,10 @@ const Header = () => {
           hr {
             margin: 0 10px;
             color: #F4F4F4;
+          }
+          .selected {
+            color: #FC721E;
+            font-weight: 600;
           }
 
           @media screen and (max-width: 1024px) {

@@ -81,9 +81,9 @@ const Index = () => {
                     />
                   </div>
                   <p className="ability-title">ラボ型開発</p>
-                  <p className="ability-content">
+                  <div className="ability-content">
                     成果物ではなく、エンジニアの人数と期間をベースにした開発を提供します。要件を固めずに契約が行えるため、柔軟に対応可能な形態で、明確なゴールのない業務（継続的な保守やメンテナンス等）向けの契約形態となります。
-                  </p>
+                  </div>
                   <Link href="/">
                     <a className="readMore-btn active">Read more</a>
                   </Link>
@@ -100,10 +100,10 @@ const Index = () => {
                     />
                   </div>
                   <p className="ability-title">請負・受託型開発</p>
-                  <p className="ability-content">
+                  <div className="ability-content">
                     <p>定義した要件に基づき、期日までに成果物の完成を請け負います。</p>
                     請負開発は契約の通りに開発が進むため、要件が決まっており途中での要件追加や仕様変更が発生しない案件向きの形態です。
-                  </p>
+                  </div>
                   <Link href="/">
                     <a className="readMore-btn">Read more</a>
                   </Link>
@@ -116,16 +116,16 @@ const Index = () => {
             <p className="default-title">Axalizeについて</p>
             <p className="default-subTitle">Our Feature.</p>
             <div className="feature-wrapper">
-              {listFeature.map((feature,index)=>(
-              <div className="feature-item" key={index}>
-                <div className="feature-img">
-                  <img src={feature.img} alt="feature" title="feature" width="141" height="141"/>
+              {listFeature.map((feature, index) => (
+                <div className="feature-item" key={index}>
+                  <div className="feature-img">
+                    <img src={feature.img} alt="feature" title="feature" width="141" height="141" />
+                  </div>
+                  <div className="feature-content">
+                    <p className="feature-header">{feature.title}</p>
+                    <p className="feature-text">{feature.content}</p>
+                  </div>
                 </div>
-                <div className="feature-content">
-                  <p className="feature-header">{feature.title}</p>
-                  <p className="feature-text">{feature.content}</p>
-                </div>
-              </div>
               ))}
             </div>
           </div>
@@ -142,7 +142,7 @@ const Index = () => {
               {listClientJP.map((client, index) => (
                 <div className="review-col" key={index}>
                   <div className="img-client">
-                  <img src="/jp/img-client.svg" alt="avatar" title="avatar" width="43" height="30"/>
+                    <img src="/jp/img-client.svg" alt="avatar" title="avatar" width="43" height="30" />
                   </div>
                   <div className="review-header">
                     <div className="avatar">
@@ -263,6 +263,7 @@ const Index = () => {
               margin: auto;
               background-image: url("jp//bgJp.webp");
               background-position: top;
+              background-repeat: no-repeat;
               background-size: contain;
             }
             .header-title {
@@ -276,6 +277,7 @@ const Index = () => {
               font-family: Meiryo;
               margin-top: 30px;
               font-size: 20px;
+              text-align: center;
             }
             .primary-btn {
               background-color: #0fa5ef;
@@ -301,6 +303,7 @@ const Index = () => {
               justify-content: center;
               align-items: center;
               border: none;
+              border-radius: 5px;
               font-size: 15px;
             }
             .banner-wrapper {
@@ -320,7 +323,7 @@ const Index = () => {
               color: #cccccc;
             }
             .default-title {
-              margin-top: 180px;
+              margin-top: 100px;
               font-size: 30px;
               font-weight: bold;
               width: fit-content;
@@ -619,6 +622,9 @@ const Index = () => {
               .about-title {
                 font-size: 25px;
               }
+              .about::before {
+                border-top: 60px solid #fff;
+              }
               .about-subTitle {
                 font-size: 16px;
               }
@@ -676,6 +682,19 @@ const Index = () => {
               .news {
                 padding: 0 20px;
               }
+              .about::before {
+                border-top: 50px solid #fff;
+              }
+              .about-title {
+                margin-top: 100px;
+              }
+              .ability {
+                padding: 45px 30px;
+              }
+              .header-title {
+                font-size: 32px;
+                margin-top: 100px;
+              }
               .feature-header {
                 text-align: left;
                 font-size: 20px;
@@ -694,6 +713,18 @@ const Index = () => {
               .review,
               .news {
                 padding: 0 15px;
+              }
+              .about::before {
+                border-top: 15px solid #fff;
+              }
+              .about-title {
+                margin-top: 65px;
+              }
+              .ability {
+                padding: 45px 16px;
+              }
+              .banner-wrapper {
+                margin-bottom: 74px;
               }
             }
           `}

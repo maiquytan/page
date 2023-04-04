@@ -53,7 +53,7 @@ const Archivement = () => {
         {`
           .archivement,.archivement-mobile {
             height: 278px;
-            background-image: url("../service_bg.svg");
+            background-image: url("../archivement.webp");
             background-color: #A1ACBB;
             background-size: cover;
             background-repeat: no-repeat;
@@ -81,6 +81,7 @@ const Archivement = () => {
           }
           .archivement-column>label {
             max-width: 205px;
+            color: #FFFFFF;
           }
           .archivement-content {
             align-items: flex-start;
@@ -90,7 +91,7 @@ const Archivement = () => {
             padding-left: 5%;
           }
           .item {
-            color: #1E1E1E;
+            color: #FFFFFF;
             font-size: 32px;
             font-weight: 600;
           }

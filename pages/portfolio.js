@@ -235,6 +235,7 @@ const Portfolio = () => {
           .application_selected {
             color: #323232;
             font-weight: 600;
+            padding: 12px;
           }
           .applications-right {
             width: 76%;
@@ -403,6 +404,12 @@ const Portfolio = () => {
             .illustration>p {
               font-size: 15px;
             }
+            .img-header-mobile {
+              width: 200%;
+              height: auto;
+              aspect-ratio: 2.1;
+              object-fit: cover;
+            }
           }
           @media screen and (max-width: 480px) {
             .session {
@@ -413,12 +420,6 @@ const Portfolio = () => {
             }
             .header-content {
               margin-top: 0;
-            }
-            .img-header-mobile {
-              width: 200%;
-              height: auto;
-              aspect-ratio: 2.1;
-              object-fit: cover;
             }
             .content-left {
               width: auto;

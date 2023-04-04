@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="footer-map">
           <div className="footer-title2">Map</div>
           <div className="map">
-            <iframe id="iframe" title="Map" width="392" height="215" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6412536479356!2d105.79909331440697!3d21.00701289389737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca166c91fa7%3A0x216144e51f80907e!2zVG-DoCBuaMOgIDI1VDIsIE5ndXnhu4VuIFRo4buLIFRo4bqtcCwgVHJ1bmcgSG-DoCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWkgMTAwMDAwLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1581490205830!5m2!1sen!2s" ></iframe>
+            <iframe id="iframe" title="Map" width="392" height="215" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.61841445547!2d105.79924371488266!3d21.007927793865214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad96649ce017%3A0xef6e87a5d984287c!2zQ2h1bmcgQ8awIDI5VDEgSG_DoG5nIMSQ4bqhbyBUaMO6eQ!5e0!3m2!1sen!2s!4v1680578412970!5m2!1sen!2s" ></iframe>
           </div>
 
         </div>
