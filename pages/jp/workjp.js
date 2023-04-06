@@ -33,7 +33,7 @@ const Workjp = () => {
           .work {
             width: 100%;
             background: #FFFFFF;
-            font-family: Meiryo;
+            font-family: Meiryo, sans-serif;
           }
           .caption {
             display: flex;

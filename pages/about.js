@@ -146,10 +146,10 @@ const About = () => {
           .header-right {
             width: 50%;
             height: auto;
-            aspect-ratio: 1;
-    	      object-fit: cover;
           }
           .header-right>img {
+            aspect-ratio: 1;
+            object-fit: cover;
             width: 100%;
             height: 100%;
             vertical-align: top;
@@ -325,10 +325,8 @@ const About = () => {
             .header-right {
               width: 60%;
               height: auto;
-              aspect-ratio: 1;
-              object-fit: cover;
               margin: auto;
-              margin-top: 5%;
+              margin-top: 10%;
               margin-bottom: 10%;
             }
             .header-right>img {
@@ -355,6 +353,19 @@ const About = () => {
             }
           }
           @media screen and (max-width: 768px) {
+            .header-left {
+              font-size: 16px;
+              line-height: 25px;
+            }
+            .img-header {
+              width: 200%;
+              height: auto;
+              aspect-ratio: 2.1;
+              object-fit: cover;
+            }
+            .header-right {
+              width: 75%;
+            }
             .about-bg {
               padding: 0 20px;
               background-position-x: right;
@@ -425,12 +436,6 @@ const About = () => {
           @media screen and (max-width: 480px) {
             .session {
               padding: 0 12px;
-            }
-            .img-header {
-              width: 200%;
-              height: auto;
-              aspect-ratio: 2.1;
-              object-fit: cover;
             }
             .header-title {
               font-size: 30px;

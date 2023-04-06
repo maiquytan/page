@@ -245,12 +245,13 @@ const Team = () => {
           .header-right {
             width: 50%;
             height: auto;
-            aspect-ratio: 1;
-    	      object-fit: cover;
           }
           .header-right>img {
+            aspect-ratio: 1;
+            object-fit: cover;
             width: 100%;
             height: 100%;
+            vertical-align: top;
           }
 
           //Introduce--------------------
@@ -522,12 +523,8 @@ const Team = () => {
             }
             .header-right {
               margin: auto;
-              margin-top: 5%;
+              margin-top: 10%;
               margin-bottom: 10%;
-            }
-            .header-right>img {
-              width: 100%;
-              height: 100%;
             }
             //-------------------
             .introduce {
@@ -555,6 +552,15 @@ const Team = () => {
             .about-header {
               padding: 0;
             }
+            .header-right {
+              width: 75%;
+            }
+            .img-header {
+              width: 200%;
+              height: auto;
+              aspect-ratio: 2.1;
+              object-fit: cover;
+            }
           }
           @media screen and (max-width: 480px) {
             .container {
@@ -566,12 +572,6 @@ const Team = () => {
             }
             .about-header {
               padding: 0;
-            }
-            .img-header {
-              width: 200%;
-              height: auto;
-              aspect-ratio: 2.1;
-              object-fit: cover;
             }
             .header-left {
               font-size: 14px;

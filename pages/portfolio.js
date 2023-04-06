@@ -170,12 +170,12 @@ const Portfolio = () => {
           .content-right {
             width: 60%;
             height: auto;
-            aspect-ratio: 2.4;
-            object-fit: cover;
           }
           .content-right>img {
+            aspect-ratio: 2.4;
+            object-fit: contain;
             width: 100%;
-            height: 100%;
+            height: auto;
           }
           .item {
             color: #1E1E1E;
@@ -341,7 +341,7 @@ const Portfolio = () => {
               width: 86%;
               margin: auto;
               margin-top: 5%;
-              margin-bottom: 15%;
+              margin-bottom: 10%;
             }
             .applications-header {
               flex-direction: column;
@@ -410,6 +410,10 @@ const Portfolio = () => {
               aspect-ratio: 2.1;
               object-fit: cover;
             }
+            .content-left {
+              font-size: 16px;
+              line-height: 25px;
+            }
           }
           @media screen and (max-width: 480px) {
             .session {
@@ -420,6 +424,9 @@ const Portfolio = () => {
             }
             .header-content {
               margin-top: 0;
+            }
+            .content-right {
+              width: 94%;
             }
             .content-left {
               width: auto;

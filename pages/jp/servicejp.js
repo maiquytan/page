@@ -217,7 +217,8 @@ const Servicejp = () => {
           .service {
             width: 100%;
             background: #FFFFFF;
-            font-family: Meiryo;
+            font-family: Meiryo , sans-serif;
+            line-height: 24px;
           }
           .caption {
             display: flex;
@@ -600,7 +601,7 @@ const Servicejp = () => {
               margin-bottom: 60px;
             }
             .one-illustration>div {
-              width: 100%;
+              width: 80%;
             }
             .illustration-contract-mobile {
               display: flex;
@@ -664,7 +665,7 @@ const Servicejp = () => {
               min-width: 282px;
             }
             .bg-development2 {
-              background-repeat: repeat-y;
+              background-size: auto;
             }
             .language {
               flex-wrap: nowrap;
@@ -673,6 +674,9 @@ const Servicejp = () => {
               overflow: auto;
             }
             .one-language {
+              width: 100%;
+            }
+            .one-illustration>div {
               width: 100%;
             }
           }
