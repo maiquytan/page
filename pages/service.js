@@ -192,8 +192,7 @@ const Service = () => {
           }
           .header-left {
             width: 34%;
-            margin-top: 30px;
-            margin-right: 65px;
+            margin-top: 10px;
             margin-bottom: 60px;
             font-size: 18px;
             text-align: justify;
@@ -203,12 +202,13 @@ const Service = () => {
           .header-right {
             width: 58%;
             height: auto;
-            aspect-ratio: 2.3;
-    	      object-fit: cover;
           }
           .header-right>img {
+            aspect-ratio: 2.4;
+            object-fit: contain;
             width: 100%;
-            height: 100%;
+            height: auto;
+            vertical-align: top;
           }
 
           //Mobile-web----------------------------
@@ -349,6 +349,7 @@ const Service = () => {
               height: 100%;
             }
             .header-title {
+              margin-left: 0;
               margin-top: 10%;
               background: none;
               width: 100%;
@@ -367,7 +368,7 @@ const Service = () => {
               line-height: 30px;
             }
             .header-right {
-              width: 91%;
+              width: 86%;
               margin: auto;
               margin-top: 5%;
               margin-bottom: 10%;
@@ -410,8 +411,10 @@ const Service = () => {
             }
           }
           @media screen and (max-width: 768px) {
-
-            //------------------------------
+            .header-left {
+              font-size: 16px;
+              line-height: 25px;
+            }
             .bg-mobile-web {
               width: 100%;
               background-position-x: 31%;
@@ -444,16 +447,19 @@ const Service = () => {
               margin: 0;
               width: auto;
             }
-          }
-          @media screen and (max-width: 480px) {
             .img-header-mobile {
               width: 200%;
               height: auto;
               aspect-ratio: 2.1;
               object-fit: cover;
             }
+          }
+          @media screen and (max-width: 480px) {
             .header-title {
               font-size: 30px;
+            }
+            .header-right {
+              width: 94%;
             }
             .header-left {
               padding: 0 4px;

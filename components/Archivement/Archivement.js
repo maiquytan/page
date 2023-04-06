@@ -165,6 +165,9 @@ const Archivement = () => {
             .item {
               font-size: 26px;
             }
+            .archivement-column {
+              font-size: 16px;
+            }
           }
         `}
       </style>

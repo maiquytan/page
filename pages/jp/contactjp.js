@@ -73,7 +73,7 @@ const Contactjp = () => {
           .contact {
             width: 100%;
             background: #FFFFFF;
-            font-family: Meiryo;
+            font-family: Meiryo, sans-serif;
             padding-bottom: 30px;
           }
           .caption {

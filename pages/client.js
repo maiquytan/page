@@ -187,12 +187,13 @@ const Client = () => {
           .header-right {
             width: 50%;
             height: auto;
-            aspect-ratio: 1;
-    	      object-fit: cover;
           }
           .header-right>img {
+            aspect-ratio: 1;
+            object-fit: cover;
             width: 100%;
             height: 100%;
+            vertical-align: top;
           }
 
           //---------------------------------
@@ -487,7 +488,7 @@ const Client = () => {
             .header-right {
               width: 60%;
               margin: auto;
-              margin-top: 7%;
+              margin-top: 10%;
               margin-bottom: 10%;
             }
             .bg-mobile-web {
@@ -619,16 +620,23 @@ const Client = () => {
               font-size: 15px;
               padding-bottom: 40px;
             }
-          }
-          @media screen and (max-width: 480px) {
-            .session {
-              padding: 0 12px;
-            }
             .img-header {
               width: 200%;
               height: auto;
               aspect-ratio: 2.1;
               object-fit: cover;
+            }
+            .header-left {
+              font-size: 16px;
+              line-height: 25px;
+            }
+            .header-right {
+              width: 75%;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .session {
+              padding: 0 12px;
             }
             .header-title {
               font-size: 30px;

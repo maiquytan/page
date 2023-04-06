@@ -17,7 +17,7 @@ const AchievementJp = () => {
         </div>
         <div className="achievement-right">
           <div className="achievement-text">
-            <p>様々なエンジニアを擁するAxalizeではWebアプリ・モバイルアプリをメインに、Webサイトや多くの開発案件を手がけています。</p>
+            <p>様々なエンジニアを擁するAxalizeではWebアプリ・モバイルアプリをメインに、Web サイトや多くの開発案件を手がけています。</p>
             <p>最近ではRPA(Robotic Process Automation)の開発にも力を入れております。</p>
           </div>
             <button className="primary-btn">Read More</button>

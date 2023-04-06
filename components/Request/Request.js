@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { listBudget, uploadFileStatus } from '../../constants';
+import { listBudget, listService, uploadFileStatus } from '../../constants';
 
 const Request = () => {
   const [isCheckService, setIsCheckService] = useState(true);
@@ -54,31 +54,13 @@ const Request = () => {
             <div className="service-budget">
               <div className="service-budget-container">
                 <div>Service: </div>
-                <div className="service">
-                  <input id="check1" type="checkbox" className="checkbox" />
-                  <label htmlFor="check1" className="span"></label>
-                  <label htmlFor="check1" className="service-content">Mobile App</label>
-                </div>
-                <div className="service">
-                  <input id="check1" type="checkbox" className="checkbox" />
-                  <label htmlFor="check1" className="span"></label>
-                  <label htmlFor="check1" className="service-content">Web App</label>
-                </div>
-                <div className="service">
-                  <input id="check2" type="checkbox" className="checkbox" />
-                  <label htmlFor="check2" className="span"></label>
-                  <label htmlFor="check2" className="service-content">UI/UX Design</label>
-                </div>
-                <div className="service">
-                  <input id="check3" type="checkbox" className="checkbox" />
-                  <label htmlFor="check3" className="span"></label>
-                  <label htmlFor="check3" className="service-content">VAPT (Vulnerability Assessment and Penetration)</label>
-                </div>
-                <div className="service">
-                  <input id="check4" type="checkbox" className="checkbox" />
-                  <label htmlFor="check4" className="span"></label>
-                  <label htmlFor="check4" className="service-content">VAPT (Vulnerability Assessment and Penetration)</label>
-                </div>
+                {listService.map((ser, index) => (
+                  <div className="service" key={index}>
+                    <input id={ser.id} type="checkbox" className="checkbox" />
+                    <label htmlFor={ser.id} className="span"></label>
+                    <label htmlFor={ser.id} className="service-content">{ser.title}</label>
+                  </div>
+                ))}
                 <div className="service">
                   <input id="check5" type="checkbox" className="checkbox" onClick={handleCheckService} />
                   <label htmlFor="check5" className="span"></label>

@@ -54,7 +54,7 @@ const Topics = () => {
           .topics {
             width: 100%;
             background: #FFFFFF;
-            font-family: Meiryo;
+            font-family: Meiryo, sans-serif;
           }
           .topics>p {
             width: 100%;

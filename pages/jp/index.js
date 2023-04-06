@@ -252,7 +252,7 @@ const Index = () => {
             .home {
               width: 100%;
               overflow: hidden;
-              font-family: Meiryo;
+              font-family: Meiryo, sans-serif;
             }
             .home-header {
               display: flex;
@@ -705,6 +705,11 @@ const Index = () => {
               .feature-item {
                 padding-left: 30px;
               }
+              .client-name {
+                font-size: 20px;
+                height: auto;
+                padding-bottom: 14px;
+              }
             }
             @media screen and (max-width: 480px) {
               .home-header,
@@ -725,6 +730,9 @@ const Index = () => {
               }
               .banner-wrapper {
                 margin-bottom: 74px;
+              }
+              .feature-img img {
+                width: 117px;
               }
             }
           `}

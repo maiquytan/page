@@ -114,6 +114,7 @@ const Footer = () => {
             flex-direction: column;
             align-items: center;
             height: fit-content;
+            font-family: Meiryo;
           }
           .footer-introduce {
             width: 100%;
@@ -151,6 +152,7 @@ const Footer = () => {
           .introduce-title {
             color: #fff;
             font-size: 30px;
+            font-weight: bold;
           }
           .footer-text {
             color: #fff;

@@ -121,7 +121,7 @@ const Companyjp = () => {
           .company {
             width: 100%;
             background: #FFFFFF;
-            font-family: Meiryo;
+            font-family: Meiryo, sans-serif;
           }
           .flex-column {
             display: flex;
@@ -261,7 +261,7 @@ const Companyjp = () => {
             font-size: 70px;
             padding-left: 28px;
             line-height: 84px;
-            font: normal normal normal 70px/84px TA_kouran;
+            font-family: ta-kouran, sans-serif;
           }
           .CEO-footer>label {
             font-size: 20px;

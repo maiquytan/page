@@ -98,6 +98,14 @@ export const listBudget = [
   { id: 7, title: 'Sky’s the limit' },
 ]
 
+export const listService = [
+  { id: 1, title: 'Mobile App' },
+  { id: 2, title: 'Web App' },
+  { id: 3, title: 'UI/UX Design' },
+  { id: 4, title: 'VAPT (Vulnerability Assessment and Penetration)' },
+  { id: 5, title: 'VAPT (Vulnerability Assessment and Penetration)' },
+]
+
 export const listTechniques = [
   { id: 1, title: '/androidStudio.svg', width: '86', height: '64' },
   { id: 2, title: '/angular.svg', width: '120', height: '72' },
