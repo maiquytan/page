@@ -25,8 +25,8 @@ const Index = () => {
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
           content={HOME_URL + '/imgheader.webp'} />
-        <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
-        <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index,follow" />
+        <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="index,follow" />
         <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/'} ></link>
       </Head>
       <div>
