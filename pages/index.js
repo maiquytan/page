@@ -20,11 +20,11 @@ const Index = () => {
         <meta data-n-head="ssr" data-hid="description" name="description" content="Committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives!" />
         <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives!" />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content={HOME_URL + '/'} />
+          content={HOME_URL } />
         <meta data-n-head="ssr" name="keywords"
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
-          content={HOME_URL + '/imgheader.webp'} />
+          content={HOME_URL + '/logo1.svg'} />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="index,follow" />
         <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="index,follow" />
         <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/'} ></link>
