@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react';
+import Head from 'next/head';
 
-import { listBoss, listIntroduce, settingTeam } from '../constants';
+import { HOME_URL, listBoss, listIntroduce, settingTeam } from '../constants';
 import useViewport from '../hook/useViewPort';
 
 const Team = () => {
@@ -63,115 +64,135 @@ const Team = () => {
   };
 
   return (
-    <div className="team">
-      <h1 className="h1">** Our Team screen **</h1>
+    <>
+      <Head>
+        <title>Axalize Incorporated | Full-cycle outsourcing and offshore software development.</title>
+        <meta data-n-head="ssr" data-hid="title" name="title"
+          content="Axalize Incorporated | Full-cycle outsourcing and offshore software development." />
+        <meta data-n-head="ssr" data-hid="og:title" name="og:title"
+          content="Axalize Incorporated | Full-cycle outsourcing and offshore software development." />
+        <meta data-n-head="ssr" data-hid="description" name="description" content="Want to hire a software development team with extensive experience in offshore software outsourcing? Contact us to determine our quality!" />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Want to hire a software development team with extensive experience in offshore software outsourcing? Contact us to determine our quality!" />
+        <meta data-n-head="ssr" data-hid="og:url" name="og:url"
+          content={HOME_URL + '/team'} />
+        <meta data-n-head="ssr" name="keywords"
+          content="" />
+        <meta data-n-head="ssr" data-hid="og:image" property="og:image"
+          content={HOME_URL + '/logo1.svg'} />
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index,follow" />
+        <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="index,follow" />
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/team'} ></link>
+      </Head>
 
-      {/* Header */}
-      <div className="bg-header">
-        <div className="img-header">
-          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
-        </div>
-        <div className="about-header container">
-          <div className="header-title">Our Team</div>
-          <div className="header-content">
-            <div className="header-left">Meet the talented and dedicated individuals behind Axalize's success.</div>
-            <div className="header-right">
-              <img src="/Frame132.webp" alt="img-header" title="img-header" width="644" height="644" />
-            </div>
+      <div className="team">
+        <h1 className="h1">Meet the talented and dedicated individuals behind Axalize's success.</h1>
+
+        {/* Header */}
+        <div className="bg-header">
+          <div className="img-header">
+            <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
           </div>
-        </div>
-      </div>
-
-      {/* Introduce */}
-      <div className="introduce container">
-        <div className="introduce-left">
-          {listIntroduce.map((intro, index) => (
-            <div className="one-introduce" key={index}>
-              <img src={intro.img} alt="icon-introduce" title="icon-introduce" width="50" height="50" />
-              <div className="introduce-content">
-                <h2>{intro.title}</h2>
-                <p>{intro.content}</p>
+          <div className="about-header container">
+            <div className="header-title">Our Team</div>
+            <div className="header-content">
+              <div className="header-left">Meet the talented and dedicated individuals behind Axalize's success.</div>
+              <div className="header-right">
+                <img src="/Frame132.webp" alt="img-header" title="img-header" width="644" height="644" />
               </div>
             </div>
-          ))}
-        </div>
-        <div className="introduce-right">
-          <img src="/img_introduce.webp" alt="img-introduce" title="img-introduce" width="610" height="628" />
-        </div>
-      </div>
-
-      {/* Meet */}
-      <div className="meet">
-        <div className="meet-header">
-          <div className="bar"></div>
-          <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
-        </div>
-        <div className="meet-main">
-          <div onClick={handleLeftClick} className={start === 0 ? 'undisable left' : 'button'}>
-            <svg viewBox="0 0 20 20" color="green" width="50" height="50">
-              <path d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"></path>
-            </svg>
           </div>
-          <div className="meet-list">
-            <div className="meet-img">
-              {listBoss.map((list, index) => (
-                <div className="boss" key={index}>
-                  <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
-                    <div className="bg-meet">
-                      <p> {list.name}</p>
+        </div>
+
+        {/* Introduce */}
+        <div className="introduce container">
+          <div className="introduce-left">
+            {listIntroduce.map((intro, index) => (
+              <div className="one-introduce" key={index}>
+                <img src={intro.img} alt="icon-introduce" title="icon-introduce" width="50" height="50" />
+                <div className="introduce-content">
+                  <div>{intro.title}</div>
+                  <p>{intro.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="introduce-right">
+            <img src="/img_introduce.webp" alt="img-introduce" title="img-introduce" width="610" height="628" />
+          </div>
+        </div>
+
+        {/* Meet */}
+        <div className="meet">
+          <div className="meet-header">
+            <div className="bar"></div>
+            <div className="meet-title"><label>MEET</label> THE TEAM</div>
+          </div>
+          <div className="meet-main">
+            <div onClick={handleLeftClick} className={start === 0 ? 'undisable left' : 'button'}>
+              <svg viewBox="0 0 20 20" color="green" width="50" height="50">
+                <path d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"></path>
+              </svg>
+            </div>
+            <div className="meet-list">
+              <div className="meet-img">
+                {listBoss.map((list, index) => (
+                  <div className="boss" key={index}>
+                    <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
+                      <div className="bg-meet">
+                        <p> {list.name}</p>
+                      </div>
+                    </div>
+                    <div className="icon-meet" >
+                      <img src={list.icon} alt="icon-meet" title="icon-meet" width="70" height="70" />
+                    </div>
+                    <div className="meet-content">
+                      <p> {list.job}</p>
+                      <label> {list.describe}</label>
                     </div>
                   </div>
-                  <div className="icon-meet" >
-                    <img src={list.icon} alt="icon-meet" title="icon-meet" width="70" height="70" />
-                  </div>
-                  <div className="meet-content">
-                    <h3> {list.job}</h3>
-                    <label> {list.describe}</label>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div onClick={handleRightClick} className={start === (settingTeam.itemListQuantity - (itemView)) ? 'undisable right' : 'button'}>
-            <svg viewBox="0 0 20 20" color="green" width="50" height="50">
-              <path d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div className="meet-mobile container" ref={ref}>
-        <div>
-          <div className="bar"></div>
-          <h2 className="meet-title"><label>MEET</label> THE TEAM</h2>
-        </div>
-        <div className="meet-main-mobile"
-          ref={listRef}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-        >
-          {listBoss.map((list, index) => (
-            <div className="boss-mobile" key={index}>
-              <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
-                <div className="bg-meet">
-                  <p> {list.name}</p>
-                </div>
-              </div>
-              <div className="icon-meet" >
-                <img src={list.icon} alt="icon-meet" title="icon-meet" width="70" height="70" />
-              </div>
-              <div className="meet-content">
-                <h3> {list.job}</h3>
-                <label> {list.describe}</label>
+                ))}
               </div>
             </div>
-          ))}
+            <div onClick={handleRightClick} className={start === (settingTeam.itemListQuantity - (itemView)) ? 'undisable right' : 'button'}>
+              <svg viewBox="0 0 20 20" color="green" width="50" height="50">
+                <path d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
+              </svg>
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="meet-mobile container" ref={ref}>
+          <div>
+            <div className="bar"></div>
+            <div className="meet-title"><label>MEET</label> THE TEAM</div>
+          </div>
+          <div className="meet-main-mobile"
+            ref={listRef}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
+          >
+            {listBoss.map((list, index) => (
+              <div className="boss-mobile" key={index}>
+                <div className="img-meet" style={{ backgroundImage: `url('${(list.image)}')` }} >
+                  <div className="bg-meet">
+                    <p> {list.name}</p>
+                  </div>
+                </div>
+                <div className="icon-meet" >
+                  <img src={list.icon} alt="icon-meet" title="icon-meet" width="70" height="70" />
+                </div>
+                <div className="meet-content">
+                  <p> {list.job}</p>
+                  <label> {list.describe}</label>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
-      <style jsx>
-        {`
+        <style jsx>
+          {`
           .team {
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
@@ -280,7 +301,7 @@ const Team = () => {
             margin-right: 22px;
             margin-bottom: 10px;
           }
-          .introduce-content>h2 {
+          .introduce-content>div {
             font-weight: 600;
             font-size: 28px;
             line-height: 34px;
@@ -461,7 +482,7 @@ const Team = () => {
             padding-bottom: 10px;
             margin: auto;
           }
-          .meet-content>h3 {
+          .meet-content>p {
             font-weight: 600;
             font-size: 16px;
             line-height: 19px;
@@ -586,7 +607,7 @@ const Team = () => {
               margin-top: 26px;
               margin-right: 18px;
             }
-            .introduce-content>h2 {
+            .introduce-content>div {
               font-size: 22px;
               margin-bottom: 0;
             }
@@ -613,8 +634,9 @@ const Team = () => {
             }
           }
         `}
-      </style>
-    </div>
+        </style>
+      </div>
+    </>
   )
 }
 

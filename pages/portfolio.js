@@ -1,9 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
+import Head from 'next/head';
 
 import Archivement from '../components/Archivement/Archivement';
 import Pagination from '../components/Pagination/Pagination';
 import Techniques from '../components/Techniques/Techniques';
-import { pageSize, dataApplication, listSelectApplication } from '../constants';
+import { pageSize, dataApplication, listSelectApplication, HOME_URL } from '../constants';
 
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -19,88 +20,108 @@ const Portfolio = () => {
   }
 
   return (
-    <div className="portfolio">
-      <h1 className="h1"> ** Portfolio screen ** </h1>
-      {/* Header */}
-      <div className="bg-header session">
-        <div className="img-header-pc">
-          <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
-        </div>
-        <div className="img-header-mobile">
-          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557" />
-        </div>
-        <div className="portfolio-header">
-          <div className="header-title">Our Works</div>
-          <div className="header-content">
-            <div className="content-left">From Enterprise Management Systems to E-commerce & Retail Management Systems, Customer-enabling Services, and New Business Ideas, our portfolio is a testament to our expertise and the real-world benefits we bring to our clients. Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution.</div>
-            <div className="content-right">
-              <img src="/Group20.webp" alt="img-header" title="img-header" width="737" height="317" />
-            </div>
-          </div>
-        </div>
-      </div>
+    <>
+      <Head>
+        <title>Axalize Incorporated Expertise | Providing innovative and effective IT solutions to meet the needs of modern businesses.</title>
+        <meta data-n-head="ssr" data-hid="title" name="title"
+          content="Axalize Incorporated Expertise | Providing innovative and effective IT solutions to meet the needs of modern businesses." />
+        <meta data-n-head="ssr" data-hid="og:title" name="og:title"
+          content="Axalize Incorporated Expertise | Providing innovative and effective IT solutions to meet the needs of modern businesses." />
+        <meta data-n-head="ssr" data-hid="description" name="description" content="Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution." />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution." />
+        <meta data-n-head="ssr" data-hid="og:url" name="og:url"
+          content={HOME_URL + '/portfolio'} />
+        <meta data-n-head="ssr" name="keywords"
+          content="" />
+        <meta data-n-head="ssr" data-hid="og:image" property="og:image"
+          content={HOME_URL + '/logo1.svg'} />
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="index,follow" />
+        <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="index,follow" />
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/portfolio'} ></link>
+      </Head>
 
-      <Archivement />
-
-      {/* Aplications */}
-      <div className="applications session">
-        <div className="applications-header">
-          <div className="applications-left">
-            <label className="item">Aplications</label>
-            <div className="crossbar-left-1"></div>
-            <div className="crossbar-left-2"></div>
-            <div className="applications-list">
-              {listSelectApplication.map((list, index) => (
-                <p className={isSelect.id === list.id ? 'application_selected' : 'one_application'} onClick={() => setIsSelect(list)} key={index}> {list.title}</p>
-              ))}
-            </div>
+      <div className="portfolio">
+        <h1 className="h1">A testament to our expertise and the real-world benefits we bring to our clients.</h1>
+        {/* Header */}
+        <div className="bg-header session">
+          <div className="img-header-pc">
+            <img src="/img_header.svg" alt="bg-header" title="bg-header" width="1001" height="557" />
           </div>
-          <div className="applications-select">
-            <div className="select" onClick={handleDropdownOnclick}>
-              <div> {isSelect.title}</div>
-              <div>
-                <img src="/arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9" />
+          <div className="img-header-mobile">
+            <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1001" height="557" />
+          </div>
+          <div className="portfolio-header">
+            <div className="header-title">Our Works</div>
+            <div className="header-content">
+              <div className="content-left">From Enterprise Management Systems to E-commerce & Retail Management Systems, Customer-enabling Services, and New Business Ideas, our portfolio is a testament to our expertise and the real-world benefits we bring to our clients. Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution.</div>
+              <div className="content-right">
+                <img src="/Group20.webp" alt="img-header" title="img-header" width="737" height="317" />
               </div>
             </div>
-            {isDropdownApp &&
-              <div className="dropdown" onClick={handleDropdownOnclick}>
+          </div>
+        </div>
+
+        <Archivement />
+
+        {/* Aplications */}
+        <div className="applications session">
+          <div className="applications-header">
+            <div className="applications-left">
+              <label className="item">Aplications</label>
+              <div className="crossbar-left-1"></div>
+              <div className="crossbar-left-2"></div>
+              <div className="applications-list">
                 {listSelectApplication.map((list, index) => (
-                  <div className={isSelect.id === list.id ? 'application_selected' : 'one_application'} onClick={() => setIsSelect(list)} key={index}> {list.title}</div>
+                  <p className={isSelect.id === list.id ? 'application_selected' : 'one_application'} onClick={() => setIsSelect(list)} key={index}> {list.title}</p>
                 ))}
               </div>
-            }
-          </div>
+            </div>
+            <div className="applications-select">
+              <div className="select" onClick={handleDropdownOnclick}>
+                <div> {isSelect.title}</div>
+                <div>
+                  <img src="/arrow_bottom.svg" alt="arrow-dropdown" title="arrow-dropdown" width="16" height="9" />
+                </div>
+              </div>
+              {isDropdownApp &&
+                <div className="dropdown" onClick={handleDropdownOnclick}>
+                  {listSelectApplication.map((list, index) => (
+                    <div className={isSelect.id === list.id ? 'application_selected' : 'one_application'} onClick={() => setIsSelect(list)} key={index}> {list.title}</div>
+                  ))}
+                </div>
+              }
+            </div>
 
-          <div className="applications-right">
-            <div className="applications-row">
-              {filterData.slice(firstPageIndex, lastPageIndex).map((item, index) => {
-                return (
-                  <div className="illustration" key={index}>
-                    <img src={item.img} alt="illustration" title="illustration" width="465" height="244" />
-                    <div> {item.title}</div>
-                    <p> {item.content}</p>
-                  </div>
-                );
-              })}
+            <div className="applications-right">
+              <div className="applications-row">
+                {filterData.slice(firstPageIndex, lastPageIndex).map((item, index) => {
+                  return (
+                    <div className="illustration" key={index}>
+                      <img src={item.img} alt="illustration" title="illustration" width="465" height="244" />
+                      <div> {item.title}</div>
+                      <p> {item.content}</p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
+          <div className="paging">
+            <Pagination
+              className="pagination-bar"
+              currentPage={currentPage}
+              totalCount={filterData.length}
+              pageSize={pageSize}
+              onPageChange={page => setCurrentPage(page)}
+            />
+          </div>
         </div>
-        <div className="paging">
-          <Pagination
-            className="pagination-bar"
-            currentPage={currentPage}
-            totalCount={filterData.length}
-            pageSize={pageSize}
-            onPageChange={page => setCurrentPage(page)}
-          />
-        </div>
-      </div>
 
-      {/* Techniques */}
-      <Techniques />
+        {/* Techniques */}
+        <Techniques />
 
-      <style jsx>
-        {`
+        <style jsx>
+          {`
           .portfolio {
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
@@ -459,8 +480,9 @@ const Portfolio = () => {
             }
           }
         `}
-      </style>
-    </div>
+        </style>
+      </div>
+    </>
   )
 }
 
