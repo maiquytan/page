@@ -1,122 +1,143 @@
 import React from 'react';
+import Head from 'next/head';
 
 import { listFeedback, listReason } from '../constants';
 
 const Client = () => {
   return (
-    <div className="client">
-      <h1 className="h1">** Our Clients screen **</h1>
+    <>
+      <Head>
+        <title>Axalize Incorporated | Clients' satisfaction is at the heart of everything we do.</title>
+        <meta data-n-head="ssr" data-hid="title" name="title"
+          content="" />
+        <meta data-n-head="ssr" data-hid="og:title" name="og:title"
+          content="" />
+        <meta data-n-head="ssr" data-hid="description" name="description" content="By working with Axalize, clients can trust that their project is in capable hands and that they will receive a tailored solution designed to drive business success." />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
+        <meta data-n-head="ssr" data-hid="og:url" name="og:url"
+          content="" />
+        <meta data-n-head="ssr" name="keywords"
+          content="" />
+        <meta data-n-head="ssr" data-hid="og:image" property="og:image"
+          content="" />
+        <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
+        <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
+      </Head>
 
-      {/* Header */}
-      <div className="bg-header session">
-        <div className="img-header">
-          <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
-        </div>
-        <div className="about-header container">
-          <div className="header-title">Our Clients</div>
-          <div className="header-content">
-            <div className="header-left">Unlocking your growth potential with dedication and responsiveness</div>
-            <div className="header-right">
-              <img src="/img_client.webp" alt="img-header" title="img-header" width="644" height="644" />
+      <div className="client">
+        <h1 className="h1">Clients' satisfaction is at the heart of everything we do.</h1>
+
+        {/* Header */}
+        <div className="bg-header session">
+          <div className="img-header">
+            <img src="/bg_about.webp" alt="bg-header" title="bg-header" width="1920" height="637" />
+          </div>
+          <div className="about-header container">
+            <div className="header-title">Our Clients</div>
+            <div className="header-content">
+              <div className="header-left">Unlocking your growth potential with dedication and responsiveness</div>
+              <div className="header-right">
+                <img src="/img_client.webp" alt="img-header" title="img-header" width="644" height="644" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Mobile, Web */}
-      <div className="bg-mobile-web session">
-        <div className="mobile-web container">
-          <div className="mobile-web-header">Customized Software Solutions for Web and Mobile: Axalize's Commitment to Innovation and Versatility</div>
-          <div className="mobile-web-content">At Axalize, we are dedicated to providing customized
-            software solutions that meet the unique needs of each client. With a focus on web and
-            mobile application development, we leverage our extensive experience to deliver high
-            -quality results. Our portfolio showcases the diverse range of industries and businesses
-            we have served, demonstrating our versatility and commitment to delivering innovative
-            solutions. By working with Axalize, clients can trust that their project is in capable
-            hands and that they will receive a tailored solution designed to drive business success.
+        {/* Mobile, Web */}
+        <div className="bg-mobile-web session">
+          <div className="mobile-web container">
+            <div className="mobile-web-header">Customized Software Solutions for Web and Mobile: Axalize's Commitment to Innovation and Versatility</div>
+            <div className="mobile-web-content">At Axalize, we are dedicated to providing customized
+              software solutions that meet the unique needs of each client. With a focus on web and
+              mobile application development, we leverage our extensive experience to deliver high
+              -quality results. Our portfolio showcases the diverse range of industries and businesses
+              we have served, demonstrating our versatility and commitment to delivering innovative
+              solutions. By working with Axalize, clients can trust that their project is in capable
+              hands and that they will receive a tailored solution designed to drive business success.
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Reason */}
-      <div className="bg-reason">
-        <div className="reason">
-          <div className="reason-header">What sets Axalize apart in the eyes of our clients</div>
-          <div className="reason-content">
-            {listReason.map((reason, index) => (
-              <div className="one-reason" key={index}>
-                <div className="img-one-reason">
-                  <img src={reason.img} alt="img-reason" title="img-reason" width="110" height="115" />
+        {/* Reason */}
+        <div className="bg-reason">
+          <div className="reason">
+            <div className="reason-header">What sets Axalize apart in the eyes of our clients</div>
+            <div className="reason-content">
+              {listReason.map((reason, index) => (
+                <div className="one-reason" key={index}>
+                  <div className="img-one-reason">
+                    <img src={reason.img} alt="img-reason" title="img-reason" width="110" height="115" />
+                  </div>
+                  <p>{reason.title}</p>
                 </div>
-                <p>{reason.title}</p>
-              </div>
-            ))}
-          </div>
-          <div className="img-reason">
-            <img src="/Asset.svg" alt="img-reason" title="img-reason" width="200" height="35" />
-          </div>
-        </div>
-      </div>
-
-      {/* Expert */}
-      <div className="session">
-        <div className="expert container">
-          <div className="expert-left">
-            <div className="expert-header">Expert software solutions driving business success.</div>
-            <div className="bar blue"></div>
-            <p className="expert-content">With deep expertise in over 50 projects, Axalize operates
-              under a quality-driven model. We leverage innovative technical knowledge to deliver
-              cutting-edge, timely, and valuable solutions. At Axalize, we prioritize a customer-centric
-              approach, ensuring that our core values align with those of our clients to deliver results
-              that truly drive business success.</p>
-          </div>
-          <div className="expert-right">
-            <img src="/Group23.webp" alt="img-expert" title="img-expert" width="605" height="663" />
-          </div>
-        </div>
-      </div>
-      {/* Feedback */}
-      <div className="bg-feedback">
-        <div className="bg-feedback2">
-          <div className="feedback">
-            <div className="feedback-header">
-              <div>
-                <p>Success and Satisfaction with Axalize</p>
-                <div className="bar white"></div>
-              </div>
-              <p>At Axalize, client satisfaction is at the heart of everything we do. Our commitment
-                to delivering exceptional software development solutions has earned us a reputation
-                as a trusted partner for businesses looking to drive success and growth.</p>
+              ))}
             </div>
-            <div className="what-say">What do our customers say?</div>
+            <div className="img-reason">
+              <img src="/Asset.svg" alt="img-reason" title="img-reason" width="200" height="35" />
+            </div>
           </div>
-          <div className="feedback-content">
-            {listFeedback.map((feed, index) => (
-              <div className="one-feedback" key={index}>
-                <img src={feed.img} className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
-                <div className="evaluate">{feed.title}</div>
-                <div className="client-name">{feed.clientName}</div>
-                <p className="company-name">{feed.companyName}</p>
+        </div>
+
+        {/* Expert */}
+        <div className="session">
+          <div className="expert container">
+            <div className="expert-left">
+              <div className="expert-header">Expert software solutions driving business success.</div>
+              <div className="bar blue"></div>
+              <p className="expert-content">With deep expertise in over 50 projects, Axalize operates
+                under a quality-driven model. We leverage innovative technical knowledge to deliver
+                cutting-edge, timely, and valuable solutions. At Axalize, we prioritize a customer-centric
+                approach, ensuring that our core values align with those of our clients to deliver results
+                that truly drive business success.</p>
+            </div>
+            <div className="expert-right">
+              <img src="/Group23.webp" alt="img-expert" title="img-expert" width="605" height="663" />
+            </div>
+          </div>
+        </div>
+        {/* Feedback */}
+        <div className="bg-feedback">
+          <div className="bg-feedback2">
+            <div className="feedback">
+              <div className="feedback-header">
+                <div>
+                  <p>Success and Satisfaction with Axalize</p>
+                  <div className="bar white"></div>
+                </div>
+                <p>At Axalize, client satisfaction is at the heart of everything we do. Our commitment
+                  to delivering exceptional software development solutions has earned us a reputation
+                  as a trusted partner for businesses looking to drive success and growth.</p>
               </div>
-            ))}
-          </div>
-          <div className="feedback-content-mobile">
-            {listFeedback.map((feed, index) => (
-              <div className="one-feedback" key={index}>
-                <div className="feedback-left">
-                  <img src={feed.img} className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
+              <div className="what-say">What do our customers say?</div>
+            </div>
+            <div className="feedback-content">
+              {listFeedback.map((feed, index) => (
+                <div className="one-feedback" key={index}>
+                  <img src={feed.img} className="img-feedback" alt="img-feedback" title="img-feedback" width="210" height="210" />
+                  <div className="evaluate">{feed.title}</div>
                   <div className="client-name">{feed.clientName}</div>
                   <p className="company-name">{feed.companyName}</p>
                 </div>
-                <div className="evaluate">{feed.title}</div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="feedback-content-mobile">
+              {listFeedback.map((feed, index) => (
+                <div className="one-feedback" key={index}>
+                  <div className="feedback-left">
+                    <img src={feed.img} className="img-feedback" alt="img-feedback" title="img-feedback" width="120" height="120" />
+                    <div className="client-name">{feed.clientName}</div>
+                    <p className="company-name">{feed.companyName}</p>
+                  </div>
+                  <div className="evaluate">{feed.title}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      <style jsx>
-        {`
+        <style jsx>
+          {`
           .client {
             background: #FFFFFF;
             font-family: 'Inter', sans-serif;
@@ -732,8 +753,9 @@ const Client = () => {
             }
           }
         `}
-      </style>
-    </div>
+        </style>
+      </div>
+    </>
   )
 }
 

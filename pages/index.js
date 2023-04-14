@@ -12,12 +12,12 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title></title>
+        <title>Axalize Incorporated - a leading IT outsourcing software development business </title>
         <meta data-n-head="ssr" data-hid="title" name="title"
           content="" />
         <meta data-n-head="ssr" data-hid="og:title" name="og:title"
           content="" />
-        <meta data-n-head="ssr" data-hid="description" name="description" content="" />
+        <meta data-n-head="ssr" data-hid="description" name="description" content="Committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives!" />
         <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
           content="" />
@@ -31,16 +31,14 @@ const Index = () => {
       </Head>
       <div>
         <div className="home">
-          <h1 className="h1"> ** HomePage screen ** </h1>
+          <h1 className="h1">Axalize Incorporated - a leading IT outsourcing business</h1>
           {/* Header */}
           <div className="home-header session">
             <div className="header-container container">
               <div className="title1">Feel your pleasure, find your treasure</div>
               <div className="title2">Realize system development with "value".</div>
               <div className="title3">
-                We provide services that satisfy "high quality," "low cost," and "high
-                speed," and realize system development that is "value" for our customers.
-                Please feel free to contact us regarding requests .
+                Welcome to Axalize Incorporated, a leading IT outsourcing business committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives.
               </div>
               <div className="header-btn">
                 <button className="btn-contact">Contact us</button>
