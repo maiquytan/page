@@ -1,27 +1,28 @@
 import React from 'react';
 import Head from 'next/head';
 
+import { HOME_URL } from '../constants';
+
 const Service = () => {
   return (
     <>
       <Head>
-        <title>Axalize Incorporated | IT outsourcing and offshore, advanced Mobile App and Website Development
-        </title>
+        <title>Axalize Incorporated | IT outsourcing and offshore, advanced Mobile App and Website Development</title>
         <meta data-n-head="ssr" data-hid="title" name="title"
-          content="" />
+          content="Axalize Incorporated | IT outsourcing and offshore, advanced Mobile App and Website Development" />
         <meta data-n-head="ssr" data-hid="og:title" name="og:title"
-          content="" />
+          content="Axalize Incorporated | IT outsourcing and offshore, advanced Mobile App and Website Development" />
         <meta data-n-head="ssr" data-hid="description" name="description" content="Axalize Inc Services: Web Application Development, Mobile App Development, RPA Development, Dedicated Development Teams, Offshore Development Center, Lifecycle Maintenance, DevOps Development and Operations, and UI/UX Design." />
-        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Axalize Inc Services: Web Application Development, Mobile App Development, RPA Development, Dedicated Development Teams, Offshore Development Center, Lifecycle Maintenance, DevOps Development and Operations, and UI/UX Design." />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content="" />
+          content={HOME_URL + '/service'} />
         <meta data-n-head="ssr" name="keywords"
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
-          content="" />
+          content="https://axalize.vn/imgheader.webp" />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
         <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
-        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/service'} ></link>
       </Head>
 
       <div className="service">

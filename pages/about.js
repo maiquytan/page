@@ -1,26 +1,28 @@
 import Head from 'next/head';
 import React from 'react';
 
+import { HOME_URL } from '../constants';
+
 const About = () => {
   return (
     <>
       <Head>
         <title>About Axalize: commitment to delivering innovative and tailored software solutions to meet the unique needs of each of our clients.</title>
         <meta data-n-head="ssr" data-hid="title" name="title"
-          content="" />
+          content="About Axalize: commitment to delivering innovative and tailored software solutions to meet the unique needs of each of our clients." />
         <meta data-n-head="ssr" data-hid="og:title" name="og:title"
-          content="" />
+          content="About Axalize: commitment to delivering innovative and tailored software solutions to meet the unique needs of each of our clients." />
         <meta data-n-head="ssr" data-hid="description" name="description" content="Axalize offers a wide range of solutions to meet the unique needs of businesses worldwide. With a focus on quality, collaboration, and innovation, our team of dedicated professionals leverages deep expertise and technical prowess to deliver results that drive real business value." />
-        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Axalize offers a wide range of solutions to meet the unique needs of businesses worldwide. With a focus on quality, collaboration, and innovation, our team of dedicated professionals leverages deep expertise and technical prowess to deliver results that drive real business value." />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content="" />
+          content={HOME_URL + '/about'} />
         <meta data-n-head="ssr" name="keywords"
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
-          content="" />
+          content="https://axalize.vn/imgheader.webp" />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
         <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
-        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/about'} ></link>
       </Head>
 
       <div className="about-us">

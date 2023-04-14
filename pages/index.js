@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import Archivement from '../components/Archivement/Archivement';
 import Techniques from '../components/Techniques/Techniques';
-import { listExpertise, listServices } from '../constants';
+import { HOME_URL, listExpertise, listServices } from '../constants';
 
 const Index = () => {
   const router = useRouter();
@@ -14,20 +14,20 @@ const Index = () => {
       <Head>
         <title>Axalize Incorporated - a leading IT outsourcing software development business </title>
         <meta data-n-head="ssr" data-hid="title" name="title"
-          content="" />
+          content="Axalize Incorporated - a leading IT outsourcing software development business" />
         <meta data-n-head="ssr" data-hid="og:title" name="og:title"
-          content="" />
+          content="Axalize Incorporated - a leading IT outsourcing software development business" />
         <meta data-n-head="ssr" data-hid="description" name="description" content="Committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives!" />
-        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives!" />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content="" />
+          content={HOME_URL + '/'} />
         <meta data-n-head="ssr" name="keywords"
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
-          content="" />
+          content="https://axalize.vn/imgheader.webp" />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
         <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
-        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/'} ></link>
       </Head>
       <div>
         <div className="home">

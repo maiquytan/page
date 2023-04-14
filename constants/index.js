@@ -1,3 +1,5 @@
+export const HOME_URL='https://axalize.vn'
+
 export const listMenuJP = [
   { href: '/jp', title: 'Top', content: 'トップ' },
   { href: '/jp/companyjp', title: 'Company', content: '会社情報' },

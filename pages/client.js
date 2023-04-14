@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-import { listFeedback, listReason } from '../constants';
+import { HOME_URL, listFeedback, listReason } from '../constants';
 
 const Client = () => {
   return (
@@ -9,20 +9,20 @@ const Client = () => {
       <Head>
         <title>Axalize Incorporated | Clients' satisfaction is at the heart of everything we do.</title>
         <meta data-n-head="ssr" data-hid="title" name="title"
-          content="" />
+          content="Axalize Incorporated | Clients' satisfaction is at the heart of everything we do." />
         <meta data-n-head="ssr" data-hid="og:title" name="og:title"
-          content="" />
+          content="Axalize Incorporated | Clients' satisfaction is at the heart of everything we do." />
         <meta data-n-head="ssr" data-hid="description" name="description" content="By working with Axalize, clients can trust that their project is in capable hands and that they will receive a tailored solution designed to drive business success." />
-        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="By working with Axalize, clients can trust that their project is in capable hands and that they will receive a tailored solution designed to drive business success." />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content="" />
+          content={HOME_URL + '/client'} />
         <meta data-n-head="ssr" name="keywords"
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
-          content="" />
+          content="https://axalize.vn/imgheader.webp" />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
         <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
-        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/client'} ></link>
       </Head>
 
       <div className="client">

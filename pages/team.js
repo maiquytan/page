@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
 
-import { listBoss, listIntroduce, settingTeam } from '../constants';
+import { HOME_URL, listBoss, listIntroduce, settingTeam } from '../constants';
 import useViewport from '../hook/useViewPort';
 
 const Team = () => {
@@ -68,20 +68,20 @@ const Team = () => {
       <Head>
         <title>Axalize Incorporated | Full-cycle outsourcing and offshore software development.</title>
         <meta data-n-head="ssr" data-hid="title" name="title"
-          content="" />
+          content="Axalize Incorporated | Full-cycle outsourcing and offshore software development." />
         <meta data-n-head="ssr" data-hid="og:title" name="og:title"
-          content="" />
+          content="Axalize Incorporated | Full-cycle outsourcing and offshore software development." />
         <meta data-n-head="ssr" data-hid="description" name="description" content="Want to hire a software development team with extensive experience in offshore software outsourcing? Contact us to determine our quality!" />
-        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Want to hire a software development team with extensive experience in offshore software outsourcing? Contact us to determine our quality!" />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content="" />
+          content={HOME_URL + '/team'} />
         <meta data-n-head="ssr" name="keywords"
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
-          content="" />
+          content="https://axalize.vn/imgheader.webp" />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
         <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
-        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/team'} ></link>
       </Head>
 
       <div className="team">

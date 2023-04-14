@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Archivement from '../components/Archivement/Archivement';
 import Pagination from '../components/Pagination/Pagination';
 import Techniques from '../components/Techniques/Techniques';
-import { pageSize, dataApplication, listSelectApplication } from '../constants';
+import { pageSize, dataApplication, listSelectApplication, HOME_URL } from '../constants';
 
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -24,20 +24,20 @@ const Portfolio = () => {
       <Head>
         <title>Axalize Incorporated Expertise | Providing innovative and effective IT solutions to meet the needs of modern businesses.</title>
         <meta data-n-head="ssr" data-hid="title" name="title"
-          content="" />
+          content="Axalize Incorporated Expertise | Providing innovative and effective IT solutions to meet the needs of modern businesses." />
         <meta data-n-head="ssr" data-hid="og:title" name="og:title"
-          content="" />
+          content="Axalize Incorporated Expertise | Providing innovative and effective IT solutions to meet the needs of modern businesses." />
         <meta data-n-head="ssr" data-hid="description" name="description" content="Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution." />
-        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="" />
+        <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Join us on a journey through our problem-solving process, from initial consultation to solution delivery, and see how we bring your vision to life. Let's partner together to create the next breakthrough solution." />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content="" />
+          content={HOME_URL + '/portfolio'} />
         <meta data-n-head="ssr" name="keywords"
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
-          content="" />
+          content="https://axalize.vn/imgheader.webp" />
         <meta data-n-head="ssr" data-hid="robots" name="robots" content="" />
         <meta data-n-head="ssr" data-hid="googlebot" name="googlebot" content="" />
-        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href="" ></link>
+        <link data-n-head="ssr" data-hid="i18n-can" rel="canonical" href={HOME_URL + '/portfolio'} ></link>
       </Head>
 
       <div className="portfolio">
