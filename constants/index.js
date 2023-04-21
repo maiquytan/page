@@ -8,12 +8,8 @@ export const listMenuJP = [
 ]
 
 export const listMenuVN = [
-  // { href: '/service', title: 'Service' },
   { href: '/about', title: 'About' },
   { href: '/portfolio', title: 'Portfolio' },
-  // { href: '/expertise', title: 'Expertise' },
-  // { href: '/client', title: 'Client' },
-  // { href: '/team', title: 'Team' },
 ]
 
 export const pageSize = 4;

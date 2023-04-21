@@ -6,7 +6,6 @@ import { listMenuVN } from '../../constants';
 
 const Header = () => {
   const [isDropdownMenuAction, setIsDropdownMenuAction] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownCompanyAction, setIsDropdownCompanyAction] = useState(false);
 
   const router = useRouter();
@@ -18,15 +17,6 @@ const Header = () => {
   const handleDropDownCompanyAction = () => {
     setIsDropdownCompanyAction(!isDropdownCompanyAction);
   }
-
-  const handleMouseEnter = () => {
-    setIsDropdownOpen(true);
-  }
-  const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
-  }
-
-  console.log(isDropdownOpen);
 
   useEffect(() => {
     setIsDropdownMenuAction(false);
@@ -40,23 +30,15 @@ const Header = () => {
             <img src="/logo1.svg" className="img-logo" alt="logo" title="logo" width="323" height="55" />
           </a></Link>
           <div className="menu-content">
-            <div className={isDropdownOpen === true ? "company-pc hover" : "company-pc"}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            ><p>Company</p> <img src="/arrow_menu.svg" className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
-              {isDropdownOpen && (
+            <div className="company-pc"><p>Company</p> <img src="/arrow_menu.svg" className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
                 <div className="dropdown">
                   <ul>
                     <li><Link href="/service"><a>Service</a></Link></li>
-                    <hr></hr>
                     <li><Link href="/expertise"><a>Expertise</a></Link></li>
-                    <hr></hr>
                     <li><Link href="/client"><a>Client</a></Link></li>
-                    <hr></hr>
                     <li><Link href="/team"><a>Team</a></Link></li>
                   </ul>
                 </div>
-              )}
             </div>
             {listMenuVN.map((vn, index) => (
               <Link href={vn.href} key={index}>
@@ -89,9 +71,7 @@ const Header = () => {
               }
             </li>
             <hr></hr>
-
             <li><Link href="/about"><a>About</a></Link></li>
-            <hr></hr>
             <li><Link href="/portfolio"><a>Portfolio</a></Link></li>
           </ul>
         }
@@ -133,29 +113,35 @@ const Header = () => {
             position: relative;
             cursor: pointer;
           }
-          .hover p{
+          .company-pc:hover p{
             color: #fc721e !important;
           }
+          .company-pc:hover .dropdown{
+            display: block;
+          }
           .dropdown {
+            display: none;
             position: absolute;
             flex-direction: column;
             width: 100%;
-            left: -5px;
+            min-width: 263px;
+            left: -18px;
             height: auto;
-            top: 78px;
-            background-color: #343a40;
+            top: calc(100% - 19px);
+            background-color: #23232a;
             padding-left: 0px;
-            display: block;
             z-index: 3;
             transition: .2s ease-in-out;
             border-radius: 4px;
           }
           .dropdown::after {
+            display: none;
             transform: rotate(45deg) translateX(-45%);
             transition: .2s ease-in-out;
           }
           ul {
             list-style: none;
+            padding: 19px 0px 19px 0px;
           }
           .company-pc p {
             font-size: 20px;
@@ -203,7 +189,7 @@ const Header = () => {
             transition: .3s;
           }
           li a {
-            padding: 10px;
+            padding: 12px 28px;
             color: #dee2e6;
           }
           li a:hover {
