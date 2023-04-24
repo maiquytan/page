@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRef } from 'react';
 
 import Archivement from '../components/Archivement/Archivement';
 import Techniques from '../components/Techniques/Techniques';
@@ -8,6 +9,11 @@ import { HOME_URL, listExpertise, listServices } from '../constants';
 
 const Index = () => {
   const router = useRouter();
+  const myRef = useRef(null)
+
+  const handleClickContactBtn = () => {
+    myRef?.current?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <>
@@ -20,7 +26,7 @@ const Index = () => {
         <meta data-n-head="ssr" data-hid="description" name="description" content="Committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives!" />
         <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives!" />
         <meta data-n-head="ssr" data-hid="og:url" name="og:url"
-          content={HOME_URL } />
+          content={HOME_URL} />
         <meta data-n-head="ssr" name="keywords"
           content="" />
         <meta data-n-head="ssr" data-hid="og:image" property="og:image"
@@ -35,14 +41,14 @@ const Index = () => {
           {/* Header */}
           <div className="home-header session">
             <div className="header-container container">
-              <div className="title1">Feel your pleasure, find your treasure</div>
-              <div className="title2">Realize system development with "value".</div>
+              <div className="title1">Axalize Incorporated - a leading IT outsourcing business</div>
+              <div className="title2">Committed to providing our clients with superior solutions and services. </div>
               <div className="title3">
-                Welcome to Axalize Incorporated, a leading IT outsourcing business committed to providing our clients with superior solutions and services. We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections. Let us aid you in achieving your IT objectives.
+                We believe in collaborating closely with our clients to identify their specific needs and then developing solutions to satisfy those objectives. With an emphasis on quality, we seek to exceed client expectations and establish long-lasting connections.
+                Let us aid you in achieving your IT objectives!
               </div>
               <div className="header-btn">
-                <button className="btn-contact">Contact us</button>
-                <button className="btn-learn">Learn more ...</button>
+                <button onClick={handleClickContactBtn} className="btn-contact">Contact us</button>
               </div>
             </div>
           </div>
@@ -61,6 +67,9 @@ const Index = () => {
                     <img src={ser.img} alt="logo" title="logo" width="116" height="113" />
                   </div>
                   <div className="services-text">{ser.title}</div>
+                  <p>
+                    {ser.des}
+                  </p>
                 </div>
               ))}
             </div>
@@ -93,21 +102,21 @@ const Index = () => {
               </div>
               <div className="mission-vision">
                 <div className="target-row">
-                  <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
+                  <img src="/icons/about_icon_2.png" alt="mission" title="mission" width="61" height="61" />
                   <div className="mission">
                     <div className="mission-header">Mission</div>
                     <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
                   </div>
                 </div>
                 <div className="target-row">
-                  <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
+                  <img src="/icons/about_icon_1.png" alt="vision" title="vision" width="61" height="61" />
                   <div className="mission">
                     <div className="mission-header">Vision</div>
                     <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
                   </div>
                 </div>
                 <div className="target-row">
-                  <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
+                  <img src="/icons/about_icon_3.png" alt="core-value" title="core-value" width="61" height="61" />
                   <div className="mission">
                     <div className="mission-header">Core value</div>
                     <div className="one-core">
@@ -136,21 +145,21 @@ const Index = () => {
               <div className="mission-vision-mobile">
                 <div className="target-row">
                   <div className="mission-mobile">
-                    <img src="/icons8.svg" alt="mission" title="mission" width="61" height="61" />
+                    <img src="/icons/about_icon_2.png" alt="mission" title="mission" width="61" height="61" />
                     <div className="mission-header">Mission</div>
                   </div>
                   <label className="mission-content">To provide world-class IT outsourcing and offshore services that deliver measurable business value to our clients.</label>
                 </div>
                 <div className="target-row">
                   <div className="mission-mobile">
-                    <img src="/icons8-financial.svg" alt="vision" title="vision" width="61" height="61" />
+                    <img src="/icons/about_icon_1.png" alt="vision" title="vision" width="61" height="61" />
                     <div className="mission-header">Vision</div>
                   </div>
                   <label className="mission-content">Elevating the recognition of Vietnamese tech capabilities and delivering impactful IT solutions for a better future.</label>
                 </div>
                 <div className="target-row">
                   <div className="mission-mobile">
-                    <img src="/icons8-tree.svg" alt="core-value" title="core-value" width="61" height="61" />
+                    <img src="/icons/about_icon_3.png" alt="core-value" title="core-value" width="61" height="61" />
 
                     <div className="mission-header">Core value</div>
                   </div>
@@ -198,14 +207,11 @@ const Index = () => {
                   </div>
                 </div>
               ))}
-
-            </div>
-            <div>
-
             </div>
           </div>
           {/* Techniques */}
           <Techniques />
+          <div ref={myRef} />
         </div>
 
         {/* CSS */}
@@ -214,6 +220,7 @@ const Index = () => {
             .home {
               background: #FFFFFF;
               font-family: 'Inter', sans-serif;
+              scroll-behavior: smooth;
             }
             .h1 {
               display: none;
@@ -278,6 +285,11 @@ const Index = () => {
               background: #BA4F13;
               margin-right: 18px;
               border: 1px solid #BA4F13;
+              cursor: pointer;
+              transition: 0.3;
+            }
+            .btn-contact:hover {
+              background: #994211;
             }
             .btn-learn {
               background: #051024;
@@ -318,6 +330,7 @@ const Index = () => {
               margin-bottom: 55px;
             }
             .services-main {
+              padding: 24px 0;
               margin: auto;
               flex-wrap: wrap;
               gap: 1%;
@@ -325,12 +338,47 @@ const Index = () => {
             .services-one {
               width: 24%;
               margin-bottom: 40px;
+              padding: 6px;
+              box-sizing: border-box;
+            }
+            .services-one:hover {
+              background: #3839b6;
+              transition: 0.6s;
+              box-shadow: 0px 0px 9px 2px #3839b6
+            }
+            .services-one:hover .services-text {
+              margin-top: 6px;
+              color: white;
+              transition: 0.4s;
+            }
+            .services-one:hover .img-services img{
+              height: 0;
+              transition: 0.4s;
+              opacity: 0;
+            }
+            .services-one:hover p {
+              max-height: 120px;
+              transition: 0.4s;
+              opacity: 1;
+              color: white;
+            }
+            .services-one p {
+              margin: 6px;
+              font-size: 15px;
+              text-align: center;
+              max-height: 0;
+              overflow: hidden;
             }
             .img-services {
               display: flex;
               margin: auto;
               justify-content: center;
               margin-bottom: 13px;
+            }
+            .img-services img{
+              width: 200px;
+              height: 120px;
+              max-height: 120px;
             }
             .services-text {
               max-width: 200px;
@@ -424,8 +472,9 @@ const Index = () => {
             }
             .mission-header {
               font-size: 2rem;
+              line-height: 36px;
               font-weight: 500;
-              color: #454545;
+              color: #1667B2;
               margin-bottom: 16px;
             }
             .mission>label {
@@ -450,6 +499,7 @@ const Index = () => {
               background-color: #A1ACBB;
               height: 850px;
               margin-top: 120px;
+              scroll-behavior: smooth;
             }
             .expertise-header {
               text-align: center;
@@ -481,12 +531,19 @@ const Index = () => {
               padding-bottom: 38px;
             }
             .img-expertise {
+              border-radius: 50%;
               display: flex;
               justify-content: center;
-              width: 100%;
+              align-items: center;
+              background: #1667B2;
               z-index: 2;
               top: -50px;
+              left: 50%;
+              transform: translateX(-50%);
               position: absolute;
+            }
+            .img-expertise img{
+              width: 64%;
             }
             .system-header {
               margin-top: 95px;
@@ -635,14 +692,11 @@ const Index = () => {
                 box-sizing: border-box;
               }
               .img-expertise {
+                transform: unset;
                 width: 54px;
                 height: 54px;
                 top: 15px;
                 left: 30px;
-              }
-              .img-expertise>img {
-                width: 100%;
-                height: 100%;
               }
               .system-header {
                 margin-top: 20px;
@@ -663,7 +717,6 @@ const Index = () => {
               }
               .img-services>img {
                 width: 100%;
-                height: 100%;
               }
               .target {
                 flex-direction: column;
@@ -695,7 +748,7 @@ const Index = () => {
                 justify-content: center;
               }
               .services-one {
-                width: 32%;
+                width: 49%;
               }
             }
             @media screen and (max-width: 480px) {

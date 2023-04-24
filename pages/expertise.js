@@ -278,7 +278,7 @@ const Service = () => {
           //our-services----------------------------
 
           .our-services {
-            padding-bottom: 250px;
+            padding-bottom: 100px;
             background: #FFFFFF;
           }
           .services-container {
@@ -315,13 +315,14 @@ const Service = () => {
           .services-row-1, .services-row-2 {
             display: flex;
             justify-content: center;
-            margin-bottom: 30px
+            margin-bottom: 60px;
           }
           .services-title {
             font-weight: 600;
             font-size: 30px;
             margin: 0 0 30px 0;
             color: #236B99;
+            max-width: 570px;
           }
           .services-content {
             max-width: 570px;

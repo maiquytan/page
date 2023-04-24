@@ -9,7 +9,7 @@ const Archivement = () => {
             <label className="item">Archivement</label>
             <div className="crossbar-left-1"></div>
             <div className="crossbar-left-2"></div>
-            <img src="/medal.svg" alt="logo" title="logo" width="47" height="47" />
+            <img src="icons/medal.svg" alt="logo" title="logo" width="47" height="47" />
           </div>
           <div className="archivement-column">
             <label className="archivement-number">50+</label>
@@ -31,7 +31,7 @@ const Archivement = () => {
             <label className="item">Archivement</label>
             <div className="crossbar1"></div>
             <div className="crossbar2"></div>
-            <img src="/medal.svg" alt="logo" title="logo" width="47" height="47" />
+            <img src="icons/medal.svg" alt="logo" title="logo" width="47" height="47" />
           </div>
           <div className="archivement-row">
             <div className="archivement-column">
@@ -53,7 +53,7 @@ const Archivement = () => {
         {`
           .archivement,.archivement-mobile {
             height: 278px;
-            background-image: url("../archivement.webp");
+            background-image: url("../service_bg.svg");
             background-color: #A1ACBB;
             background-size: cover;
             background-repeat: no-repeat;
@@ -81,7 +81,6 @@ const Archivement = () => {
           }
           .archivement-column>label {
             max-width: 205px;
-            color: #FFFFFF;
           }
           .archivement-content {
             align-items: flex-start;
@@ -91,7 +90,6 @@ const Archivement = () => {
             padding-left: 5%;
           }
           .item {
-            color: #FFFFFF;
             font-size: 32px;
             font-weight: 600;
           }
