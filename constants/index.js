@@ -1,4 +1,4 @@
-export const HOME_URL='https://axalize.vn'
+export const HOME_URL = 'https://axalize.vn'
 
 export const listMenuJP = [
   { href: '/jp', title: 'Top', content: 'トップ' },
@@ -166,21 +166,53 @@ export const uploadFileStatus = {
 }
 
 export const listServices = [
-  { img: '/services1.svg', title: 'Web application development' },
-  { img: '/services2.svg', title: 'Mobile app development' },
-  { img: '/services3.svg', title: 'RPA development' },
-  { img: '/services4.svg', title: 'Dedicated development teams' },
-  { img: '/services5.svg', title: 'Offshore development center' },
-  { img: '/services6.svg', title: 'Lifecycle maintenance' },
-  { img: '/services7.svg', title: 'DevOps development and operations' },
-  { img: '/services8.svg', title: 'UI/UX Design' },
+  {
+    img: '/web.svg',
+    title: 'Web application development',
+    des: 'Our team of experts can help you build robust, scalable, and secure web applications that meet your business requirements.'
+  },
+  {
+    img: '/mobile_app.svg',
+    title: 'Mobile app development',
+    des: 'We offer end-to-end mobile app development services for both Android and iOS platforms.'
+  },
+  {
+    img: '/RPA.svg',
+    title: 'RPA development',
+    des: 'Our RPA development services can help automate repetitive and time-consuming tasks, increasing efficiency and freeing up resources.'
+  },
+  {
+    img: '/dedicated_teams.svg',
+    title: 'Dedicated development teams',
+    des: 'Our dedicated development teams offer a flexible and cost-effective solution for organizations that require a high level of technical expertise.'
+  },
+  {
+    img: '/Offshore_center.svg',
+    title: 'Offshore development center',
+    des: 'Our offshore development center provides a secure and reliable outsourcing solution for businesses looking to reduce costs and improve efficiency.'
+  },
+  {
+    img: '/Lifecycle.svg',
+    title: 'Lifecycle maintenance',
+    des: 'Our lifecycle maintenance services ensure that your IT systems remain secure, stable, and up-to-date over time.'
+  },
+  {
+    img: '/devops.svg',
+    title: 'DevOps development and operations',
+    des: 'Our DevOps services help organizations streamline software development and operations, improving productivity and reducing costs.'
+  },
+  {
+    img: '/UI_UX.svg',
+    title: 'UI/UX Design',
+    des: 'Our UI/UX design services help organizations create user-friendly and engaging digital experiences that drive business growth.'
+  },
 ]
 
 export const listExpertise = [
-  { img: '/Expertise1.svg', title: 'Enterprise Management Systems', content: 'Our expertise in enterprise management systems allows us to help organizations to optimize their operations and improve their overall efficiency. Our team can provide the solutions and support you need to streamline your processes, automate tasks, and make better use of your data.' },
-  { img: '/Expertise2.svg', title: 'Ecommerce & Retail Management Systems', content: 'Our expertise in e-commerce and retail management systems helps organizations to grow their online businesses and improve the customer experience. Our team can provide the solutions and support you need to manage your inventory, process orders, and handle customer data securely.' },
-  { img: '/Expertise3.svg', title: ' Customer-enabling services', content: 'Our customer-enabling services are designed to help organizations to improve the way they interact with their customers. Our team can provide the solutions and support you need to handle customer inquiries, manage customer data, and deliver the best possible customer experience.' },
-  { img: '/Expertise4.svg', title: ' New business ideas', content: 'Our expertise in new business ideas allows us to help organizations to create and implement innovative solutions that drive business growth. Our team of experts can work with you to identify new opportunities, develop new products and services, and bring new ideas to market.' },
+  { img: '/icons/expertise_icon_1.svg', title: 'Enterprise Management Systems', content: 'Our expertise in enterprise management systems allows us to help organizations to optimize their operations and improve their overall efficiency. Our team can provide the solutions and support you need to streamline your processes, automate tasks, and make better use of your data.' },
+  { img: '/icons/expertise_icon_2.svg', title: 'Ecommerce & Retail Management Systems', content: 'Our expertise in e-commerce and retail management systems helps organizations to grow their online businesses and improve the customer experience. Our team can provide the solutions and support you need to manage your inventory, process orders, and handle customer data securely.' },
+  { img: '/icons/expertise_icon_3.svg', title: ' Customer-enabling services', content: 'Our customer-enabling services are designed to help organizations to improve the way they interact with their customers. Our team can provide the solutions and support you need to handle customer inquiries, manage customer data, and deliver the best possible customer experience.' },
+  { img: '/icons/expertise_icon_4.svg', title: ' New business ideas', content: 'Our expertise in new business ideas allows us to help organizations to create and implement innovative solutions that drive business growth. Our team of experts can work with you to identify new opportunities, develop new products and services, and bring new ideas to market.' },
 ]
 
 export const listReason = [

@@ -17,6 +17,7 @@ const Request = () => {
 
   return (
     <div className="infor-request-bg">
+      <div className="infor-request-layout">
       <div className="infor-request">
         <div className="information">
           <div className="information-header">
@@ -97,7 +98,7 @@ const Request = () => {
           </div>
         </div>
       </div>
-
+      </div>
       <style jsx>
         {`
           .infor-request-bg {
@@ -105,6 +106,10 @@ const Request = () => {
             background-size: cover;
             background-position: center;
             height: auto;
+            position: relative;
+          }
+          .infor-request-layout {
+            background-color: #ffffffc9;
           }
           .infor-request {
             display: flex;
@@ -264,6 +269,7 @@ const Request = () => {
             margin-left: 5px;
             width: 90%;
             max-width: 220px;
+            cursor: pointer;
           }
           .input-other {
             border: none;
@@ -391,6 +397,9 @@ const Request = () => {
             border-radius: 5px;
             border: none;
             cursor: pointer;
+          }
+          .btn-request:hover {
+            background: #d25f19;
           }
           @media screen and (max-width: 1024px ) {
             .infor-request-bg {
