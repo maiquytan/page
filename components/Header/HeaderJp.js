@@ -22,7 +22,7 @@ const Header = () => {
   }, [router]);
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="menu">
         <div className="menu-main">
           <Link href="/">
@@ -256,7 +256,7 @@ const Header = () => {
           }
         `}
       </style>
-    </div>
+    </header>
   );
 };
 

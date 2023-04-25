@@ -64,7 +64,7 @@ const Request = () => {
                 <div className="service">
                   <input id="check5" type="checkbox" className="checkbox" onClick={handleCheckService} />
                   <label htmlFor="check5" className="span"></label>
-                  <label htmlFor="check5" className={isCheckService ? 'service-content' : 'unselected'}><u className="other">Other (please specify)</u></label>
+                  <label htmlFor="check5" className={isCheckService ? 'service-content' : 'unselected'}><span className="other">Other (please specify)</span></label>
                   <input className={isCheckService ? 'unselected' : 'input-other'} type="text" placeholder="Other (please specify)" />
                 </div>
               </div>
@@ -78,7 +78,7 @@ const Request = () => {
                   </label>
                 ))}
                 <label className="budget" >
-                  <u className={isCheckBudget ? 'other' : 'unselected'} >Other (please specify)</u>
+                  <p className={isCheckBudget ? 'other' : 'unselected'} >Other (please specify)</p>
                   <input type="radio" name="radio" onClick={() => setIsCheckBudget(false)} />
                   <span className="checkmark"></span>
                 </label>
@@ -324,7 +324,8 @@ const Request = () => {
             background: white;
           }
           .other {
-            color: #A6A6A6
+            color: #A6A6A6;
+            text-decoration: underline;
           }
           .tell-us {
             margin-top: 37px;

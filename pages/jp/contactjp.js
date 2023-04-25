@@ -64,7 +64,7 @@ const Contactjp = () => {
         </div>
         <div className="contact-footer">
           <p className="title-footer">お問い合わせに当たり、当社の個人情報保護方針をご確認下さい</p>
-          <p><u>個人情報の取り扱いについて</u></p>
+          <p className="title-underline">個人情報の取り扱いについて</p>
           <button>送信する</button>
         </div>
       </div>
@@ -209,6 +209,9 @@ const Contactjp = () => {
           }
           .title-footer {
             margin-bottom: 19px;
+          }
+          .title-underline {
+            text-decoration: underline;
           }
           @media screen and (max-width: 1024px) {
             .contact-input>input,.phone-number>input {

@@ -23,17 +23,26 @@ const Header = () => {
   }, [router]);
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="menu">
         <div className="menu-main container">
           <Link href="/"><a className="logo">
             <img src="/logo1.svg" className="img-logo" alt="logo" title="logo" width="323" height="55" />
           </a></Link>
           <div className="menu-content">
-            <Link href="/e"><a>Company <img src="/arrow_menu.svg" className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
+            <div className="company-pc"><p>Company</p> <img src="/arrow_menu.svg" className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" />
+                <div className="dropdown">
+                  <ul>
+                    <li><Link href="/service"><a>Service</a></Link></li>
+                    <li><Link href="/expertise"><a>Expertise</a></Link></li>
+                    <li><Link href="/client"><a>Client</a></Link></li>
+                    <li><Link href="/team"><a>Team</a></Link></li>
+                  </ul>
+                </div>
+            </div>
             {listMenuVN.map((vn, index) => (
               <Link href={vn.href} key={index}>
-                <a className={router.pathname === vn.href ? 'selected' : ''} >{vn.title}</a>
+                <a className={router.pathname === vn.href ? 'selected' : 'normal'} >{vn.title}</a>
               </Link>
             ))}
           </div>
@@ -49,27 +58,21 @@ const Header = () => {
         {isDropdownMenuAction &&
           <ul className="mobile-menu-down">
             <li>
-              <div>
-                <Link href="/e"><a>Company <img src="/arrow_mobile_menu.svg" onClick={handleDropDownCompanyAction} className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" /></a></Link>
-              </div>
+              <div className="company-mobile" onClick={handleDropDownCompanyAction}><p>Company</p> <img src="/arrow_menu.svg" className="arrow-menu" alt="arrow" title="arrow" width="11" height="8" /></div>
               {isDropdownCompanyAction &&
-                <ul className="setting-signout">
-                  <li><Link href="/b"><a>X</a></Link></li>
+                <ul className="dropdown-mobile">
                   <hr></hr>
-                  <li><Link href="/b"><a>Y</a></Link></li>
+                  <li><Link href="/service"><a>Service</a></Link></li>
+                  <hr></hr>
+                  <li><Link href="/client"><a>Client</a></Link></li>
+                  <hr></hr>
+                  <li><Link href="/team"><a>Team</a></Link></li>
                 </ul>
               }
             </li>
             <hr></hr>
-            <li><Link href="/service"><a>Service</a></Link></li>
-            <hr></hr>
             <li><Link href="/about"><a>About</a></Link></li>
-            <hr></hr>
             <li><Link href="/portfolio"><a>Portfolio</a></Link></li>
-            <hr></hr>
-            <li><Link href="/client"><a>Client</a></Link></li>
-            <hr></hr>
-            <li><Link href="/team"><a>Team</a></Link></li>
           </ul>
         }
       </div>
@@ -94,18 +97,59 @@ const Header = () => {
           }
           .menu-content {
             display: flex;
+            height: 100%;
+            align-items: center;
           }
           .container {
             display: flex;
             max-width: 1260px;
             margin: auto;
           }
-          .arrow-menu {
+          .company-pc {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 10px;
+            position: relative;
+            cursor: pointer;
+          }
+          .company-pc:hover p{
+            color: #fc721e !important;
+          }
+          .company-pc:hover .dropdown{
+            display: block;
+          }
+          .dropdown {
             display: none;
+            position: absolute;
+            flex-direction: column;
+            width: 100%;
+            min-width: 263px;
+            left: -18px;
+            height: auto;
+            top: calc(100% - 19px);
+            background-color: #23232a;
+            padding-left: 0px;
+            z-index: 3;
+            transition: .2s ease-in-out;
+            border-radius: 4px;
+          }
+          .dropdown::after {
+            display: none;
+            transform: rotate(45deg) translateX(-45%);
+            transition: .2s ease-in-out;
+          }
+          ul {
+            list-style: none;
+            padding: 19px 0px 19px 0px;
+          }
+          .company-pc p {
+            font-size: 20px;
+            color: #FFFFFF;
+            padding-right: 8px;
           }
           a {
             display: flex;
-            color: #FFFFFF;
             text-decoration: none;
             padding: 0 10px;
             cursor: pointer;
@@ -142,7 +186,15 @@ const Header = () => {
             z-index: 3;
           }
           li {
-            margin: 20px;
+            transition: .3s;
+          }
+          li a {
+            padding: 12px 28px;
+            color: #dee2e6;
+          }
+          li a:hover {
+            color: #FFFFFF;
+            background: rgba(255,255,255,.15);
           }
           hr {
             margin: 0 10px;
@@ -152,7 +204,9 @@ const Header = () => {
             color: #FC721E;
             font-weight: 600;
           }
-
+          .normal {
+            color: #FFFFFF;
+          }
           @media screen and (max-width: 1024px) {
             .menu {
               display: none;
@@ -163,7 +217,22 @@ const Header = () => {
             .header {
               width: 100%;
             }
-            a {
+            .company-mobile {
+              display: flex;
+              align-items: center;
+              color: #6E6E73;
+              height: fit-content;
+              justify-content: space-between;
+            }
+            .company-mobile p {
+              font-size: 20px;
+              padding: 10px;
+            }
+            .company-mobile img {
+              background: #6e6e73;
+              margin-right: 30px;
+            }
+            li a {
               color: #6E6E73;
             }
             a>img {
@@ -175,7 +244,7 @@ const Header = () => {
           }
         `}
       </style>
-    </div>
+    </header>
   )
 }
 
